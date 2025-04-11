@@ -24,16 +24,16 @@ const incentives = [
   },
 ];
 
-export default function Example() {
+export default function Incentives() {
   return (
-    <div className="bg-white">
+    <div className="">
       <div className="mx-auto sm:px-2 lg:px-4 py-24 sm:py-32 max-w-7xl">
         <div className="mx-auto px-4 max-w-2xl lg:max-w-none">
           <div className="max-w-3xl">
-            <h2 className="font-bold text-4xl text-gray-900 tracking-tight">
+            <h2 className="font-bold text-4xl text-pretty tracking-tight">
               We built our business on customer service
             </h2>
-            <p className="mt-4 text-gray-500">
+            <p className="mt-4">
               At the beginning at least, but then we realized we could make a
               lot more money if we kinda stopped caring about that. Our new
               strategy is to write a bunch of things that look really good in
@@ -48,14 +48,13 @@ export default function Example() {
                   <Image alt="" src={incentive.imageSrc}
                     width={64}
                     height={64}
-
                     className="size-16" />
                 </div>
                 <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                  <h3 className="font-medium text-gray-900 text-sm">
+                  <h3 className="font-medium text-secondary text-sm">
                     {incentive.name}
                   </h3>
-                  <p className="mt-2 text-gray-500 text-sm">
+                  <p className="mt-2 text-sm">
                     {incentive.description}
                   </p>
                 </div>
