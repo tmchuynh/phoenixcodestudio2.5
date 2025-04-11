@@ -1,7 +1,7 @@
 "use client";
 
 import { SubItem } from "@/lib/interfaces/services";
-import { setSlug } from "@/lib/utils";
+import { capitalize, setSlug } from "@/lib/utils";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
@@ -26,15 +26,23 @@ export default function SummaryCard( { item }: { item: SubItem; } ) {
       {/* Category (if available) */}
       {item.category && (
         <div className="mb-2 text-sm">
-          {item.category}
+          {capitalize( item.category )}
         </div>
       )}
 
       {/* Header: optional icon and title */}
       <div className="flex items-center mb-4">
         {item.info.Icon && (
+          // <Image
+          //   src={item.info.Icon}
+          //   alt={`${ item.name } icon`}
+          //   className="mr-3 w-8 h-8"
+          //   width={32}
+          //   height={32}
+          // />
+
           <Image
-            src={item.info.Icon}
+            src={"https://placehold.co/400"}
             alt={`${ item.name } icon`}
             className="mr-3 w-8 h-8"
             width={32}
@@ -42,7 +50,7 @@ export default function SummaryCard( { item }: { item: SubItem; } ) {
           />
         )}
         <h3 className="font-bold text-2xl">
-          {item.name}
+          {capitalize( item.name )}
         </h3>
       </div>
 
