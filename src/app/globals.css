@@ -112,11 +112,135 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* 1) Cormorant (from Cormorant-VariableFont_wght.ttf) */
+@font-face {
+  font-family: "Cormorant";
+  src: url("/fonts/Cormorant-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+/* 2) DancingScript (from DancingScript-Medium.ttf) */
+@font-face {
+  font-family: "DancingScript";
+  src: url("/fonts/DancingScript-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 3) FiraSans (from FiraSans-Regular.ttf) */
+@font-face {
+  font-family: "FiraSans";
+  src: url("/fonts/FiraSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 4) GreatVibes (from GreatVibes-Regular.ttf) */
+@font-face {
+  font-family: "GreatVibes";
+  src: url("/fonts/GreatVibes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 5) KaushanScript (from KaushanScript-Regular.ttf) */
+@font-face {
+  font-family: "KaushanScript";
+  src: url("/fonts/KaushanScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 6) MavenPro (from MavenPro-Regular.ttf) */
+@font-face {
+  font-family: "MavenPro";
+  src: url("/fonts/MavenPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 7) MuktaMalar (from MuktaMalar-Regular.ttf) */
+@font-face {
+  font-family: "MuktaMalar";
+  src: url("/fonts/MuktaMalar-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 8) PlayfairDisplay (from PlayfairDisplay-VariableFont_wght.ttf) */
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 9) QuickSand (from QuickSand-VariableFont_wght.ttf) */
+@font-face {
+  font-family: "QuickSand";
+  src: url("/fonts/QuickSand-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+/* 10) RobotoCondensed (from RobotoCondensed-VariableFont_wght.ttf) */
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("/fonts/RobotoCondensed-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+/* 11) Sacramento (from Sacramento-Regular.ttf) */
+@font-face {
+  font-family: "Sacramento";
+  src: url("/fonts/Sacramento-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 12) Satisfy (from Satisfy-Regular.ttf) */
+@font-face {
+  font-family: "Satisfy";
+  src: url("/fonts/Satisfy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 13) SourceSans3 (from SourceSans3-VariableFont_wght.ttf) */
+@font-face {
+  font-family: "SourceSans3";
+  src: url("/fonts/SourceSans3-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+/* 14) SourceSerif4 (from SourceSerif4-VariableFont_opsz.ttf)  */
+@font-face {
+  font-family: "SourceSerif4";
+  src: url("/fonts/SourceSerif4-VariableFont_opsz.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-[MavenPro];
+  }
+
+  h1 {
+    @apply font-[KaushanScript] my-2 font-bold text-3xl text-pretty md:text-5xl tracking-tight;
+  }
+
+  h2 {
+    @apply font-[PlayfairDisplay] my-3 font-semibold text-2xl lg:text-3xl tracking-wide text-primary;
+  }
+
+  h3 {
+    @apply font-[FiraSans] my-2 font-semibold text-xl lg:text-xl tracking-wide text-secondary;
   }
 }
