@@ -1,5 +1,3 @@
-import { Testimonial } from "../interfaces";
-
 export const testimonials = [
   {
     name: "Justin Perez",

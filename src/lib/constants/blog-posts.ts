@@ -1,6 +1,4 @@
-import { BlogPost } from "../interfaces";
-
-export const blogs: BlogPost[] = [
+export const blogs = [
   {
     title:
       "Mastering Google Analytics: Insights for Effective Website Tracking",

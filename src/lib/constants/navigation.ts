@@ -39,8 +39,6 @@ export const about: Menu[] = [
   },
 ];
 
-
-
 export const aboutFeaturedLinks: Menu[] = [
   {
     title: "Our Past Projects",
@@ -50,7 +48,6 @@ export const aboutFeaturedLinks: Menu[] = [
       "Meet the dedicated staff who ensure the success of our programs, working behind the scenes to support student growth.",
   },
 ];
-
 
 export const web_development: Menu[] = [
   {
@@ -79,7 +76,6 @@ export const web_development: Menu[] = [
   },
 ];
 
-
 export const webDevelopmentFeaturedLinks: Menu[] = [
   {
     title: "Website Builder VS Custom Development",
@@ -89,8 +85,6 @@ export const webDevelopmentFeaturedLinks: Menu[] = [
       "Explore the innovative projects students create, showcasing their skills and creativity throughout their learning journey.",
   },
 ];
-
-
 
 export const serviceCategories: Menu[] = [
   {
@@ -112,7 +106,6 @@ export const serviceCategories: Menu[] = [
       "Boost your online visibility with expertly crafted, search-optimized content that drives engagement.",
   },
 ];
-
 
 export const serviceFeaturedLinks: Menu[] = [
   {
@@ -139,8 +132,7 @@ export const contact: Menu[] = [
   {
     title: "Let's Work Together",
     href: "/get_in_touch/let's_work_together",
-    description:
-      "Reach out to us for personalized assistance and support.",
+    description: "Reach out to us for personalized assistance and support.",
   },
   {
     title: "FAQs",
@@ -153,5 +145,5 @@ export const contact: Menu[] = [
     href: "/get_in_touch/become_a_partner",
     description:
       "Join us in our mission to make a difference and explore partnership opportunities.",
-  }
-]
+  },
+];

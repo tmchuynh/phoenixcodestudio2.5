@@ -1,5 +1,3 @@
-import { FAQ } from "../types";
-
 export const FAQs = [
   {
     question: "What sets Phoenix Code Studio apart?",
