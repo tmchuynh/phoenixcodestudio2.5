@@ -1,10 +1,9 @@
 "use client";
-import SubServiceDetails from "@/components/information/subServiceDetails";
-import LoadingIndicator from "@/components/states/Loading";
+import LoadingIndicator from "@/components/loading/Loading";
 import { Button } from "@/components/ui/button";
-import { allServices } from "@/lib/service-categories";
-import useMediumScreen from "@/lib/useMediumScreen";
-import useSmallScreen from "@/lib/useSmallScreen";
+import { allServices } from "@/lib/constants/services/service-categories";
+import useMediumScreen from "@/lib/screens/useMediumScreen";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { setSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
@@ -73,9 +72,11 @@ const ServicesPage: FC = () => {
               <>
                 <p>{service.info.intro}</p>
 
-                {service.info.description.map((info, infoIndex) => (
-                  <p key={infoIndex}>{info}</p>
-                ))}
+                {service.info.description.map(
+                  (info: string, infoIndex: number) => (
+                    <p key={infoIndex}>{info}</p>
+                  )
+                )}
               </>
             )}
 
@@ -100,7 +101,7 @@ const ServicesPage: FC = () => {
             </div>
           </div>
 
-          <SubServiceDetails service={service} index={index} />
+          {/* <SubServiceDetails service={service} index={index} /> */}
 
           <Button
             onClick={() => router.push("/contact-us")}
