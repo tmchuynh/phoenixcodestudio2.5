@@ -32,6 +32,21 @@ const buttonVariants = cva(
           "border-transparent bg-transparent text-destructive hover:text-destructive-foreground",
         destructiveLink:
           "border-transparent text-destructive underline-offset-4 hover:underline",
+        accent: "bg-accent text-accent-foreground shadow-xs hover:bg-accent/90",
+        accentOutline:
+          "border border-accent bg-transparent shadow-xs hover:bg-accent hover:text-accent-foreground hover:border-accent",
+        accentGhost:
+          "border-transparent bg-transparent text-accent hover:text-accent-foreground",
+        accentLink:
+          "border-transparent text-accent underline-offset-4 hover:underline",
+        tertiary:
+          "bg-teritary text-teritary-foreground shadow-xs hover:bg-teritary/90",
+        tertiaryOutline:
+          "border border-teritary bg-transparent shadow-xs hover:bg-teritary hover:text-teritary-foreground hover:border-teritary",
+        tertiaryGhost:
+          "border-transparent bg-transparent text-teritary hover:text-teritary-foreground",
+        tertiaryLink:
+          "border-transparent text-teritary underline-offset-4 hover:underline",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
