@@ -1,3 +1,4 @@
+import DynamicButton from "@/components/button/button-dynamic";
 import Image from "next/image";
 
 export default function HeaderImageTiles() {
@@ -6,26 +7,22 @@ export default function HeaderImageTiles() {
       <div className="lg:flex mx-auto px-6 lg:px-8 max-w-7xl">
         <div className="lg:flex-none gap-x-12 gap-y-16 lg:gap-y-8 grid grid-cols-1 mx-auto lg:mx-0 lg:min-w-full max-w-2xl lg:max-w-none">
           <div className="lg:col-end-1 lg:pb-8 lg:w-full lg:max-w-lg">
-            <h1 className="font-semibold text-4xl sm:text-5xl tracking-tight">
-              Our people
-            </h1>
-            <p className="mt-6 text-xl/8">
-              Quasi est quaerat. Sit molestiae et. Provident ad dolorem
-              occaecati eos iste. Soluta rerum quidem minus ut molestiae velit
-              error quod. Excepturi quidem expedita molestias quas.
-            </p>
-            <p className="mt-6 text-base/7">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat. Quasi aperiam sit non sit neque reprehenderit.
-            </p>
+            <h4>Phoenix Code Studio</h4>
+            <h1>Our people</h1>
+            <div>
+              <p className="mt-6 text-lg/relaxed">
+                Your vision is more than just an idea—it’s the foundation of
+                something extraordinary. At Phoenix Code Studio, we merge
+                strategic creativity, innovative technology, and cutting-edge
+                design to craft transformative digital experiences that don’t
+                just exist—they thrive. Whether you’re launching a brand,
+                redefining your online presence, or creating a revolutionary
+                digital platform, we bring your aspirations to life with custom,
+                results-driven solutions.
+              </p>
+            </div>
             <div className="flex mt-10">
-              <a
-                href="#"
-                className="shadow-xs px-3.5 py-2.5 rounded-md font-semibold text-sm text-white focus-visible:outline-2 focus-visible:outline-offset-2"
-              >
-                Join our team <span aria-hidden="true">&rarr;</span>
-              </a>
+              <DynamicButton>Join our team</DynamicButton>
             </div>
           </div>
           <div className="flex flex-wrap justify-end items-start gap-6 sm:gap-8 lg:contents">
