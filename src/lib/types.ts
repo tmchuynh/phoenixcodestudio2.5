@@ -16,12 +16,6 @@ export type LengthType = number | string;
 
 export type ServiceTypeKeys = "service" | "contract";
 
-export type DateObject = {
-  month: number;
-  day: number;
-  year: number;
-};
-
 export type DynamicButtonProps = {
   variant?:
     | "default"
@@ -58,12 +52,10 @@ export type FAQ = {
 };
 
 export type Menu = {
-  id?: number;
   title: string;
   href: string;
   description: string;
   imageUrl?: string;
-  imageAlt?: string;
 };
 
 export type PricingTier = {

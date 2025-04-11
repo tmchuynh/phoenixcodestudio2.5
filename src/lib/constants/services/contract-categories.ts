@@ -1,6 +1,5 @@
-import { Category } from "@/lib/interfaces";
 
-export const allContracts: Category[] = [
+export const allContracts = [
   {
     name: "general-client-agreements",
     type: "contract",

@@ -1,7 +1,6 @@
-import { PaymentDetails } from "@/lib/interfaces";
 import { MdDoubleArrow } from "react-icons/md";
 
-export const paymentPlans: PaymentDetails[] = [
+export const paymentPlans = [
   {
     name: "essential-service-plan",
     title: "Essential Service Plan",

@@ -1,6 +1,6 @@
 import { Project } from "../interfaces";
 
-export const pastProjects: Project[] = [
+export const pastProjects = [
   {
     title: "Quiz Application",
     name: "Engage, Learn, and Compete with Our Next.js Quiz Platform",

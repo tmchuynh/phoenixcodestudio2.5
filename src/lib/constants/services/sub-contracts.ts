@@ -1,6 +1,5 @@
-import { SubItem } from "@/lib/interfaces";
 
-export const contractExamples: SubItem[] = [
+export const contractExamples = [
   {
     category: "general-client-agreements",
     name: "master-service-agreement-msa",

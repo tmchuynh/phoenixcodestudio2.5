@@ -1,6 +1,6 @@
 import { Testimonial } from "../interfaces";
 
-export const testimonials: Testimonial[] = [
+export const testimonials = [
   {
     name: "Justin Perez",
     featured: true,
