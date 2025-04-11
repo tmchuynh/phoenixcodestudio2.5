@@ -1,5 +1,6 @@
 import BackToTop from "@/components/button/BackToTop";
 import DynamicBreadcrumb from "@/components/navigation/dynamic-breadcrumb";
+import Footer from "@/components/navigation/Footer";
 import { NavBar } from "@/components/navigation/NavBar";
 import { Providers } from "@/context/providers";
 import "./globals.css";
@@ -18,6 +19,7 @@ export default function RootLayout( {
             <DynamicBreadcrumb />
             {children}
             <BackToTop />
+            <Footer />
           </main>
         </Providers>
       </body>
