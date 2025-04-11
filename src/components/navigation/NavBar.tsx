@@ -26,8 +26,8 @@ export function NavBar() {
       {isSmallScreen ? (
         <DockNavigation />
       ) : (
-        <div className="bg-primary py-5">
-          <div className="flex mx-auto w-11/12 text-primary-foreground">
+        <div className="bg-primary py-5 border-4 w-full">
+          <div className="flex justify-around mx-auto w-11/12 text-primary-foreground">
             <Image
               src="/images/logo_white.png"
               alt="IAC intials logo"
@@ -37,7 +37,7 @@ export function NavBar() {
               height={100}
             />
 
-            <NavigationMenu className="flex justify-end w-full font-[LuckiestGuy] text-white">
+            <NavigationMenu className="flex justify-end border-4 max-w-full font-[KaushanScript] text-white">
               <NavigationMenuList>
                 <NavigationMenuItem className="mt-2 p-4">
                   <Link href="/" passHref>
@@ -117,8 +117,8 @@ export function NavBar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
-              <ThemeToggle />
             </NavigationMenu>
+            <ThemeToggle />
           </div>
         </div>
       )}
