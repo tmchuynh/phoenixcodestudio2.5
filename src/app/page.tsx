@@ -1,3 +1,4 @@
+import ResponsiveImageGrid from "@/components/images/image_grid";
 import Image from "next/image";
 
 const stats = [
@@ -5,6 +6,15 @@ const stats = [
   { id: 2, name: "Flat platform fee", value: "3%" },
   { id: 3, name: "Uptime guarantee", value: "99.9%" },
   { id: 4, name: "Paid out to creators", value: "$70M" },
+];
+
+const imageUrls = [
+  "https://placehold.co/600x400",
+  "https://placehold.co/600x400",
+  "https://placehold.co/600x400",
+  "https://placehold.co/600x400",
+  "https://placehold.co/600x400",
+  "https://placehold.co/600x400",
 ];
 
 export default function Example() {
@@ -17,6 +27,7 @@ export default function Example() {
         width={500}
         height={500}
       />
+
       <div className="grid lg:grid-cols-2 mx-auto max-w-7xl">
         <div className="lg:col-start-2 px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-32 pb-24 sm:pb-32">
           <div className="mx-auto lg:mr-0 max-w-2xl lg:max-w-lg">
@@ -43,6 +54,7 @@ export default function Example() {
               ))}
             </dl>
           </div>
+          <ResponsiveImageGrid gridSize="2x2" images={imageUrls} />
         </div>
       </div>
     </div>
