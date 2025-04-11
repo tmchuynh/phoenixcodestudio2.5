@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { debounce } from "./debounce";
+import { useEffect, useState } from "react";
+import { debounce } from "../debounce";
 
 /**
  * Custom hook that determines if the current screen width is considered "medium".
