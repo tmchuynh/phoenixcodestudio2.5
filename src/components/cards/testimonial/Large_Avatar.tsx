@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Example() {
   return (
     <section className="bg-white px-6 lg:px-8 overflow-hidden isolate">
@@ -27,10 +29,12 @@ export default function Example() {
             </blockquote>
           </div>
           <div className="col-end-1 lg:row-span-4 w-16 lg:w-72">
-            <img
+            <Image
               alt=""
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=576&h=576&q=80"
               className="bg-indigo-50 rounded-xl lg:rounded-3xl"
+              width={576}
+              height={576}
             />
           </div>
           <figcaption className="lg:col-start-1 lg:row-start-3 text-base">
