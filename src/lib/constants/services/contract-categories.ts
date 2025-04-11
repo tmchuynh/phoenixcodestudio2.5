@@ -1,4 +1,4 @@
-import { Category } from "./interfaces";
+import { Category } from "@/lib/interfaces";
 
 export const allContracts: Category[] = [
   {

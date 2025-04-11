@@ -1,4 +1,5 @@
-import { BlogPost } from "./interfaces";
+import { BlogPost } from "../interfaces";
+
 export const blogs: BlogPost[] = [
   {
     title:

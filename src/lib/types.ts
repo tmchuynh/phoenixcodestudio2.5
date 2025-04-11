@@ -58,9 +58,12 @@ export type FAQ = {
 };
 
 export type Menu = {
+  id?: number;
   title: string;
   href: string;
   description: string;
+  imageUrl?: string;
+  imageAlt?: string;
 };
 
 export type PricingTier = {

@@ -1,5 +1,5 @@
+import { PaymentDetails } from "@/lib/interfaces";
 import { MdDoubleArrow } from "react-icons/md";
-import { PaymentDetails } from "./interfaces";
 
 export const paymentPlans: PaymentDetails[] = [
   {

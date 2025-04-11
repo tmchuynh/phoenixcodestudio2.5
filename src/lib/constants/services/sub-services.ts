@@ -1,4 +1,4 @@
-import { SubItem } from "./interfaces";
+import { SubItem } from "@/lib/interfaces";
 
 export const subServiceDetails: SubItem[] = [
   {
