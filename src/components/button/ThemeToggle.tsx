@@ -24,32 +24,32 @@ import { Toggle } from "../ui/toggle";
  */
 export const ThemeToggle = (): JSX.Element | null => {
   const { theme, setTheme, systemTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState( false );
 
-  useEffect(() => {
-    setMounted(true);
-    if (!theme || theme === "system") {
-      setTheme(systemTheme || "light");
+  useEffect( () => {
+    setMounted( true );
+    if ( !theme || theme === "system" ) {
+      setTheme( systemTheme || "light" );
     }
-  }, [systemTheme, theme, setTheme]);
+  }, [systemTheme, theme, setTheme] );
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme( theme === "dark" ? "light" : "dark" );
   };
 
-  if (!mounted) {
+  if ( !mounted ) {
     return null;
   }
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center mx-4">
       <p className="sr-only">Toggle theme</p>
       <Toggle
         aria-label="Toggle theme"
         onClick={toggleTheme}
-        className="flex justify-center items-center hover:bg-accent hover:text-accent-foreground"
+        className="flex justify-center items-center hover:bg-tertiary hover:text-tertiary-foreground"
       >
         {currentTheme === "dark" ? (
           <>
