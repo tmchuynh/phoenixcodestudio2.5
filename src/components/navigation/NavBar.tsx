@@ -8,12 +8,11 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-import { about, aboutFeaturedLinks, serviceCategories, serviceFeaturedLinks, web_development, webDevelopmentFeaturedLinks } from "@/lib/constants/navigation";
+import { about, aboutFeaturedLinks, contact, serviceCategories, serviceFeaturedLinks, web_development, webDevelopmentFeaturedLinks } from "@/lib/constants/navigation";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { Menu } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 import * as React from "react";
 import { ThemeToggle } from "../button/ThemeToggle";
 import DockNavigation from "./DockNavigation";
@@ -40,15 +39,13 @@ export function NavBar() {
             <NavigationMenu className="flex justify-end max-w-full font-[KaushanScript] text-white">
               <NavigationMenuList>
                 <NavigationMenuItem className="mt-2 p-4">
-                  <Link href="/" passHref>
-                    <NavigationMenuLink className="text-lg 2xl:text-2xl xl:text-xl">
-                      Home
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink href="/" className="text-lg 2xl:text-2xl xl:text-xl">
+                    Home
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>About IAC</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>About PCS</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="gap-3 grid lg:grid-cols-3 lg:grid-rows-3 p-4 md:w-[35em] lg:w-[45em]">
                       {aboutFeaturedLinks.map( ( link, index ) => (
@@ -72,7 +69,7 @@ export function NavBar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Programs</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>What's Web Development</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="gap-3 grid lg:grid-cols-4 lg:grid-rows-2 p-4 md:w-[35em] lg:w-[50em]">
                       {webDevelopmentFeaturedLinks.map( ( link, index ) => (
@@ -93,7 +90,7 @@ export function NavBar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="gap-3 grid lg:grid-cols-2 lg:grid-rows-5 p-4 md:w-[35em] lg:w-[45em]">
                       {serviceFeaturedLinks.map( ( link, index ) => (
@@ -105,6 +102,24 @@ export function NavBar() {
                         </li>
                       ) )}
                       {serviceCategories.map( ( link, index ) => (
+                        <ListItem
+                          href={link.href}
+                          title={`${ link.title }`}
+                          key={index}
+                        >
+                          {link.description}
+                        </ListItem>
+                      ) )}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="gap-3 grid lg:grid-cols-2 lg:grid-rows-5 p-4 md:w-[35em] lg:w-[45em]">
+
+                      {contact.map( ( link, index ) => (
                         <ListItem
                           href={link.href}
                           title={`${ link.title }`}
