@@ -1,4 +1,4 @@
-import { LoaderSizeMarginProps } from "@/lib/interfaces";
+import { LengthType } from "@/lib/types";
 import { cssValue, sync } from "@/lib/utils";
 import * as React from "react";
 
@@ -9,7 +9,7 @@ import { JSX } from "react";
  * @param {boolean} loading - Determines if the loader should be displayed. Defaults to `true`.
  * @returns {JSX.Element | null} The rendered loader component or `null` if `loading` is `false`.
  */
-function SyncLoader({
+function SyncLoader( {
   loading = true,
   color = "var(--accent-5)",
   speedMultiplier = 1,
@@ -17,7 +17,14 @@ function SyncLoader({
   size = 15,
   margin = 2,
   ...additionalprops
-}: LoaderSizeMarginProps): JSX.Element | null {
+}: {
+  color?: string;
+  loading?: boolean;
+  cssOverride?: React.CSSProperties;
+  speedMultiplier?: number;
+  size?: LengthType;
+  margin?: LengthType;
+} ): JSX.Element | null {
   const wrapper: React.CSSProperties = {
     display: "inherit",
     ...cssOverride,
@@ -29,30 +36,29 @@ function SyncLoader({
    * @param i The index of the circle, used to offset the animation.
    * @returns An object containing the CSS properties for the circle.
    */
-  const style = (i: number): React.CSSProperties => {
+  const style = ( i: number ): React.CSSProperties => {
     return {
       backgroundColor: color,
-      width: cssValue(size),
-      height: cssValue(size),
-      margin: cssValue(margin),
+      width: cssValue( size ),
+      height: cssValue( size ),
+      margin: cssValue( margin ),
       borderRadius: "100%",
       display: "inline-block",
-      animation: `${sync} ${0.6 / speedMultiplier}s ${
-        i * 0.07
-      }s infinite ease-in-out`,
+      animation: `${ sync } ${ 0.6 / speedMultiplier }s ${ i * 0.07
+        }s infinite ease-in-out`,
       animationFillMode: "both",
     };
   };
 
-  if (!loading) {
+  if ( !loading ) {
     return null;
   }
 
   return (
     <span style={wrapper} {...additionalprops}>
-      <span style={style(1)} />
-      <span style={style(2)} />
-      <span style={style(3)} />
+      <span style={style( 1 )} />
+      <span style={style( 2 )} />
+      <span style={style( 3 )} />
     </span>
   );
 }
