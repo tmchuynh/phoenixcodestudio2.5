@@ -1,5 +1,8 @@
 "use client";
 
+import useMediumScreen from "@/lib/screens/useMediumScreen";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
+import { capitalize } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
 import React, { JSX, useMemo } from "react";
 import { TbSlashes } from "react-icons/tb";
@@ -9,9 +12,6 @@ import {
   BreadcrumbLink,
   BreadcrumbSeparator,
 } from "../ui/breadcrumb";
-import useMediumScreen from "@/lib/screens/useMediumScreen";
-import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { capitalize } from "@/lib/utils";
 
 /**
  * A static breadcrumb navigation component that displays the current path hierarchy.
@@ -32,7 +32,7 @@ import { capitalize } from "@/lib/utils";
  * // Will render a breadcrumb like: Home / Page / Subpage
  * <StaticBreadcrumb />
  */
-const StaticBreadcrumb: React.FC = (): JSX.Element | null => {
+export default function DynamicBreadcrumb(): JSX.Element | null {
   const isSmallScreen = useSmallScreen();
   const isMediumScreen = useMediumScreen();
   const pathname = usePathname();
@@ -267,6 +267,4 @@ const StaticBreadcrumb: React.FC = (): JSX.Element | null => {
       </nav>
     </div>
   );
-};
-
-export default StaticBreadcrumb;
+}
