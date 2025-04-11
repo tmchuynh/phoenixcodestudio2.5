@@ -1,8 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { cssUnit } from "./constants/constants";
-import { BlogPost, LengthObject } from "./interfaces";
-import { DateObject } from "./types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -156,7 +154,10 @@ export const sync = createAnimation(
  * If the provided size is a number, the unit defaults to "px".
  * If the provided size is a string and the unit is not recognized, a warning is logged and the unit defaults to "px".
  */
-export function parseLengthAndUnit(size: number | string): LengthObject {
+export function parseLengthAndUnit(size: number | string): {
+  value: number;
+  unit: string;
+} {
   if (typeof size === "number") {
     return {
       value: size,
@@ -368,27 +369,6 @@ export function decimalMinutesToMmSs(decimalMin: number): string {
   const mm = Math.floor(secs / 60);
   const ss = secs;
   return `${mm}:${ss.toString().padStart(2, "0")}`;
-}
-
-/**
- * Sorts an array of blog posts by their date in ascending order.
- *
- * @param array - The array of blog posts to be sorted.
- * @returns A new array of blog posts sorted by date.
- */
-export function sortBlogsByDate(array: BlogPost[]): BlogPost[] {
-  const newArray = array.sort((a, b) => {
-    const dateA = convertToDate(a.date);
-    const dateB = convertToDate(b.date);
-
-    return compareDates([dateA, dateB]);
-  });
-
-  return newArray;
-}
-
-function convertToDate(dateObj: DateObject) {
-  return new Date(dateObj.year, dateObj.month - 1, dateObj.day);
 }
 
 /**
