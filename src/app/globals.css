@@ -252,7 +252,7 @@
   }
 
   h2 {
-    @apply font-[PlayfairDisplay] my-3 font-semibold text-2xl lg:text-3xl tracking-wide text-secondary;
+    @apply font-[PlayfairDisplay] mt-2 font-semibold text-4xl text-pretty sm:text-5xl sm:text-balance tracking-tight;
   }
 
   h3 {
@@ -260,7 +260,7 @@
   }
 
   h4 {
-    @apply font-[MavenPro] my-2 font-medium text-sm lg:text-lg 2xl:text-xl tracking-tight text-primary;
+    @apply font-[MavenPro] font-semibold text-sm lg:text-lg tracking-tight text-pretty;
   }
 
   blockquote {
