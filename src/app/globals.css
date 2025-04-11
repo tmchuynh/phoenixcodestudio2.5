@@ -49,7 +49,8 @@
 }
 
 :root {
-  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.16 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(32.9% 0 0);
   --popover: oklch(1 0 0);
@@ -58,9 +59,9 @@
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.35 0.1117 36.68);
   --secondary-foreground: oklch(0.205 0 0);
-  --tertiary: oklch(50.44% 0.054 200.61);
+  --tertiary: oklch(0.54 0.1139 254.41);
   --tertiary-foreground: oklch(0.985 0 0);
-  --pretty: oklch(0.54 0.0822 192.81);
+  --pretty: oklch(0.398 0.07 227.392);
   --pretty-foreground: oklch(0.985 0 0);
   --muted: oklch(88.53% 0 0);
   --muted-foreground: oklch(0.205 0 0);
@@ -84,8 +85,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --background: oklch(1 0 0);
-  --foreground: oklch(32.9% 0 0);
+  --radius: 0.625rem;
 }
 
 .dark {
@@ -95,13 +95,13 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.19 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.66 0.0964 199.49);
+  --primary: oklch(0.27 0.122 262.37);
   --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.56 0.1143 163.82);
+  --secondary: oklch(0.77 0.1607 163.54);
   --secondary-foreground: oklch(0.985 0 0);
-  --tertiary: oklch(0.32 0.1204 27.33);
+  --tertiary: oklch(0.52 0.2053 26.94);
   --tertiary-foreground: oklch(0.19 0 0);
-  --pretty: oklch(0.6 0.1231 242.69);
+  --pretty: oklch(0.7 0.1663 245.16);
   --pretty-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.985 0 0);
@@ -167,10 +167,10 @@
   font-style: normal;
 }
 
-/* 6) MavenPro (from MavenPro-Regular.ttf) */
+/* 6) MavenPro (from MavenPro-VariableFont_wght.ttf) */
 @font-face {
   font-family: "MavenPro";
-  src: url("/fonts/MavenPro-Regular.ttf") format("truetype");
+  src: url("/fonts/MavenPro-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -252,10 +252,18 @@
   }
 
   h2 {
-    @apply font-[PlayfairDisplay] my-3 font-semibold text-2xl lg:text-3xl tracking-wide text-primary;
+    @apply font-[PlayfairDisplay] my-3 font-semibold text-2xl lg:text-3xl tracking-wide text-secondary;
   }
 
   h3 {
-    @apply font-[FiraSans] my-2 font-semibold text-xl lg:text-xl tracking-wide text-secondary;
+    @apply font-[FiraSans] my-2 font-semibold text-xl lg:text-xl tracking-wide text-tertiary;
+  }
+
+  h4 {
+    @apply font-[MavenPro] my-2 font-medium text-sm lg:text-lg 2xl:text-xl tracking-tight text-primary;
+  }
+
+  blockquote {
+    @apply border-l-2 border-secondary font-[Satisfy] pl-4 italic text-pretty;
   }
 }
