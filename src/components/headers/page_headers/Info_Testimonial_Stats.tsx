@@ -47,10 +47,12 @@ export default function Example() {
                   />
                   <use x={86} href="#0ef284b8-28c2-426e-9442-8655d393522e" />
                 </svg>
-                <img
+                <Image
                   alt=""
                   src="https://tailwindcss.com/plus-assets/img/logos/workcation-logo-white.svg"
                   className="w-auto h-12"
+                  width={500}
+                  height={500}
                 />
                 <blockquote className="mt-6 font-semibold text-white text-xl/8">
                   <p>

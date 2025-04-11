@@ -24,17 +24,17 @@ const incentives = [
   },
 ];
 
-export default function Example() {
+export default function IncentivesImage() {
   return (
-    <div className="bg-gray-50">
+    <div className="">
       <div className="mx-auto sm:px-2 lg:px-4 py-24 sm:py-32 max-w-7xl">
         <div className="mx-auto px-4 max-w-2xl lg:max-w-none">
           <div className="items-center gap-x-16 gap-y-10 grid grid-cols-1 lg:grid-cols-2">
             <div>
-              <h2 className="font-bold text-4xl text-gray-900 tracking-tight">
+              <h2 >
                 We built our business on great customer service
               </h2>
-              <p className="mt-4 text-gray-500">
+              <p className="mt-4">
                 At the beginning at least, but then we realized we could make a
                 lot more money if we kinda stopped caring about that. Our new
                 strategy is to write a bunch of things that look really good in
@@ -45,7 +45,7 @@ export default function Example() {
             <Image
               alt=""
               src="https://tailwindcss.com/plus-assets/img/ecommerce-images/incentives-07-hero.jpg"
-              className="bg-gray-100 rounded-lg w-full aspect-3/2 object-cover"
+              className="rounded-lg w-full aspect-3/2 object-cover"
               width={400}
               height={300}
             />
@@ -64,7 +64,7 @@ export default function Example() {
                   <h3 className="font-medium text-gray-900 text-sm">
                     {incentive.name}
                   </h3>
-                  <p className="mt-2 text-gray-500 text-sm">
+                  <p className="mt-2 text-sm">
                     {incentive.description}
                   </p>
                 </div>

@@ -1,17 +1,17 @@
 import Image from "next/image";
 
-export default function Example() {
+export default function IntroductionImage() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="py-24 sm:py-32">
       <div className="mx-auto px-6 lg:px-8 max-w-7xl">
         <div className="mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
-          <p className="font-semibold text-base/7 text-indigo-600">
+          <h4>
             Deploy faster
-          </p>
-          <h1 className="mt-2 font-semibold text-4xl text-gray-900 text-pretty sm:text-5xl tracking-tight">
+          </h4>
+          <h1 className="mt-2 font-semibold text-4xl text-pretty sm:text-5xl tracking-tight">
             A better workflow
           </h1>
-          <div className="gap-8 grid grid-cols-1 lg:grid-cols-2 mt-10 max-w-xl lg:max-w-none text-base/7 text-gray-700">
+          <div className="gap-8 grid grid-cols-1 lg:grid-cols-2 mt-10 max-w-xl lg:max-w-none text-base/7">
             <div>
               <p>
                 Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
@@ -46,7 +46,7 @@ export default function Example() {
           <div className="flex mt-10">
             <a
               href="#"
-              className="bg-indigo-600 hover:bg-indigo-500 shadow-xs px-3.5 py-2.5 rounded-md font-semibold text-sm text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="shadow-xs px-3.5 py-2.5 rounded-md font-semibold text-sm text-white focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               Get started
             </a>
@@ -57,7 +57,7 @@ export default function Example() {
         <div className="mx-auto px-6 lg:px-8 max-w-7xl">
           <Image
             alt=""
-            src="https://tailwindcss.com/plus-assets/img/component-images/project-app-screenshot.png"
+            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fG1lZXRpbmd8ZW58MHx8MHx8fDA%3D"
             className="shadow-2xl mb-[-12%] rounded-xl ring-1 ring-gray-900/10"
             width={2432}
             height={1442}
