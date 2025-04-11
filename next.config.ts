@@ -7,6 +7,7 @@ const imageHosts = [
   "media.istockphoto.com",
   "www.shutterstock.com",
   "cdn.sanity.io",
+  "placehold.co",
 ];
 
 const nextConfig: NextConfig = {
