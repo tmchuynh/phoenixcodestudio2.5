@@ -98,7 +98,7 @@ const ServicesPage: FC = () => {
           {/* <SubServiceDetails service={service} index={index} /> */}
 
           <Button
-            onClick={() => router.push("/contact-us")}
+            onClick={() => router.push("/get_in_touch")}
             className="my-15 py-10 md:py-0 w-full text-wrap lg:text-lg"
           >
             Book a Consultation Today to Discuss {service.short}

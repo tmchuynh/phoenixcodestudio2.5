@@ -131,7 +131,7 @@ export const contact: Menu[] = [
   },
   {
     title: "FAQs",
-    href: "/get_in_touch/frequently-asked-questions",
+    href: "/get_in_touch/frequently_asked_questions",
     description:
       "Browse frequently asked questions for quick answers and clarity.",
   },
@@ -146,7 +146,7 @@ export const contact: Menu[] = [
 export const contactFeaturedLinks: Menu[] = [
   {
     title: "Let's Work Together",
-    href: "/get_in_touch/let's_work_together",
+    href: "/get_in_touch/lets_work_together",
     imageUrl:
       "https://images.unsplash.com/photo-1654618977232-a6c6dea9d1e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
     description:

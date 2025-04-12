@@ -1,10 +1,8 @@
 "use client";
-import PaymentPlans from "@/components/information/paymentPlans";
-import LoadingIndicator from "@/components/states/Loading";
+import LoadingIndicator from "@/components/states/loading/Loading";
 import { Button } from "@/components/ui/button";
-import { paymentPlans } from "@/lib/payment-plans";
-import useMediumScreen from "@/lib/useMediumScreen";
-import useSmallScreen from "@/lib/useSmallScreen";
+import useMediumScreen from "@/lib/screens/useMediumScreen";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import { FC, useEffect, useState } from "react";
@@ -46,7 +44,7 @@ const PaymentPlansPage: FC = () => {
           custom quote?{" "}
           <Button
             variant={"link"}
-            onClick={() => router.push("/contact-us")}
+            onClick={() => router.push("/get_in_touch")}
             className="m-0 p-0 h-fit"
           >
             Contact us to discuss a tailored solution!
@@ -56,9 +54,9 @@ const PaymentPlansPage: FC = () => {
 
       {/* Displaying each plan in a vertical layout similar to blogs */}
       <section className="space-y-5">
-        {paymentPlans.map((plan, index) => (
+        {/* {paymentPlans.map((plan, index) => (
           <PaymentPlans plan={plan} index={index} key={index} />
-        ))}
+        ))} */}
       </section>
     </main>
   );

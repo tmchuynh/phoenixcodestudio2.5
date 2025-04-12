@@ -52,12 +52,8 @@ export default function FeaturedScreenshot() {
     <div className="py-24 sm:py-32">
       <div className="mx-auto px-6 lg:px-8 max-w-7xl">
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h4>
-            Everything you need
-          </h4>
-          <h2>
-            No server? No problem.
-          </h2>
+          <h4>Everything you need</h4>
+          <h1>No server? No problem.</h1>
           <p className="mt-6 text-lg/8">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
             impedit perferendis suscipit eaque, iste dolor cupiditate
@@ -81,7 +77,7 @@ export default function FeaturedScreenshot() {
       </div>
       <div className="mx-auto mt-16 sm:mt-20 md:mt-24 px-6 lg:px-8 max-w-7xl">
         <dl className="gap-x-6 gap-y-10 lg:gap-x-8 lg:gap-y-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto lg:mx-0 max-w-2xl lg:max-w-none text-base/7">
-          {features.map( ( feature ) => (
+          {features.map((feature) => (
             <div key={feature.name} className="relative pl-9">
               <dt className="inline font-semibold">
                 <feature.icon
@@ -92,7 +88,7 @@ export default function FeaturedScreenshot() {
               </dt>{" "}
               <dd className="inline">{feature.description}</dd>
             </div>
-          ) )}
+          ))}
         </dl>
       </div>
     </div>

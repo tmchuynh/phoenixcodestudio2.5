@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Example() {
   return (
-    <section className="bg-white px-6 lg:px-8 overflow-hidden isolate">
+    <section className="px-6 lg:px-8 overflow-hidden isolate">
       <div className="relative mx-auto py-24 sm:py-32 max-w-2xl lg:max-w-4xl">
         <div className="top-0 left-1/2 lg:left-36 -z-10 absolute bg-[radial-gradient(50%_100%_at_top,var(--color-indigo-100),white)] opacity-20 w-[90rem] h-[50rem] -translate-x-1/2" />
-        <div className="right-1/2 lg:right-full -z-10 absolute inset-y-0 bg-white shadow-indigo-600/10 shadow-xl mr-12 sm:mr-20 md:mr-0 lg:-mr-36 ring-1 ring-indigo-50 w-[150vw] origin-bottom-left lg:origin-center skew-x-[-30deg]" />
+        <div className="right-1/2 lg:right-full -z-10 absolute inset-y-0 shadow-indigo-600/10 shadow-xl mr-12 sm:mr-20 md:mr-0 lg:-mr-36 ring-1 ring-indigo-50 w-[150vw] origin-bottom-left lg:origin-center skew-x-[-30deg]" />
         <figure className="items-center gap-x-6 gap-y-8 lg:gap-x-10 grid grid-cols-1">
           <div className="relative col-span-2 lg:col-start-1 lg:row-start-2">
             <svg

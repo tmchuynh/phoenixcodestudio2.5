@@ -11,9 +11,7 @@ export default function InfoTestimonial() {
       <div className="mx-auto px-6 lg:px-8 max-w-7xl">
         <div className="mx-auto lg:mx-0 max-w-2xl">
           <h4>Deploy faster</h4>
-          <h1 className="mt-2 font-semibold text-4xl text-pretty sm:text-5xl tracking-tight">
-            A better workflow
-          </h1>
+          <h1>A better workflow</h1>
           <p className="mt-6 text-xl/8">
             Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At
             arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae

@@ -89,7 +89,7 @@ export default function ServicePage() {
           {serviceData?.cta.afterButtonText && serviceData?.cta.afterButtonText}
         </p>
 
-        <Button className="my-3" onClick={() => router.push("/contact-us")}>
+        <Button className="my-3" onClick={() => router.push("/get_in_touch")}>
           {serviceData?.cta.button}
         </Button>
       </div>

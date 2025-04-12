@@ -176,7 +176,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="font-[QuickSand] font-medium text-lg leading-none">
+          <div className="font-[PlayfairDisplay] font-medium text-lg leading-none">
             {title}
           </div>
           <p className="font-[MavenPro] font-normal text-xs group-hover:text-background leading-snug">
@@ -200,7 +200,7 @@ function NavigationImageItem(link: { link: Menu }) {
     >
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-background/95 to-background/50 rounded-md"></div>
-      <div className="relative mt-12 -mb-5 font-[QuickSand] font-medium text-foreground text-lg uppercase">
+      <div className="relative mt-12 -mb-5 font-[PlayfairDisplay] font-medium text-foreground text-lg uppercase">
         {link.link.title}
       </div>
       <p className="relative font-[GreatVibes] text-foreground text-lg lg:text-xl tracking-wider">

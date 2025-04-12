@@ -194,7 +194,7 @@
 /* 9) QuickSand (from QuickSand-VariableFont_wght.ttf) */
 @font-face {
   font-family: "QuickSand";
-  src: url("/fonts/QuickSand-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 200 300 400 500 600 700 800 900;
   font-style: normal;
 }

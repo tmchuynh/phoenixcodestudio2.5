@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Example() {
   return (
-    <div className="bg-white pt-24 sm:pt-32 pb-16 sm:pb-24 xl:pb-32">
+    <div className="pt-24 sm:pt-32 pb-16 sm:pb-24 xl:pb-32">
       <div className="bg-gray-900 pb-20 sm:pb-24 xl:pb-0">
         <div className="flex xl:flex-row flex-col items-center xl:items-stretch gap-x-8 gap-y-10 sm:gap-y-8 mx-auto px-6 lg:px-8 max-w-7xl">
           <div className="xl:flex-none -mt-8 xl:-mb-8 w-full xl:w-96 max-w-2xl">
