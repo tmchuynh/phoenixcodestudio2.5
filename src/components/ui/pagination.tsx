@@ -1,3 +1,4 @@
+import { DynamicButtonProps } from "@/lib/types";
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 import * as React from "react";
 
@@ -36,20 +37,22 @@ PaginationItem.displayName = "PaginationItem";
 
 type PaginationLinkProps = {
   isActive?: boolean;
+  variant?: DynamicButtonProps["variant"];
 } & Pick<ButtonProps, "size"> &
   React.ComponentProps<"a">;
 
 const PaginationLink = ({
   className,
   isActive,
-  size = "icon",
+  variant = "default",
+  size = "default",
   ...props
 }: PaginationLinkProps) => (
   <a
     aria-current={isActive ? "page" : undefined}
     className={cn(
       buttonVariants({
-        variant: isActive ? "outline" : "ghost",
+        variant: variant,
         size,
       }),
       className
@@ -57,6 +60,7 @@ const PaginationLink = ({
     {...props}
   />
 );
+
 PaginationLink.displayName = "PaginationLink";
 
 const PaginationPrevious = ({
