@@ -36,7 +36,8 @@ export type DynamicButtonProps = {
     | "destructiveGhost"
     | "destructiveLink"
     | "ghost"
-    | "link";
+    | "link"
+    | "disabled";
   text: string;
   icon?: IconType;
   onClick?: () => void;
