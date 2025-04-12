@@ -1,15 +1,15 @@
-export default function WhyYou() {
+export default function TheTeamBehindYou() {
   return (
     <main className="mx-auto pt-3 md:pt-5 lg:pt-9 w-11/12">
       <div className="mx-auto px-4 max-w-2xl lg:max-w-none">
         <div className="items-center gap-x-16 gap-y-10 grid grid-cols-1 lg:grid-cols-2">
           <div>
             <h2 className="font-bold text-4xl text-gray-900 tracking-tight">
-              Why you?
+              The team behind you
             </h2>
             <p className="mt-4 text-gray-500">
-              We want to know more about you and your business. Share your story
-              with us and let us help you tell it online.
+              We are a team of passionate developers, designers, and marketers
+              who are dedicated to helping you succeed online.
             </p>
           </div>
         </div>
