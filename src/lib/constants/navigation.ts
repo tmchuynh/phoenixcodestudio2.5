@@ -25,61 +25,54 @@ export const about: Menu[] = [
     description:
       "Stay informed with expert insights, industry trends, and company updates.",
   },
-
-  {
-    title: "Our Amazing Past Projects",
-    href: "/past_projects",
-    description:
-      "Explore our past projects and see how we bring ideas to life.",
-  },
 ];
 
 export const aboutFeaturedLinks: Menu[] = [
   {
-    title: "Our Past Projects",
+    title: "Our Amazing Past Projects",
     href: "/past_projects",
     imageUrl:
       "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D",
     description:
-      "Meet the dedicated staff who ensure the success of our programs, working behind the scenes to support student growth.",
+      "See how we’ve turned vision into reality through creative, impactful projects.",
   },
 ];
 
 export const web_development: Menu[] = [
   {
-    title: "Web Development",
+    title: "Why Care About Web Development?",
     href: "/web_development",
     description:
-      "Discover our mission, values, and the story behind our brand.",
+      "Understand why modern, user-first development is essential for success online.",
   },
   {
     title: "Web Development VS Web Design",
     href: "/web_development/web_development_vs_web_design",
     description:
-      "Stay informed with expert insights, industry trends, and company updates.",
+      "Explore the differences between development and design—and why both matter.",
   },
   {
-    title: "What is Your Story?",
-    href: "/web_development/why_websites_make_a_difference/what_is_your_story",
+    title: "The Team Behind You",
+    href: "/web_development/the_team_behind_you",
     description:
-      "Get answers to commonly asked questions about our services and processes.",
+      "Meet the talented minds working to make your digital presence unforgettable.",
   },
   {
-    title: "Why Websites Make A Difference",
-    href: "/web_development/why_websites_make_a_difference",
+    title: "Cookie Cutter Website vs Digital Solution Tailored For You",
+    href: "/web_development/cookie_cutter_website_vs_digital_solution_tailored_for_you",
     description:
-      "See what our clients say about their experiences working with us.",
+      "See why bespoke digital solutions outperform templated sites every time.",
   },
 ];
 
 export const webDevelopmentFeaturedLinks: Menu[] = [
   {
-    title: "Website Builder VS Custom Development",
-    href: "/web_development/website_builder_vs_custom_development",
+    title: "How to Represent Your Story",
+    href: "/web_development/how_to_represent_your_story",
     imageUrl:
       "https://images.unsplash.com/photo-1654618977232-a6c6dea9d1e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
     description:
-      "Explore the innovative projects students create, showcasing their skills and creativity throughout their learning journey.",
+      "Learn how we help brands express their unique voice through smart digital storytelling.",
   },
 ];
 
@@ -88,25 +81,25 @@ export const serviceCategories: Menu[] = [
     title: "Overview",
     href: "/services",
     description:
-      "Explore our range of flexible payment plans designed to fit your needs and budget seamlessly.",
+      "Get a comprehensive look at the full range of services we provide.",
   },
   {
     title: "Testimonials",
     href: "/services/testimonials",
     description:
-      "See what our clients say about their experiences working with us.",
+      "Hear directly from clients about the results we’ve helped them achieve.",
   },
   {
     title: "Enterprise-Grade Digital Solutions",
     href: "/services/scalable-corporate-digital-solutions",
     description:
-      "Unlock powerful digital solutions tailored for corporations looking to scale and streamline operations.",
+      "Empower your business with scalable, secure, and future-proof digital systems.",
   },
   {
     title: "SEO-Driven Content Strategy",
     href: "/services/seo-optimized-content-creation",
     description:
-      "Boost your online visibility with expertly crafted, search-optimized content that drives engagement.",
+      "Enhance your visibility and reach with tailored, search-optimized content strategies.",
   },
 ];
 
@@ -116,14 +109,16 @@ export const serviceFeaturedLinks: Menu[] = [
     href: "/services/pricing",
     imageUrl:
       "https://images.unsplash.com/photo-1560390591-15ee5df86045?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yJTIweW91fGVufDB8fDB8fHww",
-    description: "Sign up for classes and start your learning journey",
+    description:
+      "Find a pricing model that matches your goals, size, and budget.",
   },
   {
     title: "End-to-End Website Development",
     href: "/services/comprehensive-website-solutions",
     imageUrl:
       "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
-    description: "Share your thoughts and suggestions with us.",
+    description:
+      "From planning to launch, we build websites that are performant, accessible, and scalable.",
   },
 ];
 
@@ -132,23 +127,29 @@ export const contact: Menu[] = [
     title: "Get In Touch",
     href: "/get_in_touch",
     description:
-      "Get in touch with us for inquiries, support, or to learn more about our services.",
-  },
-  {
-    title: "Let's Work Together",
-    href: "/get_in_touch/let's_work_together",
-    description: "Reach out to us for personalized assistance and support.",
+      "Contact us directly with questions, feedback, or project ideas.",
   },
   {
     title: "FAQs",
     href: "/get_in_touch/frequently-asked-questions",
     description:
-      "Get answers to commonly asked questions about our services and processes.",
+      "Browse frequently asked questions for quick answers and clarity.",
   },
   {
     title: "Become A Partner",
     href: "/get_in_touch/become_a_partner",
     description:
-      "Join us in our mission to make a difference and explore partnership opportunities.",
+      "Learn about our partnership program and how you can get involved.",
+  },
+];
+
+export const contactFeaturedLinks: Menu[] = [
+  {
+    title: "Let's Work Together",
+    href: "/get_in_touch/let's_work_together",
+    imageUrl:
+      "https://images.unsplash.com/photo-1654618977232-a6c6dea9d1e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
+    description:
+      "Collaborate with us on building something impactful and meaningful.",
   },
 ];
