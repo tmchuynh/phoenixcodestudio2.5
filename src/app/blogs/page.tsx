@@ -1,13 +1,7 @@
 "use client";
 
-import LoadingIndicator from "@/components/states/Loading";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import BlogCard from "@/components/BlogCard";
-
-import { Card } from "@/components/ui/card";
-
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   Collapsible,
@@ -26,25 +20,13 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
-import { blogs } from "@/lib/blog-posts";
+import { blogs } from "@/lib/constants/blog-posts";
 import { IconDisplay } from "@/lib/IconDisplay";
-import { BlogPost } from "@/lib/interfaces";
-import useBetweenLargeAndXL from "@/lib/onlyLargerScreens";
+import { BlogPost } from "@/lib/interfaces/blogs";
 import { AlertContentType } from "@/lib/types";
-import useMediumScreen from "@/lib/useMediumScreen";
-import useSmallScreen from "@/lib/useSmallScreen";
-import {
-  cn,
-  formatNumber,
-  getDaySuffix,
-  parseReadingTimeToMinutes,
-  parseReadingTimeToSeconds,
-  setSlug,
-  sortBlogsByDate,
-} from "@/lib/utils";
+import { getDaySuffix, sortBlogsByDate } from "@/lib/utils";
 import { ChevronsUpDown } from "lucide-react";
 import { useTheme } from "next-themes";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FC, useCallback, useEffect, useState } from "react";
 import { FaFilterCircleXmark } from "react-icons/fa6";
@@ -63,7 +45,6 @@ const BlogDisplayPage: FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredBlogs, setFilteredBlogs] = useState(sortBlogsByDate(blogs));
   const [selectedAuthors, setSelectedAuthors] = useState<string[]>([]);
-  const [selectedLength, setSelectedLength] = useState<string[]>([]);
   const [noResults, setNoResults] = useState(false);
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [selectedSubTopics, setSelectedSubTopics] = useState<string[]>([]);
@@ -304,7 +285,6 @@ const BlogDisplayPage: FC = () => {
    * - `blogs`: The list of blogs to filter.
    * - `selectedTopics`: The list of selected topics to filter by.
    * - `selectedSubTopics`: The list of selected subtopics to filter by.
-   * - `selectedLength`: The list of selected reading times to filter by.
    * - `selectedAuthors`: The list of selected authors to filter by.
    * - `searchQuery`: The search query to filter by.
    * - `filtersCleared`: A flag indicating if filters have been cleared.
@@ -326,18 +306,6 @@ const BlogDisplayPage: FC = () => {
             selectedSubTopics.includes(subtopic)
           )
       );
-    }
-
-    // Filter by reading time
-    if (selectedLength.length > 0) {
-      filtered = filtered
-        .filter((blog) => selectedLength.includes(blog.timeSpan))
-        .sort((a, b) => {
-          const aTime = parseReadingTimeToSeconds(a.time);
-          const bTime = parseReadingTimeToSeconds(b.time);
-
-          return aTime - bTime;
-        });
     }
 
     // Filter by authors
@@ -385,7 +353,6 @@ const BlogDisplayPage: FC = () => {
         setNoResults(true);
         setTimeout(() => {
           setSelectedTopics([]);
-          setSelectedLength([]);
           setSelectedAuthors([]);
           setSelectedDays([]);
           setSelectedMonths([]);
@@ -405,7 +372,6 @@ const BlogDisplayPage: FC = () => {
     blogs,
     selectedTopics,
     selectedSubTopics, // Add selectedSubTopics to dependencies
-    selectedLength,
     selectedAuthors,
     searchQuery,
     filtersCleared,
@@ -429,7 +395,6 @@ const BlogDisplayPage: FC = () => {
    */
   const clearFilters = (e?: string) => {
     setSelectedTopics([]);
-    setSelectedLength([]);
     setSelectedAuthors([]);
     setSelectedDays([]);
     setSelectedMonths([]);
@@ -475,18 +440,6 @@ const BlogDisplayPage: FC = () => {
   }, {} as Record<string, number>);
 
   const subTopics = Object.keys(subTopicCounts).sort();
-
-  /**
-   * Calculates the count of blogs for each reading length.
-   *
-   * @param readingLength - An array of possible reading lengths.
-   * @param blogs - An array of blog objects, each containing a `timeSpan` property.
-   * @returns An object where the keys are reading lengths and the values are the count of blogs for each length.
-   */
-  const lengthCount = readingLength.reduce((acc, length) => {
-    acc[length] = blogs.filter((blog) => blog.timeSpan === length).length;
-    return acc;
-  }, {} as Record<string, number>);
 
   // const authorCounts = authors.reduce((acc, author) => {
   //   acc[author] = blogs.filter((blog) => blog.author === author).length;
@@ -648,23 +601,6 @@ const BlogDisplayPage: FC = () => {
       setSelectedTopics((prev) => prev.filter((t) => t !== "Getting Started"));
     }
     handleFilter();
-  };
-
-  /**
-   * Handles the click event for selecting a reading length filter.
-   * Clears the existing reading length filter, updates the selected lengths,
-   * and triggers the filter handling function.
-   *
-   * @param {string} length - The reading length to be added to the selected lengths.
-   */
-  const handleReadingLengthClick = (length: string) => {
-    clearFilters("readingLength");
-    setFiltersCleared(false);
-    if (!selectedLength.includes(length)) {
-      const updatedLength = [...selectedLength, length];
-      setSelectedLength(updatedLength);
-      handleFilter();
-    }
   };
 
   return (
@@ -1007,60 +943,6 @@ const BlogDisplayPage: FC = () => {
                 </CollapsibleContent>
               </Collapsible>
             </div>
-
-            {/* Author Filter */}
-            {/* <div className="flex flex-wrap items-center">
-              <Collapsible
-                open={openCollapsible === "author"}
-                onOpenChange={() => handleCollapsibleChange("author")}
-                className="space-y-2 w-full"
-              >
-                <div className="flex justify-between items-center space-x-4">
-                  <CollapsibleTrigger asChild>
-                    <div className="flex items-center w-full">
-                      <ChevronsUpDown className="w-4 h-4" />
-                      <label htmlFor="author" className="ml-2 w-full text-lg">
-                        <p>Filter by Author:</p>
-                      </label>
-                      <span className="sr-only">Toggle</span>
-                    </div>
-                  </CollapsibleTrigger>
-                </div>
-                <CollapsibleContent className="space-y-2 ml-5">
-                  <div className="justify-start items-start grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-full">
-                    {authors.sort().map((author) => (
-                      <div key={author} className="flex items-center mr-1">
-                        <Checkbox
-                          id={author}
-                          className={theme === "dark" ? "text-foreground" : ""}
-                          checked={selectedAuthors.includes(author)}
-                          onChange={(e) =>
-                            handleAuthorCheckboxChange(author, e.target.checked)
-                          }
-                        />
-                        <label
-                          htmlFor={author}
-                          className={`ml-2 flex items-center ${
-                            selectedDates.includes(author)
-                              ? "font-bold text-accent-2"
-                              : ""
-                          }`}
-                          onClick={() => handleOpen("date")}
-                        >
-                          <p>
-                            {" "}
-                            {author}{" "}
-                            <span className="ml-1 text-accent-4">
-                              ({authorCounts[author]})
-                            </span>
-                          </p>
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                </CollapsibleContent>
-              </Collapsible>
-            </div> */}
           </div>
         </section>
 
@@ -1073,34 +955,6 @@ const BlogDisplayPage: FC = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="mx-auto p-2 border border-border rounded w-11/12 md:w-full md:h-12 lg:h-14 md:text-md lg:text-xl placeholder:text-accent-2"
           />
-        </section>
-
-        {/* Reading Length Times */}
-        <section
-          className={cn(
-            "grid grid-cols-1 space-y-3 md:space-y-0 md:grid-cols-4 md:gap-2 lg:gap-4",
-            isSmallDevice && "w-11/12 mx-auto"
-          )}
-        >
-          {readingLength
-            .sort((a, b) => {
-              if (a.length === b.length) {
-                return b.localeCompare(a);
-              }
-              return a.length - b.length;
-            })
-            .map((length, index) => (
-              <Button
-                variant={theme === "dark" ? "accent" : "outline"}
-                size={isMediumDevice ? "sm" : "default"}
-                className="capitalize"
-                key={index}
-                onClick={() => handleReadingLengthClick(length)}
-              >
-                {length} Articles{" "}
-                <small className="font-normal">({lengthCount[length]})</small>
-              </Button>
-            ))}
         </section>
 
         <section className="flex md:flex-row flex-col justify-center md:justify-between gap-2 mx-auto w-11/12 md:w-full">
@@ -1127,24 +981,6 @@ const BlogDisplayPage: FC = () => {
                   className="px-3 md:text-md lg:text-lg"
                 >
                   25 articles per page
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  onClick={() => handleArticlesPerPageChange(50)}
-                  className="px-3 md:text-md lg:text-lg"
-                >
-                  50 articles per page
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  onClick={() => handleArticlesPerPageChange(75)}
-                  className="px-3 md:text-md lg:text-lg"
-                >
-                  75 articles per page
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  onClick={() => handleArticlesPerPageChange(100)}
-                  className="px-3 md:text-md lg:text-lg"
-                >
-                  100 articles per page
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
