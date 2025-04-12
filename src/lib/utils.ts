@@ -39,6 +39,23 @@ export const splitAndTrimQuotes = (quote: string): string[] => {
 };
 
 /**
+ * Sorts an array of blog posts by their date in ascending order.
+ *
+ * @param array - The array of blog posts to be sorted.
+ * @returns A new array of blog posts sorted by date.
+ */
+export function sortBlogsByDate(array: BlogPost[]): BlogPost[] {
+  const newArray = array.sort((a, b) => {
+    const dateA = convertToDate(a.date);
+    const dateB = convertToDate(b.date);
+
+    return compareDates([dateA, dateB]);
+  });
+
+  return newArray;
+}
+
+/**
  * Formats a given date string into the format 'YYYY-MM-DD'.
  *
  * @param dateString - The date string to format.
