@@ -1,27 +1,21 @@
-import { PricingTier, ServiceTypeKeys } from "../types";
+import { PricingTier } from "../types";
 
 export interface Category {
   name: string;
-  type: ServiceTypeKeys;
   title: string;
   short: string;
-  info: Information;
-}
-
-export interface Information {
   description: string[];
-  detail: string;
-  short: string;
-  intro: string;
   sub: string[];
 }
-
 
 export interface SubItem {
   category: string;
   name: string;
-  info: SubInformation;
-  details: (ListDetail & { intro?: string[];})[];
+  title: string;
+  short: string;
+  startingPrice: number;
+  Icon: string;
+  pricingTiers: PricingTier[];
   cta: CTA;
 }
 
@@ -30,7 +24,6 @@ export interface ListDetail {
   description?: string;
   list?: ListDetail[];
 }
-
 
 export interface SubInformation {
   name: string;
@@ -49,8 +42,6 @@ export interface SubInformation {
   };
   pricingTiers?: PricingTier[];
 }
-
-
 
 export interface CTA {
   title: string;

@@ -25,15 +25,10 @@ export const about: Menu[] = [
     description:
       "Stay informed with expert insights, industry trends, and company updates.",
   },
+
   {
-    title: "Testimonials",
-    href: "/testimonials",
-    description:
-      "See what our clients say about their experiences working with us.",
-  },
-  {
-    title: "Portfolio",
-    href: "/portfolio",
+    title: "Our Amazing Past Projects",
+    href: "/past_projects",
     description:
       "Explore our past projects and see how we bring ideas to life.",
   },
@@ -43,7 +38,8 @@ export const aboutFeaturedLinks: Menu[] = [
   {
     title: "Our Past Projects",
     href: "/portfolio",
-    imageUrl: "/images/purple_logo_with_background.png",
+    imageUrl:
+      "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D",
     description:
       "Meet the dedicated staff who ensure the success of our programs, working behind the scenes to support student growth.",
   },
@@ -80,7 +76,8 @@ export const webDevelopmentFeaturedLinks: Menu[] = [
   {
     title: "Website Builder VS Custom Development",
     href: "/web_development/website_builder_vs_custom_development",
-    imageUrl: "/images/Class_Photos/Comic_Book/3659482_665914.jpg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1654618977232-a6c6dea9d1e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
     description:
       "Explore the innovative projects students create, showcasing their skills and creativity throughout their learning journey.",
   },
@@ -92,6 +89,12 @@ export const serviceCategories: Menu[] = [
     href: "/services",
     description:
       "Explore our range of flexible payment plans designed to fit your needs and budget seamlessly.",
+  },
+  {
+    title: "Testimonials",
+    href: "/services/testimonials",
+    description:
+      "See what our clients say about their experiences working with us.",
   },
   {
     title: "Enterprise-Grade Digital Solutions",
@@ -111,13 +114,15 @@ export const serviceFeaturedLinks: Menu[] = [
   {
     title: "Custom Pricing Tiers Made For You",
     href: "/services/pricing",
-    imageUrl: "/images/Class_Photos/Chess/30990092_141562.jpg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1560390591-15ee5df86045?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yJTIweW91fGVufDB8fDB8fHww",
     description: "Sign up for classes and start your learning journey",
   },
   {
     title: "End-to-End Website Development",
     href: "/services/comprehensive-website-solutions",
-    imageUrl: "/images/Class_Photos/Chess/30995092_141166.jpg",
+    imageUrl:
+      "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
     description: "Share your thoughts and suggestions with us.",
   },
 ];

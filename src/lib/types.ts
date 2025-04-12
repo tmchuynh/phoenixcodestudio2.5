@@ -14,8 +14,6 @@ export type NotFoundContextType = {
 
 export type LengthType = number | string;
 
-export type ServiceTypeKeys = "service" | "contract";
-
 export type DynamicButtonProps = {
   variant?:
     | "default"
