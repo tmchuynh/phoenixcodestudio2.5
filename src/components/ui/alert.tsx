@@ -1,66 +1,73 @@
-import * as React from "react"
-import { cva, type VariantProps } from "class-variance-authority"
+import { cva, type VariantProps } from "class-variance-authority";
+import * as React from "react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 const alertVariants = cva(
-  "relative w-full rounded-lg border px-4 py-3 text-sm grid has-[>svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[>svg]:gap-x-3 gap-y-0.5 items-start [&>svg]:size-4 [&>svg]:translate-y-0.5 [&>svg]:text-current",
+  "relative [&>svg]:top-4 [&>svg]:left-4 [&>svg]:absolute bg-background shadow-lg p-4 [&>svg~*]:pl-7 border dark:border-2 rounded-lg w-full text-foreground [&>svg]:text-foreground [&>svg+div]:translate-y-[-3px]",
   {
     variants: {
       variant: {
-        default: "bg-card text-card-foreground",
+        default: "text-foreground",
+        secondary:
+          "dark:border-secondary bg-secondary text-secondary-foreground [&>svg]:text-primary",
+        tertiary:
+          "dark:border-tertiary bg-tertiary text-tertiary-foreground [&>svg]:text-tertiary dark:[&>svg]:text-primary",
+        accent:
+          "dark:border-accent-2 bg-accent-3 text-muted dark:font-bold [&>svg]:text-accent-1",
+        warning:
+          "dark:border-chart-4 bg-chart-2 text-foreground font-bold [&>svg]:text-destructive",
         destructive:
-          "text-destructive bg-card [&>svg]:text-current *:data-[slot=alert-description]:text-destructive/90",
+          "border-destructive text-destructive [&>svg]:text-destructive",
       },
     },
     defaultVariants: {
       variant: "default",
     },
   }
-)
+);
 
-function Alert({
-  className,
-  variant,
-  ...props
-}: React.ComponentProps<"div"> & VariantProps<typeof alertVariants>) {
-  return (
-    <div
-      data-slot="alert"
-      role="alert"
-      className={cn(alertVariants({ variant }), className)}
-      {...props}
-    />
-  )
-}
+const Alert = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof alertVariants>
+>(({ className, variant, ...props }, ref) => (
+  <div
+    ref={ref}
+    role="alert"
+    className={cn(alertVariants({ variant }), className)}
+    {...props}
+  />
+));
+Alert.displayName = "Alert";
 
-function AlertTitle({ className, ...props }: React.ComponentProps<"div">) {
-  return (
-    <div
-      data-slot="alert-title"
-      className={cn(
-        "col-start-2 line-clamp-1 min-h-4 font-medium tracking-tight",
-        className
-      )}
-      {...props}
-    />
-  )
-}
+const AlertTitle = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLHeadingElement>
+>(({ className, ...props }, ref) => (
+  <h5
+    ref={ref}
+    className={cn(
+      "mb-1 lg:text-xl font-bold leading-none tracking-tight",
+      className
+    )}
+    {...props}
+  />
+));
+AlertTitle.displayName = "AlertTitle";
 
-function AlertDescription({
-  className,
-  ...props
-}: React.ComponentProps<"div">) {
-  return (
-    <div
-      data-slot="alert-description"
-      className={cn(
-        "text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&_p]:leading-relaxed",
-        className
-      )}
-      {...props}
-    />
-  )
-}
+const AlertDescription = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn(
+      "text-sm lg:text-lg font-medium [&_p]:leading-relaxed",
+      className
+    )}
+    {...props}
+  />
+));
+AlertDescription.displayName = "AlertDescription";
 
-export { Alert, AlertTitle, AlertDescription }
+export { Alert, AlertDescription, AlertTitle };
