@@ -1,77 +1,69 @@
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { formatNumber, parseReadingTimeToMinutes, setSlug } from "@/lib/utils";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "../ui/card";
 
-export default function ArticleCard({
-  post,
-}: {
-  post: {
-    id: number;
-    imageUrl: string;
-    author: { imageUrl: string; href: string; name: string; role: string };
-    href: string;
-    title: string;
-    datetime: string;
-    date: string;
-    description: string;
-    category: { href: string; title: string };
-  };
-}) {
+export default function BlogCard({ blog }: { blog: any }) {
+  const router = useRouter();
+
   return (
-    <article
-      key={post.id}
-      className="flex flex-col justify-between items-start"
-    >
-      <div className="relative w-full">
+    <Card className="shadow-lg hover:shadow-2xl border hover:border-gray-200 border-transparent rounded-2xl max-w-md transition">
+      <CardHeader className="relative h-56">
         <Image
-          alt=""
-          src={post.imageUrl}
-          className="bg-gray-100 rounded-2xl w-full aspect-video object-cover sm:aspect-2/1 lg:aspect-3/2"
-          width={400}
-          height={300}
+          src={`/images/blog_card_images/${setSlug(blog.title)}.jpg`}
+          alt={blog.title}
+          layout="fill"
+          className="rounded-t-2xl object-cover"
+          priority
         />
-        <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset" />
-      </div>
-      <div className="max-w-xl">
-        <div className="flex items-center gap-x-4 mt-8 text-xs">
-          <time dateTime={post.datetime} className="text-gray-500">
-            {post.date}
-          </time>
-          <a
-            href={post.category.href}
-            className="relative z-10 bg-gray-50 hover:bg-gray-100 px-3 py-1.5 rounded-full font-medium text-gray-600"
-          >
-            {post.category.title}
-          </a>
-        </div>
-        <div className="group relative">
-          <h3 className="mt-3 font-semibold text-gray-900 text-lg/6 group-hover:text-gray-600">
-            <a href={post.href}>
-              <span className="absolute inset-0" />
-              {post.title}
-            </a>
-          </h3>
-          <p className="mt-5 text-gray-600 text-sm/6 line-clamp-3">
-            {post.description}
-          </p>
-        </div>
-        <div className="relative flex items-center gap-x-4 mt-8">
-          <Image
-            alt=""
-            src={post.author.imageUrl}
-            className="bg-gray-100 rounded-full size-10"
-            width={40}
-            height={40}
-          />
-          <div className="text-sm/6">
-            <p className="font-semibold text-gray-900">
-              <a href={post.author.href}>
-                <span className="absolute inset-0" />
-                {post.author.name}
-              </a>
-            </p>
-            <p className="text-gray-600">{post.author.role}</p>
+      </CardHeader>
+      <CardContent className="p-4">
+        <CardTitle className="mb-2 font-bold text-2xl text-gray-900">
+          {blog.title}
+        </CardTitle>
+        {(blog.wordCount || blog.time) && (
+          <div className="flex justify-between mb-2 text-gray-500 text-sm">
+            {blog.wordCount && (
+              <span>
+                <strong>Words:</strong> {formatNumber(blog.wordCount)}
+              </span>
+            )}
+            {blog.time && (
+              <span>
+                <strong>Read:</strong> {parseReadingTimeToMinutes(blog.time)} m
+              </span>
+            )}
           </div>
-        </div>
-      </div>
-    </article>
+        )}
+        <CardDescription className="mb-4 text-gray-700">
+          {blog.excerpt}
+        </CardDescription>
+        {blog.topics && blog.topics.length > 0 && (
+          <div className="flex flex-wrap gap-2">
+            {blog.topics.sort().map((topic: string, index: number) => (
+              <Badge key={index} variant="secondary" className="cursor-pointer">
+                {topic}
+              </Badge>
+            ))}
+          </div>
+        )}
+      </CardContent>
+      <CardFooter className="px-4 pt-0 pb-4">
+        <Button
+          onClick={() => router.push(`/info/blogs/${setSlug(blog.title)}`)}
+        >
+          Read More
+        </Button>
+      </CardFooter>
+    </Card>
   );
 }
