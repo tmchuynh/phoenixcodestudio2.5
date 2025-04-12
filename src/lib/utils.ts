@@ -1,6 +1,7 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { cssUnit } from "./constants/constants";
+import { BlogPost } from "./interfaces/blogs";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -20,7 +21,10 @@ export const formatCurrency = (value: number) => {
 };
 
 export const capitalize = (str: string) => {
-  return str.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
+  return str
+    .replace(/-/g, " ")
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
 };
 
 /**
@@ -444,4 +448,20 @@ export function getDaySuffix(day: number): string {
     default:
       return "th";
   }
+}
+/**
+ * Converts an object with day, month, and year properties into a JavaScript Date object.
+ * Note: Month is 0-indexed in JavaScript Date (0 = January, 11 = December),
+ * but we assume the input month is 1-indexed (1 = January, 12 = December).
+ *
+ * @param date - An object containing day, month, and year properties.
+ * @returns A JavaScript Date object representing the input date.
+ */
+function convertToDate(date: {
+  day: number;
+  month: number;
+  year: number;
+}): Date {
+  // Subtract 1 from month because JavaScript Date months are 0-indexed
+  return new Date(date.year, date.month - 1, date.day);
 }
