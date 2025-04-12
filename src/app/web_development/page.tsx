@@ -8,8 +8,8 @@ export default function WebDevelopment() {
               Web Development
             </h2>
             <p className="mt-4 text-gray-500">
-              We create beautiful, functional websites that help you achieve your
-              business goals.
+              We create beautiful, functional websites that help you achieve
+              your business goals.
             </p>
           </div>
         </div>

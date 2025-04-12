@@ -1,4 +1,4 @@
-export default function Example() {
+export default function CallToAction() {
   return (
     <div className="bg-white">
       <div className="mx-auto px-6 lg:px-8 py-24 sm:py-32 max-w-7xl">

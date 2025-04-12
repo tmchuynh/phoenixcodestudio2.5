@@ -1,4 +1,4 @@
-import HeaderImageTiles from "@/components/headers/page_headers/Header_ImageTiles";
+import HeaderImageTiles from "@/components/headers/page_headers/HeaderImageTiles";
 
 export default function Example() {
   return (

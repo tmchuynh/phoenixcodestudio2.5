@@ -1,12 +1,12 @@
 "use client";
-import CallToAction from "@/components/CTAs/CallToAction";
-import CannotFind from "@/components/states/CannotFind";
-import LoadingIndicator from "@/components/states/Loading";
+import CallToActionImage from "@/components/CTA/Split_Image";
+import LoadingIndicator from "@/components/states/loading/Loading";
+import CannotFind from "@/components/states/not-found/CannotFind";
 import { Button } from "@/components/ui/button";
-import { Category } from "@/lib/interfaces";
-import { subServiceDetails } from "@/lib/sub-services";
-import useMediumScreen from "@/lib/useMediumScreen";
-import useSmallScreen from "@/lib/useSmallScreen";
+import { subServiceDetails } from "@/lib/constants/services/sub-services";
+import { Category } from "@/lib/interfaces/services";
+import useMediumScreen from "@/lib/screens/useMediumScreen";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { formatName, setSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useParams, useRouter } from "next/navigation";
@@ -74,32 +74,23 @@ export default function CategoryPage() {
   return (
     <main className="mx-auto py-6 w-10/12 md:w-11/12">
       <h1>{service?.name && formatName(service?.name)}</h1>
-      <div className="mb-4">
-        {" "}
-        {isSmallScreen
-          ? service?.info.short
-          : isMediumScreen
-          ? service?.info.detail
-          : service?.info.description.map((sentence, index) => {
-              return <p key={index}>{sentence}</p>;
-            })}
-      </div>
+      <div className="mb-4"> {service?.short}</div>
 
-      <h2>Discover What We Can Do For You</h2>
-      <p>{service?.info.intro}</p>
+      <h2>{service?.title}</h2>
+      <p>{service?.description}</p>
 
       <section>
-        {service?.info?.sub.map((sub, index) => {
+        {service?.sub.map((sub, index) => {
           const subServiceDetail = subServiceDetails.find(
             (item) => item.name === sub
           );
 
-          if (subServiceDetail && subServiceDetail.info.pricingTiers) {
+          if (subServiceDetail && subServiceDetail.pricingTiers) {
             return (
               <div className="lg:flex lg:flex-col my-4" key={index}>
                 <h3>Pricing for {formatName(subServiceDetail.name)}</h3>
                 <ul>
-                  {subServiceDetail.info.pricingTiers.map(
+                  {subServiceDetail.pricingTiers.map(
                     (pricing, pricingIndex) => (
                       <li key={pricingIndex}>
                         <strong>{pricing.name}: </strong>
@@ -122,7 +113,7 @@ export default function CategoryPage() {
         })}
       </section>
 
-      <CallToAction />
+      <CallToActionImage />
     </main>
   );
 }

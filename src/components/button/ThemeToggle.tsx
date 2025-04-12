@@ -24,20 +24,20 @@ import { Toggle } from "../ui/toggle";
  */
 export const ThemeToggle = (): JSX.Element | null => {
   const { theme, setTheme, systemTheme } = useTheme();
-  const [mounted, setMounted] = useState( false );
+  const [mounted, setMounted] = useState(false);
 
-  useEffect( () => {
-    setMounted( true );
-    if ( !theme || theme === "system" ) {
-      setTheme( systemTheme || "light" );
+  useEffect(() => {
+    setMounted(true);
+    if (!theme || theme === "system") {
+      setTheme(systemTheme || "light");
     }
-  }, [systemTheme, theme, setTheme] );
+  }, [systemTheme, theme, setTheme]);
 
   const toggleTheme = () => {
-    setTheme( theme === "dark" ? "light" : "dark" );
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  if ( !mounted ) {
+  if (!mounted) {
     return null;
   }
 

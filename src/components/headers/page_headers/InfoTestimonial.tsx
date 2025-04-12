@@ -8,23 +8,9 @@ import Image from "next/image";
 export default function InfoTestimonial() {
   return (
     <div className="relative py-24 sm:py-32 overflow-hidden isolate">
-      <div
-        aria-hidden="true"
-        className="-top-80 md:top-20 xl:top-3 left-[max(6rem,33%)] sm:left-1/2 -z-10 absolute blur-3xl lg:ml-20 xl:ml-56 transform-gpu"
-      >
-        <div
-          style={{
-            clipPath:
-              "polygon(63.1% 29.6%, 100% 17.2%, 76.7% 3.1%, 48.4% 0.1%, 44.6% 4.8%, 54.5% 25.4%, 59.8% 49.1%, 55.3% 57.9%, 44.5% 57.3%, 27.8% 48%, 35.1% 81.6%, 0% 97.8%, 39.3% 100%, 35.3% 81.5%, 97.2% 52.8%, 63.1% 29.6%)",
-          }}
-          className="bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 w-[50.0625rem] aspect-801/1036"
-        />
-      </div>
       <div className="mx-auto px-6 lg:px-8 max-w-7xl">
         <div className="mx-auto lg:mx-0 max-w-2xl">
-          <h4>
-            Deploy faster
-          </h4>
+          <h4>Deploy faster</h4>
           <h1 className="mt-2 font-semibold text-4xl text-pretty sm:text-5xl tracking-tight">
             A better workflow
           </h1>
@@ -76,9 +62,7 @@ export default function InfoTestimonial() {
                   height={300}
                 />
                 <div className="text-sm/6">
-                  <div className="font-semibold">
-                    Brenna Goyette
-                  </div>
+                  <div className="font-semibold">Brenna Goyette</div>
                   <div className="">@brenna</div>
                 </div>
               </figcaption>
@@ -142,9 +126,7 @@ export default function InfoTestimonial() {
               ultrices hac adipiscing egestas. Iaculis convallis ac tempor et
               ut. Ac lorem vel integer orci.
             </p>
-            <h3 className="mt-4">
-              No server? No problem.
-            </h3>
+            <h3 className="mt-4">No server? No problem.</h3>
             <p>
               Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
               consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod

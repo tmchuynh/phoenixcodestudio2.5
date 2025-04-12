@@ -1,11 +1,11 @@
 "use client";
 
-import CannotFind from "@/components/states/CannotFind";
-import LoadingIndicator from "@/components/states/Loading";
+import LoadingIndicator from "@/components/states/loading/Loading";
+import CannotFind from "@/components/states/not-found/CannotFind";
 import { Button } from "@/components/ui/button";
-import { SubItem } from "@/lib/interfaces";
-import useMediumScreen from "@/lib/useMediumScreen";
-import useSmallScreen from "@/lib/useSmallScreen";
+import { SubItem } from "@/lib/interfaces/services";
+import useMediumScreen from "@/lib/screens/useMediumScreen";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -64,52 +64,13 @@ export default function ServicePage() {
 
   return (
     <main className="mx-auto py-6 w-10/12 md:w-11/12">
-      <h1>{serviceData?.info.name}</h1>
-      <p className="mb-4">
-        {isSmallScreen
-          ? serviceData?.info.short
-          : isMediumScreen
-          ? serviceData?.info.details
-          : serviceData?.info.info}
-      </p>
+      <h1>{serviceData?.name}</h1>
+      <p className="mb-4">{serviceData?.short}</p>
 
-      {serviceData?.details?.map((section, sectionIndex) => (
-        <section key={sectionIndex}>
-          <h2>{section.title}</h2>
-          {section.intro &&
-            section.intro.map((intro, introIndex) => (
-              <p key={introIndex}>{intro}</p>
-            ))}
-
-          {section.lists && (
-            <ul>
-              {section.lists.map((list, listIndex) => (
-                <li key={listIndex}>
-                  <strong>{list.title ? `${list.title}:` : ""} </strong>
-                  {list.description}
-                  {list.info && (
-                    <ul>
-                      {list.info.map((item, itemIndex) => (
-                        <li key={itemIndex}>
-                          <strong>{item.title && item.title}: </strong>
-                          {item.description && item.description}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
-      ))}
-
-      {serviceData?.info.pricingTiers && (
+      {serviceData?.pricingTiers && (
         <div className="mt-4">
-          <h2>{serviceData?.info.pricingTierIntro?.title}</h2>
-          <p> {serviceData?.info.pricingTierIntro?.text}</p>
           <ul>
-            {serviceData.info.pricingTiers.map((prices, index) => (
+            {serviceData.pricingTiers.map((prices, index) => (
               <li key={index}>
                 <div>
                   <strong>{prices.name}:</strong> {prices.info}

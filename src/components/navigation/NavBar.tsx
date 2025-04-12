@@ -34,7 +34,7 @@ export function NavBar() {
         <DockNavigation />
       ) : (
         <div className="bg-primary py-5 w-full">
-          <div className="flex justify-around mx-auto w-11/12 text-primary-foreground">
+          <div className="flex justify-around items-center mx-auto w-11/12 text-primary-foreground">
             <Image
               src="/images/logo_white.png"
               alt="IAC intials logo"
@@ -55,53 +55,6 @@ export function NavBar() {
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger>About PCS</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="gap-3 grid lg:grid-cols-3 lg:grid-rows-3 p-4 md:w-[35em] lg:w-[45em]">
-                      {aboutFeaturedLinks.map((link, index) => (
-                        <li
-                          className="col-span-2 xl:col-span-3 row-span-3 xl:row-span-2 m-0"
-                          key={index}
-                        >
-                          {NavigationImageItem({ link })}
-                        </li>
-                      ))}
-                      {about.map((link, index) => (
-                        <ListItem
-                          href={link.href}
-                          title={`${link.title}`}
-                          key={index}
-                        >
-                          {link.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger>
-                    What's Web Development
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="gap-3 grid lg:grid-cols-4 lg:grid-rows-2 p-4 md:w-[35em] lg:w-[50em]">
-                      {webDevelopmentFeaturedLinks.map((link, index) => (
-                        <li className="col-span-2 row-span-2 m-0" key={index}>
-                          {NavigationImageItem({ link })}
-                        </li>
-                      ))}
-                      {web_development.map((program, index) => (
-                        <ListItem
-                          key={index}
-                          title={program.title}
-                          href={program.href}
-                        >
-                          {program.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -126,7 +79,53 @@ export function NavBar() {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>About PCS</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="gap-3 grid lg:grid-cols-3 lg:grid-rows-3 p-4 md:w-[35em] lg:w-[45em]">
+                      {aboutFeaturedLinks.map((link, index) => (
+                        <li
+                          className="col-span-2 xl:col-span-3 row-span-3 xl:row-span-2 m-0"
+                          key={index}
+                        >
+                          {NavigationImageItem({ link })}
+                        </li>
+                      ))}
+                      {about.map((link, index) => (
+                        <ListItem
+                          href={link.href}
+                          title={`${link.title}`}
+                          key={index}
+                        >
+                          {link.description}
+                        </ListItem>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem className="lg:block hidden">
+                  <NavigationMenuTrigger>
+                    What's Web Development
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="gap-3 grid lg:grid-cols-4 lg:grid-rows-2 p-4 md:w-[35em] lg:w-[50em]">
+                      {webDevelopmentFeaturedLinks.map((link, index) => (
+                        <li className="col-span-2 row-span-2 m-0" key={index}>
+                          {NavigationImageItem({ link })}
+                        </li>
+                      ))}
+                      {web_development.map((program, index) => (
+                        <ListItem
+                          key={index}
+                          title={program.title}
+                          href={program.href}
+                        >
+                          {program.description}
+                        </ListItem>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -144,8 +143,8 @@ export function NavBar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
+              <ThemeToggle />
             </NavigationMenu>
-            <ThemeToggle />
           </div>
         </div>
       )}

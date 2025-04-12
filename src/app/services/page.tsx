@@ -1,8 +1,8 @@
 "use client";
-import LoadingIndicator from "@/components/loading/Loading";
+import IncentivesImage from "@/components/headers/page_headers/IncentivesImage";
+import LoadingIndicator from "@/components/states/loading/Loading";
 import { Button } from "@/components/ui/button";
 import { allServices } from "@/lib/constants/services/service-categories";
-import useMediumScreen from "@/lib/screens/useMediumScreen";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { setSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
@@ -11,7 +11,6 @@ import { FC, useEffect, useState } from "react";
 
 const ServicesPage: FC = () => {
   const router = useRouter();
-  const isMediumScreen = useMediumScreen();
   const isSmallScreen = useSmallScreen();
   const { theme } = useTheme();
   const [loading, setLoading] = useState(true);
@@ -39,6 +38,7 @@ const ServicesPage: FC = () => {
 
   return (
     <main className="mx-auto py-6 w-10/12 md:w-11/12">
+      <IncentivesImage />
       {/* Introduction Section */}
       <section className="mb-8">
         <h1>Digital Services by Phoenix Code Studio</h1>
@@ -65,18 +65,12 @@ const ServicesPage: FC = () => {
             </h2>
 
             {isSmallScreen ? (
-              <p>{service.info.short}</p>
-            ) : isMediumScreen ? (
-              <p>{service.info.detail}</p>
+              <p>{service.short}</p>
             ) : (
               <>
-                <p>{service.info.intro}</p>
-
-                {service.info.description.map(
-                  (info: string, infoIndex: number) => (
-                    <p key={infoIndex}>{info}</p>
-                  )
-                )}
+                {service.description.map((info: string, infoIndex: number) => (
+                  <p key={infoIndex}>{info}</p>
+                ))}
               </>
             )}
 

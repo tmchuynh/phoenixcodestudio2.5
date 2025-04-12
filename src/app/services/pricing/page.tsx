@@ -1,11 +1,10 @@
 "use client";
-import CallToAction from "@/components/CTAs/CallToAction";
-import LoadingIndicator from "@/components/states/Loading";
+import CallToAction from "@/components/CTA/Simple";
+import LoadingIndicator from "@/components/states/loading/Loading";
 import { Button } from "@/components/ui/button";
-import { SidebarSeparator } from "@/components/ui/sidebar";
-import { allServices } from "@/lib/service-categories";
-import { subServiceDetails } from "@/lib/sub-services";
-import useSmallScreen from "@/lib/useSmallScreen";
+import { allServices } from "@/lib/constants/services/service-categories";
+import { subServiceDetails } from "@/lib/constants/services/sub-services";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { formatName, setSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
@@ -50,9 +49,7 @@ const PricingPage: FC = () => {
       </p>
 
       <section className="my-8">
-        <SidebarSeparator className="bg-muted h-0.5" />
         <CallToAction />
-        <SidebarSeparator className="bg-muted h-0.5" />
       </section>
 
       {/* Service 1: Website Services */}
@@ -60,7 +57,7 @@ const PricingPage: FC = () => {
         <section className="my-8" key={index}>
           <div className="flex flex-col pb-3">
             <h2>{service.short}</h2>
-            {service.info.description.map((info, SIndex) => (
+            {service.description.map((info, SIndex) => (
               <p key={SIndex}>{info}</p>
             ))}
             <Button
@@ -73,17 +70,17 @@ const PricingPage: FC = () => {
             </Button>
           </div>
 
-          {service.info.sub.map((subService, subIndex) => {
+          {service.sub.map((subService, subIndex) => {
             const subServiceDetail = subServiceDetails.find(
               (item) => item.name === subService
             );
 
-            if (subServiceDetail && subServiceDetail.info.pricingTiers) {
+            if (subServiceDetail && subServiceDetail.pricingTiers) {
               return (
                 <div key={subIndex}>
                   <h3>Pricing for {formatName(subServiceDetail.name)}</h3>
                   <ul>
-                    {subServiceDetail.info.pricingTiers.map(
+                    {subServiceDetail.pricingTiers.map(
                       (pricing, pricingIndex) => (
                         <li key={pricingIndex}>
                           <strong>{pricing.name}: </strong>
