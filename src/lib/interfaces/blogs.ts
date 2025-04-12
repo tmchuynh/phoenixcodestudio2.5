@@ -9,10 +9,10 @@ export interface BlogPost {
   intro: string[];
   list?: ListDetail[];
   conclusions: string[];
+  date: { day: number; month: number; year: number };
 }
 
 export interface Blog {
   title: string;
   excerpt: string;
-  icons: string[];
 }
