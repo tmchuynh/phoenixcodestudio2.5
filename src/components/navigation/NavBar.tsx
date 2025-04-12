@@ -12,6 +12,7 @@ import {
   about,
   aboutFeaturedLinks,
   contact,
+  contactFeaturedLinks,
   serviceCategories,
   serviceFeaturedLinks,
   web_development,
@@ -58,15 +59,7 @@ export function NavBar() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="gap-3 grid lg:grid-cols-2 lg:grid-rows-5 p-4 md:w-[35em] lg:w-[45em]">
-                      {serviceFeaturedLinks.map((link, index) => (
-                        <li
-                          className="col-span-2 lg:col-span-1 lg:row-span-3 m-0"
-                          key={index}
-                        >
-                          {NavigationImageItem({ link })}
-                        </li>
-                      ))}
+                    <ul className="gap-3 grid lg:grid-cols-2 lg:grid-rows-5 p-4 md:w-[35em] lg:w-[45em] xl:w-[50em]">
                       {serviceCategories.map((link, index) => (
                         <ListItem
                           href={link.href}
@@ -76,16 +69,24 @@ export function NavBar() {
                           {link.description}
                         </ListItem>
                       ))}
+                      {serviceFeaturedLinks.map((link, index) => (
+                        <li
+                          className="col-span-2 lg:col-span-1 lg:row-span-3 m-0"
+                          key={index}
+                        >
+                          {NavigationImageItem({ link })}
+                        </li>
+                      ))}
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>About PCS</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="gap-3 grid lg:grid-cols-3 lg:grid-rows-3 p-4 md:w-[35em] lg:w-[45em]">
+                    <ul className="gap-3 grid lg:grid-cols-4 lg:grid-rows-3 p-4 md:w-[35em] lg:w-[45em] xl:w-[60em]">
                       {aboutFeaturedLinks.map((link, index) => (
                         <li
-                          className="col-span-2 xl:col-span-3 row-span-3 xl:row-span-2 m-0"
+                          className="col-span-4 xl:col-span-4 row-span-2 xl:row-span-2 m-0"
                           key={index}
                         >
                           {NavigationImageItem({ link })}
@@ -105,10 +106,10 @@ export function NavBar() {
                 </NavigationMenuItem>
                 <NavigationMenuItem className="lg:block hidden">
                   <NavigationMenuTrigger>
-                    What's Web Development
+                    What's Your Story?
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="gap-3 grid lg:grid-cols-4 lg:grid-rows-2 p-4 md:w-[35em] lg:w-[50em]">
+                    <ul className="gap-3 grid xl:grid-cols-4 xl:grid-rows-2 p-4 md:w-[35em] lg:w-[45em] xl:w-[60em]">
                       {webDevelopmentFeaturedLinks.map((link, index) => (
                         <li className="col-span-2 row-span-2 m-0" key={index}>
                           {NavigationImageItem({ link })}
@@ -129,7 +130,15 @@ export function NavBar() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="gap-3 grid lg:grid-cols-2 lg:grid-rows-5 p-4 md:w-[35em] lg:w-[45em]">
+                    <ul className="gap-3 grid grid-cols-2 lg:grid-cols-3 grid-rows-3 lg:grid-rows-2 p-4 md:w-[35em] lg:w-[40em]">
+                      {contactFeaturedLinks.map((link, index) => (
+                        <li
+                          className="col-span-1 lg:col-span-3 row-span-3 lg:row-span-2 m-0"
+                          key={index}
+                        >
+                          {NavigationImageItem({ link })}
+                        </li>
+                      ))}
                       {contact.map((link, index) => (
                         <ListItem
                           href={link.href}
@@ -162,15 +171,15 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "flex flex-col h-full select-none rounded-md p-4 no-underline outline-none transition-colors group hover:bg-secondary hover:text-secondary-foreground focus-visible:ring-ring/50 focus-visible:outline-none focus-visible:ring-[3px] data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
+            "flex flex-col h-full select-none rounded-md p-4 no-underline outline-none transition-colors group hover:bg-tertiary hover:text-tertiary-foreground focus-visible:ring-ring/50 focus-visible:outline-none focus-visible:ring-[3px] data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
             className
           )}
           {...props}
         >
-          <div className="font-[PlayfairDisplay] font-medium text-lg leading-none">
+          <div className="font-[QuickSand] font-medium text-lg leading-none">
             {title}
           </div>
-          <p className="font-[YanoneKaffeesatz] text-sm group-hover:text-background leading-snug">
+          <p className="font-[MavenPro] font-normal text-xs group-hover:text-background leading-snug">
             {children}
           </p>
         </a>
@@ -191,7 +200,7 @@ function NavigationImageItem(link: { link: Menu }) {
     >
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-background/95 to-background/50 rounded-md"></div>
-      <div className="relative mt-4 mb-2 font-medium text-foreground text-lg">
+      <div className="relative mt-12 -mb-5 font-[QuickSand] font-medium text-foreground text-lg uppercase">
         {link.link.title}
       </div>
       <p className="relative font-[GreatVibes] text-foreground text-lg lg:text-xl tracking-wider">
