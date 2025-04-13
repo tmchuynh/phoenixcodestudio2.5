@@ -91,7 +91,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
       items.push(
         <BreadcrumbSeparator
           key={`sep-${currentHref}-${currentSegment}`}
-          className="mr-0 ml-1 dark:text-pretty"
+          className="mr-0 ml-1 dark:text-fancy"
         >
           <TbSlashes />
         </BreadcrumbSeparator>
@@ -126,7 +126,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         items.push(
           <BreadcrumbSeparator
             key="sep-dots"
-            className="mr-0 ml-0 dark:text-pretty"
+            className="mr-0 ml-0 dark:text-fancy"
           >
             <TbSlashes />
           </BreadcrumbSeparator>
@@ -143,7 +143,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         items.push(
           <BreadcrumbSeparator
             key="sep-dots-second"
-            className="mr-0 ml-0 dark:text-pretty"
+            className="mr-0 ml-0 dark:text-fancy"
           >
             <TbSlashes />
           </BreadcrumbSeparator>
@@ -163,7 +163,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         items.push(
           <BreadcrumbSeparator
             key={`sep-${secondHref}-${secondSegment}`}
-            className="mr-0 ml-1 dark:text-pretty"
+            className="mr-0 ml-1 dark:text-fancy"
           >
             <TbSlashes />
           </BreadcrumbSeparator>
@@ -192,7 +192,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
           items.push(
             <BreadcrumbSeparator
               key={`sep-${href}`}
-              className="mr-0 ml-1 dark:text-pretty"
+              className="mr-0 ml-1 dark:text-fancy"
             >
               <TbSlashes />
             </BreadcrumbSeparator>
@@ -229,7 +229,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         items.push(
           <BreadcrumbSeparator
             key={`sep-${href}`}
-            className="mx-4 dark:text-pretty"
+            className="mx-4 dark:text-fancy"
           >
             <TbSlashes />
           </BreadcrumbSeparator>
