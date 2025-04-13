@@ -1,10 +1,12 @@
 "use client";
+import DynamicButton from "@/components/button/button-dynamic";
 import IncentivesImage from "@/components/headers/page_headers/IncentivesImage";
 import LoadingIndicator from "@/components/states/loading/Loading";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { allServices } from "@/lib/constants/services/service-categories";
+import { subServiceDetails } from "@/lib/constants/services/sub-services";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { generateSlug } from "@/lib/utils";
+import { capitalize, generateSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import { FC, useEffect, useState } from "react";
@@ -30,80 +32,69 @@ const ServicesPage: FC = () => {
    *
    * @param {string} serviceCategory - The name of the service category to navigate to.
    */
-  const navigateToCategory = (serviceCategory: string) => {
+  const navigateToCategory = (serviceCategory: string, service: string) => {
     const formattedCategoryName = generateSlug(serviceCategory);
+    const formattedServiceName = generateSlug(service);
 
-    router.push(`/services/${formattedCategoryName}`);
+    router.push(`/services/${formattedCategoryName}/${formattedServiceName}`);
   };
 
   return (
     <main className="mx-auto py-6 w-10/12 md:w-11/12">
       <IncentivesImage />
-      {/* Introduction Section */}
-      <section className="mb-8">
-        <h1>Digital Services by Phoenix Code Studio</h1>
-        <p>
-          Unlock your business’s full potential with our all-embracing digital
-          solutions. From cutting-edge web development that delivers
-          high-performance websites to intuitive design that enhances user
-          experience, we craft strategies that make an impact. Our expertise in
-          content creation and digital marketing ensures your brand stands out,
-          driving engagement, increasing visibility, and boosting conversions.
-          Whether you're launching a new venture, reimagining your online
-          presence, or expanding into new markets, we provide tailored solutions
-          that align with your vision and set you apart in today’s competitive
-          digital landscape.
-        </p>
-      </section>
 
       {/* Company Services Section */}
-      {allServices.map((service, index) => (
-        <section className="my-20 pb-9" key={index}>
-          <div className="flex flex-col pb-3">
-            <h2 className="mb-6 font-semibold text-3xl text-center text-secondary">
-              {service.title}
-            </h2>
+      {allServices.map((category, index) => (
+        <div key={index} className="my-20">
+          <h1>{capitalize(category.name)}</h1>
+          <div className="gap-4 lg:gap-6 grid grid-cols-1 lg:grid-cols-2">
+            {category.sub.map((subService, subIndex) => {
+              const subServiceDetail = subServiceDetails.find(
+                (item) => item.name === subService
+              );
 
-            {isSmallScreen ? (
-              <p>{service.short}</p>
-            ) : (
-              <>
-                {service.description.map((info: string, infoIndex: number) => (
-                  <p key={infoIndex}>{info}</p>
-                ))}
-              </>
-            )}
+              if (subServiceDetail) {
+                return (
+                  <Card key={subIndex} className="shadow-md">
+                    <CardContent className="flex flex-col">
+                      <h3>{capitalize(subServiceDetail.name)}</h3>
 
-            <div className="md:gap-10 grid grid-cols-1 md:grid-cols-2 lg:px-24">
-              <Button
-                className="mt-6 w-full self-start"
-                variant={theme === "dark" ? "accent" : "outline"}
-                size={isSmallScreen ? "sm" : "default"}
-                onClick={() => navigateToCategory(service.name)}
-              >
-                View More Details
-              </Button>
+                      {isSmallScreen ? (
+                        <p>{subServiceDetail.info.short}</p>
+                      ) : (
+                        <>
+                          {subServiceDetail.info.intro.map(
+                            (info: string, infoIndex: number) => (
+                              <p key={infoIndex}>{info}</p>
+                            )
+                          )}
+                        </>
+                      )}
+                    </CardContent>
 
-              <Button
-                className="mt-6 w-full self-start"
-                variant={theme === "dark" ? "accent" : "outline"}
-                size={isSmallScreen ? "sm" : "default"}
-                onClick={() => router.push("/services/pricing/payment-plans")}
-              >
-                Explore Our Payment Plans
-              </Button>
-            </div>
+                    <CardFooter>
+                      <DynamicButton
+                        onClick={() =>
+                          navigateToCategory(
+                            category.name,
+                            subServiceDetail.name
+                          )
+                        }
+                      >
+                        View More Details
+                      </DynamicButton>
+                      <DynamicButton
+                        onClick={() => router.push("/get_in_touch")}
+                      >
+                        Contact Us Today!
+                      </DynamicButton>
+                    </CardFooter>
+                  </Card>
+                );
+              }
+            })}
           </div>
-
-          {/* <SubServiceDetails service={service} index={index} /> */}
-
-          <Button
-            onClick={() => router.push("/get_in_touch")}
-            className="my-15 py-10 md:py-0 w-full text-wrap lg:text-lg"
-          >
-            Book a Consultation Today to Discuss {service.short}
-          </Button>
-        </section>
+        </div>
       ))}
     </main>
   );
