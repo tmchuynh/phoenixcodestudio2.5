@@ -491,7 +491,7 @@ export function getDaySuffix(day: number): string {
  * @param date - An object containing day, month, and year properties.
  * @returns A JavaScript Date object representing the input date.
  */
-function convertToDate(date: {
+export function convertToDate(date: {
   day: number;
   month: number;
   year: number;
