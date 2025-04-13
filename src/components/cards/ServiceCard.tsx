@@ -1,57 +1,67 @@
 "use client";
 
-import { SubItem } from "@/lib/interfaces/services";
+import { Category } from "@/lib/interfaces/services";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { capitalize, generateSlug } from "@/lib/utils";
+import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
-import { Button } from "../ui/button";
+import DynamicButton from "../button/button-dynamic";
 
-export default function SummaryCard({ item }: { item: SubItem }) {
+export default function ServiceDetails({
+  category,
+  index,
+}: {
+  category: Category;
+  index: number;
+}) {
+  const isSmallScreen = useSmallScreen();
   const router = useRouter();
+  const { theme } = useTheme();
 
-  /**
-   * Navigates to the details page of a specific service.`
-   *
-   * @param {string} serviceName - The name of the service to navigate to.
-   */
-  const navigateToDetails = (serviceName: string) => {
-    const formattedServiceName = generateSlug(serviceName);
-
-    router.push(`/services/${item.category}/${formattedServiceName}`);
+  const navigateToCategory = (serviceCategory: string) => {
+    const formattedCategoryName = generateSlug(serviceCategory);
+    router.push(`/services/${formattedCategoryName}`);
   };
 
   return (
-    <div className="shadow hover:shadow-lg p-6 border rounded-lg transition-all">
-      {/* Category (if available) */}
-      {item.category && (
-        <div className="mb-2 text-sm">{capitalize(item.category)}</div>
-      )}
+    <div className="py-4">
+      <div
+        className="shadow hover:shadow-lg p-6 border rounded-lg transition-all"
+        key={index}
+      >
+        {/* Category (if available) */}
+        {category.name && <h4>{capitalize(category.name)}</h4>}
 
-      {/* Header: optional icon and title */}
-      <div className="flex items-center mb-4">
-        <h3 className="font-bold text-2xl">{capitalize(item.name)}</h3>
+        {isSmallScreen ? (
+          <p className="mb-4">{category.short}</p>
+        ) : (
+          <>
+            {category.description.map((info: string, infoIndex: number) => (
+              <p className="mb-2" key={infoIndex}>
+                {info}
+              </p>
+            ))}
+          </>
+        )}
       </div>
 
-      {/* Item title from the detailed information (if available) */}
-      {item.info.title && <p className="mb-2 text-lg">{item.info.title}</p>}
+      <div className="md:gap-10 grid grid-cols-1 md:grid-cols-2">
+        <DynamicButton
+          className="mt-6 w-full self-start"
+          variant={theme === "dark" ? "accent" : "outline"}
+          onClick={() => navigateToCategory(category.name)}
+        >
+          View More Details
+        </DynamicButton>
 
-      {/* Short description as the summary content; fall back to full description */}
-      <p className="mb-4">{item.info.short}</p>
-
-      {/* Starting price, if available */}
-      {item.info.startingPrice !== undefined && (
-        <div className="mb-4">
-          <span className="font-semibold text-xl">
-            ${item.info.startingPrice}
-          </span>
-        </div>
-      )}
-
-      {/* Call-to-Action button */}
-      {item.cta && (
-        <Button onClick={() => navigateToDetails(item.info.name)}>
-          Learn More
-        </Button>
-      )}
+        <DynamicButton
+          className="mt-6 w-full self-start"
+          variant={theme === "dark" ? "accent" : "outline"}
+          onClick={() => router.push("/services/pricing/payment-plans")}
+        >
+          Explore Our Payment Plans
+        </DynamicButton>
+      </div>
     </div>
   );
 }
