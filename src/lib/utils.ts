@@ -8,6 +8,20 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 /**
+ * Filters an array to return only items where the 'featured' property is truthy.
+ *
+ * Note: This function uses `array.filter`, which creates a new array.
+ * For very large input arrays, this could have performance implications.
+ * Ensure the input array size is reasonable to avoid potential performance issues.
+ *
+ * @param array - The array to filter
+ * @returns A new array containing only the items where the 'featured' property is truthy
+ */
+export function featuredArray(array: any[]) {
+  return array.filter((item) => item?.featured === true);
+}
+
+/**
  * Formats a number as a currency string.
  *
  * @param value - The numeric value to format.
@@ -16,25 +30,30 @@ export function cn(...inputs: ClassValue[]) {
  */
 export const formatCurrency = (value: number) => {
   if (isNaN(value)) return "$0.00";
-
-  return "$" + value.toLocaleString(undefined);
-};
-
-export const capitalize = (str: string) => {
-  return str
-    .replace(/-/g, " ")
-    .replace(/_/g, " ")
-    .replace(/\b\w/g, (char) => char.toUpperCase());
+  return value.toLocaleString("en-US", { style: "currency", currency: "USD" });
 };
 
 /**
- * Splits a given string by newline characters and trims each resulting line.
- * Empty lines are excluded from the resulting array.
+ * Capitalizes the first letter of each word in a string and formats it by replacing hyphens and underscores with spaces.
  *
- * @param quote - The string to be split and trimmed.
- * @returns An array of non-empty, trimmed strings.
+ * This function performs the following operations:
+ * 1. Replaces hyphens and underscores with spaces
+ * 2. Capitalizes the first letter of each word
+ * 3. Removes any characters that are not alphanumeric, spaces, hyphens, or underscores
+ * 4. Capitalizes the first letter of each word again (to handle any new words created by the removal)
+ *
+ * @param str - The string to capitalize
+ * @returns The capitalized and formatted string
+ *
+ * @example
+ * capitalize("hello-world"); // Returns "Hello World"
+ * @example
+ * capitalize("user_name"); // Returns "User Name"
  */
-export const splitAndTrimQuotes = (quote: string): string[] => {
+export const splitAndTrimQuotes = (
+  quote: string | null | undefined
+): string[] => {
+  if (!quote) return [];
   return quote.split("\n").reduce((acc, paragraph) => {
     const trimmed = paragraph.trim();
     if (trimmed) acc.push(trimmed);
@@ -89,23 +108,13 @@ export const formatDate = (dateString: string): string => {
  * @param title - The title string to be converted into a slug.
  * @returns The URL-friendly slug.
  */
-export function setSlug(title: string): string {
+export function generateSlug(title: string): string {
   const slug = title
     .toLowerCase()
-    .replace(/[^a-zA-Z0-9\s-]/g, "")
-    .replace(/[\s-]+/g, "-");
+    .replace(/[^\p{L}\p{N}\s-]/gu, "")
+    .replace(/[\s-]+/g, "-")
+    .replace(/^-+|-+$/g, "");
   return slug;
-}
-
-/**
- * Formats a given name by replacing hyphens with spaces and capitalizing the result.
- *
- * @param name - The name to be formatted.
- * @returns The formatted name with spaces instead of hyphens and capitalized.
- */
-export function formatName(name: string): string {
-  const formattedName = name.replace(/-/g, " ");
-  return capitalize(formattedName);
 }
 
 /**
@@ -338,6 +347,31 @@ export function formatSecondsToMmSs(totalSeconds: number): string {
 
   return `${minutes}:${seconds.toString().padStart(2, "0")}`;
 }
+
+/**
+ * Capitalizes a string by replacing hyphens and underscores with spaces,
+ * and converting the first character of each word to uppercase.
+ *
+ * Numbers and special characters are preserved as-is and do not affect capitalization.
+ *
+ * @param str - The input string to capitalize.
+ * @returns The capitalized string with hyphens and underscores replaced by spaces.
+ *
+ * @example
+ * ```typescript
+ * capitalize("hello-world"); // Returns "Hello World"
+ * capitalize("hello_world"); // Returns "Hello World"
+ * capitalize("hello world"); // Returns "Hello World"
+ * capitalize("123-hello_world"); // Returns "123 Hello World"
+ * capitalize("hello@world"); // Returns "Hello@World"
+ * ```
+ */
+export const capitalize = (str: string) => {
+  return str
+    .replace(/-/g, " ")
+    .replace(/_/g, " ")
+    .replace(/\b[a-zA-Z]/g, (char) => char.toUpperCase());
+};
 
 /**
  * Generates an array of markers with values and labels based on the given parameters.
