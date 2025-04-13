@@ -1,70 +1,54 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  formatNumber,
-  generateSlug,
-  parseReadingTimeToMinutes,
-} from "@/lib/utils";
+import { generateSlug } from "@/lib/utils";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
+import DynamicButton from "../button/button-dynamic";
+import { BlogPost } from "@/lib/interfaces/blogs";
 
-export default function BlogCard({ blog }: { blog: any }) {
+export default function BlogCard({ blog }: { blog: BlogPost }) {
   const router = useRouter();
 
   return (
-    <Card className="shadow-lg hover:shadow-2xl border hover:border-gray-200 border-transparent rounded-2xl max-w-md transition">
-      <CardHeader className="relative h-56">
-        {/* <Image
-          src={`/images/blog_card_images/${generateSlug(blog.title)}.jpg`}
-          alt={blog.title}
-          layout="fill"
-          className="rounded-t-2xl object-cover"
-          priority
-        /> */}
-      </CardHeader>
-      <CardContent className="p-4">
-        <CardTitle className="mb-2 font-bold text-2xl">{blog.title}</CardTitle>
-        {(blog.wordCount || blog.time) && (
-          <div className="flex justify-between mb-2 text-sm">
-            {blog.wordCount && (
-              <span>
-                <strong>Words:</strong> {formatNumber(blog.wordCount)}
-              </span>
-            )}
-            {blog.time && (
-              <span>
-                <strong>Read:</strong> {parseReadingTimeToMinutes(blog.time)} m
-              </span>
-            )}
-          </div>
-        )}
-        <CardDescription className="mb-4">{blog.excerpt}</CardDescription>
-        {blog.topics && blog.topics.length > 0 && (
-          <div className="flex flex-wrap gap-2">
-            {blog.topics.sort().map((topic: string, index: number) => (
-              <Badge key={index} variant="secondary" className="cursor-pointer">
-                {topic}
-              </Badge>
-            ))}
-          </div>
-        )}
-      </CardContent>
-      <CardFooter className="px-4 pt-0 pb-4">
-        <Button
+    <article className="flex flex-col justify-between items-start">
+      <div className="relative w-full">
+        <Image
+          alt=""
+          src={"https://placehold.co/600x400"}
+          className="rounded-2xl w-full aspect-video object-cover sm:aspect-2/1 lg:aspect-3/2"
+          width={600}
+          height={400}
+        />
+        <div className="absolute inset-0 rounded-2xl ring-1 ring-inset" />
+      </div>
+      <div className="group px-4 max-w-xl h-full">
+        <div className="relative flex flex-col justify-between mt-3 h-2/3">
+          <h3>{blog.title}</h3>
+          <p className="line-clamp-3">{blog.excerpt}</p>
+        </div>
+        <div className="relative flex items-center gap-x-4 mt-8">
+          {blog.topics && blog.topics.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {blog.topics.sort().map((topic: string, index: number) => (
+                <Badge
+                  key={index}
+                  variant="secondary"
+                  className="cursor-default"
+                >
+                  {topic}
+                </Badge>
+              ))}
+            </div>
+          )}
+        </div>
+        <DynamicButton
+          className="mx-0 w-3/5"
           onClick={() => router.push(`/blogs/${generateSlug(blog.title)}`)}
         >
           Read More
-        </Button>
-      </CardFooter>
-    </Card>
+        </DynamicButton>
+      </div>
+    </article>
   );
 }

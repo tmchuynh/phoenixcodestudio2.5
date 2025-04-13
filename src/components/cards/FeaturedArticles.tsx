@@ -1,22 +1,29 @@
+"use client";
+import { BlogPost } from "@/lib/interfaces/blogs";
 import Image from "next/image";
-import { Badge } from "../ui/badge";
+import { useRouter } from "next/navigation";
+import DynamicButton from "../button/button-dynamic";
 
-export default function FeaturedArticles() {
+export default function FeaturedArticles({ blog }: { blog: BlogPost }) {
+  const router = useRouter();
+
   return (
-    <div className="shadow-md pb-3 border rounded-2xl max-w-sm overflow-hidden">
-      <Image className="w-full h-full object-cover" src="https://plus.unsplash.com/premium_photo-1683134153517-32015af21911?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGVvcGxlJTIwY29kaW5nfGVufDB8fDB8fHww" alt="Sunset in the mountains"
-        width={1200} height={800} />
-      <div className="px-6 py-4">
-        <div className="mb-2 font-bold text-xl">The Coldest Sunset</div>
-        <p className="text-base className=">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-        </p>
+    <section className="items-center gap-3 md:gap-4 lg:gap-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 2xl:grid-cols-7">
+      <Image
+        src={"https://placehold.co/600x400"}
+        alt=""
+        className="md:col-span-2 lg:col-span-3 rounded-2xl w-full object-cover"
+        width={600}
+        height={400}
+      />
+
+      <div className="flex flex-col justify-between md:col-span-1 lg:col-span-3 2xl:col-span-4">
+        <h1>{blog.title}</h1>
+
+        <p className="max-w-5xl line-clamp-6">{blog.intro}</p>
+
+        <DynamicButton className="mx-0 w-1/2">Read More</DynamicButton>
       </div>
-      <div className="flex flex-wrap gap-3 px-6 py-2">
-        <Badge>#photography</Badge>
-        <Badge>#travel</Badge>
-        <Badge>#winter</Badge>
-      </div>
-    </div>
+    </section>
   );
 }
