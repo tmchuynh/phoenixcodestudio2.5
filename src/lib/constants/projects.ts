@@ -1,7 +1,10 @@
-export const pastProjects = [
+import { Project } from "../interfaces";
+
+export const pastProjects: Project[] = [
   {
     title: "Quiz Application",
     featured: true,
+    imageUrl: "https://placehold.co/600x400",
     description:
       "An engaging Next.js-powered quiz platform to test knowledge across subjects like Chemistry, History, and Math—with progress tracking and a competitive leaderboard.",
     tags: ["User Auth", "Progress Tracking", "Dynamic", "Data Filtering"],
@@ -16,6 +19,7 @@ export const pastProjects = [
   {
     title: "Bootstrap Icons",
     featured: false,
+    imageUrl: "https://placehold.co/600x400",
     description:
       "A versatile library of scalable, customizable icons for modern web development with intuitive search and simple integration.",
     tags: ["Mock Up", "Dynamic", "Data Filtering"],
@@ -30,6 +34,7 @@ export const pastProjects = [
   {
     title: "Military Fitness Calculator",
     featured: true,
+    imageUrl: "https://placehold.co/600x400",
     description:
       "A tool that calculates your Army Physical Fitness Test score and body fat compliance, simplifying fitness tracking for service members.",
     tags: ["Educational", "Dynamic"],
@@ -45,6 +50,7 @@ export const pastProjects = [
   {
     title: "International Activities Club",
     featured: true,
+    imageUrl: "https://placehold.co/600x400",
     description:
       "A platform showcasing diverse extracurricular programs and hands-on learning opportunities for students from 1st grade through high school.",
     tags: ["Educational", "Dynamic"],
@@ -57,6 +63,7 @@ export const pastProjects = [
   {
     title: "Emoji Finder",
     featured: false,
+    imageUrl: "https://placehold.co/600x400",
     description:
       "An intuitive tool to quickly search, browse, and copy emojis using real-time suggestions and categorized navigation.",
     tags: ["Fun", "Dynamic", "Data Filtering"],
@@ -70,6 +77,7 @@ export const pastProjects = [
   {
     title: "FirstGalaxy Inc",
     featured: false,
+    imageUrl: "https://placehold.co/600x400",
     description:
       "A modern real estate platform featuring property listings with high-quality images, virtual tours, and advanced search filters.",
     tags: ["Real Estate", "Data Filtering", "Dynamic"],
@@ -84,6 +92,7 @@ export const pastProjects = [
   {
     title: "Chess",
     featured: true,
+    imageUrl: "https://placehold.co/600x400",
     description:
       "A web-based chess game with interactive gameplay, AI-driven evaluation, move validation, and realistic chess mechanics.",
     tags: ["Game", "Fun"],
@@ -98,6 +107,7 @@ export const pastProjects = [
   {
     title: "Meta Tic Tac Toe",
     featured: true,
+    imageUrl: "https://placehold.co/600x400",
     description:
       "A strategic twist on Tic Tac Toe featuring nine interconnected mini-games where each move influences the opponent’s next board.",
     tags: ["Game", "Fun"],
@@ -112,6 +122,7 @@ export const pastProjects = [
   {
     title: "Sudoku",
     featured: true,
+    imageUrl: "https://placehold.co/600x400",
     description:
       "An interactive Sudoku game with multiple difficulty levels, real-time error checking, and a responsive design for smooth puzzle-solving.",
     tags: ["Game", "Fun"],
