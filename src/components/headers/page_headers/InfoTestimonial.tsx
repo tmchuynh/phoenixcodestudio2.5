@@ -1,26 +1,34 @@
+import { testimonials } from "@/lib/constants/testimonials";
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
-import Image from "next/image";
 
 export default function InfoTestimonial() {
   return (
     <div className="relative py-24 sm:py-32 overflow-hidden isolate">
-      <div className="mx-auto px-6 lg:px-8 max-w-7xl">
+      <div className="mx-auto px-6 lg:px-8">
         <div className="mx-auto lg:mx-0 max-w-2xl">
-          <h4>Deploy faster</h4>
-          <h1>A better workflow</h1>
-          <p className="mt-6 text-xl/8">
-            Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At
-            arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae
-            feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget.
-            Eleifend egestas fringilla sapien.
+          <h4>Let's Make Vision Reality</h4>
+          <h1>How We Can Help You Succeed</h1>
+          <p>
+            At Phoenix Code Studio, we believe that every brand has a unique
+            story to tell. Our mission is to help you tell that story through
+            innovative web design, branding, and digital marketing solutions.
+            Whether you’re a startup looking to establish your online presence
+            or an established business seeking to revamp your digital strategy,
+            we’re here to guide you every step of the way.
+          </p>
+          <p>
+            Every project at Phoenix Code Studio is a step toward building
+            something bigger—lasting partnerships, empowered communities, and a
+            digital ecosystem where every brand has the tools to succeed. We
+            don’t just envision a better digital future—we build it.
           </p>
         </div>
         <div className="gap-x-8 gap-y-16 grid grid-cols-1 lg:grid-cols-12 mx-auto lg:mx-0 mt-16 lg:mt-10 max-w-2xl lg:max-w-none">
-          <div className="relative lg:order-last lg:col-span-5">
+          <div className="relative lg:order-last lg:col-span-4">
             <svg
               aria-hidden="true"
               className="-top-[40rem] left-1 -z-10 absolute w-[175.5rem] h-[64rem] -translate-x-1/2 [mask-image:radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)] stroke-gray-900/10"
@@ -44,36 +52,24 @@ export default function InfoTestimonial() {
             </svg>
             <figure className="pl-8">
               <blockquote className="font-semibold text-xl/8 tracking-tight">
-                <p>
-                  “Vel ultricies morbi odio facilisi ultrices accumsan donec
-                  lacus purus. Lectus nibh ullamcorper ac dictum justo in
-                  euismod. Risus aenean ut elit massa. In amet aliquet eget
-                  cras. Sem volutpat enim tristique.”
-                </p>
+                {testimonials[2].quote}
               </blockquote>
               <figcaption className="flex gap-x-4 mt-8">
-                <Image
-                  alt=""
-                  src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fG1lZXRpbmd8ZW58MHx8MHx8fDA%3D"
-                  className="flex-none mt-1 rounded-full size-10"
-                  width={400}
-                  height={300}
-                />
                 <div className="text-sm/6">
-                  <div className="font-semibold">Brenna Goyette</div>
-                  <div className="">@brenna</div>
+                  <div className="font-semibold"> {testimonials[2].name}</div>
+                  <div className=""> {testimonials[2].position}</div>
                 </div>
               </figcaption>
             </figure>
           </div>
-          <div className="lg:col-span-7 max-w-xl text-base/7">
+          <div className="lg:col-span-7 max-w-xl">
             <p>
-              Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
-              enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-              praesent donec est. Odio penatibus risus viverra tellus varius sit
-              neque erat velit. Faucibus commodo massa rhoncus, volutpat.
-              Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
-              sed turpis id.
+              At Phoenix Code Studio, our mission is simple—help your brand
+              rise, evolve, and thrive through purposeful digital
+              transformation. Whether you're an entrepreneur launching your
+              first venture or a growing company ready to reimagine your online
+              presence, we provide the tools, strategy, and creativity you need
+              to move forward with confidence.
             </p>
             <ul role="list" className="space-y-8 mt-8 max-w-xl">
               <li className="flex gap-x-3">
@@ -81,58 +77,37 @@ export default function InfoTestimonial() {
                   aria-hidden="true"
                   className="flex-none mt-1 size-5"
                 />
-                <span>
-                  <strong className="font-semibold text-tertiary">
-                    Push to deploy.
-                  </strong>{" "}
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
-                </span>
+                <span>Custom Website Development</span>
               </li>
               <li className="flex gap-x-3">
                 <LockClosedIcon
                   aria-hidden="true"
                   className="flex-none mt-1 size-5"
                 />
-                <span>
-                  <strong className="font-semibold text-tertiary">
-                    SSL certificates.
-                  </strong>{" "}
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo.
-                </span>
+                <span>Brand Strategy & Identity</span>
               </li>
               <li className="flex gap-x-3">
                 <ServerIcon
                   aria-hidden="true"
                   className="flex-none mt-1 size-5"
                 />
-                <span>
-                  <strong className="font-semibold text-tertiary">
-                    Database backups.
-                  </strong>{" "}
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.
-                  Et magna sit morbi lobortis.
-                </span>
+                <span>Website Redesigns & Revitalization</span>
+              </li>
+              <li className="flex gap-x-3">
+                <ServerIcon
+                  aria-hidden="true"
+                  className="flex-none mt-1 size-5"
+                />
+                <span>SEO, Content, & Marketing Strategy</span>
+              </li>
+              <li className="flex gap-x-3">
+                <ServerIcon
+                  aria-hidden="true"
+                  className="flex-none mt-1 size-5"
+                />
+                <span>Ongoing Support & Digital Growth</span>
               </li>
             </ul>
-            <p className="mt-8">
-              Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-              odio id et. Id blandit molestie auctor fermentum dignissim. Lacus
-              diam tincidunt ac cursus in vel. Mauris varius vulputate et
-              ultrices hac adipiscing egestas. Iaculis convallis ac tempor et
-              ut. Ac lorem vel integer orci.
-            </p>
-            <h3 className="mt-4">No server? No problem.</h3>
-            <p>
-              Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-              consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-              vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-              pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim
-              cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis
-              ipsum eu a sed convallis diam.
-            </p>
           </div>
         </div>
       </div>

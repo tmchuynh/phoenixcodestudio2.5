@@ -5,10 +5,8 @@ export default function IntroductionImage() {
     <div className="py-24 sm:py-32">
       <div className="mx-auto px-6 lg:px-8 max-w-7xl">
         <div className="mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
-          <h4>
-            Deploy faster
-          </h4>
-          <h1 className="mt-2 font-semibold text-4xl text-pretty sm:text-5xl tracking-tight">
+          <h4>Deploy faster</h4>
+          <h1 className="mt-2 font-semibold text-4xl text-fancy sm:text-5xl tracking-tight">
             A better workflow
           </h1>
           <div className="gap-8 grid grid-cols-1 lg:grid-cols-2 mt-10 max-w-xl lg:max-w-none text-base/7">
