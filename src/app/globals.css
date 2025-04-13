@@ -30,8 +30,8 @@
   --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);
-  --color-pretty-foreground: var(--pretty-foreground);
-  --color-pretty: var(--pretty);
+  --color-fancy-foreground: var(--fancy-foreground);
+  --color-fancy: var(--fancy);
   --color-tertiary-foreground: var(--tertiary-foreground);
   --color-tertiary: var(--tertiary);
   --color-secondary-foreground: var(--secondary-foreground);
@@ -57,12 +57,12 @@
   --popover-foreground: oklch(32.9% 0 0);
   --primary: oklch(0.44 0.1616 258.01);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.77 0.1607 163.54);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.28 0.0544 165.27);
+  --secondary-foreground: oklch(0.985 0 0);
   --tertiary: oklch(0.54 0.1139 254.41);
   --tertiary-foreground: oklch(0.985 0 0);
-  --pretty: oklch(0.398 0.07 227.392);
-  --pretty-foreground: oklch(0.985 0 0);
+  --fancy: oklch(0.398 0.07 227.392);
+  --fancy-foreground: oklch(0.985 0 0);
   --muted: oklch(88.53% 0 0);
   --muted-foreground: oklch(0.205 0 0);
   --accent: oklch(0.31 0.1965 268.55);
@@ -101,8 +101,8 @@
   --secondary-foreground: oklch(0.985 0 0);
   --tertiary: oklch(0.34 0.2101 269.37);
   --tertiary-foreground: oklch(0.985 0 0);
-  --pretty: oklch(0.7 0.1663 245.16);
-  --pretty-foreground: oklch(0.19 0 0);
+  --fancy: oklch(0.7 0.1663 245.16);
+  --fancy-foreground: oklch(0.19 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.985 0 0);
   --accent: oklch(0.74 0.1261 190.84);
@@ -248,25 +248,25 @@
   }
 
   h1 {
-    @apply font-[KaushanScript] my-2 font-bold text-3xl text-pretty md:text-5xl 2xl:text-7xl tracking-tight;
+    @apply font-[KaushanScript] my-6 font-bold text-4xl text-fancy md:text-5xl 2xl:text-7xl tracking-tight z-20;
   }
 
   h2 {
-    @apply font-[PlayfairDisplay] mt-2 font-semibold text-4xl text-pretty sm:text-5xl sm:text-balance tracking-tight;
+    @apply font-[PlayfairDisplay] mt-4 font-semibold text-3xl text-fancy md:text-4xl 2xl:text-5xl text-balance tracking-tight;
   }
 
   h3 {
-    @apply font-[FiraSans] my-2 font-semibold text-xl lg:text-xl tracking-wide text-tertiary;
+    @apply font-[FiraSans] mt-2 font-semibold text-xl lg:text-2xl tracking-wide text-tertiary;
   }
 
   h4 {
-    @apply font-[MavenPro] font-semibold text-sm lg:text-lg tracking-tight text-pretty;
+    @apply font-[MavenPro] font-semibold text-sm lg:text-lg 2xl:text-xl tracking-tighter text-secondary;
   }
 
   blockquote {
-    @apply border-l-2 border-secondary font-[Satisfy] pl-4 italic text-pretty;
+    @apply border-l-2 border-secondary font-[Satisfy] pl-4 italic text-fancy;
   }
   p {
-    @apply leading-7 text-balance mt-6;
+    @apply leading-7 text-pretty mt-2;
   }
 }
