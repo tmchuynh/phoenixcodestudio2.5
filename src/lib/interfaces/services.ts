@@ -50,7 +50,7 @@ export interface ListDetail {
 }
 
 export interface CTA extends ListDetail {
-  intro?: string;
+  intro: string;
   button: string;
   afterButtonText?: string;
 }
