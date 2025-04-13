@@ -105,8 +105,8 @@ export const serviceCategories: Menu[] = [
 
 export const serviceFeaturedLinks: Menu[] = [
   {
-    title: "Custom Pricing Tiers Made For You",
-    href: "/services/pricing",
+    title: "Custom Pricing Accommodations Made For You",
+    href: "/services/payment_plans",
     imageUrl:
       "https://images.unsplash.com/photo-1560390591-15ee5df86045?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yJTIweW91fGVufDB8fDB8fHww",
     description:

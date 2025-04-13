@@ -39,7 +39,7 @@ export interface SubInformation {
   featured?: boolean;
   pricing: {
     pricingTierIntro?: ListDetail;
-    pricingTiers?: PricingTier[];
+    pricingTiers: PricingTier[];
   };
 }
 
