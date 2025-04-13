@@ -9,34 +9,39 @@ const incentives = [
       "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
   },
   {
-    name: "10-year warranty",
+    name: "Customer Support",
     imageSrc:
-      "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-warranty-simple.svg",
+      "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-support-simple.svg",
     description:
-      "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+      "Our dedicated support team is here to assist you 24/7 with any inquiries or issues.",
   },
   {
-    name: "Exchanges",
+    name: "Secure Payment",
     imageSrc:
-      "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-exchange-simple.svg",
+      "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-payment-simple.svg",
     description:
-      "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+      "We ensure that your payment information is secure and protected at all times.",
   },
 ];
 
 export default function IncentivesImage() {
   return (
-    <div className="mx-auto sm:px-2 lg:px-4 py-24 sm:py-32">
-      <div className="mx-auto px-4 max-w-2xl lg:max-w-none">
+    <div className="mx-auto py-24 md:py-32">
+      <div className="mx-auto px-4">
         <div className="items-center gap-x-16 gap-y-10 grid grid-cols-1 lg:grid-cols-2">
           <div>
-            <h2>We built our business on great customer service</h2>
+            <h1>Digital Services by Phoenix Code Studio</h1>
             <p className="mt-4">
-              At the beginning at least, but then we realized we could make a
-              lot more money if we kinda stopped caring about that. Our new
-              strategy is to write a bunch of things that look really good in
-              the headlines, then clarify in the small print but hope people
-              don't actually read it.
+              Unlock your business’s full potential with our all-embracing
+              digital solutions. From cutting-edge web development that delivers
+              high-performance websites to intuitive design that enhances user
+              experience, we craft strategies that make an impact. Our expertise
+              in content creation and digital marketing ensures your brand
+              stands out, driving engagement, increasing visibility, and
+              boosting conversions. Whether you're launching a new venture,
+              reimagining your online presence, or expanding into new markets,
+              we provide tailored solutions that align with your vision and set
+              you apart in today’s competitive digital landscape.
             </p>
           </div>
           <Image
