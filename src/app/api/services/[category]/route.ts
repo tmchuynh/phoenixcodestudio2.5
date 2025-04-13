@@ -1,4 +1,4 @@
-import { allServices } from "@/lib/constants/services/service-categories";
+import { allServices } from "@/lib/constants/services/serviceCategories";
 import { NextRequest, NextResponse } from "next/server";
 
 /**
