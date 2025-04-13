@@ -1,5 +1,5 @@
-import { paymentPlans } from "@/lib/payment-plans";
-import { setSlug } from "@/lib/utils";
+import { paymentPlans } from "@/lib/constants/services/payment-plans";
+import { generateSlug } from "@/lib/utils";
 import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
 
@@ -30,7 +30,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   }
 
   const paymentPlan = paymentPlans.find((planItem) => {
-    const sluggedName = setSlug(planItem.name);
+    const sluggedName = generateSlug(planItem.name);
     console.log("Slugged name:", sluggedName);
     return sluggedName === plan;
   });

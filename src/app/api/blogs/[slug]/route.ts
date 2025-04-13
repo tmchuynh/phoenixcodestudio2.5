@@ -1,5 +1,5 @@
-import { blogs } from "@/lib/blog-posts";
-import { setSlug } from "@/lib/utils";
+import { blogs } from "@/lib/constants/blog-posts";
+import { generateSlug } from "@/lib/utils";
 import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
 
@@ -25,7 +25,9 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   }
 
   // Generate the blog slug dynamically based on the title (if needed)
-  const blogPost = blogs.find((blog) => setSlug(blog.title) === slug); // Use setSlug to find the post
+  const blogPost = blogs.find(
+    (blog: { title: string }) => generateSlug(blog.title) === slug
+  ); // Use generateSlug to find the post
 
   if (!blogPost) {
     return NextResponse.json(
