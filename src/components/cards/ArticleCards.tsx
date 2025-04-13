@@ -1,6 +1,10 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { formatNumber, parseReadingTimeToMinutes, setSlug } from "@/lib/utils";
+import {
+  formatNumber,
+  generateSlug,
+  parseReadingTimeToMinutes,
+} from "@/lib/utils";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import {
@@ -19,7 +23,7 @@ export default function BlogCard({ blog }: { blog: any }) {
     <Card className="shadow-lg hover:shadow-2xl border hover:border-gray-200 border-transparent rounded-2xl max-w-md transition">
       <CardHeader className="relative h-56">
         <Image
-          src={`/images/blog_card_images/${setSlug(blog.title)}.jpg`}
+          src={`/images/blog_card_images/${generateSlug(blog.title)}.jpg`}
           alt={blog.title}
           layout="fill"
           className="rounded-t-2xl object-cover"
@@ -59,7 +63,7 @@ export default function BlogCard({ blog }: { blog: any }) {
       </CardContent>
       <CardFooter className="px-4 pt-0 pb-4">
         <Button
-          onClick={() => router.push(`/info/blogs/${setSlug(blog.title)}`)}
+          onClick={() => router.push(`/info/blogs/${generateSlug(blog.title)}`)}
         >
           Read More
         </Button>

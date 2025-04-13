@@ -30,11 +30,19 @@ export default function SplitScreenshot() {
         <div className="mx-auto lg:mx-0 lg:pt-8 max-w-2xl lg:shrink-0">
           <div className="mt-18 md:mt-24 lg:mt-30 xl:mt-48">
             <h1 className="mt-10 font-semibold text-5xl text-pretty sm:text-7xl tracking-tight">
-              Deploy to the cloud with confidence
+              Explore Our Portfolio of Successful Projects
             </h1>
             <p>
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+              Discover a showcase of our best work, where innovation meets
+              functionality. From custom web designs to high-performance
+              applications, our portfolio highlights the expertise, creativity,
+              and problem-solving approach we bring to every project. Each case
+              study reflects a unique challenge and tailored solution,
+              demonstrating our commitment to quality, user experience, and
+              client satisfaction. Whether you're looking for inspiration or
+              evaluating our capabilities, these projects showcase our ability
+              to deliver scalable, efficient, and visually stunning digital
+              experiences across industries.
             </p>
           </div>
         </div>
