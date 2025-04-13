@@ -1,28 +1,51 @@
 "use client";
 import { BlogPost } from "@/lib/interfaces/blogs";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
+import { cn, convertToDate, generateSlug } from "@/lib/utils";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import DynamicButton from "../button/button-dynamic";
 
-export default function FeaturedArticles({ blog }: { blog: BlogPost }) {
+export default function FeaturedArticles({
+  blog,
+  index,
+}: {
+  blog: BlogPost;
+  index: number;
+}) {
   const router = useRouter();
+  const isSmallScreen = useSmallScreen();
 
   return (
-    <section className="items-center gap-3 md:gap-4 lg:gap-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 2xl:grid-cols-7">
+    <section
+      className={cn(
+        "flex flex-col-reverse md:flex-col items-center gap-3 md:gap-4 lg:gap-10 lg:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 2xl:grid-cols-7 mx-2 md:mx-0",
+        {
+          "border-t py-10": isSmallScreen && index !== 0,
+          "pb-10": isSmallScreen && index === 0,
+        }
+      )}
+    >
       <Image
-        src={"https://placehold.co/600x400"}
-        alt=""
-        className="md:col-span-2 lg:col-span-3 rounded-2xl w-full object-cover"
+        src={blog.imageUrl || "https://placehold.co/600x400"}
+        alt={blog.title}
+        className="md:col-span-1 lg:col-span-3 rounded-2xl w-full h-full object-cover"
         width={600}
         height={400}
       />
 
-      <div className="flex flex-col justify-between md:col-span-1 lg:col-span-3 2xl:col-span-4">
-        <h1>{blog.title}</h1>
+      <div className="flex flex-col justify-between md:col-span-2 lg:col-span-3 2xl:col-span-4 py-2 h-full">
+        <h4>{convertToDate(blog.date).toLocaleDateString()}</h4>
+        <h2>{blog.title}</h2>
 
         <p className="max-w-5xl line-clamp-6">{blog.intro}</p>
 
-        <DynamicButton className="mx-0 w-1/2">Read More</DynamicButton>
+        <DynamicButton
+          className="mx-0 w-2/3"
+          onClick={() => router.push(`/blog/${generateSlug(blog.title)}`)}
+        >
+          Read More
+        </DynamicButton>
       </div>
     </section>
   );
