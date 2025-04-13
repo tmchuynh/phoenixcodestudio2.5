@@ -1,11 +1,11 @@
 "use client";
-import CallToAction from "@/components/CallToAction";
-import LoadingIndicator from "@/components/Loading";
-import CannotFind from "@/components/states/CannotFind";
+import CallToAction from "@/components/CTA/Simple";
+import LoadingIndicator from "@/components/states/loading/Loading";
+import CannotFind from "@/components/states/not-found/CannotFind";
 import { IconDisplay } from "@/lib/IconDisplay";
-import { PaymentDetails } from "@/lib/interfaces";
-import useMediumScreen from "@/lib/useMediumScreen";
-import useSmallScreen from "@/lib/useSmallScreen";
+import { PaymentDetails } from "@/lib/interfaces/payments";
+import useMediumScreen from "@/lib/screens/useMediumScreen";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -80,7 +80,7 @@ export default function PaymentPlanPage() {
         <h2>Key Attributes</h2>
         {isMediumScreen ? (
           <ul className="gap-x-4 grid grid-cols-1 list-none">
-            {paymentPlan?.info.shortFeatures.map((features, index) => (
+            {paymentPlan?.details.map((features, index) => (
               <li className="flex text-wrap" key={index}>
                 <IconDisplay Icon={paymentPlan?.Icon} />
 

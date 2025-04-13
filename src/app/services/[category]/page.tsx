@@ -5,9 +5,7 @@ import CannotFind from "@/components/states/not-found/CannotFind";
 import { Button } from "@/components/ui/button";
 import { subServiceDetails } from "@/lib/constants/services/sub-services";
 import { Category } from "@/lib/interfaces/services";
-import useMediumScreen from "@/lib/screens/useMediumScreen";
-import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { formatName, setSlug } from "@/lib/utils";
+import { capitalize, generateSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -15,8 +13,6 @@ import { useEffect, useState } from "react";
 export default function CategoryPage() {
   const { category } = useParams() as { category: string };
   const { theme } = useTheme();
-  const isMediumScreen = useMediumScreen();
-  const isSmallScreen = useSmallScreen();
   const router = useRouter();
 
   const [loading, setLoading] = useState(true);
@@ -66,14 +62,14 @@ export default function CategoryPage() {
    * @param {string} serviceName - The name of the service to navigate to.
    */
   const navigateToDetails = (serviceName: string) => {
-    const formattedServiceName = setSlug(serviceName);
+    const formattedServiceName = generateSlug(serviceName);
 
     router.push(`/services/${category}/${formattedServiceName}`);
   };
 
   return (
     <main className="mx-auto py-6 w-10/12 md:w-11/12">
-      <h1>{service?.name && formatName(service?.name)}</h1>
+      <h1>{service?.name && capitalize(service?.name)}</h1>
       <div className="mb-4"> {service?.short}</div>
 
       <h2>{service?.title}</h2>
@@ -85,12 +81,12 @@ export default function CategoryPage() {
             (item) => item.name === sub
           );
 
-          if (subServiceDetail && subServiceDetail.pricingTiers) {
+          if (subServiceDetail && subServiceDetail.info.pricing.pricingTiers) {
             return (
               <div className="lg:flex lg:flex-col my-4" key={index}>
-                <h3>Pricing for {formatName(subServiceDetail.name)}</h3>
+                <h3>Pricing for {capitalize(subServiceDetail.name)}</h3>
                 <ul>
-                  {subServiceDetail.pricingTiers.map(
+                  {subServiceDetail.info.pricing.pricingTiers.map(
                     (pricing, pricingIndex) => (
                       <li key={pricingIndex}>
                         <strong>{pricing.name}: </strong>

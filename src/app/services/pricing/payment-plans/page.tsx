@@ -1,6 +1,8 @@
 "use client";
+import PaymentPlans from "@/components/cards/PaymentPlanCard";
 import LoadingIndicator from "@/components/states/loading/Loading";
 import { Button } from "@/components/ui/button";
+import { paymentPlans } from "@/lib/constants/services/payment-plans";
 import useMediumScreen from "@/lib/screens/useMediumScreen";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { useTheme } from "next-themes";
@@ -54,9 +56,9 @@ const PaymentPlansPage: FC = () => {
 
       {/* Displaying each plan in a vertical layout similar to blogs */}
       <section className="space-y-5">
-        {/* {paymentPlans.map((plan, index) => (
+        {paymentPlans.map((plan, index) => (
           <PaymentPlans plan={plan} index={index} key={index} />
-        ))} */}
+        ))}
       </section>
     </main>
   );

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { allServices } from "@/lib/constants/services/service-categories";
 import { subServiceDetails } from "@/lib/constants/services/sub-services";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { formatName, setSlug } from "@/lib/utils";
+import { capitalize, generateSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import { FC, useEffect, useState } from "react";
@@ -32,7 +32,7 @@ const PricingPage: FC = () => {
    * @param {string} serviceCategory - The name of the service category to navigate to.
    */
   const navigateToCategory = (serviceCategory: string) => {
-    const formattedCategoryName = setSlug(serviceCategory);
+    const formattedCategoryName = generateSlug(serviceCategory);
 
     router.push(`/services/${formattedCategoryName}`);
   };
@@ -75,12 +75,15 @@ const PricingPage: FC = () => {
               (item) => item.name === subService
             );
 
-            if (subServiceDetail && subServiceDetail.pricingTiers) {
+            if (
+              subServiceDetail &&
+              subServiceDetail.info.pricing.pricingTiers
+            ) {
               return (
                 <div key={subIndex}>
-                  <h3>Pricing for {formatName(subServiceDetail.name)}</h3>
+                  <h3>Pricing for {capitalize(subServiceDetail.name)}</h3>
                   <ul>
-                    {subServiceDetail.pricingTiers.map(
+                    {subServiceDetail.info.pricing.pricingTiers.map(
                       (pricing, pricingIndex) => (
                         <li key={pricingIndex}>
                           <strong>{pricing.name}: </strong>

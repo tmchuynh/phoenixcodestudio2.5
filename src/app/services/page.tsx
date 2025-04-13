@@ -4,7 +4,7 @@ import LoadingIndicator from "@/components/states/loading/Loading";
 import { Button } from "@/components/ui/button";
 import { allServices } from "@/lib/constants/services/service-categories";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { setSlug } from "@/lib/utils";
+import { generateSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import { FC, useEffect, useState } from "react";
@@ -31,7 +31,7 @@ const ServicesPage: FC = () => {
    * @param {string} serviceCategory - The name of the service category to navigate to.
    */
   const navigateToCategory = (serviceCategory: string) => {
-    const formattedCategoryName = setSlug(serviceCategory);
+    const formattedCategoryName = generateSlug(serviceCategory);
 
     router.push(`/services/${formattedCategoryName}`);
   };

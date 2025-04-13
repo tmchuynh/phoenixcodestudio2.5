@@ -1,11 +1,11 @@
 "use client";
 
-import CannotFind from "@/components/states/CannotFind";
-import LoadingIndicator from "@/components/states/Loading";
+import LoadingIndicator from "@/components/states/loading/Loading";
+import CannotFind from "@/components/states/not-found/CannotFind";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BlogPost } from "@/lib/interfaces";
-import { setSlug } from "@/lib/utils";
+import { BlogPost } from "@/lib/interfaces/blogs";
+import { generateSlug } from "@/lib/utils";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -99,10 +99,10 @@ const BlogPostPage = () => {
             {post?.date.month} / {post?.date.day} / {post?.date.year}
           </p>
           <div className="flex space-x-2 mb-8">
-            {post?.topics.map((topic, index) => {
+            {post?.topics.map((topic: string, index: number) => {
               return (
                 <Badge
-                  variant={"accent"}
+                  variant={"secondary"}
                   className="text-sm lowercase cursor-default"
                   key={index}
                 >
@@ -116,30 +116,15 @@ const BlogPostPage = () => {
         <div className="flex xl:flex-row md:flex-col flex-col-reverse xl:gap-x-6 md:pb-5 xl:pb-6">
           <div className="xl:flex xl:flex-col xl:justify-between">
             <div>
-              {post?.intro.map((intro, index) => (
+              {post?.intro.map((intro: string, index: number) => (
                 <p key={index}>{intro}</p>
               ))}
             </div>
-
-            {post?.icons && (
-              <div className="flex flex-wrap gap-7 md:mt-5 mb-3 md:mb-0 lg:mb-3">
-                {post?.icons.map((icon, index) => (
-                  <Image
-                    src={`/images/blog_icons/${icon}`}
-                    width={500}
-                    height={500}
-                    key={index}
-                    alt={`${icon}-${index}`}
-                    className="mx-auto 2xl:ml-[3em] w-10 md:w-20 lg:w-16 2xl:w-16"
-                  />
-                ))}
-              </div>
-            )}
           </div>
 
           {post?.title && (
             <Image
-              src={`/images/blog_images/${setSlug(post?.title)}.jpg`}
+              src={`/images/blog_images/${generateSlug(post?.title)}.jpg`}
               width={500}
               height={300}
               priority={true}

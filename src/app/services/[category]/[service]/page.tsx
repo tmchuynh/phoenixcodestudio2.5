@@ -65,12 +65,12 @@ export default function ServicePage() {
   return (
     <main className="mx-auto py-6 w-10/12 md:w-11/12">
       <h1>{serviceData?.name}</h1>
-      <p className="mb-4">{serviceData?.short}</p>
+      <p className="mb-4">{serviceData?.info.short}</p>
 
-      {serviceData?.pricingTiers && (
+      {serviceData?.info.pricing.pricingTiers && (
         <div className="mt-4">
           <ul>
-            {serviceData.pricingTiers.map((prices, index) => (
+            {serviceData.info.pricing.pricingTiers.map((prices, index) => (
               <li key={index}>
                 <div>
                   <strong>{prices.name}:</strong> {prices.info}
@@ -85,7 +85,7 @@ export default function ServicePage() {
         <h2>{serviceData?.cta.title}</h2>
         <p>{serviceData?.cta.intro && serviceData?.cta.intro}</p>
         <p>
-          {serviceData?.cta.text && serviceData?.cta.text}{" "}
+          {serviceData?.cta.description && serviceData?.cta.description}{" "}
           {serviceData?.cta.afterButtonText && serviceData?.cta.afterButtonText}
         </p>
 
