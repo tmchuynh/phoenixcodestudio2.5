@@ -1,48 +1,53 @@
 import { SubItem } from "@/lib/interfaces/services";
 
-export const subServiceDetails = [
+export const subServiceDetails: SubItem[] = [
   {
     category: "scalable-corporate-digital-solutions",
     name: "authentic-brand-storytelling-that-captivates-connects",
     info: {
       name: "Authentic Brand Storytelling That Captivates & Connects",
       title: "Authentic Brand Storytelling",
-      menuCaption:
-        "Craft compelling and impactful brand stories that connect with your audience by showcasing your mission, vision, and core values.",
+      hook: "Craft compelling and impactful brand stories that connect with your audience by showcasing your mission, vision, and core values.",
       description: "Brand Awareness",
       startingPrice: 900,
-      info: "We craft compelling brand narratives that authentically define your identity and create a deep emotional connection with your audience. Through strategic storytelling, we go beyond transactions—bridging the gap between your brand’s values, mission, and vision to build trust and long-term loyalty. Our approach ensures that every message, visual, and campaign aligns seamlessly, reinforcing a strong, memorable presence in a competitive marketplace. Whether launching a new brand or revitalizing an existing one, we help you tell your story in a way that inspires, engages, and resonates.",
+      intro: [
+        "We craft compelling brand narratives that authentically define your identity and create a deep emotional connection with your audience. Through strategic storytelling, we go beyond transactions—bridging the gap between your brand’s values, mission, and vision to build trust and long-term loyalty. Our approach ensures that every message, visual, and campaign aligns seamlessly, reinforcing a strong, memorable presence in a competitive marketplace. Whether launching a new brand or revitalizing an existing one, we help you tell your story in a way that inspires, engages, and resonates.",
+      ],
       details:
         "We help brands tell their unique stories, building a narrative that reflects your values, vision, and goals. Through strategic storytelling, we connect with your target audience on an emotional level, strengthening brand loyalty.",
       short:
         "Create an emotional connection with your audience through authentic brand storytelling. We craft compelling narratives that reflect your brand's values, mission, and vision, building trust and loyalty while ensuring your message resonates in a competitive market.",
       featured: true,
-      pricingTierIntro: {
-        title: "Choose the Perfect Plan for Your Brand’s Storytelling Journey",
-        text: "Our tiered pricing structure allows you to select the level of storytelling expertise that best aligns with your brand’s needs and goals. Whether you're just starting to shape your narrative or you're looking to refine and expand it, our flexible options ensure that you receive the support and strategy necessary to engage your audience and build lasting connections. Explore our tailored tiers and find the right fit to bring your brand’s story to life.",
+      pricing: {
+        pricingTierIntro: {
+          title:
+            "Choose the Perfect Plan for Your Brand’s Storytelling Journey",
+          description:
+            "Our tiered pricing structure allows you to select the level of storytelling expertise that best aligns with your brand’s needs and goals. Whether you're just starting to shape your narrative or you're looking to refine and expand it, our flexible options ensure that you receive the support and strategy necessary to engage your audience and build lasting connections. Explore our tailored tiers and find the right fit to bring your brand’s story to life.",
+        },
+        pricingTiers: [
+          {
+            name: "Brand Story Foundations",
+            startingPrice: 900,
+            info: "Starting at $900, this package focuses on defining your mission, vision, and key brand values. Ideal for small businesses looking to lay the groundwork for a compelling brand story.",
+          },
+          {
+            name: "Comprehensive Brand Storytelling",
+            startingPrice: 2000,
+            info: "Starting at $2,000, this tier includes a fully developed brand story, incorporating your company’s journey, key milestones, and unique value propositions. Perfect for businesses seeking to create a more dynamic story that resonates with their audience.",
+          },
+          {
+            name: "Full Brand Story Strategy & Content Creation",
+            startingPrice: 3500,
+            info: "Starting at $3,500, this package includes brand story development and content creation for various platforms, such as websites, social media, blogs, and marketing materials. Ensures consistency and a strong emotional connection with your target audience.",
+          },
+          {
+            name: "Advanced Brand Narrative & Campaign Execution",
+            startingPrice: 5000,
+            info: "Starting at $5,000, this advanced package includes market research, customer persona development, and a multi-platform storytelling campaign. We help you execute your brand story across multiple channels like video, digital ads, and more for maximum impact.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Brand Story Foundations",
-          startingPrice: 900,
-          info: "Starting at $900, this package focuses on defining your mission, vision, and key brand values. Ideal for small businesses looking to lay the groundwork for a compelling brand story.",
-        },
-        {
-          name: "Comprehensive Brand Storytelling",
-          startingPrice: 2000,
-          info: "Starting at $2,000, this tier includes a fully developed brand story, incorporating your company’s journey, key milestones, and unique value propositions. Perfect for businesses seeking to create a more dynamic story that resonates with their audience.",
-        },
-        {
-          name: "Full Brand Story Strategy & Content Creation",
-          startingPrice: 3500,
-          info: "Starting at $3,500, this package includes brand story development and content creation for various platforms, such as websites, social media, blogs, and marketing materials. Ensures consistency and a strong emotional connection with your target audience.",
-        },
-        {
-          name: "Advanced Brand Narrative & Campaign Execution",
-          startingPrice: 5000,
-          info: "Starting at $5,000, this advanced package includes market research, customer persona development, and a multi-platform storytelling campaign. We help you execute your brand story across multiple channels like video, digital ads, and more for maximum impact.",
-        },
-      ],
     },
     details: [
       {
@@ -363,7 +368,8 @@ export const subServiceDetails = [
       title: "Craft a Story That Captivates, Connects, and Converts",
       intro:
         "Your brand story is more than just words—it’s the core of your identity and the key to building meaningful connections. It sets you apart in a crowded market, fostering emotional bonds that leave a lasting impact. Let us help you craft a captivating narrative that not only resonates with your audience but also drives action and conversions. Whether you’re starting fresh or reimagining an established brand, our storytelling expertise ensures your message makes a powerful impression.",
-      text: "Our brand storytelling service creates authentic, engaging narratives that not only showcase your brand’s journey but also emotionally connect with your audience. Through powerful storytelling, we help you share your mission, values, and vision in a way that fosters loyalty, enhances your brand’s identity, and motivates your customers to take action.",
+      description:
+        "Our brand storytelling service creates authentic, engaging narratives that not only showcase your brand’s journey but also emotionally connect with your audience. Through powerful storytelling, we help you share your mission, values, and vision in a way that fosters loyalty, enhances your brand’s identity, and motivates your customers to take action.",
       button: "Get in Touch for a Free Consultation & Tailored Quote",
       afterButtonText:
         "Let’s create a narrative that not only captivates but also connects with your audience for years to come.",
@@ -375,47 +381,51 @@ export const subServiceDetails = [
     info: {
       name: "Transform Your Brand with Our Rebranding Services",
       title: "Transform Your Brand",
-      menuCaption:
-        "Revitalize your company’s identity with a strategic rebrand that includes a refreshed logo, messaging, and a cohesive brand strategy.",
+      hook: "Revitalize your company’s identity with a strategic rebrand that includes a refreshed logo, messaging, and a cohesive brand strategy.",
       description: "Marketing Strategy",
       startingPrice: 1500,
-      info: "Our comprehensive rebranding services give your company a fresh, modern identity that truly connects with your audience and aligns with your business goals. We specialize in logo design, brand messaging, visual identity, and strategic positioning, ensuring every element reflects your brand’s unique vision. By crafting a cohesive, future-ready brand strategy, we help you stand out from the competition, build trust, and create a lasting impact. Elevate your business with a powerful transformation that fuels growth and long-term success.",
+      intro: [
+        "Our comprehensive rebranding services give your company a fresh, modern identity that truly connects with your audience and aligns with your business goals. We specialize in logo design, brand messaging, visual identity, and strategic positioning, ensuring every element reflects your brand’s unique vision. By crafting a cohesive, future-ready brand strategy, we help you stand out from the competition, build trust, and create a lasting impact. Elevate your business with a powerful transformation that fuels growth and long-term success.",
+      ],
       details:
         "Our rebranding services include a full strategy to redefine your brand image. From logo redesign to complete brand strategies, we ensure your company stands out and connects with your audience.",
       short:
         "Revitalize your brand with impactful rebranding services that combine strategic storytelling and design to engage your audience. We help you craft a distinctive, authentic brand identity that builds trust, fosters loyalty, and makes a lasting impression, whether you’re refreshing your look or redefining your brand message.",
       featured: false,
-      pricingTierIntro: {
-        title: "Find the Perfect Branding Solution for Your Business",
-        text: "Our pricing tiers offer a range of branding services designed to help you create a compelling and cohesive brand presence. Whether you’re looking for a complete brand identity refresh or need a strategic approach to messaging and online presence, we’ve got you covered. Choose the package that aligns with your goals and take your brand to the next level. From logo redesigns to in-depth brand strategies, each tier is crafted to provide exceptional value and lasting impact.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Find the Perfect Branding Solution for Your Business",
+          description:
+            "Our pricing tiers offer a range of branding services designed to help you create a compelling and cohesive brand presence. Whether you’re looking for a complete brand identity refresh or need a strategic approach to messaging and online presence, we’ve got you covered. Choose the package that aligns with your goals and take your brand to the next level. From logo redesigns to in-depth brand strategies, each tier is crafted to provide exceptional value and lasting impact.",
+        },
+        pricingTiers: [
+          {
+            name: "Brand Identity Refresh",
+            startingPrice: 1500,
+            info: "Starting at $1,500, this package includes a refresh of your brand’s visual identity, such as updates to your logo, color palette, and typography. Ideal for businesses looking to modernize while keeping their core identity intact.",
+          },
+          {
+            name: "Comprehensive Brand Overhaul",
+            startingPrice: 3500,
+            info: "Starting at $3,500, this option includes a complete rebranding strategy, covering logo redesign, brand messaging, market research, and a visual identity overhaul to align with your business goals and target audience.",
+          },
+          {
+            name: "Complete Brand Strategy & Execution",
+            startingPrice: 6000,
+            info: "Starting at $6,000, this all-inclusive package includes market analysis, customer persona development, messaging strategy, logo refresh, and implementation across all platforms. Ideal for businesses aiming for a complete repositioning and consistent presence across all channels.",
+          },
+          {
+            name: "Brand Guidelines & Consistency Package",
+            startingPrice: 1500,
+            info: "Starting at $1,500, this service includes the creation of brand guidelines covering logo usage, color scheme, typography, tone of voice, and design style, ensuring consistent branding across all materials and platforms.",
+          },
+          {
+            name: "Ongoing Brand Support & Marketing Integration",
+            startingPrice: 500,
+            info: "Starting at $500 per month, this service offers ongoing support to maintain and evolve your brand. We provide monthly updates for marketing materials, social media templates, and campaign integration to keep your brand fresh, relevant, and aligned with your marketing goals.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Brand Identity Refresh",
-          startingPrice: 1500,
-          info: "Starting at $1,500, this package includes a refresh of your brand’s visual identity, such as updates to your logo, color palette, and typography. Ideal for businesses looking to modernize while keeping their core identity intact.",
-        },
-        {
-          name: "Comprehensive Brand Overhaul",
-          startingPrice: 3500,
-          info: "Starting at $3,500, this option includes a complete rebranding strategy, covering logo redesign, brand messaging, market research, and a visual identity overhaul to align with your business goals and target audience.",
-        },
-        {
-          name: "Complete Brand Strategy & Execution",
-          startingPrice: 6000,
-          info: "Starting at $6,000, this all-inclusive package includes market analysis, customer persona development, messaging strategy, logo refresh, and implementation across all platforms. Ideal for businesses aiming for a complete repositioning and consistent presence across all channels.",
-        },
-        {
-          name: "Brand Guidelines & Consistency Package",
-          startingPrice: 1500,
-          info: "Starting at $1,500, this service includes the creation of brand guidelines covering logo usage, color scheme, typography, tone of voice, and design style, ensuring consistent branding across all materials and platforms.",
-        },
-        {
-          name: "Ongoing Brand Support & Marketing Integration",
-          startingPrice: 500,
-          info: "Starting at $500 per month, this service offers ongoing support to maintain and evolve your brand. We provide monthly updates for marketing materials, social media templates, and campaign integration to keep your brand fresh, relevant, and aligned with your marketing goals.",
-        },
-      ],
     },
     details: [
       {
@@ -668,7 +678,8 @@ export const subServiceDetails = [
       title: "Revolutionize and Revitalize Your Brand for Greater Impact",
       intro:
         "Rebranding is more than just a makeover—it’s about reshaping your business for the future. Whether you’re repositioning your company, launching new products, or modernizing your visual identity, a strategic rebrand can drive lasting success. Our expert rebranding services are designed to elevate your brand, aligning it with your business goals while creating deeper connections with your audience.",
-      text: "Our expert rebranding services breathe new life into your brand, aligning it with your business’s vision and goals. From refreshing your visual identity to refining your messaging, we craft a cohesive strategy that strengthens your presence, fosters deeper connections, and elevates your brand’s impact.",
+      description:
+        "Our expert rebranding services breathe new life into your brand, aligning it with your business’s vision and goals. From refreshing your visual identity to refining your messaging, we craft a cohesive strategy that strengthens your presence, fosters deeper connections, and elevates your brand’s impact.",
       button: "Start Your Brand Transformation Today",
       afterButtonText:
         "Let’s work together to create a brand identity that is fresh, memorable, and poised for long-term success.",
@@ -680,47 +691,51 @@ export const subServiceDetails = [
     info: {
       name: "E-Commerce Solutions Built for Growth and Success",
       title: "E-Commerce Solutions for Growth",
-      menuCaption:
-        "Create an online shopping experience that delights customers, boosts conversions, and drives sales with smooth and intuitive e-commerce solutions.",
+      hook: "Create an online shopping experience that delights customers, boosts conversions, and drives sales with smooth and intuitive e-commerce solutions.",
       description: "Selling Online",
       startingPrice: 2000,
-      info: "We design scalable, secure, and user-friendly e-commerce platforms that enhance the customer experience and drive sales growth. With intuitive navigation, seamless checkout, and robust security, our platforms ensure a smooth and secure shopping experience for your customers. Designed for long-term success, our solutions include personalized recommendations, inventory management, and in-depth analytics to optimize performance. Whether you're launching a new online store or upgrading an existing platform, we deliver tailored e-commerce solutions that showcase your brand, increase conversions, and maximize your success.",
+      intro: [
+        "We design scalable, secure, and user-friendly e-commerce platforms that enhance the customer experience and drive sales growth. With intuitive navigation, seamless checkout, and robust security, our platforms ensure a smooth and secure shopping experience for your customers. Designed for long-term success, our solutions include personalized recommendations, inventory management, and in-depth analytics to optimize performance. Whether you're launching a new online store or upgrading an existing platform, we deliver tailored e-commerce solutions that showcase your brand, increase conversions, and maximize your success.",
+      ],
       details:
         "We create e-commerce websites designed for security, scalability, and user satisfaction. From product pages to checkout systems, we provide the tools for a successful online store.",
       short:
         "Unlock the potential of your online store with custom e-commerce solutions that drive growth and deliver exceptional customer experiences. From intuitive navigation and secure transactions to personalized recommendations and powerful analytics, we craft scalable platforms that optimize performance and increase conversions, helping your business thrive in the digital marketplace.",
       featured: true,
-      pricingTierIntro: {
-        title: "Choose the Perfect E-Commerce Solution for Your Business",
-        text: "Our e-commerce packages are designed to help businesses of all sizes build, grow, and scale their online stores. Whether you're just starting out, looking to enhance your user experience, or managing a large-scale operation, our tiered offerings provide tailored solutions to meet your needs. With a focus on user engagement, secure transactions, and seamless integrations, we ensure your e-commerce platform is optimized for success. Select the right package to take your online store to the next level, and start driving more sales today.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Choose the Perfect E-Commerce Solution for Your Business",
+          description:
+            "Our e-commerce packages are designed to help businesses of all sizes build, grow, and scale their online stores. Whether you're just starting out, looking to enhance your user experience, or managing a large-scale operation, our tiered offerings provide tailored solutions to meet your needs. With a focus on user engagement, secure transactions, and seamless integrations, we ensure your e-commerce platform is optimized for success. Select the right package to take your online store to the next level, and start driving more sales today.",
+        },
+        pricingTiers: [
+          {
+            name: "Starter E-Commerce Package",
+            startingPrice: 2000,
+            info: "Starting at $2,000, this package provides the basics for your e-commerce business, including product listings, secure checkout, and responsive design. Perfect for small businesses getting started in the online marketplace.",
+          },
+          {
+            name: "Growth E-Commerce Package",
+            startingPrice: 4500,
+            info: "Starting at $4,500, this package adds more advanced features like customer accounts, integrated payment gateways, and loyalty programs. Ideal for growing businesses that need a more robust platform to boost conversions and enhance user experience.",
+          },
+          {
+            name: "Premium E-Commerce Package",
+            startingPrice: 8000,
+            info: "Starting at $8,000, this package includes custom design, advanced product management, SEO optimization, and multi-channel integration. Perfect for businesses looking to take their online store to the next level with personalized features and streamlined operations.",
+          },
+          {
+            name: "Enterprise E-Commerce Solution",
+            startingPrice: 15000,
+            info: "Starting at $15,000+, this solution is designed for large-scale operations. It includes complex integrations, multi-vendor support, and full back-end automation for inventory, order management, and shipping. Perfect for businesses with large product catalogs or multiple sales channels.",
+          },
+          {
+            name: "Ongoing E-Commerce Support & Maintenance",
+            startingPrice: 350,
+            info: "Starting at $350/month, this service includes regular updates, security monitoring, performance optimizations, and troubleshooting to keep your site secure and running smoothly. A must-have for businesses seeking long-term success and stability.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Starter E-Commerce Package",
-          startingPrice: 2000,
-          info: "Starting at $2,000, this package provides the basics for your e-commerce business, including product listings, secure checkout, and responsive design. Perfect for small businesses getting started in the online marketplace.",
-        },
-        {
-          name: "Growth E-Commerce Package",
-          startingPrice: 4500,
-          info: "Starting at $4,500, this package adds more advanced features like customer accounts, integrated payment gateways, and loyalty programs. Ideal for growing businesses that need a more robust platform to boost conversions and enhance user experience.",
-        },
-        {
-          name: "Premium E-Commerce Package",
-          startingPrice: 8000,
-          info: "Starting at $8,000, this package includes custom design, advanced product management, SEO optimization, and multi-channel integration. Perfect for businesses looking to take their online store to the next level with personalized features and streamlined operations.",
-        },
-        {
-          name: "Enterprise E-Commerce Solution",
-          startingPrice: 15000,
-          info: "Starting at $15,000+, this solution is designed for large-scale operations. It includes complex integrations, multi-vendor support, and full back-end automation for inventory, order management, and shipping. Perfect for businesses with large product catalogs or multiple sales channels.",
-        },
-        {
-          name: "Ongoing E-Commerce Support & Maintenance",
-          startingPrice: 350,
-          info: "Starting at $350/month, this service includes regular updates, security monitoring, performance optimizations, and troubleshooting to keep your site secure and running smoothly. A must-have for businesses seeking long-term success and stability.",
-        },
-      ],
     },
     details: [
       {
@@ -952,7 +967,8 @@ export const subServiceDetails = [
         "Partner with Us to Build an E-Commerce Website That Elevates Your Business",
       intro:
         "Transform your online store into a high-performing, user-friendly platform that drives success. An optimized e-commerce platform is the cornerstone of a successful online business. With our tailored solutions, we help you create a high-performance, scalable online store that drives conversions, builds customer loyalty, and supports long-term growth.",
-      text: "Our e-commerce solutions are designed to deliver seamless shopping experiences, integrate with the latest technologies, and optimize your sales funnel. Whether you're launching a new store or enhancing an existing one, we ensure your e-commerce platform is secure, mobile-optimized, and conversion-driven to maximize your revenue.",
+      description:
+        "Our e-commerce solutions are designed to deliver seamless shopping experiences, integrate with the latest technologies, and optimize your sales funnel. Whether you're launching a new store or enhancing an existing one, we ensure your e-commerce platform is secure, mobile-optimized, and conversion-driven to maximize your revenue.",
       button: "Get Started with Your Online Store Today",
       afterButtonText:
         "Let’s create a powerful, user-friendly online store that attracts customers, enhances their shopping experience, and grows your business.",
@@ -964,47 +980,52 @@ export const subServiceDetails = [
     info: {
       name: "High-Performance Single-Page Applications (SPAs) for a Seamless User Experience",
       title: "High-Performance Single-Page Applications (SPAs)",
-      menuCaption:
-        "Develop lightning-fast, dynamic web apps with seamless user interfaces that enhance functionality and user experience.",
+      hook: "Develop lightning-fast, dynamic web apps with seamless user interfaces that enhance functionality and user experience.",
       description: "Enhanced UX",
       startingPrice: 2000,
-      info: "We specialize in building fast, dynamic, and highly responsive single-page applications (SPAs) that deliver real-time updates, seamless navigation, and top-tier performance. Using cutting-edge frameworks and modern development techniques, our SPAs provide an engaging, app-like experience that works flawlessly across all devices and screen sizes. Designed for speed and user retention, our applications feature smooth transitions, minimal load times, and interactive elements that keep users engaged. Whether you're looking to enhance functionality, streamline performance, or create an immersive user journey, our SPAs are tailored to meet your business objectives and audience needs.",
+      intro: [
+        "We specialize in building fast, dynamic, and highly responsive single-page applications (SPAs) that deliver real-time updates, seamless navigation, and top-tier performance. Using cutting-edge frameworks and modern development techniques, our SPAs provide an engaging, app-like experience that works flawlessly across all devices and screen sizes. Designed for speed and user retention, our applications feature smooth transitions, minimal load times, and interactive elements that keep users engaged. Whether you're looking to enhance functionality, streamline performance, or create an immersive user journey, our SPAs are tailored to meet your business objectives and audience needs.",
+      ],
       details:
         "We create SPAs optimized for speed and interactivity, dynamically loading content to ensure seamless experiences and boost user engagement.",
       short:
         "Create fast, dynamic, and user-friendly single-page applications (SPAs) that deliver seamless navigation and real-time updates. With cutting-edge frameworks and minimal load times, our SPAs provide a smooth, app-like experience across all devices, keeping users engaged and driving performance for your business.",
       featured: false,
-      pricingTierIntro: {
-        title: "Find the Perfect SPA Package to Elevate Your Digital Presence",
-        text: "Our tailored Single Page Application (SPA) packages are designed to provide scalable, high-performance solutions for businesses of all sizes. Whether you're just getting started with a responsive website, need advanced features for growing user engagement, or require a robust enterprise solution with real-time updates, we offer a variety of packages to suit your needs. Choose the package that aligns with your goals and budget, and let us help you deliver seamless, dynamic digital experiences that captivate your audience.",
+      pricing: {
+        pricingTierIntro: {
+          title:
+            "Find the Perfect SPA Package to Elevate Your Digital Presence",
+          description:
+            "Our tailored Single Page Application (SPA) packages are designed to provide scalable, high-performance solutions for businesses of all sizes. Whether you're just getting started with a responsive website, need advanced features for growing user engagement, or require a robust enterprise solution with real-time updates, we offer a variety of packages to suit your needs. Choose the package that aligns with your goals and budget, and let us help you deliver seamless, dynamic digital experiences that captivate your audience.",
+        },
+        pricingTiers: [
+          {
+            name: "Starter SPA Package",
+            startingPrice: 2000,
+            info: "Starting at $2,000, this package includes the development of a basic SPA with essential features such as responsive design, seamless navigation, and core functionality. Ideal for small businesses or startups looking to offer a smooth user experience without complex features.",
+          },
+          {
+            name: "Advanced SPA Package",
+            startingPrice: 4000,
+            info: "Starting at $4,000, this option includes advanced SPA features such as dynamic content, API integrations for real-time data updates, and enhanced UI elements. Perfect for businesses looking to provide a more interactive and personalized user experience.",
+          },
+          {
+            name: "Premium SPA Package",
+            startingPrice: 7500,
+            info: "Starting at $7,500, this package offers a fully customized SPA with advanced performance optimization, real-time data processing, and seamless API integrations. Includes enhanced user interface design, mobile-first approach, and scalable features for long-term business growth.",
+          },
+          {
+            name: "Enterprise SPA Solution",
+            startingPrice: 12000,
+            info: "Starting at $12,000+, this solution is designed for enterprises requiring large-scale SPAs with high-performance features, such as Progressive Web App (PWA) capabilities, multi-user interactions, complex real-time data management, and multi-platform support.",
+          },
+          {
+            name: "Ongoing SPA Maintenance & Optimization",
+            startingPrice: 300,
+            info: "Starting at $300/month, this service includes ongoing SPA maintenance, performance monitoring, security updates, and feature enhancements to ensure your application stays secure, high-performing, and up-to-date with the latest industry standards.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Starter SPA Package",
-          startingPrice: 2000,
-          info: "Starting at $2,000, this package includes the development of a basic SPA with essential features such as responsive design, seamless navigation, and core functionality. Ideal for small businesses or startups looking to offer a smooth user experience without complex features.",
-        },
-        {
-          name: "Advanced SPA Package",
-          startingPrice: 4000,
-          info: "Starting at $4,000, this option includes advanced SPA features such as dynamic content, API integrations for real-time data updates, and enhanced UI elements. Perfect for businesses looking to provide a more interactive and personalized user experience.",
-        },
-        {
-          name: "Premium SPA Package",
-          startingPrice: 7500,
-          info: "Starting at $7,500, this package offers a fully customized SPA with advanced performance optimization, real-time data processing, and seamless API integrations. Includes enhanced user interface design, mobile-first approach, and scalable features for long-term business growth.",
-        },
-        {
-          name: "Enterprise SPA Solution",
-          startingPrice: 12000,
-          info: "Starting at $12,000+, this solution is designed for enterprises requiring large-scale SPAs with high-performance features, such as Progressive Web App (PWA) capabilities, multi-user interactions, complex real-time data management, and multi-platform support.",
-        },
-        {
-          name: "Ongoing SPA Maintenance & Optimization",
-          startingPrice: 300,
-          info: "Starting at $300/month, this service includes ongoing SPA maintenance, performance monitoring, security updates, and feature enhancements to ensure your application stays secure, high-performing, and up-to-date with the latest industry standards.",
-        },
-      ],
     },
     details: [
       {
@@ -1207,7 +1228,8 @@ export const subServiceDetails = [
         "Let’s Build a Seamless, High-Performance Platform That Delivers Results and Builds Lasting Relationships",
       intro:
         "Single Page Applications (SPAs) offer a smooth, fast, and interactive experience that keeps users engaged. Let us help you create a SPA that is tailored to your business needs, enhancing user experience, boosting performance, and driving results.",
-      text: "Our custom SPAs are designed to provide users with dynamic and fluid interactions, ensuring your platform delivers a seamless experience that keeps customers coming back. From intuitive navigation to real-time data, we focus on creating powerful digital experiences that connect with your audience and support your business growth.",
+      description:
+        "Our custom SPAs are designed to provide users with dynamic and fluid interactions, ensuring your platform delivers a seamless experience that keeps customers coming back. From intuitive navigation to real-time data, we focus on creating powerful digital experiences that connect with your audience and support your business growth.",
       button: "Get Started Today",
       afterButtonText:
         "Let’s build a high-converting platform that drives customer engagement and brings in consistent business.",
@@ -1219,47 +1241,51 @@ export const subServiceDetails = [
     info: {
       name: "Custom Websites Designed for Impact and Performance",
       title: "Impactful Tailored Website Design",
-      menuCaption:
-        "Transform your digital presence with a custom website that not only captivates visitors but also aligns seamlessly with your brand’s vision and goals.",
+      hook: "Transform your digital presence with a custom website that not only captivates visitors but also aligns seamlessly with your brand’s vision and goals.",
       description: "Brand Differentiation",
       startingPrice: 1500,
-      info: "We create custom websites that do more than just look great—they work strategically to drive your business forward. Every website we design is a seamless blend of creativity and functionality, tailored to reflect your brand identity and business goals. Our fully responsive, high-performance designs ensure flawless experiences across desktops, tablets, and smartphones. With intuitive navigation, fast load speeds, and engaging visuals, we craft websites that captivate audiences, boost conversions, and fuel growth. Let’s build a digital presence that makes a lasting impact and sets your brand apart.",
+      intro: [
+        "We create custom websites that do more than just look great—they work strategically to drive your business forward. Every website we design is a seamless blend of creativity and functionality, tailored to reflect your brand identity and business goals. Our fully responsive, high-performance designs ensure flawless experiences across desktops, tablets, and smartphones. With intuitive navigation, fast load speeds, and engaging visuals, we craft websites that captivate audiences, boost conversions, and fuel growth. Let’s build a digital presence that makes a lasting impact and sets your brand apart.",
+      ],
       details:
         "We specialize in creating custom websites that align with your brand and business objectives. From layout design to functionality, we ensure a seamless user experience.",
       short:
         "Elevate your digital presence with custom-built websites that combine exceptional UX/UI design, smooth functionality, and SEO optimization. Whether you’re starting fresh or redesigning an existing site, our personalized solutions deliver a visually appealing, high-performing, and intuitive experience that enhances user engagement and drives business growth.",
       featured: true,
-      pricingTierIntro: {
-        title: "Choose the Right Website Package for Your Business Needs",
-        text: "Whether you're starting with a simple, informative site or need a feature-packed platform with advanced integrations, our website packages are designed to meet the unique needs of your business. From clean, professional designs for small businesses to feature-rich websites for growth and expansion, each tier offers scalable solutions. Choose the package that best suits your objectives and budget, and let us help you establish a strong online presence.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Choose the Right Website Package for Your Business Needs",
+          description:
+            "Whether you're starting with a simple, informative site or need a feature-packed platform with advanced integrations, our website packages are designed to meet the unique needs of your business. From clean, professional designs for small businesses to feature-rich websites for growth and expansion, each tier offers scalable solutions. Choose the package that best suits your objectives and budget, and let us help you establish a strong online presence.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Website Package",
+            startingPrice: 1500,
+            info: "Starting at $1,500, this package includes a custom-designed website with up to 5 pages. Ideal for small businesses or startups looking to establish a clean, professional online presence with basic functionality.",
+          },
+          {
+            name: "Advanced Website Package",
+            startingPrice: 3000,
+            info: "Starting at $3,000, this package includes up to 10 pages with custom designs, advanced features, and enhanced functionality. Ideal for businesses that require more personalized design, user experience, and dynamic content elements.",
+          },
+          {
+            name: "Premium Website Package",
+            startingPrice: 5000,
+            info: "Starting at $5,000, this comprehensive package includes up to 20 pages, advanced features such as e-commerce integration, SEO optimization, and full mobile responsiveness. Perfect for growing businesses looking for an impactful online presence that drives engagement and conversion.",
+          },
+          {
+            name: "Enterprise Website Package",
+            startingPrice: 10000,
+            info: "Starting at $10,000, this package includes a custom website designed for larger-scale businesses with complex needs. It includes advanced custom functionality, API integrations, multiple integrations, secure payment gateways, and more. Ideal for enterprises looking for a highly scalable and feature-rich website.",
+          },
+          {
+            name: "Ongoing Website Maintenance & Support",
+            startingPrice: 150,
+            info: "Starting at $150/month, this service includes ongoing website maintenance, security updates, content updates, and performance monitoring to ensure your website stays fresh, secure, and optimized.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Website Package",
-          startingPrice: 1500,
-          info: "Starting at $1,500, this package includes a custom-designed website with up to 5 pages. Ideal for small businesses or startups looking to establish a clean, professional online presence with basic functionality.",
-        },
-        {
-          name: "Advanced Website Package",
-          startingPrice: 3000,
-          info: "Starting at $3,000, this package includes up to 10 pages with custom designs, advanced features, and enhanced functionality. Ideal for businesses that require more personalized design, user experience, and dynamic content elements.",
-        },
-        {
-          name: "Premium Website Package",
-          startingPrice: 5000,
-          info: "Starting at $5,000, this comprehensive package includes up to 20 pages, advanced features such as e-commerce integration, SEO optimization, and full mobile responsiveness. Perfect for growing businesses looking for an impactful online presence that drives engagement and conversion.",
-        },
-        {
-          name: "Enterprise Website Package",
-          startingPrice: 10000,
-          info: "Starting at $10,000, this package includes a custom website designed for larger-scale businesses with complex needs. It includes advanced custom functionality, API integrations, multiple integrations, secure payment gateways, and more. Ideal for enterprises looking for a highly scalable and feature-rich website.",
-        },
-        {
-          name: "Ongoing Website Maintenance & Support",
-          startingPrice: 150,
-          info: "Starting at $150/month, this service includes ongoing website maintenance, security updates, content updates, and performance monitoring to ensure your website stays fresh, secure, and optimized.",
-        },
-      ],
     },
     details: [
       {
@@ -1532,7 +1558,8 @@ export const subServiceDetails = [
         "Build a Unique Online Presence with a Custom Website Tailored to Your Business Needs",
       intro:
         "A custom website is more than just a digital storefront—it’s your brand’s foundation. We design websites that reflect your values, engage your audience, and drive business growth. Let us help you create an online experience that stands out.",
-      text: "Your website should be as unique as your business. With a custom-built website, we ensure your online presence is aligned with your goals, optimized for performance, and designed to engage visitors. Whether you need an e-commerce store, a portfolio, or a complex web app, we craft a solution tailored to your needs, ensuring you stand out from the competition and offer a memorable user experience.",
+      description:
+        "Your website should be as unique as your business. With a custom-built website, we ensure your online presence is aligned with your goals, optimized for performance, and designed to engage visitors. Whether you need an e-commerce store, a portfolio, or a complex web app, we craft a solution tailored to your needs, ensuring you stand out from the competition and offer a memorable user experience.",
       button: "Get Started With Us Today!",
       afterButtonText:
         "Let’s create a powerful, personalized website that captures your brand, enhances user experience, and drives long-term business success.",
@@ -1544,47 +1571,51 @@ export const subServiceDetails = [
     info: {
       name: "User-Centered Interface Design for Seamless Experiences",
       title: "User-Centered Interface Design",
-      menuCaption:
-        "Design intuitive, engaging user interfaces that deliver exceptional user experiences and foster satisfaction and accessibility.",
+      hook: "Design intuitive, engaging user interfaces that deliver exceptional user experiences and foster satisfaction and accessibility.",
       description: "Tailored UX",
       startingPrice: 1200,
-      info: "We design intuitive, functional interfaces that strike the perfect balance between usability, accessibility, and aesthetic appeal. Through in-depth user research, we uncover insights into your audience’s behaviors, needs, and pain points—ensuring every design decision is data-driven. Our process, from wireframing and prototyping to rigorous testing and refinement, prioritizes both beauty and functionality. By integrating accessibility best practices, we create inclusive experiences that cater to all users, regardless of ability. The result? Engaging, seamless, and user-friendly interfaces that leave a lasting impression and drive meaningful interactions.",
+      intro: [
+        "We design intuitive, functional interfaces that strike the perfect balance between usability, accessibility, and aesthetic appeal. Through in-depth user research, we uncover insights into your audience’s behaviors, needs, and pain points—ensuring every design decision is data-driven. Our process, from wireframing and prototyping to rigorous testing and refinement, prioritizes both beauty and functionality. By integrating accessibility best practices, we create inclusive experiences that cater to all users, regardless of ability. The result? Engaging, seamless, and user-friendly interfaces that leave a lasting impression and drive meaningful interactions.",
+      ],
       details:
         "Our UX design services focus on creating seamless and engaging user experiences. By conducting thorough research and usability testing, we deliver designs that simplify interactions and enhance effectiveness. Services include user research, wireframing, prototyping, and testing.",
       short:
         "Design seamless, engaging, and user-friendly interfaces that combine beauty with functionality. Through in-depth user research and rigorous testing, we create intuitive experiences that prioritize accessibility, enhance usability, and leave a lasting impression on all users.",
       featured: false,
-      pricingTierIntro: {
-        title: "Choose the Perfect UX/UI Design Package for Your Project",
-        text: "Our UX/UI design services are tailored to create engaging, user-centered experiences that align with your business objectives. Whether you're looking for in-depth user research and prototyping or a comprehensive, end-to-end design solution, our packages provide a perfect fit for your needs. Explore the options below to find the right level of support for your design journey, and let's create intuitive and impactful digital experiences together.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Choose the Perfect UX/UI Design Package for Your Project",
+          description:
+            "Our UX/UI design services are tailored to create engaging, user-centered experiences that align with your business objectives. Whether you're looking for in-depth user research and prototyping or a comprehensive, end-to-end design solution, our packages provide a perfect fit for your needs. Explore the options below to find the right level of support for your design journey, and let's create intuitive and impactful digital experiences together.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Interface Design",
+            startingPrice: 1200,
+            info: "Starting at $1,200, this package includes a simple, user-friendly interface design focused on improving accessibility and usability. Perfect for small businesses looking for an intuitive layout for their website or app without complex features.",
+          },
+          {
+            name: "Advanced Interface Design",
+            startingPrice: 2500,
+            info: "Starting at $2,500, this tier offers a more sophisticated UI design with dynamic user flows, advanced interactivity, and detailed wireframes. Ideal for businesses aiming to enhance user engagement with additional features and refined design elements.",
+          },
+          {
+            name: "Premium UX/UI Design",
+            startingPrice: 4000,
+            info: "Starting at $4,000, this comprehensive package includes high-fidelity prototypes, usability testing, and multiple design iterations, focusing on an integrated, seamless user experience. Perfect for businesses aiming for a polished digital product with advanced UX/UI features.",
+          },
+          {
+            name: "Mobile-First Design",
+            startingPrice: 3000,
+            info: "Starting at $3,000, this service specializes in mobile-optimized UI design, ensuring your platform provides an intuitive, engaging mobile experience. Ideal for businesses adopting a mobile-first approach in today’s mobile-driven world.",
+          },
+          {
+            name: "Full UX/UI Strategy & Design Package",
+            startingPrice: 6500,
+            info: "Starting at $6,500, this package offers a complete user-centered design strategy, including user research, persona development, wireframes, prototypes, usability testing, and final design implementation. Tailored for businesses that need a comprehensive approach to achieve high engagement and long-term success across platforms.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Interface Design",
-          startingPrice: 1200,
-          info: "Starting at $1,200, this package includes a simple, user-friendly interface design focused on improving accessibility and usability. Perfect for small businesses looking for an intuitive layout for their website or app without complex features.",
-        },
-        {
-          name: "Advanced Interface Design",
-          startingPrice: 2500,
-          info: "Starting at $2,500, this tier offers a more sophisticated UI design with dynamic user flows, advanced interactivity, and detailed wireframes. Ideal for businesses aiming to enhance user engagement with additional features and refined design elements.",
-        },
-        {
-          name: "Premium UX/UI Design",
-          startingPrice: 4000,
-          info: "Starting at $4,000, this comprehensive package includes high-fidelity prototypes, usability testing, and multiple design iterations, focusing on an integrated, seamless user experience. Perfect for businesses aiming for a polished digital product with advanced UX/UI features.",
-        },
-        {
-          name: "Mobile-First Design",
-          startingPrice: 3000,
-          info: "Starting at $3,000, this service specializes in mobile-optimized UI design, ensuring your platform provides an intuitive, engaging mobile experience. Ideal for businesses adopting a mobile-first approach in today’s mobile-driven world.",
-        },
-        {
-          name: "Full UX/UI Strategy & Design Package",
-          startingPrice: 6500,
-          info: "Starting at $6,500, this package offers a complete user-centered design strategy, including user research, persona development, wireframes, prototypes, usability testing, and final design implementation. Tailored for businesses that need a comprehensive approach to achieve high engagement and long-term success across platforms.",
-        },
-      ],
     },
     details: [
       {
@@ -1715,7 +1746,8 @@ export const subServiceDetails = [
         "Create Seamless, User-Centered Experiences with Our Interface Design Services",
       intro:
         "Your users deserve an intuitive, seamless, and engaging experience that not only meets their needs but also exceeds their expectations. Our user-centered interface design ensures that every interaction on your website or application is smooth, meaningful, and tailored to provide the best possible experience. We focus on creating interfaces that are not just functional but also enjoyable, fostering long-term user engagement and loyalty.",
-      text: "We believe that exceptional design begins with a deep understanding of your users. Our approach to user-centered interface design focuses on crafting intuitive, aesthetically pleasing, and easy-to-navigate interfaces that balance user needs with business goals. By prioritizing usability and functionality, we make sure your users can complete tasks quickly and effortlessly, which drives satisfaction, enhances loyalty, and improves overall user experience.",
+      description:
+        "We believe that exceptional design begins with a deep understanding of your users. Our approach to user-centered interface design focuses on crafting intuitive, aesthetically pleasing, and easy-to-navigate interfaces that balance user needs with business goals. By prioritizing usability and functionality, we make sure your users can complete tasks quickly and effortlessly, which drives satisfaction, enhances loyalty, and improves overall user experience.",
       button: "Enhance Your User Experience Today",
       afterButtonText:
         "Let’s collaborate to create an interface that simplifies interactions, boosts engagement, and delivers a seamless experience for your users.",
@@ -1727,47 +1759,51 @@ export const subServiceDetails = [
     info: {
       name: "SEO-Optimized, Engaging Blog Content",
       title: "Engaging Blogs",
-      menuCaption:
-        "Create insightful, SEO-optimized blog posts that capture attention, drive website traffic, and build lasting engagement with your audience.",
+      hook: "Create insightful, SEO-optimized blog posts that capture attention, drive website traffic, and build lasting engagement with your audience.",
       description: "Web Traffic",
       startingPrice: 150,
-      info: "We create compelling, informative blog posts that not only captivate your audience but also enhance your website’s SEO performance. Every post is carefully crafted to align with your brand voice and industry expertise, ensuring authenticity and consistency. By delivering valuable, relevant content, we help establish your brand as an authority in your field, boost organic traffic, and foster deeper connections with your audience. Our blogs are designed to educate, inspire, and engage, driving higher visibility, increased engagement, and long-term growth for your online presence.",
+      intro: [
+        "We create compelling, informative blog posts that not only captivate your audience but also enhance your website’s SEO performance. Every post is carefully crafted to align with your brand voice and industry expertise, ensuring authenticity and consistency. By delivering valuable, relevant content, we help establish your brand as an authority in your field, boost organic traffic, and foster deeper connections with your audience. Our blogs are designed to educate, inspire, and engage, driving higher visibility, increased engagement, and long-term growth for your online presence.",
+      ],
       details:
         "Our blog writing services deliver engaging, SEO-optimized content that captivates your audience and boosts search rankings. Tailored to your brand voice and industry, our blog posts provide valuable insights, drive organic traffic, and establish your authority online.",
       short:
         "Create SEO-optimized, engaging blog content that drives organic traffic and boosts search rankings. Tailored to your brand voice and industry, our blog posts provide valuable insights that foster audience engagement, establish authority, and support long-term growth.",
       featured: true,
-      pricingTierIntro: {
-        title: "Choose the Perfect Blog Content Package for Your Business",
-        text: "Whether you're looking for a one-time blog post, long-form in-depth articles, or a consistent flow of content, our blog writing services are designed to meet your needs. From concise, high-impact updates to comprehensive storytelling, our tiers offer flexible options to fit your content strategy and budget. Explore our packages to find the perfect fit for your business and elevate your content marketing efforts.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Choose the Perfect Blog Content Package for Your Business",
+          description:
+            "Whether you're looking for a one-time blog post, long-form in-depth articles, or a consistent flow of content, our blog writing services are designed to meet your needs. From concise, high-impact updates to comprehensive storytelling, our tiers offer flexible options to fit your content strategy and budget. Explore our packages to find the perfect fit for your business and elevate your content marketing efforts.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Blog Post",
+            startingPrice: 150,
+            info: "Starting at $150, this package provides a concise, SEO-optimized blog post of up to 500 words. Perfect for businesses needing regular updates or simple, engaging content that drives initial traffic.",
+          },
+          {
+            name: "Standard Blog Post",
+            startingPrice: 350,
+            info: "Starting at $350, this tier includes an in-depth, SEO-optimized blog post of up to 1,000 words. Ideal for businesses wanting more detailed content that covers key topics, incorporates keywords effectively, and engages readers.",
+          },
+          {
+            name: "Premium Blog Package",
+            startingPrice: 600,
+            info: "Starting at $600, this package provides a comprehensive, SEO-optimized blog post of up to 2,000 words. It includes thorough keyword research, a compelling narrative, and high-quality content that resonates with your audience while driving organic traffic.",
+          },
+          {
+            name: "Monthly Blog Subscription",
+            startingPrice: 1500,
+            info: "Starting at $1,500 per month, this subscription package includes 4 blog posts (1,000–1,500 words each) delivered monthly. Perfect for businesses looking for consistent, high-quality blog content that drives SEO results and engages customers regularly.",
+          },
+          {
+            name: "Custom Blog Strategy & Content Package",
+            startingPrice: 2500,
+            info: "Starting at $2,500, this custom package provides a full content strategy, keyword research, and 6+ blog posts per month. Tailored for businesses looking to implement a long-term content plan and significantly boost their online presence.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Blog Post",
-          startingPrice: 150,
-          info: "Starting at $150, this package provides a concise, SEO-optimized blog post of up to 500 words. Perfect for businesses needing regular updates or simple, engaging content that drives initial traffic.",
-        },
-        {
-          name: "Standard Blog Post",
-          startingPrice: 350,
-          info: "Starting at $350, this tier includes an in-depth, SEO-optimized blog post of up to 1,000 words. Ideal for businesses wanting more detailed content that covers key topics, incorporates keywords effectively, and engages readers.",
-        },
-        {
-          name: "Premium Blog Package",
-          startingPrice: 600,
-          info: "Starting at $600, this package provides a comprehensive, SEO-optimized blog post of up to 2,000 words. It includes thorough keyword research, a compelling narrative, and high-quality content that resonates with your audience while driving organic traffic.",
-        },
-        {
-          name: "Monthly Blog Subscription",
-          startingPrice: 1500,
-          info: "Starting at $1,500 per month, this subscription package includes 4 blog posts (1,000–1,500 words each) delivered monthly. Perfect for businesses looking for consistent, high-quality blog content that drives SEO results and engages customers regularly.",
-        },
-        {
-          name: "Custom Blog Strategy & Content Package",
-          startingPrice: 2500,
-          info: "Starting at $2,500, this custom package provides a full content strategy, keyword research, and 6+ blog posts per month. Tailored for businesses looking to implement a long-term content plan and significantly boost their online presence.",
-        },
-      ],
     },
     details: [
       {
@@ -1894,7 +1930,8 @@ export const subServiceDetails = [
         "Transform Your Online Presence with SEO-Optimized, Engaging Blog Content",
       intro:
         "Boost your website’s traffic, engagement, and brand visibility with SEO-optimized blog content that not only resonates with your audience but also excels in search engine rankings. Our expertly crafted blog posts are designed to capture attention, deliver valuable insights, and strategically incorporate keywords to enhance your visibility and drive organic traffic. By focusing on relevant, engaging content, we help your business attract potential customers and build credibility in your industry.",
-      text: "Our blog writing services are specifically tailored to create high-quality, SEO-friendly content that draws visitors and keeps them engaged. Through smart keyword integration, informative content, and alignment with your brand’s voice, we help improve your search rankings while strengthening connections with your audience. With our expertise, your blog will become an essential asset in driving organic traffic and supporting long-term growth.",
+      description:
+        "Our blog writing services are specifically tailored to create high-quality, SEO-friendly content that draws visitors and keeps them engaged. Through smart keyword integration, informative content, and alignment with your brand’s voice, we help improve your search rankings while strengthening connections with your audience. With our expertise, your blog will become an essential asset in driving organic traffic and supporting long-term growth.",
       button: "Start Growing Your Blog Today",
       afterButtonText:
         "Let’s craft compelling, SEO-optimized blog posts that attract your target audience, increase conversions, and position your brand as an industry leader.",
@@ -1906,42 +1943,46 @@ export const subServiceDetails = [
     info: {
       name: "Expert Technical Writing for Clarity & Precision",
       title: "Expert Technical Writing",
-      menuCaption:
-        "Produce clear, precise, and structured technical documentation to support complex processes and tools for your team or customers.",
+      hook: "Produce clear, precise, and structured technical documentation to support complex processes and tools for your team or customers.",
       description: "Documentation",
       startingPrice: 500,
-      info: "Our technical writing services transform complex concepts into clear, concise, and user-friendly documentation. Whether you need software manuals, API documentation, white papers, or technical guides, we deliver accurate, well-structured content that enhances understanding and usability. By prioritizing clarity, precision, and accessibility, we ensure your audience can easily navigate and apply the information, improving their experience and confidence in your product or service. Our expertly crafted documents support seamless adoption, reduced learning curves, and enhanced user engagement across technical and non-technical audiences alike.",
+      intro: [
+        "Our technical writing services transform complex concepts into clear, concise, and user-friendly documentation. Whether you need software manuals, API documentation, white papers, or technical guides, we deliver accurate, well-structured content that enhances understanding and usability. By prioritizing clarity, precision, and accessibility, we ensure your audience can easily navigate and apply the information, improving their experience and confidence in your product or service. Our expertly crafted documents support seamless adoption, reduced learning curves, and enhanced user engagement across technical and non-technical audiences alike.",
+      ],
       details:
         "Our technical writing services transform complex information into clear, concise, and user-friendly documentation. Whether it's software guides, user manuals, or technical reports, we ensure accuracy, readability, and a seamless user experience.",
       short:
         "Transform complex information into clear, concise, and user-friendly technical documentation. From software manuals to API guides, we create precise, accessible content that enhances understanding, reduces learning curves, and ensures seamless adoption for both technical and non-technical audiences.",
       featured: true,
-      pricingTierIntro: {
-        title: "Explore Our Technical Writing Service Packages",
-        text: "From short, concise guides to comprehensive manuals and advanced technical documentation, our technical writing services are tailored to meet the specific needs of your business. Whether you're looking to simplify processes with standard operating procedures (SOPs) or provide in-depth API documentation, our packages ensure high-quality, precise content that helps your audience understand and implement complex information with ease.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Explore Our Technical Writing Service Packages",
+          description:
+            "From short, concise guides to comprehensive manuals and advanced technical documentation, our technical writing services are tailored to meet the specific needs of your business. Whether you're looking to simplify processes with standard operating procedures (SOPs) or provide in-depth API documentation, our packages ensure high-quality, precise content that helps your audience understand and implement complex information with ease.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Documentation",
+            startingPrice: 500,
+            info: "Starting at $500, this package covers essential technical documentation such as basic user guides or instruction manuals for simple products or services. It includes clear, concise explanations and step-by-step instructions for users.",
+          },
+          {
+            name: "Standard Documentation",
+            startingPrice: 1000,
+            info: "Starting at $1,000, this package includes detailed technical manuals, standard operating procedures (SOPs), or API documentation. It includes structured content, thorough explanations, and diagrams where necessary to clarify complex concepts.",
+          },
+          {
+            name: "Advanced Documentation",
+            startingPrice: 2000,
+            info: "Starting at $2,000, this tier offers comprehensive technical documentation, including complex system architecture, troubleshooting guides, and full API documentation. It includes advanced formatting, detailed illustrations, and real-world examples for in-depth understanding.",
+          },
+          {
+            name: "Custom Technical Writing Package",
+            startingPrice: 3000,
+            info: "Starting at $3,000, this fully customizable package is designed for businesses needing highly specialized documentation. It includes expert-level writing tailored to your business’s needs, whether it's software, hardware, or any other industry-specific technical writing requirement.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Documentation",
-          startingPrice: 500,
-          info: "Starting at $500, this package covers essential technical documentation such as basic user guides or instruction manuals for simple products or services. It includes clear, concise explanations and step-by-step instructions for users.",
-        },
-        {
-          name: "Standard Documentation",
-          startingPrice: 1000,
-          info: "Starting at $1,000, this package includes detailed technical manuals, standard operating procedures (SOPs), or API documentation. It includes structured content, thorough explanations, and diagrams where necessary to clarify complex concepts.",
-        },
-        {
-          name: "Advanced Documentation",
-          startingPrice: 2000,
-          info: "Starting at $2,000, this tier offers comprehensive technical documentation, including complex system architecture, troubleshooting guides, and full API documentation. It includes advanced formatting, detailed illustrations, and real-world examples for in-depth understanding.",
-        },
-        {
-          name: "Custom Technical Writing Package",
-          startingPrice: 3000,
-          info: "Starting at $3,000, this fully customizable package is designed for businesses needing highly specialized documentation. It includes expert-level writing tailored to your business’s needs, whether it's software, hardware, or any other industry-specific technical writing requirement.",
-        },
-      ],
     },
     details: [
       {
@@ -2029,7 +2070,8 @@ export const subServiceDetails = [
         "Ensure Clear, Precise, and Effective Communication with Expert Technical Writing",
       intro:
         "Technical documentation plays a critical role in simplifying complex concepts, improving user comprehension, and reducing the need for additional support. We specialize in creating clear, concise, and actionable content that empowers your users, enhances their experience, and reinforces your brand's authority and trustworthiness.",
-      text: "Our technical writing services are designed to deliver precise, user-friendly documentation that makes your product easy to use and understand. Whether it's product manuals, user guides, API documentation, or FAQs, we ensure the content is not only clear and structured but also fully aligned with your brand’s tone and voice. By breaking down complex processes into simple, digestible steps, we help your audience resolve issues quickly and efficiently, reducing frustration and enhancing their overall experience",
+      description:
+        "Our technical writing services are designed to deliver precise, user-friendly documentation that makes your product easy to use and understand. Whether it's product manuals, user guides, API documentation, or FAQs, we ensure the content is not only clear and structured but also fully aligned with your brand’s tone and voice. By breaking down complex processes into simple, digestible steps, we help your audience resolve issues quickly and efficiently, reducing frustration and enhancing their overall experience",
       button: "Get Connected Today!",
       afterButtonText:
         "Let’s create technical documentation that empowers your users, reduces confusion, and enhances your product’s value.",
@@ -2041,42 +2083,46 @@ export const subServiceDetails = [
     info: {
       name: "Engaging & Interactive Online Course Development",
       title: "Engaging Online Courses Development",
-      menuCaption:
-        "Design and develop engaging, interactive online courses that inspire learners and provide them with the practical skills to apply in real-world situations.",
+      hook: "Design and develop engaging, interactive online courses that inspire learners and provide them with the practical skills to apply in real-world situations.",
       description: "Diverse Learning Styles",
       startingPrice: 1500,
-      info: "We design and develop interactive online courses that combine multimedia, intuitive design, and engaging content to provide impactful learning experiences. Whether you're offering industry training, employee development, or educational programs, our courses are tailored to align with your objectives and audience needs. By integrating videos, quizzes, and interactive elements, we ensure maximum engagement, knowledge retention, and accessibility. With a focus on structured content, user-friendly navigation, and effective knowledge transfer, our solutions empower learners to gain valuable skills and insights that drive lasting success.",
+      intro: [
+        "We design and develop interactive online courses that combine multimedia, intuitive design, and engaging content to provide impactful learning experiences. Whether you're offering industry training, employee development, or educational programs, our courses are tailored to align with your objectives and audience needs. By integrating videos, quizzes, and interactive elements, we ensure maximum engagement, knowledge retention, and accessibility. With a focus on structured content, user-friendly navigation, and effective knowledge transfer, our solutions empower learners to gain valuable skills and insights that drive lasting success.",
+      ],
       details:
         "We design engaging, interactive online courses that deliver real value to your audience. From video tutorials and quizzes to structured learning modules, we ensure your courses are informative, user-friendly, and optimized for effective knowledge retention.",
       short:
         "Create engaging, interactive online courses that combine multimedia, quizzes, and intuitive design to deliver impactful learning experiences. Tailored to your audience and objectives, our courses ensure maximum engagement, knowledge retention, and accessibility, empowering learners with valuable skills and insights.",
       featured: false,
-      pricingTierIntro: {
-        title: "Choose the Right Course Package for Your Learning Needs",
-        text: "Whether you're looking to create a short, focused learning module or a comprehensive, in-depth course, we offer tailored solutions to fit your content and audience. Our packages include everything from basic multimedia elements to advanced interactive features, designed to deliver an engaging, impactful learning experience. Select the tier that aligns with your goals and start building your custom course today.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Choose the Right Course Package for Your Learning Needs",
+          description:
+            "Whether you're looking to create a short, focused learning module or a comprehensive, in-depth course, we offer tailored solutions to fit your content and audience. Our packages include everything from basic multimedia elements to advanced interactive features, designed to deliver an engaging, impactful learning experience. Select the tier that aligns with your goals and start building your custom course today.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Course",
+            startingPrice: 1500,
+            info: "Starting at $1,500, this package includes up to 3 modules with basic instructional content, interactive quizzes, and a simple user interface. Perfect for businesses looking to provide foundational learning experiences or introductory courses at an affordable price.",
+          },
+          {
+            name: "Standard Course",
+            startingPrice: 3000,
+            info: "Starting at $3,000, this package includes up to 6 modules with enhanced multimedia elements such as videos, diagrams, interactive quizzes, and feedback mechanisms. Ideal for businesses looking to create engaging and informative courses with moderate complexity.",
+          },
+          {
+            name: "Advanced Course",
+            startingPrice: 5000,
+            info: "Starting at $5,000, this package includes up to 10 modules with advanced multimedia elements, including animations, simulations, and gamified features. Comprehensive assessments and detailed learner analytics are included for businesses offering high-engagement, interactive learning.",
+          },
+          {
+            name: "Enterprise Course Package",
+            startingPrice: 9000,
+            info: "Starting at $9,000, this package includes up to 15 modules with advanced content customization, fully interactive features (real-time feedback, peer reviews, and live sessions), and seamless integration with your business systems. Tailored for large-scale corporate training, educational platforms, or professional certifications.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Course",
-          startingPrice: 1500,
-          info: "Starting at $1,500, this package includes up to 3 modules with basic instructional content, interactive quizzes, and a simple user interface. Perfect for businesses looking to provide foundational learning experiences or introductory courses at an affordable price.",
-        },
-        {
-          name: "Standard Course",
-          startingPrice: 3000,
-          info: "Starting at $3,000, this package includes up to 6 modules with enhanced multimedia elements such as videos, diagrams, interactive quizzes, and feedback mechanisms. Ideal for businesses looking to create engaging and informative courses with moderate complexity.",
-        },
-        {
-          name: "Advanced Course",
-          startingPrice: 5000,
-          info: "Starting at $5,000, this package includes up to 10 modules with advanced multimedia elements, including animations, simulations, and gamified features. Comprehensive assessments and detailed learner analytics are included for businesses offering high-engagement, interactive learning.",
-        },
-        {
-          name: "Enterprise Course Package",
-          startingPrice: 9000,
-          info: "Starting at $9,000, this package includes up to 15 modules with advanced content customization, fully interactive features (real-time feedback, peer reviews, and live sessions), and seamless integration with your business systems. Tailored for large-scale corporate training, educational platforms, or professional certifications.",
-        },
-      ],
     },
     details: [
       {
@@ -2246,7 +2292,8 @@ export const subServiceDetails = [
         "Transform Learning Experiences with Engaging & Interactive Online Courses",
       intro:
         "Create dynamic, immersive, and educational online courses that captivate learners and drive long-term success. Our tailored course development services combine interactive elements, rich media, and expert content to create a seamless and engaging learning journey.",
-      text: "Whether you're looking to educate employees, customers, or students, we craft interactive online courses that deliver results. From quizzes and videos to real-time feedback and gamification, we ensure every module is designed for maximum engagement and retention. Our user-centric approach helps learners not only understand content but also apply it effectively.",
+      description:
+        "Whether you're looking to educate employees, customers, or students, we craft interactive online courses that deliver results. From quizzes and videos to real-time feedback and gamification, we ensure every module is designed for maximum engagement and retention. Our user-centric approach helps learners not only understand content but also apply it effectively.",
       button: "Start Your Online Course Development Today",
       afterButtonText:
         "Let’s work together to create a compelling learning experience that educates, inspires, and drives growth for your business or institution.",
@@ -2258,42 +2305,46 @@ export const subServiceDetails = [
     info: {
       name: "Engaging & Impactful Newsletters",
       title: "Impactful Newsletters",
-      menuCaption:
-        "Design and write impactful newsletters that keep your audience informed, engaged, and ready to take action.",
+      hook: "Design and write impactful newsletters that keep your audience informed, engaged, and ready to take action.",
       description: "Measurable Results",
       startingPrice: 300,
-      info: "We create captivating, visually stunning newsletters that keep your audience engaged, informed, and connected with your brand. Whether it's a one-time announcement or an ongoing series, our newsletters combine compelling content, targeted messaging, and vibrant design to maximize their effectiveness. Perfect for nurturing relationships, enhancing engagement, and building brand loyalty, our newsletters ensure that you stay front and center in your audience's minds.",
+      intro: [
+        "We create captivating, visually stunning newsletters that keep your audience engaged, informed, and connected with your brand. Whether it's a one-time announcement or an ongoing series, our newsletters combine compelling content, targeted messaging, and vibrant design to maximize their effectiveness. Perfect for nurturing relationships, enhancing engagement, and building brand loyalty, our newsletters ensure that you stay front and center in your audience's minds.",
+      ],
       details:
         "We create well-crafted, visually appealing newsletters that keep your audience engaged. From compelling content to strategic design, we ensure your message stands out while optimizing for open rates, readability, and conversions.",
       short:
         "Create engaging, visually appealing newsletters that keep your audience informed and connected. With compelling content and strategic design, our newsletters drive engagement, build relationships, and strengthen brand loyalty, ensuring your message stands out and delivers measurable results.",
       featured: true,
-      pricingTierIntro: {
-        title: "Find the Perfect Newsletter Plan for Your Business",
-        text: "Whether you’re looking to send a one-time announcement or establish a regular communication cadence with your audience, we offer flexible newsletter packages to fit your needs. From single newsletters to ongoing monthly or custom plans, we ensure your content is engaging, professional, and aligned with your brand’s goals.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Find the Perfect Newsletter Plan for Your Business",
+          description:
+            "Whether you’re looking to send a one-time announcement or establish a regular communication cadence with your audience, we offer flexible newsletter packages to fit your needs. From single newsletters to ongoing monthly or custom plans, we ensure your content is engaging, professional, and aligned with your brand’s goals.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Newsletter",
+            startingPrice: 300,
+            info: "Starting at $300, this package includes a single newsletter with custom content and professional design. Ideal for quick updates, announcements, or promotions to engage your audience.",
+          },
+          {
+            name: "Monthly Newsletter Package",
+            startingPrice: 900,
+            info: "Starting at $900 per month, this package includes up to 4 newsletters per month. Perfect for businesses looking for regular communication with their audience, with content that drives engagement and builds relationships.",
+          },
+          {
+            name: "Advanced Newsletter Package",
+            startingPrice: 1500,
+            info: "Starting at $1,500 per month, this package includes up to 8 newsletters per month with advanced segmentation, custom content, detailed analytics, and personalized messaging to maximize audience engagement and conversions.",
+          },
+          {
+            name: "Custom Newsletter Plan",
+            startingPrice: 2000,
+            info: "Starting at $2,000, this highly customized plan is ideal for businesses with specific needs. Includes tailored newsletters, in-depth audience targeting, and a strategic approach to growing your email list, ensuring your brand resonates with your subscribers.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Newsletter",
-          startingPrice: 300,
-          info: "Starting at $300, this package includes a single newsletter with custom content and professional design. Ideal for quick updates, announcements, or promotions to engage your audience.",
-        },
-        {
-          name: "Monthly Newsletter Package",
-          startingPrice: 900,
-          info: "Starting at $900 per month, this package includes up to 4 newsletters per month. Perfect for businesses looking for regular communication with their audience, with content that drives engagement and builds relationships.",
-        },
-        {
-          name: "Advanced Newsletter Package",
-          startingPrice: 1500,
-          info: "Starting at $1,500 per month, this package includes up to 8 newsletters per month with advanced segmentation, custom content, detailed analytics, and personalized messaging to maximize audience engagement and conversions.",
-        },
-        {
-          name: "Custom Newsletter Plan",
-          startingPrice: 2000,
-          info: "Starting at $2,000, this highly customized plan is ideal for businesses with specific needs. Includes tailored newsletters, in-depth audience targeting, and a strategic approach to growing your email list, ensuring your brand resonates with your subscribers.",
-        },
-      ],
     },
     details: [
       {
@@ -2436,7 +2487,8 @@ export const subServiceDetails = [
         "Connect, Engage, and Grow Your Audience with Impactful Newsletters",
       intro:
         "Craft compelling newsletters that not only inform but also inspire action. Our expertly designed newsletters engage your audience, build relationships, and drive conversions, helping you stay top-of-mind with your subscribers.",
-      text: "From targeted content and eye-catching visuals to personalized messaging and clear calls-to-action, we ensure every newsletter is designed to captivate your audience. Whether you're sharing updates, offering promotions, or building brand loyalty, our newsletters provide the perfect platform to keep your subscribers engaged and your brand front and center.",
+      description:
+        "From targeted content and eye-catching visuals to personalized messaging and clear calls-to-action, we ensure every newsletter is designed to captivate your audience. Whether you're sharing updates, offering promotions, or building brand loyalty, our newsletters provide the perfect platform to keep your subscribers engaged and your brand front and center.",
       button: "Start Creating Your Optimized Newsletter Today",
       afterButtonText:
         "Let’s work together to develop engaging newsletters that foster trust, drive customer loyalty, and keep your audience coming back for more.",
@@ -2448,47 +2500,51 @@ export const subServiceDetails = [
     info: {
       name: "Optimized & Secure Database Management Solutions",
       title: "Secure Database Management Solutions",
-      menuCaption:
-        "Implement secure and efficient database solutions that scale with your business, ensuring reliable and organized data management.",
+      hook: "Implement secure and efficient database solutions that scale with your business, ensuring reliable and organized data management.",
       description: "Data Security",
       startingPrice: 600,
-      info: "Our database management services provide secure, scalable, and high-performance solutions that streamline data storage, organization, and accessibility. Designed to meet your unique business needs, we ensure fast and reliable operations with optimized performance, even as your data scales. Advanced security protocols safeguard sensitive information, ensuring compliance with industry standards and protecting against potential threats. Whether you need real-time data processing, seamless integrations, or scalable storage solutions, our expert database management empowers your business to handle complex data demands while supporting long-term growth and efficiency.",
+      intro: [
+        "Our database management services provide secure, scalable, and high-performance solutions that streamline data storage, organization, and accessibility. Designed to meet your unique business needs, we ensure fast and reliable operations with optimized performance, even as your data scales. Advanced security protocols safeguard sensitive information, ensuring compliance with industry standards and protecting against potential threats. Whether you need real-time data processing, seamless integrations, or scalable storage solutions, our expert database management empowers your business to handle complex data demands while supporting long-term growth and efficiency.",
+      ],
       details:
         "Our database management services ensure that your data is stored, organized, and accessible. We design databases that can scale as your business grows, integrate real-time data, and ensure high levels of security to protect sensitive information.",
       short:
         "Empower your business with secure, scalable, and high-performance database management solutions. We design optimized systems for seamless data storage, real-time processing, and integration, while ensuring top-tier security to protect sensitive information and support long-term growth.",
       featured: true,
-      pricingTierIntro: {
-        title: "Choose the Perfect Database Solution for Your Business",
-        text: "From small-scale solutions to enterprise-level database systems, we offer flexible packages designed to meet your needs. Whether you require secure data storage, API integrations, or advanced database management, our plans ensure optimal performance, scalability, and reliability for your business.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Choose the Perfect Database Solution for Your Business",
+          description:
+            "From small-scale solutions to enterprise-level database systems, we offer flexible packages designed to meet your needs. Whether you require secure data storage, API integrations, or advanced database management, our plans ensure optimal performance, scalability, and reliability for your business.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Database Setup & Security",
+            startingPrice: 600,
+            info: "Starting at $600, this package includes basic database setup with secure data storage, backup solutions, and initial security configurations. Ideal for small businesses with simple data needs.",
+          },
+          {
+            name: "Optimized Database Performance",
+            startingPrice: 1200,
+            info: "Starting at $1,200, this package includes database optimization, performance tuning, and query optimization. Perfect for businesses that need faster database operations and improved scalability.",
+          },
+          {
+            name: "Advanced Security & Data Integrity",
+            startingPrice: 2000,
+            info: "Starting at $2,000, this service provides advanced security measures like encryption, automated backups, and real-time monitoring. Ensures compliance with data protection regulations and protects sensitive customer information.",
+          },
+          {
+            name: "Database Migration & Integration",
+            startingPrice: 3000,
+            info: "Starting at $3,000, this package helps businesses seamlessly migrate their existing databases to more scalable, secure solutions. Includes integration with third-party applications or cloud platforms to ensure smooth data flow and management.",
+          },
+          {
+            name: "Ongoing Database Management & Monitoring",
+            startingPrice: 400,
+            info: "Starting at $400/month, this service offers continuous database monitoring, updates, troubleshooting, and performance optimization. Ensures that your database is always secure, optimized, and running at peak performance.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Database Setup & Security",
-          startingPrice: 600,
-          info: "Starting at $600, this package includes basic database setup with secure data storage, backup solutions, and initial security configurations. Ideal for small businesses with simple data needs.",
-        },
-        {
-          name: "Optimized Database Performance",
-          startingPrice: 1200,
-          info: "Starting at $1,200, this package includes database optimization, performance tuning, and query optimization. Perfect for businesses that need faster database operations and improved scalability.",
-        },
-        {
-          name: "Advanced Security & Data Integrity",
-          startingPrice: 2000,
-          info: "Starting at $2,000, this service provides advanced security measures like encryption, automated backups, and real-time monitoring. Ensures compliance with data protection regulations and protects sensitive customer information.",
-        },
-        {
-          name: "Database Migration & Integration",
-          startingPrice: 3000,
-          info: "Starting at $3,000, this package helps businesses seamlessly migrate their existing databases to more scalable, secure solutions. Includes integration with third-party applications or cloud platforms to ensure smooth data flow and management.",
-        },
-        {
-          name: "Ongoing Database Management & Monitoring",
-          startingPrice: 400,
-          info: "Starting at $400/month, this service offers continuous database monitoring, updates, troubleshooting, and performance optimization. Ensures that your database is always secure, optimized, and running at peak performance.",
-        },
-      ],
     },
     details: [
       {
@@ -2615,7 +2671,8 @@ export const subServiceDetails = [
         "Ensure Data Security and Optimize Performance with Expert Database Management",
       intro:
         "Data is the backbone of your business, and managing it efficiently is crucial to your success. Our expert database management services ensure your data is secure, optimized, and always accessible, allowing you to focus on growth while we handle the technical details.",
-      text: "With our customized solutions, we ensure your database runs efficiently, scales with your business, and remains secure. From real-time data processing to backup and recovery solutions, we provide a comprehensive approach to database management that supports your operations and drives better decision-making.",
+      description:
+        "With our customized solutions, we ensure your database runs efficiently, scales with your business, and remains secure. From real-time data processing to backup and recovery solutions, we provide a comprehensive approach to database management that supports your operations and drives better decision-making.",
       button: "Optimize Your Database Today",
       afterButtonText:
         "Let us help you streamline data management, enhance performance, and ensure the security of your valuable business information.",
@@ -2627,47 +2684,51 @@ export const subServiceDetails = [
     info: {
       name: "Comprehensive, User-Friendly Product Guides & Manuals",
       title: "User-Friendly Product Guides/Manuals",
-      menuCaption:
-        "Develop clear, comprehensive product guides and manuals that enhance user understanding and improve customer satisfaction.",
+      hook: "Develop clear, comprehensive product guides and manuals that enhance user understanding and improve customer satisfaction.",
       description: "User Education",
       startingPrice: 400,
-      info: "We specialize in creating detailed, easy-to-follow product guides and manuals that transform complex information into clear, accessible content. Designed with usability and clarity in mind, our guides help users quickly understand your products, improving their overall experience and satisfaction. With step-by-step instructions, engaging visuals, and concise explanations, we ensure that customers can confidently navigate, assemble, troubleshoot, and maximize the use of your offerings. Whether it's a technical manual, instructional booklet, or digital user guide, our expertly crafted content enhances customer support, reduces confusion, and builds trust in your brand.",
+      intro: [
+        "We specialize in creating detailed, easy-to-follow product guides and manuals that transform complex information into clear, accessible content. Designed with usability and clarity in mind, our guides help users quickly understand your products, improving their overall experience and satisfaction. With step-by-step instructions, engaging visuals, and concise explanations, we ensure that customers can confidently navigate, assemble, troubleshoot, and maximize the use of your offerings. Whether it's a technical manual, instructional booklet, or digital user guide, our expertly crafted content enhances customer support, reduces confusion, and builds trust in your brand.",
+      ],
       details:
         "Our product guides and manuals simplify complex information with clear, step-by-step instructions and troubleshooting tips. Designed for usability and clarity, they enhance the user experience, reduce confusion, and help customers get the most out of your products.",
       short:
         "Create clear, user-friendly product guides and manuals that simplify complex information. With step-by-step instructions and engaging visuals, we help users confidently navigate, assemble, and troubleshoot your products, enhancing customer satisfaction and support.",
       featured: false,
-      pricingTierIntro: {
-        title: "Choose the Perfect Guide for Your Users' Needs",
-        text: "From quick start guides to comprehensive manuals, we offer a variety of solutions to ensure your customers have clear, concise instructions. Whether you're looking for a brief, user-friendly guide or an in-depth manual with extensive troubleshooting, we have a tier to match your product's complexity and your users' needs.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Choose the Perfect Guide for Your Users' Needs",
+          description:
+            "From quick start guides to comprehensive manuals, we offer a variety of solutions to ensure your customers have clear, concise instructions. Whether you're looking for a brief, user-friendly guide or an in-depth manual with extensive troubleshooting, we have a tier to match your product's complexity and your users' needs.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Product Guide",
+            startingPrice: 400,
+            info: "Starting at $400, this package includes a basic user guide for your product with clear instructions and visual aids. Ideal for simple products, offering easy-to-follow, step-by-step content that helps customers get started quickly.",
+          },
+          {
+            name: "Standard Product Manual",
+            startingPrice: 800,
+            info: "Starting at $800, this package includes a detailed product manual (up to 15 pages) with troubleshooting tips, setup instructions, and enhanced visuals such as diagrams and illustrations. Ideal for products with more features and functionality.",
+          },
+          {
+            name: "Comprehensive Product Manual",
+            startingPrice: 1500,
+            info: "Starting at $1,500, this option provides a detailed manual (up to 30 pages) with advanced troubleshooting, setup instructions, FAQs, and a detailed index. Perfect for products with more complex features or services.",
+          },
+          {
+            name: "Interactive Digital Product Guide",
+            startingPrice: 2500,
+            info: "Starting at $2,500, this interactive digital product guide includes clickable elements, embedded videos, and multimedia resources to enhance user engagement. Perfect for businesses looking to provide a dynamic, user-friendly experience for their customers.",
+          },
+          {
+            name: "Customizable Product Manuals & Updates",
+            startingPrice: 800,
+            info: "Starting at $800, this package includes customizable product manuals tailored to your brand’s tone and style. It also includes up to 2 rounds of updates and revisions to ensure your manual stays current and aligned with your evolving product offerings.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Product Guide",
-          startingPrice: 400,
-          info: "Starting at $400, this package includes a basic user guide for your product with clear instructions and visual aids. Ideal for simple products, offering easy-to-follow, step-by-step content that helps customers get started quickly.",
-        },
-        {
-          name: "Standard Product Manual",
-          startingPrice: 800,
-          info: "Starting at $800, this package includes a detailed product manual (up to 15 pages) with troubleshooting tips, setup instructions, and enhanced visuals such as diagrams and illustrations. Ideal for products with more features and functionality.",
-        },
-        {
-          name: "Comprehensive Product Manual",
-          startingPrice: 1500,
-          info: "Starting at $1,500, this option provides a detailed manual (up to 30 pages) with advanced troubleshooting, setup instructions, FAQs, and a detailed index. Perfect for products with more complex features or services.",
-        },
-        {
-          name: "Interactive Digital Product Guide",
-          startingPrice: 2500,
-          info: "Starting at $2,500, this interactive digital product guide includes clickable elements, embedded videos, and multimedia resources to enhance user engagement. Perfect for businesses looking to provide a dynamic, user-friendly experience for their customers.",
-        },
-        {
-          name: "Customizable Product Manuals & Updates",
-          startingPrice: 800,
-          info: "Starting at $800, this package includes customizable product manuals tailored to your brand’s tone and style. It also includes up to 2 rounds of updates and revisions to ensure your manual stays current and aligned with your evolving product offerings.",
-        },
-      ],
     },
     details: [
       {
@@ -2813,7 +2874,8 @@ export const subServiceDetails = [
         "Create Clear, Actionable Product Guides that Empower Your Customers",
       intro:
         "Help your customers navigate and fully utilize your products with expertly crafted, easy-to-follow product guides and manuals. Our comprehensive solutions are designed to improve user experience, reduce support queries, and boost customer satisfaction.",
-      text: "From step-by-step instructions to troubleshooting tips, we craft detailed product guides that ensure your customers have all the information they need to use your products confidently. Our user-friendly manuals increase product adoption, reduce confusion, and enhance the overall user experience.",
+      description:
+        "From step-by-step instructions to troubleshooting tips, we craft detailed product guides that ensure your customers have all the information they need to use your products confidently. Our user-friendly manuals increase product adoption, reduce confusion, and enhance the overall user experience.",
       button: "Start Crafting Your Product Guides Today",
       afterButtonText:
         "Let’s work together to create clear, accessible documentation that enhances user satisfaction and reduces support costs.",
@@ -2825,47 +2887,51 @@ export const subServiceDetails = [
     info: {
       name: "Maximize Your Online Reach with Expert SEO Optimization",
       title: "SEO Optimization",
-      menuCaption:
-        "Increase your site’s visibility and drive organic traffic with expert SEO strategies tailored to boost your search engine rankings.",
+      hook: "Increase your site’s visibility and drive organic traffic with expert SEO strategies tailored to boost your search engine rankings.",
       description: "Organic Traffic",
       startingPrice: 500,
-      info: "Our SEO optimization services are designed to increase your website’s visibility, attract high-quality organic traffic, and drive conversions—whether that means boosting e-commerce sales, growing newsletter subscriptions, or enhancing brand awareness. We implement data-driven strategies that include in-depth keyword research, on-page optimization, high-value content improvements, and strategic link-building to improve your search engine rankings. By staying ahead of algorithm updates and industry best practices, we ensure your site remains competitive, relevant, and optimized for long-term success in an evolving digital landscape. Let us help you connect with the right audience and maximize your online potential.",
+      intro: [
+        "Our SEO optimization services are designed to increase your website’s visibility, attract high-quality organic traffic, and drive conversions—whether that means boosting e-commerce sales, growing newsletter subscriptions, or enhancing brand awareness. We implement data-driven strategies that include in-depth keyword research, on-page optimization, high-value content improvements, and strategic link-building to improve your search engine rankings. By staying ahead of algorithm updates and industry best practices, we ensure your site remains competitive, relevant, and optimized for long-term success in an evolving digital landscape. Let us help you connect with the right audience and maximize your online potential.",
+      ],
       details:
         "Our SEO optimization services focus on enhancing your website’s visibility in search engines. From keyword research to link-building, we implement effective techniques to drive organic traffic and improve your site's ranking and overall performance.",
       short:
         "Boost your online presence with expert SEO optimization that drives organic traffic and enhances your website's visibility. Through strategic keyword research, on-page optimization, content improvements, and link-building, we help you connect with the right audience and achieve long-term success in search engine rankings.",
       featured: true,
-      pricingTierIntro: {
-        title: "Unlock Your Website's Potential with Our SEO Services",
-        text: "Whether you're just getting started or looking to elevate your website's search rankings, our tailored SEO services can help you achieve your goals. From an initial SEO audit to comprehensive optimization strategies, we provide everything you need to improve visibility, drive traffic, and boost conversions.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Unlock Your Website's Potential with Our SEO Services",
+          description:
+            "Whether you're just getting started or looking to elevate your website's search rankings, our tailored SEO services can help you achieve your goals. From an initial SEO audit to comprehensive optimization strategies, we provide everything you need to improve visibility, drive traffic, and boost conversions.",
+        },
+        pricingTiers: [
+          {
+            name: "SEO Audit & Optimization",
+            startingPrice: 500,
+            info: "Starting at $500, this package includes a comprehensive SEO audit to evaluate your website's current performance, identify key areas for improvement, and implement basic on-page SEO optimizations, including meta tag updates and keyword adjustments.",
+          },
+          {
+            name: "On-Page SEO Optimization",
+            startingPrice: 1000,
+            info: "Starting at $1,000, this option includes full on-page SEO optimization for up to 10 pages, including keyword research, meta descriptions, headers, internal linking, and content adjustments to enhance your site's rankings and visibility.",
+          },
+          {
+            name: "Content & SEO Strategy Development",
+            startingPrice: 1800,
+            info: "Starting at $1,800, this package focuses on building a solid SEO strategy, including blog content creation, keyword targeting, and high-quality backlinks to drive organic traffic. Ideal for businesses looking to build authority and attract quality leads over time.",
+          },
+          {
+            name: "Comprehensive SEO & Local Optimization",
+            startingPrice: 3000,
+            info: "Starting at $3,000, this comprehensive package includes full-site SEO optimization, local SEO optimization, content creation, link-building, and performance tracking. It’s designed to improve your rankings on local search results, enhance online visibility, and drive targeted traffic to your business.",
+          },
+          {
+            name: "SEO Monitoring & Monthly Maintenance",
+            startingPrice: 350,
+            info: "Starting at $350 per month, this service includes ongoing SEO monitoring, reporting, and monthly optimizations to ensure your website remains competitive in search results. Perfect for businesses that want continuous growth and to keep up with SEO best practices and algorithm changes.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "SEO Audit & Optimization",
-          startingPrice: 500,
-          info: "Starting at $500, this package includes a comprehensive SEO audit to evaluate your website's current performance, identify key areas for improvement, and implement basic on-page SEO optimizations, including meta tag updates and keyword adjustments.",
-        },
-        {
-          name: "On-Page SEO Optimization",
-          startingPrice: 1000,
-          info: "Starting at $1,000, this option includes full on-page SEO optimization for up to 10 pages, including keyword research, meta descriptions, headers, internal linking, and content adjustments to enhance your site's rankings and visibility.",
-        },
-        {
-          name: "Content & SEO Strategy Development",
-          startingPrice: 1800,
-          info: "Starting at $1,800, this package focuses on building a solid SEO strategy, including blog content creation, keyword targeting, and high-quality backlinks to drive organic traffic. Ideal for businesses looking to build authority and attract quality leads over time.",
-        },
-        {
-          name: "Comprehensive SEO & Local Optimization",
-          startingPrice: 3000,
-          info: "Starting at $3,000, this comprehensive package includes full-site SEO optimization, local SEO optimization, content creation, link-building, and performance tracking. It’s designed to improve your rankings on local search results, enhance online visibility, and drive targeted traffic to your business.",
-        },
-        {
-          name: "SEO Monitoring & Monthly Maintenance",
-          startingPrice: 350,
-          info: "Starting at $350 per month, this service includes ongoing SEO monitoring, reporting, and monthly optimizations to ensure your website remains competitive in search results. Perfect for businesses that want continuous growth and to keep up with SEO best practices and algorithm changes.",
-        },
-      ],
     },
     details: [
       {
@@ -3214,7 +3280,8 @@ export const subServiceDetails = [
       title: "Unlock Your Website’s Potential with Expert SEO Optimization",
       intro:
         "Boost your online visibility, drive organic traffic, and achieve sustained growth with our SEO-optimized strategies. Our expert SEO services are designed to enhance your search engine rankings, increase website traffic, and ensure your content is discovered by the right audience.",
-      text: "With our tailored SEO strategies, we ensure your website’s structure, content, and technical aspects are optimized for search engines. From keyword research to on-page and off-page SEO, we help you rank higher, attract quality leads, and drive conversions. Experience measurable growth, enhanced visibility, and long-term success with our comprehensive SEO services.",
+      description:
+        "With our tailored SEO strategies, we ensure your website’s structure, content, and technical aspects are optimized for search engines. From keyword research to on-page and off-page SEO, we help you rank higher, attract quality leads, and drive conversions. Experience measurable growth, enhanced visibility, and long-term success with our comprehensive SEO services.",
       button: "Get Started with SEO Optimization Today",
       afterButtonText:
         "Let’s boost your website’s rankings, increase organic traffic, and create a solid foundation for long-term business success.",
@@ -3226,43 +3293,47 @@ export const subServiceDetails = [
     info: {
       name: "From Concept to Clickable: Wireframing & Prototyping Services",
       title: "Wireframing & Prototyping",
-      menuCaption:
-        "Bring your ideas to life with effective wireframes and prototypes, visualizing your design concepts before moving into development.",
+      hook: "Bring your ideas to life with effective wireframes and prototypes, visualizing your design concepts before moving into development.",
       description: "User-Centric Designs",
       startingPrice: 800,
-      info: "Our wireframing and prototyping services turn your concepts into actionable, user-focused designs that lay the groundwork for an intuitive user experience. Starting with low-fidelity wireframes, we outline the structure, navigation, and layout, creating a clear blueprint for the design. We then move on to high-fidelity prototypes that simulate real interactions, giving you the chance to experience and refine the user journey before development starts. These interactive models simplify decision-making, boost design efficiency, and ensure usability, helping you save time and resources while perfecting the final product.",
+      intro: [
+        "Our wireframing and prototyping services turn your concepts into actionable, user-focused designs that lay the groundwork for an intuitive user experience. Starting with low-fidelity wireframes, we outline the structure, navigation, and layout, creating a clear blueprint for the design. We then move on to high-fidelity prototypes that simulate real interactions, giving you the chance to experience and refine the user journey before development starts. These interactive models simplify decision-making, boost design efficiency, and ensure usability, helping you save time and resources while perfecting the final product.",
+      ],
       details:
         "We provide wireframing and prototyping services to help you visualize user interactions and refine design ideas before development begins. These tools are essential for identifying usability issues and ensuring an optimal user experience.",
       short:
         "Transform your ideas into interactive, user-centric designs with our wireframing and prototyping services. From low-fidelity wireframes to high-fidelity prototypes, we help visualize and refine the user experience before development, ensuring seamless usability and optimizing the final product.",
       featured: true,
-      pricingTierIntro: {
-        title:
-          "Create User-Centered Designs with Our Wireframing & Prototyping Services",
-        text: "Whether you’re starting with basic sketches or need an interactive prototype for user testing, our wireframing and prototyping services cater to every stage of your design process. From low-fidelity wireframes to high-fidelity, clickable prototypes, we help you bring your ideas to life and refine them before development, ensuring seamless user experiences.",
+      pricing: {
+        pricingTierIntro: {
+          title:
+            "Create User-Centered Designs with Our Wireframing & Prototyping Services",
+          description:
+            "Whether you’re starting with basic sketches or need an interactive prototype for user testing, our wireframing and prototyping services cater to every stage of your design process. From low-fidelity wireframes to high-fidelity, clickable prototypes, we help you bring your ideas to life and refine them before development, ensuring seamless user experiences.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Wireframing Package",
+            startingPrice: 800,
+            info: "Starting at $800, this package includes low-fidelity wireframes for up to 5 screens, providing a simple, structured outline for your website or app. Ideal for small businesses looking to visualize their digital product layout and flow with basic design elements.",
+          },
+          {
+            name: "Standard Wireframe & Prototype Package",
+            startingPrice: 1500,
+            info: "Starting at $1,500, this option includes high-fidelity wireframes for up to 10 screens, along with interactive prototyping to simulate real user interactions. Perfect for businesses that need a more refined design to visualize user journeys and functionality, while still remaining budget-friendly.",
+          },
+          {
+            name: "Advanced Wireframe & Prototype Package",
+            startingPrice: 2500,
+            info: "Starting at $2,500, this package offers up to 15 screens with detailed wireframes, interactive prototypes, and user flow optimization. Includes real-time testing for validation, feedback integration, and ensures an efficient design aligned with user needs at an affordable price point for growing businesses.",
+          },
+          {
+            name: "Comprehensive UX/UI Prototyping & User Testing",
+            startingPrice: 4000,
+            info: "Starting at $4,000, this premium package includes high-fidelity wireframes, advanced interactive prototypes, and comprehensive user testing to ensure your design is functional and intuitive. Ideal for businesses looking to launch a fully optimized, user-tested product with a strong digital presence.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Wireframing Package",
-          startingPrice: 800,
-          info: "Starting at $800, this package includes low-fidelity wireframes for up to 5 screens, providing a simple, structured outline for your website or app. Ideal for small businesses looking to visualize their digital product layout and flow with basic design elements.",
-        },
-        {
-          name: "Standard Wireframe & Prototype Package",
-          startingPrice: 1500,
-          info: "Starting at $1,500, this option includes high-fidelity wireframes for up to 10 screens, along with interactive prototyping to simulate real user interactions. Perfect for businesses that need a more refined design to visualize user journeys and functionality, while still remaining budget-friendly.",
-        },
-        {
-          name: "Advanced Wireframe & Prototype Package",
-          startingPrice: 2500,
-          info: "Starting at $2,500, this package offers up to 15 screens with detailed wireframes, interactive prototypes, and user flow optimization. Includes real-time testing for validation, feedback integration, and ensures an efficient design aligned with user needs at an affordable price point for growing businesses.",
-        },
-        {
-          name: "Comprehensive UX/UI Prototyping & User Testing",
-          startingPrice: 4000,
-          info: "Starting at $4,000, this premium package includes high-fidelity wireframes, advanced interactive prototypes, and comprehensive user testing to ensure your design is functional and intuitive. Ideal for businesses looking to launch a fully optimized, user-tested product with a strong digital presence.",
-        },
-      ],
     },
     details: [
       {
@@ -3418,7 +3489,8 @@ export const subServiceDetails = [
         "Transform Your Ideas into Interactive Experiences with Our Wireframing & Prototyping Services",
       intro:
         "Bring your digital product to life with precision and clarity through our expert wireframing and prototyping services. From the initial concept to a fully interactive prototype, we help you visualize, test, and refine your design for seamless user experiences.",
-      text: "Our wireframing and prototyping services ensure that your project is built on a solid foundation. By creating low-fidelity wireframes and high-fidelity interactive prototypes, we allow you to validate your ideas early, gather feedback, and refine the design before development begins. This iterative process minimizes risks, saves time, and ensures the final product meets user expectations.",
+      description:
+        "Our wireframing and prototyping services ensure that your project is built on a solid foundation. By creating low-fidelity wireframes and high-fidelity interactive prototypes, we allow you to validate your ideas early, gather feedback, and refine the design before development begins. This iterative process minimizes risks, saves time, and ensures the final product meets user expectations.",
       button: "Start Your Project with Expert Wireframing & Prototyping",
       afterButtonText:
         "Let’s turn your ideas into clickable, user-friendly prototypes that drive engagement and deliver exceptional user experiences.",
@@ -3430,48 +3502,52 @@ export const subServiceDetails = [
     info: {
       name: "Engaging, SEO-Optimized Website Content That Converts",
       title: "Website Content Creation for Increased Visibility",
-      menuCaption:
-        "Craft compelling, SEO-optimized website content that captures attention, keeps visitors engaged, and drives conversions.",
+      hook: "Craft compelling, SEO-optimized website content that captures attention, keeps visitors engaged, and drives conversions.",
       description: "Engaging Readers",
       startingPrice: 600,
-      info: "We craft clear, compelling, and SEO-driven website content designed to captivate your audience, enhance brand messaging, and improve search engine rankings. Our expertly written copy aligns with your brand voice, effectively communicates your value proposition, and guides visitors toward conversions. By integrating strategic keywords and user-focused storytelling, we help establish your online authority, boost organic traffic, and create a seamless user experience that fosters trust and engagement. Whether you need landing pages, service descriptions, or blog content, our tailored approach ensures your message resonates and drives results.",
+      intro: [
+        "We craft clear, compelling, and SEO-driven website content designed to captivate your audience, enhance brand messaging, and improve search engine rankings. Our expertly written copy aligns with your brand voice, effectively communicates your value proposition, and guides visitors toward conversions. By integrating strategic keywords and user-focused storytelling, we help establish your online authority, boost organic traffic, and create a seamless user experience that fosters trust and engagement. Whether you need landing pages, service descriptions, or blog content, our tailored approach ensures your message resonates and drives results.",
+      ],
       details:
         "Our copywriting services craft SEO-optimized, engaging content that boosts visibility and drives conversions. From web pages to service descriptions, we ensure your message is clear and compelling.",
       short:
         "Create captivating, SEO-optimized content that informs, engages, and converts. From blog posts and landing pages to eBooks and technical documentation, we craft compelling narratives that enhance your brand, boost visibility, and drive meaningful results.",
       featured: true,
-      pricingTierIntro: {
-        title:
-          "Boost Your Web Presence with SEO-Optimized, Engaging Copywriting",
-        text: "Whether you're building a small site or creating a full-scale content strategy, our copywriting services offer a tailored solution to help you connect with your audience and improve your search engine rankings. From concise landing pages to comprehensive content, we ensure every word works for your brand's success.",
+      pricing: {
+        pricingTierIntro: {
+          title:
+            "Boost Your Web Presence with SEO-Optimized, Engaging Copywriting",
+          description:
+            "Whether you're building a small site or creating a full-scale content strategy, our copywriting services offer a tailored solution to help you connect with your audience and improve your search engine rankings. From concise landing pages to comprehensive content, we ensure every word works for your brand's success.",
+        },
+        pricingTiers: [
+          {
+            name: "Starter Content Package",
+            startingPrice: 600,
+            info: "Starting at $600, this package includes up to 3 pages of basic website copy, perfect for small businesses just starting online. It includes basic SEO optimization to help improve visibility in search engines and set a solid foundation for your website.",
+          },
+          {
+            name: "Essential Information",
+            startingPrice: 1200,
+            info: "Starting at $1,200, this package includes copywriting for up to 5 pages with essential SEO optimization. Ideal for small businesses that need a professional web presence with key pages like About Us, Services, and Contact to engage potential customers.",
+          },
+          {
+            name: "Standard Business Presence",
+            startingPrice: 2000,
+            info: "Starting at $2,000, this package includes SEO-optimized content for up to 10 pages. It’s perfect for businesses aiming to establish a complete website with services, product descriptions, and a blog section to drive ongoing content updates.",
+          },
+          {
+            name: "Growth Package",
+            startingPrice: 3000,
+            info: "Starting at $3,000, this package offers SEO-optimized content for up to 15 pages, including in-depth product/service descriptions, internal linking for SEO, and a blog. Designed to help your business expand its online presence and attract more traffic over time.",
+          },
+          {
+            name: "Premium Web Copy & Blog Package",
+            startingPrice: 4000,
+            info: "Starting at $4,000, this package provides comprehensive website copywriting for up to 20 pages, including detailed SEO-optimized content. Additionally, it includes blog posts for continuous content marketing, designed to help your business increase visibility and engage customers on a regular basis.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Starter Content Package",
-          startingPrice: 600,
-          info: "Starting at $600, this package includes up to 3 pages of basic website copy, perfect for small businesses just starting online. It includes basic SEO optimization to help improve visibility in search engines and set a solid foundation for your website.",
-        },
-        {
-          name: "Essential Information",
-          startingPrice: 1200,
-          info: "Starting at $1,200, this package includes copywriting for up to 5 pages with essential SEO optimization. Ideal for small businesses that need a professional web presence with key pages like About Us, Services, and Contact to engage potential customers.",
-        },
-        {
-          name: "Standard Business Presence",
-          startingPrice: 2000,
-          info: "Starting at $2,000, this package includes SEO-optimized content for up to 10 pages. It’s perfect for businesses aiming to establish a complete website with services, product descriptions, and a blog section to drive ongoing content updates.",
-        },
-        {
-          name: "Growth Package",
-          startingPrice: 3000,
-          info: "Starting at $3,000, this package offers SEO-optimized content for up to 15 pages, including in-depth product/service descriptions, internal linking for SEO, and a blog. Designed to help your business expand its online presence and attract more traffic over time.",
-        },
-        {
-          name: "Premium Web Copy & Blog Package",
-          startingPrice: 4000,
-          info: "Starting at $4,000, this package provides comprehensive website copywriting for up to 20 pages, including detailed SEO-optimized content. Additionally, it includes blog posts for continuous content marketing, designed to help your business increase visibility and engage customers on a regular basis.",
-        },
-      ],
     },
     details: [
       {
@@ -3623,7 +3699,8 @@ export const subServiceDetails = [
         "Transform Your Website with Engaging, SEO-Optimized Content That Drives Conversions",
       intro:
         "Unlock the power of content that not only engages your audience but also ranks high on search engines. Our expertly crafted, SEO-optimized website content ensures your message reaches the right people and motivates them to take action.",
-      text: "Our content creation services are designed to help you achieve more than just traffic; we focus on driving meaningful engagement and conversions. By combining compelling copy with targeted SEO strategies, we ensure your website stands out, ranks well, and compels visitors to act, whether it’s making a purchase, signing up for a newsletter, or reaching out for more information.",
+      description:
+        "Our content creation services are designed to help you achieve more than just traffic; we focus on driving meaningful engagement and conversions. By combining compelling copy with targeted SEO strategies, we ensure your website stands out, ranks well, and compels visitors to act, whether it’s making a purchase, signing up for a newsletter, or reaching out for more information.",
       button: "Get Started with SEO-Optimized Content",
       afterButtonText:
         "Let’s create powerful, conversion-focused content that elevates your online presence, boosts engagement, and drives sustainable growth.",
@@ -3635,38 +3712,42 @@ export const subServiceDetails = [
     info: {
       name: "Step-by-Step Tutorials for Seamless Learning",
       title: "Tutorials for Seamless Learning",
-      menuCaption:
-        "Create clear, concise, and user-friendly tutorials that break down complex tasks into easy-to-follow steps.",
+      hook: "Create clear, concise, and user-friendly tutorials that break down complex tasks into easy-to-follow steps.",
       description: "Knowledge Sharing",
       startingPrice: 200,
-      info: "We create clear, concise, and user-friendly tutorials that simplify complex tasks and guide users through each step with ease. Designed for maximum clarity and accessibility, our tutorials break down technical processes, software usage, and product functionalities into easy-to-follow instructions. By incorporating visual aids, structured guidance, and practical examples, we empower users to confidently navigate challenges, master new skills, and achieve their goals efficiently.",
+      intro: [
+        "We create clear, concise, and user-friendly tutorials that simplify complex tasks and guide users through each step with ease. Designed for maximum clarity and accessibility, our tutorials break down technical processes, software usage, and product functionalities into easy-to-follow instructions. By incorporating visual aids, structured guidance, and practical examples, we empower users to confidently navigate challenges, master new skills, and achieve their goals efficiently.",
+      ],
       details:
         "We develop clear, step-by-step tutorials that simplify complex tasks for users. Whether for software, hardware, or services, our tutorials provide easy-to-follow instructions that enhance user experience, boost engagement, and ensure successful implementation.",
       short:
         "Create clear, concise, and user-friendly tutorials that break down complex tasks into easy-to-follow steps. With visual aids and structured guidance, our tutorials simplify technical processes and help users master new skills, ensuring a seamless learning experience.",
       featured: false,
-      pricingTierIntro: {
-        title:
-          "Enhance User Onboarding with Detailed, Easy-to-Follow Guides & Tutorials",
-        text: "Our custom guides and tutorials are designed to provide your users with clear, actionable instructions. Whether you need a quick start guide to introduce your product or a comprehensive tutorial to assist with complex tasks, our services ensure a seamless user experience that boosts engagement and customer satisfaction.",
+      pricing: {
+        pricingTierIntro: {
+          title:
+            "Enhance User Onboarding with Detailed, Easy-to-Follow Guides & Tutorials",
+          description:
+            "Our custom guides and tutorials are designed to provide your users with clear, actionable instructions. Whether you need a quick start guide to introduce your product or a comprehensive tutorial to assist with complex tasks, our services ensure a seamless user experience that boosts engagement and customer satisfaction.",
+        },
+        pricingTiers: [
+          {
+            name: "Quick Start Guides",
+            startingPrice: 200,
+            info: "Starting at $200, these guides provide an easy-to-follow introduction to your product or service, covering essential features and functionalities.",
+          },
+          {
+            name: "Written Tutorials",
+            startingPrice: 500,
+            info: "Starting at $500 per guide (up to 1,500 words), these detailed written tutorials provide clear instructions, diagrams, and step-by-step guidance for more complex tasks.",
+          },
+          {
+            name: "Comprehensive Tutorials",
+            startingPrice: 1000,
+            info: "Starting at $1,000 per guide (up to 3,000 words or 5 pages), these detailed written tutorials provide in-depth instructions, diagrams, and advanced guidance for complex tasks.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Quick Start Guides",
-          startingPrice: 200,
-          info: "Starting at $200, these guides provide an easy-to-follow introduction to your product or service, covering essential features and functionalities.",
-        },
-        {
-          name: "Written Tutorials",
-          startingPrice: 500,
-          info: "Starting at $500 per guide (up to 1,500 words), these detailed written tutorials provide clear instructions, diagrams, and step-by-step guidance for more complex tasks.",
-        },
-        {
-          name: "Comprehensive Tutorials",
-          startingPrice: 1000,
-          info: "Starting at $1,000 per guide (up to 3,000 words or 5 pages), these detailed written tutorials provide in-depth instructions, diagrams, and advanced guidance for complex tasks.",
-        },
-      ],
     },
     details: [
       {
@@ -3830,7 +3911,8 @@ export const subServiceDetails = [
         "Create Engaging, Easy-to-Follow Tutorials That Empower Your Learners",
       intro:
         "Make complex concepts easy to understand with our step-by-step tutorials designed to ensure seamless learning. We help you create tutorials that not only educate but also engage, driving deeper understanding and retention.",
-      text: "Our step-by-step tutorials are crafted to break down complicated processes into simple, digestible steps, ensuring that learners can follow along easily. With a focus on clarity and user engagement, our tutorials are designed to guide users toward success, whether they’re learning a new skill, troubleshooting an issue, or mastering a product.",
+      description:
+        "Our step-by-step tutorials are crafted to break down complicated processes into simple, digestible steps, ensuring that learners can follow along easily. With a focus on clarity and user engagement, our tutorials are designed to guide users toward success, whether they’re learning a new skill, troubleshooting an issue, or mastering a product.",
       button: "Build Your Step-by-Step Learning Experience",
       afterButtonText:
         "Let’s design interactive tutorials that simplify learning, boost engagement, and enhance user experience across all platforms.",
@@ -3842,47 +3924,51 @@ export const subServiceDetails = [
     info: {
       name: "Eye-Catching Brochures and Flyers That Make an Impact",
       title: "Eye-Catching Brochures and/or Flyers",
-      menuCaption:
-        "Design visually striking brochures and flyers that capture attention and effectively communicate your brand’s message.",
+      hook: "Design visually striking brochures and flyers that capture attention and effectively communicate your brand’s message.",
       description: "Promoting Services",
       startingPrice: 30,
-      info: "We design visually compelling brochures and flyers that effectively showcase your products, services, and brand message. By blending engaging visuals, persuasive copy, and strategic layouts, we create marketing materials that capture attention, communicate value, and inspire action. Whether for promotions, events, or corporate branding, our designs ensure your message stands out and leaves a lasting impression on your audience.",
+      intro: [
+        "We design visually compelling brochures and flyers that effectively showcase your products, services, and brand message. By blending engaging visuals, persuasive copy, and strategic layouts, we create marketing materials that capture attention, communicate value, and inspire action. Whether for promotions, events, or corporate branding, our designs ensure your message stands out and leaves a lasting impression on your audience.",
+      ],
       details:
         "Our brochure and flyer design services create eye-catching, high-impact marketing materials that effectively showcase your products and services. We ensure clear messaging, compelling visuals, and strategic layouts to maximize engagement and brand awareness.",
       short:
         "Design eye-catching brochures and flyers that effectively showcase your products and services. With engaging visuals, persuasive copy, and strategic layouts, our designs capture attention and inspire action, leaving a lasting impression on your audience.",
       featured: false,
-      pricingTierIntro: {
-        title: "Eye-Catching Flyers and Brochures for Every Need",
-        text: "Whether you're launching a new promotion or creating an in-depth product catalog, our custom-designed flyers and brochures provide the perfect solution. From one-page flyers to multi-page brochures, we craft visually stunning marketing materials that effectively communicate your message and captivate your audience.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Eye-Catching Flyers and Brochures for Every Need",
+          description:
+            "Whether you're launching a new promotion or creating an in-depth product catalog, our custom-designed flyers and brochures provide the perfect solution. From one-page flyers to multi-page brochures, we craft visually stunning marketing materials that effectively communicate your message and captivate your audience.",
+        },
+        pricingTiers: [
+          {
+            name: "Mini Flyers (One-Page, Simplified)",
+            startingPrice: 30,
+            info: "Starting at $30 per design, these minimalistic flyers are perfect for quick, budget-friendly promotions or announcements with a simple layout and graphics.",
+          },
+          {
+            name: "Flyers (One Page)",
+            startingPrice: 50,
+            info: "Starting at $50 per design, perfect for quick promotions or announcements. Includes a clean, professional layout and visually appealing graphics.",
+          },
+          {
+            name: "Bi-Fold Brochures",
+            startingPrice: 75,
+            info: "Starting at $75 per design, ideal for presenting more detailed information in a compact, foldable format. Includes high-quality design and layout.",
+          },
+          {
+            name: "Tri-Fold Brochures",
+            startingPrice: 100,
+            info: "Starting at $100 per design, these brochures offer ample space for organized content and visuals. Perfect for marketing campaigns that require detailed information and appealing design.",
+          },
+          {
+            name: "Custom Multi-Page Brochures",
+            startingPrice: 200,
+            info: "Starting at $200, tailored to your specific needs. These brochures can include multiple pages, custom layouts, and advanced designs, making them ideal for extensive product or service catalogs.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Mini Flyers (One-Page, Simplified)",
-          startingPrice: 30,
-          info: "Starting at $30 per design, these minimalistic flyers are perfect for quick, budget-friendly promotions or announcements with a simple layout and graphics.",
-        },
-        {
-          name: "Flyers (One Page)",
-          startingPrice: 50,
-          info: "Starting at $50 per design, perfect for quick promotions or announcements. Includes a clean, professional layout and visually appealing graphics.",
-        },
-        {
-          name: "Bi-Fold Brochures",
-          startingPrice: 75,
-          info: "Starting at $75 per design, ideal for presenting more detailed information in a compact, foldable format. Includes high-quality design and layout.",
-        },
-        {
-          name: "Tri-Fold Brochures",
-          startingPrice: 100,
-          info: "Starting at $100 per design, these brochures offer ample space for organized content and visuals. Perfect for marketing campaigns that require detailed information and appealing design.",
-        },
-        {
-          name: "Custom Multi-Page Brochures",
-          startingPrice: 200,
-          info: "Starting at $200, tailored to your specific needs. These brochures can include multiple pages, custom layouts, and advanced designs, making them ideal for extensive product or service catalogs.",
-        },
-      ],
     },
     details: [
       {
@@ -3978,7 +4064,8 @@ export const subServiceDetails = [
         "Create Stunning Brochures and Flyers That Capture Attention and Drive Action",
       intro:
         "Your brochures and flyers are powerful tools to make a lasting impression. We help you design visually striking marketing materials that not only grab attention but also communicate your message clearly and effectively.",
-      text: "From compelling visuals to persuasive copy, our brochures and flyers are crafted to elevate your brand. Whether you're promoting an event, showcasing your products, or delivering key information, we design materials that engage your audience and inspire action. With our expertise in design and messaging, we ensure that your marketing collateral stands out in any setting.",
+      description:
+        "From compelling visuals to persuasive copy, our brochures and flyers are crafted to elevate your brand. Whether you're promoting an event, showcasing your products, or delivering key information, we design materials that engage your audience and inspire action. With our expertise in design and messaging, we ensure that your marketing collateral stands out in any setting.",
       button: "Start Designing Your Brochure or Flyer Today",
       afterButtonText:
         "Let’s create marketing materials that not only captivate your audience but also drive results, leaving a lasting impression with every interaction.",
@@ -3990,48 +4077,52 @@ export const subServiceDetails = [
     info: {
       name: "Seamless Onboarding with Clear and Engaging Training Materials",
       title: "Seamless Onboarding Paperwork",
-      menuCaption:
-        "Create engaging, clear, and effective training materials to streamline your onboarding process and ensure a smooth employee integration.",
+      hook: "Create engaging, clear, and effective training materials to streamline your onboarding process and ensure a smooth employee integration.",
       description: "Reducing Training Time",
       startingPrice: 150,
-      info: "We develop comprehensive and professional training materials that streamline the onboarding process for employees, clients, and users. Our content is designed for clarity, engagement, and ease of understanding, ensuring smooth transitions and successful integration into your organization. With step-by-step guidance, interactive elements, and tailored resources, we help you deliver an effective onboarding experience that fosters confidence, productivity, and long-term alignment with your goals.",
+      intro: [
+        "We develop comprehensive and professional training materials that streamline the onboarding process for employees, clients, and users. Our content is designed for clarity, engagement, and ease of understanding, ensuring smooth transitions and successful integration into your organization. With step-by-step guidance, interactive elements, and tailored resources, we help you deliver an effective onboarding experience that fosters confidence, productivity, and long-term alignment with your goals.",
+      ],
       details:
         "We develop clear, structured training manuals and onboarding documents that streamline the transition for employees, clients, or users. Designed for efficiency and clarity, our materials ensure a smooth onboarding process, improving engagement and retention.",
       short:
         "Create clear, engaging training materials that streamline the onboarding process. With step-by-step guidance, interactive elements, and tailored resources, we ensure smooth transitions and successful integration, fostering confidence and long-term alignment with your goals.",
       featured: false,
-      pricingTierIntro: {
-        title:
-          "Comprehensive Onboarding & Training Materials for Seamless Integration",
-        text: "Our tailored onboarding and training manuals help you equip employees or clients with the knowledge they need to succeed. Whether you're looking for basic documents or fully immersive training materials with multimedia elements, we offer a range of solutions designed to meet your specific needs and drive effective learning outcomes.",
+      pricing: {
+        pricingTierIntro: {
+          title:
+            "Comprehensive Onboarding & Training Materials for Seamless Integration",
+          description:
+            "Our tailored onboarding and training manuals help you equip employees or clients with the knowledge they need to succeed. Whether you're looking for basic documents or fully immersive training materials with multimedia elements, we offer a range of solutions designed to meet your specific needs and drive effective learning outcomes.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Onboarding Materials (1–3 pages)",
+            startingPrice: 150,
+            info: "Starting at $150, this package includes minimal onboarding materials like brief checklists or simple welcome messages tailored to get new hires started quickly.",
+          },
+          {
+            name: "Simple Onboarding Documents (3–5 pages)",
+            startingPrice: 250,
+            info: "Starting at $250, this tier covers essential onboarding materials such as checklists, orientation guides, and introductory content tailored to your needs.",
+          },
+          {
+            name: "Training Manuals (up to 15 pages)",
+            startingPrice: 1200,
+            info: "Starting at $1,200, this package includes detailed manuals with structured content, step-by-step instructions, and relevant visual aids for effective training.",
+          },
+          {
+            name: "Comprehensive Manuals (up to 25 pages)",
+            startingPrice: 2500,
+            info: "Starting at $2,500, this option is ideal for extensive manuals that cover multiple aspects of training, onboarding, or operational guidelines. Includes in-depth explanations, examples, and advanced formatting.",
+          },
+          {
+            name: "Advanced Manuals with Multimedia",
+            startingPrice: 4000,
+            info: "Starting at $4,000, this package integrates multimedia elements such as videos, interactive content, and custom graphics to enhance engagement and understanding.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Onboarding Materials (1–3 pages)",
-          startingPrice: 150,
-          info: "Starting at $150, this package includes minimal onboarding materials like brief checklists or simple welcome messages tailored to get new hires started quickly.",
-        },
-        {
-          name: "Simple Onboarding Documents (3–5 pages)",
-          startingPrice: 250,
-          info: "Starting at $250, this tier covers essential onboarding materials such as checklists, orientation guides, and introductory content tailored to your needs.",
-        },
-        {
-          name: "Training Manuals (up to 15 pages)",
-          startingPrice: 1200,
-          info: "Starting at $1,200, this package includes detailed manuals with structured content, step-by-step instructions, and relevant visual aids for effective training.",
-        },
-        {
-          name: "Comprehensive Manuals (up to 25 pages)",
-          startingPrice: 2500,
-          info: "Starting at $2,500, this option is ideal for extensive manuals that cover multiple aspects of training, onboarding, or operational guidelines. Includes in-depth explanations, examples, and advanced formatting.",
-        },
-        {
-          name: "Advanced Manuals with Multimedia",
-          startingPrice: 4000,
-          info: "Starting at $4,000, this package integrates multimedia elements such as videos, interactive content, and custom graphics to enhance engagement and understanding.",
-        },
-      ],
     },
     details: [
       {
@@ -4155,7 +4246,8 @@ export const subServiceDetails = [
       title: "Streamline Onboarding with Clear, Engaging Training Materials",
       intro:
         "Effective onboarding is essential for employee success. We create clear, engaging, and easy-to-follow training materials that ensure new hires feel confident and ready to contribute from day one.",
-      text: "From interactive tutorials to detailed training manuals, we design materials that simplify complex processes and improve knowledge retention. Our training resources are tailored to your company’s needs, ensuring your team gets the right support, builds strong foundations, and integrates smoothly into your organization. With clear instructions and engaging visuals, we make sure your employees are well-equipped for success.",
+      description:
+        "From interactive tutorials to detailed training manuals, we design materials that simplify complex processes and improve knowledge retention. Our training resources are tailored to your company’s needs, ensuring your team gets the right support, builds strong foundations, and integrates smoothly into your organization. With clear instructions and engaging visuals, we make sure your employees are well-equipped for success.",
       button: "Start Designing Your Training Materials Today",
       afterButtonText:
         "Let’s create onboarding content that boosts employee confidence, reduces training time, and helps your team achieve success faster.",
@@ -4167,42 +4259,46 @@ export const subServiceDetails = [
     info: {
       name: "Master Any Subject with Comprehensive Study Guides",
       title: "Learning Study Guides",
-      menuCaption:
-        "Create in-depth, easy-to-follow study guides that empower learners with the knowledge and tools they need to succeed.",
+      hook: "Create in-depth, easy-to-follow study guides that empower learners with the knowledge and tools they need to succeed.",
       description: "Focused Learning",
       startingPrice: 350,
-      info: "We craft detailed and easy-to-follow study guides designed to simplify complex concepts and enhance learning retention. Whether for students preparing for exams or professionals seeking to expand their knowledge, our guides provide clear explanations, structured layouts, and effective learning strategies. With a focus on clarity, comprehension, and application, our study materials help you grasp key topics, boost confidence, and achieve your academic or professional goals.",
+      intro: [
+        "We craft detailed and easy-to-follow study guides designed to simplify complex concepts and enhance learning retention. Whether for students preparing for exams or professionals seeking to expand their knowledge, our guides provide clear explanations, structured layouts, and effective learning strategies. With a focus on clarity, comprehension, and application, our study materials help you grasp key topics, boost confidence, and achieve your academic or professional goals.",
+      ],
       details:
         "We create comprehensive, easy-to-understand study guides that simplify complex concepts for students and professionals. Designed for effective learning and retention, our guides enhance comprehension, making studying more efficient and engaging.",
       short:
         "Create detailed, easy-to-follow study guides that simplify complex concepts and enhance learning retention. Our guides provide clear explanations and structured layouts, helping students and professionals grasp key topics, boost confidence, and achieve their goals with effective learning strategies.",
       featured: false,
-      pricingTierIntro: {
-        title: "Tailored Study Guides to Enhance Learning and Retention",
-        text: "Whether you need quick overviews, comprehensive educational resources, or interactive learning tools, our custom study guides are designed to meet diverse learning needs. From concise summaries to detailed manuals and engaging digital formats, we offer a range of solutions that help learners grasp key concepts efficiently and retain information effectively.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Tailored Study Guides to Enhance Learning and Retention",
+          description:
+            "Whether you need quick overviews, comprehensive educational resources, or interactive learning tools, our custom study guides are designed to meet diverse learning needs. From concise summaries to detailed manuals and engaging digital formats, we offer a range of solutions that help learners grasp key concepts efficiently and retain information effectively.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic Study Guides (5–10 pages)",
+            startingPrice: 350,
+            info: "Starting at $350, ideal for concise overviews or summaries. These guides provide essential information in a clear, structured format to aid quick understanding.",
+          },
+          {
+            name: "Comprehensive Guides (up to 20 pages)",
+            startingPrice: 900,
+            info: "Starting at $900, perfect for in-depth exploration of a subject. These guides include detailed explanations, examples, and diagrams for thorough understanding.",
+          },
+          {
+            name: "Interactive Digital Guides",
+            startingPrice: 1700,
+            info: "Starting at $1,700, these guides incorporate interactive elements such as clickable content, multimedia enhancements, and quizzes to engage learners more effectively.",
+          },
+          {
+            name: "Flashcard Sets",
+            startingPrice: 250,
+            info: "Starting at $250, ideal for quick revision and memorization. These sets include concise, focused content designed to reinforce key concepts.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic Study Guides (5–10 pages)",
-          startingPrice: 350,
-          info: "Starting at $350, ideal for concise overviews or summaries. These guides provide essential information in a clear, structured format to aid quick understanding.",
-        },
-        {
-          name: "Comprehensive Guides (up to 20 pages)",
-          startingPrice: 900,
-          info: "Starting at $900, perfect for in-depth exploration of a subject. These guides include detailed explanations, examples, and diagrams for thorough understanding.",
-        },
-        {
-          name: "Interactive Digital Guides",
-          startingPrice: 1700,
-          info: "Starting at $1,700, these guides incorporate interactive elements such as clickable content, multimedia enhancements, and quizzes to engage learners more effectively.",
-        },
-        {
-          name: "Flashcard Sets",
-          startingPrice: 250,
-          info: "Starting at $250, ideal for quick revision and memorization. These sets include concise, focused content designed to reinforce key concepts.",
-        },
-      ],
     },
     details: [
       {
@@ -4304,7 +4400,8 @@ export const subServiceDetails = [
       title: "Achieve Success with Clear, Detailed Study Guides",
       intro:
         "Unlock the full potential of your learning with expertly crafted study guides. Whether for exams, courses, or professional development, we design comprehensive materials that simplify complex topics and accelerate your understanding.",
-      text: "Our study guides are designed to break down challenging subjects into manageable sections, ensuring you absorb key concepts effectively. With clear explanations, practical examples, and visual aids, we make learning efficient and enjoyable. Tailored to your needs, our guides help you stay focused, organized, and confident in mastering any subject.",
+      description:
+        "Our study guides are designed to break down challenging subjects into manageable sections, ensuring you absorb key concepts effectively. With clear explanations, practical examples, and visual aids, we make learning efficient and enjoyable. Tailored to your needs, our guides help you stay focused, organized, and confident in mastering any subject.",
       button: "Get Your Customized Study Guide Now",
       afterButtonText:
         "Let’s build a study guide that enhances your learning experience, improves your retention, and helps you achieve your academic or professional goals.",
@@ -4316,37 +4413,41 @@ export const subServiceDetails = [
     info: {
       name: "Engaging & Professional eBook Creation",
       title: "Professional eBook Creation",
-      menuCaption:
-        "Craft compelling, SEO-optimized eBooks that not only inform but also engage readers and establish your authority in your field.",
+      hook: "Craft compelling, SEO-optimized eBooks that not only inform but also engage readers and establish your authority in your field.",
       description: "Lead Generation",
       startingPrice: 1500,
-      info: "We specialize in crafting high-quality, visually appealing eBooks tailored to your educational, marketing, or publishing needs. From compelling content development to eye-catching design, we ensure your eBook effectively conveys your message and captivates your audience. Whether you're looking to educate, inform, or promote, our expertly designed eBooks provide an engaging, polished, and impactful reading experience that aligns with your goals.",
+      intro: [
+        "We specialize in crafting high-quality, visually appealing eBooks tailored to your educational, marketing, or publishing needs. From compelling content development to eye-catching design, we ensure your eBook effectively conveys your message and captivates your audience. Whether you're looking to educate, inform, or promote, our expertly designed eBooks provide an engaging, polished, and impactful reading experience that aligns with your goals.",
+      ],
       details:
         "Our eBook creation service delivers professionally written, visually compelling content optimized for marketing, education, and publishing. We craft SEO-friendly, engaging eBooks that enhance credibility, attract readers, and drive conversions.",
       short:
         "Create high-quality, visually appealing eBooks that educate, inform, and engage your audience. Our expertly crafted eBooks combine compelling content with eye-catching design to deliver an impactful reading experience that aligns with your marketing, educational, or publishing goals.",
       featured: true,
-      pricingTierIntro: {
-        title: "Custom eBooks That Captivate and Educate",
-        text: "Our expertly crafted eBooks provide value through compelling content, professional design, and seamless formatting. Whether you’re looking to produce a basic eBook or a more complex, multimedia-enhanced version, we offer tailored solutions to meet your objectives and engage your audience.",
+      pricing: {
+        pricingTierIntro: {
+          title: "Custom eBooks That Captivate and Educate",
+          description:
+            "Our expertly crafted eBooks provide value through compelling content, professional design, and seamless formatting. Whether you’re looking to produce a basic eBook or a more complex, multimedia-enhanced version, we offer tailored solutions to meet your objectives and engage your audience.",
+        },
+        pricingTiers: [
+          {
+            name: "Basic eBook",
+            startingPrice: 1500,
+            info: "Starting at $1,500, this option includes content writing and professional design for a high-quality eBook that meets your needs.",
+          },
+          {
+            name: "Standard eBook",
+            startingPrice: 2500,
+            info: "Starting at $2,500, this package includes more in-depth content writing, advanced formatting, and basic multimedia integration for an engaging eBook experience.",
+          },
+          {
+            name: "Advanced eBook",
+            startingPrice: 3500,
+            info: "Starting at $3,500, this package includes advanced formatting, in-depth research, and multimedia enhancements to create a comprehensive and engaging eBook.",
+          },
+        ],
       },
-      pricingTiers: [
-        {
-          name: "Basic eBook",
-          startingPrice: 1500,
-          info: "Starting at $1,500, this option includes content writing and professional design for a high-quality eBook that meets your needs.",
-        },
-        {
-          name: "Standard eBook",
-          startingPrice: 2500,
-          info: "Starting at $2,500, this package includes more in-depth content writing, advanced formatting, and basic multimedia integration for an engaging eBook experience.",
-        },
-        {
-          name: "Advanced eBook",
-          startingPrice: 3500,
-          info: "Starting at $3,500, this package includes advanced formatting, in-depth research, and multimedia enhancements to create a comprehensive and engaging eBook.",
-        },
-      ],
     },
     details: [
       {
@@ -4498,7 +4599,8 @@ export const subServiceDetails = [
       title: "Transform Your Knowledge into Engaging eBooks That Captivate",
       intro:
         "Bring your expertise to life with beautifully designed, professional eBooks that not only educate but also engage your audience. Whether for marketing, education, or thought leadership, we craft eBooks that leave a lasting impression.",
-      text: "Our eBook creation service combines compelling content with striking visuals to deliver an impactful reading experience. From concept to publication, we ensure your eBook aligns with your brand, drives engagement, and fosters trust. Whether you're sharing valuable insights or telling a story, our expert team will help you create an eBook that resonates with your audience and achieves your business goals.",
+      description:
+        "Our eBook creation service combines compelling content with striking visuals to deliver an impactful reading experience. From concept to publication, we ensure your eBook aligns with your brand, drives engagement, and fosters trust. Whether you're sharing valuable insights or telling a story, our expert team will help you create an eBook that resonates with your audience and achieves your business goals.",
       button: "Start Your eBook Project Today",
       afterButtonText:
         "Let’s turn your ideas into a professionally designed eBook that elevates your brand, captivates readers, and drives meaningful results.",

@@ -1,4 +1,6 @@
-export const allServices = [
+import { Category } from "@/lib/interfaces/services";
+
+export const allServices: Category[] = [
   {
     name: "scalable-corporate-digital-solutions",
     title: "Scalable Corporate Solutions for Growth & Digital Success",

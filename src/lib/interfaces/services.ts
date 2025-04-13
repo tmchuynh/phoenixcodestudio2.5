@@ -5,18 +5,42 @@ export interface Category {
   title: string;
   short: string;
   description: string[];
-  sub: string[];
+  sub: SubItem["name"][];
 }
 
 export interface SubItem {
-  category: string;
+  category: Category["name"];
+  name: string;
+  info: SubInformation;
+  details: SubDetail[];
+  cta: CTA;
+}
+
+export interface SubDetail {
+  title: string;
+  description?: string;
+  intro?: string[];
+  lists?: {
+    title?: string;
+    description: string;
+    info?: ListDetail[];
+  }[];
+}
+
+export interface SubInformation {
   name: string;
   title: string;
+  hook?: string;
+  description: string;
+  startingPrice?: number;
+  intro: string[];
+  details: string;
   short: string;
-  startingPrice: number;
-  Icon: string;
-  pricingTiers: PricingTier[];
-  cta: CTA;
+  featured?: boolean;
+  pricing: {
+    pricingTierIntro?: ListDetail;
+    pricingTiers?: PricingTier[];
+  };
 }
 
 export interface ListDetail {
@@ -25,28 +49,8 @@ export interface ListDetail {
   list?: ListDetail[];
 }
 
-export interface SubInformation {
-  name: string;
-  title: string;
-  menuCaption?: string;
-  description: string;
-  startingPrice?: number;
-  info: string;
-  details: string;
-  short: string;
-  featured?: boolean;
-  Icon?: string;
-  pricingTierIntro?: {
-    title: string;
-    text: string;
-  };
-  pricingTiers?: PricingTier[];
-}
-
-export interface CTA {
-  title: string;
+export interface CTA extends ListDetail {
   intro?: string;
-  text?: string;
   button: string;
   afterButtonText?: string;
 }
