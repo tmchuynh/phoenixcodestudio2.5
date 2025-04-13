@@ -15,8 +15,6 @@ import {
   contactFeaturedLinks,
   serviceCategories,
   serviceFeaturedLinks,
-  web_development,
-  webDevelopmentFeaturedLinks,
 } from "@/lib/constants/navigation";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { Menu } from "@/lib/types";
@@ -83,10 +81,10 @@ export function NavBar() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>About PCS</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="gap-3 grid lg:grid-cols-4 lg:grid-rows-3 p-4 md:w-[35em] lg:w-[45em] xl:w-[60em]">
+                    <ul className="gap-3 grid lg:grid-cols-2 lg:grid-rows-2 p-4 md:w-[35em] lg:w-[45em] xl:w-[60em]">
                       {aboutFeaturedLinks.map((link, index) => (
                         <li
-                          className="col-span-4 xl:col-span-4 row-span-2 xl:row-span-2 m-0"
+                          className="col-span-1 lg:col-span-1 row-span-1 lg:row-span-2 xl:row-span-2 m-0"
                           key={index}
                         >
                           {NavigationImageItem({ link })}
@@ -99,29 +97,6 @@ export function NavBar() {
                           key={index}
                         >
                           {link.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem className="lg:block hidden">
-                  <NavigationMenuTrigger>
-                    What's Your Story?
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="gap-3 grid xl:grid-cols-4 xl:grid-rows-2 p-4 md:w-[35em] lg:w-[45em] xl:w-[60em]">
-                      {webDevelopmentFeaturedLinks.map((link, index) => (
-                        <li className="col-span-2 row-span-2 m-0" key={index}>
-                          {NavigationImageItem({ link })}
-                        </li>
-                      ))}
-                      {web_development.map((program, index) => (
-                        <ListItem
-                          key={index}
-                          title={program.title}
-                          href={program.href}
-                        >
-                          {program.description}
                         </ListItem>
                       ))}
                     </ul>
@@ -203,7 +178,7 @@ function NavigationImageItem(link: { link: Menu }) {
       <div className="relative mt-12 -mb-5 font-[PlayfairDisplay] font-medium text-foreground text-lg uppercase">
         {link.link.title}
       </div>
-      <p className="relative font-[GreatVibes] text-foreground text-lg lg:text-xl tracking-wider">
+      <p className="relative mt-4 font-[GreatVibes] text-foreground text-lg lg:text-xl tracking-wider">
         {link.link.description}
       </p>
     </NavigationMenuLink>
