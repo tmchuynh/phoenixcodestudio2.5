@@ -1,5 +1,5 @@
+import { subServiceDetails } from "@/lib/constants/services/sub-services";
 import { NextRequest, NextResponse } from "next/server";
-import { subServiceDetails } from "@/lib/sub-services";
 
 /**
  * Handles GET requests to retrieve service details based on the URL path.
