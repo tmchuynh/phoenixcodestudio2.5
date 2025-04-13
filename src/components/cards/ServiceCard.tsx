@@ -57,7 +57,7 @@ export default function ServiceDetails({
         <DynamicButton
           className="mt-6 w-full self-start"
           variant={theme === "dark" ? "accent" : "outline"}
-          onClick={() => router.push("/services/pricing/payment-plans")}
+          onClick={() => router.push("/services/payment_plans")}
         >
           Explore Our Payment Plans
         </DynamicButton>
