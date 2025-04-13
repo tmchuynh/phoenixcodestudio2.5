@@ -1,9 +1,11 @@
 "use client";
+import DynamicButton from "@/components/button/button-dynamic";
 import LoadingIndicator from "@/components/states/loading/Loading";
 import CannotFind from "@/components/states/not-found/CannotFind";
-import { Button } from "@/components/ui/button";
-import { subServiceDetails } from "@/lib/constants/services/sub-services";
+import { Card } from "@/components/ui/card";
+import { subServiceDetails } from "@/lib/constants/services/subServices";
 import { Category } from "@/lib/interfaces/services";
+import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { capitalize, generateSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useParams, useRouter } from "next/navigation";
@@ -12,6 +14,7 @@ import { useEffect, useState } from "react";
 export default function CategoryPage() {
   const { category } = useParams() as { category: string };
   const { theme } = useTheme();
+  const isSmallScreen = useSmallScreen();
   const router = useRouter();
 
   const [loading, setLoading] = useState(true);
@@ -68,50 +71,47 @@ export default function CategoryPage() {
 
   return (
     <>
-      <main className="mx-auto py-6 w-10/12 md:w-11/12">
-        <h1>{service?.name && capitalize(service?.name)}</h1>
-        <div className="mb-4"> {service?.short}</div>
+      {service && (
+        <main className="mx-auto py-6 w-10/12 md:w-11/12">
+          <h1>{service?.name && capitalize(service?.name)}</h1>
+          <DynamicButton
+            variant={theme === "dark" ? "outline" : "accent"}
+            className="mx-0"
+            onClick={() => navigateToDetails(service.name)}
+          >
+            View More Details
+          </DynamicButton>
 
-        <h2>{service?.title}</h2>
-        <p>{service?.description}</p>
+          <p>{service?.description}</p>
 
-        <section>
-          {service?.sub.map((sub, index) => {
-            const subServiceDetail = subServiceDetails.find(
-              (item) => item.name === sub
-            );
-
-            if (
-              subServiceDetail &&
-              subServiceDetail.info.pricing.pricingTiers
-            ) {
-              return (
-                <div className="lg:flex lg:flex-col my-4" key={index}>
-                  <h3>Pricing for {capitalize(subServiceDetail.name)}</h3>
-                  <ul>
-                    {subServiceDetail.info.pricing.pricingTiers.map(
-                      (pricing, pricingIndex) => (
-                        <li key={pricingIndex}>
-                          <strong>{pricing.name}: </strong>
-                          {pricing.info}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                  <Button
-                    className="mt-3 w-full md:w-1/2 lg:w-1/4 h-fit hover:underline no-underline lg:self-end"
-                    variant={theme === "dark" ? "outline" : "accent"}
-                    onClick={() => navigateToDetails(sub)}
-                  >
-                    Learn More
-                  </Button>
-                </div>
+          <div className="gap-4 lg:gap-8 grid grid-cols-1 md:grid-cols-2 py-6 lg:py-10">
+            {service.sub.map((subService, subIndex) => {
+              const subServiceDetail = subServiceDetails.find(
+                (item) => item.name === subService
               );
-            }
-            return null;
-          })}
-        </section>
-      </main>
+
+              if (subServiceDetail) {
+                return (
+                  <Card className="shadow-md px-5 py-10" key={subIndex}>
+                    <h3>{capitalize(subServiceDetail.name)} – Pricing</h3>
+                    <ul className="space-y-4 mx-8 list-disc list-outside">
+                      {subServiceDetail.info.pricing.pricingTiers.map(
+                        (tier, tierIndex) => (
+                          <li key={tierIndex}>
+                            <strong>{tier.name}:</strong> {tier.info}
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </Card>
+                );
+              }
+
+              return null;
+            })}
+          </div>
+        </main>
+      )}
     </>
   );
 }

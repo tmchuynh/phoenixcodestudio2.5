@@ -3,8 +3,8 @@ import DynamicButton from "@/components/button/button-dynamic";
 import IncentivesImage from "@/components/headers/page_headers/IncentivesImage";
 import LoadingIndicator from "@/components/states/loading/Loading";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { allServices } from "@/lib/constants/services/service-categories";
-import { subServiceDetails } from "@/lib/constants/services/sub-services";
+import { allServices } from "@/lib/constants/services/serviceCategories";
+import { subServiceDetails } from "@/lib/constants/services/subServices";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { capitalize, generateSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
@@ -55,7 +55,10 @@ const ServicesPage: FC = () => {
 
               if (subServiceDetail) {
                 return (
-                  <Card key={subIndex} className="shadow-md">
+                  <Card
+                    key={subIndex}
+                    className="flex flex-col justify-between shadow-md"
+                  >
                     <CardContent className="flex flex-col">
                       <h3>{capitalize(subServiceDetail.name)}</h3>
 
