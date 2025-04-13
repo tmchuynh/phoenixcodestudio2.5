@@ -10,10 +10,10 @@ export interface PaymentDetails {
     description: string;
     short: string;
     features: string[];
-    shortFeatures: ListDetail[];
   };
 
   explanation: string;
+  startingPrice?: number;
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   details: ListDetail[];
 }
