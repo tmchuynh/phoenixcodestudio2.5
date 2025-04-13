@@ -6,18 +6,20 @@ export interface Testimonial {
   quote: string;
 }
 
-
 export interface Project {
   title: string;
-  name: string;
   featured: boolean;
   description: string;
-  short: string;
+  imageUrl: string;
   tags: string[];
-  languages: string[];
-  frameworks?: string[];
-  libraries?: string[];
-  technologies?: string[];
+  tech: {
+    languages: string[];
+    frameworks?: string[];
+    libraries?: string[];
+    technologies?: string[];
+  };
   githubLink?: string;
   liveLink?: string;
+  short?: string;
+  quote?: string;
 }
