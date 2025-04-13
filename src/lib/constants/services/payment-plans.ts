@@ -1,11 +1,14 @@
+import { PaymentDetails } from "@/lib/interfaces/payments";
 import { MdDoubleArrow } from "react-icons/md";
 
-export const paymentPlans = [
+export const paymentPlans: PaymentDetails[] = [
   {
     name: "essential-service-plan",
     title: "Essential Service Plan",
     short: "Starter Plan",
     info: {
+      intro: ["A cost-effective solution for startups and small businesses."],
+      short: "Starter Plan",
       description:
         "An affordable, entry-level plan designed for startups and small businesses that need to establish a professional digital presence with only the core services. This plan includes the necessary tools to launch a website, basic SEO, and digital marketing support with minimal upfront costs.",
       features: [
@@ -17,7 +20,7 @@ export const paymentPlans = [
     explanation:
       "Ideal for small-scale projects, the Essential Service Plan lets you pay as you go, ensuring financial control while delivering the key services needed to get your business online.",
     Icon: MdDoubleArrow,
-    startingPrice: 1200, // starting at $1,200
+    startingPrice: 1200,
     details: [
       {
         title: "Pay Per Milestone",
@@ -41,6 +44,11 @@ export const paymentPlans = [
     title: "Comprehensive Service Package",
     short: "Classic Plan",
     info: {
+      intro: [
+        "A balanced plan crafted for growing businesses.",
+        "Includes additional customization and strategic guidance.",
+      ],
+      short: "Classic Plan",
       description:
         "A balanced plan crafted for growing businesses. It includes additional customization, strategic guidance, and more robust support compared to the essential package. This plan is ideal if you’re expanding your digital footprint and need extra features without a huge upfront expense.",
       features: [
@@ -76,6 +84,11 @@ export const paymentPlans = [
     title: "Elite Service Package",
     short: "Advanced Plan",
     info: {
+      intro: [
+        "A premium solution for large-scale, ongoing projects.",
+        "Includes advanced features and continuous improvement.",
+      ],
+      short: "Advanced Plan",
       description:
         "A premium solution for large-scale, ongoing projects requiring advanced features, continuous improvement, and strategic guidance. This package includes an all-inclusive support structure with dedicated account management and continuous optimization.",
       features: [
@@ -111,6 +124,11 @@ export const paymentPlans = [
     title: "Personalized Service Package",
     short: "Bespoke Plan",
     info: {
+      intro: [
+        "A highly tailored plan designed for complex, multi-phase projects.",
+        "Includes custom payment structures and flexible terms.",
+      ],
+      short: "Bespoke Plan",
       description:
         "A highly tailored plan designed for complex, multi-phase projects that require custom payment structures and flexible terms. This package adapts to your unique project requirements and long-term goals, providing ongoing strategic support and adaptable payment options.",
       features: [
