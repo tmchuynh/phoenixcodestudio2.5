@@ -91,7 +91,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
       items.push(
         <BreadcrumbSeparator
           key={`sep-${currentHref}-${currentSegment}`}
-          className="mr-0 ml-1"
+          className="mr-0 ml-1 dark:text-pretty"
         >
           <TbSlashes />
         </BreadcrumbSeparator>
@@ -104,7 +104,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         >
           <BreadcrumbLink
             href={currentHref}
-            className="py-1 rounded-md text-primary dark:text-foreground underline-offset-4 hover:underline"
+            className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
           >
             {currentSegment}
           </BreadcrumbLink>
@@ -115,7 +115,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         <BreadcrumbItem key="home" className="mx-1">
           <BreadcrumbLink
             href="/"
-            className="px-1 py-1 rounded-md text-primary dark:text-foreground underline-offset-4 hover:underline"
+            className="px-1 py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
           >
             Home
           </BreadcrumbLink>
@@ -124,7 +124,10 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
 
       if (pathSegments.length > 0) {
         items.push(
-          <BreadcrumbSeparator key="sep-dots" className="mr-0 ml-0">
+          <BreadcrumbSeparator
+            key="sep-dots"
+            className="mr-0 ml-0 dark:text-pretty"
+          >
             <TbSlashes />
           </BreadcrumbSeparator>
         );
@@ -138,7 +141,10 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
 
       if (pathSegments.length > 1) {
         items.push(
-          <BreadcrumbSeparator key="sep-dots-second" className="mr-0 ml-0">
+          <BreadcrumbSeparator
+            key="sep-dots-second"
+            className="mr-0 ml-0 dark:text-pretty"
+          >
             <TbSlashes />
           </BreadcrumbSeparator>
         );
@@ -157,7 +163,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         items.push(
           <BreadcrumbSeparator
             key={`sep-${secondHref}-${secondSegment}`}
-            className="mr-0 ml-1"
+            className="mr-0 ml-1 dark:text-pretty"
           >
             <TbSlashes />
           </BreadcrumbSeparator>
@@ -170,7 +176,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
           >
             <BreadcrumbLink
               href={secondHref}
-              className="py-1 rounded-md text-primary dark:text-foreground underline-offset-4 hover:underline"
+              className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
             >
               {secondSegment}
             </BreadcrumbLink>
@@ -184,7 +190,10 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
           const segment = capitalizedSegments[3 + index];
 
           items.push(
-            <BreadcrumbSeparator key={`sep-${href}`} className="mr-0 ml-1">
+            <BreadcrumbSeparator
+              key={`sep-${href}`}
+              className="mr-0 ml-1 dark:text-pretty"
+            >
               <TbSlashes />
             </BreadcrumbSeparator>
           );
@@ -193,7 +202,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
             <BreadcrumbItem key={`${href}-${segment}`} className="mx-1">
               <BreadcrumbLink
                 href={href}
-                className="py-1 rounded-md text-primary dark:text-foreground underline-offset-4 hover:underline"
+                className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
               >
                 {segment}
               </BreadcrumbLink>
@@ -206,7 +215,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         <BreadcrumbItem key="home" className="mx-1">
           <BreadcrumbLink
             href="/"
-            className="px-1 py-1 rounded-md text-primary dark:text-foreground underline-offset-4 hover:underline"
+            className="px-1 py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
           >
             Home
           </BreadcrumbLink>
@@ -218,7 +227,10 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         const capitalizedSegment = capitalizedSegments[index];
 
         items.push(
-          <BreadcrumbSeparator key={`sep-${href}`} className="mx-4">
+          <BreadcrumbSeparator
+            key={`sep-${href}`}
+            className="mx-4 dark:text-pretty"
+          >
             <TbSlashes />
           </BreadcrumbSeparator>
         );
@@ -226,7 +238,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         if (index > 1 && index < pathSegments.length - 1) {
           items.push(
             <BreadcrumbItem key={`dots-${index}`} className="-mx-1">
-              <span className="py-1 rounded-md text-primary dark:text-foreground cursor-default">
+              <span className="py-1 rounded-md dark:text-foreground cursor-default">
                 {capitalizedSegment}
               </span>
             </BreadcrumbItem>
@@ -239,7 +251,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
             >
               <BreadcrumbLink
                 href={href}
-                className="py-1 rounded-md text-primary dark:text-foreground underline-offset-4 hover:underline"
+                className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
               >
                 {capitalizedSegment}
               </BreadcrumbLink>
@@ -261,7 +273,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         aria-label="Breadcrumb"
         className="flex flex-row items-center gap-2 w-full text-xs lg:text-sm"
       >
-        <ul className="flex flex-row items-center gap-2 px-4 font-[Chewy]">
+        <ul className="flex flex-row items-center gap-2 px-4 font-[FiraSans]">
           {breadcrumbItems}
         </ul>
       </nav>
