@@ -8,9 +8,6 @@ export default function PastProjects() {
       <SplitScreenshot />
       <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-11/12">
         <h1>Past Projects</h1>
-        <p className="mt-4 text-center">
-          Here are some of the projects we've worked on in the past.
-        </p>
         <div className="gap-3 grid grid-cols-1 lg:grid-cols-2 py-2 md:py-4 2xl:py-6">
           {pastProjects.map((project, index) => (
             <ProjectCards key={index} project={project} />
