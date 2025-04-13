@@ -1,4 +1,3 @@
-import { paymentPlans } from "@/lib/constants/services/payment-plans";
 import { IconDisplay } from "@/lib/IconDisplay";
 import { PaymentDetails } from "@/lib/interfaces/payments";
 import useMediumScreen from "@/lib/screens/useMediumScreen";
@@ -7,6 +6,7 @@ import { cn, generateSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
+import { paymentPlans } from "@/lib/constants/services/paymentPlans";
 
 export default function PaymentPlans({
   plan,
@@ -28,7 +28,8 @@ export default function PaymentPlans({
   const navigateToPlan = (plan: string) => {
     const formattedPlanName = generateSlug(plan);
 
-    router.push(`/services/pricing/payment-plans/${formattedPlanName}`);
+    router.push(`/services/import { paymentPlans } from "@/lib/constants/services/payment_plans";
+/${formattedPlanName}`);
   };
 
   return (
