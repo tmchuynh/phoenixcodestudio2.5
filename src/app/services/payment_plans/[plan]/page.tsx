@@ -24,7 +24,7 @@ export default function PaymentPlanPage() {
     /**
      * Fetches the payment plan data from the server.
      *
-     * This function sends a GET request to the `/api/services/pricing/payment-plans/${plan}` endpoint
+     * This function sends a GET request to the `/api/services/payment_plans/${plan}` endpoint
      * to retrieve the payment plan details. If the request is successful, the payment plan data is
      * stored using the `setPaymentPlan` function. If the request fails, an error message is set using
      * the `setError` function. The loading state is set to false after a delay of 350 milliseconds.
@@ -33,9 +33,7 @@ export default function PaymentPlanPage() {
      */
     async function fetchPaymentPlan() {
       try {
-        const response = await fetch(
-          `/api/services/pricing/payment-plans/${plan}`
-        );
+        const response = await fetch(`/api/services/payment_plans/${plan}`);
         if (!response.ok) {
           throw new Error("Payment plan not found");
         }

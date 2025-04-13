@@ -1,7 +1,6 @@
-import { paymentPlans } from "@/lib/constants/services/payment-plans";
+import { paymentPlans } from "@/lib/constants/services/paymentPlans";
 import { generateSlug } from "@/lib/utils";
-import { NextResponse } from "next/server";
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 /**
  * Handles GET requests to retrieve a specific payment plan based on the URL.
@@ -12,7 +11,7 @@ import { NextRequest } from "next/server";
  * The function extracts the payment plan identifier from the URL, searches for the corresponding payment plan,
  * and returns it as a JSON response. If the payment plan is not found, it returns a 404 status with an error message.
  *
- * Example URL: /api/services/pricing/payment-plans/[plan]
+ * Example URL: /api/services/payment_plans/[plan]
  */
 export async function GET(req: NextRequest): Promise<NextResponse> {
   const url = new URL(req.url);
