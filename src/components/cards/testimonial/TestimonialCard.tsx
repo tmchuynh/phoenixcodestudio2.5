@@ -1,50 +1,53 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Testimonial } from "@/lib/interfaces";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
 export default function TestimonialCard({
-  review,
+  testimonial,
+  index,
 }: {
-  review: {
-    id: number;
-    author: string;
-    avatarSrc: string;
-    rating: number;
-    content: string;
-  };
+  testimonial: Testimonial;
+  index: number;
 }) {
   return (
-    <div key={review.id} className="py-12">
-      <div className="flex items-center">
-        <Image
-          alt={`${review.author}.`}
-          src={review.avatarSrc}
+    <Card key={index} className="shadow-lg px-6 py-10">
+      <CardHeader className="flex items-center">
+        {/* <Image
+          alt={`${testimonial.name}.`}
+          src={testimonial.imageUrl}
           className="rounded-full size-12"
           width={48}
           height={48}
-        />
-        <div className="ml-4">
-          <h4 className="font-bold text-gray-900 text-sm">{review.author}</h4>
-          <div className="flex items-center mt-1">
-            {[0, 1, 2, 3, 4].map((rating) => (
-              <FaStar
-                key={rating}
-                aria-hidden="true"
-                className={cn(
-                  review.rating > rating ? "text-yellow-400" : "text-gray-300",
-                  "size-5 shrink-0"
-                )}
-              />
-            ))}
-          </div>
-          <p className="sr-only">{review.rating} out of 5 stars</p>
-        </div>
-      </div>
+        /> */}
+      </CardHeader>
 
-      <div
-        dangerouslySetInnerHTML={{ __html: review.content }}
-        className="space-y-6 mt-4 text-base text-gray-600 italic"
-      />
-    </div>
+      <CardContent className="ml-4">
+        <CardTitle>{testimonial.name}</CardTitle>
+        <CardDescription>{testimonial.position}</CardDescription>
+        <div className="flex items-center mt-1">
+          {[0, 1, 2, 3, 4].map((rating) => (
+            <FaStar
+              key={rating}
+              aria-hidden="true"
+              className={cn(
+                testimonial.rating > rating
+                  ? "text-yellow-400"
+                  : "text-gray-300",
+                "size-5 shrink-0"
+              )}
+            />
+          ))}
+        </div>
+        <p className="sr-only">{testimonial.rating} out of 5 stars</p>
+        {testimonial.quote}
+      </CardContent>
+    </Card>
   );
 }
