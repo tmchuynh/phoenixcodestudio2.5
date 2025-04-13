@@ -1,16 +1,21 @@
+import { Testimonial } from "@/lib/interfaces";
 import Image from "next/image";
 
-export default function Example() {
+export default function FeaturedOverlappingTestimonial({
+  testimonial,
+}: {
+  testimonial: Testimonial;
+}) {
   return (
     <div className="pt-24 sm:pt-32 pb-16 sm:pb-24 xl:pb-32">
-      <div className="bg-gray-900 pb-20 sm:pb-24 xl:pb-0">
+      <div className="pb-20 sm:pb-24 xl:pb-0">
         <div className="flex xl:flex-row flex-col items-center xl:items-stretch gap-x-8 gap-y-10 sm:gap-y-8 mx-auto px-6 lg:px-8 max-w-7xl">
           <div className="xl:flex-none -mt-8 xl:-mb-8 w-full xl:w-96 max-w-2xl">
             <div className="relative md:-mx-8 xl:mx-0 h-full aspect-2/1 xl:aspect-auto">
               <Image
                 alt=""
                 src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-                className="absolute inset-0 bg-gray-800 shadow-2xl rounded-2xl size-full object-cover"
+                className="absolute inset-0 shadow-2xl rounded-2xl size-full object-cover"
                 width={2000}
                 height={1200}
                 priority
@@ -31,17 +36,12 @@ export default function Example() {
                 />
                 <use x={86} href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" />
               </svg>
-              <blockquote className="font-semibold text-white text-xl/8 sm:text-2xl/9">
-                <p>
-                  Gravida quam mi erat tortor neque molestie. Auctor aliquet at
-                  porttitor a enim nunc suscipit tincidunt nunc. Et non lorem
-                  tortor posuere. Nunc eu scelerisque interdum eget tellus non
-                  nibh scelerisque bibendum.
-                </p>
+              <blockquote className="font-semibold text-xl/8 sm:text-2xl/9">
+                {testimonial.quote}
               </blockquote>
               <figcaption className="mt-8 text-base">
-                <div className="font-semibold text-white">Judith Black</div>
-                <div className="mt-1 text-gray-400">CEO of Workcation</div>
+                <div className="font-semibold">{testimonial.name}</div>
+                <div className="mt-1">{testimonial.position}</div>
               </figcaption>
             </figure>
           </div>
