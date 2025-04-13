@@ -1,4 +1,6 @@
-export const testimonials = [
+import { Testimonial } from "../interfaces";
+
+export const testimonials: Testimonial[] = [
   {
     name: "Justin Perez",
     featured: true,
