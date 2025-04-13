@@ -2,6 +2,42 @@ import { Project } from "../interfaces";
 
 export const pastProjects: Project[] = [
   {
+    title: "International Activities Club Website 2.0",
+    featured: true,
+    imageUrl: "https://placehold.co/600x400",
+    description:
+      "The website reflects a commitment to immersive learning, where students actively engage, explore, and grow through hands-on experiences in a variety of disciplines, developing essential skills and a lasting love for learning.",
+    tags: [
+      "Education",
+      "Modern",
+      "Dynamic",
+      "Brand Awareness",
+      "Brand Identity",
+    ],
+    tech: {
+      languages: ["TypeScript"],
+      frameworks: ["Next.js", "Tailwind CSS"],
+      libraries: ["React"],
+      technologies: ["Resend", "shadcn/ui"],
+    },
+    githubLink: "https://github.com/tmchuynh/iac_website_2.0",
+  },
+  {
+    title: "FirstGalaxy Inc",
+    featured: false,
+    imageUrl: "https://placehold.co/600x400",
+    description:
+      "A modern real estate platform featuring property listings with high-quality images, virtual tours, and advanced search filters.",
+    tags: ["Real Estate", "Data Filtering", "Dynamic"],
+    tech: {
+      languages: ["JavaScript", "HTML", "CSS"],
+      frameworks: ["Bootstrap CSS"],
+      libraries: ["jQuery"],
+      technologies: ["Chart.js"],
+    },
+    githubLink: "https://github.com/tmchuynh/firstgalaxy",
+  },
+  {
     title: "Quiz Application",
     featured: true,
     imageUrl: "https://placehold.co/600x400",
@@ -9,7 +45,7 @@ export const pastProjects: Project[] = [
       "An engaging Next.js-powered quiz platform to test knowledge across subjects like Chemistry, History, and Math—with progress tracking and a competitive leaderboard.",
     tags: ["User Auth", "Progress Tracking", "Dynamic", "Data Filtering"],
     tech: {
-      languages: ["HTML", "TypeScript"],
+      languages: ["TypeScript"],
       frameworks: ["Next.js"],
       libraries: ["React", "Sequelize", "Next-Auth"],
       technologies: ["MySQL", "localStorage", "Axios"],
@@ -49,14 +85,15 @@ export const pastProjects: Project[] = [
   },
   {
     title: "International Activities Club",
-    featured: true,
+    featured: false,
     imageUrl: "https://placehold.co/600x400",
     description:
-      "A platform showcasing diverse extracurricular programs and hands-on learning opportunities for students from 1st grade through high school.",
+      "A website upgraded from a 20 year old site to showcase diverse extracurricular programs and hands-on learning opportunities for students from 1st grade through high school.",
     tags: ["Educational", "Dynamic"],
     tech: {
       languages: ["JavaScript", "HTML", "CSS"],
-      frameworks: ["Express", "Bootstrap CSS"],
+      frameworks: ["Bootstrap CSS"],
+      technologies: ["Google Forms", "EmailJS"],
     },
     liveLink: "https://iacafterschools.com/",
   },
@@ -74,21 +111,7 @@ export const pastProjects: Project[] = [
     },
     githubLink: "https://github.com/tmchuynh/Emoji-Finder",
   },
-  {
-    title: "FirstGalaxy Inc",
-    featured: false,
-    imageUrl: "https://placehold.co/600x400",
-    description:
-      "A modern real estate platform featuring property listings with high-quality images, virtual tours, and advanced search filters.",
-    tags: ["Real Estate", "Data Filtering", "Dynamic"],
-    tech: {
-      languages: ["JavaScript", "HTML", "CSS"],
-      frameworks: ["Bootstrap CSS"],
-      libraries: ["jQuery"],
-      technologies: ["Chart.js"],
-    },
-    githubLink: "https://github.com/tmchuynh/firstgalaxy",
-  },
+
   {
     title: "Chess",
     featured: true,
