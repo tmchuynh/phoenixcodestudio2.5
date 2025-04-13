@@ -1,11 +1,11 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
+import { BlogPost } from "@/lib/interfaces/blogs";
 import { generateSlug } from "@/lib/utils";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import DynamicButton from "../button/button-dynamic";
-import { BlogPost } from "@/lib/interfaces/blogs";
 
 export default function BlogCard({ blog }: { blog: BlogPost }) {
   const router = useRouter();
@@ -14,8 +14,8 @@ export default function BlogCard({ blog }: { blog: BlogPost }) {
     <article className="flex flex-col justify-between items-start">
       <div className="relative w-full">
         <Image
-          alt=""
-          src={"https://placehold.co/600x400"}
+          alt={blog.title}
+          src={blog.imageUrl || "https://placehold.co/600x400"}
           className="rounded-2xl w-full aspect-video object-cover sm:aspect-2/1 lg:aspect-3/2"
           width={600}
           height={400}
