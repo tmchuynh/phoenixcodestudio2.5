@@ -9,9 +9,7 @@ export default function OurAspirationsPage() {
       <ThreeColumns />
       <div>
         <h2>This Is Who We Are</h2>
-        <DynamicButton variant={"outline"} className="mx-0 my-3 w-1/3">
-          Come Work With Us
-        </DynamicButton>
+
         <p>
           At our core, we’re motivated by a desire to do more than simply
           build—we’re here to make a difference. By helping brands tell their
@@ -55,6 +53,9 @@ export default function OurAspirationsPage() {
           lead.
         </p>
       </div>
+      <DynamicButton variant={"outline"} className="mx-0 my-3 w-1/3">
+        Come Work With Us
+      </DynamicButton>
 
       <FeaturedOverlappingTestimonial testimonial={testimonials[4]} />
     </div>
