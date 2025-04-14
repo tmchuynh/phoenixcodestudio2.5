@@ -45,8 +45,8 @@ export default function ThreeColumns() {
   return (
     <div className="pt-24 md:pt-32">
       <div className="">
-        <h4>Let's Make Vision Reality</h4>
-        <h1>We Share in Your Goals</h1>
+        <h4>From Humble Beginnings to Bold Aspirations</h4>
+        <h1>Before We Made Waves, We Focused on Our Core</h1>
         <p>
           At Phoenix Code Studio, our vision is to build more than just
           websites—we're here to help shape a digital future where creativity,
