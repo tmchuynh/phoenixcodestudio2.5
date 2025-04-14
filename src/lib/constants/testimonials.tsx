@@ -92,12 +92,15 @@ export const testimonials: Testimonial[] = [
         the pleasure of working with. Despite starting with little experience,
         she has grown into a highly skilled and proficient developer. Her
         ability to learn and adapt is evident in her work, particularly
-        showcased on her personal portfolio site—an impressive testament to her
-        technical expertise and creativity. What sets Tina apart is her
-        relentless drive and self-motivation. Her projects clearly demonstrate
-        her ability to tackle new technologies with confidence, overcoming any
-        challenge that comes her way. She is a true problem-solver and an
-        invaluable asset to any team.
+        showcased on her personal portfolio site—
+        <mark>
+          an impressive testament to her technical expertise and creativity
+        </mark>
+        . What sets Tina apart is her{" "}
+        <mark>relentless drive and self-motivation</mark>. Her projects clearly
+        demonstrate her ability to tackle new technologies with confidence,
+        overcoming any challenge that comes her way. She is a true
+        problem-solver and an invaluable asset to any team.
       </p>
     ),
   },
