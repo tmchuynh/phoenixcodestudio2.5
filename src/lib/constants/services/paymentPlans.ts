@@ -6,156 +6,220 @@ export const paymentPlans: PaymentDetails[] = [
     name: "essential-service-plan",
     title: "Essential Service Plan",
     short: "Starter Plan",
+    icon: MdDoubleArrow,
+    startingPrice: 1200,
     info: {
-      intro: ["A cost-effective solution for startups and small businesses."],
+      intro: [
+        "A lean, practical solution designed for startups and entrepreneurs.",
+        "Ideal for businesses with tight budgets needing a fast, professional launch.",
+      ],
       short: "Starter Plan",
       description:
-        "An affordable, entry-level plan designed for startups and small businesses that need to establish a professional digital presence with only the core services. This plan includes the necessary tools to launch a website, basic SEO, and digital marketing support with minimal upfront costs.",
+        "The Essential Service Plan is designed for startups, solopreneurs, and small businesses who need a reliable and affordable entry point into the digital space. This plan provides just the core services required to establish an online presence quickly, with a strong focus on performance, usability, and accessibility.",
       features: [
-        "Pay per milestone or completed service",
-        "Monthly billing options available",
-        "Flexible payment terms up to 3 months",
+        "Milestone-based billing — pay as each stage is completed",
+        "Optional monthly installment plans (up to 3 months)",
+        "Core design and development services",
+        "SEO-ready site architecture and basic keyword implementation",
+        "Mobile-responsive layout",
+        "Essential accessibility compliance (WCAG AA)",
+        "Contact form and basic CMS configuration",
       ],
     },
     explanation:
-      "Ideal for small-scale projects, the Essential Service Plan lets you pay as you go, ensuring financial control while delivering the key services needed to get your business online.",
-    Icon: MdDoubleArrow,
-    startingPrice: 1200,
+      "This plan offers a controlled, phased investment approach — allowing small businesses to build their digital foundation without overextending resources. Ideal for launching quickly and scaling later.",
+    useCases: [
+      "Startup MVP websites",
+      "Freelancer portfolios or one-pagers",
+      "Introductory digital presence for new local businesses",
+    ],
     details: [
       {
-        title: "Pay Per Milestone",
+        title: "Milestone-Based Payments",
         description:
-          "Only pay when specific services or milestones are completed to ensure measurable progress.",
+          "Only pay when defined stages (e.g., wireframes, homepage, final site handoff) are completed, ensuring transparency and accountability.",
       },
       {
-        title: "Monthly Payments",
+        title: "Optional Monthly Payments",
         description:
-          "Spread out the cost with monthly billing, helping you manage cash flow effectively.",
+          "Choose to split the project total into equal monthly payments over a 3-month period to reduce financial strain.",
       },
       {
-        title: "3-Month Payment Term",
+        title: "Launch-Ready Essentials",
         description:
-          "The total project cost can be divided over a maximum of three months for added flexibility.",
+          "Site includes homepage, about, contact, and services pages — with performance and mobile optimization included.",
+      },
+      {
+        title: "Post-Launch Support (30 Days)",
+        description:
+          "Includes 30 days of support after launch to fix bugs, make small content changes, or handle minor updates.",
       },
     ],
   },
+
   {
     name: "comprehensive-service-package",
     title: "Comprehensive Service Package",
     short: "Classic Plan",
+    icon: MdDoubleArrow,
+    startingPrice: 7500,
     info: {
       intro: [
-        "A balanced plan crafted for growing businesses.",
-        "Includes additional customization and strategic guidance.",
+        "A strategic package for growing businesses looking to expand their digital presence.",
+        "Balances affordability with advanced service offerings and long-term support.",
       ],
       short: "Classic Plan",
       description:
-        "A balanced plan crafted for growing businesses. It includes additional customization, strategic guidance, and more robust support compared to the essential package. This plan is ideal if you’re expanding your digital footprint and need extra features without a huge upfront expense.",
+        "The Comprehensive Service Package is designed for growth-stage businesses that need more than a basic website. It offers deeper customization, refined user experiences, and foundational strategy support. It is perfect for rebrands, digital pivots, or expanding businesses looking to strengthen customer engagement.",
       features: [
-        "Split payments into 4–6 installments",
-        "Priority support and dedicated project management",
-        "Extended payment terms up to 6 months",
+        "Installment billing (4–6 payments)",
+        "Dedicated project manager and communication dashboard",
+        "Custom UI/UX design based on user flows and brand goals",
+        "Scalable CMS with training materials",
+        "Enhanced SEO (schema markup, on-page optimization)",
+        "Accessibility auditing and compliance (WCAG 2.1 AA)",
+        "Analytics setup (GA4, Hotjar, etc.) and reporting dashboard",
       ],
     },
     explanation:
-      "Perfect for medium-sized projects, the Comprehensive Service Package offers tailored solutions and extended payment options while ensuring your project stays on schedule with dedicated support.",
-    Icon: MdDoubleArrow,
-    startingPrice: 7500, // starting at $7,500
+      "Designed for projects requiring both thoughtful strategy and visual excellence, this plan combines structure, collaboration, and performance to ensure a standout digital presence.",
+    useCases: [
+      "Corporate site redesign or refresh",
+      "Conversion-optimized service platforms",
+      "SEO and UX focused business expansion",
+    ],
     details: [
       {
-        title: "4–6 Installment Options",
+        title: "4–6 Installments",
         description:
-          "Manage your finances by splitting the project cost into manageable installments.",
+          "Budget-friendly installment options that allow you to focus on growth while investing steadily in your brand’s future.",
       },
       {
-        title: "Priority Support",
+        title: "Strategic Design Process",
         description:
-          "Receive dedicated assistance throughout the project to keep everything on track.",
+          "We begin with strategy workshops, personas, and wireframes to ensure the site matches both business and user needs.",
       },
       {
-        title: "Up to 6 Months Payment Term",
+        title: "Growth-Focused Architecture",
         description:
-          "Enjoy extended payment options that ease budget pressures for more complex projects.",
+          "Your site is structured with expansion in mind — easy to scale, optimize, and extend as your business evolves.",
+      },
+      {
+        title: "Post-Launch Support (60 Days)",
+        description:
+          "Includes a two-month window for support, optimization, and minor feature tweaks to ensure stability post-launch.",
       },
     ],
   },
+
   {
     name: "elite-service-package",
     title: "Elite Service Package",
     short: "Advanced Plan",
+    icon: MdDoubleArrow,
+    startingPrice: 20000,
     info: {
       intro: [
-        "A premium solution for large-scale, ongoing projects.",
-        "Includes advanced features and continuous improvement.",
+        "An enterprise-ready plan designed for scale, innovation, and growth.",
+        "Combines strategic consulting, continuous delivery, and full-service digital execution.",
       ],
       short: "Advanced Plan",
       description:
-        "A premium solution for large-scale, ongoing projects requiring advanced features, continuous improvement, and strategic guidance. This package includes an all-inclusive support structure with dedicated account management and continuous optimization.",
+        "The Elite Service Package is built for companies needing a continuous, adaptive, and consultative digital partner. It includes advanced technical execution, marketing integration, custom features, and real-time strategy refinement throughout the project lifecycle.",
       features: [
-        "Monthly retainer payment structure",
-        "Flexible terms up to 12 months",
-        "Comprehensive ongoing support and maintenance",
+        "Monthly retainer-based model for long-term collaboration",
+        "Engagement term: 6 to 12 months",
+        "Dedicated cross-functional team (design, dev, PM, QA)",
+        "Performance monitoring and optimization cycles",
+        "Multi-platform or multi-locale support",
+        "Continuous improvement model with sprint-based releases",
+        "Marketing funnel integration (CRM, analytics, automation)",
+        "WCAG AAA / ADA accessibility option",
       ],
     },
     explanation:
-      "Ideal for enterprises or large projects where continuous, high-quality service and support are critical. The Elite Service Package is designed to provide uninterrupted service and scalable solutions over a long-term engagement.",
-    Icon: MdDoubleArrow,
-    startingPrice: 20000, // starting at $20,000
+      "Elite-level digital transformation designed for complex ecosystems and long-term results. Ideal for companies with evolving goals and high customer engagement requirements.",
+    useCases: [
+      "Enterprise SaaS platforms and dashboards",
+      "Corporate sites with ongoing feature development",
+      "Global websites with localization and accessibility compliance",
+    ],
     details: [
       {
-        title: "Monthly Retainer Payments",
+        title: "Monthly Retainer Engagement",
         description:
-          "Budget with certainty using monthly payments for continuous support.",
+          "Secure ongoing service for 6 to 12 months with a dedicated team that evolves with your goals, tech stack, and user feedback.",
       },
       {
-        title: "12-Month Payment Term",
+        title: "Agile Delivery Process",
         description:
-          "Spread costs over up to 12 months to suit long-term projects and ensure cash flow stability.",
+          "Biweekly sprints and retrospectives ensure the roadmap stays aligned with your business and market shifts.",
       },
       {
-        title: "Dedicated, Ongoing Support",
+        title: "Advanced Infrastructure Support",
         description:
-          "Benefit from priority support that adjusts as your project evolves.",
+          "Includes deployment strategy, version control best practices, CMS extensibility, and developer documentation.",
+      },
+      {
+        title: "Post-Launch Optimization (120 Days)",
+        description:
+          "Includes performance audits, UX assessments, A/B testing, and monthly refinements after project handoff.",
       },
     ],
   },
+
   {
     name: "personalized-service-package",
     title: "Personalized Service Package",
     short: "Bespoke Plan",
+    icon: MdDoubleArrow,
+    startingPrice: 25000,
     info: {
       intro: [
-        "A highly tailored plan designed for complex, multi-phase projects.",
-        "Includes custom payment structures and flexible terms.",
+        "A fully customized solution for complex, multi-phase, or experimental projects.",
+        "Includes personalized financial structuring and multi-stakeholder collaboration.",
       ],
       short: "Bespoke Plan",
       description:
-        "A highly tailored plan designed for complex, multi-phase projects that require custom payment structures and flexible terms. This package adapts to your unique project requirements and long-term goals, providing ongoing strategic support and adaptable payment options.",
+        "The Personalized Service Package is highly adaptable to unique project scopes, such as multi-product systems, startups requiring iterative MVPs, or organizations managing multiple brands or phases. Payment schedules, team engagement, and delivery milestones are all custom-defined.",
       features: [
-        "Custom, milestone-based payment plans",
-        "Phased project implementation with continued support",
-        "Extended financing options up to 24 months",
+        "Custom payment structures (fixed, milestone, or hybrid)",
+        "Phased delivery model with review checkpoints",
+        "Dedicated strategy consultant and technical advisor",
+        "Support for integrations with external APIs or vendors",
+        "Discovery and prototyping phases included",
+        "Optional equity or hybrid equity/payment models",
+        "Up to 24-month financing option",
+        "Legal and compliance review support (HIPAA, GDPR, etc.)",
       ],
     },
     explanation:
-      "Best for complex and large-scale projects, the Personalized Service Package offers custom financial solutions that align with your project’s scope and evolving needs—ensuring quality work while providing significant budget flexibility.",
-    Icon: MdDoubleArrow,
-    startingPrice: 25000, // starting at $25,000
+      "A future-forward solution for teams requiring ultimate flexibility, strategic input, and deep customization. Best suited for complex, layered, or long-term projects where traditional packages don’t fit.",
+    useCases: [
+      "Startup platform MVPs with roadmap support",
+      "Multi-tenant SaaS or product ecosystems",
+      "Projects involving external stakeholders, VC firms, or grants",
+    ],
     details: [
       {
-        title: "Custom Payment Plans",
+        title: "Milestone or Hybrid Billing",
         description:
-          "Tailor payment schedules based on specific project milestones for optimal financial control.",
+          "Choose a payment model that matches your financial plan, whether that’s fixed-price milestones, phased deposits, or usage-based billing.",
       },
       {
-        title: "Phased Implementation with Support",
+        title: "Collaborative Delivery Approach",
         description:
-          "Implement the project step by step with ongoing collaboration and adjustment options.",
+          "Weekly syncs, stakeholder demos, and deliverable previews help keep large teams aligned and informed.",
       },
       {
-        title: "Flexible Terms Up to 24 Months",
+        title: "Extended Financing",
         description:
-          "Manage costs effectively over the long term with extended payment options.",
+          "Project costs can be financed up to 24 months — ideal for larger builds with longer ROI timelines.",
+      },
+      {
+        title: "Post-Launch Partnership (180 Days)",
+        description:
+          "We remain engaged for up to six months after launch to support user onboarding, integrations, and refinements based on data.",
       },
     ],
   },
