@@ -10,6 +10,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import { blogs } from "@/lib/constants/blog-posts";
 import { pastProjects } from "@/lib/constants/projects";
@@ -21,50 +22,104 @@ import { useEffect, useState } from "react";
 export default function HomePage() {
   const [featuredArticles, setFeaturedArticles] = useState<BlogPost[]>([]);
   const [featuredProjects, setFeaturedProjects] = useState<Project[]>([]);
+  const [apiProject, setApiProject] = useState<CarouselApi>();
+  const [currentProject, setCurrentProject] = useState(0);
+  const [countProject, setCountProject] = useState(0);
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     setFeaturedArticles(featuredArray(blogs));
     setFeaturedProjects(featuredArray(pastProjects));
   }, []);
+
+  useEffect(() => {
+    if (!apiProject) {
+      return;
+    }
+
+    if (!api) {
+      return;
+    }
+
+    setCountProject(apiProject.scrollSnapList().length);
+    setCurrentProject(apiProject.selectedScrollSnap() + 1);
+
+    apiProject.on("select", () => {
+      setCurrentProject(apiProject.selectedScrollSnap() + 1);
+    });
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [apiProject, api]);
+
   return (
     <div className="pt-3 md:pt-5 lg:pt-9">
       <HeaderImageTiles />
 
-      <div className="space-y-10 md:hidden mx-auto">
-        {featuredProjects.slice(0, 4).map((project, index) => (
-          <FeaturedProject key={index} project={project} index={index} />
-        ))}
-      </div>
+      <section>
+        <div className="flex items-center gap-2 mx-auto w-10/12">
+          <h1 className="whitespace-nowrap">Featured Projects</h1>
+          <div className="flex-1 bg-gradient-to-r from-transparent via-fancy to-transparent h-px" />
+        </div>
 
-      <Carousel className="md:block space-y-10 hidden mx-auto w-10/12">
-        <CarouselContent className="min-h-full">
-          {featuredProjects.slice(0, 4).map((project, index) => (
-            <CarouselItem key={index} className="flex items-center px-10 pb-10">
-              <FeaturedProject project={project} index={index} />
-            </CarouselItem>
+        <div className="space-y-10 md:hidden mx-auto">
+          {featuredProjects.slice(0, 3).map((project, index) => (
+            <FeaturedProject key={index} project={project} index={index} />
           ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+        </div>
 
-      <Carousel className="md:block space-y-10 hidden mx-auto w-10/12">
-        <CarouselContent className="min-h-full">
-          {featuredArticles.slice(0, 4).map((article, index) => (
-            <CarouselItem key={index} className="flex items-center px-10 pb-10">
-              <FeaturedArticles blog={article} index={index} />
-            </CarouselItem>
+        <Carousel
+          setApi={setApiProject}
+          className="md:block space-y-5 hidden mx-auto w-10/12"
+        >
+          <CarouselContent className="min-h-full">
+            {featuredProjects.slice(0, 3).map((project, index) => (
+              <CarouselItem key={index} className="flex items-center px-10">
+                <FeaturedProject project={project} index={index} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+        <div className="text-center text-muted-foreground text-sm">
+          Project {currentProject} of {countProject}
+        </div>
+      </section>
+
+      <section>
+        <div className="flex items-center gap-2 mx-auto w-10/12">
+          <h1 className="whitespace-nowrap">Featured Articles</h1>
+          <div className="flex-1 bg-gradient-to-r from-transparent via-fancy to-transparent h-px" />
+        </div>
+
+        <div className="space-y-10 md:hidden mx-auto w-11/12">
+          {featuredArticles.slice(0, 15).map((article, index) => (
+            <FeaturedArticles key={index} blog={article} index={index} />
           ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+        </div>
 
-      <div className="space-y-10 md:hidden mx-auto w-11/12">
-        {featuredArticles.slice(0, 4).map((article, index) => (
-          <FeaturedArticles key={index} blog={article} index={index} />
-        ))}
-      </div>
+        <Carousel setApi={setApi} className="md:block hidden mx-auto w-10/12">
+          <CarouselContent className="min-h-full">
+            {featuredArticles.slice(0, 15).map((article, index) => (
+              <CarouselItem key={index} className="flex items-center px-10">
+                <FeaturedArticles blog={article} index={index} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+        <div className="py-2 text-center text-muted-foreground text-sm">
+          Article {current} of {count}
+        </div>
+      </section>
 
       <Simple />
     </div>
