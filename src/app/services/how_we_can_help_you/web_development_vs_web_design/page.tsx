@@ -135,7 +135,6 @@ export default function WebDevelopmentVsWebDesign() {
               scalable. Both are essential for creating a successful website.
             </p>
             <p>
-              {" "}
               For example, a designer might create a stunning homepage, but
               without a developer, it remains just a concept. Similarly, a
               developer might build a fast and secure site, but without a
@@ -188,6 +187,10 @@ export default function WebDevelopmentVsWebDesign() {
               developers. And if you’re lucky enough to find someone who excels
               at both, hold onto them—they’re worth their weight in gold (or at
               least in coffee and snacks).
+            </p>
+            <p>
+              <strong>PS:</strong> At PCS, we bridge the gap between design and
+              development. From concept to code, we create without boundaries.
             </p>
           </section>
 
