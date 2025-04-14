@@ -4,17 +4,27 @@ import Image from "next/image";
 
 export default function OffsetImage() {
   return (
-    <div className="mx-auto px-6 lg:px-8 py-32 sm:py-40 max-w-7xl">
+    <div className="mx-auto px-6 lg:px-8 py-32 sm:py-40 w-11/12">
       <div className="lg:gap-x-16 lg:gap-y-8 xl:gap-x-8 lg:grid lg:grid-cols-2 xl:grid-cols-1 xl:grid-rows-1 mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
-        <h1 className="lg:col-span-2 max-w-2xl font-semibold text-5xl text-balance text-gray-900 sm:text-7xl tracking-tight xl:col-auto">
+        <h1 className="lg:col-span-2 max-w-2xl xl:col-auto">
           We’re changing the way people connect
         </h1>
         <div className="xl:col-end-1 xl:row-start-1 mt-6 lg:mt-0 max-w-xl">
-          <p className="font-medium text-gray-500 text-lg text-pretty sm:text-xl/8">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt.
-            Qui irure qui lorem cupidatat commodo.
+          <p>
+            Brand storytelling is the art of using narratives to communicate
+            your brand’s values, mission, and message in a way that resonates
+            emotionally with your audience. It’s about crafting a story that
+            goes beyond what you sell, touching on why you exist and how your
+            brand makes a difference in the world.
+          </p>
+          <p>
+            But how do you create a compelling story for your brand? What makes
+            a good brand story, and how can you use it to build a loyal customer
+            base? The answer lies in understanding your audience, defining your
+            brand’s identity, and crafting a story that speaks to the hearts and
+            minds of your customers. By sharing a story that resonates
+            emotionally and authentically, you can create lasting connections
+            and inspire customer loyalty.
           </p>
         </div>
         <Image

@@ -1,14 +1,16 @@
 import DynamicButton from "@/components/button/button-dynamic";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function HeaderImageTiles() {
+  const router = useRouter();
   return (
     <div className="py-32 overflow-hidden">
       <div className="lg:flex mx-auto px-6 lg:px-8 max-w-7xl">
         <div className="lg:flex-none gap-x-12 gap-y-16 lg:gap-y-8 grid grid-cols-1 mx-auto lg:mx-0 lg:min-w-full max-w-2xl lg:max-w-none">
           <div className="lg:col-end-1 lg:pb-8 lg:w-full lg:max-w-lg">
             <h4>Phoenix Code Studio</h4>
-            <h1>Our people</h1>
+            <h1>Our Goal</h1>
             <div>
               <p className="mt-6 text-lg/relaxed">
                 Your vision is more than just an idea—it’s the foundation of
@@ -22,7 +24,12 @@ export default function HeaderImageTiles() {
               </p>
             </div>
             <div className="flex mt-10">
-              <DynamicButton>Join our team</DynamicButton>
+              <DynamicButton
+                className="mx-0 w-2/3"
+                onClick={() => router.push("/services")}
+              >
+                View Our Comprehensive Services
+              </DynamicButton>
             </div>
           </div>
           <div className="flex flex-wrap justify-end items-start gap-6 sm:gap-8 lg:contents">

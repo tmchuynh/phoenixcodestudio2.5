@@ -2,109 +2,113 @@ import Image from "next/image";
 
 export default function ImageTilesOnSide() {
   return (
-    <div className="relative overflow-hidden">
-      <div className="pt-16 sm:pt-24 lg:pt-40 pb-80 sm:pb-40 lg:pb-48">
-        <div className="relative sm:static mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="sm:max-w-lg">
-            <h1 className="font-bold text-4xl sm:text-6xl tracking-tight">
-              Summer styles are finally here
-            </h1>
-            <p className="mt-4 text-xl">
-              This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care
-              if you live or die.
-            </p>
+    <div className="flex flex-col-reverse items-center gap-5 lg:grid grid-cols-5 mx-auto md:w-11/12 h-full lg:h-11/12 overflow-hidden">
+      <div className="flex justify-center items-center space-x-6 lg:space-x-8 lg:col-span-3 md:w-full md:h-96 lg:h-full overflow-hidden">
+        <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
+          <div className="sm:opacity-0 xl:opacity-100 rounded-lg w-44 h-32 overflow-hidden">
+            <Image
+              alt=""
+              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+              className="size-full object-cover"
+              width={400}
+              height={300}
+            />
           </div>
-          <div>
-            <div className="mt-10">
-              {/* Decorative image grid */}
-              <div
-                aria-hidden="true"
-                className="lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl pointer-events-none"
-              >
-                <div className="sm:top-0 lg:top-1/2 sm:left-1/2 lg:left-1/2 absolute transform sm:translate-x-8 lg:-translate-y-1/2 lg:translate-x-8">
-                  <div className="flex items-center space-x-6 lg:space-x-8">
-                    <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0">
-                      <div className="sm:opacity-0 lg:opacity-100 rounded-lg w-44 h-64 overflow-hidden">
-                        <Image
-                          alt=""
-                          src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
-                          className="size-full object-cover"
-                          width={400}
-                          height={300}
-                        />
-                      </div>
-                      <div className="rounded-lg w-44 h-64 overflow-hidden">
-                        <Image
-                          alt=""
-                          src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
-                          className="size-full object-cover"
-                          width={400}
-                          height={300}
-                        />
-                      </div>
-                    </div>
-                    <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0">
-                      <div className="rounded-lg w-44 h-64 overflow-hidden">
-                        <Image
-                          alt=""
-                          src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
-                          className="size-full object-cover"
-                          width={400}
-                          height={300}
-                        />
-                      </div>
-                      <div className="rounded-lg w-44 h-64 overflow-hidden">
-                        <Image
-                          alt=""
-                          src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
-                          className="size-full object-cover"
-                          width={400}
-                          height={300}
-                        />
-                      </div>
-                      <div className="rounded-lg w-44 h-64 overflow-hidden">
-                        <Image
-                          alt=""
-                          src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
-                          className="size-full object-cover"
-                          width={400}
-                          height={300}
-                        />
-                      </div>
-                    </div>
-                    <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0">
-                      <div className="rounded-lg w-44 h-64 overflow-hidden">
-                        <Image
-                          alt=""
-                          src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
-                          className="size-full object-cover"
-                          width={400}
-                          height={300}
-                        />
-                      </div>
-                      <div className="rounded-lg w-44 h-64 overflow-hidden">
-                        <Image
-                          alt=""
-                          src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
-                          className="size-full object-cover"
-                          width={400}
-                          height={300}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <a
-                href="#"
-                className="inline-block px-8 py-3 border border-transparent rounded-md font-medium text-center"
-              >
-                Shop Collection
-              </a>
-            </div>
+          <div className="rounded-lg w-44 h-72 overflow-hidden">
+            <Image
+              alt=""
+              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
+              className="size-full object-cover"
+              width={400}
+              height={300}
+            />
+          </div>
+          <div className="sm:opacity-0 xl:opacity-100 rounded-lg w-44 h-42 overflow-hidden">
+            <Image
+              alt=""
+              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+              className="size-full object-cover"
+              width={400}
+              height={300}
+            />
           </div>
         </div>
+        <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
+          <div className="sm:opacity-0 lg:opacity-100 rounded-lg w-44 h-52 overflow-hidden">
+            <Image
+              alt=""
+              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
+              className="size-full object-cover"
+              width={400}
+              height={300}
+            />
+          </div>
+          <div className="rounded-lg w-44 h-56 overflow-hidden">
+            <Image
+              alt=""
+              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+              className="size-full object-cover"
+              width={400}
+              height={300}
+            />
+          </div>
+          <div className="rounded-lg w-44 h-64 overflow-hidden">
+            <Image
+              alt=""
+              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+              className="size-full object-cover"
+              width={400}
+              height={300}
+            />
+          </div>
+        </div>
+        <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
+          <div className="rounded-lg w-44 h-64 overflow-hidden">
+            <Image
+              alt=""
+              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+              className="size-full object-cover"
+              width={400}
+              height={300}
+            />
+          </div>
+          <div className="rounded-lg w-44 h-54 overflow-hidden">
+            <Image
+              alt=""
+              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+              className="size-full object-cover"
+              width={400}
+              height={300}
+            />
+          </div>
+        </div>
+        <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
+          <div className="rounded-lg w-44 h-96 overflow-hidden">
+            <Image
+              alt=""
+              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+              className="size-full object-cover"
+              width={400}
+              height={300}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="lg:col-span-2 mx-auto w-11/12 md:w-full">
+        <h1>Web Development vs Web Design</h1>
+        <p>
+          When creating a website, it's important to understand the roles of web
+          development and web design. Web development is all about building the
+          website and making sure it functions properly. Developers use
+          programming languages and frameworks to ensure the site works smoothly
+          and efficiently. Web design, on the other hand, focuses on how the
+          website looks and feels. Designers are responsible for the layout,
+          user experience (UX), and overall branding. While developers handle
+          the technical aspects, designers focus on the visual elements and
+          ensuring the site is easy to navigate. Knowing the difference between
+          these two roles can help you decide who to hire or guide you if you're
+          taking on the project yourself.
+        </p>
       </div>
     </div>
   );
