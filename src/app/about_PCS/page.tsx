@@ -1,3 +1,4 @@
+import DynamicButton from "@/components/button/button-dynamic";
 import FeaturedOverlappingTestimonial from "@/components/cards/testimonial/Overlapping_Image";
 import ThreeColumns from "@/components/headers/page_headers/ThreeColumns";
 import { testimonials } from "@/lib/constants/testimonials";
@@ -8,6 +9,9 @@ export default function OurAspirationsPage() {
       <ThreeColumns />
       <div>
         <h2>This Is Who We Are</h2>
+        <DynamicButton variant={"outline"} className="mx-0 my-3 w-1/3">
+          Come Work With Us
+        </DynamicButton>
         <p>
           At our core, we’re motivated by a desire to do more than simply
           build—we’re here to make a difference. By helping brands tell their
