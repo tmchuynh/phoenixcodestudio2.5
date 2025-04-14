@@ -27,7 +27,7 @@ export function FeaturedProject({
         "pb-10": isSmallScreen && index === 0,
       })}
     >
-      <div className="lg:col-span-3 p-8 md:p-10">
+      <div className="lg:col-span-5 xl:col-span-3 p-8 md:p-10">
         <h2>{project.title}</h2>
         <div className="flex flex-wrap items-center gap-4 mt-6">
           {project.tags.map((tag, index) => (
@@ -101,7 +101,7 @@ export function FeaturedProject({
             ))}
         </ul>
       </div>
-      <div className="lg:col-span-2 mx-4 md:mx-0 -mt-2 lg:mt-0 p-2 lg:w-full lg:max-w-lg xl:max-w-none lg:shrink-0">
+      <div className="xl:block lg:hidden xl:col-span-2 mx-4 md:mx-0 -mt-2 lg:mt-0 p-2 lg:w-full lg:max-w-lg xl:max-w-none lg:shrink-0">
         <Image
           src={project.imageUrl || "https://placehold.co/600x400"}
           alt={project.title}

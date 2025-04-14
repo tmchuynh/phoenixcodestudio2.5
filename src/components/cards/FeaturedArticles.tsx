@@ -41,6 +41,7 @@ export default function FeaturedArticles({
         <p className="max-w-5xl line-clamp-6">{blog.intro}</p>
 
         <DynamicButton
+          variant={"tertiaryOutline"}
           className="mx-0 w-2/3"
           onClick={() => router.push(`/blog/${generateSlug(blog.title)}`)}
         >
