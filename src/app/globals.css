@@ -100,7 +100,7 @@
   --secondary: oklch(0.79 0.1192 240.27);
   --secondary-foreground: oklch(0.19 0 0);
   --tertiary: oklch(0.64 0.1801 259.54);
-  --tertiary-foreground: oklch(0.19 0 0);
+  --tertiary-foreground: oklch(0.985 0 0);
   --fancy: oklch(0.7 0.1663 245.16);
   --fancy-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
@@ -109,7 +109,7 @@
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.51 0.2047 27.44);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.63 0.1553 245.76);
+  --border: oklch(0.32 0 none);
   --input: oklch(0.63 0.1553 245.76);
   --ring: oklch(0.6 0.1238 242.27);
   --chart-1: oklch(0.488 0.243 264.376);
@@ -248,11 +248,11 @@
   }
 
   h1 {
-    @apply font-[KaushanScript] my-6 font-bold text-4xl text-fancy md:text-5xl 2xl:text-7xl tracking-tight z-20;
+    @apply font-[KaushanScript] my-6 font-bold text-4xl text-fancy md:text-5xl 2xl:text-7xl tracking-tight z-20 dark:text-tertiary;
   }
 
   h2 {
-    @apply font-[PlayfairDisplay] mt-4 font-semibold text-3xl text-fancy md:text-4xl 2xl:text-5xl text-balance tracking-tight;
+    @apply font-[PlayfairDisplay] mt-4 font-semibold text-3xl text-fancy md:text-4xl 2xl:text-5xl text-balance tracking-tight dark:text-secondary;
   }
 
   h3 {
@@ -261,6 +261,10 @@
 
   h4 {
     @apply font-[MavenPro] font-semibold text-sm lg:text-lg 2xl:text-xl tracking-tighter text-secondary;
+  }
+
+  h5 {
+    @apply font-[RobotoCondensed] font-semibold text-xs xl:text-sm uppercase tracking-tighter text-secondary dark:text-fancy/80;
   }
 
   blockquote {
