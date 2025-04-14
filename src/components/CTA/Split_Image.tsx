@@ -8,7 +8,7 @@ import DynamicButton from "../button/button-dynamic";
 export default function CallToActionImage({ cta }: { cta: CTA }) {
   const router = useRouter();
   return (
-    <div className="relative bg-foreground">
+    <div className="relative bg-primary/30">
       <div>
         <div className="relative md:left-0 md:absolute opacity-70 md:w-1/3 lg:w-1/2 h-80 md:h-full overflow-hidden">
           <Image
@@ -44,12 +44,10 @@ export default function CallToActionImage({ cta }: { cta: CTA }) {
           </svg>
         </div>
         <div className="md:top-24 md:left-20 md:absolute md:w-2/5">
-          <p className="mt-6 text-background text-base/7">{cta.intro}</p>
+          <p className="mt-6 text-base/7 text-white">{cta.intro}</p>
 
           {cta.description && (
-            <p className="mt-6 text-background text-base/7">
-              {cta.description}
-            </p>
+            <p className="mt-6 text-base/7 text-white">{cta.description}</p>
           )}
         </div>
       </div>
@@ -58,12 +56,16 @@ export default function CallToActionImage({ cta }: { cta: CTA }) {
           <h1 className="text-secondary">{cta.title}</h1>
 
           {cta.afterButtonText && (
-            <p className="mt-6 text-background text-base/7">
+            <p className="mt-6 text-base/7 text-foreground">
               {cta.afterButtonText}
             </p>
           )}
           <div className="mt-8">
-            <DynamicButton onClick={() => router.push("/get_in_touch")}>
+            <DynamicButton
+              variant={"secondary"}
+              className="mx-0 w-full"
+              onClick={() => router.push("/get_in_touch/lets_work_together")}
+            >
               Get Started Today!
             </DynamicButton>
           </div>

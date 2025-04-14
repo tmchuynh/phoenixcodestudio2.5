@@ -13,8 +13,8 @@ export default function FeaturedOverlappingTestimonial({
           <div className="xl:flex-none -mt-8 xl:-mb-8 w-full xl:w-96 max-w-2xl">
             <div className="relative md:-mx-8 xl:mx-0 h-full aspect-2/1 xl:aspect-auto">
               <Image
-                alt=""
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                alt={testimonial.name}
+                src="/images/spencer.jpeg"
                 className="absolute inset-0 shadow-2xl rounded-2xl size-full object-cover"
                 width={2000}
                 height={1200}
