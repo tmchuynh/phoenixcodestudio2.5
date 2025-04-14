@@ -28,9 +28,9 @@ const PaymentPlansPage: FC = () => {
   }
 
   return (
-    <main className="mx-auto py-6 w-10/12 md:w-11/12">
-      {/* Page Header */}
+    <main className="mx-auto py-6 md:py-16 lg:py-24 2xl:py-32 w-10/12 md:w-11/12">
       <header className="mb-8">
+        <h4>Empowering your vision—without the financial strain</h4>
         <h1>Flexible Pricing Plans to Fit Your Needs</h1>
         <p className="mt-4">
           We offer customizable pricing options designed to accommodate
