@@ -11,10 +11,13 @@ export function ProjectCards({ project }: { project: Project }) {
   return (
     <div className="flex flex-col justify-between shadow-md p-8 sm:p-10 rounded-3xl ring-1">
       <div>
-        <h4>{project.short}</h4>
+        <h5>{project.short}</h5>
         <h2>{project.title}</h2>
         <p className="mt-6 text-base/7">{project.quote}</p>
-        <ul role="list" className="space-y-4 mt-10 text-sm/6">
+        <ul
+          role="list"
+          className="space-y-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 mt-10 text-sm/6"
+        >
           {project.tech.languages.map((feature) => (
             <li key={feature} className="flex gap-x-3">
               <FaCheckDouble aria-hidden="true" className="flex-none w-5 h-6" />
@@ -22,12 +25,38 @@ export function ProjectCards({ project }: { project: Project }) {
             </li>
           ))}
 
-          {project.tech.frameworks?.map((feature) => (
-            <li key={feature} className="flex gap-x-3">
-              <FaCheckDouble aria-hidden="true" className="flex-none w-5 h-6" />
-              {feature}
-            </li>
-          ))}
+          {project.tech.frameworks &&
+            project.tech.frameworks.map((feature) => (
+              <li key={feature} className="flex gap-x-3">
+                <FaCheckDouble
+                  aria-hidden="true"
+                  className="flex-none w-5 h-6"
+                />
+                {feature}
+              </li>
+            ))}
+
+          {project.tech.libraries &&
+            project.tech.libraries.map((feature) => (
+              <li key={feature} className="flex gap-x-3">
+                <FaCheckDouble
+                  aria-hidden="true"
+                  className="flex-none w-5 h-6"
+                />
+                {feature}
+              </li>
+            ))}
+
+          {project.tech.technologies &&
+            project.tech.technologies.map((feature) => (
+              <li key={feature} className="flex gap-x-3">
+                <FaCheckDouble
+                  aria-hidden="true"
+                  className="flex-none w-5 h-6"
+                />
+                {feature}
+              </li>
+            ))}
         </ul>
       </div>
       <div className="flex md:flex-row xl:flex-row flex-col lg:flex-col gap-4 lg:gap-2 xl:gap-3 pt-4">
@@ -43,7 +72,7 @@ export function ProjectCards({ project }: { project: Project }) {
         )}
         {project.liveLink && (
           <DynamicButton
-            variant={"secondaryOutline"}
+            variant={"fancy"}
             onClick={() => router.push(project.liveLink || "")}
             className="w-full md:w-1/2"
           >
