@@ -6,25 +6,26 @@ export default function OffsetImage() {
   return (
     <div className="mx-auto px-6 lg:px-8 py-32 sm:py-40 w-11/12">
       <div className="lg:gap-x-16 lg:gap-y-8 xl:gap-x-8 lg:grid lg:grid-cols-2 xl:grid-cols-1 xl:grid-rows-1 mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
-        <h1 className="lg:col-span-2 max-w-2xl xl:col-auto">
-          We’re changing the way people connect
-        </h1>
+        <div className="lg:col-span-2 max-w-2xl xl:col-auto">
+          <h4>From Identity to Impact</h4>
+          <h1>Crafting Narratives That Build Brands</h1>
+        </div>
         <div className="xl:col-end-1 xl:row-start-1 mt-6 lg:mt-0 max-w-xl">
           <p>
-            Brand storytelling is the art of using narratives to communicate
-            your brand’s values, mission, and message in a way that resonates
-            emotionally with your audience. It’s about crafting a story that
-            goes beyond what you sell, touching on why you exist and how your
-            brand makes a difference in the world.
+            Brand storytelling is the strategic craft of using narrative to
+            express your brand’s values, mission, and purpose in a way that
+            emotionally connects with your audience. It goes beyond products or
+            services—it's about sharing why your brand exists and the impact it
+            aims to make.
           </p>
           <p>
-            But how do you create a compelling story for your brand? What makes
-            a good brand story, and how can you use it to build a loyal customer
-            base? The answer lies in understanding your audience, defining your
-            brand’s identity, and crafting a story that speaks to the hearts and
-            minds of your customers. By sharing a story that resonates
-            emotionally and authentically, you can create lasting connections
-            and inspire customer loyalty.
+            So, how do you shape a story that truly resonates? What defines a
+            powerful brand narrative, and how can it cultivate lasting customer
+            loyalty? It starts with knowing your audience, clearly defining your
+            brand identity, and crafting a story that authentically reflects
+            both. When done right, brand storytelling builds meaningful
+            connections—fostering trust, inspiring engagement, and turning
+            customers into advocates.
           </p>
         </div>
         <Image
