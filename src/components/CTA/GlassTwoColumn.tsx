@@ -17,8 +17,8 @@ export default function GlassTwoColumn() {
           height={800}
         />
         <div className="flex-auto w-full">
-          <h4>We're Here Every Step of The Way</h4>
-          <h2>Your First Step Is Always The Hardest</h2>
+          <h4>Guiding You at Every Turn</h4>
+          <h2>Starting Is the Challenge — We Make It Easier</h2>
           <p className="mt-6 text-lg/8 text-pretty">
             Your brand isn't just another template—it’s a story waiting to be
             told. That’s why we craft tailored, industry-aware solutions
