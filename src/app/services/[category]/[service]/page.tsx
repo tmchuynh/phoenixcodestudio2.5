@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicButton from "@/components/button/button-dynamic";
 import CallToActionImage from "@/components/CTA/Split_Image";
 import LoadingIndicator from "@/components/states/loading/Loading";
 import CannotFind from "@/components/states/not-found/CannotFind";
@@ -74,6 +75,27 @@ export default function ServicePage() {
             <p>{serviceData.info.pricing.pricingTierIntro.description}</p>
           </div>
         )}
+
+        <h2>Do You Have Questions?</h2>
+        <p>
+          Whether you’re just starting your digital transformation journey or
+          seeking to learn more about our process, our FAQs are here to help.
+          Discover clear answers to your questions and gain the insights you
+          need to make confident, informed decisions.
+        </p>
+        <p>
+          Explore our FAQs to learn about our methodologies, capabilities, and
+          how we help businesses like yours thrive in the digital era.
+        </p>
+        <DynamicButton
+          variant={"secondaryOutline"}
+          className="mx-0 w-1/3"
+          onClick={() =>
+            router.push("/get_in_touch/frequently_asked_questions")
+          }
+        >
+          Visit The FAQs
+        </DynamicButton>
 
         {serviceData?.info.pricing.pricingTiers && (
           <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-7">
