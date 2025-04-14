@@ -2,7 +2,6 @@
 import DynamicButton from "@/components/button/button-dynamic";
 import FeaturedLargeTestimonial from "@/components/cards/testimonial/Large_Avatar";
 import IncentivesImage from "@/components/headers/page_headers/IncentivesImage";
-import ContactInfoSpliter from "@/components/page_spliter/ContactInfo";
 import LoadingIndicator from "@/components/states/loading/Loading";
 import { Card, CardContent } from "@/components/ui/card";
 import { allServices } from "@/lib/constants/services/serviceCategories";
@@ -59,10 +58,11 @@ const ServicesPage: FC = () => {
               </p>
             ))}
             <DynamicButton
+              variant={"accent"}
               className="mx-0 w-1/3"
               onClick={() => router.push("/get_in_touch")}
             >
-              Contact Us Today!
+              Contact Us For a FREE Consultation
             </DynamicButton>
           </div>
           <div className="gap-4 lg:gap-6 grid grid-cols-1 lg:grid-cols-2">
@@ -109,8 +109,6 @@ const ServicesPage: FC = () => {
           </div>
         </div>
       ))}
-
-      <ContactInfoSpliter />
     </main>
   );
 };
