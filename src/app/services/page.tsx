@@ -50,6 +50,7 @@ const ServicesPage: FC = () => {
       {/* Company Services Section */}
       {allServices.map((category, index) => (
         <div key={index} className="my-20">
+          <h4>{category.subtitle}</h4>
           <h1>{capitalize(category.name)}</h1>
           <div className="my-4">
             {category.description.map((desc, descIndex) => (
@@ -58,7 +59,7 @@ const ServicesPage: FC = () => {
               </p>
             ))}
             <DynamicButton
-              variant={"accent"}
+              variant={"accentOutline"}
               className="mx-0 w-1/3"
               onClick={() => router.push("/get_in_touch")}
             >
@@ -78,6 +79,7 @@ const ServicesPage: FC = () => {
                     className="flex flex-col justify-between shadow-md"
                   >
                     <CardContent className="flex flex-col">
+                      <h5>{subServiceDetail.subtitle}</h5>
                       <h3
                         className="font-semibold text-lg underline-offset-4 hover:underline cursor-pointer"
                         onClick={() =>
@@ -93,13 +95,7 @@ const ServicesPage: FC = () => {
                       {isSmallScreen ? (
                         <p>{subServiceDetail.info.short}</p>
                       ) : (
-                        <>
-                          {subServiceDetail.info.intro.map(
-                            (info: string, infoIndex: number) => (
-                              <p key={infoIndex}>{info}</p>
-                            )
-                          )}
-                        </>
+                        <p>{subServiceDetail.info.details}</p>
                       )}
                     </CardContent>
                   </Card>
