@@ -1,12 +1,5 @@
 import Image from "next/image";
 
-const stats = [
-  { label: "Founded", value: "2021" },
-  { label: "Employees", value: "37" },
-  { label: "Countries", value: "12" },
-  { label: "Raised", value: "$25M" },
-];
-
 export default function TestimonialStats() {
   return (
     <div className="py-24 sm:py-32">
@@ -62,64 +55,48 @@ export default function TestimonialStats() {
                   </p>
                 </blockquote>
                 <figcaption className="mt-6 text-gray-300 text-sm/6">
-                  <strong className="font-semibold">
-                    Judith Rogers,
-                  </strong>{" "}
-                  CEO at Workcation
+                  <strong className="font-semibold">Judith Rogers,</strong> CEO
+                  at Workcation
                 </figcaption>
               </figure>
             </div>
           </div>
           <div>
             <div className="lg:max-w-lg">
-              <p className="font-semibold">
-                Company values
-              </p>
-              <h1 className="mt-2 font-semibold text-4xl text-pretty sm:text-5xl tracking-tight">
-                On a mission to empower remote teams
-              </h1>
+              <h4>Backed by Belief, Guided by Love</h4>
+              <h1>Support That Sparked the Journey</h1>
               <div className="max-w-xl">
                 <p className="mt-6">
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
+                  Before Phoenix Code Studio had a name, a logo, or even a
+                  website of its own, it had something far more powerful—people
+                  who believed in us. What started as small favors for friends
+                  and passion projects for family quickly evolved into something
+                  greater, fueled by trust, encouragement, and word-of-mouth
+                  support. Those early champions didn’t just give us
+                  projects—they gave us purpose. They believed in our ability to
+                  create meaningful digital experiences, even before we fully
+                  saw it in ourselves.
                 </p>
                 <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
+                  Every kind word, referral, and <mark>“you’ve got this”</mark>{" "}
+                  became fuel. We were inspired by those who saw potential and
+                  gave us space to grow, make mistakes, and get better. We saw
+                  firsthand how powerful true support can be—and we carry that
+                  same spirit into every project. We build with intention,
+                  because we know what it means when someone chooses you,
+                  believes in you, and roots for your success.
                 </p>
                 <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
+                  Today, we honor that early support by paying it
+                  forward—championing small businesses, nonprofits, and
+                  community-rooted brands with the same heart and dedication
+                  that got us started. Every collaboration is a continuation of
+                  that story, and every testimonial is a reflection of the
+                  relationships we value most. Phoenix Code Studio isn’t just
+                  about code or design—it’s about people showing up for people,
+                  and building something real, together.
                 </p>
               </div>
-            </div>
-            <dl className="gap-8 grid grid-cols-2 sm:grid-cols-4 mt-10 pt-10 border-gray-900/10 border-t">
-              {stats.map( ( stat, statIdx ) => (
-                <div key={statIdx}>
-                  <dt className="font-semibold text-sm/6">
-                    {stat.label}
-                  </dt>
-                  <dd className="mt-2 font-bold text-3xl/10 tracking-tight">
-                    {stat.value}
-                  </dd>
-                </div>
-              ) )}
-            </dl>
-            <div className="flex mt-10">
-              <a href="#" className="font-semibold">
-                Learn more about our company{" "}
-                <span aria-hidden="true">&rarr;</span>
-              </a>
             </div>
           </div>
         </div>

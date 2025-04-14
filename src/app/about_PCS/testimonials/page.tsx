@@ -4,7 +4,7 @@ import { testimonials } from "@/lib/constants/testimonials.tsx";
 
 export default function TestimonialsPage() {
   return (
-    <div className="pt-3 md:pt-5 lg:pt-9">
+    <div className="py-10 md:py-18 lg:py-20">
       <TestimonialStats />
       <div className="gap-4 grid grid-cols-1 md:grid-cols-2 mx-auto w-11/12">
         {testimonials.map((testimonial, index) => (
