@@ -2,6 +2,7 @@ import { PricingTier } from "../types";
 
 export interface Category {
   name: string;
+  subtitle: string;
   title: string;
   short: string;
   description: string[];
@@ -11,6 +12,7 @@ export interface Category {
 export interface SubItem {
   category: Category["name"];
   name: string;
+  subtitle: string;
   info: SubInformation;
   details: SubDetail[];
   cta: CTA;

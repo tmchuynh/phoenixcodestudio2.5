@@ -1,3 +1,4 @@
+import { IconType } from "react-icons/lib";
 import { ListDetail } from "./services";
 
 export interface PaymentDetails {
@@ -13,8 +14,9 @@ export interface PaymentDetails {
   };
 
   explanation: string;
+  useCases: string[];
   startingPrice?: number;
-  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: IconType;
   details: ListDetail[];
 }
 
