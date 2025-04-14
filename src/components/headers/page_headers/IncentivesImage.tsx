@@ -2,27 +2,49 @@ import Image from "next/image";
 
 const incentives = [
   {
-    name: "Free shipping",
+    name: "Custom-Built Solutions",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-shipping-simple.svg",
     description:
-      "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+      "We never use one-size-fits-all templates. Every solution is uniquely crafted to align with your goals, industry, and vision.",
   },
   {
-    name: "Customer Support",
+    name: "Human-Centered Design",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-support-simple.svg",
     description:
-      "Our dedicated support team is here to assist you 24/7 with any inquiries or issues.",
+      "We design with intention—focusing on accessibility, usability, and user experience to ensure every interaction feels intuitive and inclusive.",
   },
   {
-    name: "Secure Payment",
+    name: "Strategic Partnership",
     imageSrc:
       "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-payment-simple.svg",
     description:
-      "We ensure that your payment information is secure and protected at all times.",
+      "We don’t just deliver projects—we collaborate, advise, and evolve with you. We’re your long-term partner in progress.",
+  },
+  {
+    name: "Purpose-Driven Innovation",
+    imageSrc:
+      "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-support-simple.svg",
+    description:
+      "We explore emerging technologies not for novelty, but to craft solutions that solve real problems and spark growth.",
+  },
+  {
+    name: "Storytelling Through Design",
+    imageSrc:
+      "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-shipping-simple.svg",
+    description:
+      "Your brand has a story. We bring it to life with digital experiences that are clear, authentic, and emotionally resonant.",
+  },
+  {
+    name: "Built to Grow With You",
+    imageSrc:
+      "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-payment-simple.svg",
+    description:
+      "Scalable, maintainable, and forward-thinking—our platforms are built to adapt as your business evolves.",
   },
 ];
+
 
 export default function IncentivesImage() {
   return (
