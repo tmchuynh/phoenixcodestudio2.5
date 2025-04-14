@@ -7,18 +7,26 @@ export default function IncentivesImage() {
       <div className="mx-auto px-4">
         <div className="items-center gap-x-16 gap-y-10 grid grid-cols-1 lg:grid-cols-2">
           <div>
+            <h4>Crafting bold digital experiences with purpose</h4>
             <h1>Digital Services by Phoenix Code Studio</h1>
             <p className="mt-4">
-              Unlock your business’s full potential with our all-embracing
-              digital solutions. From cutting-edge web development that delivers
-              high-performance websites to intuitive design that enhances user
-              experience, we craft strategies that make an impact. Our expertise
-              in content creation and digital marketing ensures your brand
-              stands out, driving engagement, increasing visibility, and
-              boosting conversions. Whether you're launching a new venture,
-              reimagining your online presence, or expanding into new markets,
-              we provide tailored solutions that align with your vision and set
-              you apart in today’s competitive digital landscape.
+              Unlock the full power of your business with tailored digital
+              solutions designed to move the needle. From high-performance web
+              development to intuitive, user-first design, we create experiences
+              that captivate and convert. Every pixel, every line of code, every
+              word is crafted with purpose—to elevate your brand and connect
+              with your audience.
+            </p>
+            <p>
+              Our approach combines strategy with creativity: sharp content,
+              thoughtful storytelling, and digital marketing that cuts through
+              the noise. Whether you're launching a bold new idea, reinventing
+              your online identity, or expanding into new digital frontiers, we
+              build with clarity, precision, and vision.
+            </p>
+            <p>
+              Let’s turn possibilities into performance—and make your presence
+              impossible to ignore.
             </p>
           </div>
           <Image

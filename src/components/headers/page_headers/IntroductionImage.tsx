@@ -1,57 +1,99 @@
+import Timeline from "@/components/Timeline";
+import { timelineData } from "@/lib/constants/constants";
 import Image from "next/image";
 
 export default function IntroductionImage() {
   return (
     <div className="py-24 sm:py-32">
-      <div className="mx-auto px-6 lg:px-8 max-w-7xl">
+      <div className="mx-auto px-6 lg:px-8">
         <div className="mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
-          <h4>Deploy faster</h4>
-          <h1 className="mt-2 font-semibold text-4xl text-fancy sm:text-5xl tracking-tight">
-            A better workflow
-          </h1>
+          <h4>A Dream That Stirred in Silence Before It Echoed</h4>
+          <h1>The Path We Took Before the World Heard Us</h1>
           <div className="gap-8 grid grid-cols-1 lg:grid-cols-2 mt-10 max-w-xl lg:max-w-none text-base/7">
             <div>
               <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
+                Phoenix Code Studio began with a dream—not just to build
+                websites, but to craft immersive, intentional digital
+                experiences that tell meaningful stories and empower small
+                businesses to thrive online. What started as a simple idea
+                gradually evolved into something much greater: a creative and
+                technical studio committed to turning vision into scalable,
+                high-impact realities. We imagined a place where creativity and
+                strategy come together, and where every project is treated as a
+                meaningful opportunity to elevate and inspire.
               </p>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas.
+              <p>
+                Our journey was deeply rooted in community. It was shaped by the
+                unwavering trust of friends, family, and early clients who
+                believed in our purpose long before it had a name. They weren’t
+                seeking off-the-shelf solutions—they needed genuine
+                storytelling, thoughtful design, and a team that would truly
+                listen. Their belief in us was more than support; it was the
+                spark that lit the path forward. Encouraged by their confidence,
+                we dedicated ourselves to building something more—a studio
+                grounded in collaboration, care, and long-term partnerships.
+              </p>
+              <p>
+                With that foundation, we began to sketch the blueprint for what
+                Phoenix Code Studio would become. Innovation, authenticity, and
+                user-centered design became the pillars of our work. We immersed
+                ourselves in custom development, brand strategy, and full-scale
+                digital transformation, always tailoring each solution to
+                reflect the unique personality and goals of the brands we
+                served. From scalable platforms to complete identity overhauls,
+                every decision we made was rooted in strategy, and every element
+                was intentionally crafted with purpose.
               </p>
             </div>
             <div>
               <p>
-                Erat pellentesque dictumst ligula porttitor risus eget et eget.
-                Ultricies tellus felis id dignissim eget. Est augue maecenas
-                risus nulla ultrices congue nunc tortor.
+                Along the way, we embraced our mistakes. The early missteps
+                weren’t setbacks—they were catalysts for growth. They challenged
+                us to learn, to refine, and to evolve. Those lessons became
+                integral to our process, instilling in us a resilient mindset
+                and a constant desire to push creative and technical boundaries.
+                For us, progress has never been about perfection—it’s about the
+                ongoing pursuit of better.
               </p>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
+              <p>
+                As we grew, we encountered new challenges, and each one helped
+                refine our purpose. We’ve come to believe that true growth is
+                forged through adversity. Every obstacle strengthened our
+                resolve and sharpened our focus. We carried that experience into
+                every client relationship—approaching problems as opportunities,
+                embracing complexity with creativity, and finding clarity
+                through collaboration. Together, we turn challenges into
+                breakthroughs and build solutions designed for long-term
+                success.
+              </p>
+              <p>
+                There were hard days, too—uncertain moments, complex projects,
+                and late nights. We took things one step at a time, staying
+                grounded in consistency, transparency, and an unshakable
+                commitment to quality. It’s in those moments of quiet
+                persistence that the heart of our studio was formed. We learned
+                to show up, to adapt, and to deliver—not just results, but care
+                and intention.
+              </p>
+              <p>
+                It’s from those very roots that Phoenix Code Studio was born.
+                Named after the phoenix—a symbol of transformation, resilience,
+                and boundless potential—our studio stands for new beginnings.
+                Every project we take on represents an opportunity to rise
+                stronger, more focused, and more aligned with our purpose. And
+                just as we’ve built our story one meaningful step at a time, we
+                now help others do the same—whether launching something new,
+                redefining their presence, or rediscovering their voice. We
+                guide brands to grow, evolve, and thrive in a digital world that
+                never stops moving.
               </p>
             </div>
           </div>
-          <div className="flex mt-10">
-            <a
-              href="#"
-              className="shadow-xs px-3.5 py-2.5 rounded-md font-semibold text-sm text-white focus-visible:outline-2 focus-visible:outline-offset-2"
-            >
-              Get started
-            </a>
-          </div>
         </div>
       </div>
-      <div className="relative pt-16 lg:pt-20 overflow-hidden">
+      <Timeline items={timelineData} orientation="horizontal" />
+
+      <section className="relative pt-16 lg:pt-20 overflow-hidden">
         <div className="mx-auto px-6 lg:px-8 max-w-7xl">
           <Image
             alt=""
@@ -61,10 +103,10 @@ export default function IntroductionImage() {
             height={1442}
           />
           <div aria-hidden="true" className="relative">
-            <div className="bottom-0 absolute -inset-x-20 bg-linear-to-t from-white pt-[7%]" />
+            <div className="bottom-0 absolute -inset-x-30 bg-linear-to-t from-background pt-[37%]" />
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
