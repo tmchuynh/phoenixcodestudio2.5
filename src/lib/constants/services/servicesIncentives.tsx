@@ -1,6 +1,6 @@
 export const incentives = [
   {
-    name: "Custom-Built Solutions",
+    name: "Tailored Solutions, Built from the Ground Up",
     svg: (
       <svg
         id="fi_6188094"
@@ -655,7 +655,7 @@ export const incentives = [
       </svg>
     ),
     description:
-      "We never use one-size-fits-all templates. Every solution is uniquely crafted to align with your goals, industry, and vision.",
+      "No templates. No shortcuts. Every solution we create is custom-engineered to reflect your unique goals, industry landscape, and brand vision—because your business deserves more than a cookie-cutter approach.",
   },
   {
     name: "Human-Centered Design",
@@ -721,10 +721,10 @@ export const incentives = [
       </svg>
     ),
     description:
-      "We design with intention—focusing on accessibility, usability, and user experience to ensure every interaction feels intuitive and inclusive.",
+      "Every decision begins with your users. We craft experiences rooted in accessibility, usability, and empathy—ensuring that every interaction is intuitive, inclusive, and purpose-driven.",
   },
   {
-    name: "Strategic Partnership",
+    name: "Collaboration, Built to Last",
     svg: (
       <svg
         id="fi_12887554"
@@ -796,10 +796,10 @@ export const incentives = [
       </svg>
     ),
     description:
-      "We don’t just deliver projects—we collaborate, advise, and evolve with you. We’re your long-term partner in progress.",
+      "We go beyond deliverables. As your dedicated digital partner, we collaborate closely, offer ongoing guidance, and grow with you—invested in your long-term success every step of the way.",
   },
   {
-    name: "Purpose-Driven Innovation",
+    name: "Innovation with Intent",
     svg: (
       <svg
         viewBox="0 -1 466.104 466"
@@ -836,10 +836,10 @@ export const incentives = [
       </svg>
     ),
     description:
-      "We explore emerging technologies not for novelty, but to craft solutions that solve real problems and spark growth.",
+      "We harness emerging technologies not for trend’s sake, but to create meaningful solutions that address real challenges, drive impact, and fuel lasting growth.",
   },
   {
-    name: "Storytelling Through Design",
+    name: "Design That Tells Your Story",
     svg: (
       <svg
         id="fi_3950727"
@@ -1112,7 +1112,7 @@ export const incentives = [
       </svg>
     ),
     description:
-      "Your brand has a story. We bring it to life with digital experiences that are clear, authentic, and emotionally resonant.",
+      "Every brand has a narrative worth sharing. We translate yours into digital experiences that are visually compelling, emotionally engaging, and unmistakably authentic.",
   },
   {
     name: "Built to Grow With You",
@@ -1182,6 +1182,6 @@ export const incentives = [
       </svg>
     ),
     description:
-      "Scalable, maintainable, and forward-thinking—our platforms are built to adapt as your business evolves.",
+      "From solo ventures to scaling businesses, our websites are designed to evolve—adapting seamlessly as your goals and vision expand.",
   },
 ];
