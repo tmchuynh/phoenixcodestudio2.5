@@ -12,16 +12,16 @@ const buttonVariants = cva(
         default:
           "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
         outline:
-          "border bg-background shadow-xs hover:bg-fancy hover:text-fancy-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+          "border bg-background shadow-xs hover:bg-fancy hover:text-fancy-foreground dark:bg-fancy/30 dark:border-fancy dark:hover:bg-fancy/50",
         ghost:
-          "hover:bg-tertiary hover:text-tertiary-foreground dark:hover:bg-tertiary/50",
+          "hover:bg-fancy hover:text-fancy-foreground dark:hover:bg-fancy/50",
         link: "text-primary underline-offset-4 hover:underline dark:text-secondary",
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         secondaryOutline:
-          "border border-secondary bg-transparent shadow-xs hover:bg-teritary hover:text-teritary-foreground hover:border-teritary dark:bg-teritary/30 dark:border-teritary dark:hover:bg-teritary/50",
+          "border border-secondary bg-transparent shadow-xs hover:bg-secondary hover:text-secondary-foreground hover:border-secondary dark:bg-tertiary/30 dark:border-secondary dark:hover:bg-secondary/50",
         secondaryGhost:
-          "border-transparent bg-transparent text-secondary hover:text-teritary-foreground",
+          "border-transparent bg-transparent text-secondary hover:text-tertiary-foreground",
         secondaryLink:
           "border-transparent text-secondary underline-offset-4 hover:underline",
         destructive:
