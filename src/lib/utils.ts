@@ -69,8 +69,9 @@ export const splitAndTrimQuotes = (
  */
 export function sortBlogsByDate(array: BlogPost[]): BlogPost[] {
   const newArray = array.sort((a, b) => {
-    const dateA = convertToDate(a.date);
-    const dateB = convertToDate(b.date);
+    // Convert to Date objects directly
+    const dateA = new Date(a.date.year, a.date.month - 1, a.date.day);
+    const dateB = new Date(b.date.year, b.date.month - 1, b.date.day);
 
     return compareDates([dateA, dateB]);
   });
@@ -495,7 +496,8 @@ export function convertToDate(date: {
   day: number;
   month: number;
   year: number;
-}): Date {
+}): string {
   // Subtract 1 from month because JavaScript Date months are 0-indexed
-  return new Date(date.year, date.month - 1, date.day);
+  const newDate = new Date(date.year, date.month - 1, date.day);
+  return newDate.toLocaleDateString();
 }
