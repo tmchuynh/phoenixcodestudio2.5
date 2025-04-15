@@ -35,7 +35,7 @@ export default function FeaturedArticles({
       />
 
       <div className="flex flex-col justify-between md:col-span-2 lg:col-span-3 2xl:col-span-4 py-2 h-full">
-        <h4>{convertToDate(blog.date).toLocaleDateString()}</h4>
+        <h4>{convertToDate(blog.date)}</h4>
         <h2>{blog.title}</h2>
 
         <p className="max-w-5xl line-clamp-6">{blog.intro}</p>
@@ -43,7 +43,7 @@ export default function FeaturedArticles({
         <DynamicButton
           variant={"tertiaryOutline"}
           className="mx-0 w-2/3"
-          onClick={() => router.push(`/blog/${generateSlug(blog.title)}`)}
+          onClick={() => router.push(`/blogs/${generateSlug(blog.title)}`)}
         >
           Read More
         </DynamicButton>
