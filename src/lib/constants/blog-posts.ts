@@ -5,6 +5,7 @@ export const blogs: BlogPost[] = [
       "Mastering Google Analytics: Insights for Effective Website Tracking",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 4, year: 2025 },
     excerpt:
       "Google Analytics is an essential tool for tracking website performance and gaining valuable insights into user behavior. This post dives into what Google Analytics is, how to set it up, and how businesses can leverage its data to optimize their website and marketing efforts.",
@@ -200,6 +201,7 @@ export const blogs: BlogPost[] = [
     title: "Top Contactless Business Cards: Modern Networking Solutions",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 4, day: 3, year: 2022 },
     excerpt:
       "Contactless business cards offer a sleek, eco-friendly solution to traditional paper cards by enabling digital information sharing. Leveraging technologies like NFC and QR codes, they allow professionals to exchange contact details with a simple tap or scan. These cards reduce paper waste while enhancing convenience, customization, and interactivity for a modern networking experience.",
@@ -539,6 +541,7 @@ export const blogs: BlogPost[] = [
     title: "Key Factors to Consider When Hiring a Designer or Developer",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
       "Choosing the right designer or developer is crucial for the success of your project. A designer or developer should not only be technically skilled but also have a strong understanding of your business needs and goals. Ensuring a good match between your project requirements and their expertise will result in a seamless collaboration and a final product that reflects your vision.",
@@ -645,6 +648,7 @@ export const blogs: BlogPost[] = [
       "Why It's Essential for Customers to Do Research Before a Consultation",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 17, year: 2025 },
     excerpt:
       "Having a basic understanding of your industry and web design principles before your consultation helps you communicate your goals more clearly. Knowing what you want and understanding some of the design basics will allow you to ask more targeted questions and give your designer the context needed to create a solution that aligns with your objectives. It also helps in refining your vision and getting the most out of the consultation.",
@@ -736,6 +740,7 @@ export const blogs: BlogPost[] = [
       "Key Details to Share with Your Designer Before Kicking Off a Project",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 12, year: 2025 },
     excerpt:
       "Clear communication with your designer is key to achieving the desired results in your project. Sharing your business goals, target audience, branding guidelines, and any specific design preferences upfront will help your designer create a design that fits your needs. Additionally, providing any necessary resources or inspirations can save time and ensure the project stays on track from the beginning.",
@@ -826,6 +831,7 @@ export const blogs: BlogPost[] = [
     title: "Key Questions to Ask During a Consultation",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 5, day: 2, year: 2024 },
     excerpt:
       "A consultation with a designer or developer is an opportunity to assess their skills, approach, and understanding of your project. Asking questions about their past experience, design process, and how they handle revisions ensures that you find a good fit for your needs. This is also the time to clarify your goals, timelines, and budget to ensure that everyone is aligned on expectations before the project begins.",
@@ -918,6 +924,7 @@ export const blogs: BlogPost[] = [
     title: "Web Design Explained: A Comprehensive Guide",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 11, day: 2, year: 2024 },
     excerpt:
       "Web design encompasses more than just aesthetics; it involves creating a seamless user experience and ensuring that your website is functional, responsive, and easy to navigate. It blends design principles with technical knowledge to craft interfaces that meet both the needs of users and the goals of a business. A well-designed website considers visual appeal, usability, performance, and accessibility, ensuring that visitors have a positive interaction.",
@@ -1041,6 +1048,7 @@ export const blogs: BlogPost[] = [
     title: "Enhancing Website Success Through Exceptional User Experience",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 4, year: 2025 },
     excerpt:
       "User experience (UX) is a critical factor in the success of any website, as it directly impacts how users interact with and perceive a site. A well-designed UX focuses on creating intuitive, easy-to-navigate, and engaging experiences that meet user needs while achieving business goals. By prioritizing elements like speed, accessibility, and responsiveness, web designers can ensure that users stay engaged, return to the site, and ultimately convert, making UX a key driver of customer satisfaction and business success.",
@@ -1380,6 +1388,7 @@ export const blogs: BlogPost[] = [
       "Building an Inclusive Web: Incorporating Accessibility into Your Design",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 8, day: 15, year: 2024 },
     excerpt:
       "Accessibility in web design ensures that your website is usable by people of all abilities. This includes making sure your content can be accessed by users with disabilities, such as visual, auditory, or motor impairments. Implementing accessible design practices—such as using screen reader-friendly layouts, providing alternative text for images, and ensuring keyboard navigation—makes your website more inclusive and provides a better experience for all users.",
@@ -1598,6 +1607,7 @@ export const blogs: BlogPost[] = [
       "Demystifying Blockchain Architecture: The Foundation of Decentralized Systems",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 8, day: 15, year: 2024 },
     excerpt:
       "Blockchain architecture forms the backbone of decentralized systems and cryptocurrencies, organizing transaction data into secure, transparent, and immutable blocks. By eliminating the need for central authorities, it facilitates peer-to-peer transactions, disrupting industries such as finance and healthcare. A solid understanding of this architecture is crucial for businesses and developers venturing into decentralized application development.",
@@ -2266,6 +2276,7 @@ export const blogs: BlogPost[] = [
     title: "Decoding GUI Architecture: Building Seamless User Interfaces",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 8, day: 15, year: 2024 },
     excerpt:
       "Graphical User Interface (GUI) architecture is essential for building intuitive, user-friendly systems. A well-structured GUI enables users to interact with software effortlessly, combining visual design, layout, and interactions to create an efficient and aesthetically pleasing experience. Mastering GUI design principles and architecture is crucial for developing applications that provide seamless and engaging user experiences.",
@@ -2472,6 +2483,7 @@ export const blogs: BlogPost[] = [
       "Master of One or Jack of All Trades? Choosing the Right Hire for Your Team",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 4, day: 16, year: 2022 },
     excerpt:
       "While specialists excel in deep expertise within a single domain, generalists bring versatility, adaptability, and a broad skill set that allows them to navigate diverse challenges. Ultimately, the ideal path depends on individual goals, industry demands, and the need for either deep specialization or flexible, cross-disciplinary knowledge.",
@@ -2581,6 +2593,7 @@ export const blogs: BlogPost[] = [
     title: "Unlocking Creativity: The Power of Writing for Developers",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 5, day: 22, year: 2023 },
     excerpt:
       "Writing is a crucial skill for developers, playing a key role in documentation, communication, and business success. Clear and concise documentation ensures that code is understandable and maintainable, while effective communication helps developers collaborate efficiently with teams, stakeholders, and users.",
@@ -2679,6 +2692,7 @@ export const blogs: BlogPost[] = [
     title: "How Tailwind CSS Can Speed Up Your Development Process",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 11, day: 20, year: 2024 },
     excerpt:
       "Tailwind CSS is a highly flexible framework that empowers developers to craft custom, responsive designs with ease. By offering a comprehensive set of utility classes, it eliminates the need for writing extensive CSS, allowing developers to style HTML elements directly. This approach accelerates the development process, enabling the creation of visually rich, functional interfaces in less time.",
@@ -3170,6 +3184,7 @@ export const blogs: BlogPost[] = [
       "JavaScript Frameworks: What's Next for the Future of Web Development?",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 23, year: 2022 },
     excerpt:
       "With the rapid evolution of JavaScript frameworks like React, Vue, and Angular, staying updated on the latest trends is crucial for developers aiming to build modern, efficient web applications. New features, best practices, and performance optimizations are constantly emerging, making continuous learning essential to leverage these frameworks effectively.",
@@ -3286,6 +3301,7 @@ export const blogs: BlogPost[] = [
     title: "Why Accessibility Should Be a Priority in Web Development",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 5, day: 1, year: 2023 },
     excerpt:
       "Accessibility is essential in web development to ensure that websites are inclusive and usable for all users, including those with disabilities. By incorporating best practices like keyboard navigation, screen reader support, and adequate color contrast, developers can create digital experiences that are more user-friendly, meet accessibility standards, and reach a broader audience.",
@@ -3562,6 +3578,7 @@ export const blogs: BlogPost[] = [
     title: "Decoding Blockchain: Exploring the World of Decentralized Systems",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 5, day: 22, year: 2023 },
     excerpt:
       "Blockchain is revolutionizing industries by offering secure, transparent, and decentralized systems that enhance trust and efficiency. By eliminating the need for intermediaries, it streamlines transactions, reduces costs, and increases security across sectors such as finance, supply chain, and healthcare.",
@@ -3747,6 +3764,7 @@ export const blogs: BlogPost[] = [
     title: "Unlocking the Power of Data Science: Turning Data into Insights",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 2, year: 2023 },
     excerpt:
       "Data science is transforming the way we approach problem-solving and decision-making across various industries. By leveraging large volumes of data and advanced analytical techniques, it enables organizations to uncover hidden patterns, predict future trends, and make data-driven decisions that were once difficult or impossible.",
@@ -4235,6 +4253,7 @@ export const blogs: BlogPost[] = [
     title: "Transforming Connectivity: The Future of IoT Development",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 2, year: 2023 },
     excerpt:
       "The Internet of Things (IoT) is reshaping the way devices communicate, from everyday household items to complex industrial machinery. By enabling seamless data exchange and automation, IoT enhances efficiency and convenience across various sectors. It has sparked innovation in areas such as smart homes, healthcare, manufacturing, and transportation, fundamentally altering both our personal lives and business operations.",
@@ -4648,6 +4667,7 @@ export const blogs: BlogPost[] = [
       "Mastering Business Strategies: Building a Blueprint for Enduring Success",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 2, year: 2025 },
     excerpt:
       "In today’s rapidly changing business landscape, it’s essential to understand the different business strategies available and determine which one is best suited for your company’s needs, objectives, and market conditions.",
@@ -5226,6 +5246,7 @@ export const blogs: BlogPost[] = [
     title: "Web Scraping Unleashed: Exploring the Potential of Data Harvesting",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 21, year: 2022 },
     excerpt:
       "Web scraping is a powerful technique for extracting, collecting, and analyzing data from websites, enabling businesses and researchers to gain valuable insights. By automating data retrieval, web scraping allows users to track market trends, monitor competitors, gather research data, and optimize decision-making processes more efficiently than manual methods.",
@@ -5641,6 +5662,7 @@ export const blogs: BlogPost[] = [
     title: "Inside Tech Startups: A Glimpse into the Engine Room of Innovation",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 21, year: 2022 },
     excerpt:
       "Tech startups are reshaping industries by introducing innovative solutions, disrupting traditional business models, and driving digital transformation. By leveraging emerging technologies such as artificial intelligence, blockchain, and cloud computing, these startups are creating more efficient, scalable, and user-centric products and services that redefine how businesses and consumers interact.",
@@ -6349,6 +6371,7 @@ export const blogs: BlogPost[] = [
     title: "Charting the Future: Key Emerging Tech Trends to Watch",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 11, day: 20, year: 2024 },
     excerpt:
       "Keep your edge sharp by embracing the groundbreaking tech trends that are redefining industries across the globe. With advancements in AI, machine learning, blockchain, and IoT, the way businesses function, interact, and provide value is undergoing a dramatic transformation. Staying informed about these innovations is key to maintaining relevance and thriving in today’s ever-changing digital world.",
@@ -6737,6 +6760,7 @@ export const blogs: BlogPost[] = [
       "Crafting Seamless Experiences: The Art and Science of GUI Development",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 23, year: 2022 },
     excerpt:
       "A great graphical user interface (GUI) is key to providing a seamless, intuitive user experience, enabling users to interact with software efficiently. A well-designed GUI focuses on usability, accessibility, and responsiveness, making applications more engaging and user-friendly. By featuring clear navigation, appealing layouts, and interactive elements, a strong GUI boosts productivity and user satisfaction across digital platforms.",
@@ -6884,6 +6908,7 @@ export const blogs: BlogPost[] = [
       "From Garage Startups to Global Tech Leaders: The Journey of Entrepreneurs",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 15, year: 2023 },
     excerpt:
       "Tech entrepreneurs are changing the landscape with groundbreaking innovations that address critical challenges and propel progress. Harnessing technologies such as AI, blockchain, and IoT, they are reshaping industries and influencing the future of business and society. Whether emerging from humble startups or evolving into global tech giants, their creativity and vision are transforming the way we work, connect, and experience the digital age.",
@@ -7128,6 +7153,7 @@ export const blogs: BlogPost[] = [
     title: "LLC vs S Corp vs C Corp: Which Structure Fits Your Business?",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 15, year: 2023 },
     excerpt:
       "Choosing the right business structure is essential for long-term success. LLCs, S Corps, and C Corps each offer unique benefits, from flexibility and tax advantages to growth potential and legal protection. Understanding these structures helps you make an informed decision based on your business goals, whether you're starting small or planning for future expansion.",
@@ -7343,6 +7369,7 @@ export const blogs: BlogPost[] = [
     title: "Mastering NPM: A Cornerstone of Node.js Development",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 15, year: 2023 },
     excerpt:
       "NPM is an indispensable tool for Node.js developers, simplifying dependency management, automating tasks, and enhancing workflows. With access to a vast library of packages, NPM helps developers improve performance, security, and testing, enabling the rapid creation of scalable and efficient applications. Gaining proficiency in NPM is essential for modern web development, reducing development time and ensuring consistency across projects.",
@@ -7891,6 +7918,7 @@ export const blogs: BlogPost[] = [
     title: "Mastering the Art of Giving Constructive Feedback to Your Designer",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 18, year: 2025 },
     excerpt:
       "Effective feedback is key to a successful design collaboration. By being specific, using visual references, prioritizing feedback, and respecting the designer's expertise, you can ensure your vision is clearly communicated. Fostering a positive and collaborative environment will result in a smoother design process and a final product that aligns with your goals.",
@@ -8304,6 +8332,7 @@ export const blogs: BlogPost[] = [
     title: "UX vs UI Design: Unpacking Their Key Differences and Roles",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
       "UX and UI design are two essential pillars of creating successful digital products. While UX focuses on optimizing the user experience to ensure functionality and ease of use, UI is concerned with the visual elements that make the product aesthetically appealing and engaging.",
@@ -8564,6 +8593,7 @@ export const blogs: BlogPost[] = [
       "Building Robust Business Databases: Essential Strategies for Success",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 18, year: 2025 },
     excerpt:
       "In this article, we explore key strategies for managing and optimizing your business database. From ensuring data security and compliance with encryption and access control to improving scalability through sharding and replication, we cover essential best practices. By focusing on data integrity, performance, and security, businesses can build robust, scalable databases that support growth and maintain high efficiency.",
@@ -9358,6 +9388,7 @@ export const blogs: BlogPost[] = [
     title: "Version Control Unveiled: Understanding Git and GitHub",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 12, year: 2025 },
     excerpt:
       "Git is a version control system that manages code locally, while GitHub is a cloud platform that enhances Git with collaboration tools like pull requests and project management. Together, they streamline development workflows and improve team collaboration.",
@@ -9547,6 +9578,7 @@ export const blogs: BlogPost[] = [
     title: "The Power of Open Source: Understanding Its Impact and Importance",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 18, year: 2025 },
     excerpt:
       "Open-source software drives innovation and accessibility, allowing businesses and developers to build, modify, and share software without licensing restrictions. It helps reduce costs, avoid vendor lock-in, and fosters collaboration, with successful projects like Linux, Git, and WordPress shaping the tech landscape.",
@@ -10000,6 +10032,7 @@ export const blogs: BlogPost[] = [
     title: "Boost Your Web Development with These Top Open-Source Tools",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 23, year: 2025 },
     excerpt:
       "Open-source tools have transformed web development by providing free, flexible, and community-driven solutions for coding, debugging, design, and deployment. From frameworks and version control systems to performance testing and database management, open-source software enables developers to build faster, collaborate efficiently, and create high-quality web applications.",
@@ -10474,6 +10507,7 @@ export const blogs: BlogPost[] = [
     title: "Vercel or Netlify: The Ultimate Showdown for Your Web Deployment",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 10, year: 2025 },
     excerpt:
       "Vercel and Netlify are leading platforms for web development, each with unique strengths. Vercel is ideal for Next.js projects with performance optimizations, while Netlify offers broader framework support and serverless functions, making it perfect for full-stack applications. Choose based on your project's needs for speed, flexibility, or functionality.",
@@ -10674,6 +10708,7 @@ export const blogs: BlogPost[] = [
     title: "Essential Reads for Every Developer",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 23, year: 2022 },
     excerpt:
       "In the rapidly evolving tech industry, continuous learning is essential for success. This blog highlights a selection of must-read books for developers, designed to help you sharpen your skills, boost your career, and keep pace with industry advancements.",
@@ -10892,6 +10927,7 @@ export const blogs: BlogPost[] = [
     title: "Essential Tools That Fuel and Power My Success",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 15, year: 2023 },
     excerpt:
       "As a full-stack web developer and business owner, I rely on a variety of tools to streamline development, manage client requests, and handle business operations. These tools help me stay organized, meet deadlines, and maintain high productivity across both technical and operational tasks. Stay tuned for more articles on these essential tools.",
@@ -11686,6 +11722,7 @@ export const blogs: BlogPost[] = [
     title: "The Battle of Containers: Docker vs Kubernetes Explained",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 10, day: 17, year: 2024 },
     excerpt:
       "Docker and Kubernetes are essential tools for modern application development, streamlining the deployment and management of containerized applications. Understanding how these tools differ and complement each other is crucial for developers aiming to build efficient, scalable cloud-native applications.",
@@ -11866,6 +11903,7 @@ export const blogs: BlogPost[] = [
       "Unleashing the Power of API Testing: Must-Have Tools for Developers",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
       "Choosing the right API testing tool is crucial for ensuring your APIs are reliable and efficient. This guide highlights top tools like Postman, Insomnia, Hoppscotch, and Paw, each offering unique features to match various development needs.",
@@ -12148,6 +12186,7 @@ export const blogs: BlogPost[] = [
       "Your Ultimate Guide to Becoming a Front-End, Back-End, or Full-Stack Developer",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 19, year: 2025 },
     excerpt:
       "Becoming a front-end, back-end, or full-stack developer requires mastering various technologies, tools, and frameworks. Whether you're focusing on user interfaces, APIs, databases, or complete applications, this roadmap outlines everything you need to learn for each specialization.",
@@ -12690,6 +12729,7 @@ export const blogs: BlogPost[] = [
     title: "Achieving Work-Life Harmony: Tips for Software Engineers",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 11, day: 17, year: 2024 },
     excerpt:
       "Software engineering can be a demanding career, often leading to long hours, stress, and burnout. Maintaining a healthy work-life balance is essential for long-term success and personal well-being. This guide explores practical strategies to manage workloads, set boundaries, and achieve a fulfilling balance between work and personal life.",
@@ -12833,6 +12873,7 @@ export const blogs: BlogPost[] = [
     title: "Key Tools Every Developer Should Know: NPM, NVM, and NPX",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
       "NPM, NVM, and NPX are essential tools in the Node.js ecosystem, each serving a unique purpose. NPM is used for managing dependencies, NVM helps developers manage multiple versions of Node.js, and NPX allows for running packages without global installation. Understanding how to leverage these tools will streamline your development process and ensure efficient package management and execution.",
@@ -13334,6 +13375,7 @@ export const blogs: BlogPost[] = [
     title: "How to Build a Full-Stack Web Application From Start to Finish",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 5, year: 2025 },
     excerpt:
       "Building a full-stack web application encompasses the development and integration of multiple layers of a web application, including the front-end, back-end, databases, and deployment. IT requires proficiency across multiple technologies and the ability to integrate them seamlessly to deliver a functional, scalable, and reliable solution.",
@@ -15107,6 +15149,7 @@ export const blogs: BlogPost[] = [
     title: "Choosing the Best JavaScript Package Manager: NPM, Yarn, or PNPM?",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 17, year: 2025 },
     excerpt:
       "Choosing the right package manager is essential for effective dependency management in JavaScript and Node.js projects. NPM, Yarn, and PNPM each offer unique features that can optimize your development process. Understanding the strengths of each can help you select the best tool for your project's specific needs.",
@@ -15635,6 +15678,7 @@ export const blogs: BlogPost[] = [
       "React vs Angular vs Vue: A Developer's Guide to Choosing the Best Framework",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 18, year: 2025 },
     excerpt:
       "Choosing the right JavaScript framework is crucial for web development projects. Angular, React, and Vue are three popular options, each with distinct strengths and weaknesses. Understanding these differences is key to selecting the framework that best fits your project's needs.",
@@ -16756,6 +16800,7 @@ export const blogs: BlogPost[] = [
       "Mobile App Development Showdown: React Native, Ionic, and Flutter Compared",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 23, year: 2025 },
     excerpt:
       "React Native, Ionic, and Flutter are some of the most popular frameworks for building cross-platform apps. Each framework has its unique advantages and challenges. With the right framework, you can ensure your app is built efficiently, performs well, and meets user expectations.",
@@ -17995,6 +18040,7 @@ export const blogs: BlogPost[] = [
       "GitHub, GitLab, or Bitbucket: A Complete Guide to Version Control Platforms",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 19, year: 2025 },
     excerpt:
       "Version control is an essential aspect of contemporary software development, with platforms like GitHub, GitLab, and Bitbucket leading the way in this area. These platforms provide powerful tools for code management, team collaboration, and workflow automation. However, selecting the right platform can be difficult, as each offers distinct features, integrations, and advantages tailored to various project requirements and team dynamics.",
@@ -18448,6 +18494,7 @@ export const blogs: BlogPost[] = [
     title: "GitKraken vs GitHub Desktop for Modern Developers",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 23, year: 2025 },
     excerpt:
       "By making version control more visual and interactive, Git GUI clients help developers manage their code with greater ease and efficiency, enabling them to focus more on coding and less on the complexities of Git’s command-line interface. Whether you’re a beginner or an experienced developer, these tools enhance the user experience and make working with Git more approachable.",
@@ -18675,6 +18722,7 @@ export const blogs: BlogPost[] = [
     title: "Self-Learning Web Development - Do's and Don'ts",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 17, year: 2025 },
     excerpt:
       "There are several effective strategies you can adopt to make your self-learning process smoother, more productive, and less overwhelming. These strategies help create a solid foundation for your growth as a web developer, allowing you to stay focused, motivated, and on track throughout your journey. But while there are many things you should do to be successful in self-learning web development, there are also several common pitfalls to avoid.",
@@ -19288,6 +19336,7 @@ export const blogs: BlogPost[] = [
       "Next.js vs Astro vs Nuxt.js: A Detailed Comparison for Modern Web Development",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 2, day: 23, year: 2025 },
     excerpt:
       "Choosing the right framework for your web development project can be a daunting task, especially with so many great options available today. Next.js, Astro, and Nuxt.js have quickly become popular choices for building modern web applications, each with unique features tailored to different use cases.",
@@ -19593,6 +19642,7 @@ export const blogs: BlogPost[] = [
       "The 100 Days of Code Challenge: A Guide to Jumpstart Your Coding Journey",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 1, day: 4, year: 2025 },
     excerpt:
       "The 100 Days of Code challenge is a powerful tool for self-learners who want to improve their coding skills, stay motivated, and develop the discipline needed to succeed in the tech industry. Whether you're a beginner just starting out or an experienced developer looking to sharpen your skills, the 100 Days of Code challenge is an excellent way to stay focused and motivated.",
@@ -19966,6 +20016,7 @@ export const blogs: BlogPost[] = [
     title: "The Power of Consistency: Key to Unlocking Lasting Success",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 2, year: 2025 },
     excerpt:
       "In any field, whether it’s business, sports, personal development, or even coding, consistency plays a critical role in achieving success. The ability to maintain steady progress over time is often the difference between reaching your goals and falling short.",
@@ -20653,6 +20704,7 @@ export const blogs: BlogPost[] = [
     title: "Unlocking the Power of Resource Mobilization",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 2, year: 2025 },
     excerpt:
       "In the world of business and entrepreneurship, one of the key factors that determine success is the ability to effectively mobilize resources. Whether you're building a startup, expanding an existing business, or launching a new project, the ability to gather, manage, and allocate the right resources at the right time is crucial.",
@@ -21037,6 +21089,7 @@ export const blogs: BlogPost[] = [
     title: "Tailwind UI Becomes Tailwind Plus: What You Need to Know",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 10, year: 2025 },
     excerpt:
       "Tailwind UI has evolved into Tailwind Plus, introducing a major upgrade with new features, enhancements, and improved functionality. This shift highlights Tailwind's ongoing dedication to refining its toolkit and delivering developers with the most effective resources for building modern, high-quality web applications.",
@@ -21339,6 +21392,7 @@ export const blogs: BlogPost[] = [
     title: "Understanding Micro Frontends: The Future of Web Development",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 3, day: 10, year: 2025 },
     excerpt:
       "In the fast-paced world of web development, where applications are becoming more complex and distributed, new architectural paradigms are emerging to meet the demands for scalability, maintainability, and flexibility. One such paradigm is 'micro frontends,' a term that borrows from the microservices architectural style. Micro frontends are revolutionizing how teams build, deploy, and maintain front-end applications by breaking the frontend into smaller, independent pieces.",
@@ -21519,6 +21573,7 @@ export const blogs: BlogPost[] = [
     title: "Resend: The Email API Made for Next.js Developers",
     author: "Tina Huynh",
     imageUrl: "",
+    image2Url: "",
     date: { month: 4, day: 9, year: 2025 },
     excerpt:
       "Resend is redefining how developers handle transactional and marketing email delivery within the Next.js ecosystem. With first-class TypeScript support, seamless integration with App Router, and built-in DX enhancements, Resend offers a reliable and developer-friendly solution to managing emails in modern web applications.",
