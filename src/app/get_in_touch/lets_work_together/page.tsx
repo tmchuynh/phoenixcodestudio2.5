@@ -1,9 +1,10 @@
+import { testimonials } from "@/lib/constants/testimonials";
 import Image from "next/image";
 
 export default function LetsWorkTogether() {
   return (
     <div className="">
-      <div className="mx-auto sm:px-2 lg:px-4 py-24 sm:py-32 max-w-7xl">
+      <div className="mx-auto py-24 sm:py-32 max-w-7xl">
         <div className="mx-auto px-4 lg:max-w-none">
           <div className="items-center gap-x-16 gap-y-10 grid grid-cols-1 lg:grid-cols-2">
             <div>
@@ -58,15 +59,21 @@ export default function LetsWorkTogether() {
           strokeWidth={0}
         />
       </svg>
-      <div className="mx-auto max-w-xl lg:max-w-4xl">
-        <h2 className="font-semibold text-4xl text-pretty sm:text-5xl tracking-tight">
-          Let’s talk about your project
-        </h2>
-        <p className="mt-2 text-lg/8">
-          We help companies and individuals build out their brand guidelines.
+      <div className="mx-auto py-8 md:py-12 lg:py-24 2xl:py-30 max-w-3xl lg:max-w-7xl">
+        <h2>Let’s Talk About Your Project</h2>
+        <p className="max-w-4xl">
+          At first, we were all about helping people build meaningful brand
+          guidelines. Then we figured—why not just toss around some buzzwords,
+          slap on a cool font, and call it strategy? But hey, if you actually
+          want something thoughtful and tailored… we still know how to do that
+          too. Probably.
         </p>
-        <div className="flex lg:flex-row flex-col gap-16 sm:gap-y-20 mt-16">
-          <form action="#" method="POST" className="lg:flex-auto">
+        <div className="gap-5 lg:gap-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-9">
+          <form
+            action="#"
+            method="POST"
+            className="lg:flex-auto md:col-span-2 lg:col-span-2 2xl:col-span-5"
+          >
             <div className="gap-x-8 gap-y-6 grid grid-cols-1 sm:grid-cols-2">
               <div>
                 <label
@@ -152,44 +159,16 @@ export default function LetsWorkTogether() {
                 </div>
               </div>
             </div>
-            <div className="mt-10">
-              <button type="submit">Let’s talk</button>
-            </div>
-            <p className="mt-4 text-sm/6">
-              By submitting this form, I agree to the{" "}
-              <a href="#" className="font-semibold">
-                privacy&nbsp;policy
-              </a>
-              .
-            </p>
           </form>
-          <div className="lg:flex-none lg:mt-6 lg:w-80">
-            <Image
-              alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/workcation-logo-indigo-600.svg"
-              className="w-auto h-12"
-              width={300}
-              height={300}
-            />
+          <div className="lg:flex-none lg:col-span-2 2xl:col-span-4 lg:mt-6">
             <figure className="mt-10">
-              <blockquote className="font-semibold text-lg/8">
-                <p>
-                  “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  expedita voluptas culpa sapiente alias molestiae. Numquam
-                  corrupti in laborum sed rerum et corporis.”
-                </p>
+              <blockquote className="font-semibold text-xl/8 tracking-tight">
+                {testimonials[3].quote}
               </blockquote>
-              <figcaption className="flex gap-x-6 mt-10">
-                <Image
-                  alt=""
-                  src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=96&h=96&q=80"
-                  className="flex-none rounded-full size-12"
-                  width={96}
-                  height={96}
-                />
-                <div>
-                  <div className="font-semibold text-base">Brenna Goyette</div>
-                  <div className="text-sm/6">CEO of Workcation</div>
+              <figcaption className="flex gap-x-4 mt-8">
+                <div className="text-sm/6">
+                  <div className="font-semibold"> {testimonials[3].name}</div>
+                  <div className=""> {testimonials[3].position}</div>
                 </div>
               </figcaption>
             </figure>
