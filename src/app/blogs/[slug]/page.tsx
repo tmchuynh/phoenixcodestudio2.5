@@ -5,7 +5,7 @@ import CannotFind from "@/components/states/not-found/CannotFind";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { BlogPost } from "@/lib/interfaces/blogs";
-import { generateSlug } from "@/lib/utils";
+import { convertToDate, generateSlug } from "@/lib/utils";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -89,50 +89,54 @@ const BlogPostPage = () => {
     <div className="mx-auto py-6 w-10/12 md:w-11/12">
       <header>
         <h1>{post?.title}</h1>
-        <div>
-          <p>
-            <span className="font-bold">Written By: </span>
-            {post?.author}
-          </p>
-          <p>
-            <span className="font-bold">Date: </span>
-            {post?.date.month} / {post?.date.day} / {post?.date.year}
-          </p>
-          <div className="flex space-x-2 mb-8">
-            {post?.topics.map((topic: string, index: number) => {
-              return (
-                <Badge
-                  variant={"secondary"}
-                  className="text-sm lowercase cursor-default"
-                  key={index}
-                >
-                  #&thinsp;{topic}
-                </Badge>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="flex xl:flex-row md:flex-col flex-col-reverse xl:gap-x-6 md:pb-5 xl:pb-6">
-          <div className="xl:flex xl:flex-col xl:justify-between">
-            <div>
-              {post?.intro.map((intro: string, index: number) => (
-                <p key={index}>{intro}</p>
-              ))}
+        <section className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-3 xl:py-6 border-b">
+          <section>
+            <div className="flex md:flex-row-reverse flex-col md:justify-between items-center space-x-6">
+              <div className="flex space-x-2">
+                {post?.topics.map((topic: string, index: number) => {
+                  return (
+                    <Badge
+                      variant={"secondary"}
+                      className="text-sm lowercase cursor-default"
+                      key={index}
+                    >
+                      #&thinsp;{topic}
+                    </Badge>
+                  );
+                })}
+              </div>
+              {post?.date && (
+                <p>
+                  <strong>Date: </strong>
+                  {convertToDate(post.date)}
+                </p>
+              )}
             </div>
-          </div>
 
-          {post?.title && (
-            <Image
-              src={`/images/blog_images/${generateSlug(post?.title)}.jpg`}
-              width={500}
-              height={300}
-              priority={true}
-              alt={`${post?.title}-image`}
-              className="mx-auto md:mt-4 xl:mt-0 mb-2 w-full lg:h-[25em] object-contain object-center self-center"
-            />
-          )}
-        </div>
+            <div className="xl:flex xl:flex-col xl:justify-between">
+              <div>
+                {post?.intro.map((intro: string, index: number) => (
+                  <p key={index}>{intro}</p>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <div className="lg:col-span-2">
+            {post?.title && (
+              <Image
+                src={`/images/blog_images/${generateSlug(post?.title)}.jpg`}
+                width={500}
+                height={300}
+                priority={true}
+                alt={`${post?.title}-image`}
+                className="shadow-lg mx-auto md:mt-4 xl:mt-0 mb-2 border rounded-3xl w-full h-full object-contain object-center self-center"
+              />
+            )}
+          </div>
+        </section>
+
+        <div className="flex xl:flex-row md:flex-col flex-col-reverse xl:gap-x-6 md:pb-5 xl:pb-6"></div>
       </header>
 
       {/* Render Recursive List if it exists */}
