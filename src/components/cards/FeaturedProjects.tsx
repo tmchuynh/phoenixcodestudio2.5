@@ -1,6 +1,5 @@
 "use client";
 
-import { Project } from "@/lib/interfaces";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -9,6 +8,7 @@ import { FaCheckDouble } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import DynamicButton from "../button/button-dynamic";
 import { Badge } from "../ui/badge";
+import { Project } from "@/lib/interfaces/projects";
 
 export function FeaturedProject({
   project,

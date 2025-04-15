@@ -3,6 +3,7 @@ import { ListDetail } from "./services";
 export interface BlogPost {
   title: string;
   author: string;
+  cardImage: string;
   imageUrl: string;
   image2Url: string;
   excerpt: string;
@@ -12,9 +13,4 @@ export interface BlogPost {
   list?: ListDetail[];
   conclusions: string[];
   date: { day: number; month: number; year: number };
-}
-
-export interface Blog {
-  title: string;
-  excerpt: string;
 }

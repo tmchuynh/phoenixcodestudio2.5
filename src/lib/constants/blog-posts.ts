@@ -4,7 +4,8 @@ export const blogs: BlogPost[] = [
     title:
       "Mastering Google Analytics: Insights for Effective Website Tracking",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 4, year: 2025 },
     excerpt:
@@ -200,7 +201,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Top Contactless Business Cards: Modern Networking Solutions",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 4, day: 3, year: 2022 },
     excerpt:
@@ -540,7 +542,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Key Factors to Consider When Hiring a Designer or Developer",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
@@ -647,7 +650,8 @@ export const blogs: BlogPost[] = [
     title:
       "Why It's Essential for Customers to Do Research Before a Consultation",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 17, year: 2025 },
     excerpt:
@@ -739,7 +743,8 @@ export const blogs: BlogPost[] = [
     title:
       "Key Details to Share with Your Designer Before Kicking Off a Project",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 12, year: 2025 },
     excerpt:
@@ -830,7 +835,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Key Questions to Ask During a Consultation",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 5, day: 2, year: 2024 },
     excerpt:
@@ -923,7 +929,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Web Design Explained: A Comprehensive Guide",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 11, day: 2, year: 2024 },
     excerpt:
@@ -1047,7 +1054,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Enhancing Website Success Through Exceptional User Experience",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 4, year: 2025 },
     excerpt:
@@ -1387,7 +1395,8 @@ export const blogs: BlogPost[] = [
     title:
       "Building an Inclusive Web: Incorporating Accessibility into Your Design",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 8, day: 15, year: 2024 },
     excerpt:
@@ -1606,7 +1615,8 @@ export const blogs: BlogPost[] = [
     title:
       "Demystifying Blockchain Architecture: The Foundation of Decentralized Systems",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 8, day: 15, year: 2024 },
     excerpt:
@@ -2275,7 +2285,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Decoding GUI Architecture: Building Seamless User Interfaces",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 8, day: 15, year: 2024 },
     excerpt:
@@ -2482,7 +2493,8 @@ export const blogs: BlogPost[] = [
     title:
       "Master of One or Jack of All Trades? Choosing the Right Hire for Your Team",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 4, day: 16, year: 2022 },
     excerpt:
@@ -2592,7 +2604,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Unlocking Creativity: The Power of Writing for Developers",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 5, day: 22, year: 2023 },
     excerpt:
@@ -2691,7 +2704,8 @@ export const blogs: BlogPost[] = [
   {
     title: "How Tailwind CSS Can Speed Up Your Development Process",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 11, day: 20, year: 2024 },
     excerpt:
@@ -3183,7 +3197,8 @@ export const blogs: BlogPost[] = [
     title:
       "JavaScript Frameworks: What's Next for the Future of Web Development?",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 23, year: 2022 },
     excerpt:
@@ -3300,7 +3315,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Why Accessibility Should Be a Priority in Web Development",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 5, day: 1, year: 2023 },
     excerpt:
@@ -3577,7 +3593,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Decoding Blockchain: Exploring the World of Decentralized Systems",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 5, day: 22, year: 2023 },
     excerpt:
@@ -3763,7 +3780,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Unlocking the Power of Data Science: Turning Data into Insights",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 2, year: 2023 },
     excerpt:
@@ -4252,7 +4270,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Transforming Connectivity: The Future of IoT Development",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 2, year: 2023 },
     excerpt:
@@ -4666,7 +4685,8 @@ export const blogs: BlogPost[] = [
     title:
       "Mastering Business Strategies: Building a Blueprint for Enduring Success",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 2, year: 2025 },
     excerpt:
@@ -5245,7 +5265,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Web Scraping Unleashed: Exploring the Potential of Data Harvesting",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 21, year: 2022 },
     excerpt:
@@ -5661,7 +5682,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Inside Tech Startups: A Glimpse into the Engine Room of Innovation",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 21, year: 2022 },
     excerpt:
@@ -6370,7 +6392,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Charting the Future: Key Emerging Tech Trends to Watch",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 11, day: 20, year: 2024 },
     excerpt:
@@ -6759,7 +6782,8 @@ export const blogs: BlogPost[] = [
     title:
       "Crafting Seamless Experiences: The Art and Science of GUI Development",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 23, year: 2022 },
     excerpt:
@@ -6907,7 +6931,8 @@ export const blogs: BlogPost[] = [
     title:
       "From Garage Startups to Global Tech Leaders: The Journey of Entrepreneurs",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 15, year: 2023 },
     excerpt:
@@ -7152,7 +7177,8 @@ export const blogs: BlogPost[] = [
   {
     title: "LLC vs S Corp vs C Corp: Which Structure Fits Your Business?",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 15, year: 2023 },
     excerpt:
@@ -7368,7 +7394,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Mastering NPM: A Cornerstone of Node.js Development",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 15, year: 2023 },
     excerpt:
@@ -7917,7 +7944,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Mastering the Art of Giving Constructive Feedback to Your Designer",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 18, year: 2025 },
     excerpt:
@@ -8331,7 +8359,8 @@ export const blogs: BlogPost[] = [
   {
     title: "UX vs UI Design: Unpacking Their Key Differences and Roles",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
@@ -8592,7 +8621,8 @@ export const blogs: BlogPost[] = [
     title:
       "Building Robust Business Databases: Essential Strategies for Success",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 18, year: 2025 },
     excerpt:
@@ -9387,7 +9417,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Version Control Unveiled: Understanding Git and GitHub",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 12, year: 2025 },
     excerpt:
@@ -9577,7 +9608,8 @@ export const blogs: BlogPost[] = [
   {
     title: "The Power of Open Source: Understanding Its Impact and Importance",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 18, year: 2025 },
     excerpt:
@@ -10031,7 +10063,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Boost Your Web Development with These Top Open-Source Tools",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 23, year: 2025 },
     excerpt:
@@ -10506,7 +10539,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Vercel or Netlify: The Ultimate Showdown for Your Web Deployment",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 10, year: 2025 },
     excerpt:
@@ -10707,7 +10741,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Essential Reads for Every Developer",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 23, year: 2022 },
     excerpt:
@@ -10926,7 +10961,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Essential Tools That Fuel and Power My Success",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 15, year: 2023 },
     excerpt:
@@ -11721,7 +11757,8 @@ export const blogs: BlogPost[] = [
   {
     title: "The Battle of Containers: Docker vs Kubernetes Explained",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 10, day: 17, year: 2024 },
     excerpt:
@@ -11902,7 +11939,8 @@ export const blogs: BlogPost[] = [
     title:
       "Unleashing the Power of API Testing: Must-Have Tools for Developers",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
@@ -12185,7 +12223,8 @@ export const blogs: BlogPost[] = [
     title:
       "Your Ultimate Guide to Becoming a Front-End, Back-End, or Full-Stack Developer",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 19, year: 2025 },
     excerpt:
@@ -12728,7 +12767,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Achieving Work-Life Harmony: Tips for Software Engineers",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 11, day: 17, year: 2024 },
     excerpt:
@@ -12872,7 +12912,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Key Tools Every Developer Should Know: NPM, NVM, and NPX",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
@@ -13374,7 +13415,8 @@ export const blogs: BlogPost[] = [
   {
     title: "How to Build a Full-Stack Web Application From Start to Finish",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 5, year: 2025 },
     excerpt:
@@ -15148,7 +15190,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Choosing the Best JavaScript Package Manager: NPM, Yarn, or PNPM?",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 17, year: 2025 },
     excerpt:
@@ -15677,7 +15720,8 @@ export const blogs: BlogPost[] = [
     title:
       "React vs Angular vs Vue: A Developer's Guide to Choosing the Best Framework",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 18, year: 2025 },
     excerpt:
@@ -16799,7 +16843,8 @@ export const blogs: BlogPost[] = [
     title:
       "Mobile App Development Showdown: React Native, Ionic, and Flutter Compared",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 23, year: 2025 },
     excerpt:
@@ -18039,7 +18084,8 @@ export const blogs: BlogPost[] = [
     title:
       "GitHub, GitLab, or Bitbucket: A Complete Guide to Version Control Platforms",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 19, year: 2025 },
     excerpt:
@@ -18493,7 +18539,8 @@ export const blogs: BlogPost[] = [
   {
     title: "GitKraken vs GitHub Desktop for Modern Developers",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 23, year: 2025 },
     excerpt:
@@ -18721,7 +18768,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Self-Learning Web Development - Do's and Don'ts",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 17, year: 2025 },
     excerpt:
@@ -19335,7 +19383,8 @@ export const blogs: BlogPost[] = [
     title:
       "Next.js vs Astro vs Nuxt.js: A Detailed Comparison for Modern Web Development",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 2, day: 23, year: 2025 },
     excerpt:
@@ -19641,7 +19690,8 @@ export const blogs: BlogPost[] = [
     title:
       "The 100 Days of Code Challenge: A Guide to Jumpstart Your Coding Journey",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 1, day: 4, year: 2025 },
     excerpt:
@@ -20015,7 +20065,8 @@ export const blogs: BlogPost[] = [
   {
     title: "The Power of Consistency: Key to Unlocking Lasting Success",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 2, year: 2025 },
     excerpt:
@@ -20703,7 +20754,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Unlocking the Power of Resource Mobilization",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 2, year: 2025 },
     excerpt:
@@ -21088,7 +21140,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Tailwind UI Becomes Tailwind Plus: What You Need to Know",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 10, year: 2025 },
     excerpt:
@@ -21391,7 +21444,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Understanding Micro Frontends: The Future of Web Development",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 3, day: 10, year: 2025 },
     excerpt:
@@ -21572,7 +21626,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Resend: The Email API Made for Next.js Developers",
     author: "Tina Huynh",
-    imageUrl: "",
+    cardImage: "",
+imageUrl: "",
     image2Url: "",
     date: { month: 4, day: 9, year: 2025 },
     excerpt:
