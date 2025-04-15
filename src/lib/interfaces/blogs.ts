@@ -3,7 +3,8 @@ import { ListDetail } from "./services";
 export interface BlogPost {
   title: string;
   author: string;
-  imageUrl?: string;
+  imageUrl: string;
+  image2Url: string;
   excerpt: string;
   featured?: boolean;
   topics: string[];
