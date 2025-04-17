@@ -1,10 +1,12 @@
 "use client";
 import { BlogPost } from "@/lib/interfaces/blogs";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { cn, convertToDate, generateSlug } from "@/lib/utils";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import DynamicButton from "../button/button-dynamic";
+import { cn } from "@/lib/utils";
+import { convertToDate } from "@/lib/utils/convert";
+import { generateSlug } from "@/lib/utils/format";
 
 export default function FeaturedArticles({
   blog,

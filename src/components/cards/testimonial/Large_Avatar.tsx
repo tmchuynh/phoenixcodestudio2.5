@@ -1,4 +1,4 @@
-import { Testimonial } from "@/lib/interfaces";
+import { Testimonial } from "@/lib/interfaces/testimonials";
 import Image from "next/image";
 
 export default function FeaturedLargeTestimonial({

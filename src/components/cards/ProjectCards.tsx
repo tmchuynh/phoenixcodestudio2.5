@@ -1,10 +1,10 @@
 "use client";
 
-import { Project } from "@/lib/interfaces";
 import { useRouter } from "next/navigation";
 import { FaCheckDouble } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import DynamicButton from "../button/button-dynamic";
+import { Project } from "@/lib/interfaces/projects";
 
 export function ProjectCards({ project }: { project: Project }) {
   const router = useRouter();

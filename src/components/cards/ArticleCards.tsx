@@ -2,10 +2,10 @@
 
 import { Badge } from "@/components/ui/badge";
 import { BlogPost } from "@/lib/interfaces/blogs";
-import { generateSlug } from "@/lib/utils";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import DynamicButton from "../button/button-dynamic";
+import { generateSlug } from "@/lib/utils/format";
 
 export default function BlogCard({ blog }: { blog: BlogPost }) {
   const router = useRouter();
@@ -27,7 +27,7 @@ export default function BlogCard({ blog }: { blog: BlogPost }) {
           <h3>{blog.title}</h3>
           <p className="line-clamp-3">{blog.excerpt}</p>
         </div>
-        <div className="relative flex items-center gap-x-4 mt-8">
+        <div className="relative flex items-center gap-x-4 mt-8 pb-2">
           {blog.topics && blog.topics.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {blog.topics.sort().map((topic: string, index: number) => (
@@ -43,7 +43,7 @@ export default function BlogCard({ blog }: { blog: BlogPost }) {
           )}
         </div>
         <DynamicButton
-          className="mx-0 w-3/5"
+          className="mx-0 w-full"
           onClick={() => router.push(`/blogs/${generateSlug(blog.title)}`)}
         >
           Read More

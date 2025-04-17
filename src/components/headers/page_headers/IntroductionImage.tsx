@@ -1,5 +1,5 @@
 import Timeline from "@/components/Timeline";
-import { timelineData } from "@/lib/constants/constants";
+import { originTimeline } from "@/lib/constants/constants";
 import Image from "next/image";
 
 export default function IntroductionImage() {
@@ -91,13 +91,13 @@ export default function IntroductionImage() {
           </div>
         </div>
       </div>
-      <Timeline items={timelineData} orientation="horizontal" />
+      <Timeline items={originTimeline} orientation="horizontal" />
 
       <section className="relative pt-16 lg:pt-20 overflow-hidden">
         <div className="mx-auto px-6 lg:px-8 max-w-7xl">
           <Image
             alt=""
-            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fG1lZXRpbmd8ZW58MHx8MHx8fDA%3D"
+            src="https://img.freepik.com/premium-photo/fiery-phoenix-with-outstretched-wings-against-black-background_14117-690436.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
             className="shadow-2xl mb-[-12%] rounded-xl ring-1 ring-gray-900/10"
             width={2432}
             height={1442}

@@ -2,10 +2,10 @@
 
 import { Category } from "@/lib/interfaces/services";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { capitalize, generateSlug } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import DynamicButton from "../button/button-dynamic";
+import { generateSlug, capitalize } from "@/lib/utils/format";
 
 export default function ServiceDetails({
   category,

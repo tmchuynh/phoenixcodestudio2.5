@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export default function ResponsiveImageGrid({
@@ -39,18 +40,24 @@ export default function ResponsiveImageGrid({
   const displayedImages = images.slice(0, requiredImagesCount);
 
   return (
-    <div
-      className="gap-4 grid p-4"
-      style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` }}
-    >
+    <div className="flex md:flex-row flex-col flex-wrap justify-around gap-2 mx-auto">
       {displayedImages.map((src, index) => (
-        <div key={index} className="relative">
+        <div key={index} className="h-72">
           <Image
+            key={index}
             src={src}
             alt={`Grid image ${index + 1}`}
-            className="rounded-md w-full h-full object-cover"
-            width={500}
-            height={500}
+            className={cn(
+              "shadow-lg rounded-lg w-full h-full aspect-video object-cover object-center",
+              {
+                "w-2/6 h-full": index % 3 == 0,
+                "w-2/7 h-full": index % 4 == 0,
+                "w-1/4 h-full": index % 5 == 0,
+                "w-4/9 h-full": index % 2 == 0,
+              }
+            )}
+            width={2400}
+            height={900}
           />
         </div>
       ))}

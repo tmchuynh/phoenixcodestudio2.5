@@ -2,7 +2,6 @@
 
 import useMediumScreen from "@/lib/screens/useMediumScreen";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { capitalize } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
 import React, { JSX, useMemo } from "react";
 import { TbSlashes } from "react-icons/tb";
@@ -12,6 +11,7 @@ import {
   BreadcrumbLink,
   BreadcrumbSeparator,
 } from "../ui/breadcrumb";
+import { capitalize } from "@/lib/utils/format";
 
 /**
  * A static breadcrumb navigation component that displays the current path hierarchy.

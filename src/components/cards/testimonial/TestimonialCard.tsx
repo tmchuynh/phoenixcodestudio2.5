@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Testimonial } from "@/lib/interfaces";
+import { Testimonial } from "@/lib/interfaces/testimonials";
 import { cn } from "@/lib/utils";
 import { FaStar } from "react-icons/fa";
 
