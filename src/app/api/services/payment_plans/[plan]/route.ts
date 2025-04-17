@@ -1,5 +1,5 @@
 import { paymentPlans } from "@/lib/constants/services/paymentPlans";
-import { generateSlug } from "@/lib/utils";
+import { generateSlug } from "@/lib/utils/format";
 import { NextRequest, NextResponse } from "next/server";
 
 /**
