@@ -47,7 +47,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 underline-offset-4 hover:underline"
+                        className="text-sm/6 underline-offset-4 hover:underline hover:decoration-fancy"
                       >
                         {item.name}
                       </a>
@@ -62,7 +62,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 underline-offset-4 hover:underline"
+                        className="text-sm/6 underline-offset-4 hover:underline hover:decoration-fancy"
                       >
                         {item.name}
                       </a>
@@ -79,7 +79,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 underline-offset-4 hover:underline"
+                        className="text-sm/6 underline-offset-4 hover:underline hover:decoration-fancy"
                       >
                         {item.name}
                       </a>
@@ -94,7 +94,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 underline-offset-4 hover:underline"
+                        className="text-sm/6 underline-offset-4 hover:underline hover:decoration-fancy"
                       >
                         {item.name}
                       </a>

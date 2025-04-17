@@ -15,47 +15,47 @@ const buttonVariants = cva(
           "border bg-background shadow-xs hover:bg-fancy hover:text-fancy-foreground dark:bg-fancy/30 dark:border-fancy dark:hover:bg-fancy/50",
         ghost:
           "hover:bg-fancy hover:text-fancy-foreground dark:hover:bg-fancy/50",
-        link: "text-primary underline-offset-4 hover:underline dark:text-secondary",
+        link: "text-primary underline-offset-4 hover:underline hover:decoration-tertiary dark:text-secondary dark:hover:decoration-accent",
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         secondaryOutline:
           "border border-secondary bg-transparent shadow-xs hover:bg-secondary hover:text-secondary-foreground hover:border-secondary dark:bg-tertiary/30 dark:border-secondary dark:hover:bg-secondary/50",
         secondaryGhost:
-          "border-transparent bg-transparent text-secondary hover:text-tertiary-foreground",
+          "border-transparent bg-transparent text-secondary hover:border-secondary",
         secondaryLink:
-          "border-transparent text-secondary underline-offset-4 hover:underline",
+          "border-transparent text-secondary underline-offset-4 hover:underline hover:decoration-fancy",
         destructive:
           "bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         destructiveOutline:
           "border border-destructive bg-transparent shadow-xs hover:bg-destructive hover:text-destructive-foreground hover:border-destructive",
         destructiveGhost:
-          "border-transparent bg-transparent text-destructive hover:text-destructive-foreground",
+          "border-transparent bg-transparent text-destructive hover:border-destructive",
         destructiveLink:
-          "border-transparent text-destructive underline-offset-4 hover:underline",
+          "border-transparent text-destructive underline-offset-4 hover:underline hover:decoration-foreground",
         accent: "bg-accent text-accent-foreground shadow-xs hover:bg-accent/90",
         accentOutline:
           "border border-accent bg-transparent shadow-xs hover:bg-accent hover:text-accent-foreground hover:border-accent dark:bg-accent/30 dark:border-accent dark:hover:bg-accent/50",
         accentGhost:
-          "border-transparent bg-transparent text-accent hover:text-accent-foreground",
+          "border-transparent bg-transparent text-accent hover:border-accent",
         accentLink:
-          "border-transparent text-accent underline-offset-4 hover:underline",
+          "border-transparent text-accent underline-offset-4 hover:underline hover:decoration-secondary",
         tertiary:
           "bg-tertiary text-tertiary-foreground shadow-xs hover:bg-tertiary/90",
         tertiaryOutline:
           "border border-tertiary bg-transparent shadow-xs hover:bg-tertiary hover:text-tertiary-foreground hover:border-tertiary dark:bg-tertiary/30 dark:border-tertiary dark:hover:bg-tertiary/50",
         tertiaryGhost:
-          "border-transparent bg-transparent text-tertiary hover:text-tertiary-foreground",
+          "border-transparent bg-transparent text-tertiary hover:border-tertiary",
         tertiaryLink:
           "border-transparent text-tertiary underline-offset-4 hover:underline",
         fancy: "bg-fancy text-fancy-foreground shadow-xs hover:bg-fancy/90",
         fancyOutline:
           "border border-fancy bg-transparent shadow-xs hover:bg-fancy hover:text-fancy-foreground hover:border-fancy dark:bg-fancy/30 dark:border-fancy dark:hover:bg-fancy/50",
         fancyGhost:
-          "border-transparent bg-transparent text-fancy hover:text-fancy-foreground",
+          "border-transparent bg-transparent text-fancy hover:border-fancy",
         fancyLink:
           "border-transparent text-fancy underline-offset-4 hover:underline",
         disabled:
-          "border-transparent bg-transparent text-muted-foreground/50 cursor-not-allowed",
+          "border-transparent bg-muted/45 text-muted-foreground/50 cursor-not-allowed",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

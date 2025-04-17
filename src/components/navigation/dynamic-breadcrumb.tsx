@@ -2,6 +2,7 @@
 
 import useMediumScreen from "@/lib/screens/useMediumScreen";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
+import { capitalize } from "@/lib/utils/format";
 import { usePathname, useRouter } from "next/navigation";
 import React, { JSX, useMemo } from "react";
 import { TbSlashes } from "react-icons/tb";
@@ -11,7 +12,6 @@ import {
   BreadcrumbLink,
   BreadcrumbSeparator,
 } from "../ui/breadcrumb";
-import { capitalize } from "@/lib/utils/format";
 
 /**
  * A static breadcrumb navigation component that displays the current path hierarchy.
@@ -104,7 +104,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         >
           <BreadcrumbLink
             href={currentHref}
-            className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
+            className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline hover:decoration-secondary"
           >
             {currentSegment}
           </BreadcrumbLink>
@@ -115,7 +115,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         <BreadcrumbItem key="home" className="mx-1">
           <BreadcrumbLink
             href="/"
-            className="px-1 py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
+            className="px-1 py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline hover:decoration-secondary"
           >
             Home
           </BreadcrumbLink>
@@ -176,7 +176,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
           >
             <BreadcrumbLink
               href={secondHref}
-              className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
+              className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline hover:decoration-secondary"
             >
               {secondSegment}
             </BreadcrumbLink>
@@ -202,7 +202,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
             <BreadcrumbItem key={`${href}-${segment}`} className="mx-1">
               <BreadcrumbLink
                 href={href}
-                className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
+                className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline hover:decoration-secondary"
               >
                 {segment}
               </BreadcrumbLink>
@@ -215,7 +215,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         <BreadcrumbItem key="home" className="mx-1">
           <BreadcrumbLink
             href="/"
-            className="px-1 py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
+            className="px-1 py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline hover:decoration-secondary"
           >
             Home
           </BreadcrumbLink>
@@ -251,7 +251,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
             >
               <BreadcrumbLink
                 href={href}
-                className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline"
+                className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline hover:decoration-secondary"
               >
                 {capitalizedSegment}
               </BreadcrumbLink>

@@ -81,7 +81,7 @@ const ServicesPage: FC = () => {
                     <CardContent className="flex flex-col">
                       <h5>{subServiceDetail.subtitle}</h5>
                       <h3
-                        className="font-semibold text-lg underline-offset-4 hover:underline cursor-pointer"
+                        className="font-semibold text-lg underline-offset-4 hover:underline cursor-pointer hover:decoration-fancy"
                         onClick={() =>
                           navigateToCategory(
                             category.name,
