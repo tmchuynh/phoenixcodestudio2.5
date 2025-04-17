@@ -10,7 +10,7 @@ export default function OurOriginStoryPage() {
       <div className="mx-auto w-11/12">
         <h1>It Takes an Ocean to Make Waves</h1>
         <DividerImage
-          src="https://plus.unsplash.com/premium_photo-1664297844174-d7dfb8d0e7f1?w=800&auto=format&fit=crop&q=60"
+          src="https://img.freepik.com/free-photo/burning-fire_460848-6858.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
           className="-z-10 mt-7"
           title={"Elevate Your Online Presence"}
           description={
