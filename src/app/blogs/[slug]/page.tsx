@@ -17,8 +17,6 @@ const BlogPostPage = () => {
   const [post, setPost] = useState<BlogPost | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [fileExists, setFileExists] = useState<boolean | null>(null);
-  const [fileName, setFileName] = useState("");
 
   useEffect(() => {
     async function fetchBlog() {
@@ -39,46 +37,8 @@ const BlogPostPage = () => {
     }
 
     fetchBlog();
-    checkFileExist(slug as string);
   }, [slug, router]);
 
-  /**
-   * Asynchronously checks if a file exists based on the provided slug.
-   *
-   * This function constructs a file path using the given slug, encodes the file name,
-   * and attempts to fetch the file from the server. If the file is found, it sets the
-   * file name and updates the state to indicate the file exists. If the file is not found,
-   * it updates the state to indicate the file does not exist.
-   *
-   * @param {string} slug - The slug used to construct the file path.
-   * @returns {Promise<void>} - A promise that resolves when the file existence check is complete.
-   */
-  const checkFileExist = async (slug: string): Promise<void> => {
-    // Check if the file exists
-    try {
-      const fileName = `/images/blog_images/${slug}-1.jpg`;
-      setFileName(fileName);
-      console.log(fileName);
-      const encodedFileName = encodeURIComponent(fileName); // Ensure the filename is properly encoded
-      const fileResponse = await fetch(encodedFileName);
-      if (!fileResponse.ok) {
-        throw new Error("Image not found");
-      }
-
-      const data = await fileResponse.json();
-      console.log("data", data);
-
-      if (!fileResponse.ok) {
-        throw new Error("Image not found");
-      }
-
-      setFileExists(true);
-    } catch (err: any) {
-      setFileExists(false);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   if (error) return <CannotFind />;
 
