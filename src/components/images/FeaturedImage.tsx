@@ -1,55 +1,35 @@
+"use client";
+
+import { testimonialImages } from "@/lib/constants/testimonials";
 import Image from "next/image";
 import React from "react";
 
 export function FeaturedImageGallery() {
-  const data = [
-    {
-      imgelink:
-        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    },
-    {
-      imgelink:
-        "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-    },
-    {
-      imgelink:
-        "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-    },
-    {
-      imgelink:
-        "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
-    },
-    {
-      imgelink:
-        "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-    },
-  ];
-
   const [active, setActive] = React.useState(
-    "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    "https://img.freepik.com/premium-vector/motivational-quote-black-white-poster-design_525160-7502.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
   );
 
   return (
     <div className="gap-4 grid">
-      <div>
+      <div className="z-20">
         <Image
-          className="rounded-lg w-full max-w-full h-auto md:h-[480px] object-cover object-center"
+          className="shadow-lg rounded-2xl w-full max-w-full h-auto md:h-[35em] object-cover object-center"
           src={active}
           alt="active-gallery-image"
           width={1470}
-          height={980} // Adjusted height for aspect ratio
+          height={980}
         />
       </div>
-      <div className="gap-4 grid grid-cols-5">
-        {data.map(({ imgelink }, index) => (
+      <div className="gap-4 lg:gap-6 grid grid-cols-3 lg:grid-cols-5 lg:-mt-4 lg:w-11/12">
+        {testimonialImages.map(({ imageUrl }, index) => (
           <div key={index}>
             <Image
-              onClick={() => setActive(imgelink)}
-              src={imgelink}
-              className="rounded-lg max-w-full h-20 cursor-pointer object-cover object-center"
+              onClick={() => setActive(imageUrl)}
+              src={imageUrl}
+              className="shadow-md rounded-lg max-w-full h-14 md:h-28 lg:h-20 transform transition duration-300 cursor-pointer lg:rotate-[35deg] object-cover object-center hover:rotate-[60deg]"
               alt={`gallery-image-${index}`}
-              width={200} // Thumbnail width
-              height={200} // Thumbnail height
+              width={400}
+              height={400}
             />
           </div>
         ))}

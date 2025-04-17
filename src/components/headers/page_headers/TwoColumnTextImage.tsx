@@ -1,20 +1,12 @@
-import Image from "next/image";
+"use client";
+
+import { FeaturedImageGallery } from "@/components/images/FeaturedImage";
 
 export default function TwoColumnTextImage() {
   return (
     <div className="mx-auto px-6 lg:px-8">
       <div className="items-start gap-x-8 gap-y-16 sm:gap-y-24 grid grid-cols-1 lg:grid-cols-2 mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
-        <div className="lg:pr-4">
-          <div className="relative shadow-2xl px-6 sm:px-12 lg:px-8 xl:px-10 pt-64 pb-9 lg:pb-8 xl:pb-10 rounded-3xl lg:max-w-7xl overflow-hidden">
-            <Image
-              alt=""
-              src="https://img.freepik.com/free-photo/business-people-shaking-hands-greeting_53876-101876.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="absolute inset-0 size-full object-cover"
-              width={1200}
-              height={2400}
-            />
-          </div>
-        </div>
+        <FeaturedImageGallery />
         <div>
           <div>
             <h4>Backed by Belief, Guided by Love</h4>

@@ -120,3 +120,26 @@ export const testimonials: Testimonial[] = [
     ),
   },
 ];
+
+export const testimonialImages = [
+  {
+    imageUrl:
+      "https://img.freepik.com/premium-vector/motivational-quote-black-white-poster-design_525160-7502.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+  },
+  {
+    imageUrl:
+      "https://img.freepik.com/free-photo/quote-paper-note-with-encouragement-words_23-2150105151.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+  },
+  {
+    imageUrl:
+      "https://img.freepik.com/free-photo/creative-inspirational-resource_23-2149144221.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+  },
+  {
+    imageUrl:
+      "https://img.freepik.com/free-photo/beautiful-inspirational-quote-message_23-2149261758.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+  },
+  {
+    imageUrl:
+      "https://img.freepik.com/free-photo/quote-paper-note-with-encouragement-words_23-2150105153.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+  },
+];
