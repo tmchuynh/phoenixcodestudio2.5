@@ -6,7 +6,6 @@ import CannotFind from "@/components/states/not-found/CannotFind";
 import { Badge } from "@/components/ui/badge";
 import { BlogPost } from "@/lib/interfaces/blogs";
 import { convertToDate } from "@/lib/utils/convert";
-import { generateSlug } from "@/lib/utils/format";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -38,7 +37,6 @@ const BlogPostPage = () => {
 
     fetchBlog();
   }, [slug, router]);
-
 
   if (error) return <CannotFind />;
 
@@ -86,26 +84,22 @@ const BlogPostPage = () => {
               </section>
 
               <div className="lg:col-span-2">
-                {post.title && (
-                  <Image
-                    src={`/images/blog_images/${generateSlug(post.title)}.jpg`}
-                    width={1200}
-                    height={800}
-                    priority={true}
-                    alt={`${post.title}-Main-Image`}
-                    className="shadow-lg mx-auto md:mt-4 xl:mt-0 mb-2 border rounded-3xl w-full h-full object-contain object-center self-center aspect-video"
-                  />
-                )}
+                <Image
+                  src={post.imageUrl}
+                  width={1200}
+                  height={800}
+                  priority={true}
+                  alt={`${post.title}-Main-Image`}
+                  className="shadow-lg mx-auto md:mt-4 xl:mt-0 mb-2 rounded-2xl w-full h-full object-cover object-center self-center aspect-video"
+                />
               </div>
             </section>
-
-            <div className="flex xl:flex-row md:flex-col flex-col-reverse xl:gap-x-6 md:pb-5 xl:pb-6"></div>
           </header>
 
           {/* Render Recursive List if it exists */}
           {post.list &&
             post.list.map((list, index) => (
-              <section className="pb-5" key={index}>
+              <section className="py-5" key={index}>
                 <h2 className={!list.description ? "my-0" : ""}>
                   {list.title && list.title}
                 </h2>
@@ -233,7 +227,7 @@ const BlogPostPage = () => {
               height={800}
               priority={false}
               alt={`${post.title}-Supporting-Image`}
-              className="shadow-lg border rounded-3xl w-full h-full object-contain object-center self-center aspect-square"
+              className="shadow-lg rounded-2xl w-full h-full object-cover object-center self-center"
             />
             <div className="lg:col-span-2">
               <h2>Conclusion</h2>

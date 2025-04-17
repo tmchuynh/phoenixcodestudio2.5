@@ -4,9 +4,12 @@ export const blogs: BlogPost[] = [
     title:
       "Mastering Google Analytics: Insights for Effective Website Tracking",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/graph-bar-chart-diagram-statistics-graphic_53876-133785.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/full-frame-shot-graph-paper_1048944-17712951.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/premium-vector/aid130d421f56f49a7a806f5a1d3c4729e_1103759-3.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 1, day: 4, year: 2025 },
     excerpt:
       "Google Analytics is an essential tool for tracking website performance and gaining valuable insights into user behavior. This post dives into what Google Analytics is, how to set it up, and how businesses can leverage its data to optimize their website and marketing efforts.",
@@ -201,9 +204,12 @@ export const blogs: BlogPost[] = [
   {
     title: "Top Contactless Business Cards: Modern Networking Solutions",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/top-view-wi-fi-router-with-wireless-controlled-devices_23-2148779301.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/free-photo/top-view-hands-holding-business-card_23-2148459776.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/free-photo/arrangement-devices-with-digital-assistant_23-2149107999.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 4, day: 3, year: 2022 },
     excerpt:
       "Contactless business cards offer a sleek, eco-friendly solution to traditional paper cards by enabling digital information sharing. Leveraging technologies like NFC and QR codes, they allow professionals to exchange contact details with a simple tap or scan. These cards reduce paper waste while enhancing convenience, customization, and interactivity for a modern networking experience.",
@@ -542,9 +548,12 @@ export const blogs: BlogPost[] = [
   {
     title: "Key Factors to Consider When Hiring a Designer or Developer",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/meeting-young-architects-office_329181-9634.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/free-photo/young-male-designer-using-graphics-tablet-while-working-with-com_158595-1133.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/free-photo/adult-woman-presenting-business-plan_23-2148513857.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
       "Choosing the right designer or developer is crucial for the success of your project. A designer or developer should not only be technically skilled but also have a strong understanding of your business needs and goals. Ensuring a good match between your project requirements and their expertise will result in a seamless collaboration and a final product that reflects your vision.",
@@ -650,9 +659,12 @@ export const blogs: BlogPost[] = [
     title:
       "Why It's Essential for Customers to Do Research Before a Consultation",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/premium-photo/doctor-working-clinic_1048944-13027194.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/leadership-teamwork-diversity-collaboration-planning-with-business-team-meeting-vision-mission-with-infographic-data-strategy-growth-development-with-male-female-staff_590464-83709.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/free-photo/businesswoman-using-her-digital-tablet-with-businesspeople-blurred-background_1098-649.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 2, day: 17, year: 2025 },
     excerpt:
       "Having a basic understanding of your industry and web design principles before your consultation helps you communicate your goals more clearly. Knowing what you want and understanding some of the design basics will allow you to ask more targeted questions and give your designer the context needed to create a solution that aligns with your objectives. It also helps in refining your vision and getting the most out of the consultation.",
@@ -743,9 +755,12 @@ export const blogs: BlogPost[] = [
     title:
       "Key Details to Share with Your Designer Before Kicking Off a Project",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/top-view-man-working-late-night_23-2150280992.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/free-photo/web-design-online-technology-content-concept_53876-123927.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/free-photo/man-designing-websites-high-angle_23-2149930945.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 1, day: 12, year: 2025 },
     excerpt:
       "Clear communication with your designer is key to achieving the desired results in your project. Sharing your business goals, target audience, branding guidelines, and any specific design preferences upfront will help your designer create a design that fits your needs. Additionally, providing any necessary resources or inspirations can save time and ensure the project stays on track from the beginning.",
@@ -835,9 +850,12 @@ export const blogs: BlogPost[] = [
   {
     title: "Key Questions to Ask During a Consultation",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/person-working-html-computer_23-2150038840.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/low-angle-view-people-working-table_1048944-14188327.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/premium-photo/young-colleagues-working-office_93826-530.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 5, day: 2, year: 2024 },
     excerpt:
       "A consultation with a designer or developer is an opportunity to assess their skills, approach, and understanding of your project. Asking questions about their past experience, design process, and how they handle revisions ensures that you find a good fit for your needs. This is also the time to clarify your goals, timelines, and budget to ensure that everyone is aligned on expectations before the project begins.",
@@ -929,9 +947,12 @@ export const blogs: BlogPost[] = [
   {
     title: "Web Design Explained: A Comprehensive Guide",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150061975.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/photo-editors-working-together-desk_13339-31727.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/premium-photo/casual-photo-editors-working-computers_13339-246531.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 11, day: 2, year: 2024 },
     excerpt:
       "Web design encompasses more than just aesthetics; it involves creating a seamless user experience and ensuring that your website is functional, responsive, and easy to navigate. It blends design principles with technical knowledge to craft interfaces that meet both the needs of users and the goals of a business. A well-designed website considers visual appeal, usability, performance, and accessibility, ensuring that visitors have a positive interaction.",
@@ -1054,9 +1075,12 @@ export const blogs: BlogPost[] = [
   {
     title: "Enhancing Website Success Through Exceptional User Experience",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-vector/linear-flat-ui-ux-landing-page-template_23-2149047070.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/free-vector/gradient-ui-ux-elements-background_23-2149056159.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/premium-photo/ux-ui-design-process-modish-mobile-application-website_31965-369282.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 1, day: 4, year: 2025 },
     excerpt:
       "User experience (UX) is a critical factor in the success of any website, as it directly impacts how users interact with and perceive a site. A well-designed UX focuses on creating intuitive, easy-to-navigate, and engaging experiences that meet user needs while achieving business goals. By prioritizing elements like speed, accessibility, and responsiveness, web designers can ensure that users stay engaged, return to the site, and ultimately convert, making UX a key driver of customer satisfaction and business success.",
@@ -3191,125 +3215,6 @@ export const blogs: BlogPost[] = [
     conclusions: [
       "Tailwind CSS is more than just a utility-first framework—it’s a game-changer in modern frontend development. By offering a highly flexible and scalable approach to styling, it allows developers to design quickly, maintain consistency, and reduce unnecessary CSS complexity. Unlike traditional frameworks that enforce pre-styled components, Tailwind’s customizable, utility-driven philosophy provides complete control over UI elements, making it ideal for projects of any scale.",
       "With mobile-first design, Just-In-Time (JIT) compilation, and seamless integration with frameworks like React, Vue, and Angular, Tailwind CSS enables developers to streamline their workflow and improve performance. The ability to customize themes, create reusable components, and optimize production builds ensures that your project remains lean, maintainable, and efficient. Whether you’re a beginner experimenting with frontend development or an experienced developer building complex web applications, Tailwind CSS offers a versatile, intuitive, and performance-focused approach to modern UI development. If you haven’t tried it yet, now is the perfect time to explore its powerful features and extensive documentation to enhance your workflow.",
-    ],
-  },
-  {
-    title:
-      "JavaScript Frameworks: What's Next for the Future of Web Development?",
-    author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
-    date: { month: 3, day: 23, year: 2022 },
-    excerpt:
-      "With the rapid evolution of JavaScript frameworks like React, Vue, and Angular, staying updated on the latest trends is crucial for developers aiming to build modern, efficient web applications. New features, best practices, and performance optimizations are constantly emerging, making continuous learning essential to leverage these frameworks effectively.",
-    featured: false,
-    topics: ["Development Tools", "Frameworks & Libraries"],
-    intro: [
-      "JavaScript frameworks have been at the heart of modern web development, enabling developers to build faster, more efficient, and highly interactive applications. As technology evolves, so do the frameworks that power the web, with emerging trends shaping the future of frontend and backend development. With frameworks like React, Vue, Angular, and Svelte continuously innovating, the focus is shifting towards performance optimization, server-side rendering (SSR), and developer-friendly tooling.",
-      "Meta-frameworks like Next.js and Nuxt.js are also gaining popularity, offering better SEO, scalability, and improved user experiences. Looking ahead, we can expect lighter, faster, and more modular frameworks that emphasize static site generation (SSG), edge computing, and AI-powered development tools. As JavaScript frameworks continue to evolve, developers must stay adaptable and embrace new advancements to build the next generation of dynamic, scalable web applications.",
-    ],
-    list: [
-      {
-        title: "Why JavaScript Frameworks Matter",
-        list: [
-          {
-            list: [
-              {
-                description:
-                  "With the rapid evolution of JavaScript frameworks like React, Vue, and Angular, staying ahead of the curve is crucial for developers. As the web development landscape continues to grow and adapt to new technologies, the future of JavaScript frameworks promises exciting opportunities and challenges. This article explores emerging trends and what they mean for developers and businesses.",
-              },
-              {
-                description:
-                  "JavaScript frameworks have been at the forefront of modern web development for years. They streamline the process of building complex applications, enhance performance, and provide developers with the tools needed to create rich user experiences. Frameworks like React, Vue, Angular, and Svelte have empowered developers to build scalable, maintainable, and efficient web applications.",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Emerging Trends in JavaScript Frameworks",
-        list: [
-          {
-            title:
-              "Rise of Server-Side Rendering (SSR) and Static Site Generation (SSG)",
-            description:
-              "Frameworks like Next.js and Nuxt.js are bridging the gap between server-side rendering and client-side applications, improving page load speed, SEO, and user experience by pre-rendering pages. SSR and SSG improve web performance and search engine optimization (SEO), which is becoming crucial for modern web applications as users expect faster loading times and improved accessibility. With the growing demand for performance-driven websites, these techniques have gained significant traction in both static and dynamic content delivery.",
-          },
-          {
-            title: "TypeScript Adoption",
-            description:
-              "TypeScript’s popularity has led to better TypeScript support in frameworks, enhancing code quality and error detection during development. By offering strong typing, TypeScript helps developers catch errors early in the development process, leading to more reliable and maintainable codebases. As projects scale, TypeScript’s static type checking becomes indispensable, enabling better tooling, improved refactoring support, and reduced runtime errors. This trend reflects the growing importance of developer tooling and long-term maintainability in complex web applications.",
-          },
-          {
-            title: "Micro-Frontend Architecture",
-            description:
-              "Micro-frontends enable modular, independently deployable parts of the application, ensuring better scalability and team collaboration. This architecture allows for breaking down large, monolithic applications into smaller, manageable units that can be developed, deployed, and scaled independently. Teams can choose different frameworks for different parts of the application, leading to flexibility and faster development cycles. Micro-frontends are especially beneficial in large organizations with distributed teams working on different application sections, enabling autonomy and better coordination.",
-          },
-          {
-            title: "Focus on Performance",
-            description:
-              "Frameworks like Svelte and Solid.js are gaining traction due to their emphasis on performance, compiling components into optimized JavaScript code for speed. These frameworks prioritize minimal runtime and high-speed rendering by shifting much of the work to compile time. By doing so, they create applications that are faster, with smaller bundle sizes and better performance, even on mobile devices. As user expectations for fast and responsive web applications grow, performance optimization has become a crucial factor in selecting the right framework for new projects.",
-          },
-          {
-            title: "Framework Interoperability",
-            description:
-              "Tools like Astro enable developers to use multiple frameworks within a single project, providing flexibility and leveraging each framework’s strengths. Astro allows developers to combine React, Vue, Svelte, and other frameworks in one application, making it easier to integrate the best features of each framework without being locked into one ecosystem. This interoperability empowers developers to use the most suitable tools for each part of the application, increasing productivity and providing solutions for legacy code integration while maintaining the ability to adopt newer frameworks seamlessly.",
-          },
-          {
-            title: "AI and Automation",
-            description:
-              "The integration of AI-driven features into frameworks for code generation, debugging, and optimization is becoming a game-changer in development workflows. With AI tools like GitHub Copilot and automated testing frameworks, developers can increase productivity by automating repetitive tasks such as code completion, bug fixes, and even code reviews. This trend is making the development process faster and more efficient, reducing the time developers spend on mundane tasks, and allowing them to focus more on problem-solving and innovative features. As AI continues to evolve, its applications in the software development lifecycle will only grow.",
-          },
-        ],
-      },
-      {
-        title: "What’s Next for Developers?",
-        list: [
-          {
-            title: "Embracing Framework Agnosticism",
-            description:
-              "Developers need to be familiar with multiple frameworks and know when to use each. Being versatile will be essential in the future. Framework agnosticism encourages developers to focus on core principles like logic, performance, and maintainability, rather than getting tied to a particular framework. This approach ensures that developers can adapt to any situation and make informed decisions based on project requirements rather than relying solely on their expertise with one framework. As new frameworks emerge, versatility will allow developers to stay relevant in the fast-evolving tech landscape.",
-          },
-          {
-            title: "Prioritizing User Experience",
-            description:
-              "Frameworks will continue to focus on features like faster load times, better accessibility, and intuitive designs to enhance user experience. User experience (UX) remains a top priority, and frameworks are evolving to make it easier for developers to create seamless, interactive, and engaging interfaces. In addition to speed and accessibility, frameworks are also improving their support for mobile-first and responsive designs, ensuring that users have an optimized experience across all devices. As competition for user attention increases, frameworks will increasingly prioritize UX features that make applications feel fast, intuitive, and user-friendly.",
-          },
-          {
-            title: "Learning Beyond JavaScript",
-            description:
-              "Understanding adjacent technologies like WebAssembly (WASM) and API-driven architectures will be crucial for creating innovative applications. WebAssembly allows code written in multiple languages (such as C, C++, and Rust) to run on the web, opening up possibilities for high-performance web applications. Moreover, learning API-first architectures and GraphQL will be key for building modern, scalable systems. As applications become more interconnected and data-driven, knowledge of these adjacent technologies will give developers an edge in building faster, more secure, and scalable applications.",
-          },
-        ],
-      },
-      {
-        title: "How to Prepare for the Future",
-        list: [
-          {
-            title: "Stay Updated",
-            description:
-              "Follow the latest releases and announcements from popular frameworks to stay ahead of the curve. As JavaScript frameworks are evolving rapidly, keeping up with the latest updates, best practices, and new features is crucial for developers who want to stay competitive. Subscribing to newsletters, following relevant blogs, attending conferences, and participating in online communities are excellent ways to stay informed and learn about the newest trends in the JavaScript ecosystem.",
-          },
-          {
-            title: "Invest in Learning",
-            description:
-              "Explore new frameworks like Solid.js, Svelte, or Astro to stay ahead of the curve. Investing time in learning new and emerging frameworks not only broadens your skill set but also allows you to experiment with cutting-edge technologies that could provide a performance boost or enhance the development process. These frameworks prioritize performance, scalability, and ease of use, and gaining hands-on experience with them will ensure that you remain at the forefront of JavaScript development.",
-          },
-          {
-            title: "Collaborate with Communities",
-            description:
-              "Join developer communities to share insights and learn from others’ experiences. The power of open-source communities cannot be overstated. Participating in community-driven projects, attending meetups, and contributing to discussions not only helps you learn from others but also positions you as a valuable contributor in the ecosystem. Communities foster collaboration, knowledge sharing, and support, which are key to staying ahead in the ever-evolving world of JavaScript frameworks.",
-          },
-        ],
-      },
-    ],
-    conclusions: [
-      "The future of JavaScript frameworks is dynamic, with ongoing improvements in performance, scalability, and user experience. As server-side rendering, static site generation, and micro-frontends evolve, web applications are becoming faster and more flexible.",
-      "Modern frameworks prioritize performance and usability, with tools like Svelte and Solid.js offering minimal runtime overhead for responsive applications. Many now support TypeScript, component-level optimizations, and hybrid architectures.",
-      "While these advancements bring benefits, developers must stay updated on trends, tools, and best practices to choose the right framework for each project. Adaptability and continuous learning will be essential to staying competitive.",
-      "The rise of AI and automation will further streamline development, with tools like GitHub Copilot and AI-driven code generation enhancing productivity. Developers must integrate these technologies into their workflows to maintain efficiency and quality.",
-      "In conclusion, JavaScript frameworks will continue to drive web development innovation. Success depends on staying informed, embracing new technologies, and adapting to an evolving landscape to create smarter, faster, and more impactful applications.",
     ],
   },
   {
@@ -6392,7 +6297,8 @@ export const blogs: BlogPost[] = [
   {
     title: "Charting the Future: Key Emerging Tech Trends to Watch",
     author: "Tina Huynh",
-    cardImage: "",
+    cardImage:
+      "https://img.freepik.com/premium-photo/double-exposure-man-woman-working-together-technology-theme-drawing-hologram-big-data-concept-computer-background_700248-49111.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     imageUrl: "",
     image2Url: "",
     date: { month: 11, day: 20, year: 2024 },
@@ -8360,7 +8266,8 @@ export const blogs: BlogPost[] = [
     title: "UX vs UI Design: Unpacking Their Key Differences and Roles",
     author: "Tina Huynh",
     cardImage: "",
-    imageUrl: "",
+    imageUrl:
+      "https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150038907.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     image2Url: "",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
