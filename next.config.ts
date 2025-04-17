@@ -4,10 +4,9 @@ const imageHosts = [
   "tailwindcss.com",
   "images.unsplash.com",
   "plus.unsplash.com",
-  "media.istockphoto.com",
-  "www.shutterstock.com",
-  "cdn.sanity.io",
   "placehold.co",
+  "img.freepik.com",
+  "docs.material-tailwind.com",
 ];
 
 const nextConfig: NextConfig = {
