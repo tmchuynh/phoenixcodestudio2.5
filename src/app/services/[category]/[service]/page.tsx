@@ -6,7 +6,7 @@ import LoadingIndicator from "@/components/states/loading/Loading";
 import CannotFind from "@/components/states/not-found/CannotFind";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SubItem } from "@/lib/interfaces/services";
-import { capitalize } from "@/lib/utils";
+import { capitalize } from "@/lib/utils/format";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 

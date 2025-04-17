@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 import { subServiceDetails } from "@/lib/constants/services/subServices";
 import { Category } from "@/lib/interfaces/services";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { capitalize, generateSlug } from "@/lib/utils";
+import { generateSlug, capitalize } from "@/lib/utils/format";
 import { useTheme } from "next-themes";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
