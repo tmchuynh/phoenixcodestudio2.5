@@ -30,7 +30,7 @@ export default function ResponsiveLogo({ className }: { className?: string }) {
       ) : (
         <Image
           alt="PCS Logo"
-          src="/images/logo.png"
+          src="/images/logo_circle.png"
           className="w-auto h-40 xl:h-52 object-contain"
           priority={true}
           width={3600}
