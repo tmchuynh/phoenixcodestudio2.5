@@ -1,14 +1,30 @@
-import Timeline from "@/components/Timeline";
-import { originTimeline } from "@/lib/constants/constants";
 import Image from "next/image";
 
 export default function IntroductionImage() {
   return (
-    <div className="py-24 sm:py-32">
-      <div className="mx-auto px-6 lg:px-8">
+    <div className="">
+      <section className="md:block relative -z-10 hidden overflow-hidden">
+        <div className="mx-auto px-6 lg:px-8">
+          <Image
+            alt=""
+            src="https://img.freepik.com/premium-photo/fiery-phoenix-with-outstretched-wings-against-black-background_14117-690436.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+            className="shadow-2xl mb-[-12%] rounded-xl ring-1 ring-gray-900/10"
+            width={2432}
+            height={1442}
+          />
+          <div aria-hidden="true" className="relative">
+            <div className="bottom-0 absolute -inset-x-30 bg-linear-to-t from-background pt-[37%]" />
+          </div>
+        </div>
+      </section>
+      <div className="z-20 mx-auto md:-mt-16 lg:-mt-36 xl:-mt-26 px-6 lg:px-8 md:w-11/12">
         <div className="mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
-          <h4>A Dream That Stirred in Silence Before It Echoed</h4>
-          <h1>The Path We Took Before the World Heard Us</h1>
+          <h4 className="lg:text-white xl:text-secondary">
+            A Dream That Stirred in Silence Before It Echoed
+          </h4>
+          <h1 className="md:w-4/5">
+            The Path We Took Before the World Heard Us
+          </h1>
           <div className="gap-8 grid grid-cols-1 lg:grid-cols-2 mt-10 max-w-xl lg:max-w-none text-base/7">
             <div>
               <p>
@@ -91,22 +107,6 @@ export default function IntroductionImage() {
           </div>
         </div>
       </div>
-      <Timeline items={originTimeline} orientation="horizontal" />
-
-      <section className="relative pt-16 lg:pt-20 overflow-hidden">
-        <div className="mx-auto px-6 lg:px-8 max-w-7xl">
-          <Image
-            alt=""
-            src="https://img.freepik.com/premium-photo/fiery-phoenix-with-outstretched-wings-against-black-background_14117-690436.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-            className="shadow-2xl mb-[-12%] rounded-xl ring-1 ring-gray-900/10"
-            width={2432}
-            height={1442}
-          />
-          <div aria-hidden="true" className="relative">
-            <div className="bottom-0 absolute -inset-x-30 bg-linear-to-t from-background pt-[37%]" />
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
