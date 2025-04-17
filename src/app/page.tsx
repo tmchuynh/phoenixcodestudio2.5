@@ -14,9 +14,9 @@ import {
 } from "@/components/ui/carousel";
 import { blogs } from "@/lib/constants/blog-posts";
 import { pastProjects } from "@/lib/constants/projects";
-import { Project } from "@/lib/interfaces";
 import { BlogPost } from "@/lib/interfaces/blogs";
-import { featuredArray } from "@/lib/utils";
+import { Project } from "@/lib/interfaces/projects";
+import { featuredArray } from "@/lib/utils/sort";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
