@@ -2,11 +2,15 @@
 
 import IntroductionImage from "@/components/headers/page_headers/IntroductionImage";
 import DividerImage from "@/components/page_spliter/DividerImage";
+import Timeline from "@/components/Timeline";
+import { originTimeline } from "@/lib/constants/constants";
 
 export default function OurOriginStoryPage() {
   return (
     <div className="mx-auto py-10 md:py-16 lg:py-24 pt-3 md:pt-5 lg:pt-9 w-11/12">
       <IntroductionImage />
+      <Timeline items={originTimeline} orientation="horizontal" />
+
       <div className="mx-auto w-11/12">
         <h1>It Takes an Ocean to Make Waves</h1>
         <DividerImage
