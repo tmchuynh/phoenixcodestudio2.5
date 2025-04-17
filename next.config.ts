@@ -7,6 +7,7 @@ const imageHosts = [
   "placehold.co",
   "img.freepik.com",
   "docs.material-tailwind.com",
+  "media.istockphoto.com",
 ];
 
 const nextConfig: NextConfig = {

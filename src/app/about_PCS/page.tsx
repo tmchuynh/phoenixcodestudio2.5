@@ -1,6 +1,7 @@
 import DynamicButton from "@/components/button/button-dynamic";
 import FeaturedOverlappingTestimonial from "@/components/cards/testimonial/Overlapping_Image";
 import ThreeColumns from "@/components/headers/page_headers/ThreeColumns";
+import { MasonryGridGallery } from "@/components/images/MasonryGridGallery";
 import { testimonials } from "@/lib/constants/testimonials";
 
 export default function OurAspirationsPage() {
@@ -58,6 +59,8 @@ export default function OurAspirationsPage() {
       </DynamicButton>
 
       <FeaturedOverlappingTestimonial testimonial={testimonials[4]} />
+
+      <MasonryGridGallery />
     </div>
   );
 }
