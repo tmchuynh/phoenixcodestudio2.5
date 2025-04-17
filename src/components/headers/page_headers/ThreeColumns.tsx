@@ -3,7 +3,7 @@ import { motivationalDrive } from "@/lib/constants/constants";
 export default function ThreeColumns() {
   return (
     <div className="pt-24 md:pt-32">
-      <div className="">
+      <div>
         <h4>From Humble Beginnings to Bold Aspirations</h4>
         <h1>Before We Made Waves, We Focused on Our Core</h1>
         <p>

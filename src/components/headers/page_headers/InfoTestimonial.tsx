@@ -46,7 +46,7 @@ export default function InfoTestimonial() {
             <figcaption className="flex gap-x-4 mt-8">
               <div className="text-sm/6">
                 <div className="font-semibold"> {testimonials[2].name}</div>
-                <div className=""> {testimonials[2].position}</div>
+                <div> {testimonials[2].position}</div>
               </div>
             </figcaption>
           </figure>

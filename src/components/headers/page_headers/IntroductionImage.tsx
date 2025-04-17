@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function IntroductionImage() {
   return (
-    <div className="">
+    <div>
       <section className="md:block relative -z-10 hidden overflow-hidden">
         <div className="mx-auto px-6 lg:px-8">
           <Image

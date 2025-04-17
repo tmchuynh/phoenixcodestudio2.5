@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function LetsWorkTogether() {
   return (
-    <div className="">
+    <div>
       <div className="mx-auto py-24 sm:py-32 max-w-7xl">
         <div className="mx-auto px-4 lg:max-w-none">
           <div className="items-center gap-x-16 gap-y-10 grid grid-cols-1 lg:grid-cols-2">
@@ -168,7 +168,7 @@ export default function LetsWorkTogether() {
               <figcaption className="flex gap-x-4 mt-8">
                 <div className="text-sm/6">
                   <div className="font-semibold"> {testimonials[3].name}</div>
-                  <div className=""> {testimonials[3].position}</div>
+                  <div> {testimonials[3].position}</div>
                 </div>
               </figcaption>
             </figure>

@@ -141,7 +141,7 @@ export default function HowWeCanHelpYou() {
         </section>
 
         <section className="gap-8 lg:gap-12 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 md:mb-12 lg:mb-24 2xl:mb-32 py-3 md:py-7 2xl:py-12">
-          <div className="">
+          <div>
             <h3>Custom Website Development</h3>
             <p>
               Your website is the cornerstone of your digital presence. At
@@ -172,7 +172,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="">
+          <div>
             <h3>Authentic Brand Storytelling</h3>
             <p>
               We craft compelling brand narratives that authentically define
@@ -195,7 +195,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="">
+          <div>
             <h3>High-Performance Single-Page Applications (SPAs)</h3>
             <p>
               We specialize in building fast, dynamic, and highly responsive
@@ -213,7 +213,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="">
+          <div>
             <h3>E-Commerce Solutions</h3>
             <p>
               We design scalable, secure, and user-friendly e-commerce platforms
@@ -235,7 +235,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="">
+          <div>
             <h3>Rebranding Services</h3>
             <p>
               Transform your brand with a fresh, modern identity that connects
@@ -254,7 +254,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="">
+          <div>
             <h3>User-Centered Interface Design</h3>
             <p>
               We design intuitive, functional interfaces that balance usability,
@@ -277,7 +277,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="">
+          <div>
             <h3>SEO-Optimized Blog Content</h3>
             <p>
               We create compelling, informative blog posts that enhance your
@@ -299,7 +299,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="">
+          <div>
             <h3>Optimized & Secure Database Management</h3>
             <p>
               Our database management services provide secure, scalable, and
@@ -319,7 +319,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="">
+          <div>
             <h3>Wireframing & Prototyping Services</h3>
             <p>
               Our wireframing and prototyping services turn your concepts into
