@@ -1,45 +1,4 @@
-const features = [
-  {
-    name: "Creativity & Innovation",
-    description:
-      "We combine cutting-edge technology with imaginative thinking to create original, high-performing digital solutions. We stay ahead of trends and break creative barriers to bring visions to life in ways that captivate, engage, and inspire.",
-  },
-  {
-    name: "Adaptability & Growth",
-    description:
-      "The digital world moves fast, and so do we. We welcome change, embrace new technologies, and evolve our strategies to deliver forward-thinking, scalable, and future-proof solutions in a dynamic online landscape.",
-  },
-  {
-    name: "Authenticity",
-    description:
-      "We believe your brand should be as unique online as it is in person. That’s why we design genuine, meaningful experiences that reflect your voice, values, and identity—creating stronger, more personal connections with your audience.",
-  },
-  {
-    name: "Excellence",
-    description:
-      "We hold ourselves to the highest standards in every line of code, every design choice, and every user journey. Our commitment to quality, precision, and performance ensures that what we build doesn’t just look good—it works brilliantly.",
-  },
-  {
-    name: "Empowerment",
-    description:
-      "We're here to uplift and enable small businesses, equipping them with tools, guidance, and insights to navigate and thrive in a competitive digital space. Your success is our success—and we’re in it with you.",
-  },
-  {
-    name: "Collaboration & Communication",
-    description:
-      "We work with you, not for you. Through open dialogue, active listening, and a transparent process, we ensure your goals, vision, and feedback are embedded in every stage—delivering results that are truly aligned and deeply impactful.",
-  },
-  {
-    name: "Community Impact",
-    description:
-      "We believe that great digital solutions can foster real-world growth. Our work supports not just businesses, but the communities they serve. We create with purpose, aiming to uplift, strengthen, and inspire positive change through every project.",
-  },
-  {
-    name: "Sustainability",
-    description:
-      "We build solutions that last—technically, strategically, and ethically. By prioritizing sustainable, scalable digital practices, we ensure your online presence can grow and evolve with your business, today and far into the future.",
-  },
-];
+import { motivationalDrive } from "@/lib/constants/constants";
 
 export default function ThreeColumns() {
   return (
@@ -79,7 +38,7 @@ export default function ThreeColumns() {
       <div className="mt-6">
         <h2>What Drives Us Forward</h2>
         <div className="gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature, index) => (
+          {motivationalDrive.map((feature, index) => (
             <div key={index} className="py-3">
               <h3>{feature.name}</h3>
               <p>{feature.description}</p>

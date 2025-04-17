@@ -30,7 +30,7 @@ export default function OffsetImage() {
         </div>
         <Image
           alt=""
-          src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
+          src="https://img.freepik.com/premium-photo/midsection-person-holding-paper-with-text_1048944-7738719.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
           className="xl:row-span-2 xl:row-end-2 mt-10 sm:mt-16 lg:mt-0 xl:mt-36 rounded-2xl w-full max-w-lg lg:max-w-none aspect-6/5 object-cover"
           width={2432}
           height={1442}

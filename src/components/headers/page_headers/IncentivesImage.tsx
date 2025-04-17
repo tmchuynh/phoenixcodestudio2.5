@@ -31,7 +31,7 @@ export default function IncentivesImage() {
           </div>
           <Image
             alt=""
-            src="https://tailwindcss.com/plus-assets/img/ecommerce-images/incentives-07-hero.jpg"
+            src="https://img.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_53876-167088.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
             className="rounded-lg w-full aspect-3/2 object-cover"
             width={400}
             height={300}

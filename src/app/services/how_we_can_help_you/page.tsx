@@ -1,42 +1,147 @@
 import InfoTestimonial from "@/components/headers/page_headers/InfoTestimonial";
 
+import Image from "next/image";
+
 export default function HowWeCanHelpYou() {
   return (
     <main className="mx-auto pt-12 md:pt-10 lg:pt-16 w-11/12">
       <InfoTestimonial />
       <div className="mx-auto px-4 lg:max-w-none">
-        <h4>
-          Your First Step Is the Hardest—We Help You Take It with Confidence
-        </h4>
-        <h2>Tailored Digital Solutions, Built for You</h2>
-        <p>
-          At Phoenix Code Studio, we understand that no two brands walk the same
-          path. Your business has its own voice, values, and challenges—and we
-          believe your digital presence should reflect that. That’s why we don’t
-          settle for cookie-cutter solutions. Instead, we craft fully
-          customized, industry-specific digital experiences that align with your
-          vision and empower your growth.
-        </p>
-        <p>
-          We know that meaningful progress starts with understanding. From our
-          very first discovery call to your final launch (and beyond), we’re
-          more than just developers—we’re your strategic partners. Our process
-          is deeply collaborative, fueled by purpose, and grounded in a belief
-          that success comes from listening, learning, and leading together.
-          Every step of the way, we’re invested in your journey, ensuring that
-          your goals are met with clarity, creativity, and confidence.
-        </p>
-        <p>
-          At Phoenix Code Studio, we design, build, and scale with intention.
-          Every decision we make is guided by your users, your objectives, and
-          your long-term success. Whether you’re launching a brand-new product,
-          refining an existing platform, or reimagining your digital strategy,
-          we’re here to help you take that first step—and every step after—with
-          confidence and purpose.
-        </p>
+        <section className="gap-3 lg:gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 py-3 lg:py-4 2xl:py-9">
+          <div className="flex justify-center items-center space-x-6 lg:space-x-8 lg:col-span-2 md:w-full md:h-96 lg:h-full overflow-hidden">
+            <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
+              <div className="sm:opacity-0 xl:opacity-100 rounded-lg w-44 h-32 overflow-hidden">
+                <Image
+                  alt=""
+                  src="https://img.freepik.com/premium-photo/beauty-asian-businesswoman-raising-two-hands-after-finishing-her-job-happily-with-computer-people-lifestyles-concept-technology-business-working-theme_625516-4823.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="size-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+              <div className="rounded-lg w-44 h-72 overflow-hidden">
+                <Image
+                  alt=""
+                  src="https://img.freepik.com/free-photo/successful-businessman-casual-celebrating-his-victory-raising-arms_1163-3989.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="size-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+              <div className="sm:opacity-0 xl:opacity-100 rounded-lg w-44 h-42 overflow-hidden">
+                <Image
+                  alt=""
+                  src="https://img.freepik.com/premium-photo/silhouette-successful-businessman-man-looks-victory-celebrates-victory-holds-his-hands-up-rejoices_321831-8054.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="size-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+            </div>
+            <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
+              <div className="sm:opacity-0 lg:opacity-100 rounded-lg w-44 h-52 overflow-hidden">
+                <Image
+                  alt=""
+                  src="https://img.freepik.com/free-photo/stressed-businesswoman-checking-profit-resultes-standing-business-office_482257-6514.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="size-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+              <div className="rounded-lg w-44 h-56 overflow-hidden">
+                <Image
+                  alt=""
+                  src="https://img.freepik.com/free-photo/full-shot-blonde-girl-raising-her-hand_23-2148348975.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="size-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+              <div className="rounded-lg w-44 h-64 overflow-hidden">
+                <Image
+                  alt=""
+                  src="https://img.freepik.com/free-photo/happy-african-american-businessman-suit-looking-laptop-excited-by-good-news-online-black-man-winner-sitting-office-desk-achieved-goal-raising-hands-celebrating-business-success-win-result_231208-673.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="size-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+            </div>
+            <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
+              <div className="rounded-lg w-44 h-64 overflow-hidden">
+                <Image
+                  alt=""
+                  src="https://img.freepik.com/free-photo/business-woman-with-laptop-hand-is-happy-with-success-portrait-woman-glasses-striped-blouse-enthusiastically-screaming-making-winning-gesture_197531-13438.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="size-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+              <div className="rounded-lg w-44 h-54 overflow-hidden">
+                <Image
+                  alt=""
+                  src="https://img.freepik.com/premium-photo/portrait-cheerful-businessman-celebrating-his-success_709984-5423.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="size-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+            </div>
+            <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
+              <div className="rounded-lg w-44 h-96 overflow-hidden">
+                <Image
+                  alt=""
+                  src="https://img.freepik.com/free-photo/workers-high-five-close-up_23-2149008887.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="size-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+            </div>
+          </div>
 
-        <section className="gap-x-8 gap-y-10 grid grid-cols-1 lg:grid-cols-2 mt-16">
-          <div className="py-3 md:py-5 lg:py-9">
+          <div className="flex flex-col md:justify-around lg:col-span-3 md:my-24">
+            <div>
+              <h4>
+                Your First Step Is the Hardest—We Help You Take It with
+                Confidence
+              </h4>
+              <h2>Tailored Digital Solutions, Built for You</h2>
+            </div>
+            <div>
+              <p>
+                At Phoenix Code Studio, we understand that no two brands walk
+                the same path. Your business has its own voice, values, and
+                challenges—and we believe your digital presence should reflect
+                that. That’s why we don’t settle for cookie-cutter solutions.
+                Instead, we craft fully customized, industry-specific digital
+                experiences that align with your vision and empower your growth.
+              </p>
+              <p>
+                We know that meaningful progress starts with understanding. From
+                our very first discovery call to your final launch (and beyond),
+                we’re more than just developers—we’re your strategic partners.
+                Our process is deeply collaborative, fueled by purpose, and
+                grounded in a belief that success comes from listening,
+                learning, and leading together. Every step of the way, we’re
+                invested in your journey, ensuring that your goals are met with
+                clarity, creativity, and confidence.
+              </p>
+              <p>
+                At Phoenix Code Studio, we design, build, and scale with
+                intention. Every decision we make is guided by your users, your
+                objectives, and your long-term success. Whether you’re launching
+                a brand-new product, refining an existing platform, or
+                reimagining your digital strategy, we’re here to help you take
+                that first step—and every step after—with confidence and
+                purpose.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="gap-8 lg:gap-12 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 md:mb-12 lg:mb-24 2xl:mb-32 py-3 md:py-7 2xl:py-12">
+          <div className="">
             <h3>Custom Website Development</h3>
             <p>
               Your website is the cornerstone of your digital presence. At
@@ -67,7 +172,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="py-3 md:py-5 lg:py-9">
+          <div className="">
             <h3>Authentic Brand Storytelling</h3>
             <p>
               We craft compelling brand narratives that authentically define
@@ -90,7 +195,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="py-3 md:py-5 lg:py-9">
+          <div className="">
             <h3>High-Performance Single-Page Applications (SPAs)</h3>
             <p>
               We specialize in building fast, dynamic, and highly responsive
@@ -108,7 +213,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="py-3 md:py-5 lg:py-9">
+          <div className="">
             <h3>E-Commerce Solutions</h3>
             <p>
               We design scalable, secure, and user-friendly e-commerce platforms
@@ -130,7 +235,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="py-3 md:py-5 lg:py-9">
+          <div className="">
             <h3>Rebranding Services</h3>
             <p>
               Transform your brand with a fresh, modern identity that connects
@@ -149,7 +254,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="py-3 md:py-5 lg:py-9">
+          <div className="">
             <h3>User-Centered Interface Design</h3>
             <p>
               We design intuitive, functional interfaces that balance usability,
@@ -172,7 +277,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="py-3 md:py-5 lg:py-9">
+          <div className="">
             <h3>SEO-Optimized Blog Content</h3>
             <p>
               We create compelling, informative blog posts that enhance your
@@ -194,7 +299,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="py-3 md:py-5 lg:py-9">
+          <div className="">
             <h3>Optimized & Secure Database Management</h3>
             <p>
               Our database management services provide secure, scalable, and
@@ -214,7 +319,7 @@ export default function HowWeCanHelpYou() {
             </ul>
           </div>
 
-          <div className="py-3 md:py-5 lg:py-9">
+          <div className="">
             <h3>Wireframing & Prototyping Services</h3>
             <p>
               Our wireframing and prototyping services turn your concepts into
