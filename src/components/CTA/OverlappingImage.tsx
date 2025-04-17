@@ -11,12 +11,12 @@ export default function OverlappingImage() {
       <div className="lg:bg-transparent mx-auto lg:px-8 max-w-7xl">
         <div className="lg:grid lg:grid-cols-12">
           <div className="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
-            <div className="mx-auto px-6 lg:p-0 max-w-md sm:max-w-3xl lg:max-w-none">
+            <div className="mx-auto px-6 lg:p-0 max-w-5xl md:max-w-4xl lg:max-w-none h-full">
               <Image
                 alt=""
-                src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
-                className="relative shadow-2xl rounded-3xl w-full aspect-10/6 object-cover sm:aspect-2/1 lg:aspect-square"
-                width={934}
+                src="https://img.freepik.com/premium-photo/rear-view-businessman-powerfull-business-concept_1077205-985.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="relative shadow-2xl rounded-3xl w-full h-full object-cover"
+                width={1200}
                 height={600}
               />
             </div>
@@ -94,7 +94,7 @@ export default function OverlappingImage() {
                 />
               </svg>
             </div>
-            <div className="relative space-y-6 lg:col-span-6 lg:col-start-4 mx-auto px-6 py-12 sm:py-16 lg:p-0 max-w-md sm:max-w-3xl lg:max-w-none">
+            <div className="relative space-y-6 lg:col-span-6 lg:col-start-4 mx-auto px-6 py-12 md:py-18 p-0 max-w-md md:max-w-3xl lg:max-w-none">
               <h1>Bring Your Vision to Life</h1>
               <p>
                 Whether you’re starting fresh, redefining your brand, or scaling

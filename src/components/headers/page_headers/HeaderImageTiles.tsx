@@ -36,8 +36,8 @@ export default function HeaderImageTiles() {
             <div className="flex-auto lg:flex-none lg:ml-auto w-0 lg:w-auto lg:self-end">
               <Image
                 alt=""
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVldGluZ3xlbnwwfHwwfHx8MA%3D%3D"
-                className="rounded-2xl w-[37rem] max-w-none aspect-7/5 object-cover"
+                src="https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169847.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="object-bottom rounded-2xl w-[37rem] max-w-none aspect-7/5 object-cover"
                 width={400}
                 height={300}
               />
@@ -46,7 +46,7 @@ export default function HeaderImageTiles() {
               <div className="flex flex-none justify-end order-first w-64 lg:w-auto self-end">
                 <Image
                   alt=""
-                  src="https://plus.unsplash.com/premium_photo-1661503228332-03778ab6d6a1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWVldGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                  src="https://img.freepik.com/free-photo/man-using-digital-tablet-holding-stylus-pen-working-office_169016-47360.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                   className="flex-none rounded-2xl w-[24rem] max-w-none aspect-4/3 object-cover"
                   width={400}
                   height={300}
@@ -55,7 +55,7 @@ export default function HeaderImageTiles() {
               <div className="flex flex-auto lg:flex-none justify-end w-96 lg:w-auto">
                 <Image
                   alt=""
-                  src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lZXRpbmd8ZW58MHx8MHx8fDA%3D"
+                  src="https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169834.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                   className="flex-none rounded-2xl w-[37rem] max-w-none aspect-7/5 object-cover"
                   width={400}
                   height={300}
@@ -64,8 +64,8 @@ export default function HeaderImageTiles() {
               <div className="sm:block sm:flex-auto lg:flex-none hidden sm:w-0 lg:w-auto">
                 <Image
                   alt=""
-                  src="https://plus.unsplash.com/premium_photo-1668383207188-f5474588d674?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fG1lZXRpbmd8ZW58MHx8MHx8fDA%3D"
-                  className="rounded-2xl w-[24rem] max-w-none aspect-4/3 object-cover"
+                  src="https://img.freepik.com/free-photo/customer-relationship-management-concept_23-2150038411.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                  className="object-top rounded-2xl w-[24rem] max-w-none aspect-4/3 object-cover"
                   width={400}
                   height={300}
                 />

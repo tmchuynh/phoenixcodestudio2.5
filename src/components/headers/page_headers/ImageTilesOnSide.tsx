@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function ImageTilesOnSide() {
   return (
-    <div className="flex flex-col-reverse items-center gap-5 lg:grid grid-cols-5 mx-auto md:w-11/12 h-full lg:h-11/12 overflow-hidden">
+    <div className="flex flex-col-reverse items-center gap-5 lg:gap-9 lg:grid grid-cols-5 mx-auto py-3 md:py-5 lg:py-7 2xl:py-12 md:w-11/12 h-full lg:h-11/12 overflow-hidden">
       <div className="flex justify-center items-center space-x-6 lg:space-x-8 lg:col-span-3 md:w-full md:h-96 lg:h-full overflow-hidden">
         <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
           <div className="sm:opacity-0 xl:opacity-100 rounded-lg w-44 h-32 overflow-hidden">
             <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+              src="https://img.freepik.com/premium-photo/businessman-using-computer-document-management-concept-online-documentation-database-digital-file-storage-system-software-records-keeping-database-technology-file-access-doc-sharing_562859-4343.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="size-full object-cover"
               width={400}
               height={300}
@@ -17,7 +17,7 @@ export default function ImageTilesOnSide() {
           <div className="rounded-lg w-44 h-72 overflow-hidden">
             <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
+              src="https://img.freepik.com/free-photo/marketing-strategy-planning-strategy-concept_53876-42950.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="size-full object-cover"
               width={400}
               height={300}
@@ -26,7 +26,7 @@ export default function ImageTilesOnSide() {
           <div className="sm:opacity-0 xl:opacity-100 rounded-lg w-44 h-42 overflow-hidden">
             <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+              src="https://img.freepik.com/premium-photo/html-system-websites-concept_23-2150323528.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="size-full object-cover"
               width={400}
               height={300}
@@ -37,8 +37,8 @@ export default function ImageTilesOnSide() {
           <div className="sm:opacity-0 lg:opacity-100 rounded-lg w-44 h-52 overflow-hidden">
             <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
-              className="size-full object-cover"
+              src="https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150104516.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+              className="object-right size-full object-cover"
               width={400}
               height={300}
             />
@@ -46,7 +46,7 @@ export default function ImageTilesOnSide() {
           <div className="rounded-lg w-44 h-56 overflow-hidden">
             <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+              src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062004.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="size-full object-cover"
               width={400}
               height={300}
@@ -55,7 +55,7 @@ export default function ImageTilesOnSide() {
           <div className="rounded-lg w-44 h-64 overflow-hidden">
             <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+              src="https://img.freepik.com/premium-photo/businesswoman-working-project_53876-130420.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="size-full object-cover"
               width={400}
               height={300}
@@ -66,7 +66,7 @@ export default function ImageTilesOnSide() {
           <div className="rounded-lg w-44 h-64 overflow-hidden">
             <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+              src="https://img.freepik.com/premium-photo/medium-shot-woman-working-laptop_23-2150323516.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="size-full object-cover"
               width={400}
               height={300}
@@ -75,7 +75,7 @@ export default function ImageTilesOnSide() {
           <div className="rounded-lg w-44 h-54 overflow-hidden">
             <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+              src="https://img.freepik.com/free-photo/high-angle-hands-holding-paper_23-2149930962.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="size-full object-cover"
               width={400}
               height={300}
@@ -86,8 +86,8 @@ export default function ImageTilesOnSide() {
           <div className="rounded-lg w-44 h-96 overflow-hidden">
             <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
-              className="size-full object-cover"
+              src="https://img.freepik.com/premium-photo/document-management-system-dms-online-documentation-database-process-automation-efficiently-manage-files-knowledge-documentation-enterprise-with-erp-corporate-business-technology_265022-7253.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+              className="object-left size-full object-cover"
               width={400}
               height={300}
             />
