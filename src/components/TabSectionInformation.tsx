@@ -7,15 +7,18 @@ import { useState } from "react";
 // Define each tab with a name and its associated content.
 const tabs = [
   { name: "Applied", content: <p>Content for the Applied stage.</p> },
-  { name: "Phone Screening", content: <p>Content for the Phone Screening stage.</p> },
+  {
+    name: "Phone Screening",
+    content: <p>Content for the Phone Screening stage.</p>,
+  },
   { name: "Interview", content: <p>Content for the Interview stage.</p> },
   { name: "Offer", content: <p>Content for the Offer stage.</p> },
   { name: "Hired", content: <p>Content for the Hired stage.</p> },
 ];
 
-export default function TabSectionHeader() {
+export default function TabSectionInformation() {
   // Initialize state with the default tab index (Interview tab in this case).
-  const [activeTab, setActiveTab] = useState( 2 );
+  const [activeTab, setActiveTab] = useState(2);
 
   return (
     <div>
@@ -26,18 +29,20 @@ export default function TabSectionHeader() {
           <div className="relative sm:hidden">
             <select
               value={tabs[activeTab].name}
-              onChange={( e ) => {
-                const newIndex = tabs.findIndex( tab => tab.name === e.target.value );
-                setActiveTab( newIndex );
+              onChange={(e) => {
+                const newIndex = tabs.findIndex(
+                  (tab) => tab.name === e.target.value
+                );
+                setActiveTab(newIndex);
               }}
               aria-label="Select a tab"
               className="py-2 pr-8 pl-3 rounded-md w-full text-base appearance-none outline-1 -outline-offset-1"
             >
-              {tabs.map( ( tab ) => (
-                <option key={tab.name} value={tab.name} >
+              {tabs.map((tab) => (
+                <option key={tab.name} value={tab.name}>
                   {tab.name}
                 </option>
-              ) )}
+              ))}
             </select>
             <ChevronDownIcon
               aria-hidden="true"
@@ -48,10 +53,10 @@ export default function TabSectionHeader() {
           {/* Desktop view with tab buttons */}
           <div className="sm:block hidden">
             <nav className="flex space-x-8 -mb-px">
-              {tabs.map( ( tab, index ) => (
+              {tabs.map((tab, index) => (
                 <button
                   key={tab.name}
-                  onClick={() => setActiveTab( index )}
+                  onClick={() => setActiveTab(index)}
                   aria-current={activeTab === index ? "page" : undefined}
                   className={cn(
                     activeTab === index
@@ -62,7 +67,7 @@ export default function TabSectionHeader() {
                 >
                   {tab.name}
                 </button>
-              ) )}
+              ))}
             </nav>
           </div>
         </div>
