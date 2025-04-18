@@ -15,7 +15,7 @@ export function FeaturedImageGallery() {
         <Image
           className="shadow-lg rounded-2xl w-full max-w-full h-auto md:h-[35em] object-cover object-center"
           src={active}
-          alt="active-gallery-image"
+          alt=""
           width={1470}
           height={980}
         />
