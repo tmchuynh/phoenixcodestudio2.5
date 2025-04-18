@@ -36,7 +36,7 @@ export function NavBar() {
           <div className="flex justify-around items-center mx-auto w-11/12 text-primary-foreground">
             <Image
               src="/images/logo_white.png"
-              alt="IAC intials logo"
+              alt="PCS Logo"
               className="object-cover"
               priority
               width={100}
