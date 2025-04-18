@@ -140,7 +140,7 @@ export default function WhatIsYourStory() {
                 story reflects who you are as a company, and it should remain
                 consistent across all touchpoints.
               </p>
-              <ul className="space-y-2 ml-3 py-3 list-disc list-inside">
+              <ul className="space-y-2 mx-10 py-3 list-disc list-outside">
                 <li>
                   <strong>Mission and Vision</strong>: A strong brand story
                   starts with defining your company’s mission and vision. These
@@ -182,7 +182,7 @@ export default function WhatIsYourStory() {
                 business, making it easier for them to connect with your brand
                 on a deeper level.
               </p>
-              <ul className="space-y-2 ml-3 py-3 list-disc list-inside">
+              <ul className="space-y-2 mx-10 py-3 list-disc list-outside">
                 <li>
                   <strong>Founders:</strong> Share the journey, challenges, and
                   vision of the people who started the company.
@@ -212,7 +212,7 @@ export default function WhatIsYourStory() {
                 customer’s life. Emotions drive decisions, and a well-told story
                 taps into the feelings that resonate with your target audience.
               </p>
-              <ul className="space-y-2 ml-3 py-3 list-disc list-inside">
+              <ul className="space-y-2 mx-10 py-3 list-disc list-outside">
                 <li>
                   <strong>Inspire Action</strong>: Emotionally charged stories
                   are more likely to spur action. Whether it’s making a
@@ -245,7 +245,7 @@ export default function WhatIsYourStory() {
                 Clarity and authenticity are essential to conveying the heart of
                 your brand.
               </p>
-              <ul className="space-y-2 ml-3 py-3 list-disc list-inside">
+              <ul className="space-y-2 mx-10 py-3 list-disc list-outside">
                 <li>
                   <strong>Focus on the Brand’s Purpose</strong>: The core
                   purpose behind your brand is what should drive the narrative.
@@ -300,7 +300,7 @@ export default function WhatIsYourStory() {
                 apart from others who may offer similar products or services by
                 focusing on what makes your company unique and memorable.
               </p>
-              <ul className="space-y-2 ml-3 py-3 list-disc list-inside">
+              <ul className="space-y-2 mx-10 py-3 list-disc list-outside">
                 <li>
                   <strong>Stand Out with a Unique Brand Voice</strong>: Your
                   brand’s story allows you to develop a distinctive voice that
@@ -334,7 +334,7 @@ export default function WhatIsYourStory() {
                 enhance your brand's credibility, making your story more
                 relatable and trustworthy.
               </p>
-              <ul className="space-y-2 ml-3 py-3 list-disc list-inside">
+              <ul className="space-y-2 mx-10 py-3 list-disc list-outside">
                 <li>
                   <strong>Share Real Experiences</strong>: Highlight genuine
                   stories from your customers or team members to build
