@@ -22,7 +22,7 @@ export default function DividerImage({
       {/* Decorative Background Image */}
       <Image
         src={src}
-        alt="Decorative coding background"
+        alt=""
         fill
         className="-z-10 rounded-xl object-cover"
         priority
