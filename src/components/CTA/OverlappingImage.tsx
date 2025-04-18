@@ -13,7 +13,7 @@ export default function OverlappingImage() {
           <div className="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
             <div className="mx-auto px-6 lg:p-0 max-w-5xl md:max-w-4xl lg:max-w-none h-full">
               <Image
-                alt="Person drawing interconnected circles with brainstorming terms like 'think outside the box,' 'vision,' and 'creativity' on a large sheet of paper."
+                alt=""
                 src="https://img.freepik.com/premium-photo/start-up-business-invention-solution_53876-9514.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="relative shadow-2xl rounded-3xl w-full h-full object-cover"
                 width={1200}
