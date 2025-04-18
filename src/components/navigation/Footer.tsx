@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="mx-auto px-6 lg:px-8 py-6 md:py-12 lg:py-20 max-w-7xl">
         <div className="xl:gap-8 xl:grid xl:grid-cols-3">
           <Image
-            alt="Company name"
+            alt="PCS Logo"
             src="/images/logo.png"
             className="object-cover object-center aspect-auto"
             width={300}
