@@ -662,7 +662,7 @@ export const blogs: BlogPost[] = [
     cardImage:
       "https://img.freepik.com/premium-photo/doctor-working-clinic_1048944-13027194.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     imageUrl:
-      "https://img.freepik.com/premium-photo/leadership-teamwork-diversity-collaboration-planning-with-business-team-meeting-vision-mission-with-infographic-data-strategy-growth-development-with-male-female-staff_590464-83709.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+      "https://img.freepik.com/free-photo/insurance-agent-having-meeting-with-senior-clients-pointing-place-signature-contract_637285-1184.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     image2Url:
       "https://img.freepik.com/free-photo/businesswoman-using-her-digital-tablet-with-businesspeople-blurred-background_1098-649.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 2, day: 17, year: 2025 },
@@ -758,9 +758,9 @@ export const blogs: BlogPost[] = [
     cardImage:
       "https://img.freepik.com/free-photo/top-view-man-working-late-night_23-2150280992.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     imageUrl:
-      "https://img.freepik.com/free-photo/web-design-online-technology-content-concept_53876-123927.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+      "https://img.freepik.com/free-photo/person-working-html-computer_23-2150038840.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     image2Url:
-      "https://img.freepik.com/free-photo/man-designing-websites-high-angle_23-2149930945.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+      "https://img.freepik.com/premium-photo/handsome-concentrating-computer-engineer-working-night_13339-210980.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 1, day: 12, year: 2025 },
     excerpt:
       "Clear communication with your designer is key to achieving the desired results in your project. Sharing your business goals, target audience, branding guidelines, and any specific design preferences upfront will help your designer create a design that fits your needs. Additionally, providing any necessary resources or inspirations can save time and ensure the project stays on track from the beginning.",
@@ -855,7 +855,7 @@ export const blogs: BlogPost[] = [
     imageUrl:
       "https://img.freepik.com/premium-photo/low-angle-view-people-working-table_1048944-14188327.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     image2Url:
-      "https://img.freepik.com/premium-photo/young-colleagues-working-office_93826-530.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+      "https://img.freepik.com/premium-photo/enginners-discussing-about-coding-script-compiling-discovers-errors-standing-front-multiple-screens-startup-office-diverse-programmers-working-server-interface-development_482257-61950.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 5, day: 2, year: 2024 },
     excerpt:
       "A consultation with a designer or developer is an opportunity to assess their skills, approach, and understanding of your project. Asking questions about their past experience, design process, and how they handle revisions ensures that you find a good fit for your needs. This is also the time to clarify your goals, timelines, and budget to ensure that everyone is aligned on expectations before the project begins.",
@@ -950,9 +950,9 @@ export const blogs: BlogPost[] = [
     cardImage:
       "https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150061975.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     imageUrl:
-      "https://img.freepik.com/premium-photo/photo-editors-working-together-desk_13339-31727.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+      "https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169849.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     image2Url:
-      "https://img.freepik.com/premium-photo/casual-photo-editors-working-computers_13339-246531.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+      "https://img.freepik.com/free-photo/man-designing-websites-side-view_23-2149930942.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 11, day: 2, year: 2024 },
     excerpt:
       "Web design encompasses more than just aesthetics; it involves creating a seamless user experience and ensuring that your website is functional, responsive, and easy to navigate. It blends design principles with technical knowledge to craft interfaces that meet both the needs of users and the goals of a business. A well-designed website considers visual appeal, usability, performance, and accessibility, ensuring that visitors have a positive interaction.",
@@ -1076,11 +1076,11 @@ export const blogs: BlogPost[] = [
     title: "Enhancing Website Success Through Exceptional User Experience",
     author: "Tina Huynh",
     cardImage:
-      "https://img.freepik.com/free-vector/linear-flat-ui-ux-landing-page-template_23-2149047070.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
-    imageUrl:
-      "https://img.freepik.com/free-vector/gradient-ui-ux-elements-background_23-2149056159.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
-    image2Url:
       "https://img.freepik.com/premium-photo/ux-ui-design-process-modish-mobile-application-website_31965-369282.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/free-photo/high-angle-hands-holding-paper_23-2149930977.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/free-photo/unrecognizable-colleagues-standing-table-looking-design-projects_1098-20475.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 1, day: 4, year: 2025 },
     excerpt:
       "User experience (UX) is a critical factor in the success of any website, as it directly impacts how users interact with and perceive a site. A well-designed UX focuses on creating intuitive, easy-to-navigate, and engaging experiences that meet user needs while achieving business goals. By prioritizing elements like speed, accessibility, and responsiveness, web designers can ensure that users stay engaged, return to the site, and ultimately convert, making UX a key driver of customer satisfaction and business success.",
@@ -1419,9 +1419,12 @@ export const blogs: BlogPost[] = [
     title:
       "Building an Inclusive Web: Incorporating Accessibility into Your Design",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/computer-screen-with-accessbility-word-graphic-popup_53876-124341.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/glowing-light-bulb-with-world-map-dark-background-conceptual-3d-image_476363-2057.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/free-photo/happy-entrepreneur-wheelchair-working-laptop-while-being-with-his-dog-home_637285-5778.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 8, day: 15, year: 2024 },
     excerpt:
       "Accessibility in web design ensures that your website is usable by people of all abilities. This includes making sure your content can be accessed by users with disabilities, such as visual, auditory, or motor impairments. Implementing accessible design practices—such as using screen reader-friendly layouts, providing alternative text for images, and ensuring keyboard navigation—makes your website more inclusive and provides a better experience for all users.",
@@ -1639,9 +1642,12 @@ export const blogs: BlogPost[] = [
     title:
       "Demystifying Blockchain Architecture: The Foundation of Decentralized Systems",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/premium-photo/flowing-chart_869423-2016.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/cubes-abstract-geometries-3d-rendering_772449-2912.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/premium-photo/futuristic-technology-abstract-lines-grid-virtual-space-from-concept-digital-technology-internet-ai-generated-illustration_174191-11173.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 8, day: 15, year: 2024 },
     excerpt:
       "Blockchain architecture forms the backbone of decentralized systems and cryptocurrencies, organizing transaction data into secure, transparent, and immutable blocks. By eliminating the need for central authorities, it facilitates peer-to-peer transactions, disrupting industries such as finance and healthcare. A solid understanding of this architecture is crucial for businesses and developers venturing into decentralized application development.",
@@ -2309,9 +2315,12 @@ export const blogs: BlogPost[] = [
   {
     title: "Decoding GUI Architecture: Building Seamless User Interfaces",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/website-development_53876-95315.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/woman-working-computer-home_392895-17309.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/premium-photo/midsection-design-professionals-working-table_1048944-26845945.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&w=740",
     date: { month: 8, day: 15, year: 2024 },
     excerpt:
       "Graphical User Interface (GUI) architecture is essential for building intuitive, user-friendly systems. A well-structured GUI enables users to interact with software effortlessly, combining visual design, layout, and interactions to create an efficient and aesthetically pleasing experience. Mastering GUI design principles and architecture is crucial for developing applications that provide seamless and engaging user experiences.",
@@ -2728,9 +2737,11 @@ export const blogs: BlogPost[] = [
   {
     title: "How Tailwind CSS Can Speed Up Your Development Process",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage: "https://i.ytimg.com/vi/SkTKN38wSEM/maxresdefault.jpg",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/website-builder-workplace-interior-3d-rendering_72104-3891.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/free-photo/still-life-graphic-design-office_23-2151345406.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 11, day: 20, year: 2024 },
     excerpt:
       "Tailwind CSS is a highly flexible framework that empowers developers to craft custom, responsive designs with ease. By offering a comprehensive set of utility classes, it eliminates the need for writing extensive CSS, allowing developers to style HTML elements directly. This approach accelerates the development process, enabling the creation of visually rich, functional interfaces in less time.",
@@ -7083,9 +7094,12 @@ export const blogs: BlogPost[] = [
   {
     title: "LLC vs S Corp vs C Corp: Which Structure Fits Your Business?",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/map-lying-wooden-table_53876-105723.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/free-photo/top-viewtop-view-manager-employee-doing-teamwork-business-office-looking-charts-laptop-display_482257-2443.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    image2Url:
+      "https://img.freepik.com/premium-photo/cropped-hands-man-working-blueprint_1048944-17885334.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 2, day: 15, year: 2023 },
     excerpt:
       "Choosing the right business structure is essential for long-term success. LLCs, S Corps, and C Corps each offer unique benefits, from flexibility and tax advantages to growth potential and legal protection. Understanding these structures helps you make an informed decision based on your business goals, whether you're starting small or planning for future expansion.",
@@ -8265,10 +8279,12 @@ export const blogs: BlogPost[] = [
   {
     title: "UX vs UI Design: Unpacking Their Key Differences and Roles",
     author: "Tina Huynh",
-    cardImage: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/marketing-strategy-planning-strategy-concept_53876-42950.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     imageUrl:
       "https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150038907.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
-    image2Url: "",
+    image2Url:
+      "https://img.freepik.com/premium-photo/mission-make-business-even-better-high-angle-shot-group-businesspeople-having-meeting-modern-office_590464-26576.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 2, day: 1, year: 2025 },
     excerpt:
       "UX and UI design are two essential pillars of creating successful digital products. While UX focuses on optimizing the user experience to ensure functionality and ease of use, UI is concerned with the visual elements that make the product aesthetically appealing and engaging.",
@@ -8528,9 +8544,11 @@ export const blogs: BlogPost[] = [
     title:
       "Building Robust Business Databases: Essential Strategies for Success",
     author: "Tina Huynh",
-    cardImage: "",
+    cardImage:
+      "https://img.freepik.com/free-photo/eye-futuristic-robot_53876-95096.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     imageUrl: "",
-    image2Url: "",
+    image2Url:
+      "https://img.freepik.com/premium-photo/data-center-programmer-using-digital-laptop-computer-maintenance-it-specialist_1313853-186970.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 2, day: 18, year: 2025 },
     excerpt:
       "In this article, we explore key strategies for managing and optimizing your business database. From ensuring data security and compliance with encryption and access control to improving scalability through sharding and replication, we cover essential best practices. By focusing on data integrity, performance, and security, businesses can build robust, scalable databases that support growth and maintain high efficiency.",
@@ -20661,9 +20679,12 @@ export const blogs: BlogPost[] = [
   {
     title: "Unlocking the Power of Resource Mobilization",
     author: "Tina Huynh",
-    cardImage: "",
-    imageUrl: "",
-    image2Url: "",
+    cardImage:
+      "https://img.freepik.com/premium-photo/project-management-concept-paper-sheet-with-ideas-plan-cup-coffee-eyeglasses-desk_1009751-3541.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    imageUrl:
+      "https://img.freepik.com/free-photo/finance-businessman-success-person-workplace-accounting_1418-78.jpg?t=st=1744927851~exp=1744931451~hmac=ed6c575e3d1b40907e0537fc1bf87c8dc78563fdd1ad265a80014a0032d9d1c4&w=1380",
+    image2Url:
+      "https://img.freepik.com/free-photo/business-team-meeting_23-2151944855.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     date: { month: 3, day: 2, year: 2025 },
     excerpt:
       "In the world of business and entrepreneurship, one of the key factors that determine success is the ability to effectively mobilize resources. Whether you're building a startup, expanding an existing business, or launching a new project, the ability to gather, manage, and allocate the right resources at the right time is crucial.",
@@ -21049,7 +21070,8 @@ export const blogs: BlogPost[] = [
     author: "Tina Huynh",
     cardImage: "",
     imageUrl: "",
-    image2Url: "",
+    image2Url:
+      "https://img.freepik.com/premium-photo/close-up-ux-developer-ui-designer-brainstorming-about-mobile-app-interface-wireframe-design-table-with-customer-breif-color-code-modern-officecreative-digital-development-agency_265022-28164.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&w=740",
     date: { month: 3, day: 10, year: 2025 },
     excerpt:
       "Tailwind UI has evolved into Tailwind Plus, introducing a major upgrade with new features, enhancements, and improved functionality. This shift highlights Tailwind's ongoing dedication to refining its toolkit and delivering developers with the most effective resources for building modern, high-quality web applications.",
