@@ -13,7 +13,7 @@ export default function BlogCard({ blog }: { blog: BlogPost }) {
 
   return (
     <Link href={`/blogs/${generateSlug(blog.title)}`} className="group">
-      <article className="flex flex-col justify-between items-start">
+      <article className="flex flex-col justify-between items-start h-full">
         <div className="relative w-full">
           <Image
             alt={blog.title}
@@ -23,34 +23,36 @@ export default function BlogCard({ blog }: { blog: BlogPost }) {
             height={400}
           />
         </div>
-        <div className="group px-4 max-w-xl h-full">
-          <div className="relative flex flex-col justify-between mt-3 h-2/3">
+        <div className="group flex flex-col justify-between px-4 max-w-xl h-full">
+          <div className="relative flex flex-col justify-between mt-3">
             <h3 className="underline-offset-4 group-hover:underline group-hover:decoration-fancy">
               {blog.title}
             </h3>
             <p className="line-clamp-3">{blog.excerpt}</p>
           </div>
-          <div className="relative flex items-center gap-x-4 mt-8 pb-2">
-            {blog.topics && blog.topics.length > 0 && (
-              <div className="flex flex-wrap gap-2">
-                {blog.topics.sort().map((topic: string, index: number) => (
-                  <Badge
-                    key={index}
-                    variant="secondary"
-                    className="cursor-default"
-                  >
-                    {topic}
-                  </Badge>
-                ))}
-              </div>
-            )}
+          <div>
+            <div className="mt-8 pb-2">
+              {blog.topics && blog.topics.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {blog.topics.sort().map((topic: string, index: number) => (
+                    <Badge
+                      key={index}
+                      variant="tertiary"
+                      className="cursor-default"
+                    >
+                      {topic}
+                    </Badge>
+                  ))}
+                </div>
+              )}
+            </div>
+            <DynamicButton
+              className="mx-0 w-full"
+              onClick={() => router.push(`/blogs/${generateSlug(blog.title)}`)}
+            >
+              Read More
+            </DynamicButton>
           </div>
-          <DynamicButton
-            className="mx-0 w-full"
-            onClick={() => router.push(`/blogs/${generateSlug(blog.title)}`)}
-          >
-            Read More
-          </DynamicButton>
         </div>
       </article>
     </Link>

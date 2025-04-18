@@ -14,7 +14,7 @@ export default function OverlappingImage() {
             <div className="mx-auto px-6 lg:p-0 max-w-5xl md:max-w-4xl lg:max-w-none h-full">
               <Image
                 alt=""
-                src="https://img.freepik.com/premium-photo/rear-view-businessman-powerfull-business-concept_1077205-985.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                src="https://img.freepik.com/free-photo/brand-copyright-name-draft-graphic-concept_53876-124103.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="relative shadow-2xl rounded-3xl w-full h-full object-cover"
                 width={1200}
                 height={600}
