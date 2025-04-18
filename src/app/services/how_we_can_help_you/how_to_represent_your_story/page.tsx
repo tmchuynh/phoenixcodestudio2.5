@@ -5,7 +5,7 @@ export default function WhatIsYourStory() {
   return (
     <>
       <OffsetImage />
-      <main className="mx-auto px-4 pt-3 md:pt-16 lg:pt-24 pb-12 md:pb-20 lg:pb-32 w-11/12">
+      <main className="mx-auto pt-3 md:pt-16 lg:pt-24 pb-12 md:pb-20 lg:pb-32 w-10/12 md:w-11/12">
         <section>
           <h2>
             Let's Rewind Those Wheels For a Second: What is Brand Storytelling?
