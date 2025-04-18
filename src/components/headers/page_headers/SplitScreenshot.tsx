@@ -44,7 +44,7 @@ export default function SplitScreenshot() {
           <div className="flex-none max-w-3xl sm:max-w-5xl lg:max-w-none">
             <div className="bg-gray-900/5 -m-2 lg:-m-4 p-2 lg:p-4 rounded-xl lg:rounded-2xl ring-1 ring-gray-900/10 ring-inset">
               <Image
-                alt="App screenshot"
+                alt=""
                 src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010123.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 width={2432}
                 height={1442}
