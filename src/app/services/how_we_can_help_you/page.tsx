@@ -13,7 +13,7 @@ export default function HowWeCanHelpYou() {
           <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
             <div className="sm:opacity-0 xl:opacity-100 rounded-lg w-44 h-32 overflow-hidden">
               <Image
-                alt="A woman with a smile is raising her hands indoors, standing in front of a wall with furniture and a shelf nearby."
+                alt=""
                 src="https://img.freepik.com/premium-photo/beauty-asian-businesswoman-raising-two-hands-after-finishing-her-job-happily-with-computer-people-lifestyles-concept-technology-business-working-theme_625516-4823.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="size-full object-cover"
                 width={400}
@@ -22,7 +22,7 @@ export default function HowWeCanHelpYou() {
             </div>
             <div className="rounded-lg w-44 h-72 overflow-hidden">
               <Image
-                alt="A man sitting at a table indoors with his hands on his face, surrounded by furniture and a laptop on the desk. There is a window nearby and the man is wearing glasses."
+                alt=""
                 src="https://img.freepik.com/free-photo/successful-businessman-casual-celebrating-his-victory-raising-arms_1163-3989.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="size-full object-cover"
                 width={400}
@@ -31,7 +31,7 @@ export default function HowWeCanHelpYou() {
             </div>
             <div className="sm:opacity-0 xl:opacity-100 rounded-lg w-44 h-42 overflow-hidden">
               <Image
-                alt="A silhouette of a person standing indoors in front of a window with their arms raised, backlit by sunlight and showing a view of the sky."
+                alt=""
                 src="https://img.freepik.com/premium-photo/silhouette-successful-businessman-man-looks-victory-celebrates-victory-holds-his-hands-up-rejoices_321831-8054.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="size-full object-cover"
                 width={400}
@@ -42,7 +42,7 @@ export default function HowWeCanHelpYou() {
           <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
             <div className="sm:opacity-0 lg:opacity-100 rounded-lg w-44 h-52 overflow-hidden">
               <Image
-                alt="A professional woman in a suit shows determination while seated at a desk with a laptop in a dimly lit office environment."
+                alt=""
                 src="https://img.freepik.com/free-photo/stressed-businesswoman-checking-profit-resultes-standing-business-office_482257-6514.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="size-full object-cover"
                 width={400}
@@ -51,7 +51,7 @@ export default function HowWeCanHelpYou() {
             </div>
             <div className="rounded-lg w-44 h-56 overflow-hidden">
               <Image
-                alt="A woman standing in front of a desk with a laptop on it, smiling. She is wearing trousers and the setting is indoors with a wall visible in the background."
+                alt=""
                 src="https://img.freepik.com/free-photo/full-shot-blonde-girl-raising-her-hand_23-2148348975.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="size-full object-cover"
                 width={400}
@@ -60,7 +60,7 @@ export default function HowWeCanHelpYou() {
             </div>
             <div className="rounded-lg w-44 h-64 overflow-hidden">
               <Image
-                alt="A man in a suit is holding a whiteboard in an office environment with a laptop on the table."
+                alt=""
                 src="https://img.freepik.com/free-photo/happy-african-american-businessman-suit-looking-laptop-excited-by-good-news-online-black-man-winner-sitting-office-desk-achieved-goal-raising-hands-celebrating-business-success-win-result_231208-673.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="size-full object-cover"
                 width={400}
@@ -71,7 +71,7 @@ export default function HowWeCanHelpYou() {
           <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
             <div className="rounded-lg w-44 h-64 overflow-hidden">
               <Image
-                alt="A person in a striped shirt raises a fist in triumph while holding a laptop in a modern office setting."
+                alt=""
                 src="https://img.freepik.com/free-photo/business-woman-with-laptop-hand-is-happy-with-success-portrait-woman-glasses-striped-blouse-enthusiastically-screaming-making-winning-gesture_197531-13438.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="size-full object-cover"
                 width={400}
@@ -80,7 +80,7 @@ export default function HowWeCanHelpYou() {
             </div>
             <div className="rounded-lg w-44 h-54 overflow-hidden">
               <Image
-                alt="A man wearing sunglasses and a suit is indoors, standing with his hands raised, near a window."
+                alt=""
                 src="https://img.freepik.com/premium-photo/portrait-cheerful-businessman-celebrating-his-success_709984-5423.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="size-full object-cover"
                 width={400}
@@ -91,7 +91,7 @@ export default function HowWeCanHelpYou() {
           <div className="gap-y-6 lg:gap-y-8 grid grid-cols-1 shrink-0 md:grow xl:grow-0">
             <div className="rounded-lg w-44 h-96 overflow-hidden">
               <Image
-                alt="Three professionals engage over a table, one giving a high five, while another observes, with a laptop displaying a calendar in the foreground."
+                alt=""
                 src="https://img.freepik.com/free-photo/workers-high-five-close-up_23-2149008887.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
                 className="size-full object-cover"
                 width={400}
@@ -101,7 +101,7 @@ export default function HowWeCanHelpYou() {
           </div>
         </div>
 
-        <div className="flex flex-col md:justify-around col-span-5 lg:col-span-3 md:py-6 lg:py-14">
+        <div className="flex flex-col md:justify-around col-span-5 lg:col-span-3 md:py-6 lg:py-14 lg:pr-20">
           <div>
             <h4>
               Your First Step Is the Hardest—We Help You Take It with Confidence
@@ -143,7 +143,7 @@ export default function HowWeCanHelpYou() {
         <section className="gap-8 lg:gap-12 grid grid-cols-1 lg:grid-cols-2 md:mb-12 lg:mb-24 2xl:mb-32 py-3 md:py-7 2xl:py-12">
           <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
             <Image
-              alt="Custom Website Development"
+              alt=""
               src="https://img.freepik.com/free-photo/creative-thinking-creativity-design-process-concept_53876-127465.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
               height={500}
@@ -183,7 +183,7 @@ export default function HowWeCanHelpYou() {
 
           <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
             <Image
-              alt="Authentic Brand Storytelling"
+              alt=""
               src="https://img.freepik.com/premium-photo/back-view-female-coach-with-smartphone-pointing-financial-information-papers-hanging-blackboard-office_274679-8823.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
               height={500}
@@ -219,7 +219,7 @@ export default function HowWeCanHelpYou() {
 
           <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
             <Image
-              alt="High-Performance Single-Page Applications"
+              alt=""
               src="https://img.freepik.com/free-photo/homepage-seen-computer-screen_23-2149416723.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
               height={500}
@@ -246,7 +246,7 @@ export default function HowWeCanHelpYou() {
 
           <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
             <Image
-              alt="E-Commerce Solutions"
+              alt=""
               src="https://img.freepik.com/free-photo/merchandise-business-goal-investment-plan-concept_53876-127510.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="lg:block object-bottom hidden shadow-lg rounded-lg w-full object-cover aspect-6/4"
               height={500}
@@ -278,7 +278,7 @@ export default function HowWeCanHelpYou() {
 
           <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
             <Image
-              alt="Rebranding Services"
+              alt=""
               src="https://img.freepik.com/free-photo/brand-copyright-name-draft-graphic-concept_53876-124103.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
               height={500}
@@ -306,7 +306,7 @@ export default function HowWeCanHelpYou() {
 
           <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
             <Image
-              alt="User-Centered Interface Design"
+              alt=""
               src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051555.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
               height={500}
@@ -339,7 +339,7 @@ export default function HowWeCanHelpYou() {
 
           <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
             <Image
-              alt="SEO-Optimized Blog Content"
+              alt=""
               src="https://img.freepik.com/free-photo/search-engine-optimization_53876-119984.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
               height={500}
@@ -371,7 +371,7 @@ export default function HowWeCanHelpYou() {
 
           <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
             <Image
-              alt="Optimized & Secure Database Management"
+              alt=""
               src="https://img.freepik.com/premium-photo/database-administrators-backup-company-customer-data-concept-databases-computer-dbms-database_257067-6.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
               height={500}
@@ -400,7 +400,7 @@ export default function HowWeCanHelpYou() {
 
           <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
             <Image
-              alt="Wireframing & Prototyping Services"
+              alt=""
               src="https://img.freepik.com/premium-photo/cropped-image-ux-ui-designers-working-version-website-mobile-devices_274689-22113.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
               className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
               height={500}
