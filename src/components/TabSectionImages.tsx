@@ -13,14 +13,14 @@ const tabs = [
       <div className="gap-4 grid grid-cols-2">
         <Image
           src="https://via.placeholder.com/300"
-          alt="Applied Image 1"
+          alt=""
           width={300}
           height={200}
           className="rounded-lg object-cover"
         />
         <Image
           src="https://via.placeholder.com/300"
-          alt="Applied Image 2"
+          alt=""
           width={300}
           height={200}
           className="rounded-lg object-cover"
@@ -34,21 +34,21 @@ const tabs = [
       <div className="gap-4 grid grid-cols-3">
         <Image
           src="https://via.placeholder.com/200"
-          alt="Phone Screening Image 1"
+          alt=""
           width={200}
           height={200}
           className="rounded-lg object-cover"
         />
         <Image
           src="https://via.placeholder.com/200"
-          alt="Phone Screening Image 2"
+          alt=""
           width={200}
           height={200}
           className="rounded-lg object-cover"
         />
         <Image
           src="https://via.placeholder.com/200"
-          alt="Phone Screening Image 3"
+          alt=""
           width={200}
           height={200}
           className="rounded-lg object-cover"
@@ -62,7 +62,7 @@ const tabs = [
       <div className="gap-4 grid grid-cols-1">
         <Image
           src="https://via.placeholder.com/600x400"
-          alt="Interview Image"
+          alt=""
           width={600}
           height={400}
           className="rounded-lg object-cover"
@@ -76,14 +76,14 @@ const tabs = [
       <div className="gap-4 grid grid-cols-2">
         <Image
           src="https://via.placeholder.com/400"
-          alt="Offer Image 1"
+          alt=""
           width={400}
           height={300}
           className="rounded-lg object-cover"
         />
         <Image
           src="https://via.placeholder.com/400"
-          alt="Offer Image 2"
+          alt=""
           width={400}
           height={300}
           className="rounded-lg object-cover"
@@ -97,28 +97,28 @@ const tabs = [
       <div className="gap-4 grid grid-cols-4">
         <Image
           src="https://via.placeholder.com/150"
-          alt="Hired Image 1"
+          alt=""
           width={150}
           height={150}
           className="rounded-lg object-cover"
         />
         <Image
           src="https://via.placeholder.com/150"
-          alt="Hired Image 2"
+          alt=""
           width={150}
           height={150}
           className="rounded-lg object-cover"
         />
         <Image
           src="https://via.placeholder.com/150"
-          alt="Hired Image 3"
+          alt=""
           width={150}
           height={150}
           className="rounded-lg object-cover"
         />
         <Image
           src="https://via.placeholder.com/150"
-          alt="Hired Image 4"
+          alt=""
           width={150}
           height={150}
           className="rounded-lg object-cover"
