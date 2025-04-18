@@ -3,7 +3,7 @@ import { testimonials } from "@/lib/constants/testimonials";
 export default function InfoTestimonial() {
   return (
     <div className="relative py-8 md:py-6 overflow-hidden isolate">
-      <div className="mx-auto px-4 lg:max-w-none">
+      <div className="mx-auto lg:max-w-none">
         <h4>Let's Make Vision Reality</h4>
         <h1>How We Can Help You Succeed</h1>
         <section className="gap-3 lg:gap-5 xl:gap-10 grid grid-cols-1 lg:grid-cols-5 w-full">

@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function OffsetImage() {
   return (
-    <div className="mx-auto px-6 lg:px-8 py-32 sm:py-40 w-11/12">
-      <div className="lg:gap-x-16 lg:gap-y-8 xl:gap-x-8 lg:grid lg:grid-cols-2 xl:grid-cols-1 xl:grid-rows-1 mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
-        <div className="lg:col-span-2 max-w-2xl xl:col-auto">
-          <h4>From Identity to Impact</h4>
-          <h1>Crafting Narratives That Build Brands</h1>
-        </div>
-        <div className="xl:col-end-1 xl:row-start-1 mt-6 lg:mt-0 max-w-xl">
+    <div className="mx-auto lg:px-8 pt-24 md:pt-18 xl:pt-36 w-10/12 md:w-11/12">
+      <div className="lg:gap-x-16 lg:gap-y-8 xl:gap-x-12 lg:grid lg:grid-cols-2 xl:grid-cols-1 xl:grid-rows-1 mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
+        <div className="relative flex flex-col lg:col-end-3 lg:row-start-1 lg:row-end-2 max-w-xl xl:col-auto">
+          <div>
+            <h4>From Identity to Impact</h4>
+            <h1>Crafting Narratives That Build Brands</h1>
+          </div>
           <p>
             Brand storytelling is the strategic craft of using narrative to
             express your brand’s values, mission, and purpose in a way that
@@ -30,8 +30,8 @@ export default function OffsetImage() {
         </div>
         <Image
           alt=""
-          src="https://img.freepik.com/premium-photo/midsection-person-holding-paper-with-text_1048944-7738719.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-          className="xl:row-span-2 xl:row-end-2 mt-10 sm:mt-16 lg:mt-0 xl:mt-36 rounded-2xl w-full max-w-lg lg:max-w-none aspect-6/5 object-cover"
+          src="https://img.freepik.com/premium-photo/brand-identity-business-marketing-words-typography-concept_21336-13298.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740&h=500"
+          className="xl:row-span-2 xl:row-end-2 mt-10 lg:mt-0 rounded-2xl w-full max-w-lg lg:max-w-7xl place-self-end xl:place-self-start aspect-8/7 object-cover"
           width={2432}
           height={1442}
         />
