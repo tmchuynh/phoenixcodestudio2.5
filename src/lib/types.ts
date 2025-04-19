@@ -63,8 +63,8 @@ export type Menu = {
 
 export type PricingTier = {
   name: string;
-  startingPrice: number;
   info: string;
+  useCase: string;
 };
 
 export type StarRatingProps = {
