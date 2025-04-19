@@ -2,11 +2,10 @@ import { paymentPlans } from "@/lib/constants/services/paymentPlans";
 import { PaymentDetails } from "@/lib/interfaces/payments";
 import useMediumScreen from "@/lib/screens/useMediumScreen";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
-import { useTheme } from "next-themes";
-import { useRouter } from "next/navigation";
-import DynamicButton from "../button/button-dynamic";
 import { cn } from "@/lib/utils";
 import { generateSlug } from "@/lib/utils/format";
+import { useRouter } from "next/navigation";
+import DynamicButton from "../button/button-dynamic";
 
 export default function PaymentPlans({
   plan,
@@ -17,7 +16,6 @@ export default function PaymentPlans({
 }) {
   const isSmallScreen = useSmallScreen();
   const isMediumScreen = useMediumScreen();
-  const { theme } = useTheme();
   const router = useRouter();
 
   /**
