@@ -47,7 +47,7 @@
         "src/context/*"
       ],
       "@constants/*": [
-        "src/constants/*"
+        "src/lib/constants/*"
       ],
       "@hooks/*": [
         "src/hooks/*"
