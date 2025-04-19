@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const navigation = {
   solutions: [
     { name: "Marketing", href: "#" },
@@ -31,13 +29,6 @@ export default function Footer() {
     <footer className="border-t">
       <div className="mx-auto px-6 lg:px-8 py-6 md:py-12 lg:py-20 max-w-7xl">
         <div className="xl:gap-8 xl:grid xl:grid-cols-3">
-          <Image
-            alt="PCS Logo"
-            src="/images/logo_white.png"
-            className="object-cover object-center aspect-auto"
-            width={300}
-            height={300}
-          />
           <div className="gap-8 grid grid-cols-2 xl:col-span-2 mt-16 xl:mt-0">
             <div className="md:gap-8 md:grid md:grid-cols-2">
               <div>
