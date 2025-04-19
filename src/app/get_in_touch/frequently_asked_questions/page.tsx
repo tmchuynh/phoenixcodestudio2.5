@@ -2,6 +2,7 @@
 
 import DynamicButton from "@/components/button/button-dynamic";
 import CallToAction from "@/components/CTA/Simple";
+import MixedGallery from "@/components/images/MixedGallery";
 import {
   Accordion,
   AccordionContent,
@@ -16,6 +17,7 @@ export default function FrequentlyAskedQuestions() {
 
   return (
     <main className="mx-auto py-6 w-10/12 md:w-11/12">
+      <MixedGallery />
       <h1>FAQs: Your Digital Journey Starts Here</h1>
       <p className="mt-4">
         Welcome to the Phoenix Code Studio FAQs page, where we address common
