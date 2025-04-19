@@ -2,10 +2,12 @@ import { motivationalDrive } from "@/lib/constants/constants";
 
 export default function ThreeColumns() {
   return (
-    <div className="pt-24 md:pt-32">
+    <div className="md:-mt-22 lg:-mt-34 xl:-mt-64 px-6 lg:px-8">
       <div>
         <h4>From Humble Beginnings to Bold Aspirations</h4>
-        <h1>Before We Made Waves, We Focused on Our Core</h1>
+        <h1 className="lg:w-7/12 xl:w-2/3">
+          Before We Made Waves, We Focused on Our Core
+        </h1>
         <p>
           At Phoenix Code Studio, our vision is to build more than just
           websites—we're here to help shape a digital future where creativity,
