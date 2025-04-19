@@ -252,7 +252,7 @@
   }
 
   h2 {
-    @apply font-[GreatVibes] mt-4 font-semibold text-3xl text-fancy md:text-4xl 2xl:text-5xl text-balance tracking-tight dark:text-tertiary;
+    @apply font-[PlayfairDisplay] mt-4 font-semibold text-3xl text-fancy md:text-4xl 2xl:text-5xl text-balance tracking-tight dark:text-secondary;
   }
 
   h3 {
