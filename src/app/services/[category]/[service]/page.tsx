@@ -4,7 +4,7 @@ import DynamicButton from "@/components/button/button-dynamic";
 import CallToActionImage from "@/components/CTA/Split_Image";
 import LoadingIndicator from "@/components/states/loading/Loading";
 import CannotFind from "@/components/states/not-found/CannotFind";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { SubItem } from "@/lib/interfaces/services";
 import { capitalize } from "@/lib/utils/format";
 import { useParams, useRouter } from "next/navigation";
@@ -79,6 +79,37 @@ export default function ServicePage() {
               </div>
             )}
 
+            <p>
+              Note: Each of our packaged tiers is thoughtfully designed to
+              deliver exactly what you need—without the burden of unnecessary
+              features or costs. As each tier scales, additional services and
+              value are added, ensuring you only pay for what benefits your
+              business. Every plan is flexible and can be customized to suit
+              your unique goals. If you don’t see a package that aligns
+              perfectly with your needs, simply reach out—our team is ready to
+              collaborate with you and create a solution tailored to your
+              vision.
+            </p>
+
+            {serviceData.info.pricing.pricingTiers && (
+              <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-7">
+                {serviceData.info.pricing.pricingTiers.map((prices, index) => {
+                  const tierArray = prices.name.split(":");
+
+                  return (
+                    <Card key={index}>
+                      <CardContent>
+                        <h5>{tierArray[1]}</h5>
+                        <h3>{tierArray[0]}</h3>
+                        <p>{prices.info}</p>
+                        <p>{prices.useCase}</p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+            )}
+
             <h3>Do You Have Questions?</h3>
             <p>
               Whether you’re just starting your digital transformation journey
@@ -100,23 +131,6 @@ export default function ServicePage() {
               Visit The FAQs
             </DynamicButton>
 
-            {serviceData.info.pricing.pricingTiers && (
-              <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-7">
-                {serviceData.info.pricing.pricingTiers.map((prices, index) => (
-                  <Card key={index}>
-                    <CardHeader>
-                      <CardTitle>
-                        <h3>{prices.name}</h3>
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p>{prices.info}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            )}
-
             {serviceData.details.map((info, index) => (
               <section key={index}>
                 <h2>{info.title}</h2>
@@ -135,6 +149,7 @@ export default function ServicePage() {
               </section>
             ))}
           </main>
+
           {serviceData.cta && <CallToActionImage cta={serviceData.cta} />}
         </>
       )}
