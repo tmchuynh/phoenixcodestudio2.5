@@ -24,7 +24,12 @@ export default function TwoColumnTextImage() {
                 ourselves.
               </p>
               <p className="mt-8">
-                Every kind word, referral, and <mark>“you’ve got this”</mark>{" "}
+                Every kind word, referral, and{" "}
+                <strong className="uppercase">
+                  <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+                    “you’ve got this”
+                  </mark>
+                </strong>{" "}
                 became fuel. We were inspired by those who saw potential and
                 gave us space to grow, make mistakes, and get better. We saw
                 firsthand how powerful true support can be—and we carry that
