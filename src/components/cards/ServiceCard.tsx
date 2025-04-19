@@ -2,10 +2,10 @@
 
 import { Category } from "@/lib/interfaces/services";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
+import { capitalize, generateSlug } from "@/lib/utils/format";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import DynamicButton from "../button/button-dynamic";
-import { generateSlug, capitalize } from "@/lib/utils/format";
 
 export default function ServiceDetails({
   category,
@@ -52,14 +52,6 @@ export default function ServiceDetails({
           onClick={() => navigateToCategory(category.name)}
         >
           View More Details
-        </DynamicButton>
-
-        <DynamicButton
-          className="mt-6 w-full self-start"
-          variant={theme === "dark" ? "accent" : "outline"}
-          onClick={() => router.push("/services/payment_plans")}
-        >
-          Explore Our Payment Plans
         </DynamicButton>
       </div>
     </div>
