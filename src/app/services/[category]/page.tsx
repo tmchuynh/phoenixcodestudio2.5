@@ -109,7 +109,7 @@ export default function CategoryPage() {
                           {subServiceDetail.info.pricing.pricingTiers.map(
                             (tier, tierIndex) => (
                               <li key={tierIndex}>
-                                <strong>{tier.name}:</strong> {tier.info}
+                                <strong>{tier.name}</strong>
                               </li>
                             )
                           )}
