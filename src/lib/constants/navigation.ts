@@ -20,7 +20,7 @@ export const aboutFeaturedLinks: Menu[] = [
     title: "Read Our Blog",
     href: "/blogs",
     imageUrl:
-      "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D",
+      "https://img.freepik.com/free-photo/businessman-hands-typing-laptop-keyboard-real-time-4k-video-focus-hands-vertical-frame-freelancing-home-office-cup-tea-foreground-media-social-networks_166373-2124.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     description:
       "Stay informed with expert insights, industry trends, and company updates",
   },
@@ -28,7 +28,7 @@ export const aboutFeaturedLinks: Menu[] = [
     title: "About PCS",
     href: "/about_PCS",
     imageUrl:
-        "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D",
+      "https://img.freepik.com/premium-photo/back-view-female-coach-with-smartphone-pointing-financial-information-papers-hanging-blackboard-office_274679-8823.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     description:
       "Discover our mission, values, and the story behind our brand.",
   },
@@ -41,16 +41,16 @@ export const serviceCategories: Menu[] = [
     description:
       "Get a comprehensive look at the full range of services we provide.",
   },
-
+  {
+    title: "Our Amazing Past Projects",
+    href: "/past_projects",
+    description:
+      "See how we’ve turned vision into reality through creative, impactful projects.",
+  },
   {
     title: "How We Can Help You",
     href: "/services/how_we_can_help_you",
     description: "Our vision is to build more than just websites",
-  },
-  {
-    title: "How to Represent Your Story",
-    href: "/services/how_we_can_help_you/how_to_represent_your_story",
-    description: "Empowering small businesses with enterprise-grade tools.",
   },
   {
     title: "Web Development VS Web Design",
@@ -62,20 +62,11 @@ export const serviceCategories: Menu[] = [
 
 export const serviceFeaturedLinks: Menu[] = [
   {
-    title: "Custom Pricing Accommodations Made For You",
-    href: "/services/payment_plans",
+    title: "How to Represent Your Story",
+    href: "/services/how_we_can_help_you/how_to_represent_your_story",
     imageUrl:
-      "https://images.unsplash.com/photo-1560390591-15ee5df86045?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yJTIweW91fGVufDB8fDB8fHww",
-    description:
-      "Find a pricing model that matches your goals, size, and budget.",
-  },
-  {
-    title: "Our Amazing Past Projects",
-    href: "/past_projects",
-    imageUrl:
-      "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D",
-    description:
-      "See how we’ve turned vision into reality through creative, impactful projects.",
+      "https://img.freepik.com/premium-photo/high-angle-view-hand-holding-text-paper_1048944-27370360.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    description: "Empowering small businesses with enterprise-grade tools.",
   },
 ];
 
@@ -105,7 +96,7 @@ export const contactFeaturedLinks: Menu[] = [
     title: "Let's Work Together",
     href: "/get_in_touch/lets_work_together",
     imageUrl:
-      "https://images.unsplash.com/photo-1654618977232-a6c6dea9d1e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://img.freepik.com/premium-photo/close-up-business-team-works-sitting-office-desk-business-concept_160672-18279.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     description:
       "Collaborate with us on building something impactful and meaningful.",
   },
