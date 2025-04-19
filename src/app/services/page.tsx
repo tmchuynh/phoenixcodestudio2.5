@@ -10,6 +10,7 @@ import { testimonials } from "@/lib/constants/testimonials";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { capitalize, generateSlug } from "@/lib/utils/format";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FC, useEffect, useState } from "react";
 
@@ -74,31 +75,40 @@ const ServicesPage: FC = () => {
 
               if (subServiceDetail) {
                 return (
-                  <Card
+                  <Link
+                    href={`/services/${generateSlug(
+                      category.name
+                    )}/${generateSlug(subServiceDetail.name)}`}
                     key={subIndex}
-                    className="flex flex-col justify-between shadow-md"
+                    className="group"
                   >
-                    <CardContent className="flex flex-col">
-                      <h5>{subServiceDetail.subtitle}</h5>
-                      <h3
-                        className="font-semibold text-lg underline-offset-4 hover:underline cursor-pointer hover:decoration-fancy"
-                        onClick={() =>
-                          navigateToCategory(
-                            category.name,
-                            subServiceDetail.name
-                          )
-                        }
-                      >
-                        {capitalize(subServiceDetail.name)}
-                      </h3>
+                    <Card className="flex flex-col justify-between shadow-md h-full">
+                      <CardContent className="flex flex-col">
+                        <h5>{subServiceDetail.subtitle}</h5>
+                        <h3
+                          className="font-semibold text-lg underline-offset-4 group-hover:underline cursor-pointer"
+                          onClick={() =>
+                            navigateToCategory(
+                              category.name,
+                              subServiceDetail.name
+                            )
+                          }
+                        >
+                          {capitalize(subServiceDetail.name)}
+                        </h3>
 
-                      {isSmallScreen ? (
-                        <p>{subServiceDetail.info.short}</p>
-                      ) : (
-                        <p>{subServiceDetail.info.details}</p>
-                      )}
-                    </CardContent>
-                  </Card>
+                        {isSmallScreen ? (
+                          <p className="w-10/12 text-balance">
+                            {subServiceDetail.info.short}
+                          </p>
+                        ) : (
+                          <p className="w-11/12 text-pretty">
+                            {subServiceDetail.info.details}
+                          </p>
+                        )}
+                      </CardContent>
+                    </Card>
+                  </Link>
                 );
               }
             })}
