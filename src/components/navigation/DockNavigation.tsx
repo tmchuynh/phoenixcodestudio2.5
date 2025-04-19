@@ -1,7 +1,10 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaHome, FaPhoneAlt, FaSchool, FaUsers } from "react-icons/fa";
+import { BsQuestionCircle, BsQuestionCircleFill } from "react-icons/bs";
+import { FaBuilding, FaRegBuilding } from "react-icons/fa";
+import { IoHome, IoHomeOutline } from "react-icons/io5";
+import { RiContactsFill, RiContactsLine } from "react-icons/ri";
 
 export default function DockNavigation() {
   const pathname = usePathname();
@@ -10,26 +13,26 @@ export default function DockNavigation() {
     {
       name: "Home",
       href: "/",
-      activeIcon: FaHome,
-      inactiveIcon: FaHome,
+      activeIcon: IoHome,
+      inactiveIcon: IoHomeOutline,
     },
     {
-      name: "Programs",
-      href: "/programs",
-      activeIcon: FaSchool,
-      inactiveIcon: FaSchool,
+      name: "Services",
+      href: "/services",
+      activeIcon: FaBuilding,
+      inactiveIcon: FaRegBuilding,
     },
     {
-      name: "Staff",
-      href: "/about_us/our_staff",
-      activeIcon: FaUsers,
-      inactiveIcon: FaUsers,
+      name: "FAQs",
+      href: "/get_in_touch/frequently_asked_questions",
+      activeIcon: BsQuestionCircleFill,
+      inactiveIcon: BsQuestionCircle,
     },
     {
       name: "Contact",
-      href: "/contact_us",
-      activeIcon: FaPhoneAlt,
-      inactiveIcon: FaPhoneAlt,
+      href: "/get_in_touch/lets_work_together",
+      activeIcon: RiContactsFill,
+      inactiveIcon: RiContactsLine,
     },
   ];
 
