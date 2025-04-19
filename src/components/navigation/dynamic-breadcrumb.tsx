@@ -61,7 +61,11 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
           ? clipString(segment, 15)
           : segment;
 
-      const r = generateRandomString((length = 5));
+      const r = generateRandomString(5);
+
+      console.log(
+        `href: ${href}, segment: ${segment}, index: ${index}, isLast: ${isLast}, r: ${r}`
+      );
 
       return (
         <BreadcrumbItem
@@ -112,20 +116,6 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         </BreadcrumbItem>
       );
 
-      if (pathSegments.length > 0) {
-        const href = `/${pathSegments.join("/")}`;
-        const lastSegment = capitalizedSegments[capitalizedSegments.length - 1];
-        items.push(
-          <BreadcrumbSeparator key="sep-1" className="ml-1 dark:text-fancy">
-            <TbSlashes />
-          </BreadcrumbSeparator>
-        );
-
-        items.push(
-          renderItem(href, lastSegment, pathSegments.length - 1, true)
-        );
-      }
-
       if (pathSegments.length > 2) {
         const href = `/${pathSegments.slice(0, 2).join("/")}`;
         const segment = capitalizedSegments[1];
@@ -137,14 +127,26 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
         );
 
         items.push(renderItem(href, segment, 1, false));
-      }
-
-      if (pathSegments.length > 1) {
+      } else if (pathSegments.length > 1) {
         const href = `/${pathSegments.join("/")}`;
         const lastSegment = capitalizedSegments[capitalizedSegments.length - 1];
 
         items.push(
           <BreadcrumbSeparator key="sep-last" className="ml-1 dark:text-fancy">
+            <TbSlashes />
+          </BreadcrumbSeparator>
+        );
+
+        items.push(
+          renderItem(href, lastSegment, pathSegments.length - 1, true)
+        );
+      }
+
+      if (pathSegments.length > 0) {
+        const href = `/${pathSegments.join("/")}`;
+        const lastSegment = capitalizedSegments[capitalizedSegments.length - 1];
+        items.push(
+          <BreadcrumbSeparator key="sep-1" className="ml-1 dark:text-fancy">
             <TbSlashes />
           </BreadcrumbSeparator>
         );
