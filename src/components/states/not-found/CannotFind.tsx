@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CannotFind() {
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-[max(50%,36rem)_1fr] grid-rows-[1fr_auto_1fr] min-h-full">
+      <div className="grid grid-cols-1 lg:grid-cols-[max(50%,36rem)_1fr] grid-rows-[1fr_auto_1fr] min-h-screen">
         <main className="lg:col-span-2 lg:col-start-1 lg:row-start-2 mx-auto px-6 lg:px-8 py-24 sm:py-32 w-full max-w-7xl">
           <div className="max-w-lg">
             <p className="font-semibold text-base/8 text-indigo-600">404</p>
