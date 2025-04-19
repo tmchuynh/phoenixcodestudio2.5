@@ -42,11 +42,11 @@ export default function CallToActionImage({ cta }: { cta: CTA }) {
           </defs>
         </svg>
       </div>
-      <div className="md:top-10 lg:top-24 md:left-12 lg:left-20 md:absolute md:w-9/12 lg:w-2/5">
-        <p className="mt-6 text-base/7 text-white">{cta.intro}</p>
+      <div className="md:top-10 lg:top-24 md:left-12 lg:left-20 md:absolute mx-auto w-11/12 md:w-9/12 lg:w-2/5">
+        <p className="mt-6 text-base/7 md:text-white">{cta.intro}</p>
 
         {cta.description && (
-          <p className="mt-6 text-base/7 text-white">{cta.description}</p>
+          <p className="mt-6 text-base/7 md:text-white">{cta.description}</p>
         )}
       </div>
       <div className="relative mx-auto lg:px-8 py-24 lg:py-32 xl:py-40 max-w-7xl">

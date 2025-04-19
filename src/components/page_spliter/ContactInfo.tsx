@@ -1,7 +1,7 @@
 export default function ContactInfoSpliter() {
   return (
-    <div className="py-24 sm:py-32">
-      <div className="mx-auto px-6 lg:px-8">
+    <div className="py-20 sm:py-26">
+      <div className="mx-auto w-11/12">
         <div className="mx-auto lg:mx-0 max-w-2xl">
           <h2>Our offices</h2>
           <p className="mt-6 text-lg/8">

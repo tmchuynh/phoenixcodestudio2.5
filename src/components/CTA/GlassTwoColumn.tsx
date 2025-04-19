@@ -7,7 +7,7 @@ import DynamicButton from "../button/button-dynamic";
 export default function GlassTwoColumn() {
   const router = useRouter();
   return (
-    <div className="mx-auto sm:px-6 lg:px-8">
+    <div className="mx-auto sm:w-11/12">
       <div className="flex lg:flex-row flex-col lg:items-center gap-16 xl:gap-x-20 mx-auto lg:mx-0 px-6 xl:px-20 sm:p-8">
         <Image
           alt=""

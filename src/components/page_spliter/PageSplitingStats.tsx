@@ -47,7 +47,7 @@ export default function PageSplitingStats() {
           className="bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20 w-[68.5625rem] aspect-1097/845"
         />
       </div>
-      <div className="mx-auto px-6 lg:px-8 max-w-7xl">
+      <div className="mx-auto w-11/12 max-w-7xl">
         <div className="mx-auto lg:mx-0 max-w-2xl">
           <h2 className="font-semibold text-5xl text-white sm:text-7xl tracking-tight">
             Work with us

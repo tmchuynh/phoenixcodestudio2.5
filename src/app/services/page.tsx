@@ -61,10 +61,10 @@ const ServicesPage: FC = () => {
             ))}
             <DynamicButton
               variant={"accentOutline"}
-              className="mx-0 w-1/3"
+              className="mx-0 lg:w-1/3"
               onClick={() => router.push("/get_in_touch")}
             >
-              Contact Us For a FREE Consultation
+              FREE Consultation
             </DynamicButton>
           </div>
           <div className="gap-4 lg:gap-6 grid grid-cols-1 lg:grid-cols-2">

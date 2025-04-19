@@ -4,7 +4,7 @@ import DynamicButton from "../button/button-dynamic";
 export default function CallToAction() {
   const router = useRouter();
   return (
-    <div className="mx-auto px-6 lg:px-8 py-24 sm:py-32 max-w-7xl">
+    <div className="mx-auto py-24 sm:py-32 w-11/12 max-w-7xl">
       <h2> Ready to Turn Your Vision into Reality?</h2>
       <p>
         Whether you’re starting fresh, redefining your brand, or scaling to new

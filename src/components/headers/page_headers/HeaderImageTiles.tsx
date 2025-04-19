@@ -6,7 +6,7 @@ export default function HeaderImageTiles() {
   const router = useRouter();
   return (
     <div className="py-32 overflow-hidden">
-      <div className="lg:flex mx-auto px-6 lg:px-8 max-w-7xl">
+      <div className="lg:flex mx-auto w-11/12 max-w-7xl">
         <div className="lg:flex-none gap-x-12 gap-y-16 lg:gap-y-8 grid grid-cols-1 mx-auto lg:mx-0 lg:min-w-full max-w-2xl lg:max-w-none">
           <div className="lg:col-end-1 lg:pb-8 lg:w-full lg:max-w-lg">
             <h4>Phoenix Code Studio</h4>

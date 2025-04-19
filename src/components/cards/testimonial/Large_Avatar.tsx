@@ -7,7 +7,7 @@ export default function FeaturedLargeTestimonial({
   testimonial: Testimonial;
 }) {
   return (
-    <section className="px-6 lg:px-8 overflow-hidden isolate">
+    <section className="mx-auto w-11/12 overflow-hidden isolate">
       <div className="relative mx-auto py-24 sm:py-32 max-w-2xl lg:max-w-4xl">
         <div className="right-1/2 lg:right-full -z-10 absolute inset-y-0 shadow-indigo-600/10 shadow-xl mr-12 sm:mr-20 md:mr-0 lg:-mr-36 ring-1 ring-indigo-50 w-[150vw] origin-bottom-left lg:origin-center skew-x-[-30deg]" />
         <figure className="items-center gap-x-6 gap-y-8 lg:gap-x-10 grid grid-cols-1">

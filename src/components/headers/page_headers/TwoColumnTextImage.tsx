@@ -4,7 +4,7 @@ import { FeaturedImageGallery } from "@/components/images/FeaturedImage";
 
 export default function TwoColumnTextImage() {
   return (
-    <div className="mx-auto px-6 lg:px-8">
+    <div className="mx-auto w-11/12">
       <div className="items-start gap-x-8 gap-y-16 sm:gap-y-24 grid grid-cols-1 lg:grid-cols-2 mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
         <FeaturedImageGallery />
         <div>

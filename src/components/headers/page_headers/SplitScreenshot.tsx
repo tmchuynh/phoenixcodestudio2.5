@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function SplitScreenshot() {
   return (
     <div className="relative overflow-hidden isolate">
-      <div className="lg:flex mx-auto px-6 lg:px-8 py-10 md:py-20 lg:py-24 pt-10 w-10/12">
+      <div className="lg:flex mx-auto py-8 md:py-18 lg:py-22 w-11/12">
         <div className="mx-auto lg:mx-0 lg:pt-8 max-w-2xl lg:shrink-0">
           <div className="mt-12 md:mt-18 lg:mt-20 xl:mt-32">
             <h4>Crafted With Purpose, Built With Passion</h4>

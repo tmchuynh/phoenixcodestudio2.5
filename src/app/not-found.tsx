@@ -38,7 +38,7 @@ const links = [
 export default function Example() {
   return (
     <div>
-      <main className="mx-auto px-6 lg:px-8 pt-10 pb-16 sm:pb-24 w-full max-w-7xl">
+      <main className="mx-auto pt-10 pb-16 sm:pb-24 w-11/12 max-w-7xl">
         <div className="flex justify-center items-center">
           <ResponsiveLogo />
         </div>

@@ -4,9 +4,9 @@ import {
   ComputerDesktopIcon,
 } from "@heroicons/react/24/outline";
 
-export default function Example() {
+export default function BecomeAPartnerFormPage() {
   return (
-    <div className="bg-white px-6 lg:px-8 py-24 sm:py-32 isolate">
+    <div className="bg-white mx-auto py-24 sm:py-32 w-11/12 isolate">
       <div className="mx-auto max-w-2xl sm:text-center">
         <h2 className="font-semibold text-4xl text-balance text-gray-900 sm:text-5xl tracking-tight">
           Contact sales

@@ -1,7 +1,7 @@
 export default function Example() {
   return (
     <div className="bg-white py-8 sm:py-16">
-      <div className="mx-auto px-6 lg:px-8 max-w-7xl">
+      <div className="mx-auto w-11/12">
         <div className="mx-auto lg:mx-0 divide-y divide-gray-100 max-w-2xl lg:max-w-none">
           <div className="gap-10 grid grid-cols-1 lg:grid-cols-3 py-16">
             <div>

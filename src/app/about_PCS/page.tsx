@@ -10,7 +10,7 @@ export default function OurAspirationsPage() {
       <MasonryGridGallery />
 
       <ThreeColumns />
-      <div>
+      <div className="mx-auto w-11/12">
         <h2>This Is Who We Are</h2>
 
         <p>
@@ -56,7 +56,10 @@ export default function OurAspirationsPage() {
           lead.
         </p>
       </div>
-      <DynamicButton variant={"outline"} className="mx-0 my-3 w-1/3">
+      <DynamicButton
+        variant={"outline"}
+        className="mx-0 my-3 md:ml-auto lg:w-1/3"
+      >
         Come Work With Us
       </DynamicButton>
 

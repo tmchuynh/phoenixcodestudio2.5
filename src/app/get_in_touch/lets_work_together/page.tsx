@@ -59,7 +59,7 @@ export default function LetsWorkTogether() {
           strokeWidth={0}
         />
       </svg>
-      <div className="mx-auto py-8 md:py-12 lg:py-24 2xl:py-30 max-w-3xl lg:max-w-7xl">
+      <div className="mx-auto py-8 md:py-12 lg:py-24 2xl:py-30 w-10/12 max-w-3xl lg:max-w-7xl">
         <h2>Let’s Talk About Your Project</h2>
         <p className="max-w-4xl">
           At first, we were all about helping people build meaningful brand

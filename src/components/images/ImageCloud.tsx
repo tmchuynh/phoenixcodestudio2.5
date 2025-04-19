@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function ImageCloud() {
   return (
-    <div className="py-24 sm:py-32">
-      <div className="mx-auto px-6 lg:px-8 max-w-7xl">
+    <div className="py-16 md:py-24">
+      <div className="mx-auto w-11/12 max-w-7xl">
         <h2 className="text-center text-lg/8 font-semibold<Image">
           Trusted by the world’s most innovative teams
         </h2>

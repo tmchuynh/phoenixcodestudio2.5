@@ -123,7 +123,7 @@ export default function ServicePage() {
             </p>
             <DynamicButton
               variant={"secondaryOutline"}
-              className="mx-0 w-1/3"
+              className="mx-0 lg:w-1/3"
               onClick={() =>
                 router.push("/get_in_touch/frequently_asked_questions")
               }
