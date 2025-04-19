@@ -4,7 +4,7 @@ export default function CannotFind() {
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-[max(50%,36rem)_1fr] grid-rows-[1fr_auto_1fr] min-h-screen">
-        <main className="lg:col-span-2 lg:col-start-1 lg:row-start-2 mx-auto px-6 lg:px-8 py-24 sm:py-32 w-full max-w-7xl">
+        <main className="lg:col-span-2 lg:col-start-1 lg:row-start-2 mx-auto py-12 md:py-20 w-11/12 max-w-7xl">
           <div className="max-w-lg">
             <p className="font-semibold text-base/8 text-indigo-600">404</p>
             <h1 className="mt-4 font-semibold text-5xl text-gray-900 text-pretty sm:text-6xl tracking-tight">
@@ -22,7 +22,7 @@ export default function CannotFind() {
         </main>
         <footer className="lg:col-span-2 lg:col-start-1 lg:row-start-3 self-end">
           <div className="bg-gray-50 py-10 border-gray-100 border-t">
-            <nav className="flex items-center gap-x-4 mx-auto px-6 lg:px-8 w-full max-w-7xl text-gray-600 text-sm/7">
+            <nav className="flex items-center gap-x-4 mx-auto w-11/12 max-w-7xl text-sm/7">
               <a href="#">Contact support</a>
               <svg
                 viewBox="0 0 2 2"
