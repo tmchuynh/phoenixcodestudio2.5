@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Example() {
+export default function ImageCloud() {
   return (
     <div className="py-24 sm:py-32">
       <div className="mx-auto px-6 lg:px-8 max-w-7xl">
