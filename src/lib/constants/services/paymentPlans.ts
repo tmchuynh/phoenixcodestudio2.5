@@ -10,9 +10,10 @@ export const paymentPlans: PaymentDetails[] = [
     startingPrice: 1200,
     info: {
       intro: [
-        "A lean, practical solution designed for startups and entrepreneurs.",
-        "Ideal for businesses with tight budgets needing a fast, professional launch.",
+        "A lean and highly practical solution tailored specifically for startups and solo entrepreneurs aiming to establish a strong digital presence quickly. Strategically crafted for businesses operating on tight budgets, this package delivers a professional, polished launch experience without unnecessary overhead.",
+        "Perfect for those who prioritize speed, simplicity, and functionality while maintaining a high standard of design and usability. Empowers early-stage ventures to go to market faster with confidence, clarity, and a user-first digital experience.",
       ],
+
       short: "Starter Plan",
       description:
         "The Essential Service Plan is designed for startups, solopreneurs, and small businesses who need a reliable and affordable entry point into the digital space. This plan provides just the core services required to establish an online presence quickly, with a strong focus on performance, usability, and accessibility.",
@@ -27,7 +28,8 @@ export const paymentPlans: PaymentDetails[] = [
       ],
     },
     explanation:
-      "This plan offers a controlled, phased investment approach — allowing small businesses to build their digital foundation without overextending resources. Ideal for launching quickly and scaling later.",
+      "This plan provides a strategic, phased investment model that enables small businesses to establish a solid digital foundation while maintaining financial control. By focusing on essential features first, it allows for a swift and professional launch without overcommitting resources. As the business grows, the digital presence can scale seamlessly, adapting to evolving needs and priorities. It’s a smart, sustainable way to enter the market with confidence while preserving flexibility for future enhancements.",
+
     useCases: [
       "Startup MVP websites",
       "Freelancer portfolios or one-pagers",
@@ -65,8 +67,8 @@ export const paymentPlans: PaymentDetails[] = [
     startingPrice: 7500,
     info: {
       intro: [
-        "A strategic package for growing businesses looking to expand their digital presence.",
-        "Balances affordability with advanced service offerings and long-term support.",
+        "A strategic and scalable package crafted for growing businesses aiming to strengthen and expand their digital presence. Carefully balances budget-conscious execution with elevated service offerings, providing a clear path to long-term success and support.",
+        "Ideal for companies ready to move beyond the basics and invest in a more robust, adaptable digital infrastructure. Designed to support evolving needs, it offers a harmonious blend of design excellence, performance optimization, and collaborative refinement.",
       ],
       short: "Classic Plan",
       description:
@@ -82,7 +84,7 @@ export const paymentPlans: PaymentDetails[] = [
       ],
     },
     explanation:
-      "Designed for projects requiring both thoughtful strategy and visual excellence, this plan combines structure, collaboration, and performance to ensure a standout digital presence.",
+      "This plan is tailored for businesses seeking to elevate their online presence through thoughtful digital strategy and refined visual storytelling. It combines structured project planning, creative collaboration, and performance-driven development to ensure your brand stands out in a competitive landscape. With long-term scalability in mind, it supports growing organizations with the tools and systems needed to adapt, expand, and lead in their space.",
     useCases: [
       "Corporate site redesign or refresh",
       "Conversion-optimized service platforms",
@@ -120,8 +122,8 @@ export const paymentPlans: PaymentDetails[] = [
     startingPrice: 20000,
     info: {
       intro: [
-        "An enterprise-ready plan designed for scale, innovation, and growth.",
-        "Combines strategic consulting, continuous delivery, and full-service digital execution.",
+        "An enterprise-grade solution architected for companies focused on innovation, operational scale, and digital leadership. Merges high-level strategic consulting, continuous delivery pipelines, and full-service execution for ongoing digital evolution.",
+        "Optimized for organizations with complex internal workflows, large user bases, or multi-channel infrastructure. This plan empowers companies to maintain peak performance, maximize ROI, and continually innovate across all digital touchpoints.",
       ],
       short: "Advanced Plan",
       description:
@@ -138,7 +140,7 @@ export const paymentPlans: PaymentDetails[] = [
       ],
     },
     explanation:
-      "Elite-level digital transformation designed for complex ecosystems and long-term results. Ideal for companies with evolving goals and high customer engagement requirements.",
+      "An elite-level digital transformation package engineered for enterprises with dynamic needs and long-term visions. It supports organizations navigating complex ecosystems—whether through integrations, automation, or high-volume customer engagement. This plan fosters innovation at scale, offering comprehensive strategy, agile delivery, and full-stack implementation to align technology with business outcomes. Perfect for teams seeking measurable growth, system resilience, and sustained digital excellence.",
     useCases: [
       "Enterprise SaaS platforms and dashboards",
       "Corporate sites with ongoing feature development",
@@ -176,8 +178,8 @@ export const paymentPlans: PaymentDetails[] = [
     startingPrice: 25000,
     info: {
       intro: [
-        "A fully customized solution for complex, multi-phase, or experimental projects.",
-        "Includes personalized financial structuring and multi-stakeholder collaboration.",
+        "A bespoke solution meticulously designed for experimental, complex, or multi-phase digital initiatives. Offers custom financial structuring, deep discovery sessions, and coordination across multiple stakeholders and departments. Highly adaptable and built from the ground up, this package is made for teams who need freedom, innovation, and strategic precision.",
+        "Whether you're piloting something bold or orchestrating a multi-platform experience, this plan meets complexity with clarity and custom architecture.",
       ],
       short: "Bespoke Plan",
       description:
@@ -194,7 +196,7 @@ export const paymentPlans: PaymentDetails[] = [
       ],
     },
     explanation:
-      "A future-forward solution for teams requiring ultimate flexibility, strategic input, and deep customization. Best suited for complex, layered, or long-term projects where traditional packages don’t fit.",
+      "This offering is built for ambitious, future-focused projects that don’t fit the mold of traditional service plans. It emphasizes flexibility, strategy, and deep customization—ideal for R&D-driven initiatives, cross-functional product teams, or multi-agency collaborations. With phased planning, adaptive budgeting, and expert oversight, it supports digital ventures that require advanced problem-solving, agile execution, and long-term adaptability.",
     useCases: [
       "Startup platform MVPs with roadmap support",
       "Multi-tenant SaaS or product ecosystems",
