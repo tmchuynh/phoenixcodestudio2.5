@@ -81,7 +81,7 @@ export function NavBar() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>About PCS</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="gap-3 grid grid-cols-2 xl:grid-cols-3 lg:grid-rows-4 p-4 md:w-[35em] lg:w-[45em] xl:w-[60em] lg:h-[25em]">
+                    <ul className="gap-3 grid grid-cols-2 lg:grid-rows-4 p-4 md:w-[35em] lg:w-[45em] xl:w-[60em] lg:h-[25em]">
                       {aboutFeaturedLinks.map((link, index) => (
                         <li
                           className="col-span-1 lg:col-span-1 row-span-1 lg:row-span-4 m-0"
