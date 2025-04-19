@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="xl:gap-8 xl:grid xl:grid-cols-3">
           <Image
             alt="PCS Logo"
-            src="/images/logo.png"
+            src="/images/logo_white.png"
             className="object-cover object-center aspect-auto"
             width={300}
             height={300}
