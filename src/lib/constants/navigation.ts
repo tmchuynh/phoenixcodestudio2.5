@@ -2,28 +2,20 @@ import { Menu } from "../types";
 
 export const about: Menu[] = [
   {
-    title: "Our Origin Story",
-    href: "/about_PCS/our_origin_story",
-    description:
-      "Stay informed with expert insights, industry trends, and company updates.",
-  },
-  {
     title: "Testimonials",
     href: "/about_PCS/testimonials",
     description:
       "Hear directly from clients about the results we’ve helped them achieve.",
   },
+  {
+    title: "Our Origin Story",
+    href: "/about_PCS/our_origin_story",
+    description:
+      "Stay informed with expert insights, industry trends, and company updates.",
+  },
 ];
 
 export const aboutFeaturedLinks: Menu[] = [
-  {
-    title: "Read Our Blog",
-    href: "/blogs",
-    imageUrl:
-      "https://img.freepik.com/free-photo/businessman-hands-typing-laptop-keyboard-real-time-4k-video-focus-hands-vertical-frame-freelancing-home-office-cup-tea-foreground-media-social-networks_166373-2124.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
-    description:
-      "Stay informed with expert insights, industry trends, and company updates",
-  },
   {
     title: "About PCS",
     href: "/about_PCS",
@@ -31,6 +23,14 @@ export const aboutFeaturedLinks: Menu[] = [
       "https://img.freepik.com/premium-photo/back-view-female-coach-with-smartphone-pointing-financial-information-papers-hanging-blackboard-office_274679-8823.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     description:
       "Discover our mission, values, and the story behind our brand.",
+  },
+  {
+    title: "Read Our Blog",
+    href: "/blogs",
+    imageUrl:
+      "https://img.freepik.com/free-photo/businessman-hands-typing-laptop-keyboard-real-time-4k-video-focus-hands-vertical-frame-freelancing-home-office-cup-tea-foreground-media-social-networks_166373-2124.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
+    description:
+      "Stay informed with expert insights, industry trends, and company updates",
   },
 ];
 
