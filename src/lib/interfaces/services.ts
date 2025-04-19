@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import { PricingTier } from "../types";
 
 export interface Category {
@@ -47,7 +48,7 @@ export interface SubInformation {
 
 export interface ListDetail {
   title?: string;
-  description?: string;
+  description?: string | JSX.Element;
   list?: ListDetail[];
 }
 
