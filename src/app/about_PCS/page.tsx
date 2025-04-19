@@ -7,6 +7,8 @@ import { testimonials } from "@/lib/constants/testimonials";
 export default function OurAspirationsPage() {
   return (
     <div className="mx-auto pt-3 md:pt-5 lg:pt-9 w-11/12">
+      <MasonryGridGallery />
+
       <ThreeColumns />
       <div>
         <h2>This Is Who We Are</h2>
@@ -59,8 +61,6 @@ export default function OurAspirationsPage() {
       </DynamicButton>
 
       <FeaturedOverlappingTestimonial testimonial={testimonials[4]} />
-
-      <MasonryGridGallery />
     </div>
   );
 }
