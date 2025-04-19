@@ -2,7 +2,6 @@ export interface Project {
   title: string;
   featured: boolean;
   description: string;
-  imageUrl: string;
   tags: string[];
   tech: {
     languages: string[];
