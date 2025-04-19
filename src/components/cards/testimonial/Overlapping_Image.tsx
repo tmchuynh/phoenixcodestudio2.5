@@ -9,13 +9,13 @@ export default function FeaturedOverlappingTestimonial({
   return (
     <div className="pt-24 sm:pt-32 pb-16 sm:pb-24 xl:pb-32">
       <div className="pb-20 sm:pb-24 xl:pb-0">
-        <div className="flex xl:flex-row flex-col items-center xl:items-stretch gap-x-8 gap-y-10 sm:gap-y-8 mx-auto px-6 lg:px-8 max-w-7xl">
+        <div className="flex xl:flex-row flex-col items-center xl:items-stretch gap-x-8 gap-y-10 sm:gap-y-8 mx-auto w-11/12 max-w-7xl">
           <div className="xl:flex-none -mt-8 xl:-mb-8 w-full xl:w-96 max-w-2xl">
-            <div className="relative md:-mx-8 xl:mx-0 h-full aspect-2/1 xl:aspect-auto">
+            <div className="relative md:-mx-8 xl:mx-0 h-full aspect-square md:aspect-2/1 xl:aspect-auto">
               <Image
                 alt={testimonial.name}
                 src="/images/spencer.jpeg"
-                className="absolute inset-0 shadow-2xl rounded-2xl size-full object-cover"
+                className="absolute inset-0 shadow-2xl rounded-2xl h-full size-full object-cover"
                 width={2000}
                 height={1200}
                 priority
