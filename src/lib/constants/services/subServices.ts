@@ -173,31 +173,6 @@ export const subServiceDetails: SubItem[] = [
         ],
       },
       {
-        title: "Our Approach to Brand Storytelling",
-        lists: [
-          {
-            title: "Discover & Define Your Unique Brand Story",
-            description:
-              "We start by diving deep into your brand’s mission, values, and audience insights. Through research and discovery sessions, we identify the key elements that make your brand unique and align them with your customer’s expectations. This foundation ensures your story is both authentic and impactful.",
-          },
-          {
-            title: "Craft Emotionally Engaging Narratives",
-            description:
-              "A great story is more than just words—it’s an experience. Using proven storytelling techniques, we create compelling narratives that connect with your audience on a human level. Whether it’s your brand’s origin, customer success stories, or value-driven messaging, we ensure every piece is emotionally engaging and memorable.",
-          },
-          {
-            title: "Integrate Your Story Across Multiple Channels",
-            description:
-              "A strong brand story should be consistent and visible across all platforms. We seamlessly integrate your messaging into your website, social media, email campaigns, marketing materials, and product descriptions to ensure a cohesive and impactful presence at every touchpoint.",
-          },
-          {
-            title: "Drive Meaningful Engagement & Conversions",
-            description:
-              "Our storytelling strategies are designed to not only capture attention but also drive action. By creating relatable, authentic, and inspiring content, we help turn visitors into loyal customers. Whether through blogs, social media, video content, or email campaigns, we ensure your brand story builds credibility, fosters engagement, and increases conversions.",
-          },
-        ],
-      },
-      {
         title: "Our Brand Storytelling Services",
         lists: [
           {
