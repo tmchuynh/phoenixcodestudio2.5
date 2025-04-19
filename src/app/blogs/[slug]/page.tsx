@@ -5,10 +5,57 @@ import LoadingIndicator from "@/components/states/loading/Loading";
 import CannotFind from "@/components/states/not-found/CannotFind";
 import { Badge } from "@/components/ui/badge";
 import { BlogPost } from "@/lib/interfaces/blogs";
+import { cn } from "@/lib/utils";
 import { convertToDate } from "@/lib/utils/convert";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+
+const RecursiveList = ({
+  list,
+  depth = 3,
+}: {
+  list: any[];
+  depth?: number;
+}) => {
+  return (
+    <ul
+      className={cn("mt-2 list-decimal list-inside", {
+        "mt-0 list-decimal list-inside": depth === 4,
+        "mt-2 ml-4": depth === 5,
+        "mt-2 list-decimal list-inside": depth === 6,
+        "ml-5": depth >= 7,
+        "list-none": depth === 3,
+      })}
+    >
+      {list.map((item, index) => (
+        <li
+          key={index}
+          className={cn("text-balance", {
+            "ml-3": depth === 4,
+          })}
+        >
+          {item.title && (
+            <>
+              <strong
+                className={cn("text-foreground", {
+                  "text-fancy": depth === 3,
+                  "text-secondary underline underline-offset-2 decoration-1 decoration-tertiary":
+                    depth === 5,
+                })}
+              >
+                {item.title}
+              </strong>
+              :{" "}
+            </>
+          )}
+          {item.description && <span>{item.description}</span>}
+          {item.list && <RecursiveList list={item.list} depth={depth + 1} />}
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 const BlogPostPage = () => {
   const { slug } = useParams();
@@ -52,8 +99,8 @@ const BlogPostPage = () => {
             <h1>{post.title}</h1>
             <section className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-3 xl:py-6 border-b">
               <section>
-                <div className="flex md:flex-row-reverse flex-col md:justify-between items-center space-x-6">
-                  <div className="flex space-x-2">
+                <div className="flex md:flex-row-reverse flex-col md:justify-between items-center gap-6">
+                  <div className="flex flex-wrap justify-end gap-2 w-fit">
                     {post.topics.map((topic: string, index: number) => {
                       return (
                         <Badge
@@ -90,7 +137,7 @@ const BlogPostPage = () => {
                   height={800}
                   priority={true}
                   alt={`${post.title}-Main-Image`}
-                  className="shadow-lg mx-auto md:mt-4 xl:mt-0 mb-2 rounded-2xl w-full h-full object-cover object-center self-center aspect-video"
+                  className="shadow-lg mx-auto md:mt-4 xl:mt-0 mb-2 rounded-2xl w-full h-full transform object-cover object-center self-center aspect-video"
                 />
               </div>
             </section>
@@ -112,109 +159,10 @@ const BlogPostPage = () => {
                         <h3 className={!list.description ? "pt-2" : ""}>
                           {subList.title}
                         </h3>
-                      ) : null}{" "}
+                      ) : // 2
+                      null}
                       <p>{subList.description && subList.description}</p>
-                      {subList.list &&
-                        subList.list.map((innerList, innerIndex) =>
-                          innerList.title ? (
-                            <div key={innerIndex}>
-                              <p>
-                                {innerList.title && (
-                                  <>
-                                    <strong className="text-secondary">
-                                      {innerList.title}:
-                                    </strong>{" "}
-                                  </>
-                                )}
-                                {innerList.description && innerList.description}
-                              </p>
-
-                              {innerList.list && (
-                                <ul className="mt-0 list-decimal list-inside">
-                                  {innerList.list.map((b_list, b_index) => (
-                                    <li key={b_index}>
-                                      {b_list.title && (
-                                        <strong className="text-foreground">
-                                          {b_list.title}:{" "}
-                                        </strong>
-                                      )}
-                                      {b_list.description}
-
-                                      {b_list.list && (
-                                        <ul className="mt-2 ml-4">
-                                          {b_list.list.map(
-                                            (c_list, c_index) => (
-                                              <li key={c_index}>
-                                                {c_list.title && (
-                                                  <strong className="text-tertiary">
-                                                    {c_list.title}:{" "}
-                                                  </strong>
-                                                )}
-                                                {c_list.description}
-
-                                                {c_list.list && (
-                                                  <ul className="mt-2 list-decimal list-inside">
-                                                    {c_list.list.map(
-                                                      (d_list, d_index) => (
-                                                        <li key={d_index}>
-                                                          {d_list.title && (
-                                                            <strong>
-                                                              {d_list.title}:{" "}
-                                                            </strong>
-                                                          )}
-                                                          {d_list.description}
-
-                                                          {d_list.list && (
-                                                            <ul className="ml-5">
-                                                              {d_list.list.map(
-                                                                (
-                                                                  e_list,
-                                                                  e_index
-                                                                ) => (
-                                                                  <li
-                                                                    key={
-                                                                      e_index
-                                                                    }
-                                                                  >
-                                                                    {e_list.title && (
-                                                                      <strong className="text-foreground">
-                                                                        {
-                                                                          e_list.title
-                                                                        }
-                                                                        :{" "}
-                                                                      </strong>
-                                                                    )}
-                                                                    {
-                                                                      e_list.description
-                                                                    }
-                                                                  </li>
-                                                                )
-                                                              )}
-                                                            </ul>
-                                                          )}
-                                                        </li>
-                                                      )
-                                                    )}
-                                                  </ul>
-                                                )}
-                                              </li>
-                                            )
-                                          )}
-                                        </ul>
-                                      )}
-                                    </li>
-                                  ))}
-                                </ul>
-                              )}
-                            </div>
-                          ) : (
-                            <ul key={innerIndex}>
-                              <li>
-                                {innerList.description && innerList.description}
-                              </li>
-                            </ul>
-                          )
-                        )}
+                      {subList.list && <RecursiveList list={subList.list} />}
                     </div>
                   ))}
               </section>
