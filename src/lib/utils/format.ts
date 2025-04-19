@@ -60,6 +60,48 @@ export const formatCurrency = (value: number) => {
   return value.toLocaleString("en-US", { style: "currency", currency: "USD" });
 };
 
+
+/**
+ * Compares the word count of a string against a maximum threshold.
+ * 
+ * @param text - The string to check word count for
+ * @param maxWords - The maximum number of words allowed
+ * @returns `true` if the text contains fewer or equal words than the maximum, `false` otherwise
+ * @throws {Error} When maxWords is negative
+ * 
+ * @example
+ * ```typescript
+ * // Returns true as the string has 5 words
+ * compareStringWordCount("This is a simple example", 5);
+ * 
+ * // Returns false as the string has 5 words
+ * compareStringWordCount("This is a simple example", 4);
+ * ```
+ */
+export function compareStringWordCount(text: string, maxWords: number): boolean {
+  if (maxWords < 0) {
+    throw new Error("Maximum words must be a non-negative number.");
+  }
+
+  const words = text.trim().split(/\s+/);
+  return words.length <= maxWords;
+}
+
+/**
+ * Clips a string to a specified maximum length.
+ * 
+ * @param {string} text - The string to be clipped
+ * @param {number} maxLength - The maximum length allowed for the string
+ * @returns {string} The original string if its length is less than or equal to maxLength,
+ *                   otherwise the string truncated to maxLength characters
+ */
+export function clipString(text: string, maxLength: number): string {
+  if (text.length <= maxLength) {
+    return text;
+  }
+  return text.substring(0, maxLength);
+}
+
 /**
  * Formats a number by rounding it to the nearest hundred and adding commas as thousand separators.
  *
