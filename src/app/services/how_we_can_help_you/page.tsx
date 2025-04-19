@@ -1,5 +1,6 @@
 import InfoTestimonial from "@/components/headers/page_headers/InfoTestimonial";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HowWeCanHelpYou() {
   return (
@@ -141,291 +142,386 @@ export default function HowWeCanHelpYou() {
 
       <main className="mx-auto pt-12 md:pt-10 lg:pt-16 w-10/12 md:w-11/12">
         <section className="gap-8 lg:gap-12 grid grid-cols-1 lg:grid-cols-2 md:mb-12 lg:mb-24 2xl:mb-32 py-3 md:py-7 2xl:py-12">
-          <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
-            <Image
-              alt=""
-              src="https://img.freepik.com/free-photo/creative-thinking-creativity-design-process-concept_53876-127465.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
-              height={500}
-              width={500}
-            />
-            <div>
-              <h3>Custom Website Development</h3>
-              <p>
-                Your website is the cornerstone of your digital presence. At
-                Phoenix Code Studio, we specialize in crafting intuitive,
-                responsive, and high-performing websites tailored to your unique
-                needs. Whether you’re looking for a sleek portfolio, a dynamic
-                e-commerce platform, or a robust content hub, we bring your
-                vision to life with precision, creativity, and a focus on
-                delivering exceptional user experiences.
-              </p>
-              <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
-                <li>
-                  Fully custom front-end and back-end development to meet your
-                  specific requirements
-                </li>
-                <li>
-                  Tailored UX/UI design that prioritizes accessibility and user
-                  engagement
-                </li>
-                <li>
-                  Optimized for performance, speed, and search engine visibility
-                  (SEO)
-                </li>
-                <li>
-                  Scalable and future-proof architecture to grow with your
-                  business
-                </li>
-              </ul>
+          <Link
+            href={
+              "/services/comprehensive-website-solutions/custom-websites-designed-for-impact-and-performance"
+            }
+            className="group"
+          >
+            <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
+              <Image
+                alt=""
+                src="https://img.freepik.com/free-photo/creative-thinking-creativity-design-process-concept_53876-127465.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
+                height={500}
+                width={500}
+              />
+              <div>
+                <h3 className="underline-offset-4 group-hover:underline decoration-2">
+                  Custom Website Development
+                </h3>
+                <p>
+                  Your website is the cornerstone of your digital presence. At
+                  Phoenix Code Studio, we specialize in crafting intuitive,
+                  responsive, and high-performing websites tailored to your
+                  unique needs. Whether you’re looking for a sleek portfolio, a
+                  dynamic e-commerce platform, or a robust content hub, we bring
+                  your vision to life with precision, creativity, and a focus on
+                  delivering exceptional user experiences.
+                </p>
+                <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
+                  <li>
+                    Fully custom front-end and back-end development to meet your
+                    specific requirements
+                  </li>
+                  <li>
+                    Tailored UX/UI design that prioritizes accessibility and
+                    user engagement
+                  </li>
+                  <li>
+                    Optimized for performance, speed, and search engine
+                    visibility (SEO)
+                  </li>
+                  <li>
+                    Scalable and future-proof architecture to grow with your
+                    business
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
-            <Image
-              alt=""
-              src="https://img.freepik.com/premium-photo/back-view-female-coach-with-smartphone-pointing-financial-information-papers-hanging-blackboard-office_274679-8823.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
-              height={500}
-              width={500}
-            />
-            <div>
-              <h3>Authentic Brand Storytelling</h3>
-              <p>
-                We craft compelling brand narratives that authentically define
-                your identity and create a deep emotional connection with your
-                audience. Through strategic storytelling, we bridge the gap
-                between your brand’s values, mission, and vision to build trust
-                and long-term loyalty.
-              </p>
-              <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
-                <li>
-                  Strategic messaging that aligns with your brand’s mission and
-                  values
-                </li>
-                <li>
-                  Visual storytelling that captivates and resonates with your
-                  audience
-                </li>
-                <li>
-                  Campaigns designed to inspire, engage, and foster loyalty
-                </li>
-                <li>
-                  Seamless integration of storytelling across all platforms
-                </li>
-              </ul>
+          <Link
+            href={
+              "/services/scalable-corporate-digital-solutions/authentic-brand-storytelling-that-captivates-connects"
+            }
+            className="group"
+          >
+            <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
+              <Image
+                alt=""
+                src="https://img.freepik.com/premium-photo/back-view-female-coach-with-smartphone-pointing-financial-information-papers-hanging-blackboard-office_274679-8823.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
+                height={500}
+                width={500}
+              />
+              <div>
+                <h3 className="underline-offset-4 group-hover:underline decoration-2">
+                  Authentic Brand Storytelling
+                </h3>
+                <p>
+                  We craft compelling brand narratives that authentically define
+                  your identity and create a deep emotional connection with your
+                  audience. Through strategic storytelling, we bridge the gap
+                  between your brand’s values, mission, and vision to build
+                  trust and long-term loyalty.
+                </p>
+                <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
+                  <li>
+                    Strategic messaging that aligns with your brand’s mission
+                    and values
+                  </li>
+                  <li>
+                    Visual storytelling that captivates and resonates with your
+                    audience
+                  </li>
+                  <li>
+                    Campaigns designed to inspire, engage, and foster loyalty
+                  </li>
+                  <li>
+                    Seamless integration of storytelling across all platforms
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
-            <Image
-              alt=""
-              src="https://img.freepik.com/free-photo/homepage-seen-computer-screen_23-2149416723.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
-              height={500}
-              width={500}
-            />
-            <div>
-              <h3>High-Performance Single-Page Applications (SPAs)</h3>
-              <p>
-                We specialize in building fast, dynamic, and highly responsive
-                single-page applications (SPAs) that deliver real-time updates
-                and seamless navigation. Our SPAs provide an app-like experience
-                that works flawlessly across all devices and screen sizes.
-              </p>
-              <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
-                <li>Cutting-edge frameworks for top-tier performance</li>
-                <li>
-                  Minimal load times and smooth transitions for user retention
-                </li>
-                <li>Interactive elements that enhance engagement</li>
-                <li>Custom SPAs tailored to your business objectives</li>
-              </ul>
+          <Link
+            href={
+              "/services/comprehensive-website-solutions/high-performance-single-page-applications-spas-for-a-seamless-user-experience"
+            }
+            className="group"
+          >
+            <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
+              <Image
+                alt=""
+                src="https://img.freepik.com/free-photo/homepage-seen-computer-screen_23-2149416723.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
+                height={500}
+                width={500}
+              />
+              <div>
+                <h3 className="underline-offset-4 group-hover:underline decoration-2">
+                  High-Performance Single-Page Applications (SPAs)
+                </h3>
+                <p>
+                  We specialize in building fast, dynamic, and highly responsive
+                  single-page applications (SPAs) that deliver real-time updates
+                  and seamless navigation. Our SPAs provide an app-like
+                  experience that works flawlessly across all devices and screen
+                  sizes.
+                </p>
+                <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
+                  <li>Cutting-edge frameworks for top-tier performance</li>
+                  <li>
+                    Minimal load times and smooth transitions for user retention
+                  </li>
+                  <li>Interactive elements that enhance engagement</li>
+                  <li>Custom SPAs tailored to your business objectives</li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
-            <Image
-              alt=""
-              src="https://img.freepik.com/free-photo/merchandise-business-goal-investment-plan-concept_53876-127510.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="lg:block object-bottom hidden shadow-lg rounded-lg w-full object-cover aspect-6/4"
-              height={500}
-              width={500}
-            />
-            <div>
-              <h3>E-Commerce Solutions</h3>
-              <p>
-                We design scalable, secure, and user-friendly e-commerce
-                platforms that enhance the customer experience and drive sales
-                growth. From intuitive navigation to robust analytics, our
-                solutions are built for long-term success.
-              </p>
-              <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
-                <li>
-                  Seamless checkout processes and personalized recommendations
-                </li>
-                <li>
-                  Inventory management and in-depth analytics for optimization
-                </li>
-                <li>Secure platforms with robust data protection</li>
-                <li>
-                  Custom solutions to showcase your brand and maximize
-                  conversions
-                </li>
-              </ul>
+          <Link
+            href={
+              "/services/comprehensive-website-solutions/e-commerce-solutions-built-for-growth-and-success"
+            }
+            className="group"
+          >
+            <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
+              <Image
+                alt=""
+                src="https://img.freepik.com/free-photo/merchandise-business-goal-investment-plan-concept_53876-127510.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="lg:block object-bottom hidden shadow-lg rounded-lg w-full object-cover aspect-6/4"
+                height={500}
+                width={500}
+              />
+              <div>
+                <h3 className="underline-offset-4 group-hover:underline decoration-2">
+                  E-Commerce Solutions
+                </h3>
+                <p>
+                  We design scalable, secure, and user-friendly e-commerce
+                  platforms that enhance the customer experience and drive sales
+                  growth. From intuitive navigation to robust analytics, our
+                  solutions are built for long-term success.
+                </p>
+                <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
+                  <li>
+                    Seamless checkout processes and personalized recommendations
+                  </li>
+                  <li>
+                    Inventory management and in-depth analytics for optimization
+                  </li>
+                  <li>Secure platforms with robust data protection</li>
+                  <li>
+                    Custom solutions to showcase your brand and maximize
+                    conversions
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
-            <Image
-              alt=""
-              src="https://img.freepik.com/free-photo/brand-copyright-name-draft-graphic-concept_53876-124103.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
-              height={500}
-              width={500}
-            />
-            <div>
-              <h3>Rebranding Services</h3>
-              <p>
-                Transform your brand with a fresh, modern identity that connects
-                with your audience and aligns with your business goals. Our
-                comprehensive rebranding services ensure every element reflects
-                your unique vision and positions you for long-term success.
-              </p>
-              <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
-                <li>Logo design and cohesive visual identity systems</li>
-                <li>Strategic brand messaging and positioning</li>
-                <li>
-                  Future-ready brand strategies that stand out in competitive
-                  markets
-                </li>
-                <li>Comprehensive rebranding to fuel growth and build trust</li>
-              </ul>
+          <Link
+            href={
+              "/services/scalable-corporate-digital-solutions/transform-your-brand-with-our-rebranding-services"
+            }
+            className="group"
+          >
+            <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
+              <Image
+                alt=""
+                src="https://img.freepik.com/free-photo/brand-copyright-name-draft-graphic-concept_53876-124103.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
+                height={500}
+                width={500}
+              />
+              <div>
+                <h3 className="underline-offset-4 group-hover:underline decoration-2">
+                  Rebranding Services
+                </h3>
+                <p>
+                  Transform your brand with a fresh, modern identity that
+                  connects with your audience and aligns with your business
+                  goals. Our comprehensive rebranding services ensure every
+                  element reflects your unique vision and positions you for
+                  long-term success.
+                </p>
+                <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
+                  <li>Logo design and cohesive visual identity systems</li>
+                  <li>Strategic brand messaging and positioning</li>
+                  <li>
+                    Future-ready brand strategies that stand out in competitive
+                    markets
+                  </li>
+                  <li>
+                    Comprehensive rebranding to fuel growth and build trust
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
-            <Image
-              alt=""
-              src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051555.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
-              height={500}
-              width={500}
-            />
-            <div>
-              <h3>User-Centered Interface Design</h3>
-              <p>
-                We design intuitive, functional interfaces that balance
-                usability, accessibility, and aesthetic appeal. By prioritizing
-                user research and accessibility best practices, we create
-                seamless experiences that cater to all users and drive
-                meaningful interactions.
-              </p>
-              <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
-                <li>
-                  Data-driven design decisions based on in-depth user research
-                </li>
-                <li>Wireframing and prototyping to refine the user journey</li>
-                <li>
-                  Inclusive designs that prioritize accessibility for all users
-                </li>
-                <li>
-                  Engaging, user-friendly interfaces that leave a lasting
-                  impression
-                </li>
-              </ul>
+          <Link
+            href={
+              "/services/comprehensive-website-solutions/user-centered-interface-design-for-seamless-experiences"
+            }
+            className="group"
+          >
+            <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
+              <Image
+                alt=""
+                src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051555.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
+                height={500}
+                width={500}
+              />
+              <div>
+                <h3 className="underline-offset-4 group-hover:underline decoration-2">
+                  User-Centered Interface Design
+                </h3>
+                <p>
+                  We design intuitive, functional interfaces that balance
+                  usability, accessibility, and aesthetic appeal. By
+                  prioritizing user research and accessibility best practices,
+                  we create seamless experiences that cater to all users and
+                  drive meaningful interactions.
+                </p>
+                <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
+                  <li>
+                    Data-driven design decisions based on in-depth user research
+                  </li>
+                  <li>
+                    Wireframing and prototyping to refine the user journey
+                  </li>
+                  <li>
+                    Inclusive designs that prioritize accessibility for all
+                    users
+                  </li>
+                  <li>
+                    Engaging, user-friendly interfaces that leave a lasting
+                    impression
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
-            <Image
-              alt=""
-              src="https://img.freepik.com/free-photo/search-engine-optimization_53876-119984.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
-              height={500}
-              width={500}
-            />
-            <div>
-              <h3>SEO-Optimized Blog Content</h3>
-              <p>
-                We create compelling, informative blog posts that enhance your
-                website’s SEO performance while engaging your audience. By
-                delivering valuable, relevant content, we help establish your
-                brand as an authority in your field and drive organic traffic.
-              </p>
-              <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
-                <li>Keyword-rich blog posts aligned with your brand voice</li>
-                <li>
-                  Content designed to educate, inspire, and engage your audience
-                </li>
-                <li>
-                  Improved search engine rankings and organic traffic growth
-                </li>
-                <li>
-                  Consistent, high-quality content that builds trust and
-                  authority
-                </li>
-              </ul>
+          <Link
+            href={
+              "/services/comprehensive-website-solutions/seo-optimized-engaging-blog-content"
+            }
+            className="group"
+          >
+            <div className="flex flex-col justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
+              <Image
+                alt=""
+                src="https://img.freepik.com/free-photo/search-engine-optimization_53876-119984.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
+                height={500}
+                width={500}
+              />
+              <div>
+                <h3 className="underline-offset-4 group-hover:underline decoration-2">
+                  SEO-Optimized Blog Content
+                </h3>
+                <p>
+                  We create compelling, informative blog posts that enhance your
+                  website’s SEO performance while engaging your audience. By
+                  delivering valuable, relevant content, we help establish your
+                  brand as an authority in your field and drive organic traffic.
+                </p>
+                <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
+                  <li>Keyword-rich blog posts aligned with your brand voice</li>
+                  <li>
+                    Content designed to educate, inspire, and engage your
+                    audience
+                  </li>
+                  <li>
+                    Improved search engine rankings and organic traffic growth
+                  </li>
+                  <li>
+                    Consistent, high-quality content that builds trust and
+                    authority
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
-            <Image
-              alt=""
-              src="https://img.freepik.com/premium-photo/database-administrators-backup-company-customer-data-concept-databases-computer-dbms-database_257067-6.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
-              height={500}
-              width={500}
-            />
-            <div>
-              <h3>Optimized & Secure Database Management</h3>
-              <p>
-                Our database management services provide secure, scalable, and
-                high-performance solutions that streamline data storage,
-                organization, and accessibility. We ensure fast and reliable
-                operations with advanced security protocols to safeguard
-                sensitive information.
-              </p>
-              <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
-                <li>Real-time data processing and seamless integrations</li>
-                <li>Scalable storage solutions to support long-term growth</li>
-                <li>
-                  Compliance with industry standards and advanced security
-                  measures
-                </li>
-                <li>Optimized performance for handling complex data demands</li>
-              </ul>
+          <Link
+            href={
+              "/services/scalable-corporate-digital-solutions/optimized-secure-database-management-solutions"
+            }
+            className="group"
+          >
+            <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
+              <Image
+                alt=""
+                src="https://img.freepik.com/premium-photo/database-administrators-backup-company-customer-data-concept-databases-computer-dbms-database_257067-6.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
+                height={500}
+                width={500}
+              />
+              <div>
+                <h3 className="underline-offset-4 group-hover:underline decoration-2">
+                  Optimized & Secure Database Management
+                </h3>
+                <p>
+                  Our database management services provide secure, scalable, and
+                  high-performance solutions that streamline data storage,
+                  organization, and accessibility. We ensure fast and reliable
+                  operations with advanced security protocols to safeguard
+                  sensitive information.
+                </p>
+                <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
+                  <li>Real-time data processing and seamless integrations</li>
+                  <li>
+                    Scalable storage solutions to support long-term growth
+                  </li>
+                  <li>
+                    Compliance with industry standards and advanced security
+                    measures
+                  </li>
+                  <li>
+                    Optimized performance for handling complex data demands
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
-            <Image
-              alt=""
-              src="https://img.freepik.com/premium-photo/cropped-image-ux-ui-designers-working-version-website-mobile-devices_274689-22113.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
-              className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
-              height={500}
-              width={500}
-            />
-            <div>
-              <h3>Wireframing & Prototyping Services</h3>
-              <p>
-                Our wireframing and prototyping services turn your concepts into
-                actionable, user-focused designs. From low-fidelity wireframes
-                to high-fidelity prototypes, we ensure usability and efficiency
-                while perfecting the final product.
-              </p>
-              <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
-                <li>Clear blueprints for structure, navigation, and layout</li>
-                <li>
-                  Interactive prototypes to simulate real user interactions
-                </li>
-                <li>Streamlined decision-making and design refinement</li>
-                <li>
-                  Time and resource savings through early testing and feedback
-                </li>
-              </ul>
+          <Link
+            href={
+              "/services/comprehensive-website-solutions/from-concept-to-clickable-wireframing-prototyping-services"
+            }
+            className="group"
+          >
+            <div className="flex flex-col-reverse justify-between items-center lg:items-start gap-3 2xl:gap-9 xl:gap-7 h-full">
+              <Image
+                alt=""
+                src="https://img.freepik.com/premium-photo/cropped-image-ux-ui-designers-working-version-website-mobile-devices_274689-22113.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
+                className="lg:block hidden shadow-lg rounded-lg w-full object-cover object-center aspect-6/4"
+                height={500}
+                width={500}
+              />
+              <div>
+                <h3 className="underline-offset-4 group-hover:underline decoration-2">
+                  Wireframing & Prototyping Services
+                </h3>
+                <p>
+                  Our wireframing and prototyping services turn your concepts
+                  into actionable, user-focused designs. From low-fidelity
+                  wireframes to high-fidelity prototypes, we ensure usability
+                  and efficiency while perfecting the final product.
+                </p>
+                <ul className="space-y-2 ml-6 py-3 list-disc list-inside">
+                  <li>
+                    Clear blueprints for structure, navigation, and layout
+                  </li>
+                  <li>
+                    Interactive prototypes to simulate real user interactions
+                  </li>
+                  <li>Streamlined decision-making and design refinement</li>
+                  <li>
+                    Time and resource savings through early testing and feedback
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
         </section>
       </main>
     </>
