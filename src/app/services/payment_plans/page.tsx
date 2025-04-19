@@ -1,7 +1,8 @@
 "use client";
+import DynamicButton from "@/components/button/button-dynamic";
 import PaymentPlans from "@/components/cards/PaymentPlanCard";
+import Incentives from "@/components/page_spliter/Incentives";
 import LoadingIndicator from "@/components/states/loading/Loading";
-import { Button } from "@/components/ui/button";
 import { paymentPlans } from "@/lib/constants/services/paymentPlans";
 import useMediumScreen from "@/lib/screens/useMediumScreen";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
@@ -28,8 +29,9 @@ const PaymentPlansPage: FC = () => {
   }
 
   return (
-    <main className="mx-auto py-6 md:py-16 lg:py-24 2xl:py-32 w-10/12 md:w-11/12">
-      <header className="mb-8">
+    <main className="mx-auto py-6 md:py-10 lg:py-14 2xl:py-20 w-10/12 md:w-11/12">
+      <Incentives />
+      <header className="pt-10 lg:pt-16 2xl:pt-20">
         <h4>Empowering your vision—without the financial strain</h4>
         <h1>Flexible Pricing Plans to Fit Your Needs</h1>
         <p className="mt-4">
@@ -44,18 +46,18 @@ const PaymentPlansPage: FC = () => {
           transparent pricing, high-quality service, and no hidden fees. Explore
           our options and choose the plan that best suits your needs. Need a
           custom quote?{" "}
-          <Button
+          <DynamicButton
             variant={"link"}
             onClick={() => router.push("/get_in_touch")}
             className="m-0 p-0 h-fit"
           >
             Contact us to discuss a tailored solution!
-          </Button>
+          </DynamicButton>
         </p>
       </header>
 
       {/* Displaying each plan in a vertical layout similar to blogs */}
-      <section className="space-y-5">
+      <section className="">
         {paymentPlans.map((plan, index) => (
           <PaymentPlans plan={plan} index={index} key={index} />
         ))}
