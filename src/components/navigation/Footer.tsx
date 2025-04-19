@@ -1,98 +1,99 @@
-const navigation = {
-  solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Automation", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
-  ],
-  support: [
-    { name: "Submit ticket", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-  ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-  ],
-  legal: [
-    { name: "Terms of service", href: "#" },
-    { name: "Privacy policy", href: "#" },
-    { name: "License", href: "#" },
-  ],
-};
+import {
+  about,
+  aboutFeaturedLinks,
+  contact,
+  contactFeaturedLinks,
+  serviceCategories,
+  serviceFeaturedLinks,
+} from "@/lib/constants/navigation";
+import ResponsiveLogo from "../Logo";
 
 export default function Footer() {
   return (
     <footer className="border-t">
-      <div className="mx-auto px-6 lg:px-8 py-6 md:py-12 lg:py-20 max-w-7xl">
-        <div className="xl:gap-8 xl:grid xl:grid-cols-3">
-          <div className="gap-8 grid grid-cols-2 xl:col-span-2 mt-16 xl:mt-0">
-            <div className="md:gap-8 md:grid md:grid-cols-2">
-              <div>
-                <h4>Solutions</h4>
-                <ul role="list" className="space-y-4 mt-6">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 underline-offset-4 hover:underline"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h4>Support</h4>
-                <ul role="list" className="space-y-4 mt-6">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 underline-offset-4 hover:underline"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+      <div className="mx-auto py-6 md:py-12 lg:py-20 w-11/12 max-w-7xl">
+        <div className="grid grid-cols-3">
+          <div className="md:flex justify-center items-center hidden w-full h-1/2 lg:h-full cols-span-3">
+            <ResponsiveLogo
+              className="lg:flex justify-center w-full"
+              imgClassName=" mx-0 w-full h-auto lg:w-auto object-cover"
+            />
+          </div>
+          <div className="gap-6 xl:gap-8 grid md:grid-cols-2 xl:grid-cols-3 col-span-2">
+            <div>
+              <h5 className="text-lg">About Us</h5>
+              <ul role="list" className="space-y-4 mt-6">
+                {aboutFeaturedLinks.map((item) => (
+                  <li key={item.title}>
+                    <a
+                      href={item.href}
+                      className="text-sm/6 underline-offset-4 hover:underline"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+                {about.map((item) => (
+                  <li key={item.title}>
+                    <a
+                      href={item.href}
+                      className="text-sm/6 underline-offset-4 hover:underline"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="md:gap-8 md:grid md:grid-cols-2">
-              <div>
-                <h4>Company</h4>
-                <ul role="list" className="space-y-4 mt-6">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 underline-offset-4 hover:underline"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h4>Legal</h4>
-                <ul role="list" className="space-y-4 mt-6">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 underline-offset-4 hover:underline"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div>
+              <h5 className="text-lg">Services</h5>
+              <ul role="list" className="space-y-4 mt-6">
+                {serviceCategories.map((item) => (
+                  <li key={item.title}>
+                    <a
+                      href={item.href}
+                      className="text-sm/6 underline-offset-4 hover:underline"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+                {serviceFeaturedLinks.map((item) => (
+                  <li key={item.title}>
+                    <a
+                      href={item.href}
+                      className="text-sm/6 underline-offset-4 hover:underline"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h5 className="text-lg">Contact Us</h5>
+              <ul role="list" className="space-y-4 mt-6">
+                {contactFeaturedLinks.map((item) => (
+                  <li key={item.title}>
+                    <a
+                      href={item.href}
+                      className="text-sm/6 underline-offset-4 hover:underline"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+                {contact.map((item) => (
+                  <li key={item.title}>
+                    <a
+                      href={item.href}
+                      className="text-sm/6 underline-offset-4 hover:underline"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
