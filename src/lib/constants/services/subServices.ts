@@ -10,7 +10,6 @@ export const subServiceDetails: SubItem[] = [
       title: "Authentic Brand Storytelling",
       hook: "Craft compelling and impactful brand stories that connect with your audience by showcasing your mission, vision, and core values.",
       description: "Brand Awareness",
-      startingPrice: 900,
       intro: [
         "We specialize in crafting compelling brand narratives that go beyond simply describing who you are—they capture the very essence of your identity and communicate it in a way that feels authentic, relevant, and deeply resonant. Your brand is so much more than just a logo, a tagline, or a color palette; it’s a living, breathing story waiting to be told. It’s the connection between your mission and the people you serve, the purpose behind every product, service, or experience you offer. Through the art of thoughtful storytelling and the science of strategic positioning, we help you transcend the boundaries of traditional marketing, forging meaningful connections that transform passive audiences into engaged, loyal communities.",
         "Every word we write, every visual we design, and every campaign we execute is meticulously crafted to align with your brand’s unique voice, core values, and long-term vision. We ensure that every touchpoint—whether it’s a social media post, a website, or a full-scale marketing campaign—delivers consistency, clarity, and emotional resonance. Our approach isn’t just about gaining recognition; it’s about building brands that people remember, trust, and turn to time and time again. Whether you’re launching a new venture, evolving an established identity, or repositioning yourself in a competitive market, we bring your brand story to life in a way that inspires action, sparks emotion, and drives sustainable growth.",
@@ -30,24 +29,28 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Brand Story Foundations",
-            startingPrice: 900,
-            info: "Starting at $900, this package focuses on defining your mission, vision, and key brand values. Ideal for small businesses looking to lay the groundwork for a compelling brand story.",
+            name: "StoryStarter: Define Your Brand’s Core",
+            info: "Start strong by uncovering the foundational pillars of your brand. This tier helps define your mission, vision, and values—ideal for early-stage businesses seeking clarity and alignment from the ground up.",
+            useCase:
+              "Perfect for startups, solopreneurs, or small businesses in their early stages who need to establish a clear and compelling brand foundation. Ideal for anyone looking to clarify their identity before launching a product, website, or marketing campaign.",
           },
           {
-            name: "Comprehensive Brand Storytelling",
-            startingPrice: 2000,
-            info: "Starting at $2,000, this tier includes a fully developed brand story, incorporating your company’s journey, key milestones, and unique value propositions. Perfect for businesses seeking to create a more dynamic story that resonates with their audience.",
+            name: "Narrative Builder: Craft Your Brand Story",
+            info: "Go beyond the basics with a fully developed brand narrative. This package shapes your origin story, unique value proposition, and audience-focused messaging—perfect for brands that want to connect emotionally and authentically.",
+            useCase:
+              "Great for growing businesses, rebranding efforts, or teams seeking to align internal and external messaging. Ideal for companies preparing for a website revamp, pitch deck, or public launch that requires a polished, emotionally resonant brand story.",
           },
           {
-            name: "Full Brand Story Strategy & Content Creation",
-            startingPrice: 3500,
-            info: "Starting at $3,500, this package includes brand story development and content creation for various platforms, such as websites, social media, blogs, and marketing materials. Ensures consistency and a strong emotional connection with your target audience.",
+            name: "StorySync: Strategy Meets Content",
+            info: "This tier blends storytelling strategy with actionable content creation. Includes tailored messaging across your website, social media, and campaigns—ideal for brands ready to launch or refresh with cohesion and impact.",
+            useCase:
+              "Best for brands looking to unify messaging across multiple touchpoints—such as product launches, new websites, social campaigns, or email series. Perfect for businesses that need consistent content rooted in strategy and storytelling.",
           },
           {
-            name: "Advanced Brand Narrative & Campaign Execution",
-            startingPrice: 5000,
-            info: "Starting at $5,000, this advanced package includes market research, customer persona development, and a multi-platform storytelling campaign. We help you execute your brand story across multiple channels like video, digital ads, and more for maximum impact.",
+            name: "EpicReach: Advanced Storytelling & Campaign Execution",
+            info: "Our most robust storytelling package. Combines advanced brand narrative strategy, cross-channel campaign execution, and ongoing content support. Designed for businesses seeking to lead with story and scale with confidence.",
+            useCase:
+              "Ideal for established brands looking to elevate their market presence, launch large-scale campaigns, or expand into new markets with a cohesive brand voice. Suited for CMOs, content directors, or marketing teams who want long-term strategic storytelling support.",
           },
         ],
       },
@@ -136,7 +139,6 @@ export const subServiceDetails: SubItem[] = [
           },
         ],
       },
-
       {
         title: "The Key Benefits of Brand Storytelling",
         lists: [
@@ -223,7 +225,6 @@ export const subServiceDetails: SubItem[] = [
       title: "Transform Your Brand",
       hook: "Revitalize your company’s identity with a strategic rebrand that includes a refreshed logo, messaging, and a cohesive brand strategy.",
       description: "Marketing Strategy",
-      startingPrice: 1500,
       intro: [
         "Our comprehensive rebranding services are designed to give your company a fresh, modern identity that not only resonates with your audience but also aligns seamlessly with your business goals and aspirations. We understand that a brand is more than just a logo or a tagline—it’s the essence of who you are, the story you tell, and the promise you deliver. That’s why we take a holistic approach to rebranding, focusing on every detail to ensure your new identity reflects your unique vision and positions your business for success.",
         "From innovative logo design and compelling brand messaging to a cohesive visual identity and strategic market positioning, we ensure every element of your brand works together to create a powerful, unified presence. Our process is rooted in collaboration and strategy, ensuring that your rebrand not only captures attention but also builds trust, fosters loyalty, and sets you apart in a crowded marketplace. By crafting a future-ready brand strategy, we help you connect with your audience on a deeper level, inspiring confidence and driving meaningful engagement.",
@@ -242,29 +243,34 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Brand Identity Refresh",
-            startingPrice: 1500,
-            info: "Starting at $1,500, this package includes a refresh of your brand’s visual identity, such as updates to your logo, color palette, and typography. Ideal for businesses looking to modernize while keeping their core identity intact.",
+            name: "FreshLook: Brand Identity Refresh",
+            info: "A modern facelift for your brand. This tier updates and refines your visual identity—logo, colors, typography—while preserving the essence of your original look. Ideal for businesses ready for a clean, modern update.",
+            useCase:
+              "Perfect for businesses that already have an established brand but feel outdated or inconsistent. Ideal for those undergoing a subtle pivot, celebrating an anniversary, or looking to elevate their professionalism without starting from scratch.",
           },
           {
-            name: "Comprehensive Brand Overhaul",
-            startingPrice: 3500,
-            info: "Starting at $3,500, this option includes a complete rebranding strategy, covering logo redesign, brand messaging, market research, and a visual identity overhaul to align with your business goals and target audience.",
+            name: "BrandReboot: Comprehensive Brand Redesign",
+            info: "Time for a total transformation. This package reimagines your visual identity, brand messaging, and market positioning. Best for businesses pivoting, expanding, or entering new markets with bold new goals.",
+            useCase:
+              "Great for companies shifting their target audience, merging with another business, launching a new product line, or entering a competitive space. Ideal for businesses that need to redefine how they show up in the market, both visually and verbally.",
           },
           {
-            name: "Complete Brand Strategy & Execution",
-            startingPrice: 6000,
-            info: "Starting at $6,000, this all-inclusive package includes market analysis, customer persona development, messaging strategy, logo refresh, and implementation across all platforms. Ideal for businesses aiming for a complete repositioning and consistent presence across all channels.",
+            name: "BrandBlueprint: Strategy & Full Execution",
+            info: "This end-to-end branding solution delivers research-driven strategy, competitor insights, and a complete visual and messaging system. Ideal for businesses looking to build a powerful, consistent presence across every touchpoint.",
+            useCase:
+              "Best suited for startups building a brand from scratch, or established businesses undergoing a complete overhaul. Ideal for companies launching with investor backing, scaling nationally, or needing to establish trust and authority in new verticals.",
           },
           {
-            name: "Brand Guidelines & Consistency Package",
-            startingPrice: 1500,
-            info: "Starting at $1,500, this service includes the creation of brand guidelines covering logo usage, color scheme, typography, tone of voice, and design style, ensuring consistent branding across all materials and platforms.",
+            name: "CoreGuard: Brand Guidelines & Consistency Kit",
+            info: "Protect and enforce your brand identity with comprehensive brand guidelines. Ensures consistency across digital, print, and internal materials. Perfect for scaling teams and organizations focused on brand integrity.",
+            useCase:
+              "Ideal for growing teams, creative departments, or distributed organizations that work with multiple vendors or internal creators. Ensures brand consistency as your company scales and expands across different mediums and platforms.",
           },
           {
-            name: "Ongoing Brand Support & Marketing Integration",
-            startingPrice: 500,
-            info: "Starting at $500 per month, this service offers ongoing support to maintain and evolve your brand. We provide monthly updates for marketing materials, social media templates, and campaign integration to keep your brand fresh, relevant, and aligned with your marketing goals.",
+            name: "BrandPulse: Ongoing Support & Strategic Growth",
+            info: "This ongoing support plan keeps your brand evolving with your business. Includes branding asset updates, strategy refinement, and seamless integration with marketing efforts. Ideal for teams committed to long-term growth.",
+            useCase:
+              "Designed for brands with ongoing campaigns, seasonal promotions, or evolving product lines. Ideal for businesses that want to continuously refine and align their brand with market changes, customer feedback, and internal growth.",
           },
         ],
       },
@@ -467,7 +473,6 @@ export const subServiceDetails: SubItem[] = [
       title: "E-Commerce Solutions for Growth",
       hook: "Create an online shopping experience that delights customers, boosts conversions, and drives sales with smooth and intuitive e-commerce solutions.",
       description: "Selling Online",
-      startingPrice: 2000,
       intro: [
         "We design scalable, secure, and user-friendly e-commerce platforms that empower your business to thrive in the competitive online marketplace. Our solutions are crafted to enhance the customer experience at every touchpoint, driving sales growth and fostering long-term loyalty. With intuitive navigation, seamless checkout processes, and robust security measures, we ensure your customers enjoy a smooth, safe, and hassle-free shopping experience that keeps them coming back.",
         "Our platforms are built with your business’s future in mind, offering features designed to support sustainable growth and operational efficiency. From personalized product recommendations that boost engagement to advanced inventory management systems that streamline operations, we provide the tools you need to stay ahead of the competition. Additionally, our in-depth analytics and reporting capabilities give you actionable insights into customer behavior, sales trends, and platform performance, enabling you to make data-driven decisions that optimize results.",
@@ -486,29 +491,34 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Starter E-Commerce Package",
-            startingPrice: 2000,
-            info: "Starting at $2,000, this package provides the basics for your e-commerce business, including product listings, secure checkout, and responsive design. Perfect for small businesses getting started in the online marketplace.",
+            name: "LaunchCart: E-Commerce Essentials",
+            info: "Perfect for startups and small businesses, this package sets up your online store with core functionality—product listings, secure payments, and a simple shopping cart. A smooth and secure way to start selling online with confidence.",
+            useCase:
+              "Best suited for entrepreneurs or small teams launching their first product line and looking for a quick, secure online storefront with minimal overhead.",
           },
           {
-            name: "Growth E-Commerce Package",
-            startingPrice: 4500,
-            info: "Starting at $4,500, this package adds more advanced features like customer accounts, integrated payment gateways, and loyalty programs. Ideal for growing businesses that need a more robust platform to boost conversions and enhance user experience.",
+            name: "ScaleCart: Enhanced Online Growth",
+            info: "Designed for growing shops, this tier adds advanced features like product filtering, customer accounts, and essential analytics to optimize the customer journey and set the stage for sustainable growth.",
+            useCase:
+              "Ideal for businesses experiencing growth that need better user navigation, performance insights, and customer retention tools.",
           },
           {
-            name: "Premium E-Commerce Package",
-            startingPrice: 8000,
-            info: "Starting at $8,000, this package includes custom design, advanced product management, SEO optimization, and multi-channel integration. Perfect for businesses looking to take their online store to the next level with personalized features and streamlined operations.",
+            name: "SmartCart: Personalized Shopping Experience",
+            info: "Take your store to the next level with intelligent features like personalized recommendations, advanced analytics, and seamless third-party integrations. Ideal for brands seeking to boost conversions and customer retention.",
+            useCase:
+              "Perfect for brands wanting to implement personalized shopping, email marketing, and data-driven recommendations to increase conversions.",
           },
           {
-            name: "Enterprise E-Commerce Solution",
-            startingPrice: 15000,
-            info: "Starting at $15,000+, this solution is designed for large-scale operations. It includes complex integrations, multi-vendor support, and full back-end automation for inventory, order management, and shipping. Perfect for businesses with large product catalogs or multiple sales channels.",
+            name: "PowerCart: Enterprise-Level Commerce",
+            info: "Built for high-volume businesses, this solution includes multi-store support, custom workflows, and enterprise-grade security. Designed to scale complex operations while maintaining flexibility and performance.",
+            useCase:
+              "Best for established enterprises managing large catalogs or multiple storefronts that require robust performance, security, and flexibility.",
           },
           {
-            name: "Ongoing E-Commerce Support & Maintenance",
-            startingPrice: 350,
-            info: "Starting at $350/month, this service includes regular updates, security monitoring, performance optimizations, and troubleshooting to keep your site secure and running smoothly. A must-have for businesses seeking long-term success and stability.",
+            name: "EverCart: Continuous Support & Optimization",
+            info: "Ensure your e-commerce platform stays fast, secure, and up-to-date with ongoing technical support, regular updates, and proactive performance monitoring. Ideal for stores that never stop evolving.",
+            useCase:
+              "Ideal for growing e-commerce operations looking for long-term support, site health monitoring, and agile enhancements based on user feedback and business goals.",
           },
         ],
       },
@@ -759,7 +769,6 @@ export const subServiceDetails: SubItem[] = [
       title: "High-Performance Single-Page Applications (SPAs)",
       hook: "Develop lightning-fast, dynamic web apps with seamless user interfaces that enhance functionality and user experience.",
       description: "Enhanced UX",
-      startingPrice: 2000,
       intro: [
         "We specialize in creating fast, dynamic, and highly responsive single-page applications (SPAs) that redefine the user experience with real-time updates, seamless navigation, and exceptional performance. Leveraging cutting-edge frameworks like React, Angular, and Vue.js, along with modern development techniques, we build SPAs that deliver an engaging, app-like experience optimized for all devices and screen sizes. Our focus is on crafting applications that not only look great but also function flawlessly, ensuring your users enjoy a smooth, intuitive, and immersive journey.",
         "Designed with speed and user retention in mind, our SPAs feature lightning-fast load times, smooth transitions, and interactive elements that captivate and engage your audience. By minimizing disruptions and maximizing responsiveness, we help you create a platform that keeps users coming back. Whether you need to enhance existing functionality, streamline performance, or develop a completely new application, our solutions are tailored to align with your business goals and the unique needs of your audience.",
@@ -779,29 +788,34 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Starter SPA Package",
-            startingPrice: 2000,
-            info: "Starting at $2,000, this package includes the development of a basic SPA with essential features such as responsive design, seamless navigation, and core functionality. Ideal for small businesses or startups looking to offer a smooth user experience without complex features.",
+            name: "SwiftStart: Basic SPA Development",
+            info: "A clean, responsive single-page application with essential features and smooth navigation. Perfect for startups or small teams needing a modern, user-friendly experience without added complexity.",
+            useCase:
+              "Ideal for MVPs, landing pages, or internal tools where speed, simplicity, and usability are key.",
           },
           {
-            name: "Advanced SPA Package",
-            startingPrice: 4000,
-            info: "Starting at $4,000, this option includes advanced SPA features such as dynamic content, API integrations for real-time data updates, and enhanced UI elements. Perfect for businesses looking to provide a more interactive and personalized user experience.",
+            name: "CoreFlow: Dynamic SPA Experience",
+            info: "Enhance interactivity with real-time content updates, API integrations, and intuitive UI elements. A strong choice for businesses that value performance and seamless user experiences.",
+            useCase:
+              "Best for businesses needing dynamic dashboards, live updates, and a more interactive front-end experience.",
           },
           {
-            name: "Premium SPA Package",
-            startingPrice: 7500,
-            info: "Starting at $7,500, this package offers a fully customized SPA with advanced performance optimization, real-time data processing, and seamless API integrations. Includes enhanced user interface design, mobile-first approach, and scalable features for long-term business growth.",
+            name: "EliteFlow: Scalable, Custom SPA",
+            info: "Fully customized SPA development with advanced performance optimization, complex data handling, and a mobile-first architecture. Designed for businesses focused on growth and scalability.",
+            useCase:
+              "Great for businesses with high traffic demands, complex state management needs, or a focus on progressive web app performance.",
           },
           {
-            name: "Enterprise SPA Solution",
-            startingPrice: 12000,
-            info: "Starting at $12,000+, this solution is designed for enterprises requiring large-scale SPAs with high-performance features, such as Progressive Web App (PWA) capabilities, multi-user interactions, complex real-time data management, and multi-platform support.",
+            name: "PWA Pro: Enterprise SPA Solution",
+            info: "A high-performance solution featuring PWA capabilities, multi-platform support, and advanced real-time interaction. Ideal for large-scale platforms requiring robust, interactive functionality across devices.",
+            useCase:
+              "Designed for enterprises delivering native-app-like experiences on the web with offline support, push notifications, and complex user interactions.",
           },
           {
-            name: "Ongoing SPA Maintenance & Optimization",
-            startingPrice: 300,
-            info: "Starting at $300/month, this service includes ongoing SPA maintenance, performance monitoring, security updates, and feature enhancements to ensure your application stays secure, high-performing, and up-to-date with the latest industry standards.",
+            name: "FlowCare: Ongoing SPA Maintenance",
+            info: "Ensure your SPA remains fast, secure, and cutting-edge with regular maintenance, optimizations, and updates. Great for keeping your app aligned with modern tech and user expectations.",
+            useCase:
+              "Perfect for businesses seeking peace of mind with proactive support, bug fixes, dependency upgrades, and continuous UX improvement.",
           },
         ],
       },
@@ -1023,7 +1037,6 @@ export const subServiceDetails: SubItem[] = [
       title: "Impactful Tailored Website Design",
       hook: "Transform your digital presence with a custom website that not only captivates visitors but also aligns seamlessly with your brand’s vision and goals.",
       description: "Brand Differentiation",
-      startingPrice: 1500,
       intro: [
         "We create custom websites that go beyond aesthetics—they are powerful tools designed to strategically drive your business forward. Every website we craft is a harmonious blend of creativity, functionality, and purpose, tailored to showcase your brand identity while aligning with your unique business goals. Our designs are fully responsive and optimized for high performance, ensuring flawless user experiences across desktops, tablets, and smartphones.",
         "With intuitive navigation, lightning-fast load speeds, and visually engaging designs, we build websites that not only captivate your audience but also inspire action. From the moment users land on your site, they’ll experience a seamless journey that encourages exploration, builds trust, and drives conversions. Whether you’re looking to establish a strong online presence, enhance user engagement, or boost sales, our websites are designed to deliver measurable results.",
@@ -1043,29 +1056,34 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Basic Website Package",
-            startingPrice: 1500,
-            info: "Starting at $1,500, this package includes a custom-designed website with up to 5 pages. Ideal for small businesses or startups looking to establish a clean, professional online presence with basic functionality.",
+            name: "WebCore: Basic Website Package",
+            info: "A streamlined custom website of up to 5 pages, perfect for startups and local businesses looking to launch a professional online presence with essential functionality and clean design.",
+            useCase:
+              "Ideal for service providers, consultants, or local shops that need a quick, elegant web presence to build trust and visibility.",
           },
           {
-            name: "Advanced Website Package",
-            startingPrice: 3000,
-            info: "Starting at $3,000, this package includes up to 10 pages with custom designs, advanced features, and enhanced functionality. Ideal for businesses that require more personalized design, user experience, and dynamic content elements.",
+            name: "WebElevate: Advanced Website Package",
+            info: "Up to 10 custom-designed pages with interactive elements and dynamic features. Ideal for businesses looking to engage users and tell a more compelling brand story online.",
+            useCase:
+              "Great for growing businesses ready to level up their storytelling, user engagement, and brand expression through interactivity.",
           },
           {
-            name: "Premium Website Package",
-            startingPrice: 5000,
-            info: "Starting at $5,000, this comprehensive package includes up to 20 pages, advanced features such as e-commerce integration, SEO optimization, and full mobile responsiveness. Perfect for growing businesses looking for an impactful online presence that drives engagement and conversion.",
+            name: "WebImpact: Premium Website Experience",
+            info: "Up to 20 pages of premium design, SEO enhancements, and optional e-commerce integration. A comprehensive solution for businesses aiming to drive engagement and conversions.",
+            useCase:
+              "Best for companies that rely on their website for lead generation, customer engagement, or as a content hub to attract organic traffic.",
           },
           {
-            name: "Enterprise Website Package",
-            startingPrice: 10000,
-            info: "Starting at $10,000, this package includes a custom website designed for larger-scale businesses with complex needs. It includes advanced custom functionality, API integrations, multiple integrations, secure payment gateways, and more. Ideal for enterprises looking for a highly scalable and feature-rich website.",
+            name: "WebScale: Enterprise Website Solution",
+            info: "A fully customized platform with complex functionality, secure integrations, and scalable infrastructure. Built for enterprises that demand reliability, performance, and advanced capabilities.",
+            useCase:
+              "Tailored for high-traffic organizations or SaaS platforms that require custom workflows, integrations, and enterprise-grade performance.",
           },
           {
-            name: "Ongoing Website Maintenance & Support",
-            startingPrice: 150,
-            info: "Starting at $150/month, this service includes ongoing website maintenance, security updates, content updates, and performance monitoring to ensure your website stays fresh, secure, and optimized.",
+            name: "WebPulse: Maintenance & Performance",
+            info: "Ongoing site monitoring, updates, and optimizations to ensure your website remains secure, fast, and relevant. Perfect for businesses that want peace of mind and continual improvement.",
+            useCase:
+              "Great for any business that wants to maintain peak performance, strengthen security, and stay aligned with evolving UX trends.",
           },
         ],
       },
@@ -1357,7 +1375,6 @@ export const subServiceDetails: SubItem[] = [
       title: "User-Centered Interface Design",
       hook: "Design intuitive, engaging user interfaces that deliver exceptional user experiences and foster satisfaction and accessibility.",
       description: "Tailored UX",
-      startingPrice: 1200,
       intro: [
         "We design intuitive and functional interfaces that seamlessly blend usability, accessibility, and aesthetic appeal to create exceptional user experiences. By conducting in-depth user research, we gain valuable insights into your audience’s behaviors, needs, and pain points, ensuring that every design decision is informed by real data. This user-centric approach allows us to craft interfaces that not only look stunning but also solve real problems and meet the expectations of your users.",
         "Our design process is comprehensive and meticulous, encompassing every stage from wireframing and prototyping to rigorous testing and iterative refinement. We focus on creating interfaces that are as functional as they are beautiful, ensuring smooth navigation, clear communication, and effortless interactions. By integrating accessibility best practices into every step, we ensure that our designs are inclusive and cater to all users, regardless of their abilities or devices.",
@@ -1376,29 +1393,34 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Basic Interface Design",
-            startingPrice: 1200,
-            info: "Starting at $1,200, this package includes a simple, user-friendly interface design focused on improving accessibility and usability. Perfect for small businesses looking for an intuitive layout for their website or app without complex features.",
+            name: "UIStarter: Simple & Accessible Design",
+            info: "Focuses on creating a clean, intuitive interface that meets accessibility standards and delivers a smooth user experience. Ideal for businesses looking for straightforward usability with thoughtful design.",
+            useCase:
+              "Best for teams focused on clarity and inclusion, ensuring all users—including those with disabilities—can navigate the product easily.",
           },
           {
-            name: "Advanced Interface Design",
-            startingPrice: 2500,
-            info: "Starting at $2,500, this tier offers a more sophisticated UI design with dynamic user flows, advanced interactivity, and detailed wireframes. Ideal for businesses aiming to enhance user engagement with additional features and refined design elements.",
+            name: "UIAdvance: Interactive User Flows",
+            info: "Includes advanced layouts, component logic, and dynamic interfaces. Designed to enhance engagement and guide users through seamless journeys with smart UI decisions.",
+            useCase:
+              "Perfect for apps or platforms that require complex workflows and want to reduce friction in their conversion funnels.",
           },
           {
-            name: "Premium UX/UI Design",
-            startingPrice: 4000,
-            info: "Starting at $4,000, this comprehensive package includes high-fidelity prototypes, usability testing, and multiple design iterations, focusing on an integrated, seamless user experience. Perfect for businesses aiming for a polished digital product with advanced UX/UI features.",
+            name: "UXElite: Complete UX/UI Design System",
+            info: "Comprehensive UX/UI design with high-fidelity mockups, usability testing, and multiple iterations. Tailored for polished, high-performing digital products with deep attention to detail.",
+            useCase:
+              "Ideal for products preparing for launch or redesign, requiring pixel-perfect design, testing, and iteration cycles.",
           },
           {
-            name: "Mobile-First Design",
-            startingPrice: 3000,
-            info: "Starting at $3,000, this service specializes in mobile-optimized UI design, ensuring your platform provides an intuitive, engaging mobile experience. Ideal for businesses adopting a mobile-first approach in today’s mobile-driven world.",
+            name: "MobilePrime: Mobile-First UX/UI",
+            info: "Dedicated to crafting mobile-first experiences that prioritize speed, responsiveness, and user satisfaction across devices. A must-have for businesses targeting mobile-first audiences.",
+            useCase:
+              "Essential for B2C products where mobile traffic dominates, such as social platforms, marketplaces, or consumer services.",
           },
           {
-            name: "Full UX/UI Strategy & Design Package",
-            startingPrice: 6500,
-            info: "Starting at $6,500, this package offers a complete user-centered design strategy, including user research, persona development, wireframes, prototypes, usability testing, and final design implementation. Tailored for businesses that need a comprehensive approach to achieve high engagement and long-term success across platforms.",
+            name: "UXSuite: Full UX/UI Strategy & Execution",
+            info: "End-to-end UX strategy and implementation—from user research to persona development, wireframes, and usability testing. Ideal for platforms requiring holistic, user-centered design across web and app.",
+            useCase:
+              "Best for startups and enterprises building feature-rich platforms that require a research-driven approach to ensure alignment with real user needs.",
           },
         ],
       },
@@ -1548,7 +1570,6 @@ export const subServiceDetails: SubItem[] = [
       title: "Engaging Blogs",
       hook: "Create insightful, SEO-optimized blog posts that capture attention, drive website traffic, and build lasting engagement with your audience.",
       description: "Web Traffic",
-      startingPrice: 150,
       intro: [
         "We create compelling and informative blog posts that do more than just capture attention—they drive results. Each post is meticulously crafted to align with your brand voice, reflect your industry expertise, and resonate with your target audience. By delivering valuable, relevant, and engaging content, we help position your brand as a trusted authority in your field, building credibility and fostering stronger connections with your audience.",
         "Our blog writing process is designed to enhance your website’s SEO performance, ensuring your content ranks higher in search engine results and attracts more organic traffic. From keyword research and strategic optimization to crafting headlines that grab attention, we focus on creating content that not only informs but also drives visibility and engagement. Whether it’s educating your audience, addressing their pain points, or inspiring action, our blogs are tailored to meet your business objectives and audience needs.",
@@ -1568,29 +1589,34 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Basic Blog Post",
-            startingPrice: 150,
-            info: "Starting at $150, this package provides a concise, SEO-optimized blog post of up to 500 words. Perfect for businesses needing regular updates or simple, engaging content that drives initial traffic.",
+            name: "QuickPost: Essential Blog Content",
+            info: "A concise, SEO-focused post (up to 500 words) designed for quick updates, industry tips, or announcements. Perfect for businesses that want to stay active online with digestible, engaging content.",
+            useCase:
+              "Great for regular website updates, seasonal promos, and staying visible in search without large content investments.",
           },
           {
-            name: "Standard Blog Post",
-            startingPrice: 350,
-            info: "Starting at $350, this tier includes an in-depth, SEO-optimized blog post of up to 1,000 words. Ideal for businesses wanting more detailed content that covers key topics, incorporates keywords effectively, and engages readers.",
+            name: "InsightPost: In-Depth Article",
+            info: "An engaging blog post (up to 1,000 words) with keyword optimization, strong structure, and thoughtful analysis. Ideal for building trust, authority, and organic visibility in your niche.",
+            useCase:
+              "Ideal for brands aiming to establish expertise and rank for mid-tier SEO keywords in their industry.",
           },
           {
-            name: "Premium Blog Package",
-            startingPrice: 600,
-            info: "Starting at $600, this package provides a comprehensive, SEO-optimized blog post of up to 2,000 words. It includes thorough keyword research, a compelling narrative, and high-quality content that resonates with your audience while driving organic traffic.",
+            name: "AuthorityPost: Premium Long-Form Content",
+            info: "A robust, 2,000-word blog post tailored to position your brand as a thought leader. Includes keyword strategy, structured storytelling, and rich SEO formatting to maximize organic reach.",
+            useCase:
+              "Perfect for businesses focused on content marketing ROI and aiming to dominate high-competition search terms.",
           },
           {
-            name: "Monthly Blog Subscription",
-            startingPrice: 1500,
-            info: "Starting at $1,500 per month, this subscription package includes 4 blog posts (1,000–1,500 words each) delivered monthly. Perfect for businesses looking for consistent, high-quality blog content that drives SEO results and engages customers regularly.",
+            name: "BlogFlow: Monthly Publishing Plan",
+            info: "A consistent content stream of 4 SEO-optimized posts (1,000–1,500 words) each month. Ideal for brands seeking sustained growth in authority, engagement, and search visibility.",
+            useCase:
+              "Best for companies that want to automate their blog presence and boost domain authority over time.",
           },
           {
-            name: "Custom Blog Strategy & Content Package",
-            startingPrice: 2500,
-            info: "Starting at $2,500, this custom package provides a full content strategy, keyword research, and 6+ blog posts per month. Tailored for businesses looking to implement a long-term content plan and significantly boost their online presence.",
+            name: "ContentEngine: Custom Blog Strategy & Execution",
+            info: "A tailored content strategy with ongoing blog production (6+ posts/month), comprehensive keyword research, and performance tracking. Best for businesses committed to long-term content marketing success.",
+            useCase:
+              "Great for businesses investing in inbound marketing and wanting fully managed content campaigns with measurable growth results.",
           },
         ],
       },
@@ -1696,7 +1722,6 @@ export const subServiceDetails: SubItem[] = [
       title: "Expert Technical Writing",
       hook: "Produce clear, precise, and structured technical documentation to support complex processes and tools for your team or customers.",
       description: "Documentation",
-      startingPrice: 500,
       intro: [
         "Our technical writing services are designed to simplify complexity, transforming intricate concepts into clear, concise, and user-friendly documentation that empowers your audience. Whether you require software manuals, API documentation, white papers, or technical guides, we deliver meticulously crafted content that is accurate, well-structured, and tailored to your specific needs. By breaking down technical jargon and presenting information in an accessible format, we ensure your audience can easily understand, navigate, and apply the material.",
         "We prioritize clarity, precision, and accessibility in every document we create, ensuring that both technical and non-technical users can confidently engage with your product or service. From step-by-step instructions to detailed technical explanations, our content is designed to reduce learning curves, improve usability, and foster a seamless adoption process. By enhancing understanding and usability, we help build trust in your brand and improve the overall user experience.",
@@ -1716,24 +1741,28 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Basic Documentation",
-            startingPrice: 500,
-            info: "Starting at $500, this package covers essential technical documentation such as basic user guides or instruction manuals for simple products or services. It includes clear, concise explanations and step-by-step instructions for users.",
+            name: "DocStart: Basic Technical Docs",
+            info: "Clear, concise documentation for simple products or services, such as user guides or how-to manuals. Ideal for businesses needing foundational content that users can follow with ease.",
+            useCase:
+              "Perfect for startups or SaaS products launching MVPs that need easy-to-read setup instructions or customer-facing help content.",
           },
           {
-            name: "Standard Documentation",
-            startingPrice: 1000,
-            info: "Starting at $1,000, this package includes detailed technical manuals, standard operating procedures (SOPs), or API documentation. It includes structured content, thorough explanations, and diagrams where necessary to clarify complex concepts.",
+            name: "DocBuild: Standard Tech Documentation",
+            info: "Structured, detailed content including SOPs, integration guides, or API references. Includes visual support and logical flow for easier adoption and understanding by your users or devs.",
+            useCase:
+              "Ideal for dev teams or product managers who need to onboard users or partners with API references, SOPs, and integration walkthroughs.",
           },
           {
-            name: "Advanced Documentation",
-            startingPrice: 2000,
-            info: "Starting at $2,000, this tier offers comprehensive technical documentation, including complex system architecture, troubleshooting guides, and full API documentation. It includes advanced formatting, detailed illustrations, and real-world examples for in-depth understanding.",
+            name: "DocSuite: Advanced System Documentation",
+            info: "Deep, well-organized documentation including system architecture, troubleshooting guides, and in-depth API coverage. Suited for complex platforms that demand clarity and precision.",
+            useCase:
+              "Designed for complex platforms—like ERP systems, fintech, or developer platforms—requiring internal and external documentation that scales.",
           },
           {
-            name: "Custom Technical Writing Package",
-            startingPrice: 3000,
-            info: "Starting at $3,000, this fully customizable package is designed for businesses needing highly specialized documentation. It includes expert-level writing tailored to your business’s needs, whether it's software, hardware, or any other industry-specific technical writing requirement.",
+            name: "TechWrite Pro: Custom Documentation Solution",
+            info: "Completely tailored technical writing for your domain—whether software, hardware, or niche tools. Covers everything from internal workflows to client-facing documentation at an expert level.",
+            useCase:
+              "Best for enterprises or niche industries needing tailored documentation that aligns with both technical depth and domain-specific standards.",
           },
         ],
       },
@@ -1831,7 +1860,6 @@ export const subServiceDetails: SubItem[] = [
         "Let’s create technical documentation that empowers your users, reduces confusion, and enhances your product’s value.",
     },
   },
-
   {
     category: "scalable-corporate-digital-solutions",
     subtitle: "Crafting newsletters that cut through the noise",
@@ -1841,7 +1869,6 @@ export const subServiceDetails: SubItem[] = [
       title: "Impactful Newsletters",
       hook: "Design and write impactful newsletters that keep your audience informed, engaged, and ready to take action.",
       description: "Measurable Results",
-      startingPrice: 300,
       intro: [
         "We create captivating and visually stunning newsletters that serve as a powerful tool to keep your audience engaged, informed, and deeply connected with your brand. Whether you’re sharing a one-time announcement, launching a product, or maintaining an ongoing series, our newsletters are designed to deliver maximum impact. By blending compelling content, targeted messaging, and vibrant, on-brand designs, we ensure your newsletters stand out in crowded inboxes and leave a lasting impression.",
         "Our newsletters are more than just updates—they’re a strategic way to nurture relationships, enhance audience engagement, and build long-term brand loyalty. From eye-catching visuals to personalized messaging, every element is carefully crafted to resonate with your audience and drive meaningful interactions. Whether your goal is to share valuable insights, promote products, or strengthen your community, our newsletters help you stay front and center in your audience’s minds.",
@@ -1860,24 +1887,28 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Basic Newsletter",
-            startingPrice: 300,
-            info: "Starting at $300, this package includes a single newsletter with custom content and professional design. Ideal for quick updates, announcements, or promotions to engage your audience.",
+            name: "NewsSnap: One-Time Newsletter",
+            info: "A single, custom-designed newsletter for promotions, announcements, or quick updates. Ideal for businesses needing impactful communication with clear calls to action.",
+            useCase:
+              "Best for small business promos, seasonal announcements, or event-based email blasts that need sharp, clear messaging.",
           },
           {
-            name: "Monthly Newsletter Package",
-            startingPrice: 900,
-            info: "Starting at $900 per month, this package includes up to 4 newsletters per month. Perfect for businesses looking for regular communication with their audience, with content that drives engagement and builds relationships.",
+            name: "EngageFlow: Monthly Email Series",
+            info: "A full month of newsletters (up to 4 emails), each crafted to build engagement and brand loyalty. Perfect for businesses maintaining regular communication with their audience.",
+            useCase:
+              "Ideal for companies looking to maintain audience interest with consistent value-driven content that builds trust over time.",
           },
           {
-            name: "Advanced Newsletter Package",
-            startingPrice: 1500,
-            info: "Starting at $1,500 per month, this package includes up to 8 newsletters per month with advanced segmentation, custom content, detailed analytics, and personalized messaging to maximize audience engagement and conversions.",
+            name: "ConvertFlow: Advanced Email Campaigns",
+            info: "Up to 8 strategic newsletters per month featuring segmentation, dynamic content, analytics, and conversion-focused design. Great for scaling email marketing with smarter targeting.",
+            useCase:
+              "Great for scaling brands that rely on email to convert leads, nurture relationships, and track user engagement through segmentation.",
           },
           {
-            name: "Custom Newsletter Plan",
-            startingPrice: 2000,
-            info: "Starting at $2,000, this highly customized plan is ideal for businesses with specific needs. Includes tailored newsletters, in-depth audience targeting, and a strategic approach to growing your email list, ensuring your brand resonates with your subscribers.",
+            name: "InboxPro: Fully Customized Newsletter Plan",
+            info: "A strategic email content system with custom frequency, targeting, automation, and growth strategy. Tailored for businesses that rely on email to drive retention, traffic, and revenue.",
+            useCase:
+              "Ideal for high-growth companies that use email as a core marketing channel and want to automate, test, and scale their messaging systems.",
           },
         ],
       },
@@ -2004,7 +2035,6 @@ export const subServiceDetails: SubItem[] = [
       title: "Secure Database Management Solutions",
       hook: "Implement secure and efficient database solutions that scale with your business, ensuring reliable and organized data management.",
       description: "Data Security",
-      startingPrice: 600,
       intro: [
         "Security is at the core of our approach. With robust protocols and compliance with industry standards, we safeguard your sensitive information against potential threats, ensuring your data remains protected and your operations remain uninterrupted. From real-time data processing and seamless integrations to scalable storage solutions, we provide the tools and expertise needed to handle even the most complex data challenges.",
         "Our database management services deliver secure, scalable, and high-performance solutions that simplify the way your business stores, organizes, and accesses data. Tailored to meet your unique requirements, we ensure fast, reliable operations with optimized performance, even as your data grows in volume and complexity. By leveraging advanced technologies and best practices, we create systems that are not only efficient but also future-ready, enabling your business to adapt to evolving data demands seamlessly.",
@@ -2023,29 +2053,34 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Basic Database Setup & Security",
-            startingPrice: 600,
-            info: "Starting at $600, this package includes basic database setup with secure data storage, backup solutions, and initial security configurations. Ideal for small businesses with simple data needs.",
+            name: "DataCore: Basic Setup & Security",
+            info: "Secure and scalable initial database setup including backups and core security layers. Best suited for small businesses managing user data or transactions.",
+            useCase:
+              "Perfect for businesses spinning up new web apps or e-commerce stores that need a secure, dependable backend from day one.",
           },
           {
-            name: "Optimized Database Performance",
-            startingPrice: 1200,
-            info: "Starting at $1,200, this package includes database optimization, performance tuning, and query optimization. Perfect for businesses that need faster database operations and improved scalability.",
+            name: "DataBoost: Performance Optimization",
+            info: "Tuning and optimization of existing databases for speed, efficiency, and scalability. Ideal for growing systems that require quicker response times and better resource handling.",
+            useCase:
+              "Ideal for web apps or SaaS platforms seeing growth and needing reduced query times, index optimization, or resource tuning.",
           },
           {
-            name: "Advanced Security & Data Integrity",
-            startingPrice: 2000,
-            info: "Starting at $2,000, this service provides advanced security measures like encryption, automated backups, and real-time monitoring. Ensures compliance with data protection regulations and protects sensitive customer information.",
+            name: "DataShield: Advanced Security & Integrity",
+            info: "Advanced security protocols, data encryption, audit logs, and real-time alerts. Helps businesses protect sensitive information and meet compliance standards.",
+            useCase:
+              "Designed for fintech, healthcare, or any data-sensitive operation requiring compliance, security audits, and threat mitigation.",
           },
           {
-            name: "Database Migration & Integration",
-            startingPrice: 3000,
-            info: "Starting at $3,000, this package helps businesses seamlessly migrate their existing databases to more scalable, secure solutions. Includes integration with third-party applications or cloud platforms to ensure smooth data flow and management.",
+            name: "DataBridge: Migration & Integration",
+            info: "Seamless migration to scalable platforms with full integration support for apps, APIs, or third-party services. Designed to future-proof your infrastructure.",
+            useCase:
+              "Best for teams migrating legacy systems to modern infrastructure (e.g., PostgreSQL, MongoDB, or cloud-native solutions) with zero data loss.",
           },
           {
-            name: "Ongoing Database Management & Monitoring",
-            startingPrice: 400,
-            info: "Starting at $400/month, this service offers continuous database monitoring, updates, troubleshooting, and performance optimization. Ensures that your database is always secure, optimized, and running at peak performance.",
+            name: "DataPulse: Ongoing Management & Monitoring",
+            info: "24/7 database monitoring, proactive optimizations, and troubleshooting. Ensures your data is always accessible, secure, and running at peak efficiency.",
+            useCase:
+              "Perfect for growing apps that want reliable performance, automated alerts, uptime monitoring, and real-time diagnostics.",
           },
         ],
       },
@@ -2152,7 +2187,6 @@ export const subServiceDetails: SubItem[] = [
         "Let us help you streamline data management, enhance performance, and ensure the security of your valuable business information.",
     },
   },
-
   {
     category: "comprehensive-website-solutions",
     subtitle: "Wireframes that map the journey, prototypes that make it real",
@@ -2162,7 +2196,6 @@ export const subServiceDetails: SubItem[] = [
       title: "Wireframing & Prototyping",
       hook: "Bring your ideas to life with effective wireframes and prototypes, visualizing your design concepts before moving into development.",
       description: "User-Centric Designs",
-      startingPrice: 800,
       intro: [
         "Our wireframing and prototyping services transform your ideas into actionable, user-centered designs that serve as the foundation for an exceptional user experience. Beginning with low-fidelity wireframes, we map out the structure, navigation, and layout of your project, providing a clear and organized blueprint that guides the design process. This initial step ensures alignment on the core functionality and flow, setting the stage for a seamless user journey.",
         "Once the framework is established, we advance to high-fidelity prototypes that bring your vision to life with realistic interactions and visual elements. These interactive models allow you to experience the user journey firsthand, enabling you to identify opportunities for improvement and make informed decisions before development begins. By simulating real-world interactions, our prototypes help validate design choices, ensuring the final product meets both user expectations and business objectives.",
@@ -2183,24 +2216,28 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "Basic Wireframing Package",
-            startingPrice: 800,
-            info: "Starting at $800, this package includes low-fidelity wireframes for up to 5 screens, providing a simple, structured outline for your website or app. Ideal for small businesses looking to visualize their digital product layout and flow with basic design elements.",
+            name: "WireBase: Low-Fidelity Starter",
+            info: "Basic wireframes for up to 5 screens to outline structure and core navigation. Ideal for teams starting early design planning and visualizing core user flows.",
+            useCase:
+              "Great for early product planning or internal pitch decks where stakeholders need quick visualization of layout and navigation.",
           },
           {
-            name: "Standard Wireframe & Prototype Package",
-            startingPrice: 1500,
-            info: "Starting at $1,500, this option includes high-fidelity wireframes for up to 10 screens, along with interactive prototyping to simulate real user interactions. Perfect for businesses that need a more refined design to visualize user journeys and functionality, while still remaining budget-friendly.",
+            name: "WirePro: Mid-Fidelity Wireframes + Prototype",
+            info: "Up to 10 well-designed screens with clickable prototypes to simulate user interaction. Suitable for presenting ideas and refining designs before development.",
+            useCase:
+              "Ideal for startups preparing investor decks, stakeholder demos, or initial usability validation with interactive flows.",
           },
           {
-            name: "Advanced Wireframe & Prototype Package",
-            startingPrice: 2500,
-            info: "Starting at $2,500, this package offers up to 15 screens with detailed wireframes, interactive prototypes, and user flow optimization. Includes real-time testing for validation, feedback integration, and ensures an efficient design aligned with user needs at an affordable price point for growing businesses.",
+            name: "WireMax: Advanced Prototyping Package",
+            info: "Detailed wireframes for up to 15 screens with logic-driven interactions and flow validation. Includes iteration rounds based on early-stage user feedback.",
+            useCase:
+              "Best for teams with complex app ideas needing testing of flow logic and UX validation before committing to full UI design.",
           },
           {
-            name: "Comprehensive UX/UI Prototyping & User Testing",
-            startingPrice: 4000,
-            info: "Starting at $4,000, this premium package includes high-fidelity wireframes, advanced interactive prototypes, and comprehensive user testing to ensure your design is functional and intuitive. Ideal for businesses looking to launch a fully optimized, user-tested product with a strong digital presence.",
+            name: "UXPilot: Full Prototyping + User Testing",
+            info: "High-fidelity wireframes, polished prototypes, and real user testing. Ideal for serious product teams who need strategic design validation before development.",
+            useCase:
+              "Perfect for mature product teams or funded startups aiming for market-ready prototypes, validated through real-world usability insights.",
           },
         ],
       },
