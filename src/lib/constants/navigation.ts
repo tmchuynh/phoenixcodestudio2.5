@@ -1,3 +1,7 @@
+import { BsQuestionCircle, BsQuestionCircleFill } from "react-icons/bs";
+import { FaBuilding, FaRegBuilding } from "react-icons/fa";
+import { IoHome, IoHomeOutline } from "react-icons/io5";
+import { RiContactsFill, RiContactsLine } from "react-icons/ri";
 import { Menu } from "../types";
 
 export const about: Menu[] = [
@@ -99,5 +103,32 @@ export const contactFeaturedLinks: Menu[] = [
       "https://img.freepik.com/premium-photo/close-up-business-team-works-sitting-office-desk-business-concept_160672-18279.jpg?uid=R93718308&ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740",
     description:
       "Collaborate with us on building something impactful and meaningful.",
+  },
+];
+
+export const dockNavigationMenu = [
+  {
+    name: "Home",
+    href: "/",
+    activeIcon: IoHome,
+    inactiveIcon: IoHomeOutline,
+  },
+  {
+    name: "Services",
+    href: "/services",
+    activeIcon: FaBuilding,
+    inactiveIcon: FaRegBuilding,
+  },
+  {
+    name: "FAQs",
+    href: "/get_in_touch/frequently_asked_questions",
+    activeIcon: BsQuestionCircleFill,
+    inactiveIcon: BsQuestionCircle,
+  },
+  {
+    name: "Contact",
+    href: "/get_in_touch/lets_work_together",
+    activeIcon: RiContactsFill,
+    inactiveIcon: RiContactsLine,
   },
 ];

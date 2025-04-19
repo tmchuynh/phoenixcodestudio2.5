@@ -1,46 +1,16 @@
 "use client";
+import { dockNavigationMenu } from "@/lib/constants/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BsQuestionCircle, BsQuestionCircleFill } from "react-icons/bs";
-import { FaBuilding, FaRegBuilding } from "react-icons/fa";
-import { IoHome, IoHomeOutline } from "react-icons/io5";
-import { RiContactsFill, RiContactsLine } from "react-icons/ri";
 
 export default function DockNavigation() {
   const pathname = usePathname();
-
-  const navigation = [
-    {
-      name: "Home",
-      href: "/",
-      activeIcon: IoHome,
-      inactiveIcon: IoHomeOutline,
-    },
-    {
-      name: "Services",
-      href: "/services",
-      activeIcon: FaBuilding,
-      inactiveIcon: FaRegBuilding,
-    },
-    {
-      name: "FAQs",
-      href: "/get_in_touch/frequently_asked_questions",
-      activeIcon: BsQuestionCircleFill,
-      inactiveIcon: BsQuestionCircle,
-    },
-    {
-      name: "Contact",
-      href: "/get_in_touch/lets_work_together",
-      activeIcon: RiContactsFill,
-      inactiveIcon: RiContactsLine,
-    },
-  ];
 
   return (
     <nav className="bottom-0 z-10 fixed sm:hidden bg-background dark:border-chart-1 border-t w-full text-foreground">
       <div className="mx-auto px-6">
         <div className="flex justify-between items-center">
-          {navigation.map((item) => {
+          {dockNavigationMenu.map((item) => {
             const isActive = pathname === item.href;
             return (
               <Link
