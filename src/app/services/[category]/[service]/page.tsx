@@ -124,7 +124,7 @@ export default function ServicePage() {
                   <p key={sIndex}>{sentence}</p>
                 ))}
 
-                <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-4">
+                <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
                   {info.lists?.map((listInfo, listIndex) => (
                     <div key={listIndex}>
                       <h4>{listInfo.title}</h4>
