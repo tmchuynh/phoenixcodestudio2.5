@@ -57,7 +57,15 @@ export function NavBar() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="gap-3 grid lg:grid-cols-2 lg:grid-rows-5 p-4 md:w-[35em] lg:w-[45em] xl:w-[50em]">
+                    <ul className="gap-3 grid lg:grid-cols-2 xl:grid-cols-4 lg:grid-rows-4 p-4 md:w-[35em] lg:w-[45em] xl:w-[50em] md:h-[28em] lg:h-[25em]">
+                      {serviceFeaturedLinks.map((link, index) => (
+                        <li
+                          className="col-span-2 lg:col-span-1 xl:col-span-4 lg:row-span-4 m-0"
+                          key={index}
+                        >
+                          {NavigationImageItem({ link })}
+                        </li>
+                      ))}
                       {serviceCategories.map((link, index) => (
                         <ListItem
                           href={link.href}
@@ -67,24 +75,16 @@ export function NavBar() {
                           {link.description}
                         </ListItem>
                       ))}
-                      {serviceFeaturedLinks.map((link, index) => (
-                        <li
-                          className="col-span-2 lg:col-span-1 lg:row-span-3 m-0"
-                          key={index}
-                        >
-                          {NavigationImageItem({ link })}
-                        </li>
-                      ))}
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>About PCS</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="gap-3 grid lg:grid-cols-2 lg:grid-rows-2 p-4 md:w-[35em] lg:w-[45em] xl:w-[60em]">
+                    <ul className="gap-3 grid grid-cols-2 xl:grid-cols-3 lg:grid-rows-4 p-4 md:w-[35em] lg:w-[45em] xl:w-[60em] lg:h-[25em]">
                       {aboutFeaturedLinks.map((link, index) => (
                         <li
-                          className="col-span-1 lg:col-span-1 row-span-1 lg:row-span-2 xl:row-span-2 m-0"
+                          className="col-span-1 lg:col-span-1 row-span-1 lg:row-span-4 m-0"
                           key={index}
                         >
                           {NavigationImageItem({ link })}
@@ -105,10 +105,10 @@ export function NavBar() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="gap-3 grid grid-cols-2 lg:grid-cols-3 grid-rows-3 lg:grid-rows-2 p-4 md:w-[35em] lg:w-[40em]">
+                    <ul className="gap-3 grid grid-cols-2 lg:grid-cols-3 grid-rows-3 lg:grid-rows-3 p-4 md:w-[35em] lg:w-[40em] md:h-[28em] lg:h-[25em]">
                       {contactFeaturedLinks.map((link, index) => (
                         <li
-                          className="col-span-1 lg:col-span-3 row-span-3 lg:row-span-2 m-0"
+                          className="col-span-1 lg:col-span-2 row-span-3 lg:row-span-3 m-0"
                           key={index}
                         >
                           {NavigationImageItem({ link })}
@@ -141,14 +141,11 @@ const ListItem = React.forwardRef<
   React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, ...props }, ref) => {
   return (
-    <li className="mx-0">
+    <li className={cn("mx-0", className)}>
       <NavigationMenuLink asChild>
         <a
           ref={ref}
-          className={cn(
-            "flex flex-col h-full select-none rounded-md p-4 no-underline outline-none transition-colors group hover:bg-primary/85 hover:text-primary-foreground focus-visible:ring-ring/50 focus-visible:outline-none focus-visible:ring-[3px] data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
-            className
-          )}
+          className="group flex flex-col data-[state=open]:bg-accent hover:bg-primary/85 p-4 rounded-md focus-visible:ring-[3px] focus-visible:ring-ring/50 h-full data-[state=open]:text-accent-foreground hover:text-primary-foreground no-underline transition-colors select-none outline-none focus-visible:outline-none"
           {...props}
         >
           <div className="font-[PlayfairDisplay] font-medium text-lg leading-none">
