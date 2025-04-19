@@ -17,10 +17,10 @@ export default function Timeline({
 }) {
   return (
     <div
-      className={`relative w-1/3 mx-auto pt-16 ${
+      className={`relative w-1/3 mx-auto hidden md:flex pt-16 ${
         orientation === "vertical"
           ? "flex flex-col space-y-10"
-          : "flex flex-row gap-9 justify-between overflow-x-auto flex-wrap w-11/12"
+          : "flex flex-row md:gap-2 lg:gap-9 md:justify-around lg:justify-between overflow-x-auto flex-wrap w-11/12"
       }`}
       role="list"
       aria-label="Timeline"
@@ -30,7 +30,7 @@ export default function Timeline({
           key={index}
           className={cn(
             "relative ",
-            orientation === "horizontal" ? "w-1/5" : ""
+            orientation === "horizontal" ? "md:w-1/3 lg:w-1/5" : ""
           )}
         >
           <div
