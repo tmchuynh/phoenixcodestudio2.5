@@ -11,22 +11,22 @@ export function FeaturedImageGallery() {
 
   return (
     <div className="gap-4 grid">
-      <div className="z-20">
+      <div>
         <Image
-          className="shadow-lg rounded-2xl w-full max-w-full h-auto md:h-[35em] object-cover object-center"
+          className="rounded-lg w-full max-w-full h-auto md:h-[480px] object-cover object-center"
           src={active}
           alt=""
           width={1470}
           height={980}
         />
       </div>
-      <div className="gap-4 lg:gap-6 grid grid-cols-3 lg:grid-cols-5 lg:-mt-4 lg:w-11/12">
+      <div className="gap-4 grid grid-cols-5">
         {testimonialImages.map(({ imageUrl }, index) => (
           <div key={index}>
             <Image
               onClick={() => setActive(imageUrl)}
               src={imageUrl}
-              className="shadow-md rounded-lg max-w-full h-14 md:h-28 lg:h-20 transform transition duration-300 cursor-pointer lg:rotate-[35deg] object-cover object-center hover:rotate-[60deg]"
+              className="rounded-lg max-w-full h-20 cursor-pointer object-cover object-center"
               alt={`gallery-image-${index}`}
               width={400}
               height={400}
