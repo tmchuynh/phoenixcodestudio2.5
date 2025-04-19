@@ -17,7 +17,7 @@ export default function BlogCard({ blog }: { blog: BlogPost }) {
         <div className="relative w-full">
           <Image
             alt={blog.title}
-            src={blog.cardImage || "https://placehold.co/600x400"}
+            src={blog.cardImage}
             className="shadow-md rounded-2xl w-full aspect-video object-cover md:aspect-2/1 lg:aspect-3/2"
             width={600}
             height={400}
@@ -25,7 +25,7 @@ export default function BlogCard({ blog }: { blog: BlogPost }) {
         </div>
         <div className="group flex flex-col justify-between px-4 max-w-xl h-full">
           <div className="relative flex flex-col justify-between mt-3">
-            <h3 className="underline-offset-4 group-hover:underline group-hover:decoration-fancy">
+            <h3 className="underline-offset-4 group-hover:underline">
               {blog.title}
             </h3>
             <p className="line-clamp-3">{blog.excerpt}</p>
