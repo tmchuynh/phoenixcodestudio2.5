@@ -1,41 +1,43 @@
+import DynamicButton from "@/components/button/button-dynamic";
 import ResponsiveLogo from "@/components/Logo";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
-import {
-  BookmarkSquareIcon,
-  BookOpenIcon,
-  QueueListIcon,
-  RssIcon,
-} from "@heroicons/react/24/solid";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { BsQuestionCircleFill } from "react-icons/bs";
+import { FaBuilding, FaHome } from "react-icons/fa";
+import { RiContactsFill } from "react-icons/ri";
 
 const links = [
   {
-    name: "Documentation",
-    href: "#",
-    description: "Learn how to integrate our tools with your app.",
-    icon: BookOpenIcon,
+    name: "Home",
+    href: "/",
+    description: "Return back to the main page to find the way.",
+    icon: FaHome,
   },
   {
-    name: "API Reference",
-    href: "#",
-    description: "A complete API reference for our libraries.",
-    icon: QueueListIcon,
+    name: "View Our Services",
+    href: "/services",
+    description:
+      "Get a comprehensive look at the full range of services we provide.",
+    icon: FaBuilding,
   },
   {
-    name: "Guides",
-    href: "#",
-    description: "Installation guides that cover popular setups.",
-    icon: BookmarkSquareIcon,
+    name: "Get In Touch",
+    href: "/get_in_touch/lets_work_together",
+    description:
+      "Contact us directly with questions, feedback, or project ideas.",
+    icon: RiContactsFill,
   },
   {
-    name: "Blog",
-    href: "#",
+    name: "FAQs",
+    href: "/get_in_touch/frequently_asked_questions",
     description: "Read our latest news and articles.",
-    icon: RssIcon,
+    icon: BsQuestionCircleFill,
   },
 ];
 
 export default function Example() {
+  const router = useRouter();
   return (
     <div>
       <main className="mx-auto pt-10 pb-16 sm:pb-24 w-11/12 max-w-7xl">
@@ -74,9 +76,9 @@ export default function Example() {
             ))}
           </ul>
           <div className="flex justify-center mt-10">
-            <a href="#" className="font-semibold text-sm/6">
-              <span aria-hidden="true">&larr;</span> Back to home
-            </a>
+            <DynamicButton onClick={() => router.push("/")}>
+              Back Home
+            </DynamicButton>
           </div>
         </div>
       </main>
