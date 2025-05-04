@@ -1,3 +1,5 @@
+"use client";
+
 import DynamicButton from "@/components/button/button-dynamic";
 import ResponsiveLogo from "@/components/Logo";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
