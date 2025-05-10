@@ -4,7 +4,7 @@ export default function IntroductionImage() {
   return (
     <div>
       <section className="md:block relative -z-10 hidden overflow-hidden">
-        <div className="mx-auto lg:w-11/12">
+        <div className="mx-auto">
           <Image
             alt=""
             src="https://img.freepik.com/premium-photo/fiery-phoenix-with-outstretched-wings-against-black-background_14117-690436.jpg?ga=GA1.1.1699338801.1739848115&semt=ais_hybrid&w=740"
@@ -20,11 +20,12 @@ export default function IntroductionImage() {
       <div className="z-20 mx-auto md:-mt-16 lg:-mt-36 xl:-mt-26 w-11/12">
         <div className="mx-auto lg:mx-0 max-w-2xl lg:max-w-none">
           <h4 className="lg:text-white xl:text-secondary">
-            A Dream That Stirred in Silence Before It Echoed
+            Crafting Digital Experiences That Rise Above
           </h4>
           <h1 className="md:w-4/5">
             The Path We Took Before the World Heard Us
           </h1>
+
           <div className="lg:gap-8 grid grid-cols-1 lg:grid-cols-2 mt-10 max-w-xl lg:max-w-none text-base/7">
             <div>
               <p>
