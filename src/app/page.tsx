@@ -79,7 +79,7 @@ export default function HomePage() {
           className="md:block space-y-5 hidden mx-auto w-10/12"
         >
           <CarouselContent className="min-h-full">
-            {featuredProjects.slice(0, 3).map((project, index) => (
+            {featuredProjects.map((project, index) => (
               <CarouselItem key={index} className="flex items-center px-10">
                 <FeaturedProject project={project} index={index} />
               </CarouselItem>

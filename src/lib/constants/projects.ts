@@ -175,4 +175,21 @@ export const pastProjects: Project[] = [
     liveLink: "https://tmchuynh.github.io/sudoku/",
     githubLink: "https://github.com/tmchuynh/sudoku",
   },
+  {
+    title: "Harmona Health",
+    short: "Clarity. Strength. Balance. Your Journey Starts Here.",
+    quote:
+      "Harmona Health was founded on the belief that wellness is not a destination — it’s a lifelong journey. At Harmona Health, we believe that everyone carries a spark of untapped potential — a brighter, stronger, more vibrant version of themselves waiting to be awakened. We are driven by a powerful belief: wellness is not a destination, but a continuous journey. We understand that life can be overwhelming at times—between the demands of work, family, and personal obligations, it’s easy to lose sight of the most important thing: your health. But what if, instead of just surviving, you could thrive? What if you could uncover the vibrant, powerful version of yourself that has always been waiting to emerge?",
+    featured: true,
+    description:
+      "Each day is a new opportunity to rise stronger, live brighter, and move closer to your goals. At Harmona Health, we believe great health doesn’t just happen — it’s created through intentional choices, expert guidance, and powerful support. Whether you’re looking to ignite your strength, find balance, or embrace your full potential, we stand with you every step of the way.",
+    tags: ["Mock Up", "Dynamic", "Educational"],
+    tech: {
+      languages: ["TypeScript"],
+      frameworks: ["Next.js"],
+      libraries: ["React"],
+    },
+    liveLink: "https://harmona-health.vercel.app/",
+    githubLink: "https://github.com/tmchuynh/harmona-health",
+  },
 ];
