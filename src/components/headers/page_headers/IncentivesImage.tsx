@@ -8,7 +8,7 @@ export default function IncentivesImage() {
         <div className="items-center gap-x-16 gap-y-10 grid grid-cols-1 lg:grid-cols-2">
           <div>
             <h4>Crafting bold digital experiences with purpose</h4>
-            <h1>Digital Services by Phoenix Code Studio</h1>
+            <h1>Digital Solutions With Purpose</h1>
             <p className="mt-4">
               Unlock the full power of your business with tailored digital
               solutions designed to move the needle. From high-performance web
