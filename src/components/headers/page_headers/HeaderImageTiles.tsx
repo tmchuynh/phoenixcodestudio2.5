@@ -9,18 +9,15 @@ export default function HeaderImageTiles() {
       <div className="lg:flex mx-auto w-11/12 max-w-7xl">
         <div className="lg:flex-none gap-x-12 gap-y-16 lg:gap-y-8 grid grid-cols-1 mx-auto lg:mx-0 lg:min-w-full max-w-2xl lg:max-w-none">
           <div className="lg:col-end-1 lg:pb-8 lg:w-full lg:max-w-lg">
-            <h4>Phoenix Code Studio</h4>
+            <h4>Your vision is the spark. We’re here to ignite it.</h4>
             <h1>Our Goal</h1>
             <div>
               <p className="mt-6 text-lg/relaxed">
-                Your vision is more than just an idea—it’s the foundation of
-                something extraordinary. At Phoenix Code Studio, we merge
-                strategic creativity, innovative technology, and cutting-edge
-                design to craft transformative digital experiences that don’t
-                just exist—they thrive. Whether you’re launching a brand,
-                redefining your online presence, or creating a revolutionary
-                digital platform, we bring your aspirations to life with custom,
-                results-driven solutions.
+                Whether you're launching a new brand, reimagining your digital
+                presence, or building a powerful platform from scratch, our goal
+                is to bring your aspirations to life through custom,
+                high-performing digital solutions that make your business
+                impossible to ignore.
               </p>
             </div>
             <div className="flex mt-10">
