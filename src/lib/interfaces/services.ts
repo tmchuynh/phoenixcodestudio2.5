@@ -1,4 +1,5 @@
 import { JSX } from "react";
+import { IconType } from "react-icons/lib";
 import { PricingTier } from "../types";
 
 export interface Category {
@@ -23,11 +24,14 @@ export interface SubDetail {
   title: string;
   description?: string;
   intro?: string[];
-  lists?: {
-    title?: string;
-    description: string;
-    info?: ListDetail[];
-  }[];
+  lists?: List[];
+}
+
+export interface List {
+  title?: string;
+  description: string;
+  info?: ListDetail[];
+  icon?: IconType;
 }
 
 export interface SubInformation {
