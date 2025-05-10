@@ -2,14 +2,16 @@ import { Category } from "@/lib/interfaces/services";
 
 export const allServices: Category[] = [
   {
-    name: "scalable-corporate-digital-solutions",
-    subtitle: "Innovative systems built to evolve with your business",
+    name: "tailored-digital-solutions",
+    subtitle: "Scalable Digital Solutions Built to Evolve with You",
     title: "Scalable Corporate Solutions for Growth & Digital Success",
     short: "Scalable Solutions for Business Growth",
     description: [
-      "Our corporate digital solutions are designed to empower businesses of all sizes to thrive in the digital age. We focus on improving online visibility, streamlining digital operations, and boosting user engagement. Whether you need custom web development, high-converting e-commerce platforms, intuitive UX/UI design, or data-driven digital marketing strategies, we deliver tailored, SEO-optimized, and performance-oriented solutions that align with your unique business goals.",
-      "Our team of expert web designers, branding specialists, and conversion optimization strategists works tirelessly to enhance your search engine rankings, drive organic traffic, and increase audience interaction. By ensuring your brand stands out in today’s competitive digital landscape, we help you build a strong online presence that resonates with your target audience.",
-      "Through cutting-edge SEO techniques, responsive web design, and conversion-focused digital experiences, we enable businesses to transform website visitors into loyal customers. Our solutions are designed to drive revenue growth, provide a significant competitive advantage, and establish your brand as a leader in your industry. Partner with us to create scalable, future-proof digital solutions that ensure long-term success and sustainable growth.",
+      "At Phoenix Code Studio, we don’t rely on templates or one-size-fits-all frameworks. We build custom digital solutions from the ground up—intentionally engineered to align with your industry, meet your user needs, and reflect your brand’s unique identity.",
+      "Our process begins with deep discovery—understanding your business challenges, growth goals, and audience behaviors—so we can architect solutions that drive real results. Whether it’s a high-converting eCommerce platform, a responsive web application, or an intuitive brand experience, every product we build is grounded in purpose and precision.",
+      "We specialize in scalable, high-performance applications that grow alongside your business. By leveraging modern technologies, scalable architectures, and industry best practices, we ensure every solution we deliver is both adaptable and future-proof. From seamless back-end functionality to front-end design that delights, we prioritize creating digital experiences that are accessible, engaging, and built to perform.",
+      "Backed by a team of expert developers, branding specialists, and growth strategists, we elevate your brand visibility, streamline operations, and boost engagement. Through cutting-edge SEO, responsive design, and strategic storytelling, we help transform passive visitors into loyal customers—and businesses into industry leaders.",
+      "When you partner with Phoenix Code Studio, you're not just investing in a website—you’re building a powerful, adaptable digital ecosystem that positions your brand for long-term success and sustainable growth.",
     ],
     sub: [
       "authentic-brand-storytelling-that-captivates-connects",
@@ -17,20 +19,6 @@ export const allServices: Category[] = [
       "optimized-secure-database-management-solutions",
       "expert-technical-writing-clarity-precision",
       "engaging-impactful-newsletters",
-    ],
-  },
-  {
-    name: "comprehensive-website-solutions",
-    subtitle: "Complete solutions from concept to launch",
-    title:
-      "End-to-End Website Solutions for a High-Performing Digital Presence",
-    short: "Comprehensive Website Solutions for Digital Success",
-    description: [
-      "Our website development services provide scalable, custom solutions to help businesses establish and grow their online presence. We specialize in creating high-performance websites that enhance brand visibility, user engagement, and conversions. Whether you need custom designs, rapid development, or seamless functionality, we ensure your website meets your business objectives.",
-      "With expertise in responsive design, e-commerce solutions, SEO strategies, and UX/UI enhancements, we craft websites that are visually striking, mobile-optimized, and search-engine friendly. Our focus on fast-loading pages, intuitive navigation, and user-centric design guarantees a smooth user experience that improves your site’s performance and search rankings.",
-      "By integrating advanced SEO techniques, performance optimization, and robust security measures with conversion-driven strategies, we help businesses increase traffic, drive sales, and achieve measurable results. Phoenix Code Studio is your trusted partner for web development success, delivering solutions that are tailored to your needs and built for long-term growth.",
-    ],
-    sub: [
       "user-centered-interface-design-for-seamless-experiences",
       "high-performance-single-page-applications-spas-for-a-seamless-user-experience",
       "seo-optimized-engaging-blog-content",
