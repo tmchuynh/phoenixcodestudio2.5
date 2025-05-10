@@ -16,7 +16,7 @@ import { blogs } from "@/lib/constants/blog-posts";
 import { pastProjects } from "@/lib/constants/projects";
 import { BlogPost } from "@/lib/interfaces/blogs";
 import { Project } from "@/lib/interfaces/projects";
-import { featuredArray } from "@/lib/utils/sort";
+import { featuredArray, sortByProperty } from "@/lib/utils/sort";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
@@ -33,6 +33,9 @@ export default function HomePage() {
     setFeaturedArticles(featuredArray(blogs));
     setFeaturedProjects(featuredArray(pastProjects));
   }, []);
+
+  const sortedFeaturedProjects = sortByProperty(featuredProjects, "title");
+  const sortedFeaturedArticles = sortByProperty(featuredArticles, "title");
 
   useEffect(() => {
     if (!apiProject) {
@@ -69,7 +72,7 @@ export default function HomePage() {
         </div>
 
         <div className="space-y-10 md:hidden mx-auto">
-          {featuredProjects.slice(0, 3).map((project, index) => (
+          {sortedFeaturedProjects.map((project, index) => (
             <FeaturedProject key={index} project={project} index={index} />
           ))}
         </div>
@@ -79,7 +82,7 @@ export default function HomePage() {
           className="md:block space-y-5 hidden mx-auto w-10/12"
         >
           <CarouselContent className="min-h-full">
-            {featuredProjects.map((project, index) => (
+            {sortedFeaturedProjects.map((project, index) => (
               <CarouselItem key={index} className="flex items-center px-10">
                 <FeaturedProject project={project} index={index} />
               </CarouselItem>
@@ -100,14 +103,14 @@ export default function HomePage() {
         </div>
 
         <div className="space-y-10 md:hidden mx-auto w-11/12">
-          {featuredArticles.slice(0, 15).map((article, index) => (
+          {sortedFeaturedArticles.slice(0, 15).map((article, index) => (
             <FeaturedArticles key={index} blog={article} index={index} />
           ))}
         </div>
 
         <Carousel setApi={setApi} className="md:block hidden mx-auto w-10/12">
           <CarouselContent className="min-h-full">
-            {featuredArticles.slice(0, 15).map((article, index) => (
+            {sortedFeaturedArticles.slice(0, 15).map((article, index) => (
               <CarouselItem key={index} className="flex items-center px-10">
                 <FeaturedArticles blog={article} index={index} />
               </CarouselItem>
