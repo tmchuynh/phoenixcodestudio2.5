@@ -2,11 +2,7 @@
 
 import useMediumScreen from "@/lib/screens/useMediumScreen";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
-import {
-  capitalize,
-  clipString,
-  compareStringWordCount,
-} from "@/lib/utils/format";
+import { capitalize } from "@/lib/utils/format";
 import { generateRandomString } from "@/lib/utils/sort";
 import { usePathname } from "next/navigation";
 import { JSX, useMemo } from "react";
@@ -56,11 +52,6 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
       index: number,
       isLast: boolean
     ) => {
-      const content =
-        compareStringWordCount(segment, 3) && !isLast
-          ? clipString(segment, 15)
-          : segment;
-
       const r = generateRandomString(5);
 
       console.log(
@@ -76,7 +67,7 @@ export default function DynamicBreadcrumb(): JSX.Element | null {
             href={href}
             className="py-1 rounded-md dark:text-foreground underline-offset-4 hover:underline hover:decoration-secondary"
           >
-            {content}
+            {segment}
           </BreadcrumbLink>
         </BreadcrumbItem>
       );
