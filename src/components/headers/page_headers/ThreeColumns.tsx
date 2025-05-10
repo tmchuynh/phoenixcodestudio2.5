@@ -1,4 +1,5 @@
 import { motivationalDrive } from "@/lib/constants/constants";
+import { FaLandmark } from "react-icons/fa";
 
 export default function ThreeColumns() {
   return (
@@ -35,7 +36,74 @@ export default function ThreeColumns() {
           fuels us.
         </p>
       </div>
-      <div className="mt-6">
+
+      <section className="mt-9">
+        <h2>Core Brand Pillars</h2>
+        <section className="gap-x-8 gap-y-10 grid grid-cols-1 lg:grid-cols-3 mt-6">
+          <div className="lg:block sm:flex">
+            <div className="w-16 h-16 sm:shrink-0 object-cover">
+              <FaLandmark className="w-16 h-16" />
+            </div>
+            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
+              <h4>Vision-Driven Strategy</h4>
+              <p className="mt-2 text-sm">
+                Every project begins with a vision and ends with a
+                custom-engineered solution that brings that vision to life.
+              </p>
+            </div>
+          </div>
+          <div className="lg:block sm:flex">
+            <div className="w-16 h-16 sm:shrink-0 object-cover">
+              <FaLandmark className="w-16 h-16" />
+            </div>
+            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
+              <h4>Human-Centered Design</h4>
+              <p className="mt-2 text-sm">
+                Empathy, usability, and accessibility form the foundation of
+                every experience we craft.
+              </p>
+            </div>
+          </div>
+          <div className="lg:block sm:flex">
+            <div className="w-16 h-16 sm:shrink-0 object-cover">
+              <FaLandmark className="w-16 h-16" />
+            </div>
+            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
+              <h4>Purposeful Innovation</h4>
+              <p className="mt-2 text-sm">
+                We use emerging technology to solve real problems—not to chase
+                trends.
+              </p>
+            </div>
+          </div>
+          <div className="lg:block sm:flex">
+            <div className="w-16 h-16 sm:shrink-0 object-cover">
+              <FaLandmark className="w-16 h-16" />
+            </div>
+            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
+              <h4>Long-Term Collaboration</h4>
+              <p className="mt-2 text-sm">
+                We’re not just a vendor. We’re your strategic partner invested
+                in your sustained digital growth.
+              </p>
+            </div>
+          </div>
+          <div className="lg:block sm:flex">
+            <div className="w-16 h-16 sm:shrink-0 object-cover">
+              <FaLandmark className="w-16 h-16" />
+            </div>
+            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
+              <h4>Authentic Storytelling</h4>
+              <p className="mt-2 text-sm">
+                Every design and every line of copy reflects your
+                narrative—real, raw, and resonant.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <div className="mt-14">
         <h2>What Drives Us Forward</h2>
         <div className="gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {motivationalDrive.map((feature, index) => (
