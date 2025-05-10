@@ -6,12 +6,18 @@ import LoadingIndicator from "@/components/states/loading/Loading";
 import CannotFind from "@/components/states/not-found/CannotFind";
 import { Card, CardContent } from "@/components/ui/card";
 import { SubItem } from "@/lib/interfaces/services";
+import { getSVGByServiceName } from "@/lib/utils";
 import { capitalize } from "@/lib/utils/format";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
+interface ServiceIconData {
+  svg: React.ReactNode;
+}
+
 export default function ServicePage() {
   const router = useRouter();
+  const [serviceIcon, setServiceIcon] = useState<ServiceIconData | null>(null);
 
   const { category, service } = useParams() as {
     category: string;
@@ -54,7 +60,28 @@ export default function ServicePage() {
     }
 
     fetchServices();
-  }, [category, service]);
+  }, [category, service, serviceName]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Only proceed if serviceName is not null
+        if (serviceName) {
+          // Pass the expected object structure
+          const data = await getSVGByServiceName({
+            name: service,
+            icons: "svgIcons",
+          });
+          setServiceIcon(data);
+        }
+      } catch (error) {
+        console.error("Failed to load affirmation cards:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, [serviceName]);
 
   if (loading) {
     return <LoadingIndicator />;
@@ -62,33 +89,40 @@ export default function ServicePage() {
 
   if (error) return <CannotFind />;
 
+  console.log("serviceIcon", serviceIcon);
+
   return (
     <>
       {serviceData && (
         <>
           <main className="mx-auto py-6 w-10/12 md:w-11/12">
+            {serviceIcon && serviceIcon.svg}
             <h1>{serviceName}</h1>
             {serviceData.info.intro.map((intro, index) => (
               <p key={index}>{intro}</p>
             ))}
 
-            {serviceData.details.map((info, index) => (
-              <section key={index}>
-                <h2>{info.title}</h2>
-                {info.intro?.map((sentence, sIndex) => (
-                  <p key={sIndex}>{sentence}</p>
-                ))}
-
-                <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
-                  {info.lists?.map((listInfo, listIndex) => (
-                    <div key={listIndex}>
-                      <h4>{listInfo.title}</h4>
-                      <p>{listInfo.description}</p>
-                    </div>
+            {serviceData.details.map((info, index) => {
+              return (
+                <section key={index}>
+                  <h2>{info.title}</h2>
+                  {info.intro?.map((sentence, sIndex) => (
+                    <p key={sIndex}>{sentence}</p>
                   ))}
-                </div>
-              </section>
-            ))}
+
+                  <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
+                    {info.lists?.map((listInfo, listIndex) => {
+                      return (
+                        <div key={listIndex} className="flex flex-col">
+                          <h4>{listInfo.title}</h4>
+                          <p>{listInfo.description}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </section>
+              );
+            })}
 
             <section>
               <h2>Do You Have Questions?</h2>
