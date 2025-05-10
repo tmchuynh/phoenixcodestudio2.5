@@ -25,7 +25,9 @@ export const testimonials: Testimonial[] = [
         gone from a simple, self-built website to one that truly represents the
         professionalism and experience of a company with over 20 years in the
         industry. Tina has played a key role in presenting our company in the
-        best possible way.
+        best possible way. I highly recommend her to anyone looking to elevate
+        their online presence. I look forward to working with her on future
+        projects.
       </p>
     ),
   },
@@ -45,7 +47,12 @@ export const testimonials: Testimonial[] = [
         translating vision into an engaging digital experience. Her approach is
         very intentional, Tina’s creativity shines through in every project she
         works on, and she consistently delivers results that exceed
-        expectations.
+        expectations. Her ability to blend aesthetics with functionality is a
+        rare skill that sets her apart in the industry. I highly recommend Tina
+        to anyone looking to elevate their online presence. She is a true
+        professional who is dedicated to her craft and always goes the extra
+        mile to ensure her clients are satisfied. I look forward to working with
+        her on future projects.
       </p>
     ),
   },
@@ -68,7 +75,17 @@ export const testimonials: Testimonial[] = [
         true polymath, seamlessly integrating skills from software engineering,
         business development, real estate, and personal growth. Her ability to
         connect these diverse disciplines fuels her innovation, allowing her to
-        create unique, forward-thinking solutions that drive real impact.
+        create unique, forward-thinking solutions that drive real impact. Her
+        commitment to continuous learning and growth is evident in her work,
+        where she consistently pushes boundaries and embraces new challenges.
+        Tina's passion for technology and design is matched only by her
+        enthusiasm for helping others. She is a natural collaborator, always
+        eager to share her knowledge and support her team. Her positive attitude
+        and willingness to go the extra mile make her a joy to work with. I
+        wholeheartedly recommend Tina to anyone seeking a talented and driven
+        web developer. Her unique blend of skills, creativity, and dedication
+        will undoubtedly elevate any project she undertakes. I look forward to
+        seeing the incredible things she will accomplish in her career.
       </p>
     ),
   },
@@ -94,7 +111,11 @@ export const testimonials: Testimonial[] = [
           enthusiasm and determination
         </mark>
         . Her dedication, resourcefulness, and unwavering drive make her an
-        invaluable asset to any team.
+        invaluable asset to any team. I have no doubt that she will continue to
+        excel in her career and make a significant impact in the tech industry.
+        I wholeheartedly recommend Tina to anyone seeking a talented and driven
+        professional. Her unique blend of skills, creativity, and dedication
+        will undoubtedly elevate any project she undertakes.
       </p>
     ),
   },
@@ -119,7 +140,12 @@ export const testimonials: Testimonial[] = [
         </mark>
         . Her projects clearly demonstrate her ability to tackle new
         technologies with confidence, overcoming any challenge that comes her
-        way. She is a true problem-solver and an invaluable asset to any team.
+        way. She is a true problem-solver and an invaluable asset to any team. I
+        have no doubt that she will continue to excel in her career and make a
+        significant impact in the tech industry. I wholeheartedly recommend Tina
+        to anyone seeking a talented and driven professional. Her unique blend
+        of skills, creativity, and dedication will undoubtedly elevate any
+        project she undertakes.
       </p>
     ),
   },
@@ -134,7 +160,13 @@ export const testimonials: Testimonial[] = [
         tackle any project you give to her and dive deep into understanding
         everything necessary for the project, and her contribution, to excel.
         Her drive and mindset for success and growth are at a level that I
-        rarely see anymore; a wonderful asset for any team.
+        rarely see anymore; a wonderful asset for any team. She is always
+        willing to help others and share her knowledge. I have no doubt that she
+        will continue to excel in her career and make a significant impact in
+        the tech industry. I wholeheartedly recommend Tina to anyone seeking a
+        talented and driven professional. Her unique blend of skills,
+        creativity, and dedication will undoubtedly elevate any project she
+        undertakes.
       </p>
     ),
   },

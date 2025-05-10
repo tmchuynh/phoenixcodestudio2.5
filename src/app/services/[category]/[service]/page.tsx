@@ -111,13 +111,13 @@ export default function ServicePage() {
             )}
 
             <h3>Do You Have Questions?</h3>
-            <p>
-              Whether you’re just starting your digital transformation journey
+            <p className="mb-4">
+              Whether you're just starting your digital transformation journey
               or seeking to learn more about our process, our FAQs are here to
               help. Discover clear answers to your questions and gain the
               insights you need to make confident, informed decisions.
             </p>
-            <p>
+            <p className="mb-6">
               Explore our FAQs to learn about our methodologies, capabilities,
               and how we help businesses like yours thrive in the digital era.
             </p>
