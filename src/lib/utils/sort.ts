@@ -83,6 +83,137 @@ export function sortByProperty<T>(
 }
 
 /**
+ * Groups an array of objects by a specified property and optionally sorts each group.
+ *
+ * @template T - The type of elements in the array
+ * @param {T[]} array - The array to group and sort
+ * @param {keyof T} groupByProperty - The property to group the array by
+ * @param {keyof T} [sortByPropertyKey] - Optional property to sort each group by
+ * @param {boolean} [ascending=true] - Whether to sort in ascending order (true) or descending order (false)
+ * @param {boolean} [sortByLength=false] - Whether to sort by the length of the property value instead of the value itself
+ * @param {boolean} [groupByLength=false] - Whether to group by the length of the property value instead of the value itself
+ * @returns {T[]} A new array with elements grouped and sorted according to the specified parameters
+ *
+ * @example
+ * // Group users by department and sort by name
+ * const sortedUsers = groupAndSortByProperties(users, 'department', 'name');
+ *
+ * @example
+ * // Group posts by category and sort by date (most recent first)
+ * const sortedPosts = groupAndSortByProperties(posts, 'category', 'date', false);
+ *
+ * // Example 1: Group by "program" and sort by "name"
+ * const groupedAndSortedByName = groupAndSortByProperties(
+ *   successStories,
+ *   "program",
+ *   "name",
+ *   true
+ * );
+ *
+ * // Example 2: Group by "program" and sort by the length of "story"
+ * const groupedAndSortedByStoryLength = groupAndSortByProperties(
+ *   successStories,
+ *   "program",
+ *   "story",
+ *   true,
+ *   true // Enable sorting by length
+ * );
+ *
+ * // Example 3: Group by the length of "program" and do not sort within groups
+ * const groupedByProgramLength = groupAndSortByProperties(
+ *   successStories,
+ *   "program",
+ *   undefined, // No sortByPropertyKey
+ *   true,
+ *   false, // Do not sort by length
+ *   true // Enable grouping by length
+ * );
+ *
+ *
+ * @example
+ * // Group messages by sender and sort by message length
+ * const sortedMessages = groupAndSortByProperties(messages, 'sender', 'content', true, true);
+ */
+export function groupAndSortByProperties<T>(
+  array: T[],
+  groupByProperty: keyof T,
+  sortByPropertyKey?: keyof T,
+  ascending: boolean = true,
+  sortByLength: boolean = false,
+  groupByLength: boolean = false
+): T[] {
+  // Group the array by the specified property or by the length of the property
+  const grouped = array.reduce((acc, item) => {
+    const key = groupByLength
+      ? (item[groupByProperty] as unknown as string)?.length || 0
+      : (item[groupByProperty] as string | number);
+
+    if (!acc[key]) {
+      acc[key] = [];
+    }
+    acc[key].push(item);
+    return acc;
+  }, {} as Record<string | number, T[]>);
+
+  // Sort the group keys to ensure the groups are processed in the correct order
+  const sortedKeys = Object.keys(grouped).sort((a, b) => {
+    const numA = parseInt(a, 10);
+    const numB = parseInt(b, 10);
+    return groupByLength
+      ? ascending
+        ? numA - numB
+        : numB - numA
+      : a.localeCompare(b);
+  });
+
+  // Sort each group by the specified property or by the length of the property
+  const sortedGroups = sortedKeys.map((key) => {
+    if (sortByLength) {
+      return [...grouped[key]].sort((a, b) => {
+        const lengthA =
+          (a[sortByPropertyKey!] as unknown as string)?.length || 0;
+        const lengthB =
+          (b[sortByPropertyKey!] as unknown as string)?.length || 0;
+        return ascending ? lengthA - lengthB : lengthB - lengthA;
+      });
+    } else if (sortByPropertyKey) {
+      return [...grouped[key]].sort((a, b) => {
+        const valueA = a[sortByPropertyKey];
+        const valueB = b[sortByPropertyKey];
+
+        // Check if the property is a date in the format YYYY-MM-DD
+        if (
+          typeof valueA === "string" &&
+          typeof valueB === "string" &&
+          /^\d{4}-\d{2}-\d{2}$/.test(valueA) &&
+          /^\d{4}-\d{2}-\d{2}$/.test(valueB)
+        ) {
+          const dateA = new Date(valueA);
+          const dateB = new Date(valueB);
+          return ascending
+            ? dateA.getTime() - dateB.getTime()
+            : dateB.getTime() - dateA.getTime();
+        }
+
+        // Default sorting for non-date properties
+        if (valueA < valueB) {
+          return ascending ? -1 : 1;
+        }
+        if (valueA > valueB) {
+          return ascending ? 1 : -1;
+        }
+        return 0;
+      });
+    } else {
+      return grouped[key]; // If no sortByPropertyKey is provided, return the group as is
+    }
+  });
+
+  // Flatten the sorted groups back into a single array
+  return sortedGroups.flat();
+}
+
+/**
  * Generates a random string of specified length.
  * 
  * @param length - The length of the random string to generate.
