@@ -20,10 +20,10 @@ const RecursiveList = ({
 }) => {
   return (
     <ul
-      className={cn("mt-2 list-decimal list-inside", {
-        "mt-0 list-decimal list-inside": depth === 4,
+      className={cn("mt-2 list-[upper-roman] list-outside", {
+        "mt-0 list-[upper-roman] list-outside": depth === 4,
         "mt-2 ml-4": depth === 5,
-        "mt-2 list-decimal list-inside": depth === 6,
+        "mt-2 list-[upper-roman] list-outside": depth === 6,
         "ml-5": depth >= 7,
         "list-none": depth === 3,
       })}
