@@ -3,20 +3,20 @@ import { SubItem } from "@/lib/interfaces/services";
 export const subServiceDetails: SubItem[] = [
   {
     category: "tailored-digital-solutions",
-    subtitle: "Stories that inspire action and leave a lasting impression",
-    name: "authentic-brand-storytelling-that-captivates-connects",
+    subtitle: "Authentic Brand Storytelling That Connects and Converts",
+    name: "stories-that-drive-action",
     info: {
       name: "Authentic Brand Storytelling That Captivates & Connects",
-      title: "Authentic Brand Storytelling",
+      title: "Stories That Drive Action",
       hook: "Craft compelling and impactful brand stories that connect with your audience by showcasing your mission, vision, and core values.",
-      description: "Brand Awareness",
+      description: "Brand Storytelling",
       intro: [
         "We specialize in crafting compelling brand narratives that go beyond simply describing who you are—they capture the very essence of your identity and communicate it in a way that feels authentic, relevant, and deeply resonant. Your brand is so much more than just a logo, a tagline, or a color palette; it’s a living, breathing story waiting to be told. It’s the connection between your mission and the people you serve, the purpose behind every product, service, or experience you offer. Through the art of thoughtful storytelling and the science of strategic positioning, we help you transcend the boundaries of traditional marketing, forging meaningful connections that transform passive audiences into engaged, loyal communities.",
         "Every word we write, every visual we design, and every campaign we execute is meticulously crafted to align with your brand’s unique voice, core values, and long-term vision. We ensure that every touchpoint—whether it’s a social media post, a website, or a full-scale marketing campaign—delivers consistency, clarity, and emotional resonance. Our approach isn’t just about gaining recognition; it’s about building brands that people remember, trust, and turn to time and time again. Whether you’re launching a new venture, evolving an established identity, or repositioning yourself in a competitive market, we bring your brand story to life in a way that inspires action, sparks emotion, and drives sustainable growth.",
         "At the heart of everything we do is a commitment to helping you own your narrative—boldly, authentically, and with the creative impact it deserves. We believe that every brand has a story worth telling, and we’re here to ensure yours is told in a way that not only captures attention but also builds lasting relationships. Together, we’ll create a brand that doesn’t just stand out but stands for something—something real, something meaningful, and something that leaves a lasting impression.",
       ],
       details:
-        "Through thoughtful, purpose-driven storytelling, we help you strengthen brand loyalty, build meaningful relationships, and stand out in a crowded marketplace. By blending creativity with strategic storytelling, we create messages that resonate deeply with your audience, forging meaningful emotional connections that go beyond surface-level engagement.",
+        "We craft purposeful, emotionally resonant narratives that deepen brand loyalty and inspire action. Through strategic storytelling, we help your brand rise above the noise—building lasting connections with your audience that go far beyond surface-level engagement.",
       short:
         "Create an emotional connection with your audience through authentic brand storytelling. We craft compelling narratives that reflect your brand's values, mission, and vision, building trust and loyalty while ensuring your message resonates in a competitive market.",
       featured: true,
@@ -218,20 +218,20 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle: "Transform your brand to align with your future vision",
-    name: "transform-your-brand-with-our-rebranding-services",
+    subtitle: "Future-Ready Rebranding Services",
+    name: "brand-transformation-with-purpose",
     info: {
       name: "Transform Your Brand with Our Rebranding Services",
-      title: "Transform Your Brand",
+      title: "Brand Transformation with Purpose",
       hook: "Revitalize your company’s identity with a strategic rebrand that includes a refreshed logo, messaging, and a cohesive brand strategy.",
-      description: "Marketing Strategy",
+      description: "Brand Transformation",
       intro: [
         "Our comprehensive rebranding services are designed to give your company a fresh, modern identity that not only resonates with your audience but also aligns seamlessly with your business goals and aspirations. We understand that a brand is more than just a logo or a tagline—it’s the essence of who you are, the story you tell, and the promise you deliver. That’s why we take a holistic approach to rebranding, focusing on every detail to ensure your new identity reflects your unique vision and positions your business for success.",
         "From innovative logo design and compelling brand messaging to a cohesive visual identity and strategic market positioning, we ensure every element of your brand works together to create a powerful, unified presence. Our process is rooted in collaboration and strategy, ensuring that your rebrand not only captures attention but also builds trust, fosters loyalty, and sets you apart in a crowded marketplace. By crafting a future-ready brand strategy, we help you connect with your audience on a deeper level, inspiring confidence and driving meaningful engagement.",
         "Rebranding is more than a cosmetic change—it’s a transformation that can redefine how your business is perceived and open the door to new opportunities. With our expertise, we’ll help you elevate your business, stand out from the competition, and create a lasting impact that fuels growth and long-term success. Whether you’re looking to refresh an outdated identity or completely reinvent your brand, we’re here to guide you through every step of the journey, delivering a transformation that empowers your business to thrive in today’s ever-changing landscape.",
       ],
       details:
-        "With a focus on authenticity and connection, our rebranding services help your company stand out, build trust, and foster meaningful relationships with your audience. Let us help you transform your brand into a powerful, future-ready identity that drives growth and success.",
+        "Our rebranding process is rooted in clarity, authenticity, and connection. We help you redefine your brand with a fresh, forward-facing identity that builds trust, captures your essence, and positions you for long-term success.",
       short:
         "Revitalize your brand with impactful rebranding services that combine strategic storytelling and design to engage your audience. We help you craft a distinctive, authentic brand identity that builds trust, fosters loyalty, and makes a lasting impression, whether you’re refreshing your look or redefining your brand message.",
       featured: false,
@@ -465,12 +465,11 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle:
-      "Unlock your online potential with solutions that deliver results",
-    name: "e-commerce-solutions-built-for-growth-and-success",
+    subtitle: "Scalable Online Stores That Convert",
+    name: "e-commerce-built-for-results",
     info: {
       name: "E-Commerce Solutions Built for Growth and Success",
-      title: "E-Commerce Solutions for Growth",
+      title: "E-Commerce Built for Results",
       hook: "Create an online shopping experience that delights customers, boosts conversions, and drives sales with smooth and intuitive e-commerce solutions.",
       description: "Selling Online",
       intro: [
@@ -762,11 +761,11 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle: "SPAs that drive performance without sacrificing experience",
-    name: "high-performance-single-page-applications-spas-for-a-seamless-user-experience",
+    subtitle: "Single Page Applications Built for Speed and Satisfaction",
+    name: "performance-without-compromise",
     info: {
       name: "High-Performance Single-Page Applications (SPAs) for a Seamless User Experience",
-      title: "High-Performance Single-Page Applications (SPAs)",
+      title: "Performance Without Compromise",
       hook: "Develop lightning-fast, dynamic web apps with seamless user interfaces that enhance functionality and user experience.",
       description: "Enhanced UX",
       intro: [
@@ -775,7 +774,7 @@ export const subServiceDetails: SubItem[] = [
         "From integrating advanced features like real-time data synchronization and offline capabilities to ensuring robust scalability and security, we deliver SPAs that are built for the future. Whether you’re aiming to improve user engagement, boost conversions, or provide a more streamlined digital experience, our single-page applications are designed to help your business stand out and succeed in today’s fast-paced digital landscape.",
       ],
       details:
-        "Our SPAs are designed with a focus on interactivity, incorporating responsive interfaces and real-time updates to meet the demands of modern users. Whether you’re looking to create a new application or enhance an existing one, our SPAs are tailored to meet your business objectives while delivering exceptional user satisfaction.",
+        "Our SPAs are engineered for interactivity and responsiveness. We design and develop fast, dynamic, real-time interfaces that deliver smooth user experiences—without sacrificing performance or scalability.",
       short:
         "Create fast, dynamic, and user-friendly single-page applications (SPAs) that deliver seamless navigation and real-time updates. With cutting-edge frameworks and minimal load times, our SPAs provide a smooth, app-like experience across all devices, keeping users engaged and driving performance for your business.",
       featured: false,
@@ -1030,11 +1029,11 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle: "Crafted to fit your brand, built to perform",
-    name: "custom-websites-designed-for-impact-and-performance",
+    subtitle: "High-Impact Websites That Perform",
+    name: "custom-web-design-without-compromise",
     info: {
       name: "Custom Websites Designed for Impact and Performance",
-      title: "Impactful Tailored Website Design",
+      title: "Custom Web Design Without Compromise",
       hook: "Transform your digital presence with a custom website that not only captivates visitors but also aligns seamlessly with your brand’s vision and goals.",
       description: "Brand Differentiation",
       intro: [
@@ -1044,7 +1043,7 @@ export const subServiceDetails: SubItem[] = [
         "Our approach combines cutting-edge technology with a deep understanding of user behavior, ensuring your website is not only visually stunning but also highly functional and future-ready. From integrating advanced features to optimizing for search engines, we focus on creating a digital presence that fuels growth and sets your brand apart in a competitive landscape. Let’s work together to build a website that leaves a lasting impression, elevates your brand, and helps you achieve your business objectives.",
       ],
       details:
-        "Our designs prioritize usability, ensuring that navigation is effortless and content is accessible across all devices. Whether you need a sleek portfolio, a robust e-commerce platform, or a dynamic corporate site, we focus on creating solutions that engage your audience, drive conversions, and support your long-term goals.",
+        "Our websites are crafted from the ground up to align with your brand, engage your users, and support your goals. Built with clean code, responsive layouts, and performance in mind, our designs are both beautiful and strategic.",
       short:
         "Elevate your digital presence with custom-built websites that combine exceptional UX/UI design, smooth functionality, and SEO optimization. Whether you’re starting fresh or redesigning an existing site, our personalized solutions deliver a visually appealing, high-performing, and intuitive experience that enhances user engagement and drives business growth.",
       featured: true,
@@ -1368,11 +1367,11 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle: "Intuitive, impactful interfaces that make a difference",
-    name: "user-centered-interface-design-for-seamless-experiences",
+    subtitle: "User-Centered UX/UI Design",
+    name: "interfaces-that-put-users-first",
     info: {
       name: "User-Centered Interface Design for Seamless Experiences",
-      title: "User-Centered Interface Design",
+      title: "Interfaces That Put Users First",
       hook: "Design intuitive, engaging user interfaces that deliver exceptional user experiences and foster satisfaction and accessibility.",
       description: "Tailored UX",
       intro: [
@@ -1381,7 +1380,7 @@ export const subServiceDetails: SubItem[] = [
         "The result is more than just a visually appealing interface—it’s an engaging, seamless, and user-friendly experience that leaves a lasting impression. Whether you’re looking to enhance an existing product or create something entirely new, our designs drive meaningful interactions, foster user satisfaction, and help you achieve your business goals. Let us help you build interfaces that not only captivate but also connect with your audience on a deeper level.",
       ],
       details:
-        "Our UX design services focus on creating seamless and engaging user experiences. By conducting thorough research and usability testing, we deliver designs that simplify interactions and enhance effectiveness. Services include user research, wireframing, prototyping, and testing.",
+        "Our design philosophy is rooted in accessibility, usability, and empathy. We conduct thorough research, wireframing, prototyping, and testing to create seamless interfaces that simplify complex interactions and deliver intuitive user experiences.",
       short:
         "Design seamless, engaging, and user-friendly interfaces that combine beauty with functionality. Through in-depth user research and rigorous testing, we create intuitive experiences that prioritize accessibility, enhance usability, and leave a lasting impression on all users.",
       featured: false,
@@ -1563,11 +1562,11 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle: "Boost your visibility with SEO-driven, engaging blog content",
-    name: "seo-optimized-engaging-blog-content",
+    subtitle: "SEO-Optimized Blog Writing Services",
+    name: "content-that-drives-organic-growth",
     info: {
       name: "SEO-Optimized, Engaging Blog Content",
-      title: "Engaging Blogs",
+      title: "Content That Drives Organic Growth",
       hook: "Create insightful, SEO-optimized blog posts that capture attention, drive website traffic, and build lasting engagement with your audience.",
       description: "Web Traffic",
       intro: [
@@ -1577,7 +1576,7 @@ export const subServiceDetails: SubItem[] = [
         "By consistently publishing high-quality content, we help you build a loyal readership, increase website traffic, and support long-term growth for your online presence. Let us help you tell your story, share your expertise, and create a blog that educates, inspires, and keeps your audience coming back for more.",
       ],
       details:
-        "Our blog writing services deliver engaging, SEO-optimized content that captivates your audience and boosts search rankings. Tailored to your brand voice and industry, our blog posts provide valuable insights, drive organic traffic, and establish your authority online.",
+        "We create informative, engaging blog content that reflects your voice, educates your audience, and boosts your search visibility. Each post is crafted to attract organic traffic, establish credibility, and support your content marketing strategy.",
       short:
         "Create SEO-optimized, engaging blog content that drives organic traffic and boosts search rankings. Tailored to your brand voice and industry, our blog posts provide valuable insights that foster audience engagement, establish authority, and support long-term growth.",
       featured: true,
@@ -1715,11 +1714,11 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle: "Simplifying complex concepts with clear, concise writing",
-    name: "expert-technical-writing-clarity-precision",
+    subtitle: "Expert Technical Writing That Simplifies the Complex",
+    name: "clarity-through-precision",
     info: {
       name: "Expert Technical Writing for Clarity & Precision",
-      title: "Expert Technical Writing",
+      title: "Clarity Through Precision",
       hook: "Produce clear, precise, and structured technical documentation to support complex processes and tools for your team or customers.",
       description: "Documentation",
       intro: [
@@ -1729,7 +1728,7 @@ export const subServiceDetails: SubItem[] = [
         "Our expertise lies in creating documentation that not only informs but also engages, supporting your audience at every stage of their journey. Whether you’re launching a new product, updating existing materials, or providing in-depth technical resources, our writing ensures your message is communicated effectively and professionally. Let us help you deliver documentation that drives user confidence, streamlines processes, and supports long-term success.",
       ],
       details:
-        "Our technical writing services transform complex information into clear, concise, and user-friendly documentation. Whether it's software guides, user manuals, or technical reports, we ensure accuracy, readability, and a seamless user experience.",
+        "We turn technical concepts into clear, accessible documentation. Whether it’s a software guide, user manual, or internal system documentation, we ensure every piece is accurate, readable, and tailored to your audience’s understanding.",
       short:
         "Transform complex information into clear, concise, and user-friendly technical documentation. From software manuals to API guides, we create precise, accessible content that enhances understanding, reduces learning curves, and ensures seamless adoption for both technical and non-technical audiences.",
       featured: true,
@@ -1862,11 +1861,11 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle: "Crafting newsletters that cut through the noise",
-    name: "engaging-impactful-newsletters",
+    subtitle: "Newsletters Designed to Connect and Convert",
+    name: "email-that-engages",
     info: {
       name: "Engaging & Impactful Newsletters",
-      title: "Impactful Newsletters",
+      title: "Email That Engages",
       hook: "Design and write impactful newsletters that keep your audience informed, engaged, and ready to take action.",
       description: "Measurable Results",
       intro: [
@@ -1875,7 +1874,7 @@ export const subServiceDetails: SubItem[] = [
         "With a focus on both aesthetics and functionality, we create newsletters that are not only visually appealing but also optimized for readability and performance across all devices. Let us help you deliver content that inspires action, fosters connection, and keeps your brand at the forefront of your audience’s attention.",
       ],
       details:
-        "We create well-crafted, visually appealing newsletters that keep your audience engaged. From compelling content to strategic design, we ensure your message stands out while optimizing for open rates, readability, and conversions.",
+        "We create high-performing newsletters that blend compelling content with visual clarity. Optimized for readability and engagement, our campaigns are crafted to increase open rates, drive clicks, and keep your audience coming back for more.",
       short:
         "Create engaging, visually appealing newsletters that keep your audience informed and connected. With compelling content and strategic design, our newsletters drive engagement, build relationships, and strengthen brand loyalty, ensuring your message stands out and delivers measurable results.",
       featured: true,
@@ -2028,11 +2027,11 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle: "Optimized for performance, secured for peace of mind",
-    name: "optimized-secure-database-management-solutions",
+    subtitle: "Optimized Database Management Solutions",
+    name: "secure-and-scalable-data-architecture",
     info: {
       name: "Optimized & Secure Database Management Solutions",
-      title: "Secure Database Management Solutions",
+      title: "Secure, Scalable Data Architecture",
       hook: "Implement secure and efficient database solutions that scale with your business, ensuring reliable and organized data management.",
       description: "Data Security",
       intro: [
@@ -2041,7 +2040,7 @@ export const subServiceDetails: SubItem[] = [
         "Our goal is to empower your business with a database infrastructure that supports long-term growth, enhances operational efficiency, and enables smarter decision-making. Whether you’re looking to modernize your existing systems, implement new solutions, or optimize performance, our database management services ensure your data works for you—securely, efficiently, and effectively.",
       ],
       details:
-        "Our database management services ensure that your data is stored, organized, and accessible. We design databases that can scale as your business grows, integrate real-time data, and ensure high levels of security to protect sensitive information.",
+        "We design database systems that are fast, flexible, and fortified. Built for performance and peace of mind, our solutions scale with your business, support real-time integration, and maintain high standards of data security and accessibility.",
       short:
         "Empower your business with secure, scalable, and high-performance database management solutions. We design optimized systems for seamless data storage, real-time processing, and integration, while ensuring top-tier security to protect sensitive information and support long-term growth.",
       featured: true,
@@ -2189,11 +2188,11 @@ export const subServiceDetails: SubItem[] = [
   },
   {
     category: "tailored-digital-solutions",
-    subtitle: "Wireframes that map the journey, prototypes that make it real",
-    name: "from-concept-to-clickable-wireframing-prototyping-services",
+    subtitle: "Wireframing and Prototyping That Bring Ideas to Life",
+    name: "blueprints-for-success",
     info: {
       name: "From Concept to Clickable: Wireframing & Prototyping Services",
-      title: "Wireframing & Prototyping",
+      title: "Blueprints for Success",
       hook: "Bring your ideas to life with effective wireframes and prototypes, visualizing your design concepts before moving into development.",
       description: "User-Centric Designs",
       intro: [
@@ -2203,7 +2202,7 @@ export const subServiceDetails: SubItem[] = [
         "Our process not only simplifies decision-making but also enhances design efficiency, reducing costly revisions during development and saving valuable time and resources. With a focus on usability and user satisfaction, our wireframing and prototyping services ensure your final product is intuitive, engaging, and perfectly aligned with your goals. Let us help you turn your concepts into polished, user-friendly designs that deliver a flawless experience from start to finish.",
       ],
       details:
-        "We provide wireframing and prototyping services to help you visualize user interactions and refine design ideas before development begins. These tools are essential for identifying usability issues and ensuring an optimal user experience.",
+        "Before development begins, we map the full user journey through detailed wireframes and functional prototypes. This early-stage validation helps us solve UX challenges, align with your vision, and ensure your product is user-tested and ready for success.",
       short:
         "Transform your ideas into interactive, user-centric designs with our wireframing and prototyping services. From low-fidelity wireframes to high-fidelity prototypes, we help visualize and refine the user experience before development, ensuring seamless usability and optimizing the final product.",
       featured: true,
