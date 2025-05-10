@@ -91,41 +91,41 @@ export const motivationalDrive = [
   {
     name: "Creativity & Innovation",
     description:
-      "We combine cutting-edge technology with imaginative thinking to create original, high-performing digital solutions. We stay ahead of trends and break creative barriers to bring visions to life in ways that captivate, engage, and inspire.",
+      "We fuse cutting-edge technology with bold creative vision to craft original, high-performing digital solutions that engage, inspire, and captivate.",
   },
   {
     name: "Adaptability & Growth",
     description:
-      "The digital world moves fast, and so do we. We welcome change, embrace new technologies, and evolve our strategies to deliver forward-thinking, scalable, and future-proof solutions in a dynamic online landscape.",
+      "The digital landscape evolves fast—and so do we. We embrace change, adopt new tools, and pivot strategies to create scalable, future-proof solutions.",
   },
   {
     name: "Authenticity",
     description:
-      "We believe your brand should be as unique online as it is in person. That’s why we design genuine, meaningful experiences that reflect your voice, values, and identity—creating stronger, more personal connections with your audience.",
+      "Your online presence should reflect your real-world identity. We design genuine experiences that align with your brand’s voice, values, and vision.",
   },
   {
     name: "Excellence",
     description:
-      "We hold ourselves to the highest standards in every line of code, every design choice, and every user journey. Our commitment to quality, precision, and performance ensures that what we build doesn’t just look good—it works brilliantly.",
+      "Every design decision, line of code, and user interaction is held to the highest standards of precision, quality, and performance.",
   },
   {
     name: "Empowerment",
     description:
-      "We're here to uplift and enable small businesses, equipping them with tools, guidance, and insights to navigate and thrive in a competitive digital space. Your success is our success—and we’re in it with you.",
+      "We’re in your corner. From strategy to execution, we equip small businesses with the digital tools and confidence to compete and grow.",
   },
   {
     name: "Collaboration & Communication",
     description:
-      "We work with you, not for you. Through open dialogue, active listening, and a transparent process, we ensure your goals, vision, and feedback are embedded in every stage—delivering results that are truly aligned and deeply impactful.",
+      "We partner with our clients through every phase—listening closely, communicating clearly, and aligning every decision with your goals.",
   },
   {
     name: "Community Impact",
     description:
-      "We believe that great digital solutions can foster real-world growth. Our work supports not just businesses, but the communities they serve. We create with purpose, aiming to uplift, strengthen, and inspire positive change through every project.",
+      "Our work uplifts not just businesses, but the communities they serve. We believe in using digital as a force for real-world change and growth.",
   },
   {
     name: "Sustainability",
     description:
-      "We build solutions that last—technically, strategically, and ethically. By prioritizing sustainable, scalable digital practices, we ensure your online presence can grow and evolve with your business, today and far into the future.",
+      "We don’t just build for today—we build for what’s next. Our solutions are strategic, scalable, and ethically designed for long-term success.",
   },
 ];
