@@ -72,65 +72,6 @@ export default function ServicePage() {
               <p key={index}>{intro}</p>
             ))}
 
-            {serviceData.info.pricing.pricingTierIntro?.title && (
-              <div className="mt-4">
-                <h2>{serviceData.info.pricing.pricingTierIntro.title}</h2>
-                <p>{serviceData.info.pricing.pricingTierIntro.description}</p>
-              </div>
-            )}
-
-            <p>
-              Note: Each of our packaged tiers is thoughtfully designed to
-              deliver exactly what you need—without the burden of unnecessary
-              features or costs. As each tier scales, additional services and
-              value are added, ensuring you only pay for what benefits your
-              business. Every plan is flexible and can be customized to suit
-              your unique goals. If you don’t see a package that aligns
-              perfectly with your needs, simply reach out—our team is ready to
-              collaborate with you and create a solution tailored to your
-              vision.
-            </p>
-
-            {serviceData.info.pricing.pricingTiers && (
-              <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-7">
-                {serviceData.info.pricing.pricingTiers.map((prices, index) => {
-                  const tierArray = prices.name.split(":");
-
-                  return (
-                    <Card key={index}>
-                      <CardContent>
-                        <h5>{tierArray[1]}</h5>
-                        <h3>{tierArray[0]}</h3>
-                        <p>{prices.info}</p>
-                        <p>{prices.useCase}</p>
-                      </CardContent>
-                    </Card>
-                  );
-                })}
-              </div>
-            )}
-
-            <h3>Do You Have Questions?</h3>
-            <p className="mb-4">
-              Whether you're just starting your digital transformation journey
-              or seeking to learn more about our process, our FAQs are here to
-              help. Discover clear answers to your questions and gain the
-              insights you need to make confident, informed decisions.
-            </p>
-            <p className="mb-6">
-              Explore our FAQs to learn about our methodologies, capabilities,
-              and how we help businesses like yours thrive in the digital era.
-            </p>
-            <DynamicButton
-              variant={"secondaryOutline"}
-              className="mx-0 lg:w-1/3"
-              onClick={() =>
-                router.push("/get_in_touch/frequently_asked_questions")
-              }
-            >
-              Visit The FAQs
-            </DynamicButton>
-
             {serviceData.details.map((info, index) => (
               <section key={index}>
                 <h2>{info.title}</h2>
@@ -148,6 +89,69 @@ export default function ServicePage() {
                 </div>
               </section>
             ))}
+
+            <section>
+              <h2>Do You Have Questions?</h2>
+              <p className="mb-4">
+                Whether you're just starting your digital transformation journey
+                or seeking to learn more about our process, our FAQs are here to
+                help. Discover clear answers to your questions and gain the
+                insights you need to make confident, informed decisions.
+              </p>
+              <p className="mb-6">
+                Explore our FAQs to learn about our methodologies, capabilities,
+                and how we help businesses like yours thrive in the digital era.
+              </p>
+              <DynamicButton
+                variant={"secondaryOutline"}
+                className="mx-0 lg:w-1/3"
+                onClick={() =>
+                  router.push("/get_in_touch/frequently_asked_questions")
+                }
+              >
+                Visit The FAQs
+              </DynamicButton>
+            </section>
+
+            <section>
+              {serviceData.info.pricing.pricingTierIntro?.title && (
+                <div className="mt-4">
+                  <h2>{serviceData.info.pricing.pricingTierIntro.title}</h2>
+                  <p>{serviceData.info.pricing.pricingTierIntro.description}</p>
+                </div>
+              )}
+              <p>
+                Note: Each of our packaged tiers is thoughtfully designed to
+                deliver exactly what you need—without the burden of unnecessary
+                features or costs. As each tier scales, additional services and
+                value are added, ensuring you only pay for what benefits your
+                business. Every plan is flexible and can be customized to suit
+                your unique goals. If you don’t see a package that aligns
+                perfectly with your needs, simply reach out—our team is ready to
+                collaborate with you and create a solution tailored to your
+                vision.
+              </p>
+              {serviceData.info.pricing.pricingTiers && (
+                <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-7">
+                  {serviceData.info.pricing.pricingTiers.map(
+                    (prices, index) => {
+                      const tierArray = prices.name.split(":");
+
+                      return (
+                        <Card key={index}>
+                          <CardContent>
+                            <h5>{tierArray[1]}</h5>
+                            <h3>{tierArray[0]}</h3>
+                            <p>{prices.info}</p>
+                            <p>{prices.useCase}</p>
+                          </CardContent>
+                        </Card>
+                      );
+                    }
+                  )}
+                </div>
+              )}
+            </section>
           </main>
 
           {serviceData.cta && <CallToActionImage cta={serviceData.cta} />}
