@@ -307,7 +307,6 @@ const ServicesPage: FC = () => {
                     <Card className="flex flex-col justify-between shadow-md h-full">
                       <CardContent className="flex flex-col">
                         <h5>{subServiceDetail.subtitle}</h5>
-                        <h5></h5>
                         <h3
                           className="font-semibold text-lg underline-offset-4 group-hover:underline cursor-pointer"
                           onClick={() =>
