@@ -2,7 +2,7 @@ import { SubItem } from "@/lib/interfaces/services";
 
 export const subServiceDetails: SubItem[] = [
   {
-    category: "scalable-corporate-digital-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "Stories that inspire action and leave a lasting impression",
     name: "authentic-brand-storytelling-that-captivates-connects",
     info: {
@@ -217,7 +217,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "scalable-corporate-digital-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "Transform your brand to align with your future vision",
     name: "transform-your-brand-with-our-rebranding-services",
     info: {
@@ -464,7 +464,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "comprehensive-website-solutions",
+    category: "tailored-digital-solutions",
     subtitle:
       "Unlock your online potential with solutions that deliver results",
     name: "e-commerce-solutions-built-for-growth-and-success",
@@ -761,7 +761,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "comprehensive-website-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "SPAs that drive performance without sacrificing experience",
     name: "high-performance-single-page-applications-spas-for-a-seamless-user-experience",
     info: {
@@ -1029,7 +1029,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "comprehensive-website-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "Crafted to fit your brand, built to perform",
     name: "custom-websites-designed-for-impact-and-performance",
     info: {
@@ -1367,7 +1367,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "comprehensive-website-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "Intuitive, impactful interfaces that make a difference",
     name: "user-centered-interface-design-for-seamless-experiences",
     info: {
@@ -1562,7 +1562,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "comprehensive-website-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "Boost your visibility with SEO-driven, engaging blog content",
     name: "seo-optimized-engaging-blog-content",
     info: {
@@ -1714,7 +1714,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "scalable-corporate-digital-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "Simplifying complex concepts with clear, concise writing",
     name: "expert-technical-writing-clarity-precision",
     info: {
@@ -1861,7 +1861,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "scalable-corporate-digital-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "Crafting newsletters that cut through the noise",
     name: "engaging-impactful-newsletters",
     info: {
@@ -2027,7 +2027,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "scalable-corporate-digital-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "Optimized for performance, secured for peace of mind",
     name: "optimized-secure-database-management-solutions",
     info: {
@@ -2188,7 +2188,7 @@ export const subServiceDetails: SubItem[] = [
     },
   },
   {
-    category: "comprehensive-website-solutions",
+    category: "tailored-digital-solutions",
     subtitle: "Wireframes that map the journey, prototypes that make it real",
     name: "from-concept-to-clickable-wireframing-prototyping-services",
     info: {
