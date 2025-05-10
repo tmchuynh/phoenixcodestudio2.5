@@ -9,32 +9,30 @@ export default function ThreeColumns() {
           Before We Made Waves, We Focused on Our Core
         </h1>
         <p>
-          At Phoenix Code Studio, our vision is to build more than just
-          websites—we're here to help shape a digital future where creativity,
-          strategy, and purpose intersect to elevate every brand we work with.
-          Every project we take on is guided by a clear mission: to empower
-          businesses with the digital tools, storytelling, and innovation they
-          need to thrive in a fast-changing world.
+          Before we made waves, we focused on our core: building meaningful
+          digital experiences rooted in creativity, strategy, and purpose.
         </p>
         <p>
-          We are driven by the belief that small businesses and community-rooted
-          brands deserve access to world-class design and technology. Our aim is
-          to create experiences that reflect who our clients truly are—brands
-          with a voice, a purpose, and a unique place in the world. Through
-          intentional design and human-centered development, we help turn those
-          qualities into powerful, lasting digital experiences.
+          At Phoenix Code Studio, we’re not just here to create websites—we're
+          here to shape the digital future. Every project we take on is guided
+          by a clear mission: to empower businesses with the tools,
+          storytelling, and innovation needed to thrive in a fast-changing
+          world.
         </p>
         <p>
-          We are constantly pushing boundaries, exploring emerging technologies,
-          and refining our craft to stay ahead of what’s next. But innovation
-          alone isn’t our goal—it’s about creating solutions that matter, that
-          inspire, and that drive real progress for the people and brands we
-          serve. Our team is motivated by connection, impact, and growth—not
-          just our own, but the growth of every client, every collaborator, and
-          every community we support. We believe the future of digital belongs
-          to those who lead with purpose, build with heart, and create with
-          integrity. At Phoenix Code Studio, we’re committed to that
-          future—boldly, creatively, and together.
+          We believe that small businesses and community-rooted brands deserve
+          access to world-class design and technology. Our role is to reflect
+          the true voice of every client—a brand with purpose, identity, and a
+          unique place in the world. Through intentional design and
+          human-centered development, we bring those stories to life through
+          powerful, lasting digital experiences.
+        </p>
+        <p>
+          We’re constantly evolving—embracing new technologies, refining our
+          craft, and staying ahead of the curve. But innovation isn’t our goal
+          in itself—impact is. We design solutions that matter, that resonate,
+          and that drive real progress. Connection. Growth. Purpose. That’s what
+          fuels us.
         </p>
       </div>
       <div className="mt-6">
