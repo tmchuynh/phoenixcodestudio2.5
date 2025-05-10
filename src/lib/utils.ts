@@ -1,4 +1,5 @@
 import { clsx, type ClassValue } from "clsx";
+import { JSX } from "react";
 import { twMerge } from "tailwind-merge";
 import { parseLengthAndUnit } from "./utils/parse";
 
@@ -66,4 +67,46 @@ export function cssValue(value: number | string): string {
   const lengthWithunit = parseLengthAndUnit(value);
 
   return `${lengthWithunit.value}${lengthWithunit.unit}`;
+}
+
+/**
+ * Asynchronously retrieves an SVG element by service name from the specified icons collection.
+ *
+ * @param {Object} params - The parameters for retrieving the SVG.
+ * @param {string} params.name - The name of the service to find.
+ * @param {string} [params.icons="svgIcons"] - The name of the icons collection to search within.
+ *
+ * @returns {Promise<any>} A Promise that resolves to the found SVG object with name and svg properties,
+ * or an empty array if no matching SVG is found or an error occurs.
+ *
+ * @throws {Error} Logs the error to console but doesn't throw it, returns empty array instead.
+ *
+ * @example
+ * const serviceSvg = await getSVGByServiceName({ name: "react" });
+ * if (serviceSvg) {
+ *   // Use serviceSvg.svg
+ * }
+ */
+export async function getSVGByServiceName({
+  name,
+  icons = "svgIcons",
+}: {
+  name: string;
+  icons: string;
+}): Promise<any> {
+  try {
+    const iconModule = await import(`@/lib/constants/services/svgIcons`);
+    // Return the specific named export that matches the name
+    if (icons in iconModule) {
+      return (iconModule as any)[icons].find(
+        (i: { name: string; svg: JSX.Element }) => i.name === name
+      );
+    } else {
+      console.error(`Export named ${icons} not found in module`);
+      return [];
+    }
+  } catch (error) {
+    console.error(`Error loading resource: ${error}`);
+    return [];
+  }
 }
