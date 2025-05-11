@@ -7,10 +7,10 @@ export interface BlogPost {
   imageUrl: string;
   image2Url: string;
   excerpt: string;
-  featured?: boolean;
+  featured: boolean;
   topics: string[];
   intro: string[];
-  list?: ListDetail[];
+  list: ListDetail[];
   conclusions: string[];
   date: { day: number; month: number; year: number };
 }
