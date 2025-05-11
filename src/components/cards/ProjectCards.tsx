@@ -1,17 +1,17 @@
 "use client";
 
+import { Project } from "@/lib/interfaces/projects";
 import { useRouter } from "next/navigation";
 import { FaCheckDouble } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import DynamicButton from "../button/button-dynamic";
-import { Project } from "@/lib/interfaces/projects";
 
 export function ProjectCards({ project }: { project: Project }) {
   const router = useRouter();
   return (
     <div className="flex flex-col justify-between shadow-md p-8 sm:p-10 rounded-3xl ring-1">
       <div>
-        <h5>{project.short}</h5>
+        <h5>{project.slogan}</h5>
         <h2>{project.title}</h2>
         <p className="mt-6 text-base/7">{project.quote}</p>
         <ul
