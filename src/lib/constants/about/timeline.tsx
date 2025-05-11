@@ -11,28 +11,14 @@ export const data = [
       <div>
         <div className="gap-4 grid grid-cols-2">
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldGluZ3xlbnwwfDB8MHx8fDA%3D"
             alt="startup template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
           />
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://plus.unsplash.com/premium_photo-1661301019180-5ae7b2e7afbc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFwZXJ3b3JrfGVufDB8MHwwfHx8MA%3D%3D"
             alt="startup template"
             width={500}
             height={500}
@@ -70,29 +56,15 @@ export const data = [
       <div>
         <div className="gap-4 grid grid-cols-2">
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/1781951987/photo/stack-of-books-with-rules-concept-words.jpg?s=612x612&w=0&k=20&c=1MCYXv0jVOjbIj8XUSS2wVrTOgVT5fvEf9NEkmLLEk0="
             alt="hero template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
           />
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/2158990118/photo/work-ethics-concept-the-meeting-at-the-white-office-table.jpg?s=612x612&w=0&k=20&c=wExsoBr4WyjPQBm5Ujb4Q7mdJsSvq831J6DRKspbW3o="
             alt="feature template"
-            width={500}
-            height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="bento template"
-            width={500}
-            height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="cards template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
@@ -132,30 +104,44 @@ export const data = [
 
     content: (
       <div>
-        <div className="gap-4 grid grid-cols-2">
+        <div className="gap-4 grid grid-cols-3">
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/1156277138/photo/graphic-designer-development-process-drawing-sketch-design-creative-ideas-draft-logo-product.jpg?s=612x612&w=0&k=20&c=QYABRvagqanYW95ikx_PR_bCyLuJPPLaP6TTBUw5wZg="
             alt="hero template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
           />
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/1371391533/photo/notebook-written-with-text-build-trust-in-your-brand-business-concept.jpg?s=612x612&w=0&k=20&c=QKzAxbtiLOdSPpjPZnHvKwxsLfYZooaVudestWyukMA="
             alt="feature template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
           />
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/2175802744/photo/brand-concept-business-brand-design-project-identity-a-company-brand-management-tracking.jpg?s=612x612&w=0&k=20&c=Xp0vFVrFhJoGK1r8pYX2FzH2pVZ1rHJT6YRXkGDvhXM="
             alt="bento template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
           />
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/1447408566/photo/caucasian-males-hand-draws-a-storyboard-for-a-commercial.jpg?s=612x612&w=0&k=20&c=UqVxRwBrs4KnA8OrAqrDVzKyfIH42IZjPmCAXHEFysc="
+            alt="cards template"
+            width={500}
+            height={500}
+            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
+          />{" "}
+          <Image
+            src="https://media.istockphoto.com/id/1456301975/photo/close-up-drawing-sketches-logo-design.jpg?s=612x612&w=0&k=20&c=Rshc5ZoOdJ0oWjqjwO5CLDlcVLqlFeDk4xgS2PaCbqI="
+            alt="cards template"
+            width={500}
+            height={500}
+            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
+          />{" "}
+          <Image
+            src="https://media.istockphoto.com/id/1150734727/photo/businesswoman-hand-placing-or-pulling-wooden-dominoes-with-brand-text-and-marketing.jpg?s=612x612&w=0&k=20&c=WxhtuHuAlxPEWM46N1m6pvqAHvNquvmOfmD-spoLs0o="
             alt="cards template"
             width={500}
             height={500}
@@ -190,31 +176,45 @@ export const data = [
 
     content: (
       <div>
-        <div className="gap-4 grid grid-cols-2">
+        <div className="gap-4 grid grid-cols-3">
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/1401307605/photo/rear-of-female-web-expert-typing-on-computer-looking-at-monitors-while-sitting-indoors.jpg?s=612x612&w=0&k=20&c=TWWaaSZKWuD_Q7xF06Ayf9AoPrx8o3ntmX_kYpvFGek="
             alt="hero template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
           />
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/2148306092/photo/it-developer-with-stressful-overworked-in-creating-online-software-code-gusher.jpg?s=612x612&w=0&k=20&c=p2sClGFQQTP85-p6JvH3J8y4tdbn8Jvv6w850u5tgmo="
             alt="feature template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
+          />{" "}
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="bento template"
+            src="https://media.istockphoto.com/id/2156385097/photo/hispanic-latin-american-couple-software-engineer-developer-use-computer-work-on-program.jpg?s=612x612&w=0&k=20&c=QTIM5ONlJzDZAK8vH1M9_ZiFEcZT_Y613TM-QlnHtmA="
+            alt="feature template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
+          />{" "}
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="cards template"
+            src="https://media.istockphoto.com/id/2096730948/photo/asian-and-indian-developer-team-discussion-feedback-analysis-coding-data-with-software.jpg?s=612x612&w=0&k=20&c=7P8lvDP0w99iwnOrd5QjE4L3I0ZyDFVkLCG_DbXCuNk="
+            alt="feature template"
+            width={500}
+            height={500}
+            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
+          />{" "}
+          <Image
+            src="https://media.istockphoto.com/id/2166408595/photo/group-asia-male-female-freelance-typing-write-prompt-ai-bot-it-app-smart-program-nomad-video.jpg?s=612x612&w=0&k=20&c=EFok2d449paGNsw7Zs40hU2JF4ZF_k0nMYP0f_FGsbs="
+            alt="feature template"
+            width={500}
+            height={500}
+            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
+          />{" "}
+          <Image
+            src="https://media.istockphoto.com/id/2148178472/photo/hispanic-programmers-collaborating-on-software-development-in-a-modern-office-setting.jpg?s=612x612&w=0&k=20&c=zLh00Lt30vgOdyHmcB8LGBuZloVc5iODcj_hDQAzVAs="
+            alt="feature template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
@@ -249,34 +249,13 @@ export const data = [
 
     content: (
       <div>
-        <div className="gap-4 grid grid-cols-2">
+        <div className="gap-4 grid grid-cols-1">
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/2058928928/photo/opening.jpg?s=612x612&w=0&k=20&c=NYc-kGcD6LatmtxOfCrakatXJyB9cEBEeiz3s93p1Ik="
             alt="hero template"
             width={500}
             height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="feature template"
-            width={500}
-            height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="bento template"
-            width={500}
-            height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="cards template"
-            width={500}
-            height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
+            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-40 md:h-64 lg:h-80 object-cover"
           />
         </div>
       </div>
@@ -309,31 +288,24 @@ export const data = [
 
     content: (
       <div>
-        <div className="gap-4 grid grid-cols-2">
+        <div className="gap-4 grid grid-cols-3">
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/2162643081/photo/business-woman-meeting-and-contract-or-paperwork-for-onboarding-negotiation-and-nda-documents.jpg?s=612x612&w=0&k=20&c=mhUN4ddoshxiM3XrRGRsLcBEKMZevHwRuprnHTKf2vo="
             alt="hero template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
           />
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/2160707342/photo/making-decision-on-the-move.jpg?s=612x612&w=0&k=20&c=U9ldYvamNLDvk70VltKpdLZPldN3k2fm0rAw-tWCzcA="
             alt="feature template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
           />
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/2177333133/photo/top-view-of-an-office-business-discussion.jpg?s=612x612&w=0&k=20&c=NhAfMF-eHbRjHZaYieVVRhSANNJBpT1XT2dI5h9C-jY="
             alt="bento template"
-            width={500}
-            height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="cards template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
@@ -350,35 +322,28 @@ export const data = [
       "Phoenix Code Studio is positioned for sustainable growth, with a strong brand, well-documented services, and a clear mission: to create beautiful, accessible, and user-centered digital experiences. We are committed to continuous improvement and innovation, and we look forward to expanding our reach and impact in the industry. Our focus will remain on building long-term relationships with clients and partners who share our values.",
     content: (
       <div>
-        <div className="gap-4 grid grid-cols-2">
+        <div className="gap-4 grid grid-cols-3">
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/1480653221/photo/partnership-and-information-technology.jpg?s=612x612&w=0&k=20&c=v69K6FZ3GaOjTsAkRB2Dy6-0ZCy9veqgAe7cRZrSaPA="
             alt="hero template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
           />
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/1202093404/photo/website-design-developing-programming-and-coding-technologies.jpg?s=612x612&w=0&k=20&c=A9-6IUPFVqonEGn_WSCzUzOd9UqtIxz6BLAMP8tSa7A="
             alt="feature template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
+          />{" "}
           <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
+            src="https://media.istockphoto.com/id/1401713515/photo/multiracial-group-of-all-female-designer-developing-new-app.jpg?s=612x612&w=0&k=20&c=MGcvBCNfaMMGhDr4l5r3lD1382a3E-JpyMZDd1Dj3cI="
             alt="bento template"
             width={500}
             height={500}
             className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1615827690357-1f4db574486b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXV0aGVudGljaXR5fGVufDB8MHwwfHx8MA%3D%3D"
-            alt="cards template"
-            width={500}
-            height={500}
-            className="shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] rounded-lg w-full h-20 md:h-44 lg:h-60 object-cover"
-          />
+          />{" "}
         </div>
       </div>
     ),
