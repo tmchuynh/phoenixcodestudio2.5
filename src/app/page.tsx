@@ -17,6 +17,7 @@ import { pastProjects } from "@/lib/constants/projects";
 import { BlogPost } from "@/lib/interfaces/blogs";
 import { Project } from "@/lib/interfaces/projects";
 import { featuredArray, sortByProperty } from "@/lib/utils/sort";
+import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
@@ -61,6 +62,11 @@ export default function HomePage() {
     });
   }, [apiProject, api]);
 
+  // Handler for mouse leave to restart autoplay
+  const handleMouseLeave = (carousel: CarouselApi) => {
+    carousel?.plugins().autoplay?.play();
+  };
+
   return (
     <div className="pt-3 md:pt-5 lg:pt-9">
       <HeaderImageTiles />
@@ -71,7 +77,7 @@ export default function HomePage() {
           <div className="flex-1 bg-gradient-to-r from-transparent via-fancy to-transparent h-px" />
         </div>
 
-        <div className="space-y-10 md:hidden mx-auto">
+        <div className="space-y-10 md:hidden mx-auto w-10/12">
           {sortedFeaturedProjects.map((project, index) => (
             <FeaturedProject key={index} project={project} index={index} />
           ))}
@@ -79,7 +85,20 @@ export default function HomePage() {
 
         <Carousel
           setApi={setApiProject}
-          className="md:block space-y-5 hidden mx-auto w-10/12"
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 8000,
+              stopOnMouseEnter: true,
+              stopOnInteraction: true,
+              stopOnFocusIn: true,
+            }),
+          ]}
+          onMouseLeave={() => handleMouseLeave(apiProject)}
+          className="md:block space-y-5 hidden mx-auto w-5/7 xl:w-4/5"
         >
           <CarouselContent className="min-h-full">
             {sortedFeaturedProjects.map((project, index) => (
@@ -108,7 +127,23 @@ export default function HomePage() {
           ))}
         </div>
 
-        <Carousel setApi={setApi} className="md:block hidden mx-auto w-10/12">
+        <Carousel
+          setApi={setApi}
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 8000,
+              stopOnMouseEnter: true,
+              stopOnInteraction: true,
+              stopOnFocusIn: true,
+            }),
+          ]}
+          onMouseLeave={() => handleMouseLeave(api)}
+          className="md:block hidden mx-auto w-10/12"
+        >
           <CarouselContent className="min-h-full">
             {sortedFeaturedArticles.slice(0, 15).map((article, index) => (
               <CarouselItem key={index} className="flex items-center px-10">
