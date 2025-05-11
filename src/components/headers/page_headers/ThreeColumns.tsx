@@ -1,4 +1,4 @@
-import { motivationalDrive } from "@/lib/constants/constants";
+import { motivationalDrive } from "@/lib/constants/about/about";
 import { FaLandmark } from "react-icons/fa";
 
 export default function ThreeColumns() {
