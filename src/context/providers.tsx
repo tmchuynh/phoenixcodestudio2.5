@@ -1,6 +1,5 @@
 "use client";
 
-import { ThemeProvider } from "next-themes";
 import { JSX, ReactNode } from "react";
 import { NotFoundProvider } from "./NotFoundContext";
 
@@ -13,9 +12,5 @@ import { NotFoundProvider } from "./NotFoundContext";
  * @returns {JSX.Element} The ThemeProvider component wrapping the children.
  */
 export function Providers({ children }: { children: ReactNode }): JSX.Element {
-  return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
-      <NotFoundProvider>{children}</NotFoundProvider>
-    </ThemeProvider>
-  );
+  return <NotFoundProvider>{children}</NotFoundProvider>;
 }

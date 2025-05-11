@@ -12,14 +12,12 @@ import { subServiceDetails } from "@/lib/constants/services/subServices";
 import { Category } from "@/lib/interfaces/services";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { capitalize, generateSlug } from "@/lib/utils/format";
-import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function CategoryPage() {
   const { category } = useParams() as { category: string };
-  const { theme } = useTheme();
   const isSmallScreen = useSmallScreen();
   const router = useRouter();
 

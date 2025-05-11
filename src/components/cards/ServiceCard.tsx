@@ -3,7 +3,6 @@
 import { Category } from "@/lib/interfaces/services";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { capitalize, generateSlug } from "@/lib/utils/format";
-import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import DynamicButton from "../button/button-dynamic";
 
@@ -16,7 +15,6 @@ export default function ServiceDetails({
 }) {
   const isSmallScreen = useSmallScreen();
   const router = useRouter();
-  const { theme } = useTheme();
 
   const navigateToCategory = (serviceCategory: string) => {
     const formattedCategoryName = generateSlug(serviceCategory);
@@ -48,7 +46,7 @@ export default function ServiceDetails({
       <div className="md:gap-10 grid grid-cols-1 md:grid-cols-2">
         <DynamicButton
           className="mt-6 w-full self-start"
-          variant={theme === "dark" ? "accent" : "outline"}
+          variant={"outline"}
           onClick={() => navigateToCategory(category.name)}
         >
           View More Details

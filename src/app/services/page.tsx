@@ -9,7 +9,6 @@ import { subServiceDetails } from "@/lib/constants/services/subServices";
 import { testimonials } from "@/lib/constants/testimonials";
 import useSmallScreen from "@/lib/screens/useSmallScreen";
 import { capitalize, generateSlug } from "@/lib/utils/format";
-import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FC, useEffect, useState } from "react";
@@ -21,7 +20,6 @@ import { PiStrategy } from "react-icons/pi";
 const ServicesPage: FC = () => {
   const router = useRouter();
   const isSmallScreen = useSmallScreen();
-  const { theme } = useTheme();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
