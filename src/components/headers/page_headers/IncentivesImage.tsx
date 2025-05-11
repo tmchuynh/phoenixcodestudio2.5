@@ -26,7 +26,7 @@ export default function IncentivesImage() {
             </p>
             <p>
               Let’s turn possibilities into performance—and{" "}
-              <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+              <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
                 make your presence impossible to ignore.
               </mark>
             </p>
@@ -46,7 +46,7 @@ export default function IncentivesImage() {
                 {incentive.svg}
               </div>
               <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>{incentive.name}</h4>
+                <h3>{incentive.name}</h3>
                 <p className="mt-2 text-sm">{incentive.description}</p>
               </div>
             </div>
