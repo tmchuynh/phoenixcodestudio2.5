@@ -3,7 +3,8 @@ import FeaturedOverlappingTestimonial from "@/components/cards/testimonial/Overl
 import ThreeColumns from "@/components/headers/page_headers/ThreeColumns";
 import { MasonryGridGallery } from "@/components/images/MasonryGridGallery";
 import { testimonials } from "@/lib/constants/testimonials";
-import { FaLandmark } from "react-icons/fa";
+import Expertise from "./expertise";
+import Optimized from "./optimized";
 
 export default function OurAspirationsPage() {
   return (
@@ -32,141 +33,9 @@ export default function OurAspirationsPage() {
           </p>
         </div>
 
-        <section className="mt-6">
-          <h3>Our expertise spans:</h3>
-          <p>
-            Our team is a blend of creative minds and technical experts,
-            dedicated to crafting solutions that not only look good but also
-            perform exceptionally. We believe in the power of collaboration,
-            working closely with our clients to understand their unique needs
-            and aspirations.
-          </p>
-          <section className="gap-x-8 gap-y-10 grid grid-cols-1 lg:grid-cols-3 mt-5">
-            <div className="lg:block sm:flex">
-              <div className="w-16 h-16 sm:shrink-0 object-cover">
-                <FaLandmark className="w-16 h-16" />
-              </div>
-              <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>Custom Web Development</h4>
-                <p className="mt-2 text-sm">
-                  We specialize in Next.js, Tailwind CSS, and TypeScript to
-                  deliver fast, scalable, and fully custom websites that meet
-                  your business needs and grow with you.
-                </p>
-              </div>
-            </div>
-            <div className="lg:block sm:flex">
-              <div className="w-16 h-16 sm:shrink-0 object-cover">
-                <FaLandmark className="w-16 h-16" />
-              </div>
-              <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>Brand Strategy</h4>
-                <p className="mt-2 text-sm">
-                  We align your visual identity and messaging with your business
-                  goals—building a cohesive, authentic brand presence across all
-                  digital touchpoints.
-                </p>
-              </div>
-            </div>
-            <div className="lg:block sm:flex">
-              <div className="w-16 h-16 sm:shrink-0 object-cover">
-                <FaLandmark className="w-16 h-16" />
-              </div>
-              <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>UX/UI Design</h4>
-                <p className="mt-2 text-sm">
-                  We craft intuitive interfaces that enhance usability,
-                  accessibility, and engagement—turning complex journeys into
-                  seamless digital experiences.
-                </p>
-              </div>
-            </div>
-            <div className="lg:block sm:flex">
-              <div className="w-16 h-16 sm:shrink-0 object-cover">
-                <FaLandmark className="w-16 h-16" />
-              </div>
-              <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>Conversion-Focused Content Marketing</h4>
-                <p className="mt-2 text-sm">
-                  We create content strategies that drive action—blending
-                  storytelling, SEO, and user behavior insights to maximize
-                  engagement and ROI.
-                </p>
-              </div>
-            </div>
-            <div className="lg:block sm:flex">
-              <div className="w-16 h-16 sm:shrink-0 object-cover">
-                <FaLandmark className="w-16 h-16" />
-              </div>
-              <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>SEO Optimization</h4>
-                <p className="mt-2 text-sm">
-                  From technical SEO to on-page strategy, we help you climb
-                  search rankings and drive targeted organic traffic that
-                  converts.
-                </p>
-              </div>
-            </div>
-          </section>
-        </section>
+        <Expertise />
 
-        <section className="mt-9">
-          <h3>
-            Our process is collaborative and data-driven, ensuring every digital
-            product is optimized for:
-          </h3>
-          <section className="gap-x-8 gap-y-10 grid grid-cols-1 lg:grid-cols-3 mt-6">
-            <div className="lg:block sm:flex">
-              <div className="w-16 h-16 sm:shrink-0 object-cover">
-                <FaLandmark className="w-16 h-16" />
-              </div>
-              <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>Search engines</h4>
-                <p className="mt-2 text-sm">
-                  We implement technical SEO, clean code, and strategic metadata
-                  to ensure your site is easily discoverable and indexable.
-                </p>
-              </div>
-            </div>
-            <div className="lg:block sm:flex">
-              <div className="w-16 h-16 sm:shrink-0 object-cover">
-                <FaLandmark className="w-16 h-16" />
-              </div>
-              <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>Mobile responsiveness</h4>
-                <p className="mt-2 text-sm">
-                  Our builds adapt to all devices, delivering a seamless
-                  experience from desktop to smartphone.
-                </p>
-              </div>
-            </div>
-            <div className="lg:block sm:flex">
-              <div className="w-16 h-16 sm:shrink-0 object-cover">
-                <FaLandmark className="w-16 h-16" />
-              </div>
-              <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>Seamless user experience</h4>
-                <p className="mt-2 text-sm">
-                  From navigation to interaction, every detail is optimized to
-                  guide users intuitively toward conversion.
-                </p>
-              </div>
-            </div>
-            <div className="lg:block sm:flex">
-              <div className="w-16 h-16 sm:shrink-0 object-cover">
-                <FaLandmark className="w-16 h-16" />
-              </div>
-              <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-                <h4>Scalable performance</h4>
-                <p className="mt-2 text-sm">
-                  We build modular, future-proof systems that evolve alongside
-                  your brand—ensuring speed, reliability, and performance at
-                  scale.
-                </p>
-              </div>
-            </div>
-          </section>
-        </section>
+        <Optimized />
 
         <section>
           <h2>We Build with Heart, Purpose & Technical Precision</h2>
