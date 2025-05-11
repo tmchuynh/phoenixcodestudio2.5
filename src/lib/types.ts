@@ -1,4 +1,5 @@
 import { IconType } from "react-icons/lib";
+import { ListDetail } from "./interfaces/services";
 
 export type AlertContentType = {
   title: string;
@@ -63,8 +64,10 @@ export type Menu = {
 
 export type PricingTier = {
   name: string;
+  description: string;
   info: string;
   useCase: string;
+  list?: ListDetail[];
 };
 
 export type StarRatingProps = {
