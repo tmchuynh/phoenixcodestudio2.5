@@ -27,24 +27,21 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div className="md:px-10 w-full font-sans" ref={containerRef}>
       <div ref={ref} className="relative space-y-30 mx-auto pb-20">
         {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-start md:gap-10 pt-10 md:pt-40"
-          >
+          <div key={index} className="flex justify-start md:gap-10 pt-10">
             <div className="top-40 z-40 sticky flex md:flex-row flex-col items-center md:w-full max-w-xs lg:max-w-sm transition-all duration-700 ease-in-out self-start">
               <div className="left-3 md:left-3 absolute flex justify-center items-center bg-white dark:bg-black rounded-full w-10 h-10">
                 <div className="bg-muted p-2 border border-neutral-300 dark:border-neutral-700 rounded-full w-4 h-4" />
               </div>
               <div className="relative flex flex-col mx-auto pl-20 md:w-full">
                 {item.subtitle && <h5>{item.subtitle}</h5>}
-                <h3>{item.title}</h3>
+                <h2 className="mt-0">{item.title}</h2>
               </div>
             </div>
 
             <div className="md:block relative hidden pr-4 pl-20 md:pl-4 w-full">
               <div>
                 <div className="mb-4">
-                  {item.caption && <h2>{item.caption}</h2>}
+                  {item.caption && <h3>{item.caption}</h3>}
                   {item.description && <p>{item.description}</p>}
                 </div>
                 {item.list && (
