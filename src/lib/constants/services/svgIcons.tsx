@@ -2312,7 +2312,7 @@ export const svgIcons = [
               mix-blend-mode="normal"
               solid-color="#000000"
               solid-opacity="1"
-              vector-effect="none"
+              vectorEffect="none"
             ></path>
             <path
               id="path3342"
@@ -2335,7 +2335,7 @@ export const svgIcons = [
               mix-blend-mode="normal"
               solid-color="#000000"
               solid-opacity="1"
-              vector-effect="none"
+              vectorEffect="none"
             ></path>
             <path
               id="path3345"
@@ -2358,7 +2358,7 @@ export const svgIcons = [
               mix-blend-mode="normal"
               solid-color="#000000"
               solid-opacity="1"
-              vector-effect="none"
+              vectorEffect="none"
             ></path>
           </g>
           <path
@@ -2393,7 +2393,7 @@ export const svgIcons = [
             mix-blend-mode="normal"
             solid-color="#000000"
             solid-opacity="1"
-            vector-effect="none"
+            vectorEffect="none"
           ></path>
           <path
             id="path3219"
@@ -2417,7 +2417,7 @@ export const svgIcons = [
             mix-blend-mode="normal"
             solid-color="#000000"
             solid-opacity="1"
-            vector-effect="none"
+            vectorEffect="none"
           ></path>
           <path
             id="path3238"
