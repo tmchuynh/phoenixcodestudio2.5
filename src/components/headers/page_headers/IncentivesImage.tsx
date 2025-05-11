@@ -25,10 +25,8 @@ export default function IncentivesImage() {
               build with clarity, precision, and vision.
             </p>
             <p>
-              Let’s turn possibilities into performance—and{" "}
-              <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
-                make your presence impossible to ignore.
-              </mark>
+              Let’s turn possibilities into performance—and make your presence
+              impossible to ignore.
             </p>
           </div>
           <Image
