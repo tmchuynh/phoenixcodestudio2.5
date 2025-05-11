@@ -99,6 +99,8 @@ export default function CategoryPage() {
                   >
                     <Card className="flex flex-col justify-between shadow-md px-5 py-10 h-full">
                       <CardHeader>
+                        <h5>{subServiceDetail.info.hook}</h5>
+
                         <h3 className="underline-offset-4 group-hover:underline decoration-2">
                           {capitalize(subServiceDetail.name)}
                         </h3>
@@ -109,7 +111,8 @@ export default function CategoryPage() {
                           {subServiceDetail.info.pricing.pricingTiers.map(
                             (tier, tierIndex) => (
                               <li key={tierIndex}>
-                                <strong>{tier.name}</strong>
+                                <strong>{tier.name.split(":")[0]}: </strong>
+                                {tier.description}
                               </li>
                             )
                           )}
@@ -119,7 +122,6 @@ export default function CategoryPage() {
                         <DynamicButton className="mx-0 place-self-start">
                           More Information
                         </DynamicButton>
-                        <h5>{subServiceDetail.info.hook}</h5>
                       </CardFooter>
                     </Card>
                   </Link>
