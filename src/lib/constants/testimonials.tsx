@@ -10,14 +10,14 @@ export const testimonials: Testimonial[] = [
       <p>
         Tina was responsible for developing and designing our new website, and
         her{" "}
-        <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+        <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
           creativity has taken us to the next level
         </mark>
         . From start to finish, she completely transformed the way our schools
         perceive our programs. As someone who likes to be hands-on throughout
         the process, it was a pleasant surprise to entrust Tina with the project
         and have{" "}
-        <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+        <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
           all of our expectations exceeded
         </mark>
         . She now has full control to make updates and changes as needed. Her
@@ -40,7 +40,7 @@ export const testimonials: Testimonial[] = [
       <p>
         Tina has an exceptional talent for web design and brings ideas to life
         in a way that is both{" "}
-        <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+        <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
           visually striking and functional
         </mark>
         . She has a keen eye for detail and truly understands the importance of
@@ -66,7 +66,7 @@ export const testimonials: Testimonial[] = [
         Tina is a dynamic full-stack web developer with a passion for crafting
         intuitive and functional digital experiences. Specializing in user
         experience and front-end design, she brings{" "}
-        <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+        <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
           creativity and precision
         </mark>{" "}
         to every project, showcasing her strong work ethic and unwavering
@@ -97,7 +97,7 @@ export const testimonials: Testimonial[] = [
     quote: (
       <p>
         It's not often you meet someone as{" "}
-        <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+        <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
           driven and talented
         </mark>{" "}
         as Tina. I had the pleasure of working alongside her at ******** at
@@ -107,7 +107,7 @@ export const testimonials: Testimonial[] = [
         resilience. Beyond her leadership, Tina's eagerness to learn and adapt
         is truly inspiring. Whether mastering technical skills or building a
         business, she embraces new challenges with{" "}
-        <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+        <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
           enthusiasm and determination
         </mark>
         . Her dedication, resourcefulness, and unwavering drive make her an
@@ -131,11 +131,11 @@ export const testimonials: Testimonial[] = [
         she has grown into a highly skilled and proficient developer. Her
         ability to learn and adapt is evident in her work, particularly
         showcased on her personal portfolio site—
-        <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+        <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
           an impressive testament to her technical expertise and creativity
         </mark>
         . What sets Tina apart is her{" "}
-        <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+        <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
           relentless drive and self-motivation
         </mark>
         . Her projects clearly demonstrate her ability to tackle new
