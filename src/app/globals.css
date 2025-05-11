@@ -256,15 +256,15 @@
   }
 
   h3 {
-    @apply font-[FiraSans] mt-2 font-semibold text-xl lg:text-2xl tracking-wide text-secondary;
+    @apply font-[FiraSans] mt-2 font-semibold text-xl lg:text-2xl 2xl:text-3xl tracking-wide text-secondary;
   }
 
   h4 {
-    @apply font-[MavenPro] font-semibold text-sm lg:text-lg 2xl:text-xl tracking-tighter text-accent;
+    @apply font-[MavenPro] font-semibold text-sm lg:text-lg tracking-tighter text-accent;
   }
 
   h5 {
-    @apply font-[RobotoCondensed] font-semibold text-xs xl:text-sm uppercase tracking-tighter text-accent;
+    @apply font-[RobotoCondensed] font-semibold text-xs xl:text-sm uppercase tracking-tighter text-tertiary;
   }
 
   blockquote {
