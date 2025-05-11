@@ -1,5 +1,6 @@
 export interface Project {
   title: string;
+  slogan: string;
   featured: boolean;
   description: string;
   tags: string[];
