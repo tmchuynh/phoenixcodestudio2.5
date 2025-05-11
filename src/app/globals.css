@@ -50,22 +50,22 @@
 
 :root {
   --background: oklch(1 0 0);
-  --foreground: oklch(0.16 0 0);
+  --foreground: oklch(0.11 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(32.9% 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(32.9% 0 0);
-  --primary: oklch(0.44 0.1616 258.01);
+  --primary: oklch(0.21 0.068 266.99);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.54 0.1139 254.41);
+  --secondary: oklch(0.43 0.1378 254.33);
   --secondary-foreground: oklch(0.985 0 0);
-  --tertiary: oklch(0.64 0.1801 259.54);
+  --tertiary: oklch(0.43 0.2395 276.42);
   --tertiary-foreground: oklch(0.985 0 0);
-  --fancy: oklch(0.488 0.243 264.376);
+  --fancy: oklch(0.26 0.1035 259.71);
   --fancy-foreground: oklch(0.985 0 0);
   --muted: oklch(88.53% 0 0);
-  --muted-foreground: oklch(0.205 0 0);
-  --accent: oklch(0.27 0.122 262.37);
+  --muted-foreground: oklch(0.11 0 0);
+  --accent: oklch(0.31 0.1591 278.59);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.45 0.1676 25.21);
   --destructive-foreground: oklch(0.985 0 0);
@@ -89,27 +89,27 @@
 }
 
 .dark {
-  --background: oklch(0.16 0 0);
+  --background: oklch(0.1 0.0044 230.4);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.19 0 0);
+  --card: oklch(0.14 0 0);
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.19 0 0);
+  --popover: oklch(0.14 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.27 0.122 262.37);
+  --primary: oklch(0.22 0.0908 262.59);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.79 0.1192 240.27);
-  --secondary-foreground: oklch(0.19 0 0);
-  --tertiary: oklch(0.64 0.1801 259.54);
-  --tertiary-foreground: oklch(0.985 0 0);
-  --fancy: oklch(0.7 0.1663 245.16);
+  --secondary: oklch(0.67 0.0757 237.61);
+  --secondary-foreground: oklch(0.11 0 0);
+  --tertiary: oklch(0.43 0.225 277.91);
+  --tertiary-foreground: oklch(0.11 0 0);
+  --fancy: oklch(0.53 0.0812 209.62);
   --fancy-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
+  --muted: oklch(0.19 0.002 238.64);
   --muted-foreground: oklch(0.985 0 0);
-  --accent: oklch(0.74 0.1261 190.84);
+  --accent: oklch(0.9 0.0253 181.22);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.51 0.2047 27.44);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.32 0 none);
+  --border: oklch(0.59 0 0);
   --input: oklch(0.63 0.1553 245.76);
   --ring: oklch(0.6 0.1238 242.27);
   --chart-1: oklch(0.488 0.243 264.376);
@@ -248,27 +248,27 @@
   }
 
   h1 {
-    @apply font-[KaushanScript] my-6 font-bold text-4xl text-fancy md:text-5xl 2xl:text-7xl tracking-tight z-20 dark:text-tertiary;
+    @apply font-[KaushanScript] my-6 font-bold text-4xl text-fancy md:text-5xl 2xl:text-7xl tracking-tight z-20;
   }
 
   h2 {
-    @apply font-[PlayfairDisplay] mt-4 font-semibold text-3xl text-fancy md:text-4xl 2xl:text-5xl text-balance tracking-tight dark:text-secondary;
+    @apply font-[PlayfairDisplay] mt-4 font-semibold text-3xl text-tertiary md:text-4xl 2xl:text-5xl text-balance tracking-tight;
   }
 
   h3 {
-    @apply font-[FiraSans] mt-2 font-semibold text-xl lg:text-2xl tracking-wide text-tertiary;
+    @apply font-[FiraSans] mt-2 font-semibold text-xl lg:text-2xl tracking-wide text-secondary;
   }
 
   h4 {
-    @apply font-[MavenPro] font-semibold text-sm lg:text-lg 2xl:text-xl tracking-tighter text-secondary;
+    @apply font-[MavenPro] font-semibold text-sm lg:text-lg 2xl:text-xl tracking-tighter text-accent;
   }
 
   h5 {
-    @apply font-[RobotoCondensed] font-semibold text-xs xl:text-sm uppercase tracking-tighter text-secondary dark:text-fancy/80;
+    @apply font-[RobotoCondensed] font-semibold text-xs xl:text-sm uppercase tracking-tighter text-accent;
   }
 
   blockquote {
-    @apply border-l-2 border-secondary font-[Satisfy] pl-4 italic text-fancy;
+    @apply border-l-2 border-secondary font-[Satisfy] pl-4 italic text-tertiary;
   }
   p {
     @apply leading-7 text-pretty mt-2;

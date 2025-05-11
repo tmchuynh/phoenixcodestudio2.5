@@ -21,7 +21,6 @@ import { Menu } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import * as React from "react";
-import { ThemeToggle } from "../button/ThemeToggle";
 import DockNavigation from "./DockNavigation";
 
 export function NavBar() {
@@ -127,7 +126,6 @@ export function NavBar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
-              <ThemeToggle />
             </NavigationMenu>
           </div>
         </div>
