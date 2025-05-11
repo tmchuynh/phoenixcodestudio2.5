@@ -1,4 +1,3 @@
-import DynamicButton from "@/components/button/button-dynamic";
 import FeaturedOverlappingTestimonial from "@/components/cards/testimonial/Overlapping_Image";
 import ThreeColumns from "@/components/headers/page_headers/ThreeColumns";
 import { MasonryGridGallery } from "@/components/images/MasonryGridGallery";
@@ -36,30 +35,7 @@ export default function OurAspirationsPage() {
         <Expertise />
 
         <Optimized />
-
-        <section>
-          <h2>We Build with Heart, Purpose & Technical Precision</h2>
-          <p>
-            Whether you're launching a high-converting eCommerce platform,
-            developing a responsive web application, or redefining your brand
-            identity, Phoenix Code Studio delivers with clarity and care.
-          </p>
-          <p>
-            We combine human-centered design with scalable development to create
-            digital solutions that don’t just function—they perform. Every
-            experience we craft is driven by strategy, elevated by creativity,
-            and grounded in precision. From architecture to aesthetics, we
-            engineer every detail to support your business goals, connect with
-            your audience, and deliver long-term impact.
-          </p>
-        </section>
       </div>
-      <DynamicButton
-        variant={"outline"}
-        className="mx-0 my-3 md:ml-auto lg:w-1/3"
-      >
-        Come Work With Us
-      </DynamicButton>
 
       <FeaturedOverlappingTestimonial testimonial={testimonials[4]} />
     </div>
