@@ -9,7 +9,7 @@ export default function HeaderImageTiles() {
       <div className="lg:flex mx-auto w-11/12 max-w-7xl">
         <div className="lg:flex-none gap-x-12 gap-y-16 lg:gap-y-8 grid grid-cols-1 mx-auto lg:mx-0 lg:min-w-full max-w-2xl lg:max-w-none">
           <div className="lg:col-end-1 lg:pb-8 lg:w-full lg:max-w-lg">
-            <h4>Your vision is the spark. We’re here to ignite it.</h4>
+            <h4>Your Vision is the Spark. We’re Here to Ignite It</h4>
             <h1>Our Goal</h1>
             <div>
               <p className="mt-6 text-lg/relaxed">

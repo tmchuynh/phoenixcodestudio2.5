@@ -6,7 +6,7 @@ export default function SplitScreenshot() {
       <div className="lg:flex mx-auto py-8 md:py-18 lg:py-22 w-11/12">
         <div className="mx-auto lg:mx-0 lg:pt-8 max-w-2xl lg:shrink-0">
           <div className="mt-12 md:mt-18 lg:mt-20 xl:mt-32">
-            <h4>Crafted With Purpose, Built With Passion</h4>
+            <h4>Crafted with Purpose, Built with Passion</h4>
             <h1>Explore Our Portfolio of Successful Projects</h1>
             <p>
               Dive into our portfolio, a curated collection of projects where

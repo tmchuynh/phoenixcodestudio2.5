@@ -27,7 +27,7 @@ export default function TwoColumnTextImage() {
                 Every kind word, referral, and{" "}
                 <strong className="uppercase">
                   <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
-                    “you’ve got this”
+                    “You’ve Got This”
                   </mark>
                 </strong>{" "}
                 became fuel. We were inspired by those who saw potential and

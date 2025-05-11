@@ -18,7 +18,7 @@ export default function GlassTwoColumn() {
         />
         <div className="flex-auto w-full">
           <h4>Guiding You at Every Turn</h4>
-          <h2>Starting Is the Challenge — We Make It Easier</h2>
+          <h2>Starting is the Challenge — We Make It Easier</h2>
           <p className="mt-6 text-lg/8 text-pretty">
             Your brand isn't just another template—it’s a story waiting to be
             told. That’s why we craft tailored, industry-aware solutions

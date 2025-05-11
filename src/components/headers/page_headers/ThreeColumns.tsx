@@ -9,7 +9,8 @@ export default function ThreeColumns() {
           Before We Made Waves, We Focused on Our Core
         </h1>
         <p>
-          Before we made waves, we focused on our core: building meaningful
+          Building meaningful connections is at the heart of what we do. We
+          believe in the power of storytelling and the impact it can have on
           digital experiences rooted in creativity, strategy, and purpose.
         </p>
         <p>

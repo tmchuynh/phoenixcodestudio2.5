@@ -28,7 +28,7 @@ export default function InfoTestimonial() {
             </div>
 
             <div>
-              <h4>We’re With You at Every Stage</h4>
+              <h4>We’re with You at Every Stage</h4>
               <p>
                 At Phoenix Code Studio, our mission is simple—help your brand
                 rise, evolve, and thrive through purposeful digital

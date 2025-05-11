@@ -191,7 +191,7 @@ export default function Optimized() {
             </svg>
           </div>
           <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-            <h4>Search engines</h4>
+            <h4>Search Engines</h4>
             <p className="mt-2 text-sm">
               We implement technical SEO, clean code, and strategic metadata to
               ensure your site is easily discoverable and indexable.
@@ -1336,7 +1336,7 @@ export default function Optimized() {
             </svg>
           </div>
           <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-            <h4>Mobile responsiveness</h4>
+            <h4>Mobile Responsiveness</h4>
             <p className="mt-2 text-sm">
               Our builds adapt to all devices, delivering a seamless experience
               from desktop to smartphone.
@@ -2082,7 +2082,7 @@ export default function Optimized() {
             </svg>
           </div>
           <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-            <h4>Seamless user experience</h4>
+            <h4>Seamless User Experience</h4>
             <p className="mt-2 text-sm">
               From navigation to interaction, every detail is optimized to guide
               users intuitively toward conversion.
