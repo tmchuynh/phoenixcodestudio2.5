@@ -10,6 +10,7 @@ const imageHosts = [
   "tailkits.com",
   "resend.com",
   "i.etsystatic.com",
+  "media.istockphoto.com",
 ];
 
 const nextConfig: NextConfig = {
