@@ -12,10 +12,8 @@ import { capitalize, generateSlug } from "@/lib/utils/format";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FC, useEffect, useState } from "react";
-import { FaHandsHelping } from "react-icons/fa";
 
-import { MdDesignServices, MdOutlineWeb } from "react-icons/md";
-import { PiStrategy } from "react-icons/pi";
+import Approach from "./approach";
 
 const ServicesPage: FC = () => {
   const router = useRouter();
@@ -187,89 +185,7 @@ const ServicesPage: FC = () => {
         </section>
       </section>
 
-      <section className="my-20">
-        <h1>Our Approach</h1>
-        <section className="gap-x-8 gap-y-10 grid grid-cols-1 lg:grid-cols-2 mt-16">
-          <div className="lg:block sm:flex">
-            <div className="sm:shrink-0 object-cover">
-              <PiStrategy className="w-14 md:w-18 lg:w-24 h-14 md:h-18 lg:h-24" />
-            </div>
-            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-              <h3>Strategy-First</h3>
-              <p className="mt-2 text-sm">
-                Every project begins with deep discovery—rooted in research,
-                data analysis, and a clear understanding of your business,
-                industry, and audience. We don’t just ask what you want—we ask
-                why it matters. This strategic foundation informs every design
-                and development decision that follows, ensuring your digital
-                presence aligns with your goals, differentiates you from the
-                competition, and positions your brand for long-term growth. We
-                treat strategy not as a phase, but as a continuous thread from
-                kickoff to launch and beyond.
-              </p>
-            </div>
-          </div>
-
-          <div className="lg:block sm:flex">
-            <div className="sm:shrink-0 object-cover">
-              <MdDesignServices className="w-14 md:w-18 lg:w-24 h-14 md:h-18 lg:h-24" />
-            </div>
-            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-              <h3>Human-Centered Design</h3>
-              <p className="mt-2 text-sm">
-                People are at the heart of everything we build. Our design
-                process starts by understanding your users—their behaviors,
-                needs, challenges, and preferences. We combine accessibility
-                best practices, empathetic UX principles, and inclusive
-                interaction patterns to ensure every touchpoint is intuitive,
-                usable, and welcoming to all. This user-first approach results
-                in digital experiences that feel natural, reduce friction, and
-                forge meaningful connections between your brand and your
-                audience.
-              </p>
-            </div>
-          </div>
-
-          <div className="lg:block sm:flex">
-            <div className="sm:shrink-0 object-cover">
-              <MdOutlineWeb className="w-14 md:w-18 lg:w-24 h-14 md:h-18 lg:h-24" />
-            </div>
-            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-              <h3>Purposeful Innovation</h3>
-              <p className="mt-2 text-sm">
-                We approach innovation with intention, not impulse. From
-                interactive SPAs to API-integrated platforms, we explore and
-                implement technologies that solve real-world problems, not just
-                follow trends. Whether it’s optimizing performance with modern
-                frameworks or enhancing engagement with personalized content
-                delivery, every innovation we apply is grounded in utility,
-                scalability, and strategic value. We believe technology should
-                simplify, empower, and elevate—and that’s the standard we build
-                toward.
-              </p>
-            </div>
-          </div>
-
-          <div className="lg:block sm:flex">
-            <div className="sm:shrink-0 object-cover">
-              <FaHandsHelping className="w-14 md:w-18 lg:w-24 h-14 md:h-18 lg:h-24 text-tertiary" />
-            </div>
-            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-              <h3>End-to-End Collaboration</h3>
-              <p className="mt-2 text-sm">
-                We’re more than a vendor—we’re a committed digital partner. From
-                day one, we immerse ourselves in your vision and work alongside
-                you through each milestone, iteration, and breakthrough. Our
-                process is transparent, communicative, and collaborative, built
-                on mutual trust and shared ambition. Post-launch, we remain
-                engaged with proactive support, performance monitoring, and
-                growth guidance to ensure your solution evolves with your goals.
-                Your success is our success, and we’re invested in both.
-              </p>
-            </div>
-          </div>
-        </section>
-      </section>
+      <Approach />
 
       <FeaturedLargeTestimonial testimonial={testimonials[0]} />
 
