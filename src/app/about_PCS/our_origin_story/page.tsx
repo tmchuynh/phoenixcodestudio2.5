@@ -2,7 +2,7 @@
 
 import IntroductionImage from "@/components/headers/page_headers/IntroductionImage";
 import Timeline from "@/components/Timeline";
-import { originTimeline } from "@/lib/constants/constants";
+import { originTimeline } from "@/lib/constants/about/timeline";
 import { FaLandmark } from "react-icons/fa";
 
 export default function OurOriginStoryPage() {
