@@ -26,7 +26,7 @@ export default function TwoColumnTextImage() {
               <p className="mt-8">
                 Every kind word, referral, and{" "}
                 <strong className="uppercase">
-                  <mark className="bg-primary/20 shadow-sm px-1 py-0.5 rounded-md">
+                  <mark className="bg-primary/20 dark:bg-secondary shadow-sm px-1 py-0.5 rounded-md">
                     “you’ve got this”
                   </mark>
                 </strong>{" "}
