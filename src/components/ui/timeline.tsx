@@ -1,11 +1,7 @@
 "use client";
+import { TimelineEntry } from "@/lib/interfaces/about";
 import { motion, useScroll, useTransform } from "motion/react";
-import React, { useEffect, useRef, useState } from "react";
-
-interface TimelineEntry {
-  title: string;
-  content: React.ReactNode;
-}
+import { useEffect, useRef, useState } from "react";
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -28,40 +24,41 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className="bg-white dark:bg-neutral-950 md:px-10 w-full font-sans"
-      ref={containerRef}
-    >
-      <div className="mx-auto px-4 md:px-8 lg:px-10 py-20 max-w-7xl">
-        <h2 className="mb-4 max-w-4xl text-black text-lg md:text-4xl dark:text-white">
-          Changelog from my journey
-        </h2>
-        <p className="max-w-sm text-neutral-700 text-sm md:text-base dark:text-neutral-300">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
-        </p>
-      </div>
-
-      <div ref={ref} className="relative mx-auto pb-20 max-w-7xl">
+    <div className="md:px-10 w-full font-sans" ref={containerRef}>
+      <div ref={ref} className="relative space-y-30 mx-auto pb-20">
         {data.map((item, index) => (
           <div
             key={index}
             className="flex justify-start md:gap-10 pt-10 md:pt-40"
           >
-            <div className="top-40 z-40 sticky flex md:flex-row flex-col items-center md:w-full max-w-xs lg:max-w-sm self-start">
+            <div className="top-40 z-40 sticky flex md:flex-row flex-col items-center md:w-full max-w-xs lg:max-w-sm transition-all duration-700 ease-in-out self-start">
               <div className="left-3 md:left-3 absolute flex justify-center items-center bg-white dark:bg-black rounded-full w-10 h-10">
-                <div className="bg-neutral-200 dark:bg-neutral-800 p-2 border border-neutral-300 dark:border-neutral-700 rounded-full w-4 h-4" />
+                <div className="bg-muted p-2 border border-neutral-300 dark:border-neutral-700 rounded-full w-4 h-4" />
               </div>
-              <h3 className="md:block hidden md:pl-20 font-bold text-neutral-500 text-xl md:text-5xl dark:text-neutral-500">
-                {item.title}
-              </h3>
+              <div className="relative flex flex-col mx-auto pl-20 md:w-full">
+                {item.subtitle && <h5>{item.subtitle}</h5>}
+                <h3>{item.title}</h3>
+              </div>
             </div>
 
-            <div className="relative pr-4 pl-20 md:pl-4 w-full">
-              <h3 className="block md:hidden mb-4 font-bold text-2xl text-left text-neutral-500 dark:text-neutral-500">
-                {item.title}
-              </h3>
-              {item.content}{" "}
+            <div className="md:block relative hidden pr-4 pl-20 md:pl-4 w-full">
+              <div>
+                <div className="mb-4">
+                  {item.caption && <h2>{item.caption}</h2>}
+                  {item.description && <p>{item.description}</p>}
+                </div>
+                {item.list && (
+                  <ul className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-7">
+                    {item.list.map((listItem, listIndex) => (
+                      <li key={listIndex} className="flex flex-col">
+                        {listItem.title && <strong>{listItem.title}: </strong>}
+                        <p>{listItem.description}</p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              {item.content}
             </div>
           </div>
         ))}
@@ -76,7 +73,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="top-0 absolute inset-x-0 bg-gradient-to-t from-[0%] from-purple-500 via-[10%] via-blue-500 to-transparent rounded-full w-[2px]"
+            className="top-0 absolute inset-x-0 bg-gradient-to-t from-[0%] from-primary via-[20%] via-tertiary/45 to-transparent rounded-full w-[2px]"
           />
         </div>
       </div>
