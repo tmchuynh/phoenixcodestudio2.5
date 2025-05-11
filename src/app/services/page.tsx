@@ -13,7 +13,10 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FC, useEffect, useState } from "react";
-import { Fa500Px } from "react-icons/fa";
+import { FaHandsHelping } from "react-icons/fa";
+
+import { MdDesignServices, MdOutlineWeb } from "react-icons/md";
+import { PiStrategy } from "react-icons/pi";
 
 const ServicesPage: FC = () => {
   const router = useRouter();
@@ -48,6 +51,7 @@ const ServicesPage: FC = () => {
       <IncentivesImage />
 
       <section>
+        <h4>Let’s Rise Together</h4>
         <h1>Industries We Serve</h1>
         <p>
           From e-commerce startups to educational institutions and healthcare
@@ -57,7 +61,6 @@ const ServicesPage: FC = () => {
           across every industry we serve.
         </p>
 
-        <h2>Let’s Rise Together</h2>
         <p>
           Phoenix Code Studio is where ideas come to life, where problems become
           possibilities, and where brands grow boldly in the digital world.
@@ -190,11 +193,11 @@ const ServicesPage: FC = () => {
         <h1>Our Approach</h1>
         <section className="gap-x-8 gap-y-10 grid grid-cols-1 lg:grid-cols-2 mt-16">
           <div className="lg:block sm:flex">
-            <div className="w-16 h-16 sm:shrink-0 object-cover">
-              <Fa500Px />
+            <div className="sm:shrink-0 object-cover">
+              <PiStrategy className="w-14 md:w-18 lg:w-24 h-14 md:h-18 lg:h-24" />
             </div>
             <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-              <h4>Strategy-First</h4>
+              <h3>Strategy-First</h3>
               <p className="mt-2 text-sm">
                 Every project begins with deep discovery—rooted in research,
                 data analysis, and a clear understanding of your business,
@@ -210,11 +213,11 @@ const ServicesPage: FC = () => {
           </div>
 
           <div className="lg:block sm:flex">
-            <div className="w-16 h-16 sm:shrink-0 object-cover">
-              <Fa500Px />
+            <div className="sm:shrink-0 object-cover">
+              <MdDesignServices className="w-14 md:w-18 lg:w-24 h-14 md:h-18 lg:h-24" />
             </div>
             <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-              <h4>Human-Centered Design</h4>
+              <h3>Human-Centered Design</h3>
               <p className="mt-2 text-sm">
                 People are at the heart of everything we build. Our design
                 process starts by understanding your users—their behaviors,
@@ -230,11 +233,11 @@ const ServicesPage: FC = () => {
           </div>
 
           <div className="lg:block sm:flex">
-            <div className="w-16 h-16 sm:shrink-0 object-cover">
-              <Fa500Px />
+            <div className="sm:shrink-0 object-cover">
+              <MdOutlineWeb className="w-14 md:w-18 lg:w-24 h-14 md:h-18 lg:h-24" />
             </div>
             <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-              <h4>Purposeful Innovation</h4>
+              <h3>Purposeful Innovation</h3>
               <p className="mt-2 text-sm">
                 We approach innovation with intention, not impulse. From
                 interactive SPAs to API-integrated platforms, we explore and
@@ -250,11 +253,11 @@ const ServicesPage: FC = () => {
           </div>
 
           <div className="lg:block sm:flex">
-            <div className="w-16 h-16 sm:shrink-0 object-cover">
-              <Fa500Px />
+            <div className="sm:shrink-0 object-cover">
+              <FaHandsHelping className="w-14 md:w-18 lg:w-24 h-14 md:h-18 lg:h-24 text-tertiary" />
             </div>
             <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-              <h4>End-to-End Collaboration</h4>
+              <h3>End-to-End Collaboration</h3>
               <p className="mt-2 text-sm">
                 We’re more than a vendor—we’re a committed digital partner. From
                 day one, we immerse ourselves in your vision and work alongside
@@ -275,7 +278,7 @@ const ServicesPage: FC = () => {
       {/* Company Services Section */}
       {allServices.map((category, index) => (
         <div key={index} className="my-20">
-          <h4>{category.subtitle}</h4>
+          <h3>{category.subtitle}</h3>
           <h1>{capitalize(category.name)}</h1>
           <div className="my-4">
             {category.description.map((desc, descIndex) => (
