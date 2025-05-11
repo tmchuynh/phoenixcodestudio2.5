@@ -5,10 +5,12 @@ export const subServiceDetails: SubItem[] = [
     category: "tailored-digital-solutions",
     subtitle: "Authentic Brand Storytelling That Connects and Converts",
     name: "stories-that-drive-action",
+    imageSrc:
+      "https://media.istockphoto.com/id/2172612894/photo/mother-and-daughter-embraced-at-home.jpg?s=612x612&w=0&k=20&c=ikKz_4ubkUzhf3qgyI9j4Trjgj7ypKTRgt6KfvME_eo=",
     info: {
-      name: "Authentic Brand Storytelling That Captivates & Connects",
+      name: "Emotional Narratives That Communicate Your Mission, Connect with Your Audience, and Inspire Loyalty",
       title: "Stories That Drive Action",
-      hook: "Craft compelling and impactful brand stories that connect with your audience by showcasing your mission, vision, and core values.",
+      hook: "Craft compelling narratives that connect emotionally and inspire engagement.",
       description: "Brand Storytelling",
       intro: [
         "We specialize in crafting compelling brand narratives that go beyond simply describing who you are—they capture the very essence of your identity and communicate it in a way that feels authentic, relevant, and deeply resonant. Your brand is so much more than just a logo, a tagline, or a color palette; it’s a living, breathing story waiting to be told. It’s the connection between your mission and the people you serve, the purpose behind every product, service, or experience you offer. Through the art of thoughtful storytelling and the science of strategic positioning, we help you transcend the boundaries of traditional marketing, forging meaningful connections that transform passive audiences into engaged, loyal communities.",
@@ -18,7 +20,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "We craft purposeful, emotionally resonant narratives that deepen brand loyalty and inspire action. Through strategic storytelling, we help your brand rise above the noise—building lasting connections with your audience that go far beyond surface-level engagement.",
       short:
-        "Create an emotional connection with your audience through authentic brand storytelling. We craft compelling narratives that reflect your brand's values, mission, and vision, building trust and loyalty while ensuring your message resonates in a competitive market.",
+        "We help you connect with your audience through authentic, emotionally resonant brand storytelling. By showcasing your mission, vision, and values, we build trust, deepen loyalty, and distinguish your brand in competitive markets.",
       featured: true,
       pricing: {
         pricingTierIntro: {
@@ -30,27 +32,117 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "StoryStarter: Define Your Brand’s Core",
-            info: "Start strong by uncovering the foundational pillars of your brand. This tier helps define your mission, vision, and values—ideal for early-stage businesses seeking clarity and alignment from the ground up.",
+            description:
+              "Clarify your brand's mission, vision, and values to establish a strong foundation for all messaging.",
+            info: "Craft narratives that resonate, inspire, and drive action. This package focuses on defining your brand’s core identity, mission, and values. Ideal for startups or businesses looking to establish a strong foundation.",
             useCase:
-              "Perfect for startups, solopreneurs, or small businesses in their early stages who need to establish a clear and compelling brand foundation. Ideal for anyone looking to clarify their identity before launching a product, website, or marketing campaign.",
+              "Ideal for new businesses or personal brands seeking clarity on their foundational story and messaging. Ideal for new businesses or personal brands seeking clarity on their foundational story and messaging.",
+            list: [
+              {
+                description:
+                  "Discovery session to understand your mission, vision, and values",
+              },
+              {
+                description:
+                  "One-page brand story draft with tone and voice definition",
+              },
+              {
+                description:
+                  "Messaging pillars: “why,” “how,” and “what” statements",
+              },
+              {
+                description: "1 revision round included",
+              },
+            ],
           },
           {
             name: "Narrative Builder: Craft Your Brand Story",
-            info: "Go beyond the basics with a fully developed brand narrative. This package shapes your origin story, unique value proposition, and audience-focused messaging—perfect for brands that want to connect emotionally and authentically.",
+            description:
+              "Develop a cohesive and engaging brand narrative that resonates with your target audience.",
+            info: "This package builds on the StoryStarter tier, adding depth and detail to your brand narrative. We work closely with you to create a compelling story that reflects your brand’s essence and connects with your audience. Perfect for businesses ready to elevate their messaging.",
             useCase:
-              "Great for growing businesses, rebranding efforts, or teams seeking to align internal and external messaging. Ideal for companies preparing for a website revamp, pitch deck, or public launch that requires a polished, emotionally resonant brand story.",
+              "Designed for growing brands ready to create a cohesive and compelling story across digital platforms. Ideal for growing brands ready to create a cohesive and compelling story across digital platforms.",
+            list: [
+              {
+                description: "Everything in StoryStarter",
+              },
+              {
+                description:
+                  "Website-ready copy for About, Mission, and Values sections",
+              },
+              {
+                description: "Expanded 2–3 page brand narrative ",
+              },
+              {
+                description:
+                  "Integration of customer personas and brand voice guidelines",
+              },
+              {
+                description: "Two rounds of revisions",
+              },
+              {
+                description:
+                  "Brand voice guidelines (tone, style, and language)",
+              },
+            ],
           },
           {
             name: "StorySync: Strategy Meets Content",
-            info: "This tier blends storytelling strategy with actionable content creation. Includes tailored messaging across your website, social media, and campaigns—ideal for brands ready to launch or refresh with cohesion and impact.",
+            description:
+              "Align your storytelling with strategic goals to ensure consistency across all platforms.",
+            info: "This package combines storytelling with strategic content planning. We help you align your brand narrative with your marketing goals, ensuring consistency across all platforms. Ideal for businesses looking to integrate storytelling into their overall strategy.",
             useCase:
-              "Best for brands looking to unify messaging across multiple touchpoints—such as product launches, new websites, social campaigns, or email series. Perfect for businesses that need consistent content rooted in strategy and storytelling.",
+              "Perfect for established businesses looking to align storytelling across all content channels. Ideal for established businesses looking to align storytelling across all content channels.",
+            list: [
+              {
+                description: "Everything in Narrative Builder",
+              },
+              {
+                description:
+                  "Content strategy framework (blog, social, video scripting themes)",
+              },
+              {
+                description:
+                  "Visual storytelling guidance (image direction and tone)",
+              },
+              {
+                description:
+                  "Monthly story-driven content outlines (1-month supply)",
+              },
+              {
+                description: "Customer persona development",
+              },
+            ],
           },
           {
             name: "EpicReach: Advanced Storytelling & Campaign Execution",
-            info: "Our most robust storytelling package. Combines advanced brand narrative strategy, cross-channel campaign execution, and ongoing content support. Designed for businesses seeking to lead with story and scale with confidence.",
+            description:
+              "Implement comprehensive storytelling campaigns that drive engagement and brand loyalty.",
+            info: "This package is for brands ready to take their storytelling to the next level. We develop and execute comprehensive storytelling campaigns that drive engagement and build brand loyalty. Perfect for established brands looking to expand their reach and impact.",
             useCase:
-              "Ideal for established brands looking to elevate their market presence, launch large-scale campaigns, or expand into new markets with a cohesive brand voice. Suited for CMOs, content directors, or marketing teams who want long-term strategic storytelling support.",
+              "Built for high-impact brands seeking long-term narrative strategy and execution across platforms. Ideal for established brands looking to expand their reach and impact.",
+            list: [
+              {
+                description:
+                  "Full storytelling ecosystem audit + narrative refresh",
+              },
+              {
+                description:
+                  "Campaign-driven storytelling strategy with seasonal planning",
+              },
+              {
+                description:
+                  "Custom story modules for web, video, newsletters, and social media",
+              },
+              {
+                description:
+                  "Dedicated strategist for 4 weeks post-delivery for consulting and adaptation",
+              },
+              {
+                description:
+                  "Creative direction for multi-channel content creators and influencers",
+              },
+            ],
           },
         ],
       },
@@ -208,22 +300,24 @@ export const subServiceDetails: SubItem[] = [
     cta: {
       title: "Craft a Story That Captivates, Connects, and Converts",
       intro:
-        "Your brand story is more than just words—it’s the core of your identity and the key to building meaningful connections. It sets you apart in a crowded market, fostering emotional bonds that leave a lasting impact. Let us help you craft a captivating narrative that not only resonates with your audience but also drives action and conversions. Whether you’re starting fresh or reimagining an established brand, our storytelling expertise ensures your message makes a powerful impression.",
+        "Your brand story is more than just words—it’s the core of your identity and the key to building meaningful connections. It sets you apart in a crowded market, fostering emotional bonds that leave a lasting impact. Let us help you craft a captivating narrative that not only resonates with your audience but also drives action and conversions. Whether you’re starting fresh or reimagining an established brand, our storytelling expertise ensures your message makes a powerful impression. Together, we’ll create a story that captivates, connects, and converts.",
       description:
-        "Our brand storytelling service creates authentic, engaging narratives that not only showcase your brand’s journey but also emotionally connect with your audience. Through powerful storytelling, we help you share your mission, values, and vision in a way that fosters loyalty, enhances your brand’s identity, and motivates your customers to take action.",
+        "Our brand storytelling service creates authentic, engaging narratives that not only showcase your brand’s journey but also emotionally connect with your audience. Through powerful storytelling, we help you share your mission, values, and vision in a way that fosters loyalty, enhances your brand’s identity, and motivates your customers to take action. We believe that every brand has a unique story to tell, and we’re here to help you tell it in a way that resonates deeply with your audience.",
       button: "Get in Touch for a Free Consultation & Tailored Quote",
       afterButtonText:
-        "Let’s create a narrative that not only captivates but also connects with your audience for years to come.",
+        "Let’s create a narrative that not only captivates but also connects with your audience for years to come. Schedule a free consultation today and discover how we can help you craft a compelling brand story that resonates with your audience and drives results.",
     },
   },
   {
     category: "tailored-digital-solutions",
     subtitle: "Future-Ready Rebranding Services",
     name: "brand-transformation-with-purpose",
+    imageSrc:
+      "https://images.unsplash.com/photo-1496449903678-68ddcb189a24?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNoYW5nZXxlbnwwfDB8MHx8fDA%3D",
     info: {
-      name: "Transform Your Brand with Our Rebranding Services",
+      name: "Transform Your Identity with Cohesive Visuals, Strategy, and Messaging Aligned for Long-Term Growth",
       title: "Brand Transformation with Purpose",
-      hook: "Revitalize your company’s identity with a strategic rebrand that includes a refreshed logo, messaging, and a cohesive brand strategy.",
+      hook: "Reimagine your identity with a cohesive, future-ready brand strategy.",
       description: "Brand Transformation",
       intro: [
         "Our comprehensive rebranding services are designed to give your company a fresh, modern identity that not only resonates with your audience but also aligns seamlessly with your business goals and aspirations. We understand that a brand is more than just a logo or a tagline—it’s the essence of who you are, the story you tell, and the promise you deliver. That’s why we take a holistic approach to rebranding, focusing on every detail to ensure your new identity reflects your unique vision and positions your business for success.",
@@ -233,7 +327,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "Our rebranding process is rooted in clarity, authenticity, and connection. We help you redefine your brand with a fresh, forward-facing identity that builds trust, captures your essence, and positions you for long-term success.",
       short:
-        "Revitalize your brand with impactful rebranding services that combine strategic storytelling and design to engage your audience. We help you craft a distinctive, authentic brand identity that builds trust, fosters loyalty, and makes a lasting impression, whether you’re refreshing your look or redefining your brand message.",
+        "Whether refreshing your logo or redefining your brand message, we deliver meaningful rebranding rooted in strategic storytelling and bold design—helping you stand out, connect, and grow.",
       featured: false,
       pricing: {
         pricingTierIntro: {
@@ -244,33 +338,155 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "FreshLook: Brand Identity Refresh",
-            info: "A modern facelift for your brand. This tier updates and refines your visual identity—logo, colors, typography—while preserving the essence of your original look. Ideal for businesses ready for a clean, modern update.",
+            description:
+              "Update visual elements to reflect your brand's evolution while maintaining recognition.",
+            info: "This package focuses on refreshing your brand’s visual identity while maintaining its core essence. Ideal for businesses looking to modernize their look without losing recognition.",
             useCase:
-              "Perfect for businesses that already have an established brand but feel outdated or inconsistent. Ideal for those undergoing a subtle pivot, celebrating an anniversary, or looking to elevate their professionalism without starting from scratch.",
+              "Best for businesses with an existing brand in need of a visual and messaging update without a complete overhaul. This is ideal for companies that have evolved but want to maintain brand recognition.",
+            list: [
+              {
+                description:
+                  "Discovery session to understand your brand’s current identity and goals",
+              },
+              {
+                description: "Refined mission, vision, and tagline suggestions",
+              },
+              {
+                description:
+                  "Logo refresh (typography, colors, spacing adjustments)",
+              },
+              {
+                description: "Updated brand color palette and typography suite",
+              },
+              {
+                description: "Brand messaging refinement (tagline, mission)",
+              },
+              {
+                description: "1 revision round included",
+              },
+            ],
           },
           {
             name: "BrandReboot: Comprehensive Brand Redesign",
+            description:
+              "Overhaul your brand's visual and messaging components for a complete transformation.",
             info: "Time for a total transformation. This package reimagines your visual identity, brand messaging, and market positioning. Best for businesses pivoting, expanding, or entering new markets with bold new goals.",
             useCase:
-              "Great for companies shifting their target audience, merging with another business, launching a new product line, or entering a competitive space. Ideal for businesses that need to redefine how they show up in the market, both visually and verbally.",
+              "Perfect for companies that have outgrown their old identity and need a full redesign. Ideal for businesses looking to pivot or expand into new markets. ",
+            list: [
+              {
+                description:
+                  "Everything in FreshLook, plus a full brand strategy session",
+              },
+              {
+                description:
+                  "New logo design with 2–3 concepts and 2 revision rounds",
+              },
+              {
+                description: "Brand color system, typography, iconography",
+              },
+              {
+                description:
+                  "Voice and tone guidelines + updated mission/vision",
+              },
+              {
+                description:
+                  "Social media and web visual kits (avatars, banners, CTA styles)",
+              },
+            ],
           },
           {
             name: "BrandBlueprint: Strategy & Full Execution",
+            description:
+              "Develop and implement a strategic plan that guides your brand's direction and growth.",
             info: "This end-to-end branding solution delivers research-driven strategy, competitor insights, and a complete visual and messaging system. Ideal for businesses looking to build a powerful, consistent presence across every touchpoint.",
             useCase:
-              "Best suited for startups building a brand from scratch, or established businesses undergoing a complete overhaul. Ideal for companies launching with investor backing, scaling nationally, or needing to establish trust and authority in new verticals.",
+              "Designed for brands seeking a complete strategic redefinition, with deep focus on positioning and customer perception. Ideal for businesses looking to build a powerful, consistent presence across every touchpoint.",
+            list: [
+              {
+                description:
+                  "Everything in BrandReboot, plus a comprehensive brand strategy session",
+              },
+              {
+                description: "In-depth market research and competitor analysis",
+              },
+              {
+                description:
+                  "Brand story development + internal communication kit",
+              },
+              {
+                description:
+                  "Style guide (logo usage, spacing, color rules, imagery)",
+              },
+              {
+                description:
+                  "Visual identity system (logo, color palette, typography)",
+              },
+              {
+                description:
+                  "Website design mockups and social media templates",
+              },
+            ],
           },
           {
             name: "CoreGuard: Brand Guidelines & Consistency Kit",
+            description:
+              "Establish comprehensive guidelines to ensure brand consistency across all channels.",
             info: "Protect and enforce your brand identity with comprehensive brand guidelines. Ensures consistency across digital, print, and internal materials. Perfect for scaling teams and organizations focused on brand integrity.",
             useCase:
-              "Ideal for growing teams, creative departments, or distributed organizations that work with multiple vendors or internal creators. Ensures brand consistency as your company scales and expands across different mediums and platforms.",
+              "For businesses with a brand system in place that need documentation to scale consistently. Ideal for teams looking to maintain brand integrity as they grow.",
+            list: [
+              {
+                description:
+                  "Everything in BrandBlueprint, plus a detailed brand guidelines document",
+              },
+              {
+                description: "Typography hierarchy + copywriting rules",
+              },
+              {
+                description:
+                  "Templates for social media, email, and print materials",
+              },
+              {
+                description:
+                  "Ongoing support for brand updates and adjustments",
+              },
+              {
+                description:
+                  "Brand asset library for easy access to logos, colors, and templates",
+              },
+            ],
           },
           {
             name: "BrandPulse: Ongoing Support & Strategic Growth",
+            description:
+              "Provide continuous support and strategic insights to adapt and grow your brand over time.",
             info: "This ongoing support plan keeps your brand evolving with your business. Includes branding asset updates, strategy refinement, and seamless integration with marketing efforts. Ideal for teams committed to long-term growth.",
             useCase:
-              "Designed for brands with ongoing campaigns, seasonal promotions, or evolving product lines. Ideal for businesses that want to continuously refine and align their brand with market changes, customer feedback, and internal growth.",
+              "Aimed at evolving businesses needing long-term branding support and adaptive brand growth. Ideal for companies looking to maintain a dynamic brand presence.",
+            list: [
+              {
+                description: "Brand strategy review and updates every 6 months",
+              },
+              {
+                description: "Brand asset updates (logo, colors, typography)",
+              },
+              {
+                description: "Social media and website refreshes as needed",
+              },
+              {
+                description:
+                  "Brand performance analysis and insights to inform future strategies",
+              },
+              {
+                description:
+                  "Access to a dedicated brand strategist for ongoing support",
+              },
+              {
+                description:
+                  "Ongoing support for brand updates and adjustments as needed",
+              },
+            ],
           },
         ],
       },
@@ -460,17 +676,19 @@ export const subServiceDetails: SubItem[] = [
         "Our expert rebranding services breathe new life into your brand, aligning it with your business’s vision and goals. From refreshing your visual identity to refining your messaging, we craft a cohesive strategy that strengthens your presence, fosters deeper connections, and elevates your brand’s impact.",
       button: "Start Your Brand Transformation Today",
       afterButtonText:
-        "Let’s work together to create a brand identity that is fresh, memorable, and poised for long-term success.",
+        "Let’s work together to create a brand identity that is fresh, memorable, and poised for long-term success. Schedule a free consultation today and discover how we can help you redefine your brand for the future.",
     },
   },
   {
     category: "tailored-digital-solutions",
     subtitle: "Scalable Online Stores That Convert",
     name: "e-commerce-built-for-results",
+    imageSrc:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZSUyMGNvbW1lcmNlfGVufDB8MHwwfHx8MA%3D%3D",
     info: {
       name: "E-Commerce Solutions Built for Growth and Success",
       title: "E-Commerce Built for Results",
-      hook: "Create an online shopping experience that delights customers, boosts conversions, and drives sales with smooth and intuitive e-commerce solutions.",
+      hook: "Deliver seamless shopping experiences that increase sales and build loyalty.",
       description: "Selling Online",
       intro: [
         "We design scalable, secure, and user-friendly e-commerce platforms that empower your business to thrive in the competitive online marketplace. Our solutions are crafted to enhance the customer experience at every touchpoint, driving sales growth and fostering long-term loyalty. With intuitive navigation, seamless checkout processes, and robust security measures, we ensure your customers enjoy a smooth, safe, and hassle-free shopping experience that keeps them coming back.",
@@ -480,7 +698,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "Whether you’re launching a new online store or upgrading an existing one, our e-commerce websites are designed to drive conversions, enhance customer satisfaction, and support long-term growth. Our solutions are tailored to meet the unique needs of your business, ensuring a seamless and engaging shopping experience for your customers.",
       short:
-        "Unlock the potential of your online store with custom e-commerce solutions that drive growth and deliver exceptional customer experiences. From intuitive navigation and secure transactions to personalized recommendations and powerful analytics, we craft scalable platforms that optimize performance and increase conversions, helping your business thrive in the digital marketplace.",
+        "We design scalable e-commerce platforms that are intuitive, secure, and conversion-focused—built to grow with your business and provide smooth customer journeys.",
       featured: true,
       pricing: {
         pricingTierIntro: {
@@ -491,33 +709,185 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "LaunchCart: E-Commerce Essentials",
+            description:
+              "Set up a fundamental e-commerce platform to start selling products online.",
             info: "Perfect for startups and small businesses, this package sets up your online store with core functionality—product listings, secure payments, and a simple shopping cart. A smooth and secure way to start selling online with confidence.",
             useCase:
-              "Best suited for entrepreneurs or small teams launching their first product line and looking for a quick, secure online storefront with minimal overhead.",
+              "Ideal for small shops and simple product lines looking to establish an online store. Great for businesses just starting out or those with a limited product range.",
+            list: [
+              {
+                description:
+                  "Basic product catalog setup with essential product details (up to 15 products)",
+              },
+              {
+                description: "Next.js frontend",
+              },
+              {
+                description: "Simple shopping cart functionality",
+              },
+              {
+                description: "Responsive design for mobile and desktop",
+              },
+              {
+                description: "Basic order management system",
+              },
+              {
+                description:
+                  "Basic security features (SSL, secure payment processing)",
+              },
+            ],
           },
           {
             name: "ScaleCart: Enhanced Online Growth",
+            description:
+              "Expand your e-commerce capabilities to accommodate growing customer demands.",
             info: "Designed for growing shops, this tier adds advanced features like product filtering, customer accounts, and essential analytics to optimize the customer journey and set the stage for sustainable growth.",
             useCase:
-              "Ideal for businesses experiencing growth that need better user navigation, performance insights, and customer retention tools.",
+              "For growing stores aiming to expand their product offerings and improve user experience. Ideal for businesses looking to enhance their online presence and drive sales. ",
+            list: [
+              {
+                description: "Everything in LaunchCart",
+              },
+              {
+                description: "Up to 50 products",
+              },
+              {
+                description:
+                  "Basic product search and filtering options (by category)",
+              },
+              {
+                description: "Discounts and promo code logic",
+              },
+
+              {
+                description: "Basic analytics and reporting tools",
+              },
+              {
+                description:
+                  "Email notifications for order confirmations and updates",
+              },
+              {
+                description:
+                  "Basic SEO optimization for product pages and categories",
+              },
+              {
+                description:
+                  "Basic security features (SSL, secure payment processing)",
+              },
+            ],
           },
           {
             name: "SmartCart: Personalized Shopping Experience",
+            description:
+              "Implement features that offer personalized experiences to increase customer satisfaction.",
             info: "Take your store to the next level with intelligent features like personalized recommendations, advanced analytics, and seamless third-party integrations. Ideal for brands seeking to boost conversions and customer retention.",
             useCase:
-              "Perfect for brands wanting to implement personalized shopping, email marketing, and data-driven recommendations to increase conversions.",
+              "Tailored for businesses seeking to offer personalized shopping experiences to their customers. Ideal for brands looking to enhance customer engagement and drive repeat purchases.",
+            list: [
+              {
+                description: "Everything in ScaleCart",
+              },
+              {
+                description: "Up to 100 products",
+              },
+              {
+                description: "Customer account creation and management",
+              },
+              {
+                description: "Added wishlist functionality for users",
+              },
+              {
+                description: "Social media sharing options for products",
+              },
+              {
+                description:
+                  "Product filters, variants, and category structure",
+              },
+              {
+                description:
+                  "Integration with popular shipping providers for real-time rates",
+              },
+              {
+                description: "Customer reviews and ratings for products",
+              },
+              {
+                description: "Inventory alerts and restock logic",
+              },
+            ],
           },
           {
             name: "PowerCart: Enterprise-Level Commerce",
+            description:
+              "Develop a robust e-commerce solution tailored for large-scale operations.",
             info: "Built for high-volume businesses, this solution includes multi-store support, custom workflows, and enterprise-grade security. Designed to scale complex operations while maintaining flexibility and performance.",
             useCase:
-              "Best for established enterprises managing large catalogs or multiple storefronts that require robust performance, security, and flexibility.",
+              "Designed for large-scale stores with complex logic and integration needs. Ideal for enterprises looking to optimize their e-commerce operations and enhance customer experiences.",
+            list: [
+              {
+                description: "Everything in SmartCart",
+              },
+
+              {
+                description:
+                  "Added personalized user account dashboard for order history and tracking",
+              },
+              {
+                description: "Up to 250 products",
+              },
+              {
+                description:
+                  "Personalized product recommendations based on user behavior",
+              },
+              {
+                description: "Multi-store support for different locations",
+              },
+              {
+                description:
+                  "Advanced security features (firewalls, DDoS protection)",
+              },
+              {
+                description: "Wholesale/B2B pricing logic",
+              },
+              {
+                description: "Internationalization and multi-currency support",
+              },
+            ],
           },
           {
             name: "EverCart: Continuous Support & Optimization",
+            description:
+              "Provide ongoing support and optimization to keep your e-commerce platform performing at its best.",
             info: "Ensure your e-commerce platform stays fast, secure, and up-to-date with ongoing technical support, regular updates, and proactive performance monitoring. Ideal for stores that never stop evolving.",
             useCase:
-              "Ideal for growing e-commerce operations looking for long-term support, site health monitoring, and agile enhancements based on user feedback and business goals.",
+              "Ensures your e-commerce platform remains optimized, secure, and up-to-date. Ideal for businesses that require ongoing support and optimization to keep their online store performing at its best.",
+            list: [
+              {
+                description: "Monthly product updates",
+              },
+              {
+                description:
+                  "Regular updates and maintenance to keep your platform secure and up-to-date",
+              },
+              {
+                description:
+                  "Performance monitoring and optimization to ensure fast load times",
+              },
+              {
+                description:
+                  "Ongoing technical support for troubleshooting and issue resolution",
+              },
+              {
+                description:
+                  "Access to new features and enhancements as they become available",
+              },
+              {
+                description:
+                  "Proactive security measures to protect against emerging threats",
+              },
+              {
+                description: "Quarterly redesigns or UX refreshes",
+              },
+            ],
           },
         ],
       },
@@ -756,17 +1126,19 @@ export const subServiceDetails: SubItem[] = [
         "Our e-commerce solutions are designed to deliver seamless shopping experiences, integrate with the latest technologies, and optimize your sales funnel. Whether you're launching a new store or enhancing an existing one, we ensure your e-commerce platform is secure, mobile-optimized, and conversion-driven to maximize your revenue.",
       button: "Get Started with Your Online Store Today",
       afterButtonText:
-        "Let’s create a powerful, user-friendly online store that attracts customers, enhances their shopping experience, and grows your business.",
+        "Let’s create a powerful, user-friendly online store that attracts customers, enhances their shopping experience, and grows your business. Contact us today to discuss your e-commerce needs and discover how we can help you achieve your goals.",
     },
   },
   {
     category: "tailored-digital-solutions",
     subtitle: "Single Page Applications Built for Speed and Satisfaction",
     name: "performance-without-compromise",
+    imageSrc:
+      "https://images.unsplash.com/photo-1610967874005-eb522e86c4d9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAyfHxjdXN0b20lMjB3ZWJzaXRlfGVufDB8MHwwfHx8MA%3D%3D",
     info: {
       name: "High-Performance Single-Page Applications (SPAs) for a Seamless User Experience",
       title: "Performance Without Compromise",
-      hook: "Develop lightning-fast, dynamic web apps with seamless user interfaces that enhance functionality and user experience.",
+      hook: "Build fast, dynamic SPAs that scale and engage.",
       description: "Enhanced UX",
       intro: [
         "We specialize in creating fast, dynamic, and highly responsive single-page applications (SPAs) that redefine the user experience with real-time updates, seamless navigation, and exceptional performance. Leveraging cutting-edge frameworks like React, Angular, and Vue.js, along with modern development techniques, we build SPAs that deliver an engaging, app-like experience optimized for all devices and screen sizes. Our focus is on crafting applications that not only look great but also function flawlessly, ensuring your users enjoy a smooth, intuitive, and immersive journey.",
@@ -776,7 +1148,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "Our SPAs are engineered for interactivity and responsiveness. We design and develop fast, dynamic, real-time interfaces that deliver smooth user experiences—without sacrificing performance or scalability.",
       short:
-        "Create fast, dynamic, and user-friendly single-page applications (SPAs) that deliver seamless navigation and real-time updates. With cutting-edge frameworks and minimal load times, our SPAs provide a smooth, app-like experience across all devices, keeping users engaged and driving performance for your business.",
+        "We develop high-performance Single Page Applications using modern frameworks for seamless interactions and lightning-fast load times—optimized for performance, responsiveness, and future growth.",
       featured: false,
       pricing: {
         pricingTierIntro: {
@@ -788,33 +1160,134 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "SwiftStart: Basic SPA Development",
+            description:
+              "Launch a simple yet effective single-page application to meet immediate needs.",
             info: "A clean, responsive single-page application with essential features and smooth navigation. Perfect for startups or small teams needing a modern, user-friendly experience without added complexity.",
             useCase:
-              "Ideal for MVPs, landing pages, or internal tools where speed, simplicity, and usability are key.",
+              "A solid foundation for MVPs or internal tools that require fast load times and interactive experiences. Perfect for MVPs and proof-of-concept applications needing a functional and responsive interface.",
+            list: [
+              {
+                description: "Setup using Next.js + TypeScript",
+              },
+              {
+                description: "3–5 core pages",
+              },
+              {
+                description: "Tailwind CSS-based responsive layout",
+              },
+              {
+                description: "Client-side routing and state management",
+              },
+              {
+                description: "Basic SEO optimization",
+              },
+              {
+                description: "Tailwind CSS styling",
+              },
+            ],
           },
           {
             name: "CoreFlow: Dynamic SPA Experience",
+            description: "",
             info: "Enhance interactivity with real-time content updates, API integrations, and intuitive UI elements. A strong choice for businesses that value performance and seamless user experiences.",
             useCase:
-              "Best for businesses needing dynamic dashboards, live updates, and a more interactive front-end experience.",
+              "Designed for growing businesses requiring more interactive components and backend integration. Ideal for applications needing real-time data updates and user engagement.",
+            list: [
+              {
+                description: "All features from SwiftStart",
+              },
+              {
+                description: "10–15 interactive components/pages",
+              },
+              {
+                description: "Modular components with optimized performance",
+              },
+              {
+                description: "Advanced SEO techniques",
+              },
+              {
+                description: "Deployment and CI/CD setup",
+              },
+            ],
           },
           {
             name: "EliteFlow: Scalable, Custom SPA",
+            description:
+              "Create a custom SPA designed to scale with your business growth.",
             info: "Fully customized SPA development with advanced performance optimization, complex data handling, and a mobile-first architecture. Designed for businesses focused on growth and scalability.",
             useCase:
-              "Great for businesses with high traffic demands, complex state management needs, or a focus on progressive web app performance.",
+              "Tailored for complex business workflows or SaaS products needing advanced state management and testing. Ideal for applications requiring custom features and high performance.",
+            list: [
+              {
+                description: "All features from CoreFlow",
+              },
+              {
+                description: "Custom state management and routing",
+              },
+              {
+                description: "Advanced testing and debugging",
+              },
+              {
+                description: "Comprehensive SEO and performance audits",
+              },
+              {
+                description: "Authentication (login/signup flow)",
+              },
+              {
+                description: "User authentication and authorization",
+              },
+            ],
           },
           {
             name: "PWA Pro: Enterprise SPA Solution",
+            description:
+              "Implement a progressive web app that offers a native app-like experience.",
             info: "A high-performance solution featuring PWA capabilities, multi-platform support, and advanced real-time interaction. Ideal for large-scale platforms requiring robust, interactive functionality across devices.",
             useCase:
-              "Designed for enterprises delivering native-app-like experiences on the web with offline support, push notifications, and complex user interactions.",
+              "For businesses aiming to create installable Progressive Web Apps with offline capabilities. Perfect for applications needing high interactivity and offline access.",
+            list: [
+              {
+                description: "All features from EliteFlow",
+              },
+              {
+                description:
+                  "Lighthouse performance and accessibility optimization",
+              },
+              {
+                description: "Multi-platform support (web, mobile, desktop)",
+              },
+              {
+                description: "Role-based access controls",
+              },
+              {
+                description: "Customizable themes and branding",
+              },
+            ],
           },
           {
             name: "FlowCare: Ongoing SPA Maintenance",
+            description:
+              "Provide continuous support and updates to ensure your SPA remains optimal.",
             info: "Ensure your SPA remains fast, secure, and cutting-edge with regular maintenance, optimizations, and updates. Great for keeping your app aligned with modern tech and user expectations.",
             useCase:
-              "Perfect for businesses seeking peace of mind with proactive support, bug fixes, dependency upgrades, and continuous UX improvement.",
+              "Ensures your SPA remains up-to-date, secure, and performs optimally over time. Ideal for businesses that want to focus on growth without worrying about technical upkeep.",
+            list: [
+              {
+                description: "Regular performance audits and optimizations",
+              },
+              {
+                description: "Security updates and patches",
+              },
+              {
+                description: "Feature enhancements based on user feedback",
+              },
+              {
+                description: "Technical support and troubleshooting",
+              },
+              {
+                description: "Monthly analytics and performance reports",
+              },
+            ],
           },
         ],
       },
@@ -1019,22 +1492,24 @@ export const subServiceDetails: SubItem[] = [
       title:
         "Let’s Build a Seamless, High-Performance Platform That Delivers Results and Builds Lasting Relationships",
       intro:
-        "Single Page Applications (SPAs) offer a smooth, fast, and interactive experience that keeps users engaged. Let us help you create a SPA that is tailored to your business needs, enhancing user experience, boosting performance, and driving results.",
+        "Single Page Applications (SPAs) offer a smooth, fast, and interactive experience that keeps users engaged. Let us help you create a SPA that is tailored to your business needs, enhancing user experience, boosting performance, and driving results. With our expertise in SPA development, we can help you build a platform that not only meets your current needs but also scales with your business as it grows.",
       description:
-        "Our custom SPAs are designed to provide users with dynamic and fluid interactions, ensuring your platform delivers a seamless experience that keeps customers coming back. From intuitive navigation to real-time data, we focus on creating powerful digital experiences that connect with your audience and support your business growth.",
+        "Our custom SPAs are designed to provide users with dynamic and fluid interactions, ensuring your platform delivers a seamless experience that keeps customers coming back. From intuitive navigation to real-time data, we focus on creating powerful digital experiences that connect with your audience and support your business growth. Whether you need a simple web app or a complex platform, we have the expertise to deliver a solution that meets your needs and exceeds your expectations.",
       button: "Get Started Today",
       afterButtonText:
-        "Let’s build a high-converting platform that drives customer engagement and brings in consistent business.",
+        "Let’s build a high-converting platform that drives customer engagement and brings in consistent business. Contact us today to discuss your SPA development needs and discover how we can help you achieve your goals.",
     },
   },
   {
     category: "tailored-digital-solutions",
     subtitle: "High-Impact Websites That Perform",
     name: "custom-web-design-without-compromise",
+    imageSrc:
+      "https://images.unsplash.com/photo-1645650850779-dba7330d095f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fGN1c3RvbSUyMHdlYnNpdGV8ZW58MHwwfDB8fHww",
     info: {
       name: "Custom Websites Designed for Impact and Performance",
       title: "Custom Web Design Without Compromise",
-      hook: "Transform your digital presence with a custom website that not only captivates visitors but also aligns seamlessly with your brand’s vision and goals.",
+      hook: "Websites built from scratch to perform, inspire, and grow with you.",
       description: "Brand Differentiation",
       intro: [
         "We create custom websites that go beyond aesthetics—they are powerful tools designed to strategically drive your business forward. Every website we craft is a harmonious blend of creativity, functionality, and purpose, tailored to showcase your brand identity while aligning with your unique business goals. Our designs are fully responsive and optimized for high performance, ensuring flawless user experiences across desktops, tablets, and smartphones.",
@@ -1045,7 +1520,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "Our websites are crafted from the ground up to align with your brand, engage your users, and support your goals. Built with clean code, responsive layouts, and performance in mind, our designs are both beautiful and strategic.",
       short:
-        "Elevate your digital presence with custom-built websites that combine exceptional UX/UI design, smooth functionality, and SEO optimization. Whether you’re starting fresh or redesigning an existing site, our personalized solutions deliver a visually appealing, high-performing, and intuitive experience that enhances user engagement and drives business growth.",
+        "We create custom digital experiences tailored to your brand and goals—blending clean design, intuitive structure, and performance-first development for impactful online presence.",
       featured: true,
       pricing: {
         pricingTierIntro: {
@@ -1056,33 +1531,169 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "WebCore: Basic Website Package",
+            description:
+              "Develop a foundational website that effectively communicates your brand message.",
             info: "A streamlined custom website of up to 5 pages, perfect for startups and local businesses looking to launch a professional online presence with essential functionality and clean design.",
             useCase:
-              "Ideal for service providers, consultants, or local shops that need a quick, elegant web presence to build trust and visibility.",
+              "Ideal for startups and small businesses looking to establish an online presence quickly and affordably. This package delivers a streamlined, professional website with essential features.",
+            list: [
+              {
+                description: "3–5 page custom website design",
+              },
+              {
+                description: "Mobile-responsive layout",
+              },
+              {
+                description:
+                  "SEO-ready structure (basic meta tags, semantic HTML)",
+              },
+              {
+                description: "Social media integration",
+              },
+              {
+                description:
+                  "Standard accessibility features (WCAG 2.1 AA compliant)",
+              },
+              {
+                description: "Contact form integration",
+              },
+              {
+                description: "Optimized loading speed",
+              },
+              {
+                description: "1 revision cycle",
+              },
+            ],
           },
           {
             name: "WebElevate: Advanced Website Package",
+            description:
+              "Enhance your website with advanced features and improved user experience.",
             info: "Up to 10 custom-designed pages with interactive elements and dynamic features. Ideal for businesses looking to engage users and tell a more compelling brand story online.",
             useCase:
-              "Great for growing businesses ready to level up their storytelling, user engagement, and brand expression through interactivity.",
+              "Designed for growing businesses that need additional content and functionality, this package adds interactive elements and advanced integrations.",
+            list: [
+              {
+                description: "Up to 10 custom-designed pages",
+              },
+              {
+                description:
+                  "Advanced responsive design with breakpoint optimization",
+              },
+              {
+                description:
+                  "SEO enhancements (schema markup, keyword targeting)",
+              },
+              {
+                description: "Interactive elements (sliders, galleries)",
+              },
+              {
+                description: "Custom navigation and menu behavior",
+              },
+
+              {
+                description: "Enhanced performance optimization",
+              },
+              {
+                description: "2 revision cycles",
+              },
+            ],
           },
           {
             name: "WebImpact: Premium Website Experience",
+            description:
+              "Create a high-end website that offers a unique and engaging user experience.",
             info: "Up to 20 pages of premium design, SEO enhancements, and optional e-commerce integration. A comprehensive solution for businesses aiming to drive engagement and conversions.",
             useCase:
-              "Best for companies that rely on their website for lead generation, customer engagement, or as a content hub to attract organic traffic.",
+              "Perfect for brands that want a high-impact digital presence with tailored animations and advanced UX strategies. This package is ideal for e-commerce sites, portfolios, and service-based businesses looking to enhance user engagement.",
+            list: [
+              {
+                description: "Up to 15 custom-designed pages",
+              },
+              {
+                description: "Micro-interactions and animation effects",
+              },
+              {
+                description: "User research and persona-driven UX mapping",
+              },
+              {
+                description: "Custom forms and dynamic content",
+              },
+
+              {
+                description: "Basic e-commerce integration (if needed)",
+              },
+
+              {
+                description: "ADA & WCAG advanced accessibility compliance",
+              },
+              {
+                description: "3 revision cycles",
+              },
+            ],
           },
           {
             name: "WebScale: Enterprise Website Solution",
+            description:
+              "Build a scalable website solution designed to support large enterprises.",
             info: "A fully customized platform with complex functionality, secure integrations, and scalable infrastructure. Built for enterprises that demand reliability, performance, and advanced capabilities.",
             useCase:
-              "Tailored for high-traffic organizations or SaaS platforms that require custom workflows, integrations, and enterprise-grade performance.",
+              "Best suited for large businesses or organizations requiring a robust, scalable, and secure digital infrastructure. This package is ideal for enterprises with complex needs, such as multi-site management, extensive integrations, and high traffic demands.",
+            list: [
+              {
+                description: "Unlimited custom-designed pages",
+              },
+              {
+                description: "Scalable component-based design system",
+              },
+              {
+                description:
+                  "Advanced security measures (SSL, HTTPS, rate limiting, etc.)",
+              },
+              {
+                description: "API integrations and database connection",
+              },
+              {
+                description:
+                  "Performance monitoring setup (Google Analytics, etc.)",
+              },
+              {
+                description: "Priority support and 4 revision cycles",
+              },
+            ],
           },
           {
             name: "WebPulse: Maintenance & Performance",
+            description: "Provide ongoing maintenance and ",
             info: "Ongoing site monitoring, updates, and optimizations to ensure your website remains secure, fast, and relevant. Perfect for businesses that want peace of mind and continual improvement.",
             useCase:
-              "Great for any business that wants to maintain peak performance, strengthen security, and stay aligned with evolving UX trends.",
+              "A monthly or quarterly plan for businesses that need ongoing site optimization, updates, and technical support. This package is ideal for companies that want to ensure their website remains secure, fast, and up-to-date with the latest technologies.",
+            list: [
+              {
+                description: "Ongoing content updates and edits",
+              },
+              {
+                description: "Performance and SEO health checks",
+              },
+              {
+                description: "Plugin, CMS, and framework updates",
+              },
+              {
+                description: "Uptime monitoring and alerts",
+              },
+              {
+                description: "Monthly analytics reports",
+              },
+              {
+                description: "Access to priority support",
+              },
+              {
+                description: "Regular security audits and backups",
+              },
+              {
+                description: "1–2 hours of technical support per month",
+              },
+            ],
           },
         ],
       },
@@ -1357,22 +1968,24 @@ export const subServiceDetails: SubItem[] = [
       title:
         "Build a Unique Online Presence with a Custom Website Tailored to Your Business Needs",
       intro:
-        "A custom website is more than just a digital storefront—it’s your brand’s foundation. We design websites that reflect your values, engage your audience, and drive business growth. Let us help you create an online experience that stands out.",
+        "A custom website is more than just a digital storefront—it’s your brand’s foundation. We design websites that reflect your values, engage your audience, and drive business growth. Let us help you create an online experience that stands out. Whether you need a simple landing page or a complex web application, we have the expertise to bring your vision to life.",
       description:
         "Your website should be as unique as your business. With a custom-built website, we ensure your online presence is aligned with your goals, optimized for performance, and designed to engage visitors. Whether you need an e-commerce store, a portfolio, or a complex web app, we craft a solution tailored to your needs, ensuring you stand out from the competition and offer a memorable user experience.",
       button: "Get Started With Us Today!",
       afterButtonText:
-        "Let’s create a powerful, personalized website that captures your brand, enhances user experience, and drives long-term business success.",
+        "Let’s create a powerful, personalized website that captures your brand, enhances user experience, and drives long-term business success. Contact us today to discuss your project and discover how we can help you achieve your digital goals.",
     },
   },
   {
     category: "tailored-digital-solutions",
     subtitle: "User-Centered UX/UI Design",
     name: "interfaces-that-put-users-first",
+    imageSrc:
+      "https://images.unsplash.com/photo-1602576666092-bf6447a729fc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXglMjB1aXxlbnwwfDB8MHx8fDA%3D",
     info: {
       name: "User-Centered Interface Design for Seamless Experiences",
       title: "Interfaces That Put Users First",
-      hook: "Design intuitive, engaging user interfaces that deliver exceptional user experiences and foster satisfaction and accessibility.",
+      hook: "Design intuitive, accessible, and impactful digital experiences.",
       description: "Tailored UX",
       intro: [
         "We design intuitive and functional interfaces that seamlessly blend usability, accessibility, and aesthetic appeal to create exceptional user experiences. By conducting in-depth user research, we gain valuable insights into your audience’s behaviors, needs, and pain points, ensuring that every design decision is informed by real data. This user-centric approach allows us to craft interfaces that not only look stunning but also solve real problems and meet the expectations of your users.",
@@ -1382,7 +1995,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "Our design philosophy is rooted in accessibility, usability, and empathy. We conduct thorough research, wireframing, prototyping, and testing to create seamless interfaces that simplify complex interactions and deliver intuitive user experiences.",
       short:
-        "Design seamless, engaging, and user-friendly interfaces that combine beauty with functionality. Through in-depth user research and rigorous testing, we create intuitive experiences that prioritize accessibility, enhance usability, and leave a lasting impression on all users.",
+        "Through research-backed UX/UI design, we build interfaces that balance functionality with beauty. Every layout, interaction, and user flow is tailored to deliver accessibility, usability, and satisfaction.",
       featured: false,
       pricing: {
         pricingTierIntro: {
@@ -1392,34 +2005,141 @@ export const subServiceDetails: SubItem[] = [
         },
         pricingTiers: [
           {
-            name: "UIStarter: Simple & Accessible Design",
+            name: "UXBasic: Foundational UX/UI Design",
+            description:
+              "Develop basic user interfaces that prioritize ease of use and accessibility.",
             info: "Focuses on creating a clean, intuitive interface that meets accessibility standards and delivers a smooth user experience. Ideal for businesses looking for straightforward usability with thoughtful design.",
             useCase:
-              "Best for teams focused on clarity and inclusion, ensuring all users—including those with disabilities—can navigate the product easily.",
+              "Ideal for startups and small businesses seeking a professional and user-friendly interface to establish their digital presence. This package is perfect for simple websites, landing pages, and applications that require a clean and functional design without complex features.",
+            list: [
+              {
+                description: "Up to 5 custom-designed pages",
+              },
+              {
+                description: "Basic wireframes and user flow diagrams",
+              },
+              {
+                description:
+                  "Basic UI component set (buttons, forms, navigation)",
+              },
+              {
+                description: "Standard UI components and layout",
+              },
+              {
+                description: "Mobile-responsive design",
+              },
+              {
+                description: "1 revision cycle",
+              },
+              {
+                description: "Delivered in Figma or Adobe XD",
+              },
+            ],
           },
           {
-            name: "UIAdvance: Interactive User Flows",
+            name: "UIAdvance: Enhanced UX/UI Design",
+            description:
+              "Design complex user flows that enhance interactivity and user engagement.",
             info: "Includes advanced layouts, component logic, and dynamic interfaces. Designed to enhance engagement and guide users through seamless journeys with smart UI decisions.",
             useCase:
-              "Perfect for apps or platforms that require complex workflows and want to reduce friction in their conversion funnels.",
+              "For businesses aiming to improve user engagement with more interactive and visually appealing designs. This package is perfect for e-commerce platforms, SaaS applications, and any digital product requiring a more sophisticated user experience.",
+            list: [
+              {
+                description: "Up to 10 custom-designed pages",
+              },
+              {
+                description: "Advanced wireframes and user flow diagrams",
+              },
+              {
+                description:
+                  "Full component system (modals, dropdowns, cards, etc.)",
+              },
+              {
+                description: "Custom UI elements and icons",
+              },
+              {
+                description: "Accessibility considerations",
+              },
+              {
+                description: "2 revision cycles",
+              },
+            ],
           },
           {
             name: "UXElite: Complete UX/UI Design System",
+            description:
+              "Create a comprehensive design system that ensures consistency across all platforms.",
             info: "Comprehensive UX/UI design with high-fidelity mockups, usability testing, and multiple iterations. Tailored for polished, high-performing digital products with deep attention to detail.",
             useCase:
-              "Ideal for products preparing for launch or redesign, requiring pixel-perfect design, testing, and iteration cycles.",
+              "Best for scaling products and teams seeking a reusable and consistent design system. This package is ideal for large-scale applications, enterprise software, and any digital product requiring a cohesive design language across multiple platforms.",
+            list: [
+              {
+                description: "Design of up to 20 screens/pages",
+              },
+              {
+                description: "High-fidelity prototypes and mockups",
+              },
+              {
+                description: "Complete component library and UI kit",
+              },
+              {
+                description: "UX writing for key UI elements",
+              },
+              {
+                description: "3 revision cycles",
+              },
+            ],
           },
           {
             name: "MobilePrime: Mobile-First UX/UI",
+            description:
+              "Design user experiences optimized for mobile devices to reach users on the go.",
             info: "Dedicated to crafting mobile-first experiences that prioritize speed, responsiveness, and user satisfaction across devices. A must-have for businesses targeting mobile-first audiences.",
             useCase:
-              "Essential for B2C products where mobile traffic dominates, such as social platforms, marketplaces, or consumer services.",
+              "Optimized for businesses focusing on delivering exceptional mobile user experiences. This package is perfect for mobile apps, responsive websites, and any digital product where mobile usability is a priority.",
+            list: [
+              {
+                description: "Up to 10 mobile-optimized screens/pages",
+              },
+              {
+                description: "Mobile-first wireframes and user flows",
+              },
+              {
+                description: "Touch-friendly UI components",
+              },
+              {
+                description: "App store optimization visuals",
+              },
+              {
+                description: "2 revision cycles",
+              },
+            ],
           },
           {
             name: "UXSuite: Full UX/UI Strategy & Execution",
+            description:
+              "Develop and implement a complete UX/UI strategy from research to final design.",
             info: "End-to-end UX strategy and implementation—from user research to persona development, wireframes, and usability testing. Ideal for platforms requiring holistic, user-centered design across web and app.",
             useCase:
-              "Best for startups and enterprises building feature-rich platforms that require a research-driven approach to ensure alignment with real user needs.",
+              "Comprehensive solution for complex products requiring in-depth UX research and strategy implementation.",
+            list: [
+              {
+                description:
+                  "Full product UX strategy (research, personas, journeys)",
+              },
+              {
+                description: "Comprehensive wireframes and prototypes",
+              },
+              {
+                description: "Inclusive design and WCAG AA compliance",
+              },
+              {
+                description: "Design system documentation",
+              },
+              {
+                description: "4 revision cycles",
+              },
+            ],
           },
         ],
       },
@@ -1552,22 +2272,24 @@ export const subServiceDetails: SubItem[] = [
       title:
         "Create Seamless, User-Centered Experiences with Our Interface Design Services",
       intro:
-        "Your users deserve an intuitive, seamless, and engaging experience that not only meets their needs but also exceeds their expectations. Our user-centered interface design ensures that every interaction on your website or application is smooth, meaningful, and tailored to provide the best possible experience. We focus on creating interfaces that are not just functional but also enjoyable, fostering long-term user engagement and loyalty.",
+        "Your users deserve an intuitive, seamless, and engaging experience that not only meets their needs but also exceeds their expectations. Our user-centered interface design ensures that every interaction on your website or application is smooth, meaningful, and tailored to provide the best possible experience. We focus on creating interfaces that are not just functional but also enjoyable, fostering long-term user engagement and loyalty. Whether you need a complete redesign or enhancements to your existing platform, our team is here to help you create an interface that resonates with your audience and drives results. Let us help you build a digital experience that captivates and converts.",
       description:
         "We believe that exceptional design begins with a deep understanding of your users. Our approach to user-centered interface design focuses on crafting intuitive, aesthetically pleasing, and easy-to-navigate interfaces that balance user needs with business goals. By prioritizing usability and functionality, we make sure your users can complete tasks quickly and effortlessly, which drives satisfaction, enhances loyalty, and improves overall user experience.",
       button: "Enhance Your User Experience Today",
       afterButtonText:
-        "Let’s collaborate to create an interface that simplifies interactions, boosts engagement, and delivers a seamless experience for your users.",
+        "Let’s collaborate to create an interface that simplifies interactions, boosts engagement, and delivers a seamless experience for your users. Contact us today to discuss your project and discover how we can help you achieve your design goals.",
     },
   },
   {
     category: "tailored-digital-solutions",
     subtitle: "SEO-Optimized Blog Writing Services",
     name: "content-that-drives-organic-growth",
+    imageSrc:
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZ3xlbnwwfDB8MHx8fDA%3D",
     info: {
       name: "SEO-Optimized, Engaging Blog Content",
       title: "Content That Drives Organic Growth",
-      hook: "Create insightful, SEO-optimized blog posts that capture attention, drive website traffic, and build lasting engagement with your audience.",
+      hook: "Elevate your SEO and brand authority through insightful blog content.",
       description: "Web Traffic",
       intro: [
         "We create compelling and informative blog posts that do more than just capture attention—they drive results. Each post is meticulously crafted to align with your brand voice, reflect your industry expertise, and resonate with your target audience. By delivering valuable, relevant, and engaging content, we help position your brand as a trusted authority in your field, building credibility and fostering stronger connections with your audience.",
@@ -1578,7 +2300,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "We create informative, engaging blog content that reflects your voice, educates your audience, and boosts your search visibility. Each post is crafted to attract organic traffic, establish credibility, and support your content marketing strategy.",
       short:
-        "Create SEO-optimized, engaging blog content that drives organic traffic and boosts search rankings. Tailored to your brand voice and industry, our blog posts provide valuable insights that foster audience engagement, establish authority, and support long-term growth.",
+        "Our blog writing services attract traffic and build authority with engaging, keyword-rich content tailored to your audience, goals, and brand voice.",
       featured: true,
       pricing: {
         pricingTierIntro: {
@@ -1589,33 +2311,128 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "QuickPost: Essential Blog Content",
+            description:
+              "Produce concise blog posts that address key topics relevant to your audience.",
             info: "A concise, SEO-focused post (up to 500 words) designed for quick updates, industry tips, or announcements. Perfect for businesses that want to stay active online with digestible, engaging content.",
             useCase:
-              "Great for regular website updates, seasonal promos, and staying visible in search without large content investments.",
+              "Ideal for quick updates or single-topic posts to keep your audience informed. This package is perfect for businesses looking to maintain an active online presence without committing to long-form content.",
+            list: [
+              {
+                description: "Up to 500 words",
+              },
+              {
+                description: "Keyword research and SEO meta tags",
+              },
+              {
+                description: "1 revision cycle",
+              },
+              {
+                description: "Delivery in Google Doc or Markdown",
+              },
+            ],
           },
           {
             name: "InsightPost: In-Depth Article",
+            description:
+              "Develop comprehensive articles that provide valuable insights and information.",
             info: "An engaging blog post (up to 1,000 words) with keyword optimization, strong structure, and thoughtful analysis. Ideal for building trust, authority, and organic visibility in your niche.",
             useCase:
-              "Ideal for brands aiming to establish expertise and rank for mid-tier SEO keywords in their industry.",
+              "Perfect for educational or how-to content that provides value to your readers. This package is ideal for businesses looking to establish authority and drive organic traffic through informative articles.",
+            list: [
+              {
+                description: "Up to 1,000 words",
+              },
+              {
+                description: "Topic ideation and editorial calendar assistance",
+              },
+              {
+                description: "2 revision cycles",
+              },
+              {
+                description: "Delivery in Google Doc or Markdown",
+              },
+            ],
           },
           {
             name: "AuthorityPost: Premium Long-Form Content",
+            description:
+              "Create detailed, authoritative content that establishes your brand as an industry leader.",
             info: "A robust, 2,000-word blog post tailored to position your brand as a thought leader. Includes keyword strategy, structured storytelling, and rich SEO formatting to maximize organic reach.",
             useCase:
-              "Perfect for businesses focused on content marketing ROI and aiming to dominate high-competition search terms.",
+              "Establishes brand authority through comprehensive and well-researched articles. This package is ideal for businesses looking to create in-depth content that resonates with their audience and drives organic traffic.",
+            list: [
+              {
+                description: "Up to 2,000 words",
+              },
+              {
+                description: "Expert research and fact-checking",
+              },
+              {
+                description: "Custom graphics or diagrams",
+              },
+              {
+                description: "Quote sourcing integration",
+              },
+              {
+                description: "3 revision cycles",
+              },
+              {
+                description: "Delivery in Google Doc or Markdown",
+              },
+            ],
           },
           {
             name: "BlogFlow: Monthly Publishing Plan",
+            description:
+              "Maintain a consistent blogging schedule to keep your audience engaged.",
             info: "A consistent content stream of 4 SEO-optimized posts (1,000–1,500 words) each month. Ideal for brands seeking sustained growth in authority, engagement, and search visibility.",
             useCase:
-              "Best for companies that want to automate their blog presence and boost domain authority over time.",
+              "Keeps your blog active and relevant with consistent, high-quality content. This package is perfect for businesses looking to maintain a steady flow of content and engage their audience regularly.",
+            list: [
+              {
+                description: "4 posts per month (1,000–1,500 words each)",
+              },
+              {
+                description: "Topic planning and content calendar",
+              },
+              {
+                description: "Ongoing keyword strategy",
+              },
+              {
+                description: "2 revision cycles per post",
+              },
+              {
+                description: "Delivery in Google Doc or Markdown",
+              },
+            ],
           },
           {
             name: "ContentEngine: Custom Blog Strategy & Execution",
+            description:
+              "Develop and execute a tailored blog strategy aligned with your business goals.",
             info: "A tailored content strategy with ongoing blog production (6+ posts/month), comprehensive keyword research, and performance tracking. Best for businesses committed to long-term content marketing success.",
             useCase:
-              "Great for businesses investing in inbound marketing and wanting fully managed content campaigns with measurable growth results.",
+              "Full-service blog strategy, creation, and management tailored to your brand's goals. This package is ideal for businesses looking to invest in a comprehensive content marketing strategy that drives results.",
+            list: [
+              {
+                description: "6+ posts per month (1,000–2,000 words each)",
+              },
+              {
+                description: "Custom content strategy and editorial calendar",
+              },
+              {
+                description: "In-depth keyword research and SEO analysis",
+              },
+              {
+                description: "Performance tracking and reporting",
+              },
+              {
+                description: "3 revision cycles per post",
+              },
+              {
+                description: "Delivery in Google Doc or Markdown",
+              },
+            ],
           },
         ],
       },
@@ -1706,20 +2523,22 @@ export const subServiceDetails: SubItem[] = [
       intro:
         "Boost your website’s traffic, engagement, and brand visibility with SEO-optimized blog content that not only resonates with your audience but also excels in search engine rankings. Our expertly crafted blog posts are designed to capture attention, deliver valuable insights, and strategically incorporate keywords to enhance your visibility and drive organic traffic. By focusing on relevant, engaging content, we help your business attract potential customers and build credibility in your industry.",
       description:
-        "Our blog writing services are specifically tailored to create high-quality, SEO-friendly content that draws visitors and keeps them engaged. Through smart keyword integration, informative content, and alignment with your brand’s voice, we help improve your search rankings while strengthening connections with your audience. With our expertise, your blog will become an essential asset in driving organic traffic and supporting long-term growth.",
+        "Our blog writing services are specifically tailored to create high-quality, SEO-friendly content that draws visitors and keeps them engaged. Through smart keyword integration, informative content, and alignment with your brand’s voice, we help improve your search rankings while strengthening connections with your audience. With our expertise, your blog will become an essential asset in driving organic traffic and supporting long-term growth. Let us help you transform your online presence and establish your brand as a thought leader in your industry.",
       button: "Start Growing Your Blog Today",
       afterButtonText:
-        "Let’s craft compelling, SEO-optimized blog posts that attract your target audience, increase conversions, and position your brand as an industry leader.",
+        "Let’s craft compelling, SEO-optimized blog posts that attract your target audience, increase conversions, and position your brand as an industry leader. Contact us today to discuss your content needs and discover how we can help you achieve your blogging goals.",
     },
   },
   {
     category: "tailored-digital-solutions",
     subtitle: "Expert Technical Writing That Simplifies the Complex",
     name: "clarity-through-precision",
+    imageSrc:
+      "https://images.unsplash.com/photo-1502465771179-51f3535da42c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaG5pY2FsJTIwd3JpdGluZ3xlbnwwfDB8MHx8fDA%3D",
     info: {
-      name: "Expert Technical Writing for Clarity & Precision",
+      name: "Clear, Structured Documentation That Bridges the Gap between Complexity and Usability",
       title: "Clarity Through Precision",
-      hook: "Produce clear, precise, and structured technical documentation to support complex processes and tools for your team or customers.",
+      hook: "Turn complex technical information into simple, actionable content.",
       description: "Documentation",
       intro: [
         "Our technical writing services are designed to simplify complexity, transforming intricate concepts into clear, concise, and user-friendly documentation that empowers your audience. Whether you require software manuals, API documentation, white papers, or technical guides, we deliver meticulously crafted content that is accurate, well-structured, and tailored to your specific needs. By breaking down technical jargon and presenting information in an accessible format, we ensure your audience can easily understand, navigate, and apply the material.",
@@ -1730,7 +2549,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "We turn technical concepts into clear, accessible documentation. Whether it’s a software guide, user manual, or internal system documentation, we ensure every piece is accurate, readable, and tailored to your audience’s understanding.",
       short:
-        "Transform complex information into clear, concise, and user-friendly technical documentation. From software manuals to API guides, we create precise, accessible content that enhances understanding, reduces learning curves, and ensures seamless adoption for both technical and non-technical audiences.",
+        "We write clear, accessible, and structured technical documentation to reduce friction and improve understanding—perfect for user manuals, API docs, onboarding guides, and internal systems.",
       featured: true,
       pricing: {
         pricingTierIntro: {
@@ -1741,27 +2560,112 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "DocStart: Basic Technical Docs",
+            description:
+              "Create foundational technical documents that clearly explain your products or services.",
             info: "Clear, concise documentation for simple products or services, such as user guides or how-to manuals. Ideal for businesses needing foundational content that users can follow with ease.",
             useCase:
-              "Perfect for startups or SaaS products launching MVPs that need easy-to-read setup instructions or customer-facing help content.",
+              "Perfect for startups or small teams who need foundational documentation to improve user understanding and reduce support requests. This package is ideal for businesses looking to create user-friendly guides that simplify complex processes.",
+            list: [
+              {
+                description:
+                  "Up to 5 pages of basic documentation (e.g., setup guides or FAQs)",
+              },
+              {
+                description:
+                  "Simple formatting with branded headers and footers",
+              },
+              {
+                description: "Clear, non-technical language aimed at end users",
+              },
+              {
+                description: "1 revision cycle",
+              },
+              {
+                description: "Delivery in Google Doc or Markdown",
+              },
+            ],
           },
           {
             name: "DocBuild: Standard Tech Documentation",
+            description:
+              "Develop comprehensive documentation that supports user understanding and product usage.",
+
             info: "Structured, detailed content including SOPs, integration guides, or API references. Includes visual support and logical flow for easier adoption and understanding by your users or devs.",
             useCase:
-              "Ideal for dev teams or product managers who need to onboard users or partners with API references, SOPs, and integration walkthroughs.",
+              "Designed for growing businesses that need formal documentation to support internal operations or external clients. This package is ideal for companies looking to create comprehensive documentation that enhances user understanding and reduces support requests.",
+            list: [
+              {
+                description:
+                  "Up to 10 pages of detailed documentation (e.g., user manuals or API references)",
+              },
+              {
+                description: "Visual aids (screenshots, diagrams, etc.)",
+              },
+              {
+                description:
+                  "Consistent style guide application across all documents",
+              },
+              {
+                description: "2 revision cycles",
+              },
+              {
+                description: "Includes feedback round and 1 revision cycle",
+              },
+            ],
           },
           {
             name: "DocSuite: Advanced System Documentation",
+            description:
+              "Produce in-depth documentation for complex systems, ensuring clarity for technical audiences.",
             info: "Deep, well-organized documentation including system architecture, troubleshooting guides, and in-depth API coverage. Suited for complex platforms that demand clarity and precision.",
             useCase:
-              "Designed for complex platforms—like ERP systems, fintech, or developer platforms—requiring internal and external documentation that scales.",
+              "Ideal for SaaS platforms or software products requiring detailed user, admin, or API documentation. This package is perfect for businesses looking to create comprehensive documentation that enhances user understanding and reduces support requests.",
+            list: [
+              {
+                description:
+                  "Up to 20 pages of advanced documentation (e.g., system architecture or troubleshooting guides)",
+              },
+              {
+                description: "In-depth technical writing with diagrams",
+              },
+              {
+                description: "Custom graphics or flowcharts",
+              },
+              {
+                description: "3 revision cycles",
+              },
+              {
+                description:
+                  "Delivered in multiple formats (PDF, HTML, Markdown)",
+              },
+            ],
           },
           {
             name: "TechWrite Pro: Custom Documentation Solution",
+            description:
+              "Tailor documentation solutions to meet specific business and technical requirements.",
             info: "Completely tailored technical writing for your domain—whether software, hardware, or niche tools. Covers everything from internal workflows to client-facing documentation at an expert level.",
             useCase:
-              "Best for enterprises or niche industries needing tailored documentation that aligns with both technical depth and domain-specific standards.",
+              "Best suited for enterprise or technical teams needing custom documentation workflows and advanced deliverables. This package is ideal for businesses looking to create comprehensive documentation that enhances user understanding and reduces support requests.",
+            list: [
+              {
+                description:
+                  "Unlimited pages of custom technical documentation",
+              },
+              {
+                description: "Interactive diagrams or embedded code examples",
+              },
+              {
+                description: "Ongoing updates and maintenance included",
+              },
+              {
+                description: "6 revision cycles",
+              },
+              {
+                description:
+                  "Delivery in multiple formats (PDF, HTML, Markdown)",
+              },
+            ],
           },
         ],
       },
@@ -1851,22 +2755,24 @@ export const subServiceDetails: SubItem[] = [
       title:
         "Ensure Clear, Precise, and Effective Communication with Expert Technical Writing",
       intro:
-        "Technical documentation plays a critical role in simplifying complex concepts, improving user comprehension, and reducing the need for additional support. We specialize in creating clear, concise, and actionable content that empowers your users, enhances their experience, and reinforces your brand's authority and trustworthiness.",
+        "Technical documentation plays a critical role in simplifying complex concepts, improving user comprehension, and reducing the need for additional support. We specialize in creating clear, concise, and actionable content that empowers your users, enhances their experience, and reinforces your brand's authority and trustworthiness. Whether you need user manuals, API documentation, or internal guides, our technical writing services are designed to deliver high-quality content that meets your specific needs and exceeds your audience's expectations. By focusing on clarity, structure, and usability, we help you create documentation that not only informs but also engages your audience, driving better understanding and satisfaction. ",
       description:
-        "Our technical writing services are designed to deliver precise, user-friendly documentation that makes your product easy to use and understand. Whether it's product manuals, user guides, API documentation, or FAQs, we ensure the content is not only clear and structured but also fully aligned with your brand’s tone and voice. By breaking down complex processes into simple, digestible steps, we help your audience resolve issues quickly and efficiently, reducing frustration and enhancing their overall experience",
+        "Our technical writing services are designed to deliver precise, user-friendly documentation that makes your product easy to use and understand. Whether it's product manuals, user guides, API documentation, or FAQs, we ensure the content is not only clear and structured but also fully aligned with your brand’s tone and voice. By breaking down complex processes into simple, digestible steps, we help your audience resolve issues quickly and efficiently, reducing frustration and enhancing their overall experience. Our goal is to create documentation that empowers your users, improves product adoption, and minimizes support requests. With our expertise in technical writing, we ensure that your documentation is not just a formality but a valuable resource that adds real value to your product and brand. Let us help you transform your technical information into clear, actionable content that drives user satisfaction and success.",
       button: "Get Connected Today!",
       afterButtonText:
-        "Let’s create technical documentation that empowers your users, reduces confusion, and enhances your product’s value.",
+        "Let’s create technical documentation that empowers your users, reduces confusion, and enhances your product’s value. Contact us today to discuss your technical writing needs and discover how we can help you deliver clear, effective documentation that drives user satisfaction and success.",
     },
   },
   {
     category: "tailored-digital-solutions",
     subtitle: "Newsletters Designed to Connect and Convert",
     name: "email-that-engages",
+    imageSrc:
+      "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3c2xldHRlcnxlbnwwfDB8MHx8fDA%3D",
     info: {
       name: "Engaging & Impactful Newsletters",
       title: "Email That Engages",
-      hook: "Design and write impactful newsletters that keep your audience informed, engaged, and ready to take action.",
+      hook: "Build relationships and drive results with strategic, well-designed newsletters.",
       description: "Measurable Results",
       intro: [
         "We create captivating and visually stunning newsletters that serve as a powerful tool to keep your audience engaged, informed, and deeply connected with your brand. Whether you’re sharing a one-time announcement, launching a product, or maintaining an ongoing series, our newsletters are designed to deliver maximum impact. By blending compelling content, targeted messaging, and vibrant, on-brand designs, we ensure your newsletters stand out in crowded inboxes and leave a lasting impression.",
@@ -1876,7 +2782,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "We create high-performing newsletters that blend compelling content with visual clarity. Optimized for readability and engagement, our campaigns are crafted to increase open rates, drive clicks, and keep your audience coming back for more.",
       short:
-        "Create engaging, visually appealing newsletters that keep your audience informed and connected. With compelling content and strategic design, our newsletters drive engagement, build relationships, and strengthen brand loyalty, ensuring your message stands out and delivers measurable results.",
+        "We craft newsletters that inform and inspire—blending engaging content with compelling visuals to increase open rates, boost engagement, and reinforce brand presence.",
       featured: true,
       pricing: {
         pricingTierIntro: {
@@ -1887,27 +2793,99 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "NewsSnap: One-Time Newsletter",
+            description:
+              "Design and distribute a single, impactful newsletter to communicate key messages.",
             info: "A single, custom-designed newsletter for promotions, announcements, or quick updates. Ideal for businesses needing impactful communication with clear calls to action.",
             useCase:
-              "Best for small business promos, seasonal announcements, or event-based email blasts that need sharp, clear messaging.",
+              "Great for single announcements or event-driven campaigns that need a professional touch. Best for small business promos, seasonal announcements, or event-based email blasts that need sharp, clear messaging.",
+            list: [
+              {
+                description: "1 custom-designed newsletter",
+              },
+              {
+                description: "Copywriting up to 300 words",
+              },
+              {
+                description:
+                  "Branded header/footer, call-to-action, and imagery",
+              },
+              {
+                description:
+                  "Mobile-optimized and ready for Mailchimp, Klaviyo, or ConvertKit",
+              },
+            ],
           },
           {
             name: "EngageFlow: Monthly Email Series",
+            description:
+              "Develop a series of newsletters to maintain regular engagement with your audience.",
             info: "A full month of newsletters (up to 4 emails), each crafted to build engagement and brand loyalty. Perfect for businesses maintaining regular communication with their audience.",
             useCase:
-              "Ideal for companies looking to maintain audience interest with consistent value-driven content that builds trust over time.",
+              "For businesses looking to stay consistently connected with their audience. This package is ideal for brands that want to maintain a regular cadence of communication, share updates, and drive engagement through consistent messaging.",
+            list: [
+              {
+                description: "Up to 4 newsletters per month (1 per week)",
+              },
+              {
+                description: "Copywriting up to 500 words each",
+              },
+              {
+                description: "A/B testing for subject lines and content",
+              },
+              {
+                description: "Custom layouts per campaign",
+              },
+              {
+                description: "Advanced segmentation and targeting",
+              },
+            ],
           },
           {
             name: "ConvertFlow: Advanced Email Campaigns",
+            description:
+              "Implement targeted email campaigns designed to convert leads into customers.",
             info: "Up to 8 strategic newsletters per month featuring segmentation, dynamic content, analytics, and conversion-focused design. Great for scaling email marketing with smarter targeting.",
             useCase:
-              "Great for scaling brands that rely on email to convert leads, nurture relationships, and track user engagement through segmentation.",
+              "Built for conversion-driven teams who rely on segmented, behavior-based outreach. This package is ideal for businesses looking to implement advanced email marketing strategies, including segmentation, A/B testing, and personalized content to drive conversions.",
+            list: [
+              {
+                description: "Up to 8 newsletters per month",
+              },
+              {
+                description: "Copywriting up to 800 words each",
+              },
+              {
+                description: "Performance analytics and reporting",
+              },
+              {
+                description: "Custom layouts and dynamic content",
+              },
+              {
+                description:
+                  "Integration with your email marketing platform (Mailchimp, Klaviyo, etc.)",
+              },
+            ],
           },
           {
             name: "InboxPro: Fully Customized Newsletter Plan",
+            description:
+              "Create a bespoke newsletter strategy tailored to your brand and audience preferences.",
             info: "A strategic email content system with custom frequency, targeting, automation, and growth strategy. Tailored for businesses that rely on email to drive retention, traffic, and revenue.",
             useCase:
-              "Ideal for high-growth companies that use email as a core marketing channel and want to automate, test, and scale their messaging systems.",
+              "The all-in-one package for brands with active subscriber bases and complex campaign goals. This package is ideal for businesses looking to create a fully customized newsletter strategy that aligns with their brand goals and audience preferences. It includes tailored content, advanced segmentation, and ongoing optimization to ensure maximum engagement and conversions.",
+            list: [
+              {
+                description:
+                  "Unlimited newsletters with custom frequency and targeting",
+              },
+              {
+                description: "Copywriting up to 1,000 words each",
+              },
+              {
+                description:
+                  "Automated lifecycle emails (welcome, cart recovery, post-purchase, etc.)",
+              },
+            ],
           },
         ],
       },
@@ -2017,7 +2995,7 @@ export const subServiceDetails: SubItem[] = [
       title:
         "Connect, Engage, and Grow Your Audience with Impactful Newsletters",
       intro:
-        "Craft compelling newsletters that not only inform but also inspire action. Our expertly designed newsletters engage your audience, build relationships, and drive conversions, helping you stay top-of-mind with your subscribers.",
+        "Craft compelling newsletters that not only inform but also inspire action. Our expertly designed newsletters engage your audience, build relationships, and drive conversions, helping you stay top-of-mind with your subscribers. Whether you’re sharing product updates, industry insights, or exclusive offers, our newsletters are tailored to resonate with your audience and encourage meaningful interactions. With a focus on clear messaging, eye-catching visuals, and strategic calls-to-action, we ensure your newsletters deliver maximum impact and drive results. Let us help you create newsletters that captivate your audience and keep them coming back for more.",
       description:
         "From targeted content and eye-catching visuals to personalized messaging and clear calls-to-action, we ensure every newsletter is designed to captivate your audience. Whether you're sharing updates, offering promotions, or building brand loyalty, our newsletters provide the perfect platform to keep your subscribers engaged and your brand front and center.",
       button: "Start Creating Your Optimized Newsletter Today",
@@ -2029,10 +3007,12 @@ export const subServiceDetails: SubItem[] = [
     category: "tailored-digital-solutions",
     subtitle: "Optimized Database Management Solutions",
     name: "secure-and-scalable-data-architecture",
+    imageSrc:
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRhdGFiYXNlfGVufDB8MHwwfHx8MA%3D%3D",
     info: {
       name: "Optimized & Secure Database Management Solutions",
       title: "Secure, Scalable Data Architecture",
-      hook: "Implement secure and efficient database solutions that scale with your business, ensuring reliable and organized data management.",
+      hook: "Design powerful database solutions that grow with your business.",
       description: "Data Security",
       intro: [
         "Security is at the core of our approach. With robust protocols and compliance with industry standards, we safeguard your sensitive information against potential threats, ensuring your data remains protected and your operations remain uninterrupted. From real-time data processing and seamless integrations to scalable storage solutions, we provide the tools and expertise needed to handle even the most complex data challenges.",
@@ -2042,7 +3022,7 @@ export const subServiceDetails: SubItem[] = [
       details:
         "We design database systems that are fast, flexible, and fortified. Built for performance and peace of mind, our solutions scale with your business, support real-time integration, and maintain high standards of data security and accessibility.",
       short:
-        "Empower your business with secure, scalable, and high-performance database management solutions. We design optimized systems for seamless data storage, real-time processing, and integration, while ensuring top-tier security to protect sensitive information and support long-term growth.",
+        "Our scalable database architecture ensures secure, organized, and high-performing data systems. We implement real-time processing, seamless integrations, and enterprise-level security for lasting efficiency and growth.",
       featured: true,
       pricing: {
         pricingTierIntro: {
@@ -2053,30 +3033,40 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "DataCore: Basic Setup & Security",
+            description:
+              "Establish a secure and efficient database foundation tailored to your business needs.",
             info: "Secure and scalable initial database setup including backups and core security layers. Best suited for small businesses managing user data or transactions.",
             useCase:
               "Perfect for businesses spinning up new web apps or e-commerce stores that need a secure, dependable backend from day one.",
           },
           {
             name: "DataBoost: Performance Optimization",
+            description:
+              "Enhance database performance through optimization techniques for faster data retrieval.",
             info: "Tuning and optimization of existing databases for speed, efficiency, and scalability. Ideal for growing systems that require quicker response times and better resource handling.",
             useCase:
               "Ideal for web apps or SaaS platforms seeing growth and needing reduced query times, index optimization, or resource tuning.",
           },
           {
             name: "DataShield: Advanced Security & Integrity",
+            description:
+              "Implement advanced security measures to protect sensitive information and ensure data integrity.",
             info: "Advanced security protocols, data encryption, audit logs, and real-time alerts. Helps businesses protect sensitive information and meet compliance standards.",
             useCase:
               "Designed for fintech, healthcare, or any data-sensitive operation requiring compliance, security audits, and threat mitigation.",
           },
           {
             name: "DataBridge: Migration & Integration",
+            description:
+              "Facilitate seamless data migration and integration between systems with minimal downtime.",
             info: "Seamless migration to scalable platforms with full integration support for apps, APIs, or third-party services. Designed to future-proof your infrastructure.",
             useCase:
               "Best for teams migrating legacy systems to modern infrastructure (e.g., PostgreSQL, MongoDB, or cloud-native solutions) with zero data loss.",
           },
           {
             name: "DataPulse: Ongoing Management & Monitoring",
+            description:
+              "Provide continuous monitoring and management to maintain optimal database performance.",
             info: "24/7 database monitoring, proactive optimizations, and troubleshooting. Ensures your data is always accessible, secure, and running at peak efficiency.",
             useCase:
               "Perfect for growing apps that want reliable performance, automated alerts, uptime monitoring, and real-time diagnostics.",
@@ -2178,18 +3168,20 @@ export const subServiceDetails: SubItem[] = [
       title:
         "Ensure Data Security and Optimize Performance with Expert Database Management",
       intro:
-        "Data is the backbone of your business, and managing it efficiently is crucial to your success. Our expert database management services ensure your data is secure, optimized, and always accessible, allowing you to focus on growth while we handle the technical details.",
+        "Data is the backbone of your business, and managing it efficiently is crucial to your success. Our expert database management services ensure your data is secure, optimized, and always accessible, allowing you to focus on growth while we handle the technical details. With a focus on performance, security, and scalability, we provide tailored solutions that meet your unique needs. Our team of experts is dedicated to delivering high-quality database management services that empower your business to thrive in a data-driven world.",
       description:
-        "With our customized solutions, we ensure your database runs efficiently, scales with your business, and remains secure. From real-time data processing to backup and recovery solutions, we provide a comprehensive approach to database management that supports your operations and drives better decision-making.",
+        "With our customized solutions, we ensure your database runs efficiently, scales with your business, and remains secure. From real-time data processing to backup and recovery solutions, we provide a comprehensive approach to database management that supports your operations and drives better decision-making. Whether you need to optimize an existing database or build a new one from scratch, our team of experts is here to help you every step of the way. Let us help you unlock the full potential of your data and drive your business forward.",
       button: "Optimize Your Database Today",
       afterButtonText:
-        "Let us help you streamline data management, enhance performance, and ensure the security of your valuable business information.",
+        "Let us help you streamline data management, enhance performance, and ensure the security of your valuable business information. Contact us today to learn more about our database management services and how we can support your business goals.",
     },
   },
   {
     category: "tailored-digital-solutions",
     subtitle: "Wireframing and Prototyping That Bring Ideas to Life",
     name: "blueprints-for-success",
+    imageSrc:
+      "https://plus.unsplash.com/premium_photo-1661375427386-64ac35086427?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2lyZWZyYW1pbmd8ZW58MHwwfDB8fHww",
     info: {
       name: "From Concept to Clickable: Wireframing & Prototyping Services",
       title: "Blueprints for Success",
@@ -2216,27 +3208,79 @@ export const subServiceDetails: SubItem[] = [
         pricingTiers: [
           {
             name: "WireBase: Low-Fidelity Starter",
+            description: "",
             info: "Basic wireframes for up to 5 screens to outline structure and core navigation. Ideal for teams starting early design planning and visualizing core user flows.",
             useCase:
-              "Great for early product planning or internal pitch decks where stakeholders need quick visualization of layout and navigation.",
+              "For teams needing an initial wireframe to visualize layout and flow. Great for brainstorming sessions, early-stage discussions, or as a foundation for further design work. ",
+            list: [
+              {
+                description: "Low-fidelity wireframes (up to 5 pages)",
+              },
+              {
+                description:
+                  "Focus on layout, structure, and content hierarchy",
+              },
+              {
+                description: "1 revision round",
+              },
+            ],
           },
           {
             name: "WirePro: Mid-Fidelity Wireframes + Prototype",
+            description: "",
             info: "Up to 10 well-designed screens with clickable prototypes to simulate user interaction. Suitable for presenting ideas and refining designs before development.",
             useCase:
-              "Ideal for startups preparing investor decks, stakeholder demos, or initial usability validation with interactive flows.",
+              "Ideal for teams that want a more interactive and detailed wireframe for early testing. Great for validating design concepts and gathering feedback from stakeholders or users.",
+            list: [
+              {
+                description: "Everything in WireBase",
+              },
+              {
+                description: "User flow diagrams",
+              },
+              {
+                description: "2 rounds of revisions",
+              },
+            ],
           },
           {
             name: "WireMax: Advanced Prototyping Package",
+            description: "",
             info: "Detailed wireframes for up to 15 screens with logic-driven interactions and flow validation. Includes iteration rounds based on early-stage user feedback.",
             useCase:
-              "Best for teams with complex app ideas needing testing of flow logic and UX validation before committing to full UI design.",
+              "Best for product teams ready to simulate final UI with real interactions. Ideal for validating user flows and gathering feedback before development begins.",
+            list: [
+              {
+                description: "Everything in WirePro",
+              },
+              {
+                description: "Advanced interactions and microanimations",
+              },
+              {
+                description: "3 rounds of revisions",
+              },
+            ],
           },
           {
             name: "UXPilot: Full Prototyping + User Testing",
+            description: "",
             info: "High-fidelity wireframes, polished prototypes, and real user testing. Ideal for serious product teams who need strategic design validation before development.",
             useCase:
-              "Perfect for mature product teams or funded startups aiming for market-ready prototypes, validated through real-world usability insights.",
+              "Comprehensive package that combines prototyping with actual usability testing and improvements. Perfect for teams looking to validate their designs with real users and gather actionable insights.",
+            list: [
+              {
+                description: "Everything in WireMax",
+              },
+              {
+                description: "Detailed user feedback analysis",
+              },
+              {
+                description: "Strategy consultation for UX improvements",
+              },
+              {
+                description: "4 rounds of revisions",
+              },
+            ],
           },
         ],
       },
@@ -2394,12 +3438,12 @@ export const subServiceDetails: SubItem[] = [
       title:
         "Transform Your Ideas into Interactive Experiences with Our Wireframing & Prototyping Services",
       intro:
-        "Bring your digital product to life with precision and clarity through our expert wireframing and prototyping services. From the initial concept to a fully interactive prototype, we help you visualize, test, and refine your design for seamless user experiences.",
+        "Bring your digital product to life with precision and clarity through our expert wireframing and prototyping services. From the initial concept to a fully interactive prototype, we help you visualize, test, and refine your design for seamless user experiences. Our process ensures that your product is user-centered, functional, and ready for development, minimizing risks and maximizing engagement. With our wireframes and prototypes, you can validate your ideas, gather feedback, and make informed decisions before moving into development. This iterative approach not only saves time and resources but also ensures that the final product meets user expectations and business goals. ",
       description:
-        "Our wireframing and prototyping services ensure that your project is built on a solid foundation. By creating low-fidelity wireframes and high-fidelity interactive prototypes, we allow you to validate your ideas early, gather feedback, and refine the design before development begins. This iterative process minimizes risks, saves time, and ensures the final product meets user expectations.",
+        "Our wireframing and prototyping services ensure that your project is built on a solid foundation. By creating low-fidelity wireframes and high-fidelity interactive prototypes, we allow you to validate your ideas early, gather feedback, and refine the design before development begins. This iterative process minimizes risks, saves time, and ensures the final product meets user expectations. With our expertise, you can confidently move forward with a design that is not only visually appealing but also user-friendly and functional. Our team of experienced designers and developers work closely with you to understand your goals and create wireframes and prototypes that align with your vision. We prioritize usability, accessibility, and intuitive navigation, ensuring that your product delivers a seamless experience for your users. Whether you’re launching a new website, mobile app, or software platform, our wireframing and prototyping services provide the foundation for success.",
       button: "Start Your Project with Expert Wireframing & Prototyping",
       afterButtonText:
-        "Let’s turn your ideas into clickable, user-friendly prototypes that drive engagement and deliver exceptional user experiences.",
+        "Let’s turn your ideas into clickable, user-friendly prototypes that drive engagement and deliver exceptional user experiences. Contact us today to learn more about our wireframing and prototyping services and how we can help you achieve your design goals.",
     },
   },
 ];
