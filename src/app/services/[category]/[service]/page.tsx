@@ -89,20 +89,21 @@ export default function ServicePage() {
 
   if (error) return <CannotFind />;
 
-  console.log("serviceIcon", serviceIcon);
-
   return (
     <>
       {serviceData && (
         <>
           <main className="mx-auto py-6 w-10/12 md:w-11/12">
-            {serviceIcon && serviceIcon.svg}
-            <h1>{serviceName}</h1>
+            <div className="h-[10em]">{serviceIcon && serviceIcon.svg}</div>
+            <div className="mt-5">
+              <h4>{serviceData.info.name}</h4>
+              <h1>{serviceName}</h1>
+            </div>
             {serviceData.info.intro.map((intro, index) => (
               <p key={index}>{intro}</p>
             ))}
 
-            {serviceData.details.map((info, index) => {
+            {serviceData.details.slice(0, 1).map((info, index) => {
               return (
                 <section key={index}>
                   <h2>{info.title}</h2>
@@ -123,7 +124,32 @@ export default function ServicePage() {
                 </section>
               );
             })}
+          </main>
 
+          <main className="mx-auto py-6 w-10/12 md:w-11/12">
+            {serviceData.details
+              .slice(1, serviceData.details.length)
+              .map((info, index) => {
+                return (
+                  <section key={index}>
+                    <h2>{info.title}</h2>
+                    {info.intro?.map((sentence, sIndex) => (
+                      <p key={sIndex}>{sentence}</p>
+                    ))}
+
+                    <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
+                      {info.lists?.map((listInfo, listIndex) => {
+                        return (
+                          <div key={listIndex} className="flex flex-col">
+                            <h4>{listInfo.title}</h4>
+                            <p>{listInfo.description}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </section>
+                );
+              })}
             <section>
               <h2>Do You Have Questions?</h2>
               <p className="mb-4">
@@ -146,7 +172,6 @@ export default function ServicePage() {
                 Visit The FAQs
               </DynamicButton>
             </section>
-
             <section>
               {serviceData.info.pricing.pricingTierIntro?.title && (
                 <div className="mt-4">
@@ -176,8 +201,23 @@ export default function ServicePage() {
                           <CardContent>
                             <h5>{tierArray[1]}</h5>
                             <h3>{tierArray[0]}</h3>
-                            <p>{prices.info}</p>
                             <p>{prices.useCase}</p>
+                            <p>{prices.info}</p>
+                            {prices.list && (
+                              <div className="mt-4">
+                                <h5>Includes</h5>
+                                <ul className="space-y-2 mx-8 list-disc list-outside">
+                                  {prices.list.map((listItem, listIndex) => (
+                                    <li key={listIndex}>
+                                      {listItem.title && (
+                                        <strong>{listItem.title}: </strong>
+                                      )}{" "}
+                                      {listItem.description}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
                           </CardContent>
                         </Card>
                       );
