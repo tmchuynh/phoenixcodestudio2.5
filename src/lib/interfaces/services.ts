@@ -14,6 +14,7 @@ export interface SubItem {
   category: Category["name"];
   name: string;
   subtitle: string;
+  imageSrc: string;
   info: SubInformation;
   details: SubDetail[];
   cta: CTA;
