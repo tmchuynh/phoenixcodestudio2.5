@@ -97,50 +97,49 @@ const BlogPostPage = () => {
         <div className="mx-auto py-6 w-10/12 md:w-11/12">
           <header>
             <h1>{post.title}</h1>
-            <section className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-3 xl:py-6 border-b">
-              <section>
-                <div className="flex md:flex-row-reverse flex-col md:justify-between items-center gap-6">
-                  <div className="flex flex-wrap justify-end gap-2 w-fit">
-                    {post.topics.map((topic: string, index: number) => {
-                      return (
-                        <Badge
-                          variant={"secondary"}
-                          className="text-sm lowercase cursor-default"
-                          key={index}
-                        >
-                          #&thinsp;{topic}
-                        </Badge>
-                      );
-                    })}
-                  </div>
-                  {post.date && (
-                    <p>
-                      <strong>Date: </strong>
-                      {convertToDate(post.date)}
-                    </p>
-                  )}
-                </div>
 
-                <div className="xl:flex xl:flex-col xl:justify-between">
-                  <div>
-                    {post.intro.map((intro: string, index: number) => (
-                      <p key={index}>{intro}</p>
-                    ))}
-                  </div>
+            <section>
+              <div className="flex md:flex-row-reverse flex-col md:justify-between items-center gap-6">
+                <div className="flex flex-wrap justify-end gap-2 w-fit">
+                  {post.topics.map((topic: string, index: number) => {
+                    return (
+                      <Badge
+                        variant={"secondary"}
+                        className="text-sm lowercase cursor-default"
+                        key={index}
+                      >
+                        #&thinsp;{topic}
+                      </Badge>
+                    );
+                  })}
                 </div>
-              </section>
+                {post.date && (
+                  <p>
+                    <strong>Date: </strong>
+                    {convertToDate(post.date)}
+                  </p>
+                )}
+              </div>
 
-              <div className="lg:col-span-2">
-                <Image
-                  src={post.imageUrl}
-                  width={1200}
-                  height={800}
-                  priority={true}
-                  alt={`${post.title}-Main-Image`}
-                  className="shadow-lg mx-auto md:mt-4 xl:mt-0 mb-2 rounded-2xl w-full h-full transform object-cover object-center self-center aspect-video"
-                />
+              <div className="xl:flex xl:flex-col xl:justify-between">
+                <div>
+                  {post.intro.map((intro: string, index: number) => (
+                    <p key={index}>{intro}</p>
+                  ))}
+                </div>
               </div>
             </section>
+
+            <div className="my-8">
+              <Image
+                src={post.imageUrl}
+                width={1200}
+                height={800}
+                priority={true}
+                alt={`${post.title}-Main-Image`}
+                className="shadow-lg mx-auto rounded-2xl w-10/12 h-full aspect-video object-cover object-center"
+              />
+            </div>
           </header>
 
           {/* Render Recursive List if it exists */}
@@ -168,24 +167,24 @@ const BlogPostPage = () => {
               </section>
             ))}
 
-          <section className="gap-3 lg:gap-5 xl:gap-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-7 md:mb-10 lg:mb-20 2xl:mb-30 xl:mb-24 py-3 lg:py-5 xl:py-7">
+          <div className="my-8">
             <Image
               src={post.image2Url}
-              width={800}
+              width={1200}
               height={800}
-              priority={false}
               alt={`${post.title}-Supporting-Image`}
-              className="shadow-lg rounded-2xl w-full h-full object-cover object-center self-center"
+              className="shadow-lg mx-auto rounded-2xl w-10/12 h-full aspect-video object-cover object-center"
             />
-            <div className="lg:col-span-2">
-              <h2>Conclusion</h2>
-              {post.conclusions.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
-            </div>
-          </section>
+          </div>
 
-          <footer className="mx-auto xl:mt-0 py-3 md:py-4 lg:py-5 border-t lg:w-3/4 text-center">
+          <div>
+            <h2>Conclusion</h2>
+            {post.conclusions.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+
+          <footer className="mx-auto xl:mt-0 py-3 md:py-4 lg:py-5 lg:w-3/4 text-center">
             <p className="leading-3">
               Read more related posts about{" "}
               {post.topics.map((topic, index) => (
