@@ -1,13 +1,16 @@
 import { Project } from "../interfaces/projects";
+
 export const pastProjects: Project[] = [
   {
     title: "International Activities Club Website 2.0",
-    short: "Modern educational website",
+    slogan: "Explore More. Grow More.",
+    short:
+      "A fully redesigned educational platform built to showcase a diverse range of extracurricular programs for K–12 students, with a modern, accessible, and engaging interface.",
     quote:
-      "An immersive, student-focused platform that redefines how educational programs are showcased—fostering community, enriching engagement, and enabling deeper, more hands-on learning across diverse disciplines. ",
+      "Our dynamic after-school program offers an exciting range of activities, including soccer, volleyball, basketball, performing arts, creative writing, chess, and coding. With experienced instructors and top-quality resources, we provide a fun and enriching environment where your child can explore and develop new passions. Our innovative approach covers a broad spectrum of skills in sports, arts, and technology. Your child will enjoy engaging in creative projects, teamwork challenges, and much more, all within a safe, supportive setting tailored for their growth and success.",
     featured: true,
     description:
-      "A complete redesign of the IAC website, transforming it into a vibrant and dynamic educational platform. It promotes immersive, hands-on learning experiences through engaging content and intuitive design, helping students explore various disciplines and foster a lifelong love for learning. The site is built with Next.js and TypeScript, ensuring a modern, responsive experience that meets the needs of today’s learners. The site is designed to be user-friendly and accessible, with a focus on enhancing the educational experience for students and parents alike. The new design emphasizes community engagement and exploration, making it easier for students to discover and participate in extracurricular programs that align with their interests and passions.",
+      "The original IAC site was rebuilt to better reflect the organization’s 20-year mission of providing accessible, enriching extracurricular opportunities to K–12 students. By improving usability and visual appeal, the platform now better supports IAC’s commitment to educational equity and community engagement—making it simpler for families to find, understand, and register for programs that support student exploration and personal growth.",
     tags: [
       "Education",
       "Modern",
@@ -24,47 +27,15 @@ export const pastProjects: Project[] = [
     githubLink: "https://github.com/tmchuynh/iac_website_2.0",
   },
   {
-    title: "FirstGalaxy Inc",
-    short: "Real estate platform",
-    quote:
-      "A sleek and responsive real estate solution built to highlight premium properties with high-resolution imagery, dynamic search tools, and seamless virtual browsing to elevate the user’s home buying journey. ",
-    featured: false,
-    description:
-      "A professional real estate platform designed to showcase high-quality property listings, virtual tours, and advanced filtering capabilities. The user-focused interface streamlines the home buying process and provides a visually compelling experience for prospective buyers. The platform is designed to be user-friendly and accessible, with a focus on enhancing the home buying experience for prospective buyers. The site is built with Bootstrap CSS and jQuery, ensuring a modern, responsive experience that meets the needs of today’s users.",
-    tags: ["Real Estate", "Data Filtering", "Dynamic"],
-    tech: {
-      languages: ["JavaScript", "HTML", "CSS"],
-      frameworks: ["Bootstrap CSS"],
-      libraries: ["jQuery"],
-      technologies: ["Chart.js"],
-    },
-    githubLink: "https://github.com/tmchuynh/firstgalaxy",
-  },
-  {
-    title: "Quiz Application",
-    short: "Interactive quiz app",
-    quote:
-      "A gamified learning experience that combines academic challenges with social competition—offering subject-based quizzes, live leaderboards, and progress tracking to boost motivation and engagement. ",
-    featured: true,
-    description:
-      "A robust quiz platform built with Next.js that allows users to test their knowledge across multiple academic subjects. Features include authentication, user progress tracking, and a live leaderboard, making learning interactive and competitive. The app is designed to be user-friendly and accessible, with a focus on enhancing the learning experience for students and educators alike. The platform is built with Next.js and TypeScript, ensuring a modern, responsive experience that meets the needs of today’s learners.",
-    tags: ["User Auth", "Progress Tracking", "Dynamic", "Data Filtering"],
-    tech: {
-      languages: ["TypeScript"],
-      frameworks: ["Next.js"],
-      libraries: ["React", "Sequelize", "Next-Auth"],
-      technologies: ["MySQL", "localStorage", "Axios"],
-    },
-    githubLink: "https://github.com/tmchuynh/knowledge_knockout",
-  },
-  {
     title: "Bootstrap Icons",
-    short: "Icon library tool",
+    slogan: "Icons That Just Work.",
+    short:
+      "A scalable, developer-friendly icon library with intuitive UI and responsive design, ideal for fast integration into any modern or legacy project.",
     quote:
-      "A fast, searchable icon library for developers and designers—offering scalable, responsive Bootstrap icons with instant copy functionality and a smooth, organized UI for efficient integration into any project.",
+      "Access a robust collection of over 2,000 meticulously designed, open-source icons—completely free to use. Whether you're building a modern web app or enhancing a legacy interface, these icons are crafted for maximum clarity, flexibility, and performance. Perfect for developers, designers, and teams who want professional-grade icons without licensing headaches or limitations. Use them in commercial or personal projects and scale them confidently across screens, styles, and themes. The icons are designed to be responsive and adaptable, ensuring they look great on any device. The platform is built with Bootstrap CSS and jQuery, ensuring a modern, responsive experience that meets the needs of today’s users.",
     featured: false,
     description:
-      "A web-based icon management system offering a library of scalable, customizable Bootstrap icons. The app includes real-time search, organized categories, and instant copy functionality for seamless integration into design and development workflows.",
+      "Bootstrap Icons was created to empower developers and designers with a streamlined, hassle-free library of open-source icons that integrate seamlessly into any project. The goal is to eliminate visual bottlenecks in development workflows by providing scalable, responsive icons that maintain clarity and consistency across platforms—supporting creators in delivering polished, professional user interfaces with speed and precision.",
     tags: ["Mock Up", "Dynamic", "Data Filtering"],
     tech: {
       languages: ["HTML", "JavaScript", "CSS", "SCSS"],
@@ -75,31 +46,15 @@ export const pastProjects: Project[] = [
     githubLink: "https://github.com/tmchuynh/Bootstrap-Icon-Mock",
   },
   {
-    title: "Military Fitness Calculator",
-    short: "Fitness score tool",
-    quote:
-      "An accessible and efficient fitness assessment tool that enables service members to track their APFT results and body fat metrics in real-time—supporting accurate evaluations and goal-setting.",
-    featured: true,
-    description:
-      "A responsive fitness calculator tailored for military service members to track their Army Physical Fitness Test (APFT) scores and body fat compliance. It simplifies fitness tracking with intuitive forms, real-time feedback, and compliance metrics. The app is designed to be user-friendly and accessible, with a focus on enhancing the fitness experience for service members. The platform is built with Materialize CSS and jQuery, ensuring a modern, responsive experience that meets the needs of today’s users.",
-    tags: ["Educational", "Dynamic"],
-    tech: {
-      languages: ["JavaScript", "HTML", "CSS"],
-      frameworks: ["Materialize CSS"],
-      libraries: ["jQuery"],
-      technologies: ["vanilla-tilt.js", "Ajax"],
-    },
-    liveLink: "https://tmchuynh.github.io/Military-Fitness-Calculator/",
-    githubLink: "https://github.com/tmchuynh/Military-Fitness-Calculator",
-  },
-  {
     title: "International Activities Club",
-    short: "Extracurricular programs site",
+    slogan: "Where Learning Meets Opportunity.",
+    short:
+      "A refreshed digital presence for a long-standing extracurricular program, designed to enhance accessibility and improve the user experience for students and parents.",
     quote:
-      "A refreshed digital presence that empowers parents and students to explore after-school programs with ease—promoting enrichment, exploration, and community building through a clean and approachable design. ",
+      "A modern upgrade to a 20-year-old site, this platform highlights the IAC’s after-school programs through a fresh layout and accessible design. It showcases a wide range of extracurricular opportunities available to students in grades 1 through 12. The site is designed to be user-friendly and accessible, with a focus on enhancing the educational experience for students and parents alike. The platform is built with Bootstrap CSS and jQuery, ensuring a modern, responsive experience that meets the needs of today’s users.",
     featured: false,
     description:
-      "A modern upgrade to a 20-year-old site, this platform highlights the IAC’s after-school programs through a fresh layout and accessible design. It showcases a wide range of extracurricular opportunities available to students in grades 1 through 12. The site is designed to be user-friendly and accessible, with a focus on enhancing the educational experience for students and parents alike. The platform is built with Bootstrap CSS and jQuery, ensuring a modern, responsive experience that meets the needs of today’s users.",
+      "The International Activities Club is dedicated to enriching student lives beyond the classroom by offering diverse after-school programs that promote creativity, teamwork, and lifelong learning. This redesigned platform communicates the organization’s mission to support well-rounded development through sports, arts, and technology—making it easier for families to discover and enroll in meaningful activities that match their children's interests and growth goals.",
     tags: ["Educational", "Dynamic"],
     tech: {
       languages: ["JavaScript", "HTML", "CSS"],
@@ -109,80 +64,15 @@ export const pastProjects: Project[] = [
     liveLink: "https://iacafterschools.com/",
   },
   {
-    title: "Emoji Finder",
-    short: "Emoji search tool",
-    quote:
-      "A user-friendly emoji exploration tool that delivers instant, real-time search results—making it simple and fun to discover, filter, and copy emojis with speed and precision.",
-    featured: false,
-    description:
-      "A real-time emoji search tool designed for quick and easy browsing. Featuring categorized navigation, predictive text, and one-click copying, the app streamlines the process of finding the perfect emoji for any message or post. ",
-    tags: ["Fun", "Dynamic", "Data Filtering"],
-    tech: {
-      languages: ["JavaScript", "HTML", "CSS"],
-      libraries: ["React"],
-      technologies: ["jest-dom"],
-    },
-    githubLink: "https://github.com/tmchuynh/Emoji-Finder",
-  },
-  {
-    title: "Chess",
-    short: "Web chess game",
-    quote:
-      "A classic strategy game brought to life with AI-powered hints, smooth interactions, and responsive gameplay—designed to teach, entertain, and challenge players of all levels in a browser-friendly format. ",
-    featured: true,
-    description:
-      "An interactive chess game built for the web, featuring accurate move validation, responsive design, and AI-driven move suggestions. It offers both solo and competitive play, delivering a realistic and educational chess experience. ",
-    tags: ["Game", "Fun"],
-    tech: {
-      languages: ["JavaScript", "HTML", "CSS"],
-      frameworks: ["Bootstrap CSS"],
-      technologies: ["Chessboard.js", "Chess.js", "Node.js"],
-    },
-    liveLink: "https://tmchuynh.github.io/Chess-Game/",
-    githubLink: "https://github.com/tmchuynh/Chess-Game",
-  },
-  {
-    title: "Meta Tic Tac Toe",
-    short: "Advanced Tic Tac Toe",
-    quote:
-      "An advanced evolution of Tic Tac Toe that layers strategy and unpredictability into every move—offering an engaging experience where each play affects the next, demanding foresight and adaptation.",
-    featured: true,
-    description:
-      "A strategic reimagining of classic Tic Tac Toe with nine interconnected boards. Each move dictates the opponent’s next board, adding layers of complexity and requiring players to think several moves ahead in a dynamic, competitive environment. The game is designed to be user-friendly and accessible, with a focus on enhancing the gaming experience for players of all ages. The platform is built with React.js and Node.js, ensuring a modern, responsive experience that meets the needs of today’s users.",
-    tags: ["Game", "Fun"],
-    tech: {
-      languages: ["JavaScript", "HTML", "CSS"],
-      frameworks: ["Bootstrap CSS"],
-      technologies: ["React.js", "Node.js"],
-    },
-    liveLink: "https://tmchuynh.github.io/meta_tic_tac_toe/",
-    githubLink: "https://github.com/tmchuynh/meta_tic_tac_toe",
-  },
-  {
-    title: "Sudoku",
-    short: "Playable Sudoku game",
-    quote:
-      "A sleek and intuitive Sudoku game that sharpens logical thinking with real-time error detection, multiple difficulty modes, and a responsive interface designed for uninterrupted puzzle-solving.",
-    featured: true,
-    description:
-      "A browser-based Sudoku game offering multiple difficulty levels, real-time error detection, and a sleek, mobile-friendly layout. The experience is both intuitive and challenging, catering to casual players and puzzle enthusiasts alike. The game is designed to be user-friendly and accessible, with a focus on enhancing the gaming experience for players of all ages. The platform is built with Bootstrap CSS and jQuery, ensuring a modern, responsive experience that meets the needs of today’s users.",
-    tags: ["Game", "Fun"],
-    tech: {
-      languages: ["JavaScript", "HTML", "CSS"],
-      frameworks: ["Bootstrap CSS"],
-      technologies: ["Vanilla JavaScript", "DOM Manipulation"],
-    },
-    liveLink: "https://tmchuynh.github.io/sudoku/",
-    githubLink: "https://github.com/tmchuynh/sudoku",
-  },
-  {
     title: "Harmona Health",
-    short: "Clarity. Strength. Balance. Your Journey Starts Here.",
+    slogan: "Thrive With Purpose.",
+    short:
+      "A purpose-driven wellness site designed to guide users through a personal journey of strength, clarity, and balance through intentional design and storytelling.",
     quote:
       "Harmona Health was founded on the belief that wellness is not a destination — it’s a lifelong journey. At Harmona Health, we believe that everyone carries a spark of untapped potential — a brighter, stronger, more vibrant version of themselves waiting to be awakened. We are driven by a powerful belief: wellness is not a destination, but a continuous journey. We understand that life can be overwhelming at times—between the demands of work, family, and personal obligations, it’s easy to lose sight of the most important thing: your health. But what if, instead of just surviving, you could thrive? What if you could uncover the vibrant, powerful version of yourself that has always been waiting to emerge?",
     featured: true,
     description:
-      "Each day is a new opportunity to rise stronger, live brighter, and move closer to your goals. At Harmona Health, we believe great health doesn’t just happen — it’s created through intentional choices, expert guidance, and powerful support. Whether you’re looking to ignite your strength, find balance, or embrace your full potential, we stand with you every step of the way.",
+      "Harmona Health exists to guide individuals on their path toward mental, physical, and emotional wellness. With a focus on personal empowerment, the company offers resources and coaching to help people achieve balance and resilience in a demanding world. The website supports this mission by offering an inspiring, accessible digital environment where users can explore services, reflect on personal growth, and take actionable steps toward their healthiest selves.",
     tags: ["Mock Up", "Dynamic", "Educational"],
     tech: {
       languages: ["TypeScript"],
@@ -191,5 +81,23 @@ export const pastProjects: Project[] = [
     },
     liveLink: "https://harmona-health.vercel.app/",
     githubLink: "https://github.com/tmchuynh/harmona-health",
+  },
+  {
+    title: "Custom E-commerce Store",
+    slogan: "Sell Smart. Scale Fast.",
+    short:
+      "A bespoke e-commerce platform built for modern retailers, featuring seamless user flows, fast performance, and full scalability for business growth.",
+    quote:
+      "This custom e-commerce store is designed to provide a seamless and engaging shopping experience for customers. With a focus on performance and scalability, the platform is built to support small-to-mid-sized businesses in their growth journey. The store features a modern design, intuitive navigation, and personalized shopping experiences that help retailers stand out in a crowded market. The platform is built with Next.js and Tailwind CSS, ensuring fast load times and a responsive design that looks great on any device.",
+    featured: true,
+    description:
+      "This custom e-commerce solution was developed to support small-to-mid-sized businesses in building a digital storefront that grows with them. The platform is designed to help retailers stand out in a saturated market by offering personalized shopping experiences, streamlined navigation, and optimized performance. It enables business owners to focus on what they do best—delivering value to customers—while the tech scales quietly in the background.",
+    tags: ["Mock Up", "Dynamic", "E-commerce"],
+    tech: {
+      languages: ["TypeScript"],
+      frameworks: ["Next.js", "Tailwind CSS"],
+      libraries: ["React"],
+    },
+    githubLink: "https://github.com/tmchuynh/custom-ecommerce",
   },
 ];
