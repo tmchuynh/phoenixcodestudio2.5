@@ -99,5 +99,6 @@ export const pastProjects: Project[] = [
       libraries: ["React"],
     },
     githubLink: "https://github.com/tmchuynh/custom-ecommerce",
+    liveLink: "https://custom-ecommerce-eta.vercel.app/",
   },
 ];
