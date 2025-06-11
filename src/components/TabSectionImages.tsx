@@ -143,7 +143,7 @@ export default function TabSectionImages() {
               value={tabs[activeTab].name}
               onChange={(e) => {
                 const newIndex = tabs.findIndex(
-                  (tab) => tab.name === e.target.value
+                  (tab) => tab.name === e.target.value,
                 );
                 setActiveTab(newIndex);
               }}
@@ -174,7 +174,7 @@ export default function TabSectionImages() {
                     activeTab === index
                       ? "border-secondary text-secondary"
                       : "border-transparent text-tertiary hover:text-primary",
-                    "border-b-2 px-1 pb-4 text-sm font-medium whitespace-nowrap lg:text-lg"
+                    "border-b-2 px-1 pb-4 text-sm font-medium whitespace-nowrap lg:text-lg",
                   )}
                 >
                   {tab.name}

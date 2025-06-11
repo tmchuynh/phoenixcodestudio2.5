@@ -14,7 +14,7 @@ export default function FadedImage({
     <div
       className={cn(
         "relative w-full h-64 overflow-hidden rounded-lg",
-        className
+        className,
       )}
     >
       <Image

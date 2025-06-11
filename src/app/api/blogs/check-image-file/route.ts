@@ -22,7 +22,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   if (!fileName) {
     return NextResponse.json(
       { error: "No fileName provided" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 

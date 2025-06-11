@@ -1,5 +1,5 @@
 export const splitAndTrimQuotes = (
-  quote: string | null | undefined
+  quote: string | null | undefined,
 ): string[] => {
   if (!quote) return [];
   return quote.split("\n").reduce((acc, paragraph) => {
@@ -60,25 +60,27 @@ export const formatCurrency = (value: number) => {
   return value.toLocaleString("en-US", { style: "currency", currency: "USD" });
 };
 
-
 /**
  * Compares the word count of a string against a maximum threshold.
- * 
+ *
  * @param text - The string to check word count for
  * @param maxWords - The maximum number of words allowed
  * @returns `true` if the text contains fewer or equal words than the maximum, `false` otherwise
  * @throws {Error} When maxWords is negative
- * 
+ *
  * @example
  * ```typescript
  * // Returns true as the string has 5 words
  * compareStringWordCount("This is a simple example", 5);
- * 
+ *
  * // Returns false as the string has 5 words
  * compareStringWordCount("This is a simple example", 4);
  * ```
  */
-export function compareStringWordCount(text: string, maxWords: number): boolean {
+export function compareStringWordCount(
+  text: string,
+  maxWords: number,
+): boolean {
   if (maxWords < 0) {
     throw new Error("Maximum words must be a non-negative number.");
   }
@@ -89,7 +91,7 @@ export function compareStringWordCount(text: string, maxWords: number): boolean 
 
 /**
  * Clips a string to a specified maximum length.
- * 
+ *
  * @param {string} text - The string to be clipped
  * @param {number} maxLength - The maximum length allowed for the string
  * @returns {string} The original string if its length is less than or equal to maxLength,

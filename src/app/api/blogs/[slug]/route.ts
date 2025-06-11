@@ -19,19 +19,19 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   if (!slug) {
     return NextResponse.json(
       { message: "Blog post not found" },
-      { status: 404 }
+      { status: 404 },
     );
   }
 
   // Generate the blog slug dynamically based on the title (if needed)
   const blogPost = blogs.find(
-    (blog: { title: string }) => generateSlug(blog.title) === slug
+    (blog: { title: string }) => generateSlug(blog.title) === slug,
   ); // Use generateSlug to find the post
 
   if (!blogPost) {
     return NextResponse.json(
       { message: "Blog post not found" },
-      { status: 404 }
+      { status: 404 },
     );
   }
 

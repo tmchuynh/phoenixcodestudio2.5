@@ -27,7 +27,7 @@ export default function FeaturedArticles({
           {
             "border-t py-10": isSmallScreen && index !== 0,
             "pb-10": isSmallScreen && index === 0,
-          }
+          },
         )}
       >
         <Image

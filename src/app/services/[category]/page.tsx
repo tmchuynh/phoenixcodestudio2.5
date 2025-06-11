@@ -83,14 +83,14 @@ export default function CategoryPage() {
           <div className="gap-4 lg:gap-8 grid grid-cols-1 md:grid-cols-2 py-6 lg:py-10">
             {service.sub.map((subService, subIndex) => {
               const subServiceDetail = subServiceDetails.find(
-                (item) => item.name === subService
+                (item) => item.name === subService,
               );
 
               if (subServiceDetail) {
                 return (
                   <Link
                     href={`/services/${category}/${generateSlug(
-                      subServiceDetail.name
+                      subServiceDetail.name,
                     )}`}
                     key={subIndex}
                     className="group"
@@ -112,7 +112,7 @@ export default function CategoryPage() {
                                 <strong>{tier.name.split(":")[0]}: </strong>
                                 {tier.description}
                               </li>
-                            )
+                            ),
                           )}
                         </ul>
                       </CardContent>

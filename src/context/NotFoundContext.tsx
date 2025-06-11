@@ -4,7 +4,7 @@ import { NotFoundContextType } from "@/lib/types";
 import { createContext, JSX, ReactNode, useContext, useState } from "react";
 
 const NotFoundContext = createContext<NotFoundContextType | undefined>(
-  undefined
+  undefined,
 );
 
 /**

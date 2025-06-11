@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function FeaturedCategory() {
   return (
-    <section aria-labelledby="featured-heading" className="relative mt-16 rounded-lg lg:h-96 overflow-hidden">
+    <section
+      aria-labelledby="featured-heading"
+      className="relative mt-16 rounded-lg lg:h-96 overflow-hidden"
+    >
       <div className="absolute inset-0">
         <Image
           alt=""
@@ -21,7 +24,8 @@ export default function FeaturedCategory() {
             Workspace Collection
           </h2>
           <p className="mt-1 text-gray-300 text-sm">
-            Upgrade your desk with objects that keep you organized and clear-minded.
+            Upgrade your desk with objects that keep you organized and
+            clear-minded.
           </p>
         </div>
         <a

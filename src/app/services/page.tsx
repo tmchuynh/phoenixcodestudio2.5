@@ -209,14 +209,14 @@ const ServicesPage: FC = () => {
           <div className="gap-4 lg:gap-6 grid grid-cols-1 lg:grid-cols-2">
             {category.sub.map((subService, subIndex) => {
               const subServiceDetail = subServiceDetails.find(
-                (item) => item.name === subService
+                (item) => item.name === subService,
               );
 
               if (subServiceDetail) {
                 return (
                   <Link
                     href={`/services/${generateSlug(
-                      category.name
+                      category.name,
                     )}/${generateSlug(subServiceDetail.name)}`}
                     key={subIndex}
                     className="group"
@@ -229,7 +229,7 @@ const ServicesPage: FC = () => {
                           onClick={() =>
                             navigateToCategory(
                               category.name,
-                              subServiceDetail.name
+                              subServiceDetail.name,
                             )
                           }
                         >

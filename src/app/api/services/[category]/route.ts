@@ -21,7 +21,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   if (!serviceItem) {
     return NextResponse.json(
       { error: "Service category not found" },
-      { status: 404 }
+      { status: 404 },
     );
   }
 

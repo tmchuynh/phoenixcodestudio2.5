@@ -16,7 +16,7 @@ export default function DividerImage({
     <div
       className={cn(
         "relative py-24 sm:py-32 overflow-hidden isolate",
-        className
+        className,
       )}
     >
       {/* Decorative Background Image */}

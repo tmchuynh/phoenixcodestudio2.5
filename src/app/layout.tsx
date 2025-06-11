@@ -5,11 +5,11 @@ import { NavBar } from "@/components/navigation/NavBar";
 import { Providers } from "@/context/providers";
 import "./globals.css";
 
-export default function RootLayout( {
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}> ) {
+}>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="relative flex flex-col min-h-screen">

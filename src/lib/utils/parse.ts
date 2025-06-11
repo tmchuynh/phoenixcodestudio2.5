@@ -45,7 +45,7 @@ export function parseLengthAndUnit(size: number | string): {
   }
 
   console.warn(
-    `React Spinners: ${size} is not a valid css value. Defaulting to ${value}px.`
+    `React Spinners: ${size} is not a valid css value. Defaulting to ${value}px.`,
   );
 
   return {

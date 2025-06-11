@@ -19,13 +19,13 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   const service = segments[segments.length - 1];
 
   const subService = subServiceDetails.find(
-    (item) => item.category === category && item.name === service
+    (item) => item.category === category && item.name === service,
   );
 
   if (!subService) {
     return NextResponse.json(
       { error: "Service details not found" },
-      { status: 404 }
+      { status: 404 },
     );
   }
 

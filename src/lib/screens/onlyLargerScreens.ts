@@ -9,7 +9,7 @@ const useBetweenLargeAndXL = () => {
   useEffect(() => {
     const handleResize = () => {
       setIsBetweenLargeAndXL(
-        window.innerWidth > 1024 && window.innerWidth <= 1440
+        window.innerWidth > 1024 && window.innerWidth <= 1440,
       );
     };
 

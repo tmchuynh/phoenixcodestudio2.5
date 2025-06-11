@@ -22,7 +22,7 @@ export function cn(...inputs: ClassValue[]) {
 export const createAnimation = (
   loaderName: string,
   frames: string,
-  suffix: string
+  suffix: string,
 ): string => {
   const animationName = `react-spinners-${loaderName}-${suffix}`;
 
@@ -54,7 +54,7 @@ export const sync = createAnimation(
    66% {transform: translateY(20px)} 
    88% {transform: translateY(10px)} 
    100% {transform: translateY(0)}`,
-  "sync"
+  "sync",
 );
 
 /**
@@ -99,7 +99,7 @@ export async function getSVGByServiceName({
     // Return the specific named export that matches the name
     if (icons in iconModule) {
       return (iconModule as any)[icons].find(
-        (i: { name: string; svg: JSX.Element }) => i.name === name
+        (i: { name: string; svg: JSX.Element }) => i.name === name,
       );
     } else {
       console.error(`Export named ${icons} not found in module`);

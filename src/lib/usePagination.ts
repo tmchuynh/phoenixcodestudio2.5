@@ -16,11 +16,11 @@ import { useMemo } from "react";
 function usePagination(
   items: any[],
   currentPage: number,
-  itemsPerPage: number
+  itemsPerPage: number,
 ) {
   const totalPages = useMemo(
     () => Math.ceil(items.length / itemsPerPage),
-    [items.length, itemsPerPage]
+    [items.length, itemsPerPage],
   );
 
   const currentItems = useMemo(() => {

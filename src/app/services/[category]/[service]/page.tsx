@@ -221,7 +221,7 @@ export default function ServicePage() {
                           </CardContent>
                         </Card>
                       );
-                    }
+                    },
                   )}
                 </div>
               )}

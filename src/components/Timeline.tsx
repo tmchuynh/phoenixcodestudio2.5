@@ -30,7 +30,7 @@ export default function Timeline({
           key={index}
           className={cn(
             "relative ",
-            orientation === "horizontal" ? "md:w-1/3 lg:w-1/5" : ""
+            orientation === "horizontal" ? "md:w-1/3 lg:w-1/5" : "",
           )}
         >
           <div

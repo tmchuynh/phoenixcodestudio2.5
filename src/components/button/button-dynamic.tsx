@@ -58,7 +58,7 @@ export default function DynamicButton({
           "inline w-fit p-0 m-0": variant === "link",
         },
         iconPositionClasses[iconPosition],
-        className
+        className,
       )}
     >
       <span className="pl-5">{children}</span>
@@ -75,7 +75,7 @@ export default function DynamicButton({
                 hoverEffect !== "spin" && hoverEffect !== "bounce",
             },
             hoverEffect && hoverEffectClasses[hoverEffect],
-            iconClassName
+            iconClassName,
           )}
         >
           <Icon className="w-4 h-4" />

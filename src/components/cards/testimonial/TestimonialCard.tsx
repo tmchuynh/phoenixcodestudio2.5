@@ -40,7 +40,7 @@ export default function TestimonialCard({
                 testimonial.rating > rating
                   ? "text-yellow-400"
                   : "text-gray-300",
-                "size-5 shrink-0"
+                "size-5 shrink-0",
               )}
             />
           ))}

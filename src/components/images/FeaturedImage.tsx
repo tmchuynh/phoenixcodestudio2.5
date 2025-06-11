@@ -6,7 +6,7 @@ import React from "react";
 
 export function FeaturedImageGallery() {
   const [active, setActive] = React.useState(
-    "https://plus.unsplash.com/premium_photo-1681505195930-388c317b7a76?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VwcG9ydHxlbnwwfDB8MHx8fDA%3D"
+    "https://plus.unsplash.com/premium_photo-1681505195930-388c317b7a76?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VwcG9ydHxlbnwwfDB8MHx8fDA%3D",
   );
 
   return (

@@ -69,7 +69,7 @@ export function sortByLength(array: string[]): string[] {
 export function sortByProperty<T>(
   array: T[],
   property: keyof T,
-  ascending: boolean = true
+  ascending: boolean = true,
 ): T[] {
   return [...array].sort((a, b) => {
     if (a[property] < b[property]) {
@@ -140,20 +140,23 @@ export function groupAndSortByProperties<T>(
   sortByPropertyKey?: keyof T,
   ascending: boolean = true,
   sortByLength: boolean = false,
-  groupByLength: boolean = false
+  groupByLength: boolean = false,
 ): T[] {
   // Group the array by the specified property or by the length of the property
-  const grouped = array.reduce((acc, item) => {
-    const key = groupByLength
-      ? (item[groupByProperty] as unknown as string)?.length || 0
-      : (item[groupByProperty] as string | number);
+  const grouped = array.reduce(
+    (acc, item) => {
+      const key = groupByLength
+        ? (item[groupByProperty] as unknown as string)?.length || 0
+        : (item[groupByProperty] as string | number);
 
-    if (!acc[key]) {
-      acc[key] = [];
-    }
-    acc[key].push(item);
-    return acc;
-  }, {} as Record<string | number, T[]>);
+      if (!acc[key]) {
+        acc[key] = [];
+      }
+      acc[key].push(item);
+      return acc;
+    },
+    {} as Record<string | number, T[]>,
+  );
 
   // Sort the group keys to ensure the groups are processed in the correct order
   const sortedKeys = Object.keys(grouped).sort((a, b) => {
@@ -238,7 +241,7 @@ export function groupAndSortByProperties<T>(
 export function sortByPropertyLength<T>(
   array: T[],
   property: keyof T,
-  ascending: boolean = true
+  ascending: boolean = true,
 ): T[] {
   return [...array].sort((a, b) => {
     const lengthA = (a[property] as unknown as string)?.length || 0;
@@ -256,18 +259,19 @@ export function sortByPropertyLength<T>(
 
 /**
  * Generates a random string of specified length.
- * 
+ *
  * @param length - The length of the random string to generate.
  * @returns A random string consisting of alphanumeric characters.
- * 
+ *
  * @example
  * // Generate a random string of 10 characters
  * const randomStr = generateRandomString(10);
  * // Output example: "a7bZ9pQ3xY"
  */
 export function generateRandomString(length: number): string {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  let result = '';
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let result = "";
   const charactersLength = characters.length;
   for (let i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
