@@ -30,13 +30,8 @@ export const motivationalDrive = [
       "We partner with our clients through every phase—listening closely, communicating clearly, and aligning every decision with your goals.",
   },
   {
-    name: "Community Impact",
+    name: "Community Impact & Sustainability",
     description:
-      "Our work uplifts not just businesses, but the communities they serve. We believe in using digital as a force for real-world change and growth.",
-  },
-  {
-    name: "Sustainability",
-    description:
-      "We don’t just build for today—we build for what’s next. Our solutions are strategic, scalable, and ethically designed for long-term success.",
+      "Our work uplifts not just businesses, but the communities they serve. We believe in using digital as a force for real-world change and growth. We don’t just build for today—we build for what’s next. Our solutions are strategic, scalable, and ethically designed for long-term success.",
   },
 ];

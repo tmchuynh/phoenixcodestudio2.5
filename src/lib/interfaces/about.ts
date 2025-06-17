@@ -6,5 +6,5 @@ export interface TimelineEntry {
   caption?: string;
   description?: string;
   list?: ListDetail[];
-  content: React.ReactNode;
+  content?: React.ReactNode;
 }
