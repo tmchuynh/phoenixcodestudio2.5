@@ -15,7 +15,6 @@ import {
 import { pastProjects } from "@/lib/constants/projects";
 import { BlogPost, MDXBlogPost } from "@/lib/interfaces/blogs";
 import { Project } from "@/lib/interfaces/projects";
-import { getFeaturedBlogs } from "@/lib/mdx";
 import { sortByProperty } from "@/lib/utils/sort";
 import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useState } from "react";
@@ -54,9 +53,18 @@ export default function HomePage() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const mdxFeaturedBlogs = getFeaturedBlogs();
-    const convertedFeaturedBlogs = mdxFeaturedBlogs.map(convertMDXToLegacy);
-    setFeaturedArticles(convertedFeaturedBlogs);
+    // Fetch featured blogs from API
+    fetch('/api/blogs/featured')
+      .then(response => response.json())
+      .then(mdxFeaturedBlogs => {
+        const convertedFeaturedBlogs = mdxFeaturedBlogs.map(convertMDXToLegacy);
+        setFeaturedArticles(convertedFeaturedBlogs);
+      })
+      .catch(error => {
+        console.error('Error fetching featured blogs:', error);
+        setFeaturedArticles([]);
+      });
+    
     setFeaturedProjects(pastProjects.filter(project => project.featured));
   }, []);
 
