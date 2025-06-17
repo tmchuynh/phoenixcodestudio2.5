@@ -3,13 +3,13 @@ import { getBlogBySlug } from "@/lib/mdx";
 import { notFound } from "next/navigation";
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const mdxBlogPost = getBlogBySlug(slug);
   if (!mdxBlogPost) {
