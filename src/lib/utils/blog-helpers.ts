@@ -1,4 +1,4 @@
-import { getAllBlogs, getFeaturedBlogs, getBlogsByTopic } from "@/lib/mdx";
+import { getAllBlogs, getBlogsByTopic, getFeaturedBlogs } from "@/lib/mdx";
 
 /**
  * Get all blog slugs from MDX files
