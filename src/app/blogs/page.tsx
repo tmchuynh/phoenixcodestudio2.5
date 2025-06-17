@@ -1,9 +1,41 @@
 import BlogCard from "@/components/cards/ArticleCards";
 import { blogs } from "@/lib/constants/blog-posts";
+import { BlogPost, MDXBlogPost } from "@/lib/interfaces/blogs";
+import { getAllBlogs } from "@/lib/mdx";
 import { sortByProperty } from "@/lib/utils/sort";
 
+// Convert MDX blog post to legacy format for compatibility
+function convertMDXToLegacy(mdxPost: MDXBlogPost): BlogPost {
+  const dateObj = new Date(mdxPost.date);
+  return {
+    title: mdxPost.title,
+    author: mdxPost.author,
+    cardImage: mdxPost.cardImage,
+    imageUrl: mdxPost.imageUrl,
+    image2Url: mdxPost.image2Url || "",
+    excerpt: mdxPost.excerpt,
+    featured: mdxPost.featured || false,
+    topics: mdxPost.topics,
+    intro: [mdxPost.excerpt],
+    list: [],
+    conclusions: [],
+    date: {
+      day: dateObj.getDate(),
+      month: dateObj.getMonth() + 1,
+      year: dateObj.getFullYear(),
+    },
+  };
+}
+
 export default function BlogPage() {
-  const sortedBlogs = sortByProperty(blogs, "title");
+  // Get MDX blog posts
+  const mdxBlogs = getAllBlogs();
+  const convertedMDXBlogs = mdxBlogs.map(convertMDXToLegacy);
+
+  // Combine with legacy blogs
+  const allBlogs = [...convertedMDXBlogs, ...blogs];
+  const sortedBlogs = sortByProperty(allBlogs, "title");
+
   return (
     <div className="mx-auto py-24 sm:py-32 w-11/12">
       <div className="mx-auto">
