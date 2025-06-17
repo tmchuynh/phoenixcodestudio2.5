@@ -7,7 +7,7 @@ export default function TestimonialsPage() {
     <div className="mx-auto py-10 md:py-12 lg:py-18 w-11/12">
       <TwoColumnTextImage />
       <section className="my-12">
-        <h2>It Takes an Ocean to Make Waves</h2>
+        <h2>It Starts with a Match to Light a Fire</h2>
         <div className="gap-4 grid grid-cols-1 md:grid-cols-2 mx-auto py-4 md:py-6 lg:py-10 w-11/12">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
