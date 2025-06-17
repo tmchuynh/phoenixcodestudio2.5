@@ -1,16 +1,14 @@
 import { blogs } from "@/lib/constants/blog-posts";
+import { getBlogBySlug } from "@/lib/mdx";
 import { generateSlug } from "@/lib/utils/format";
 import { NextRequest, NextResponse } from "next/server";
 
 /**
  * Handles GET requests to fetch a blog post by its slug.
+ * First tries to find MDX blog posts, then falls back to legacy blog posts.
  *
  * @param {NextRequest} req - The incoming request object.
  * @returns {Promise<NextResponse>} - A promise that resolves to a NextResponse object containing the blog post data or an error message.
- *
- * The function extracts the slug from the request URL's pathname, searches for the corresponding blog post,
- * and returns the blog post data if found. If the slug is not provided or the blog post is not found,
- * it returns a 404 status with an appropriate error message.
  */
 export async function GET(req: NextRequest): Promise<NextResponse> {
   // Extract slug from the pathname
@@ -19,21 +17,27 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   if (!slug) {
     return NextResponse.json(
       { message: "Blog post not found" },
-      { status: 404 },
+      { status: 404 }
     );
   }
 
-  // Generate the blog slug dynamically based on the title (if needed)
-  const blogPost = blogs.find(
-    (blog: { title: string }) => generateSlug(blog.title) === slug,
-  ); // Use generateSlug to find the post
+  // First, try to find an MDX blog post
+  const mdxBlogPost = getBlogBySlug(slug);
+  if (mdxBlogPost) {
+    return NextResponse.json(mdxBlogPost);
+  }
 
-  if (!blogPost) {
+  // Fall back to legacy blog posts
+  const legacyBlogPost = blogs.find(
+    (blog: { title: string }) => generateSlug(blog.title) === slug
+  );
+
+  if (!legacyBlogPost) {
     return NextResponse.json(
       { message: "Blog post not found" },
-      { status: 404 },
+      { status: 404 }
     );
   }
 
-  return NextResponse.json(blogPost); // Return the blog post data
+  return NextResponse.json(legacyBlogPost);
 }
