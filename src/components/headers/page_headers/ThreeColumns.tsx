@@ -39,9 +39,10 @@ export default function ThreeColumns() {
 
       <section className="mt-9">
         <h2>Core Brand Pillars</h2>
-        <section className="gap-x-8 gap-y-10 grid grid-cols-1 lg:grid-cols-3 mt-6">
-          <div className="lg:block sm:flex">
-            <div className="w-16 h-16 sm:shrink-0 object-cover">
+        <section className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(200px,auto)] mt-6">
+          {/* First pillar - Large featured card */}
+          <div className="flex flex-col md:col-span-2 lg:col-span-2 row-span-2 bg-gradient-to-br from-blue-50 dark:from-blue-900/20 to-indigo-100 dark:to-indigo-800/20 shadow-lg hover:shadow-xl p-6 lg:p-8 border-0 rounded-lg transition-all duration-300 hover:scale-[1.02]">
+            <div className="mb-4 w-16 h-16 shrink-0 object-cover">
               <svg
                 id="fi_5747442"
                 enableBackground="new 0 0 53 53"
@@ -280,15 +281,24 @@ export default function ThreeColumns() {
                 </g>
               </svg>
             </div>
-            <div className="mt-4 sm:mt-0 lg:mt-6 sm:ml-6 lg:ml-0">
-              <h4>Vision-Driven Strategy</h4>
-              <p className="mt-2 text-sm">
+            <div className="flex-1 mt-4">
+              <h4 className="mb-4 font-bold text-blue-900 text-xl lg:text-2xl dark:text-blue-100">
+                Vision-Driven Strategy
+              </h4>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 Every project begins with a vision and ends with a
-                custom-engineered solution that brings that vision to life.
+                custom-engineered solution that brings that vision to life. We
+                believe in understanding your unique goals before diving into
+                design and development.
               </p>
             </div>
+            <div className="mt-auto pt-6">
+              <div className="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full w-12 h-1"></div>
+            </div>
           </div>
-          <div className="lg:block sm:flex">
+
+          {/* Second pillar */}
+          <div className="flex flex-col bg-gradient-to-br from-purple-50 dark:from-purple-900/20 to-violet-100 dark:to-violet-800/20 shadow-md hover:shadow-lg p-6 border-0 rounded-lg transition-all duration-300 hover:scale-[1.02]">
             <div className="w-16 h-16 sm:shrink-0 object-cover">
               <svg
                 id="fi_4375509"
@@ -518,7 +528,7 @@ export default function ThreeColumns() {
               </p>
             </div>
           </div>
-          <div className="lg:block sm:flex">
+          <div className="flex flex-col bg-gradient-to-br from-green-50 dark:from-green-900/20 to-emerald-100 dark:to-emerald-800/20 shadow-md hover:shadow-lg p-6 border-0 rounded-lg transition-all duration-300 hover:scale-[1.02]">
             <div className="w-16 h-16 sm:shrink-0 object-cover">
               <svg
                 id="fi_6868020"
@@ -1304,7 +1314,7 @@ export default function ThreeColumns() {
               </p>
             </div>
           </div>
-          <div className="lg:block sm:flex">
+          <div className="flex flex-col bg-gradient-to-br from-rose-50 dark:from-rose-900/20 to-pink-100 dark:to-pink-800/20 shadow-md hover:shadow-lg p-6 border-0 rounded-lg transition-all duration-300 hover:scale-[1.02]">
             <div className="w-16 h-16 sm:shrink-0 object-cover">
               <svg
                 id="fi_6059884"
@@ -1778,7 +1788,7 @@ export default function ThreeColumns() {
               </p>
             </div>
           </div>
-          <div className="lg:block sm:flex">
+          <div className="flex flex-col md:col-span-2 lg:col-span-2 bg-gradient-to-br from-orange-50 dark:from-orange-900/20 to-amber-100 dark:to-amber-800/20 shadow-lg hover:shadow-xl p-6 lg:p-8 border-0 rounded-lg transition-all duration-300 hover:scale-[1.02]">
             <div className="w-16 h-16 sm:shrink-0 object-cover">
               <svg
                 id="fi_7671908"
@@ -1961,13 +1971,80 @@ export default function ThreeColumns() {
 
       <div className="mt-14">
         <h2>What Drives Us Forward</h2>
-        <div className="gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {motivationalDrive.map((feature, index) => (
-            <div key={index} className="py-3">
-              <h3>{feature.name}</h3>
-              <p>{feature.description}</p>
-            </div>
-          ))}
+        <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(180px,auto)] mt-6">
+          {motivationalDrive.map((feature, index) => {
+            // Create dynamic grid spans for bento layout
+            const getGridSpan = (index: number) => {
+              const patterns = [
+                "md:col-span-2 lg:col-span-2", // First item spans 2 columns
+                "md:col-span-1 lg:col-span-1 ", // Second item normal
+                "md:col-span-1 lg:col-span-1 lg:row-span-2", // Third item normal
+              ];
+              return (
+                patterns[index % patterns.length] ||
+                "md:col-span-1 lg:col-span-1"
+              );
+            };
+
+            const getColorGradient = (index: number) => {
+              const gradients = [
+                "from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-800/20",
+                "from-purple-50 to-violet-100 dark:from-purple-900/20 dark:to-violet-800/20",
+                "from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-800/20",
+                "from-orange-50 to-amber-100 dark:from-orange-900/20 dark:to-amber-800/20",
+                "from-rose-50 to-pink-100 dark:from-rose-900/20 dark:to-pink-800/20",
+                "from-teal-50 to-cyan-100 dark:from-teal-900/20 dark:to-cyan-800/20",
+              ];
+              return gradients[index % gradients.length];
+            };
+
+            const getTextColor = (index: number) => {
+              const colors = [
+                "text-blue-900 dark:text-blue-100",
+                "text-purple-900 dark:text-purple-100",
+                "text-green-900 dark:text-green-100",
+                "text-orange-900 dark:text-orange-100",
+                "text-rose-900 dark:text-rose-100",
+                "text-teal-900 dark:text-teal-100",
+              ];
+              return colors[index % colors.length];
+            };
+
+            const getAccentColor = (index: number) => {
+              const accents = [
+                "from-blue-500 to-indigo-600",
+                "from-purple-500 to-violet-600",
+                "from-green-500 to-emerald-600",
+                "from-orange-500 to-amber-600",
+                "from-rose-500 to-pink-600",
+                "from-teal-500 to-cyan-600",
+              ];
+              return accents[index % accents.length];
+            };
+
+            return (
+              <div
+                key={index}
+                className={`${getGridSpan(index)} bg-gradient-to-br ${getColorGradient(index)} border-0 rounded-lg p-6 lg:p-8 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col`}
+              >
+                <div className="flex-1">
+                  <h3
+                    className={`font-bold text-lg lg:text-xl ${getTextColor(index)} mb-3`}
+                  >
+                    {feature.name}
+                  </h3>
+                  <p className="text-gray-700 text-sm lg:text-base dark:text-gray-300 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+                <div className="mt-auto pt-4">
+                  <div
+                    className={`w-8 h-1 bg-gradient-to-r ${getAccentColor(index)} rounded-full`}
+                  ></div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
