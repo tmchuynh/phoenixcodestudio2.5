@@ -101,98 +101,150 @@ export default function HomePage() {
   };
 
   return (
-    <div className="pt-3 md:pt-5 lg:pt-9">
-      <HeaderImageTiles />
+    <div className="bg-gradient-to-b from-slate-50 to-white min-h-screen">
+      {/* Hero Section with elevated spacing */}
+      <div className="pt-8 md:pt-16 lg:pt-24 pb-16 md:pb-24">
+        <HeaderImageTiles />
+      </div>
 
-      <section>
-        <div className="flex items-center gap-2 mx-auto w-10/12">
-          <h1 className="whitespace-nowrap">Featured Projects</h1>
-          <div className="flex-1 bg-gradient-to-r from-transparent via-fancy to-transparent h-px" />
+      {/* Featured Projects Section */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="mx-auto px-6 lg:px-8 max-w-7xl">
+          {/* Elegant section header */}
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 font-light text-4xl text-slate-900 md:text-5xl tracking-tight">
+              Featured Projects
+            </h2>
+            <div className="bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 mx-auto w-24 h-0.5"></div>
+            <p className="mx-auto mt-6 max-w-2xl font-light text-lg text-slate-600">
+              Crafted with precision and excellence
+            </p>
+          </div>
         </div>
 
-        <div className="space-y-10 md:hidden mx-auto w-10/12">
+        {/* Mobile view - elevated cards */}
+        <div className="space-y-8 md:hidden mx-auto px-6 max-w-sm">
           {sortedFeaturedProjects.map((project, index) => (
-            <FeaturedProject key={index} project={project} index={index} />
+            <div key={index}>
+              <FeaturedProject project={project} index={index} />
+            </div>
           ))}
         </div>
 
-        <Carousel
-          setApi={setApiProject}
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 8000,
-              stopOnMouseEnter: true,
-              stopOnInteraction: true,
-              stopOnFocusIn: true,
-            }),
-          ]}
-          onMouseLeave={() => handleMouseLeave(apiProject)}
-          className="md:block space-y-5 hidden mx-auto w-5/7 xl:w-4/5"
-        >
-          <CarouselContent className="min-h-full">
-            {sortedFeaturedProjects.map((project, index) => (
-              <CarouselItem key={index} className="flex items-center px-10">
-                <FeaturedProject project={project} index={index} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-        <div className="text-center text-muted-foreground text-sm">
-          Project {currentProject} of {countProject}
+        {/* Desktop carousel with refined styling */}
+        <div className="md:block hidden">
+          <Carousel
+            setApi={setApiProject}
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 10000,
+                stopOnMouseEnter: true,
+                stopOnInteraction: true,
+                stopOnFocusIn: true,
+              }),
+            ]}
+            onMouseLeave={() => handleMouseLeave(apiProject)}
+            className="mx-auto px-8 max-w-6xl"
+          >
+            <CarouselContent className="min-h-full">
+              {sortedFeaturedProjects.map((project, index) => (
+                <CarouselItem
+                  key={index}
+                  className="flex justify-center items-center px-4"
+                >
+                  <FeaturedProject project={project} index={index} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="bg-white/90 shadow-lg border-slate-200 hover:border-amber-300 text-slate-700" />
+            <CarouselNext className="bg-white/90 shadow-lg border-slate-200 hover:border-amber-300 text-slate-700" />
+          </Carousel>
+
+          {/* Refined pagination indicator */}
+          <div className="mt-8 text-center">
+            <span className="inline-flex items-center bg-slate-100 px-4 py-2 rounded-full font-light text-slate-600 text-sm tracking-wide">
+              {currentProject} of {countProject}
+            </span>
+          </div>
         </div>
       </section>
 
-      <section>
-        <div className="flex items-center gap-2 mx-auto w-10/12">
-          <h1 className="whitespace-nowrap">Featured Articles</h1>
-          <div className="flex-1 bg-gradient-to-r from-transparent via-fancy to-transparent h-px" />
+      {/* Featured Articles Section */}
+      <section className="bg-gradient-to-b from-slate-50 to-slate-100 py-16 md:py-24">
+        <div className="mx-auto px-6 lg:px-8 max-w-7xl">
+          {/* Elegant section header */}
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 font-light text-4xl text-slate-900 md:text-5xl tracking-tight">
+              Featured Articles
+            </h2>
+            <div className="bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 mx-auto w-24 h-0.5"></div>
+            <p className="mx-auto mt-6 max-w-2xl font-light text-lg text-slate-600">
+              Insights and expertise shared
+            </p>
+          </div>
         </div>
 
-        <div className="space-y-10 md:hidden mx-auto w-11/12">
-          {sortedFeaturedArticles.slice(0, 15).map((article, index) => (
-            <FeaturedArticles key={index} blog={article} index={index} />
+        {/* Mobile view - refined grid */}
+        <div className="space-y-6 md:hidden mx-auto px-6 max-w-sm">
+          {sortedFeaturedArticles.slice(0, 6).map((article, index) => (
+            <div key={index}>
+              <FeaturedArticles blog={article} index={index} />
+            </div>
           ))}
         </div>
 
-        <Carousel
-          setApi={setApi}
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 8000,
-              stopOnMouseEnter: true,
-              stopOnInteraction: true,
-              stopOnFocusIn: true,
-            }),
-          ]}
-          onMouseLeave={() => handleMouseLeave(api)}
-          className="md:block hidden mx-auto w-10/12"
-        >
-          <CarouselContent className="min-h-full">
-            {sortedFeaturedArticles.slice(0, 15).map((article, index) => (
-              <CarouselItem key={index} className="flex items-center px-10">
-                <FeaturedArticles blog={article} index={index} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-        <div className="py-2 text-center text-muted-foreground text-sm">
-          Article {current} of {count}
+        {/* Desktop carousel with sophisticated styling */}
+        <div className="md:block hidden">
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 12000,
+                stopOnMouseEnter: true,
+                stopOnInteraction: true,
+                stopOnFocusIn: true,
+              }),
+            ]}
+            onMouseLeave={() => handleMouseLeave(api)}
+            className="mx-auto px-8 max-w-6xl"
+          >
+            <CarouselContent className="min-h-full">
+              {sortedFeaturedArticles.slice(0, 12).map((article, index) => (
+                <CarouselItem
+                  key={index}
+                  className="flex justify-center items-center px-4"
+                >
+                  <FeaturedArticles blog={article} index={index} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="bg-white/90 shadow-lg border-slate-200 hover:border-amber-300 text-slate-700" />
+            <CarouselNext className="bg-white/90 shadow-lg border-slate-200 hover:border-amber-300 text-slate-700" />
+          </Carousel>
+
+          {/* Refined pagination indicator */}
+          <div className="mt-8 text-center">
+            <span className="inline-flex items-center bg-white/70 shadow-sm backdrop-blur-sm px-4 py-2 rounded-full font-light text-slate-600 text-sm tracking-wide">
+              {current} of {count}
+            </span>
+          </div>
         </div>
       </section>
 
-      <Simple />
+      {/* CTA Section with royal elegance */}
+      <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 md:py-24">
+        <div className="mx-auto px-6 lg:px-8 max-w-4xl">
+          <Simple />
+        </div>
+      </section>
     </div>
   );
 }
