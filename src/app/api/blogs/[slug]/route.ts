@@ -6,11 +6,14 @@ import { NextRequest, NextResponse } from "next/server";
  * Fetches MDX blog posts from the content directory.
  *
  * @param {NextRequest} req - The incoming request object.
+ * @param {object} context - The route context containing params.
  * @returns {Promise<NextResponse>} - A promise that resolves to a NextResponse object containing the blog post data or an error message.
  */
-export async function GET(req: NextRequest): Promise<NextResponse> {
-  // Extract slug from the pathname
-  const slug = req.nextUrl.pathname.split("/").pop(); // Get the last part of the URL
+export async function GET(
+  req: NextRequest,
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<NextResponse> {
+  const { slug } = await params;
 
   if (!slug) {
     return NextResponse.json(
