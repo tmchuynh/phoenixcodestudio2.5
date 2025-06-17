@@ -1,5 +1,3 @@
-import { testimonials } from "@/lib/constants/testimonials";
-
 export default function InfoTestimonial() {
   return (
     <div className="relative py-8 md:py-6 overflow-hidden isolate">
@@ -39,7 +37,7 @@ export default function InfoTestimonial() {
               </p>
             </div>
           </div>
-          <figure className="lg:col-span-2">
+          {/* <figure className="lg:col-span-2">
             <blockquote className="font-semibold text-xl/8 tracking-tight">
               {testimonials[2].quote}
             </blockquote>
@@ -49,7 +47,7 @@ export default function InfoTestimonial() {
                 <div> {testimonials[2].position}</div>
               </div>
             </figcaption>
-          </figure>
+          </figure> */}
         </section>
       </div>
     </div>

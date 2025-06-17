@@ -180,7 +180,7 @@ export default function OurAspirationsPage() {
         </section>
       </div>
 
-      <FeaturedOverlappingTestimonial testimonial={testimonials[4]} />
+      <FeaturedOverlappingTestimonial testimonial={testimonials[0]} />
     </div>
   );
 }

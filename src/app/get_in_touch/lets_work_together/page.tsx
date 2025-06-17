@@ -1,4 +1,3 @@
-import { testimonials } from "@/lib/constants/testimonials";
 import Image from "next/image";
 
 export default function LetsWorkTogether() {
@@ -160,7 +159,7 @@ export default function LetsWorkTogether() {
               </div>
             </div>
           </form>
-          <div className="lg:flex-none lg:col-span-2 2xl:col-span-4 lg:mt-6">
+          {/* <div className="lg:flex-none lg:col-span-2 2xl:col-span-4 lg:mt-6">
             <figure className="mt-10">
               <blockquote className="font-semibold text-xl/8 tracking-tight">
                 {testimonials[3].quote}
@@ -172,7 +171,7 @@ export default function LetsWorkTogether() {
                 </div>
               </figcaption>
             </figure>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
