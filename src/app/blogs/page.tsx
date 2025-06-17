@@ -1,5 +1,4 @@
 import BlogCard from "@/components/cards/ArticleCards";
-import { blogs } from "@/lib/constants/blog-posts";
 import { BlogPost, MDXBlogPost } from "@/lib/interfaces/blogs";
 import { getAllBlogs } from "@/lib/mdx";
 import { sortByProperty } from "@/lib/utils/sort";
@@ -30,10 +29,7 @@ function convertMDXToLegacy(mdxPost: MDXBlogPost): BlogPost {
 export default function BlogPage() {
   // Get MDX blog posts
   const mdxBlogs = getAllBlogs();
-  const convertedMDXBlogs = mdxBlogs.map(convertMDXToLegacy);
-
-  // Combine with legacy blogs
-  const allBlogs = [...convertedMDXBlogs, ...blogs];
+  const allBlogs = mdxBlogs.map(convertMDXToLegacy);
   const sortedBlogs = sortByProperty(allBlogs, "title");
 
   return (
